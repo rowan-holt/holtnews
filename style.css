@@ -119,6 +119,8 @@ display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .lang{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-weight:600;color:var(--ink2);
 border:1px solid var(--rule);padding:4px 10px 4px 6px;background:#fffdf7}
 .lang:hover{border-color:var(--ink)}
+body.ko .kicker{font-family:var(--sans);letter-spacing:.06em;font-weight:600;font-size:12px}
+body.ko .kicker i{font-family:var(--latin);font-weight:400}
 .lang svg{width:22px;height:15px;display:block;box-shadow:0 0 0 1px rgba(0,0,0,.12)}
 body.en .article h1,body.en .lead h3,body.en .card h3,body.en .sec h2,body.en .page h1,body.en .page h2{font-family:var(--latin);font-weight:700;letter-spacing:-.01em}
 body.en .article h1{font-size:clamp(28px,4.6vw,40px);line-height:1.25}
