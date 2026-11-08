@@ -87,7 +87,7 @@ body.en .sec h2{font-family:"Jost",sans-serif;font-weight:500;letter-spacing:0}
 .bbc .txt .card:first-child{border-top:0;padding-top:0}
 .card:hover h3{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
 body.en .card h3{font-family:"Jost",sans-serif;font-weight:500}
-.home-news{border-top:1px solid var(--line);margin-top:30px}
+.home-news{margin-top:30px}
 .home-news h2,.news-head h2{font-family:var(--latin);font-weight:400;font-size:clamp(28px,3.4vw,52px);margin:0;padding:40px 24px 0;max-width:1400px;margin:0 auto}
 .dek{font-size:19px;color:var(--ink2);line-height:1.7;margin:-8px 0 26px}
 .photo{margin:0 0 40px}
