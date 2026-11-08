@@ -105,11 +105,6 @@ body.en .sec h2{font-family:"Jost",sans-serif;font-weight:500;letter-spacing:0}
 .cb-note b{font-size:13px;font-weight:600}
 .added{margin:4px 0 22px;padding:12px 16px;border-left:3px solid var(--ink);background:var(--soft);font-size:14.5px;line-height:1.7}
 .added h4{margin:0 0 4px;font-size:13px;font-weight:700}.added ul{margin:0;padding-left:18px}
-.made{margin:22px 0 0;font-size:13.5px;color:var(--gray);line-height:1.7}.made h4{margin:0 0 4px;font-size:13px;color:var(--ink);font-weight:600}.made p{margin:0}
-.made a{text-decoration:underline;text-decoration-color:#ccc}
-.ledger{margin-top:8px}.ledger summary{cursor:pointer;color:var(--ink)}
-.ledger table{width:100%;border-collapse:collapse;margin-top:8px;font-size:12.5px}.ledger th,.ledger td{border-top:1px solid var(--line);padding:5px 6px;text-align:left;vertical-align:top}
-.ledger th{font-weight:600;color:var(--ink)}.ledger .lg-note{margin-top:6px;font-size:12px}
 .corr-list{list-style:none;padding:0}.corr-list li{border-top:1px solid var(--line);padding:12px 0}.corr-list time{color:var(--gray);margin-right:8px}
 .fix{margin:36px 0 0;padding:14px 16px;background:var(--soft);border-radius:8px;font-size:14px;line-height:1.7}
 .fix h4{margin:0 0 4px;font-size:13px;font-weight:700}
