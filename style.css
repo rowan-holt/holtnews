@@ -68,6 +68,17 @@ body.en .sec h2{font-family:"Jost",sans-serif;font-weight:500;letter-spacing:0}
 .refs ul{margin:0 0 12px;padding-left:18px}
 .refs a{word-break:break-all;text-decoration:underline;text-decoration-color:#ccc}
 .share{margin:24px 0 0}
+.sharebar{display:flex;gap:8px;flex-wrap:wrap}
+.sharebar button{font:inherit;font-size:14px;color:var(--ink);background:none;border:1px solid #cfcfcf;border-radius:999px;padding:7px 16px;cursor:pointer}
+.sharebar button:hover{border-color:var(--ink)}
+.sharebar button[hidden]{display:none}
+.paper .sharebar button{padding:4px 12px;font-size:13px}
+.sharebar.sb-top{margin:-20px 0 30px}
+.paper .sharebar.sb-top{margin:0}
+.sharebar.sb-end{margin:34px 0 0;padding-top:22px;border-top:1px solid #ddd}
+.sharebar.sb-end button{padding:10px 22px;font-size:15px}
+.upd{color:var(--gray)}
+.report{margin-top:10px}
 .share a{font-size:15px;border-bottom:1px solid var(--ink)}
 .more{margin-top:70px;border-top:1px solid var(--line)}
 .more h2{font-family:var(--latin);font-weight:400;font-size:clamp(22px,2.4vw,34px);margin:0;padding:18px 24px;border-bottom:1px solid var(--line)}
