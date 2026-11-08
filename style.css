@@ -38,7 +38,7 @@ font-size:22px;cursor:pointer;z-index:2;display:flex;align-items:center;justify-
 /* 목록 */
 .index{padding:56px 24px 20px;max-width:1400px;margin:0 auto}
 .index h2{font-family:var(--latin);font-weight:400;font-size:clamp(28px,3.4vw,52px);margin:0 0 18px;letter-spacing:.01em}
-.sec-link{color:inherit;text-decoration:none}.sec-link::after{content:" →";font-size:.6em;opacity:.35;transition:opacity .2s}.sec-link:hover{text-decoration:underline;text-underline-offset:.15em;text-decoration-thickness:1px}.sec-link:hover::after{opacity:1}  /* 1108: 홈 섹션 제목 → 각 메뉴로 */
+.sec-link{color:inherit;text-decoration:none}.sec-link:hover{text-decoration:underline;text-underline-offset:.15em;text-decoration-thickness:1px}  /* 1108: 홈 섹션 제목 → 각 메뉴로, 화살표 없이 제목만 클릭 */
 .row{display:grid;grid-template-columns:90px minmax(0,1fr) 260px 110px;gap:20px;align-items:center;padding:18px 0;
 border-top:1px solid var(--line);font-size:clamp(16px,1.4vw,21px)}
 .row:last-child{border-bottom:1px solid var(--line)}
