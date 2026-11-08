@@ -94,6 +94,9 @@ body.en .card h3{font-family:"Jost",sans-serif;font-weight:500}
 .photo img{width:100%}
 .photo figcaption{font-size:13px;color:var(--gray);margin-top:8px}
 .more .bbc{padding-top:24px}
+.nlist{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;max-width:1400px;margin:0 auto;padding:30px 24px 10px}
+@media (max-width:900px){.nlist{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.nlist{grid-template-columns:1fr;padding:20px 16px}}
 /* 일반 쪽 */
 .page{max-width:740px;margin:0 auto;padding:56px 20px}
 .page h1{font-weight:800;font-size:36px;margin:0 0 22px;letter-spacing:-.02em}
