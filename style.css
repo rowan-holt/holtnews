@@ -88,6 +88,17 @@ body.en .sec h2{font-family:"Jost",sans-serif;font-weight:500;letter-spacing:0}
 .card:hover h3{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
 body.en .card h3{font-family:"Jost",sans-serif;font-weight:500}
 .home-news{margin-top:30px}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.hero{max-width:1400px;margin:0 auto;padding:32px 24px 32px}
+.hero-in{display:grid;grid-template-columns:1.55fr 1fr;gap:36px;align-items:center}
+.hero img{width:100%;aspect-ratio:3/2;object-fit:cover;background:var(--soft)}
+.hero .kicker{font-size:13px;color:var(--gray);margin-bottom:12px}
+.hero h2{font-size:clamp(28px,3.3vw,48px);line-height:1.25;font-weight:800;letter-spacing:-.02em;margin:0 0 16px}
+.hero p{font-size:18px;color:var(--ink2);line-height:1.65;margin:0}
+.hero .meta{font-size:13px;color:var(--gray);margin-top:16px}
+.hero-in:hover h2{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:2px}
+body.en .hero h2{font-family:"Jost",sans-serif;font-weight:600}
+@media (max-width:900px){.hero-in{grid-template-columns:1fr;gap:18px}.hero{padding:20px 16px 4px}}
 .home-news h2,.news-head h2{font-family:var(--latin);font-weight:400;font-size:clamp(28px,3.4vw,52px);margin:0;padding:40px 24px 0;max-width:1400px;margin:0 auto}
 .dek{font-size:19px;color:var(--ink2);line-height:1.7;margin:-8px 0 26px}
 .photo{margin:0 0 40px}
