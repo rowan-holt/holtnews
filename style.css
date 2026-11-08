@@ -60,6 +60,7 @@ justify-content:space-between;gap:16px;font-size:14px;color:var(--gray);flex-wra
 body.en .sec h2{font-family:"Jost",sans-serif;font-weight:500;letter-spacing:0}
 .sec h2 .n{font-family:"Jost",sans-serif;font-weight:400;font-size:14px;color:var(--gray)}
 .sec p{margin:0;font-size:18px;line-height:1.9}
+.sec p+p{margin-top:14px}
 .sec.limits{background:var(--soft);padding:22px 24px}
 .sec.limits p{font-size:16.5px}
 .refs{font-size:13.5px;color:var(--gray);border-top:1px solid var(--line);padding-top:18px;margin-top:40px;line-height:1.7}
@@ -77,11 +78,15 @@ body.en .sec h2{font-family:"Jost",sans-serif;font-weight:500;letter-spacing:0}
 body.en .page h1,body.en .page h2{font-family:"Jost",sans-serif;font-weight:500}
 .page h2{font-size:21px;margin:32px 0 8px}
 .page a{text-decoration:underline}
+.page a.plain{text-decoration:none}
+.page .contact p{margin:4px 0}
+.page .contact b{display:inline-block;min-width:88px;font-weight:600}
 /* 꼬리 */
 .foot{background:#000;color:#cfcfcf;margin-top:80px;padding:40px 56px 48px;font-size:13px;line-height:1.8;
 display:grid;grid-template-columns:auto 1fr auto;gap:20px 48px;align-items:start}
 .foot .logo-s{font-family:"Jost",sans-serif;font-weight:600;color:#fff;font-size:17px;letter-spacing:.04em}
 .foot nav{display:flex;gap:10px;flex-wrap:wrap;color:#fff}
+.foot nav+nav{margin-top:6px;color:#cfcfcf}
 .foot nav span{opacity:.5}
 .foot .c{text-align:right;align-self:end}
 @media (max-width:900px){.panels{grid-auto-columns:42%}.more .panels{grid-auto-columns:42%}
