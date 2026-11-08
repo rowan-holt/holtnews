@@ -68,15 +68,21 @@ body.en .sec h2{font-family:"Jost",sans-serif;font-weight:500;letter-spacing:0}
 .refs ul{margin:0 0 12px;padding-left:18px}
 .refs a{word-break:break-all;text-decoration:underline;text-decoration-color:#ccc}
 .share{margin:24px 0 0}
-.sharebar{display:flex;gap:8px;flex-wrap:wrap}
-.sharebar button{font:inherit;font-size:14px;color:var(--ink);background:none;border:1px solid #cfcfcf;border-radius:999px;padding:7px 16px;cursor:pointer}
-.sharebar button:hover{border-color:var(--ink)}
-.sharebar button[hidden]{display:none}
-.paper .sharebar button{padding:4px 12px;font-size:13px}
-.sharebar.sb-top{margin:-20px 0 30px}
-.paper .sharebar.sb-top{margin:0}
-.sharebar.sb-end{margin:34px 0 0;padding-top:22px;border-top:1px solid #ddd}
-.sharebar.sb-end button{padding:10px 22px;font-size:15px}
+.sharebar{display:flex;gap:2px;align-items:center}
+.sharebar .ic{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;padding:0;color:#888;background:none;border:0;border-radius:50%;cursor:pointer}
+.sharebar .ic:hover{color:var(--ink);background:var(--soft)}
+.paper{align-items:center}
+.paper .pd{display:flex;align-items:center;gap:10px}
+.sharebar.sb-top{margin:-8px -8px -8px 0}
+.sharebar.sb-end{justify-content:flex-end;margin:28px -8px 0 0}
+.sb-more{position:relative}
+.sb-menu{display:none;position:absolute;right:0;top:38px;z-index:20;background:#fff;border:1px solid #ddd;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,.08);padding:6px;min-width:130px}
+.sb-end .sb-menu{top:auto;bottom:38px}
+.sb-menu.on{display:block}
+.sb-menu button,.sb-menu a{display:block;width:100%;text-align:left;font:inherit;font-size:14px;color:var(--ink);background:none;border:0;padding:8px 12px;border-radius:6px;cursor:pointer}
+.sb-menu button:hover,.sb-menu a:hover{background:var(--soft)}
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,10px);background:#1a1a1a;color:#fff;font-size:14px;padding:9px 16px;border-radius:999px;opacity:0;pointer-events:none;transition:.2s;z-index:30}
+.toast.on{opacity:1;transform:translate(-50%,0)}
 .upd{color:var(--gray)}
 .report{margin-top:10px}
 .share a{font-size:15px;border-bottom:1px solid var(--ink)}
