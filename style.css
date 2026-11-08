@@ -74,6 +74,7 @@ body.en .sec h2{font-family:"Jost",sans-serif;font-weight:500;letter-spacing:0}
 .sharebar .ic:hover{color:var(--ink);background:var(--soft)}
 .paper{align-items:center}
 .paper .pd{display:flex;align-items:center;gap:10px}
+.paper .pd .dt{white-space:nowrap}
 .sharebar.sb-top{margin:-8px -8px -8px 0}
 .sharebar.sb-end{justify-content:flex-end;margin:28px -8px 0 0}
 .sb-more{position:relative}
