@@ -239,7 +239,7 @@ img.logo-img{outline:1px solid #e6e6e6;outline-offset:-1px}   /* 1109: 흰 바�
 .ec-res td{text-align:right;padding:7px 0;white-space:nowrap;border-bottom:1px solid #eee;line-height:1.35;vertical-align:top}
 .ec-res td:first-child{white-space:normal}.ec-cal td:nth-child(2){text-align:left;font-weight:600}.ec-cal th:nth-child(2){text-align:left}
 .ec-cal td.ec-dt{color:var(--gray);font-size:13px;width:92px}.ec-cal td.ec-w{color:var(--ink2);font-size:13.5px}.ec-cal td a:hover{text-decoration:underline;text-underline-offset:3px}
-.ec-res td{height:24px}.ec-p{font-weight:400;font-size:13px;color:var(--gray);margin-left:6px}.ec-res tr.ec-g td{height:auto;font-size:12px;font-weight:700;color:var(--gray);padding:12px 0 4px;border-bottom:1px solid #ddd;text-align:left}
+.ec-res td{height:24px}.ec-res tr.ec-sp td{height:14px;padding:0;border-bottom:0}.ec-p{font-weight:400;font-size:13px;color:var(--gray);margin-left:6px}.ec-res tr.ec-g td{height:auto;font-size:12px;font-weight:700;color:var(--gray);padding:12px 0 4px;border-bottom:1px solid #ddd;text-align:left}
 .ec-cal{display:flex;flex-direction:column}.cal{flex:1;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-template-rows:auto 1fr;column-gap:8px}.cal-x{color:#ccc;padding:8px 0;font-size:14px}
 .cal-h{font-size:13px;font-weight:700;padding:0 0 8px;border-bottom:1px solid #ddd;font-variant-numeric:tabular-nums}.cal-h small{font-weight:400;color:var(--gray);margin-left:2px}
 .cal-h.today{color:#d6242d}.cal-h.today small{color:#d6242d}.cal-h.hol{color:#d6242d}
