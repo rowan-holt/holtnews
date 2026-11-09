@@ -239,7 +239,17 @@ img.logo-img{outline:1px solid #e6e6e6;outline-offset:-1px}   /* 1109: 흰 바�
 .ec-res td{text-align:right;padding:7px 0;white-space:nowrap;border-bottom:1px solid #eee;line-height:1.35;vertical-align:top}
 .ec-res td:first-child{white-space:normal}.ec-cal td:nth-child(2){text-align:left;font-weight:600}.ec-cal th:nth-child(2){text-align:left}
 .ec-cal td.ec-dt{color:var(--gray);font-size:13px;width:92px}.ec-cal td.ec-w{color:var(--ink2);font-size:13.5px}.ec-cal td a:hover{text-decoration:underline;text-underline-offset:3px}
-.ec-res td{height:24px}.ec-res td:first-child a{font-weight:600}.ec-res td small{font-size:12px;color:var(--gray);margin-left:6px}
+.ec-res td{height:24px}.ec-res tr.ec-g td{height:auto;font-size:12px;font-weight:700;color:var(--gray);padding:12px 0 4px;border-bottom:1px solid #ddd;text-align:left}
+.ec-cal{display:flex;flex-direction:column}.cal{flex:1;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-template-rows:auto 1fr;column-gap:8px}.cal-x{color:#ccc;padding:8px 0;font-size:14px}
+.cal-h{font-size:13px;font-weight:700;padding:0 0 8px;border-bottom:1px solid #ddd;font-variant-numeric:tabular-nums}.cal-h small{font-weight:400;color:var(--gray);margin-left:2px}
+.cal-h.today{color:#d6242d}.cal-h.today small{color:#d6242d}.cal-h.hol{color:#d6242d}
+.cal-d{display:flex;flex-direction:column;border-bottom:1px solid #ddd}
+.cal-d>a,.cal-d>.cal-x{flex:0 0 20%;display:flex;align-items:center;box-sizing:border-box}
+.cal-m{display:none;list-style:none;margin:0;padding:0}.cal-m li{display:grid;grid-template-columns:64px minmax(0,1fr);gap:10px;padding:9px 0;border-bottom:1px solid #eee;font-size:14px;line-height:1.5}
+.cal-m b{font-weight:700;font-size:13px}.cal-m b small{font-weight:400;color:var(--gray)}.cal-m span a{font-weight:600}
+.cal-d a{font-size:14px;font-weight:600;line-height:1.3;padding:8px 0;border-bottom:1px dashed #eee;word-break:keep-all}.cal-d a:last-child{border-bottom:0}
+.cal-d a:hover{text-decoration:underline;text-underline-offset:3px}
+@media (max-width:640px){.cal{display:none}.cal-m{display:block}}.ec-res td:first-child a{font-weight:600}.ec-res td small{font-size:12px;color:var(--gray);margin-left:6px}
 .ec-res td span{font-size:12.5px}.up{color:#d6242d}.dn{color:#1f5fd1}
 .ec a:hover b,.ec-res td:first-child a:hover{text-decoration:underline;text-underline-offset:3px}
 .ec-note{font-size:12.5px;color:var(--gray);margin:14px 0 0}
