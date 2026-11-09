@@ -56,6 +56,10 @@ justify-content:space-between;gap:16px;font-size:14px;color:var(--gray);flex-wra
 .paper .ttl{font-style:italic;color:var(--ink)}
 .fig{margin:0 0 40px;background:#faf8f2}
 .fig img{width:100%;max-width:560px;margin:0 auto}
+.fig figcaption{max-width:560px;margin:10px auto 0;font-size:13px;color:var(--gray);text-align:left}
+.fig figcaption b{font-family:Georgia,serif;color:var(--ink,#1a1a1e);margin-right:6px}
+.fig.data img{max-width:720px}
+.fig.data figcaption{max-width:720px;padding-left:5.83%}   /* 그림 안 글자 왼쪽(70/1200)과 같은 선 */
 .sec{margin:0 0 34px}
 .sec h2{font-weight:700;font-size:22px;margin:0 0 10px;display:flex;align-items:baseline;gap:12px;letter-spacing:-.01em}
 body.en .sec h2{font-family:"Jost",sans-serif;font-weight:500;letter-spacing:0}
