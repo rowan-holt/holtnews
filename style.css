@@ -320,6 +320,7 @@ body.en .sh h2{font-family:"Jost",sans-serif;font-weight:600;letter-spacing:0}
 .sh-sub{font-size:13px;color:var(--gray)}.sh-more{margin-left:auto;font-size:13px;color:var(--gray);white-space:nowrap}.sh-more:hover{color:var(--ink)}
 .hs-band{background:#f5f3ee;margin-top:84px;padding:1px 0 56px}.hs-band .hs{margin-top:44px}
 .hs .nlist{padding:0;max-width:none}
+.hs .bbc{padding:0;max-width:none}.hs.first{margin-top:28px}
 .ec{border-top:0;padding-top:0}.ap{border-top:0;padding-top:0}
 .hs .ec-note{margin-top:18px}
 /* 1110 오늘의 경제 */
