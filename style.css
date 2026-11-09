@@ -163,6 +163,7 @@ body.en .hero h2{font-family:"Jost",sans-serif;font-weight:600}
 .more .bbc{padding-top:24px}
 .nlist{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;max-width:1400px;margin:0 auto;padding:30px 24px 10px}
 /* 1109 홈: 뉴스 첫 화면 → 연구 포스터 줄 → 광고 자리 → 뉴스 더 보기 */
+img.logo-img{outline:1px solid #e6e6e6;outline-offset:-1px}   /* 1109: 흰 바탕 정부기관 로고가 흰 화면에 묻히지 않게 */
 .home-journal{margin-top:40px}
 /* 1109 사용자: 홈 연구 포스터가 화면 너비 25%라 큰 모니터에서 너무 큼 → 뉴스와 같은 1400px 틀 안에 4장, 칸 사이도 뉴스와 같게 */
 .home-journal .rail{max-width:1400px;margin:0 auto;padding:0 24px;border-bottom:0}
