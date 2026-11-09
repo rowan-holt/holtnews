@@ -162,6 +162,22 @@ body.en .hero h2{font-family:"Jost",sans-serif;font-weight:600}
 .photo figcaption{font-size:13px;color:var(--gray);margin-top:8px}
 .more .bbc{padding-top:24px}
 .nlist{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;max-width:1400px;margin:0 auto;padding:30px 24px 10px}
+/* 1109 홈: 뉴스 첫 화면 → 연구 포스터 줄 → 광고 자리 → 뉴스 더 보기 */
+.home-journal{margin-top:40px}
+.home-journal h2{font-family:var(--latin);font-weight:400;font-size:clamp(28px,3.4vw,52px);max-width:1400px;margin:0 auto;padding:0 24px 18px}
+.ad{display:block}
+.ad-l{display:block;font-size:11px;letter-spacing:.08em;color:var(--gray);margin-bottom:8px}
+.ad.house a{display:flex;flex-direction:column;align-items:flex-start;gap:6px;background:var(--soft);padding:22px 24px}
+.ad.house b{font-size:19px;line-height:1.4;letter-spacing:-.01em}
+.ad.house .ad-p{font-size:14.5px;color:var(--ink2);line-height:1.6}
+.ad.house .ad-b{margin-top:8px;font-size:13px;font-weight:600;border-bottom:1px solid currentColor}
+.ad.house a:hover b{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.ad-mid{border-top:1px solid #ddd;padding-top:22px}
+.ad-wide{max-width:1400px;margin:56px auto 0;padding:0 24px}
+.ad-wide.house a{flex-direction:row;align-items:center;flex-wrap:wrap;gap:6px 18px;padding:26px 28px}
+.ad-wide.house .ad-l{margin:0}.ad-wide.house .ad-b{margin:0 0 0 auto}
+.ad-article{margin:36px 0 0}
+@media (max-width:640px){.bbc .col.mid{order:-1}.home-journal h2{padding:0 16px 14px}.ad-wide{padding:0 16px;margin-top:40px}.ad-wide.house .ad-b{margin-left:0}}
 @media (max-width:900px){.nlist{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.nlist{grid-template-columns:1fr;padding:20px 16px}}
 /* 일반 쪽 */
