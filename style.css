@@ -188,9 +188,10 @@ img.logo-img{outline:1px solid #e6e6e6;outline-offset:-1px}   /* 1109: 흰 바�
 /* 1109 날씨 줄 */
 .wx{max-width:1400px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:18px;border-bottom:1px solid #e6e6e6;font-size:13.5px}
 .wx-l{font-weight:600;white-space:nowrap}.wx ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;overflow-x:auto;scrollbar-width:none;flex:1}
-.wx ul::-webkit-scrollbar{display:none}.wx li{display:flex;align-items:center;gap:5px;white-space:nowrap}
-.wx svg{color:#555;flex:none}.wx .lo{color:#1f5fd1}.wx .hi{color:#d6242d}.wx-s{font-size:11px;color:var(--gray);white-space:nowrap}
-@media (max-width:640px){.wx{padding:10px 16px;gap:12px}.wx-s{display:none}.wx ul{gap:14px}}
+.wx ul{flex-wrap:wrap;row-gap:6px}.wx ul::-webkit-scrollbar{display:none}.wx li{display:flex;align-items:center;gap:5px;white-space:nowrap}
+.wx svg{color:#555;flex:none}.aq{font-size:12px;margin-left:2px;color:#1f5fd1}.aq::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:currentColor;margin-right:3px;vertical-align:1px}
+.aq.g1{color:#16794a}.aq.g3{color:#c25a00}.aq.g4{color:#c0262e}.wx ul{gap:16px}.wx .lo{color:#1f5fd1}.wx .hi{color:#d6242d}.wx-s{font-size:11px;color:var(--gray);white-space:nowrap}
+@media (max-width:640px){.wx{padding:10px 16px;gap:12px}.wx-s{display:none}.wx ul{gap:14px;flex-wrap:nowrap}}
 /* 1109 이번 주 공연·전시·축제 — 지역 탭은 라디오+CSS(스크립트 없음) */
 .cul{max-width:1400px;margin:64px auto 0;padding:0 24px}
 .cul h2{font-family:var(--latin);font-weight:400;font-size:clamp(28px,3.4vw,52px);margin:0 0 18px}
