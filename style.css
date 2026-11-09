@@ -190,15 +190,11 @@ img.logo-img{outline:1px solid #e6e6e6;outline-offset:-1px}   /* 1109: 흰 바�
 .wx-l{font-weight:400;color:var(--gray);white-space:nowrap}.wx ul{display:flex;flex-wrap:wrap;gap:4px 16px;list-style:none;margin:0;padding:0}
 .wx li{display:flex;align-items:center;gap:5px;white-space:nowrap}.wx svg{color:#444;flex:none;width:18px;height:18px}
 .wx .lo{color:#1f5fd1}.wx .hi{color:#d6242d}.wx-t{font-variant-numeric:tabular-nums}
-.wx-city{display:none;position:relative;font-weight:600;color:var(--ink);cursor:pointer;padding-right:13px}
-.wx-city::after{content:"";position:absolute;right:1px;top:50%;margin-top:-2px;border:4px solid transparent;border-top:5px solid #888;border-bottom:0}
-.wx-city:hover .wx-cn{text-decoration:underline;text-underline-offset:3px}
-.wx-sel{position:absolute;inset:0;width:100%;opacity:0;cursor:pointer;font-size:16px;border:0}
-.wx-city:focus-within{outline:1px solid var(--ink);outline-offset:3px}
-.wx.one .wx-city{display:inline-block}.wx.one .wx-c{display:none}.wx li[hidden]{display:none}
+.wx-c{font-weight:600;color:var(--ink)}.wx li[hidden]{display:none}
 .aq{font-size:12px;margin-left:4px;color:#1f5fd1}.aq::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:currentColor;margin-right:4px;vertical-align:1px}
 .aq.g1{color:#16794a}.aq.g3{color:#c25a00}.aq.g4{color:#c0262e}
-.ft-src{margin:10px 0 0;font-size:11.5px;color:#8a8a8a}
+.ft-src{max-width:1400px;margin:72px auto -40px;padding:0 24px;font-size:12px;color:var(--gray)}
+@media (max-width:640px){.ft-src{padding:0 16px;margin-top:56px}}
 @media (max-width:640px){.wx{padding:8px 16px 0;font-size:12.5px}.wx:not(.one) ul{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}}
 /* 1109 서울 아파트 실거래 */
 .apt{max-width:1400px;margin:64px auto 0;padding:0 24px}
