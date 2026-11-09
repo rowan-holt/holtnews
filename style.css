@@ -231,7 +231,7 @@ img.logo-img{outline:1px solid #e6e6e6;outline-offset:-1px}   /* 1109: 흰 바�
 /* 1109 실적 발표 칸 (전자공시) */
 .earn{max-width:1400px;margin:64px auto 0;padding:0 24px}
 .earn h2,.apt h2,.cul h2{font-family:var(--latin);font-weight:400;font-size:clamp(22px,2vw,28px);margin:0 0 12px}
-.ec{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:40px;border-top:1px solid var(--line);padding-top:20px}
+.ec{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:48px;border-top:1px solid var(--line);padding-top:20px}
 .ec h3{font-size:15px;font-weight:700;margin:0 0 14px}
 .ec-day{margin-bottom:10px}.ec-day h4{font-size:13px;font-weight:600;color:var(--gray);margin:0 0 6px}
 .ec-day ul{list-style:none;margin:0;padding:0}
@@ -241,7 +241,9 @@ img.logo-img{outline:1px solid #e6e6e6;outline-offset:-1px}   /* 1109: 흰 바�
 .ec-res th{font-size:12.5px;font-weight:500;color:var(--gray);text-align:right;padding:0 0 8px;border-bottom:1px solid #ddd}
 .ec-res th:first-child,.ec-res td:first-child{text-align:left}
 .ec-res td{text-align:right;padding:7px 0;white-space:nowrap;border-bottom:1px solid #eee;line-height:1.35;vertical-align:top}
-.ec-res td:first-child{white-space:normal}.ec-res td:first-child a{font-weight:600}.ec-res td small{font-size:12px;color:var(--gray);margin-left:6px}
+.ec-res td:first-child{white-space:normal}.ec-cal td:nth-child(2){text-align:left;font-weight:600}.ec-cal th:nth-child(2){text-align:left}
+.ec-cal td.ec-dt{color:var(--gray);font-size:13px;width:92px}.ec-cal td.ec-w{color:var(--ink2);font-size:13.5px}.ec-cal td a:hover{text-decoration:underline;text-underline-offset:3px}
+.ec-res td{height:24px}.ec-res td:first-child a{font-weight:600}.ec-res td small{font-size:12px;color:var(--gray);margin-left:6px}
 .ec-res td span{font-size:12.5px}.up{color:#d6242d}.dn{color:#1f5fd1}
 .ec a:hover b,.ec-res td:first-child a:hover{text-decoration:underline;text-underline-offset:3px}
 .ec-note{font-size:12.5px;color:var(--gray);margin:14px 0 0}
@@ -304,6 +306,7 @@ body.en .jf h3{font-family:"Jost",sans-serif;font-weight:500}
 .ap-bars li{display:grid;grid-template-columns:52px minmax(0,1fr) 92px 62px;align-items:center;gap:10px;padding:6.6px 0;font-size:14px;font-variant-numeric:tabular-nums}
 .ag{font-weight:600}.ab{height:10px;background:#eceae4;border-radius:2px;overflow:hidden}.ab i{display:block;height:100%;background:#2b2b2b;border-radius:2px}
 .av{text-align:right}.ay{text-align:right;font-size:12.5px}.ap-bars li.few{color:#aaa}.ap-bars li.few .ab i{background:#c9c9c9}.ap-bars li.few .ay span{color:#aaa}
+.ap-bars li.ap-note{display:block;font-size:12px;line-height:1.5;color:var(--gray);padding:4px 0 0}
 .ap-top h3{font-size:15px;font-weight:700;margin:0 0 6px}.ap-top ol{list-style:none;margin:0;padding:0}
 .ap-top li{display:grid;grid-template-columns:76px minmax(0,1fr);align-items:baseline;gap:10px;padding:9px 0;border-bottom:1px solid #e6e6e6}
 .ap-top b{font-size:17px;font-variant-numeric:tabular-nums}.ap-top span{font-size:14px;font-weight:600;line-height:1.4}.ap-top small{display:block;font-weight:400;font-size:12.5px;color:var(--gray)}
