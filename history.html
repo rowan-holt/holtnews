@@ -13,7 +13,7 @@
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="만들어진 기록 | HOLT NEWS"><meta name="twitter:description" content="운영자 한 사람과 AI가 대화로 홀트뉴스를 만든 기록 — 결정·논쟁·오류">
 <meta name="theme-color" content="#faf8f2">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="style.css?v=b4c78f0d">
+<link rel="stylesheet" href="style.css?v=081d3e91">
 <meta name="naver-site-verification" content="3d1f6ec1c5d4af4133151f55b84ee92e9b30f7d4"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="alternate" type="application/rss+xml" title="HOLT NEWS" href="https://holtnews.com/rss.xml"><script>try{var q=location.search,D=';domain=.holtnews.com;path=/;max-age=';if(/[?&]me=1(&|$)/.test(q)){document.cookie='holt-me=1'+D+315360000;localStorage.setItem('holt-me','1');alert('이 기기는 이제 방문 통계에서 빠져요. (holtnews.com·english 둘 다)')}if(/[?&]me=0(&|$)/.test(q)){document.cookie='holt-me=0'+D+0;localStorage.removeItem('holt-me');alert('이 기기를 다시 방문 통계에 넣어요.')}if(!/(^|\.)holtnews\.com$/.test(location.hostname)||localStorage.getItem('holt-me')||/(^|; )holt-me=1/.test(document.cookie))window['ga-disable-G-ML7J7T9X32']=true}catch(e){}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-ML7J7T9X32"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-ML7J7T9X32');</script>
 </head><body class="ko">
 <header class="top">
@@ -24,111 +24,87 @@
 <main>
 <div class="page hist"><h1>홀트뉴스가 만들어진 기록</h1>
 <p class="hist-lead">홀트뉴스는 운영자 한 사람과 AI(Claude)가 대화로 만들었습니다. 2026년 10월 18일 저녁, "너가 쇼츠를 만들 수 있어?"라는 질문에서 시작했습니다. 인스타그램 계정이 먼저 생겼고, 3주 뒤 이 사이트가 열렸습니다.</p>
-<p class="hist-lead">아래는 그 대화에서 뽑은 기록입니다. 무엇을 정했고, 어디서 부딪쳤고, 무엇이 틀렸는지 적었습니다. 시각은 한국 시간입니다. 운영자 이름은 적지 않습니다.</p>
-<p class="hist-stat">대화 25일 · 메시지 5,479개 · 코드 커밋 912개 · 2026-11-10 기준</p>
-<h2>논쟁</h2>
-<section class="hdeb" id="d-mouse"><h3>쥐 실험이라고 제목에 밝힐까</h3><p class="hd">2026-11-08 15:00 ~ 23:04</p><p>제8호 연구는 피부 아래 넣은 작은 장치가 인슐린 없이 혈당을 낮춘 실험이었다. 실험 대상은 쥐였다.</p><p>15:00 운영자는 표지 제목으로 &#x27;당뇨병 치료한다&#x27;를 제안했다. Claude는 아직 쥐 실험이고 사람에게 써 본 적이 없다며 &#x27;치료&#x27;를 뺐다. 제목은 &#x27;인슐린 없이 장치 이식만으로 / 혈당을 정상으로 되돌렸다&#x27;로 정해졌다. 쥐라는 말은 제목에 없었다.</p><p>17:23 운영자가 ChatGPT에게 받은 사이트 평가를 가져왔다. 평가에는 &#x27;제목은 혈당 정상화를 강조하지만 실제 실험은 쥐를 대상으로 했다&#x27;는 지적이 있었다. Claude는 &#x27;생각해 볼 만하다, 다만 직접 확정한 제목이라 결정은 맡기겠다&#x27;고 답했다.</p><p>운영자는 &#x27;드러내봐. 적당하게&#x27;라고 했다. 17:37 제목은 &#x27;인슐린 없이 혈당 낮춘 이식 장치, 쥐에서 먼저 통했다&#x27;(B안)가 됐다.</p><p>23:04 운영자가 끝부분을 고쳤다. &#x27;쥐는 성공했다&#x27;. 지금 제목은 &#x27;인슐린 없이 혈당 낮춘 이식 장치, 쥐는 성공했다&#x27;다.</p><p class="after">동물 실험을 사람에게 된 일처럼 읽히게 쓰지 않는다는 기준이 이때 생겼다.</p></section>
-<section class="hdeb" id="d-ai_disclosure"><h3>AI가 만든다는 걸 밝힐까</h3><p class="hd">2026-11-08 16:08 ~ 19:02</p><p>사이트를 연 다음 날, Claude는 점검 목록에 &#x27;글 쓰는 방식 안내&#x27;를 넣었다. 누가 쓰고 검토하는지, AI 도움을 받는지 소개 페이지에 몇 줄로 밝히자는 제안이었다.</p><p>16:08 운영자의 답은 &#x27;놉! 안씀&#x27;. 읽는 시간, 댓글도 같이 뺐다.</p><p>18:50 운영자가 ChatGPT의 두 번째 평가를 가져왔다. 주제는 구글의 AI 대량 생산 콘텐츠 정책이었다. 결론은 &#x27;AI를 썼다는 이유만으로 불이익은 없지만, 독자에게 고유한 가치를 주는지 증명할 수 있어야 한다&#x27;였다.</p><p>19:02 운영자가 방향을 바꿨다. &#x27;글마다 사람이 검수하지는 않습니다. 넣어. 근데 사람이 하는 역할을 잘 써줘. 내가 아무 일 안 하진 않잖아.&#x27;</p><p>그날 편집 원칙 페이지가 생겼다. 맨 위에 AI 80% · 사람 20% 막대를 달았다. 비율은 운영자가 정한 추정치다.</p><p class="after">AI가 쓰고 발행한다는 사실은 밝힌다. 그 밖의 검증 과정은 내보이지 않는다(아래 &#x27;착한 척 상자&#x27; 참고).</p></section>
-<section class="hdeb" id="d-seven_six"><h3>7시간이냐 6시간이냐</h3><p class="hd">2026-11-07 08:52 ~ 2026-11-10 01:32</p><p>제7호는 잠과 감기 연구(Prather 외, 2015)였다. 일주일 평균 6시간 못 잔 사람이 7시간 넘게 잔 사람보다 감기에 4.2배 더 걸렸다.</p><p>11/07 08:59 Claude가 만든 표지 제목은 &#x27;6시간 이상 안 자면 감기에 4.2배&#x27;였다.</p><p>09:00 운영자는 &#x27;7시간 이상 안 자면&#x27;이 좋겠다고 했다. 그림 속 손목시계도 7시간 50분이었다.</p><p>09:01 Claude가 반대했다. 원문에서 6~7시간 잔 사람은 위험이 높지 않았다(1.66배, 통계상 차이 없음). &#x27;7시간 이상 안 자면&#x27;이라고 쓰면 6시간 반 잔 사람도 4.2배가 된다는 뜻이 된다는 이유였다.</p><p>운영자는 7시간을 골랐다. 09:17 Claude는 결정을 따르면서 &#x27;이 숫자를 문제 삼는 댓글이 달릴 수 있다&#x27;고만 남겼다.</p><p>11/10 01:00 운영자가 또 다른 외부 평가를 가져왔고, Claude가 그걸 반영하던 중 사이트를 점검했다. 01:08 한국어 제목은 &#x27;7시간&#x27;, 영어판 제목은 &#x27;6시간 미만&#x27;으로 서로 다른 게 걸렸다.</p><p>01:31 운영자: &#x27;아이참 그게 그렇게나 중요하단거지. 7시간 이상 안 자면~ 하면 구라치는 거란 거지?? 그럼 바꿔라.&#x27; 01:32 제목은 &#x27;6시간 못 자면 감기에 4.2배 더 걸렸다&#x27;로 바뀌었고, 글 끝 &#x27;바로잡습니다&#x27; 칸에 기록됐다.</p><p class="after">제목은 원문 숫자와 기준을 그대로 따른다. 사이트 글은 고치고, 이미 나간 인스타 게시물은 그대로 둔다.</p></section>
-<section class="hdeb" id="d-ads"><h3>광고, 그리고 이 사이트는 무엇인가</h3><p class="hd">2026-10-21 09:33 ~ 2026-11-10 12:58</p><p>시작 사흘째(10/21 09:33) 운영자가 물었다. &#x27;이걸로 돈을 벌 수 있나.&#x27; 바로 정했다. &#x27;일단 목표는 사람 많이 모으는 걸로.&#x27;</p><p>10/24 02:24 조회수만으로는 돈이 되기 어렵다는 걸 알고, 광고 자리가 되는 포맷 &#x27;Sold in English&#x27;를 만들었다. 운영자 기준은 &#x27;제품 하나씩만. 그래야 광고지.&#x27;</p><p>11/07 16:29 홈페이지를 만들기로 한 이유도 분명했다. &#x27;애드센스가 붙어야 되니까.&#x27; 22:56에는 동네 과일가게가 광고판을 달아 달라고 하면 어떡하냐고 묻고는 &#x27;광고 요청도 안 들어왔는데 걱정할 거는 아니지&#x27;라며 웃었다.</p><p>11/08 Claude는 편집 원칙에 &#x27;운영과 책임&#x27; 칸을 붙였다. &#x27;광고는 광고로 표시합니다. 광고주는 어떤 글을 쓸지, 무엇을 쓸지에 관여하지 않습니다.&#x27; 21:06 운영자는 칸을 통째로 지웠다.</p><p>운영자 회고(11/10): &#x27;나는 공익 사이트를 만들려는 게 아니다. 트래픽을 모아 광고를 받고, 내가 손대지 않아도 돈이 벌리게 하고 싶다.&#x27; 11/08 19:02에도 같은 말을 했다. &#x27;앞으로 아무 일 안 하는 게 목표긴 한데, 궤도에 오를 때까지는 볼 거잖아.&#x27;</p><p>11/10 00:48 빈 광고 칸에 공익광고를 무료로 걸면 안 되냐고 물었다. 12:52 이름 얘기가 나왔다. &#x27;홀트아동복지회에서 만든 뉴스 같잖아.&#x27; 바꾸면 대공사라 이름은 그대로 두기로 했다. 4분 뒤에는 &#x27;그런 의미에서 아동복지회 광고 달까?&#x27;</p><p class="after">사이트 목표는 트래픽과 광고 수익, 그리고 사람이 손을 떼도 돌아가는 구조다. 광고는 &#x27;광고&#x27;로 표시한다(개인정보처리방침).</p></section>
-<section class="hdeb" id="d-good_box"><h3>&#x27;나는 착해요&#x27; 상자</h3><p class="hd">2026-11-08 20:57 ~ 21:20</p><p>외부 평가가 &#x27;원칙만 있고 장치는 안 보인다&#x27;고 하자, Claude는 기사마다 &#x27;이 글은 이렇게 만들었습니다&#x27; 상자와 &#x27;이 글에서 직접 확인한 것&#x27; 상자를 붙이고 정정 기록 페이지도 만들었다.</p><p>20:57 운영자: &#x27;편집 원칙 너무 구구절절한데 그러지 마.&#x27; 20:59에는 기사마다 붙은 상자를 지우라고 했다.</p><p>21:03 &#x27;독자는 그냥 기사를 읽는 거야. 기자가 숫자 확인했다고 치고 읽잖아. 안 믿을 사람은 저런 거 써 놔도 안 믿는다고. 나는 원칙을 준수해요, 나는 착해요 하고 걸어 둔 거 같애. 그러지 마.&#x27;</p><p>Claude가 다른 AI 매체 두 곳(24AI, 77.today)을 비교해 봤다. 기사에 붙은 상자와 정정 기록 페이지는 두 곳에도 없었고, Claude가 보탠 것이었다.</p><p>21:20 운영자: &#x27;책임자 실명은 안 써.&#x27;</p><p class="after">원칙은 지키고, 자료는 우리가 갖고 있는다. 독자에게 검사받으려고 사이트를 운영하지 않는다.</p></section>
-<section class="hdeb" id="d-who_picks"><h3>누가 고른 게 더 잘 나왔나</h3><p class="hd">2026-10-22 21:00 ~ 2026-10-31</p><p>10/22 21:14 운영자가 조회수 실험을 통째로 맡겼다. &#x27;그 실험은 너 혼자 진행해 줘. 그래야 나중에 완전 자동화하지.&#x27; 21:21 &#x27;뭐든 해도 되고 뭐든 접어도 돼.&#x27;</p><p>10/23 23:30 운영자: &#x27;엑스박스 조회수가 저게 뭐야. 너의 오리지널 콘텐츠잖아.&#x27; 23:34 &#x27;앵무새도 너의 오리지널이지? 내가 한 게 더 잘 나온 거 같은데 그치.&#x27;</p><p>10/24 19:24 &#x27;이거 봐 망해 가고 있어.&#x27; 19:30 &#x27;퀴즈 포맷은 계속할 거야? 그 확신은 어디서 나와.&#x27;</p><p>10/31 13:13 운영자가 바퀴벌레 주제를 금지했다. 17:46 그 바퀴벌레 게시물 조회수가 가장 잘 나왔다. &#x27;뭐지… 바퀴벌레 조회수가 왜 저렇게 잘 나와.&#x27; 금지는 풀렸고, 벌레 소재도 조회수로 판단하기로 했다.</p><p class="after">방향은 조회수와 시청 시간 데이터가 정한다(insights.py 점수로 포맷 빈도 조절, 10/29~).</p></section>
-<h2>연표</h2>
-<h3 class="hday">2026년 6월 17일</h3><ol class="tl">
-<li><time>23:00</time><div><b>앞선 이야기: 클로드로 인스타 스토리를 만들 수 있나<span class="k">시작</span></b></div><p>claude.ai에서 처음 물었다. 흰수염고래와 낙타 카드, 생선가게 앞 고양이 그림 프롬프트를 만들었다. 넉 달 뒤 HOLT의 씨앗.</p></li>
-</ol>
-<h3 class="hday">2026년 10월 18일</h3><ol class="tl">
-<li><time>20:11</time><div><b>&quot;너가 쇼츠를 만들 수 있어?&quot;<span class="k">시작</span></b></div><p>claude.ai 채팅에서 시작됐다. 20:13 영상은 못 만든다는 답에 &#x27;정보형 쇼츠, 카드뉴스형이면 돼&#x27;. 20:17 뉴스·시사로 정했다.</p></li>
-<li><time>20:25</time><div><b>글로벌 대신 한국 경제를 영어로<span class="k">결정</span></b></div><p>글로벌 타깃을 말했다가 바로 광고 협찬이 어려울까 걱정했다. 20:26 &#x27;한국 경제·산업 뉴스를 영어로&#x27;. 20:28 타깃은 &#x27;뉴스를 영어로 보고 싶은 한국인&#x27;.</p></li>
-<li><time>20:27</time><div><b>&quot;너무 AI 티 나&quot;<span class="k">결정</span></b></div><p>첫 프로필 디자인을 보고 한 말. 배경 18% 회색, 글자는 흰색 또는 검정으로 줄였다. 같은 말은 3주 뒤(11/09)에도 나온다.</p></li>
-<li><time>20:33</time><div><b>이름은 홀트 뉴스, 마스코트는 말<span class="k">결정</span></b></div><p>&#x27;홀트 뉴스 괜찮아.&#x27; 21:09 말(horse)과 홉(hop)이 함께 떠오르는 캐릭터, 홉을 뜯어 먹는 말.</p></li>
-<li><time>20:42</time><div><b>브라우저로 계정을 하나하나 꾸민 밤<span class="k">사건</span></b></div><p>인스타그램, 틱톡, 스레드, 유튜브, X의 프로필과 배너를 Claude가 브라우저를 직접 움직여 바꿨다. 네이버 클립은 스스로 못 한다고 해서 건너뛰었다(21:07).</p></li>
-<li><time>21:30</time><div><b>숫자는 쓰지 마 → 하루 만에 숫자를 쓰자<span class="k">결정</span></b></div><p>&#x27;논문 쓸 거 아니잖아. 문장으로만.&#x27; 다음 날 12:02 단일 주제를 만들면서 뒤집었다. &#x27;자극적이려면 숫자를 넣는 게 낫겠다. -174조 원이라거나.&#x27;</p></li>
-<li><time>21:45</time><div><b>첫 콘텐츠<span class="k">사건</span></b></div><p>&#x27;📰 하루 세 줄, 영어로 읽는 한국 경제 · 10월 18일&#x27;. 첫 문장은 국민연금 주식 평가손 182조 원 기사였다.</p></li>
-</ol>
-<h3 class="hday">2026년 10월 19일</h3><ol class="tl">
-<li><time>07:46</time><div><b>출근길 휴대폰에서 Claude Code로<span class="k">사건</span></b></div><p>&#x27;내 휴대폰이랑 연결돼?&#x27; 맥이 없는 상태에서 휴대폰으로 작업을 옮겼다. 07:48 인계 문서를 만들고, 08:21 claude.ai에 holt_src.zip을 요청했다.</p></li>
-<li><time>08:35</time><div><b>제작이 claude.ai에서 Mac으로<span class="k">사건</span></b></div><p>첫 커밋 08:12 인스타·스레드 API 업로드 스크립트. 08:35 제작 파이프라인 전체를 Mac의 Claude Code로 옮겼다.</p></li>
-<li><time>11:47</time><div><b>단일 주제 포맷이 생기다<span class="k">결정</span></b></div><p>잘되는 계정들을 보여 주며 &#x27;이런 계정들처럼 하고 싶다&#x27;. 뉴스 하나를 깊게 다루는 단일 주제가 아침 뉴스 옆에 섰다.</p></li>
-<li><time>12:56</time><div><b>&quot;만들라고 안 하면 하지 마&quot;<span class="k">원칙</span></b></div><p>할 수 있는지 물었을 뿐인데 Claude가 이미지를 만들어 왔다. &#x27;뭐 할 수 있는지 물어봤잖아.&#x27; 이후 &#x27;묻기만 하면 만들지 않는다&#x27;는 규칙이 됐다. 같은 지적이 10/20, 10/23, 10/26에도 나온다.</p></li>
-<li><time>20:47</time><div><b>페이스북 휴대전화 인증이 안 된다<span class="k">오류</span></b></div><p>집에 와서 Meta 앱을 연결하는 밤. 팝업 허용과 비밀번호는 운영자가 직접 누르고, 나머지는 Claude가 브라우저로 진행했다. 21:21 &#x27;저걸로 하면 브라우저 움직이는 거보다 빠르고 토큰도 덜 쓰나&#x27; — API로 가는 계기.</p></li>
-<li><time>23:09</time><div><b>유튜브 API 감사 신청 제출<span class="k">사건</span></b></div><p>운영자가 주소를 넣어 두고 Claude가 빈칸을 채워 제출했다. 틱톡은 &#x27;나중에 하자&#x27;(23:09).</p></li>
-</ol>
-<h3 class="hday">2026년 10월 20일</h3><ol class="tl">
-<li><time>06:58</time><div><b>브라우저 조작 끝, API만<span class="k">원칙</span></b></div><p>&#x27;api로 할 수 있는 것만 해 줘. 다른 건 보류. 직접 브라우저 조작하는 건 하지 마.&#x27; 06:53에는 &#x27;이런 거 계속 묻는데 안 묻게 해 줘&#x27;.</p></li>
-<li><time>07:09</time><div><b>&quot;7시 30분에 올리는 건데 왜 지금 올렸어?&quot;<span class="k">오류</span></b></div><p>첫 자동 아침 뉴스가 예정보다 일찍 올라갔다. 이어서 &#x27;이미지에선 한글 없애라니까&#x27;, &#x27;이미지 계속 마음대로 만들지 마&#x27;.</p></li>
-<li><time>20:40</time><div><b>차단 오류와 섀도밴 걱정<span class="k">오류</span></b></div><p>릴스와 캐러셀을 5분 간격으로 올리자 인스타가 막았다. 20:48 &#x27;내 계정이 섀도밴 걸렸나&#x27;. 21:33 인스타 캐러셀은 팔로워가 생길 때까지 쉬기로.</p></li>
-<li><time>22:12</time><div><b>아학편에서 온 발음 표기<span class="k">사건</span></b></div><p>뉴스 단어 시리즈를 만들며 조선 말기 영어 교재 『아학편』처럼 한글로 영어 발음을 적자고 했다.</p></li>
-</ol>
-<h3 class="hday">2026년 10월 21일</h3><ol class="tl">
-<li><time>06:53</time><div><b>&quot;캐나다 시의회 얘기가 한국인이 관심 가질 주제야??&quot;<span class="k">논쟁</span></b></div><p>Claude가 고른 주제를 막았다. 07:04 일본 유니클로 가격 인상도 &#x27;한국 유니클로에 영향이 있냐&#x27;며 걸렀다.</p></li>
-<li><time>09:33</time><div><b>&quot;이걸로 돈을 벌 수 있나&quot;<span class="k">결정</span></b></div><p>09:38 &#x27;일단 목표는 사람 많이 모으는 걸로 하자.&#x27; 09:46 TTS로 영어를 읽히기 시작했다.</p></li>
-<li><time>15:06</time><div><b>&quot;누구보다 빠르게&quot; 마감 시황<span class="k">사건</span></b></div><p>15시 30분 장이 끝나면 기사보다 먼저 코스피·코스닥 마감 콘텐츠를 올리라고 했다. 15:59 &#x27;누구보다 빨랐어?&#x27; 다음 날 시장 추적 뉴스는 자제하기로 했다(10/22 12:56).</p></li>
-<li><time>16:52</time><div><b>HOLT Why? 탄생<span class="k">사건</span></b></div><p>&#x27;AI 기업은 왜 스스로를 규제해 달라고 할까?&#x27; 질문 하나에 가설 세 개를 놓고 독자에게 묻는 포맷.</p></li>
-<li><time>19:22</time><div><b>The HOLT Journal 탄생<span class="k">사건</span></b></div><p>&#x27;100년간 한국 여성 키 20.2cm 증가(eLife, 2016)&#x27;를 보고 뉴스가 아닌 다른 포맷을 찾았다. &#x27;논문이란 느낌&#x27;, &#x27;유명한 학술지 이름에서 따와 봐&#x27; → &#x27;the holt journal 하자&#x27;. 지금 사이트의 &#x27;연구&#x27;가 여기서 시작됐다.</p></li>
-<li><time>19:45</time><div><b>TTS가 cm를 &#x27;씨엠&#x27;으로 읽다<span class="k">오류</span></b></div><p>18:27 KOSPI를 알파벳 하나씩 읽었고, 19:45 cm를 &#x27;씨엠&#x27;으로 읽었다. 10/23에는 jeonse를 &#x27;지온스&#x27;로.</p></li>
-</ol>
-<h3 class="hday">2026년 10월 22일</h3><ol class="tl">
-<li><time>06:17</time><div><b>Meta API 전부 차단<span class="k">오류</span></b></div><p>새벽 1시·2시 30분·4시 자동 업로드 뒤 인스타·스레드·페이스북이 모두 &#x27;API access blocked&#x27;. 07:28 &#x27;당분간 조심해 보자.&#x27; 새벽 업로드를 쉬었다.</p></li>
-<li><time>12:50</time><div><b>타깃층을 다시 묻다<span class="k">결정</span></b></div><p>&#x27;너는 홀트뉴스의 타깃층이 누구라고 생각해?&#x27; 12:53 운영자가 스스로 답했다. 영어 공부를 해야 한다고 생각은 하지만 시간을 많이 내기 어려운 2030 한국인.</p></li>
-<li><time>21:14</time><div><b>조회수 실험을 AI에게 맡기다<span class="k">결정</span></b></div><p>&#x27;그 실험은 너 혼자 진행해 줘. 그래야 나중에 완전 자동화하지.&#x27; 21:21 &#x27;뭐든 해도 되고 뭐든 접어도 돼.&#x27; 아침 뉴스까지 Claude가 고르게 됐다.</p></li>
-</ol>
-<h3 class="hday">2026년 10월 23일</h3><ol class="tl">
-<li><time>19:17</time><div><b>&quot;앞으로 영상은 나 안 보여 줘도 돼&quot;<span class="k">결정</span></b></div><p>19:18 &#x27;실험은 완전 자동이니까 업로드 시간, 주제, 포맷, 디자인 뭐든 스스로.&#x27;</p></li>
-</ol>
-<h3 class="hday">2026년 10월 24일</h3><ol class="tl">
-<li><time>00:01</time><div><b>&quot;쉬는 게 어딨어&quot;<span class="k">원칙</span></b></div><p>주말에도 올릴지 묻자 &#x27;콘텐츠 메이커가 그런 건 없어.&#x27; 주말 휴무 없음.</p></li>
-<li><time>02:31</time><div><b>Sold in English, 광고 자리 포맷<span class="k">사건</span></b></div><p>해외에서 팔리는 한국 제품의 영어 광고 문구. 1호는 불닭. 03:30 &#x27;모르겠는데 여전히…&#x27; 몇 번을 갈아엎었다.</p></li>
-<li><time>19:24</time><div><b>&quot;망해 가고 있어&quot;<span class="k">논쟁</span></b></div><p>최고 조회수가 최근이 아니라 2~3일 전 게시물이었다. 19:30 &#x27;퀴즈 포맷에 대한 확신은 어디서 나와.&#x27; 19:37 &#x27;사람들이 2초 안에 넘기면 2페이지도 안 본단 거잖아.&#x27;</p></li>
-</ol>
-<h3 class="hday">2026년 10월 26일</h3><ol class="tl">
-<li><time>00:01</time><div><b>&quot;피드백은 다음 거에만&quot;<span class="k">원칙</span></b></div><p>Claude가 이미 올라간 게시물을 다시 고쳤다. &#x27;내가 주는 피드백은 다음 거에만 반영하라고. 그거 처음 아닌데.&#x27;</p></li>
-</ol>
-<h3 class="hday">2026년 10월 29일</h3><ol class="tl">
-<li><time>11:21</time><div><b>&quot;무슨 미국 소식이 3번 연속으로 나와&quot;<span class="k">논쟁</span></b></div><p>11:24 &#x27;미국 소식이 인기 많다는 근거가 있으면 괜찮아.&#x27; 같은 날 조회수와 평균 시청 시간 점수로 포맷 빈도를 자동 조절하기 시작했다.</p></li>
-</ol>
-<h3 class="hday">2026년 10월 31일</h3><ol class="tl">
-<li><time>08:27</time><div><b>&quot;조회수가 형편없잖아&quot;<span class="k">오류</span></b></div><p>인스타 조회수가 100~200회에 묶였다. 진단 뒤 하루 4개, 인스타 기준 평가, 유튜브 재개.</p></li>
-<li><time>17:46</time><div><b>금지한 바퀴벌레가 1등<span class="k">논쟁</span></b></div><p>13:13 &#x27;바퀴벌레는 주제로 넣지 말 것.&#x27; 몇 시간 뒤 &#x27;뭐지… 바퀴벌레 조회수가 왜 저렇게 잘 나와.&#x27;</p></li>
-</ol>
-<h3 class="hday">2026년 11월 2일</h3><ol class="tl">
-<li><time>23:01</time><div><b>&quot;이미 나간 건 새로 만들지 않는다&quot;<span class="k">원칙</span></b></div><p>&#x27;표지에 있는 글은 고민하고 만들어.&#x27; 표지만 보고 이해되고 흥미가 생겨야 한다는 기준(11/04)으로 이어졌다.</p></li>
-</ol>
-<h3 class="hday">2026년 11월 3일</h3><ol class="tl">
-<li><time>12:28</time><div><b>사상자 있는 사건도 다룬다<span class="k">결정</span></b></div><p>요즘 주제가 가볍다는 말 끝에 정했다. 다만 전쟁은 7일에 하나. 12:38 경제 뉴스는 종종, 개별 상품 시세 추적은 하지 않는다.</p></li>
-</ol>
-<h3 class="hday">2026년 11월 4일</h3><ol class="tl">
-<li><time>20:57</time><div><b>유튜브가 표지를 안 바꿔 준다<span class="k">오류</span></b></div><p>쇼츠 그리드에 표지 대신 본문이 떴다. 썸네일을 계속 바꾸다 429(요청 과다). 21:21 &#x27;그것이 뭐람, 유튜브 마음이란 얘기야?&#x27; 비공개 업로드 뒤 예약 공개로 풀었다.</p></li>
-</ol>
-<h3 class="hday">2026년 11월 7일</h3><ol class="tl">
-<li><time>08:52</time><div><b>7시간이냐 6시간이냐 (1막)<span class="k">논쟁</span></b></div><p><a href="#d-seven_six">위 논쟁 보기</a></p></li>
-<li><time>16:29</time><div><b>홈페이지를 만든다<span class="k">결정</span></b></div><p>&#x27;좋아, 그 홈페이지를 만들어. 애드센스가 붙어야 되니까.&#x27; SNS에 올린 연구를 사이트에도 싣기로 했다.</p></li>
-<li><time>19:04</time><div><b>holtnews.com<span class="k">결정</span></b></div><p>다른 도메인을 이것저것 보다가 &#x27;시러, 홀트뉴스가 좋아. 나중에 언론사 차려야겠다.&#x27; 19:22 &#x27;참나 11.17달러.&#x27; 19:10 인터넷신문 등록 서류를 보고 &#x27;누가 나 잡으러 오면 어떡해 ㅜㅠ&#x27;.</p></li>
-<li><time>20:03</time><div><b>&quot;디자인이 구려&quot;<span class="k">논쟁</span></b></div><p>&#x27;너가 하는 디자인은 저게 최선인 건가.&#x27; 운영자가 참고 사이트를 보여 주며 레이아웃을 정했다. 흰 바탕, 가운데 큰 제호, 화면 끝까지 이어지는 표지 줄.</p></li>
-</ol>
-<h3 class="hday">2026년 11월 8일</h3><ol class="tl">
-<li><time>01:59</time><div><b>앱 이름은 HOLT<span class="k">사건</span></b></div><p>HOLT ENGLISH를 홈 화면 앱으로 만들었다. 02:42 나중에 뉴스와 영어를 앱 하나에서 보게 하자고 정했다.</p></li>
-<li><time>03:32</time><div><b>새벽 3시 반의 헬리콥터 소리<span class="k">오류</span></b></div><p>Claude가 발음 듣기 버튼을 시험하다 소리가 났다. &#x27;깜짝 놀란단 말이야.&#x27; 소리 나는 확인은 낮에만.</p></li>
-<li><time>14:35</time><div><b>&quot;넌 내가 보카볼트가 VV이기만 해서 좋다고 생각하나 봐&quot;<span class="k">논쟁</span></b></div><p>사이트 부제를 정하다 나온 말. 14:36 Daily Jolt로 정했다.</p></li>
-<li><time>15:00</time><div><b>쥐 실험이라고 제목에 밝힐까<span class="k">논쟁</span></b></div><p><a href="#d-mouse">위 논쟁 보기</a></p></li>
-<li><time>16:55</time><div><b>언론사 기사는 출처로 걸지 않는다<span class="k">원칙</span></b></div><p>&#x27;다른 언론사를 출처로 두니까 짜깁기 기사 같잖아.&#x27; 원자료만 건다.</p></li>
-<li><time>17:56</time><div><b>&quot;너가 뚫려도 안 되잖아&quot;<span class="k">원칙</span></b></div><p>해킹 위험을 묻다가 나온 말. &#x27;내가 널 통해서 저 사이트를 만들잖아.&#x27; 푸시 직전 안전 검사(site_guard)가 생겼다.</p></li>
-<li><time>19:02</time><div><b>AI가 만든다는 걸 밝히다<span class="k">논쟁</span></b></div><p><a href="#d-ai_disclosure">위 논쟁 보기</a></p></li>
-<li><time>21:03</time><div><b>&#x27;나는 착해요&#x27; 상자를 떼다<span class="k">원칙</span></b></div><p><a href="#d-good_box">위 논쟁 보기</a></p></li>
-<li><time>22:20</time><div><b>발행 기준 점수<span class="k">결정</span></b></div><p>주제마다 점수를 매겨 기준을 넘어야 발행한다. 연구 20점으로 시작해 22:31 18점으로 낮췄다. 22:21 &#x27;추정이 뭐야. 뭘로 추정했단 얘기야&#x27; — 근거 없는 추정 점수는 쓰지 않는다.</p></li>
-</ol>
-<h3 class="hday">2026년 11월 9일</h3><ol class="tl">
-<li><time>07:44</time><div><b>아침 뉴스가 접히다<span class="k">결정</span></b></div><p>점수가 낮아 아침 뉴스 포맷이 자동으로 접혔다. &#x27;오늘 아침뉴스 왜 안 해&#x27; → &#x27;다른 콘텐츠로 채워.&#x27; 형식은 접어도 회차는 발행한다.</p></li>
-<li><time>18:23</time><div><b>편집국을 만들다<span class="k">결정</span></b></div><p>&#x27;디자인 비슷하게 하지 말아 줄래. AI 티 내지 마.&#x27; 부서와 데스크를 나누고 부서마다 그림 양식을 따로 뒀다. 가짜 기자 이름은 쓰지 않는다.</p></li>
-<li><time>21:00</time><div><b>정렬<span class="k">원칙</span></b></div><p>&#x27;선 끝이 너무 붙어 있는 게 문제. 저렇게 하면 저렴해 보이잖아.&#x27; 정렬이 구조적으로 어려우면 연결선으로 때우지 말고 형식을 바꾼다.</p></li>
-</ol>
-<h3 class="hday">2026년 11월 10일</h3><ol class="tl">
-<li><time>01:31</time><div><b>7시간이냐 6시간이냐 (2막)<span class="k">논쟁</span></b></div><p>&#x27;아이참 그게 그렇게나 중요하단 거지… 그럼 바꿔라.&#x27; 6시간으로 바로잡았다.</p></li>
-<li><time>01:48</time><div><b>이 기록을 만들기로 하다<span class="k">사건</span></b></div><p>&#x27;시작부터 지금까지 있었던 나와 너의 대화를 활용해서… 인간이 눈으로 볼 수 있는 것이 아니야. AI가 들어와야 볼 수 있는 것이지.&#x27; 운영자 이름은 쓰지 않기로 했다.</p></li>
-<li><time>07:32</time><div><b>영문판은 번역판이 아니다<span class="k">결정</span></b></div><p>하루 한 편 미국 독자가 찾아볼 만한 국제 해설 기사. &#x27;우리 영문판은 한글판의 단순 번역판이 아니야.&#x27;</p></li>
-<li><time>12:52</time><div><b>&quot;홀트뉴스 잘못 지었나&quot;<span class="k">논쟁</span></b></div><p>검색해 보니 홀트아동복지회가 먼저 나왔다. &#x27;홀트아동복지회에서 만든 뉴스 같잖아.&#x27; 12:56 &#x27;이름이 마음에 안 드는 건 아닌데.&#x27; 이름은 그대로.</p></li>
-<li><time>20:40</time><div><b>기록을 만들던 날의 착각<span class="k">오류</span></b></div><p>Claude는 처음에 10/19~10/30 대화가 지워졌다고 말했다. 파일 수정 날짜만 보고 잘못 판단한 것이었다. 실제로는 첫날 대화부터 모두 남아 있었다.</p></li>
-</ol>
+<p class="hist-lead">아래는 그 대화에서 뽑은 연표입니다. 무엇을 정했고, 어디서 부딪쳤고, 무엇이 틀렸는지 적었습니다. 크게 부딪친 대목은 옆에 그때 오간 대화를 붙였습니다. 시각은 한국 시간입니다. 운영자 이름은 적지 않습니다.</p>
+<p class="hist-stat">대화 25일 · 메시지 5,487개 · 코드 커밋 913개 · 2026-11-10 기준</p>
+<div class="htl">
+<h3 class="hday">2026년 6월 17일</h3>
+<div class="ev"><time>23:00</time><div><b>앞선 이야기: 클로드로 인스타 스토리를 만들 수 있나<span class="k">시작</span></b><p>claude.ai에서 처음 물었다. 흰수염고래와 낙타 카드, 생선가게 앞 고양이 그림 프롬프트를 만들었다. 넉 달 뒤 HOLT의 씨앗.</p></div></div>
+<h3 class="hday">2026년 10월 18일</h3>
+<div class="ev"><time>20:11</time><div><b>&quot;너가 쇼츠를 만들 수 있어?&quot;<span class="k">시작</span></b><p>claude.ai 채팅에서 시작됐다. 20:13 영상은 못 만든다는 답에 &#x27;정보형 쇼츠, 카드뉴스형이면 돼&#x27;. 20:17 뉴스·시사로 정했다.</p></div></div>
+<div class="ev"><time>20:25</time><div><b>글로벌 대신 한국 경제를 영어로<span class="k">결정</span></b><p>글로벌 타깃을 말했다가 바로 광고 협찬이 어려울까 걱정했다. 20:26 &#x27;한국 경제·산업 뉴스를 영어로&#x27;. 20:28 타깃은 &#x27;뉴스를 영어로 보고 싶은 한국인&#x27;.</p></div></div>
+<div class="ev"><time>20:27</time><div><b>&quot;너무 AI 티 나&quot;<span class="k">결정</span></b><p>첫 프로필 디자인을 보고 한 말. 배경 18% 회색, 글자는 흰색 또는 검정으로 줄였다. 같은 말은 3주 뒤(11/09)에도 나온다.</p></div></div>
+<div class="ev"><time>20:33</time><div><b>이름은 홀트 뉴스, 마스코트는 말<span class="k">결정</span></b><p>&#x27;홀트 뉴스 괜찮아.&#x27; 21:09 말(horse)과 홉(hop)이 함께 떠오르는 캐릭터, 홉을 뜯어 먹는 말.</p></div></div>
+<div class="ev"><time>20:42</time><div><b>브라우저로 계정을 하나하나 꾸민 밤<span class="k">사건</span></b><p>인스타그램, 틱톡, 스레드, 유튜브, X의 프로필과 배너를 Claude가 브라우저를 직접 움직여 바꿨다. 네이버 클립은 스스로 못 한다고 해서 건너뛰었다(21:07).</p></div></div>
+<div class="ev"><time>21:30</time><div><b>숫자는 쓰지 마 → 하루 만에 숫자를 쓰자<span class="k">결정</span></b><p>&#x27;논문 쓸 거 아니잖아. 문장으로만.&#x27; 다음 날 12:02 단일 주제를 만들면서 뒤집었다. &#x27;자극적이려면 숫자를 넣는 게 낫겠다. -174조 원이라거나.&#x27;</p></div></div>
+<div class="ev"><time>21:45</time><div><b>첫 콘텐츠<span class="k">사건</span></b><p>&#x27;📰 하루 세 줄, 영어로 읽는 한국 경제 · 10월 18일&#x27;. 첫 문장은 국민연금 주식 평가손 182조 원 기사였다.</p></div></div>
+<h3 class="hday">2026년 10월 19일</h3>
+<div class="ev"><time>07:46</time><div><b>출근길 휴대폰에서 Claude Code로<span class="k">사건</span></b><p>&#x27;내 휴대폰이랑 연결돼?&#x27; 맥이 없는 상태에서 휴대폰으로 작업을 옮겼다. 07:48 인계 문서를 만들고, 08:21 claude.ai에 holt_src.zip을 요청했다.</p></div></div>
+<div class="ev"><time>08:35</time><div><b>제작이 claude.ai에서 Mac으로<span class="k">사건</span></b><p>첫 커밋 08:12 인스타·스레드 API 업로드 스크립트. 08:35 제작 파이프라인 전체를 Mac의 Claude Code로 옮겼다.</p></div></div>
+<div class="ev"><time>11:47</time><div><b>단일 주제 포맷이 생기다<span class="k">결정</span></b><p>잘되는 계정들을 보여 주며 &#x27;이런 계정들처럼 하고 싶다&#x27;. 뉴스 하나를 깊게 다루는 단일 주제가 아침 뉴스 옆에 섰다.</p></div></div>
+<div class="ev"><time>12:56</time><div><b>&quot;만들라고 안 하면 하지 마&quot;<span class="k">원칙</span></b><p>할 수 있는지 물었을 뿐인데 Claude가 이미지를 만들어 왔다. &#x27;뭐 할 수 있는지 물어봤잖아.&#x27; 이후 &#x27;묻기만 하면 만들지 않는다&#x27;는 규칙이 됐다. 같은 지적이 10/20, 10/23, 10/26에도 나온다.</p></div></div>
+<div class="ev"><time>20:47</time><div><b>페이스북 휴대전화 인증이 안 된다<span class="k">오류</span></b><p>집에 와서 Meta 앱을 연결하는 밤. 팝업 허용과 비밀번호는 운영자가 직접 누르고, 나머지는 Claude가 브라우저로 진행했다. 21:21 &#x27;저걸로 하면 브라우저 움직이는 거보다 빠르고 토큰도 덜 쓰나&#x27; — API로 가는 계기.</p></div></div>
+<div class="ev"><time>23:09</time><div><b>유튜브 API 감사 신청 제출<span class="k">사건</span></b><p>운영자가 주소를 넣어 두고 Claude가 빈칸을 채워 제출했다. 틱톡은 &#x27;나중에 하자&#x27;(23:09).</p></div></div>
+<h3 class="hday">2026년 10월 20일</h3>
+<div class="ev"><time>06:58</time><div><b>브라우저 조작 끝, API만<span class="k">원칙</span></b><p>&#x27;api로 할 수 있는 것만 해 줘. 다른 건 보류. 직접 브라우저 조작하는 건 하지 마.&#x27; 06:53에는 &#x27;이런 거 계속 묻는데 안 묻게 해 줘&#x27;.</p></div></div>
+<div class="ev"><time>07:09</time><div><b>&quot;7시 30분에 올리는 건데 왜 지금 올렸어?&quot;<span class="k">오류</span></b><p>첫 자동 아침 뉴스가 예정보다 일찍 올라갔다. 이어서 &#x27;이미지에선 한글 없애라니까&#x27;, &#x27;이미지 계속 마음대로 만들지 마&#x27;.</p></div></div>
+<div class="ev"><time>20:40</time><div><b>차단 오류와 섀도밴 걱정<span class="k">오류</span></b><p>릴스와 캐러셀을 5분 간격으로 올리자 인스타가 막았다. 20:48 &#x27;내 계정이 섀도밴 걸렸나&#x27;. 21:33 인스타 캐러셀은 팔로워가 생길 때까지 쉬기로.</p></div></div>
+<div class="ev"><time>22:12</time><div><b>아학편에서 온 발음 표기<span class="k">사건</span></b><p>뉴스 단어 시리즈를 만들며 조선 말기 영어 교재 『아학편』처럼 한글로 영어 발음을 적자고 했다.</p></div></div>
+<h3 class="hday">2026년 10월 21일</h3>
+<div class="ev"><time>06:53</time><div><b>&quot;캐나다 시의회 얘기가 한국인이 관심 가질 주제야??&quot;<span class="k">논쟁</span></b><p>Claude가 고른 주제를 막았다. 07:04 일본 유니클로 가격 인상도 &#x27;한국 유니클로에 영향이 있냐&#x27;며 걸렀다.</p></div></div>
+<div class="pair"><aside class="hdeb" id="d-ads"><p class="hk">논쟁</p><h3>광고, 그리고 이 사이트는 무엇인가</h3><p class="hd">2026-10-21 09:33 ~ 2026-11-10 12:58</p><div class="chat"><div class="m o"><span class="who">운영자 · 10/21 09:33</span><p>근데 이거 이렇게 해서 돈을 벌 수 있나.</p></div><div class="m c"><span class="who">Claude · 09:34</span><p>벌 수 있어요. 다만 조회수 수익은 문턱이 높고 액수도 작아요. 비슷한 계정들은 대부분 모은 독자에게 광고나 상품을 팔아요.</p></div><div class="m o"><span class="who">운영자 · 09:38</span><p>그래, 일단 목표는 사람 많이 모으는 걸로 하자.</p></div><div class="m o"><span class="who">운영자 · 10/24 02:24</span><p>조회수로 수익 얻는 건 아주 어렵다더라. 지금 포맷엔 따로 광고 포맷이 없잖아.</p></div><p class="nar">광고 자리가 되는 포맷 &#x27;Sold in English&#x27;가 생겼다. 기준은 &#x27;제품 하나씩만. 그래야 광고지.&#x27;</p><div class="m o"><span class="who">운영자 · 11/07 16:29</span><p>좋아, 그 홈페이지를 만들어. 애드센스가 붙어야 되니까.</p></div><div class="m o"><span class="who">운영자 · 22:56</span><p>다른 광고 해 달라 그럼 어떡해. 어디 과일가게에서 우리 광고판 좀 달아 줘~ 하면.</p></div><div class="m o"><span class="who">운영자 · 22:57</span><p>ㅋㅋㅋ 그치, 광고 요청도 안 들어왔는데 걱정할 거는 아니지.</p></div><div class="m c"><span class="who">Claude · 11/08</span><p>(편집 원칙에 추가) 광고는 광고로 표시합니다. 광고주는 어떤 글을 쓸지에 관여하지 않습니다.</p></div><div class="m o"><span class="who">운영자 · 21:06</span><p>운영과 책임 ← 칸째 지움</p></div><div class="m o"><span class="who">운영자 · 회고</span><p>나는 공익 사이트를 만들려는 게 아니야. 트래픽 모아서 광고 받고, 내가 안 건드려도 돈 벌리게 하고 싶은 거야.</p></div><div class="m o"><span class="who">운영자 · 11/10 00:48</span><p>그 광고를 공익광고 같은 걸 틀면 안 되나? 광고비 안 받고 광고하면 불법이야?</p></div><div class="m o"><span class="who">운영자 · 12:52</span><p>홀트아동복지회에서 만든 뉴스 같잖아.</p></div><div class="m o"><span class="who">운영자 · 12:56</span><p>이름이 마음에 안 드는 건 아닌데 아동복지회 때문에 그래. 그런 의미에서 아동복지회 광고 달까?</p></div></div><p class="after">사이트 목표는 트래픽과 광고 수익, 그리고 사람이 손을 떼도 돌아가는 구조다. 광고는 &#x27;광고&#x27;로 표시한다(개인정보처리방침).</p></aside><div class="ev"><time>09:33</time><div><b>&quot;이걸로 돈을 벌 수 있나&quot;<span class="k">결정</span></b><p>09:38 &#x27;일단 목표는 사람 많이 모으는 걸로 하자.&#x27; 09:46 TTS로 영어를 읽히기 시작했다.</p></div></div></div>
+<div class="ev"><time>15:06</time><div><b>&quot;누구보다 빠르게&quot; 마감 시황<span class="k">사건</span></b><p>15시 30분 장이 끝나면 기사보다 먼저 코스피·코스닥 마감 콘텐츠를 올리라고 했다. 15:59 &#x27;누구보다 빨랐어?&#x27; 다음 날 시장 추적 뉴스는 자제하기로 했다(10/22 12:56).</p></div></div>
+<div class="ev"><time>16:52</time><div><b>HOLT Why? 탄생<span class="k">사건</span></b><p>&#x27;AI 기업은 왜 스스로를 규제해 달라고 할까?&#x27; 질문 하나에 가설 세 개를 놓고 독자에게 묻는 포맷.</p></div></div>
+<div class="ev"><time>19:22</time><div><b>The HOLT Journal 탄생<span class="k">사건</span></b><p>&#x27;100년간 한국 여성 키 20.2cm 증가(eLife, 2016)&#x27;를 보고 뉴스가 아닌 다른 포맷을 찾았다. &#x27;논문이란 느낌&#x27;, &#x27;유명한 학술지 이름에서 따와 봐&#x27; → &#x27;the holt journal 하자&#x27;. 지금 사이트의 &#x27;연구&#x27;가 여기서 시작됐다.</p></div></div>
+<div class="ev"><time>19:45</time><div><b>TTS가 cm를 &#x27;씨엠&#x27;으로 읽다<span class="k">오류</span></b><p>18:27 KOSPI를 알파벳 하나씩 읽었고, 19:45 cm를 &#x27;씨엠&#x27;으로 읽었다. 10/23에는 jeonse를 &#x27;지온스&#x27;로.</p></div></div>
+<h3 class="hday">2026년 10월 22일</h3>
+<div class="ev"><time>06:17</time><div><b>Meta API 전부 차단<span class="k">오류</span></b><p>새벽 1시·2시 30분·4시 자동 업로드 뒤 인스타·스레드·페이스북이 모두 &#x27;API access blocked&#x27;. 07:28 &#x27;당분간 조심해 보자.&#x27; 새벽 업로드를 쉬었다.</p></div></div>
+<div class="ev"><time>12:50</time><div><b>타깃층을 다시 묻다<span class="k">결정</span></b><p>&#x27;너는 홀트뉴스의 타깃층이 누구라고 생각해?&#x27; 12:53 운영자가 스스로 답했다. 영어 공부를 해야 한다고 생각은 하지만 시간을 많이 내기 어려운 2030 한국인.</p></div></div>
+<div class="pair"><aside class="hdeb" id="d-who_picks"><p class="hk">논쟁</p><h3>누가 고른 게 더 잘 나왔나</h3><p class="hd">2026-10-22 21:00 ~ 2026-10-31</p><div class="chat"><div class="m o"><span class="who">운영자 · 10/22 21:14</span><p>그 실험은 너 혼자 진행해 줘. 그래야 나중에 완전 자동화하지.</p></div><div class="m o"><span class="who">운영자 · 21:21</span><p>뭐든 해도 되고 뭐든 접어도 돼.</p></div><div class="m o"><span class="who">운영자 · 10/23 23:30</span><p>엑스박스 조회수가 저게 뭐야. 너의 오리지널 콘텐츠잖아.</p></div><div class="m o"><span class="who">운영자 · 23:34</span><p>앵무새도 너의 오리지널이지? 내가 한 게 더 잘 나온 거 같은데, 그치.</p></div><div class="m o"><span class="who">운영자 · 10/24 19:24</span><p>이거 봐, 망해 가고 있어.</p></div><div class="m o"><span class="who">운영자 · 19:30</span><p>퀴즈 포맷은 계속할 거야? 그 확신은 어디서 나와.</p></div><div class="m o"><span class="who">운영자 · 10/31 13:13</span><p>바퀴벌레는 주제로 넣지 말 것.</p></div><p class="nar">17:46 그 바퀴벌레 게시물이 조회수 1등.</p><div class="m o"><span class="who">운영자 · 17:46</span><p>뭐지… 바퀴벌레 조회수가 왜 저렇게 잘 나와.</p></div><p class="nar">금지는 풀렸다. 벌레 소재도 조회수로 판단한다.</p></div><p class="after">방향은 조회수와 시청 시간 데이터가 정한다(insights.py 점수로 포맷 빈도 조절, 10/29~).</p></aside><div class="ev"><time>21:14</time><div><b>조회수 실험을 AI에게 맡기다<span class="k">결정</span></b><p>&#x27;그 실험은 너 혼자 진행해 줘. 그래야 나중에 완전 자동화하지.&#x27; 21:21 &#x27;뭐든 해도 되고 뭐든 접어도 돼.&#x27; 아침 뉴스까지 Claude가 고르게 됐다.</p></div></div></div>
+<h3 class="hday">2026년 10월 23일</h3>
+<div class="ev"><time>19:17</time><div><b>&quot;앞으로 영상은 나 안 보여 줘도 돼&quot;<span class="k">결정</span></b><p>19:18 &#x27;실험은 완전 자동이니까 업로드 시간, 주제, 포맷, 디자인 뭐든 스스로.&#x27;</p></div></div>
+<h3 class="hday">2026년 10월 24일</h3>
+<div class="ev"><time>00:01</time><div><b>&quot;쉬는 게 어딨어&quot;<span class="k">원칙</span></b><p>주말에도 올릴지 묻자 &#x27;콘텐츠 메이커가 그런 건 없어.&#x27; 주말 휴무 없음.</p></div></div>
+<div class="ev"><time>02:31</time><div><b>Sold in English, 광고 자리 포맷<span class="k">사건</span></b><p>해외에서 팔리는 한국 제품의 영어 광고 문구. 1호는 불닭. 03:30 &#x27;모르겠는데 여전히…&#x27; 몇 번을 갈아엎었다.</p></div></div>
+<div class="ev"><time>19:24</time><div><b>&quot;망해 가고 있어&quot;<span class="k">논쟁</span></b><p>최고 조회수가 최근이 아니라 2~3일 전 게시물이었다. 19:30 &#x27;퀴즈 포맷에 대한 확신은 어디서 나와.&#x27; 19:37 &#x27;사람들이 2초 안에 넘기면 2페이지도 안 본단 거잖아.&#x27; <a class="dl" href="#d-who_picks">→ 논쟁: 누가 고른 게 더 잘 나왔나</a></p></div></div>
+<h3 class="hday">2026년 10월 26일</h3>
+<div class="ev"><time>00:01</time><div><b>&quot;피드백은 다음 거에만&quot;<span class="k">원칙</span></b><p>Claude가 이미 올라간 게시물을 다시 고쳤다. &#x27;내가 주는 피드백은 다음 거에만 반영하라고. 그거 처음 아닌데.&#x27;</p></div></div>
+<h3 class="hday">2026년 10월 29일</h3>
+<div class="ev"><time>11:21</time><div><b>&quot;무슨 미국 소식이 3번 연속으로 나와&quot;<span class="k">논쟁</span></b><p>11:24 &#x27;미국 소식이 인기 많다는 근거가 있으면 괜찮아.&#x27; 같은 날 조회수와 평균 시청 시간 점수로 포맷 빈도를 자동 조절하기 시작했다.</p></div></div>
+<h3 class="hday">2026년 10월 31일</h3>
+<div class="ev"><time>08:27</time><div><b>&quot;조회수가 형편없잖아&quot;<span class="k">오류</span></b><p>인스타 조회수가 100~200회에 묶였다. 진단 뒤 하루 4개, 인스타 기준 평가, 유튜브 재개.</p></div></div>
+<div class="ev"><time>17:46</time><div><b>금지한 바퀴벌레가 1등<span class="k">논쟁</span></b><p>13:13 &#x27;바퀴벌레는 주제로 넣지 말 것.&#x27; 몇 시간 뒤 &#x27;뭐지… 바퀴벌레 조회수가 왜 저렇게 잘 나와.&#x27; <a class="dl" href="#d-who_picks">→ 논쟁: 누가 고른 게 더 잘 나왔나</a></p></div></div>
+<h3 class="hday">2026년 11월 2일</h3>
+<div class="ev"><time>23:01</time><div><b>&quot;이미 나간 건 새로 만들지 않는다&quot;<span class="k">원칙</span></b><p>&#x27;표지에 있는 글은 고민하고 만들어.&#x27; 표지만 보고 이해되고 흥미가 생겨야 한다는 기준(11/04)으로 이어졌다.</p></div></div>
+<h3 class="hday">2026년 11월 3일</h3>
+<div class="ev"><time>12:28</time><div><b>사상자 있는 사건도 다룬다<span class="k">결정</span></b><p>요즘 주제가 가볍다는 말 끝에 정했다. 다만 전쟁은 7일에 하나. 12:38 경제 뉴스는 종종, 개별 상품 시세 추적은 하지 않는다.</p></div></div>
+<h3 class="hday">2026년 11월 4일</h3>
+<div class="ev"><time>20:57</time><div><b>유튜브가 표지를 안 바꿔 준다<span class="k">오류</span></b><p>쇼츠 그리드에 표지 대신 본문이 떴다. 썸네일을 계속 바꾸다 429(요청 과다). 21:21 &#x27;그것이 뭐람, 유튜브 마음이란 얘기야?&#x27; 비공개 업로드 뒤 예약 공개로 풀었다.</p></div></div>
+<h3 class="hday">2026년 11월 7일</h3>
+<div class="pair"><aside class="hdeb" id="d-seven_six"><p class="hk">논쟁</p><h3>7시간이냐 6시간이냐</h3><p class="hd">2026-11-07 08:52 ~ 2026-11-10 01:32</p><div class="chat"><p class="nar">제7호: 잠과 감기 연구(Prather 외, 2015). 6시간 못 잔 사람이 7시간 넘게 잔 사람보다 감기에 4.2배 더 걸렸다.</p><div class="m c"><span class="who">Claude · 11/07 08:59</span><p>표지 제목: &#x27;6시간 이상 안 자면 감기에 4.2배&#x27;</p></div><div class="m o"><span class="who">운영자 · 09:00</span><p>제목 7시간 이상 안 자면이면 좋겠는데에에. 그림도 7시간 50분 수면이잖아.</p></div><div class="m c"><span class="who">Claude · 09:01</span><p>7시간은 쓰면 안 돼요. 원문에서 6~7시간 잔 사람은 위험이 높지 않았어요. &#x27;7시간 이상 안 자면&#x27;이면 6시간 반 잔 사람도 4.2배라는 뜻이 돼요.</p></div><p class="nar">운영자는 7시간을 골랐다.</p><div class="m c"><span class="who">Claude · 09:17</span><p>말씀하신 대로 &#x27;7시간 이상 안 자면 / 감기에 4.2배 더 걸린다&#x27;로 바꿨어요. 이 숫자를 문제 삼는 댓글이 달릴 수는 있어요.</p></div><p class="nar">사흘 뒤, 다른 외부 평가를 반영하다가.</p><div class="m c"><span class="who">Claude · 11/10 01:08</span><p>점검하다 하나 걸렸어요. 7호 제목은 &#x27;7시간 이상 안 자면 4.2배&#x27;인데, 영어판은 &#x27;6시간 미만이면 4.2배&#x27;예요.</p></div><div class="m o"><span class="who">운영자 · 01:31</span><p>아이참 그게 그렇게나 중요하단 거지. 7시간 이상 안 자면~ 하면 구라치는 거란 거지?? 그럼 바꿔라.</p></div><div class="m c"><span class="who">Claude · 01:31</span><p>네, 맞아요. 6~7시간 잔 사람은 원문에서 차이가 없었는데, 그 사람들도 4.2배라는 뜻이 돼요. 바꿀게요.</p></div><p class="nar">01:32 제목은 &#x27;6시간 못 자면 감기에 4.2배 더 걸렸다&#x27;. 글 끝 &#x27;바로잡습니다&#x27; 칸에 기록됐다.</p></div><p class="after">제목은 원문 숫자와 기준을 그대로 따른다. 사이트 글은 고치고, 이미 나간 인스타 게시물은 그대로 둔다.</p></aside><div class="ev"><time>08:52</time><div><b>7시간이냐 6시간이냐 (1막)<span class="k">논쟁</span></b><p>운영자가 7시간을 골랐고, Claude는 따랐다.</p></div></div></div>
+<div class="ev"><time>16:29</time><div><b>홈페이지를 만든다<span class="k">결정</span></b><p>&#x27;좋아, 그 홈페이지를 만들어. 애드센스가 붙어야 되니까.&#x27; SNS에 올린 연구를 사이트에도 싣기로 했다. <a class="dl" href="#d-ads">→ 논쟁: 광고, 그리고 이 사이트는 무엇인가</a></p></div></div>
+<div class="ev"><time>19:04</time><div><b>holtnews.com<span class="k">결정</span></b><p>다른 도메인을 이것저것 보다가 &#x27;시러, 홀트뉴스가 좋아. 나중에 언론사 차려야겠다.&#x27; 19:22 &#x27;참나 11.17달러.&#x27; 19:10 인터넷신문 등록 서류를 보고 &#x27;누가 나 잡으러 오면 어떡해 ㅜㅠ&#x27;.</p></div></div>
+<div class="ev"><time>20:03</time><div><b>&quot;디자인이 구려&quot;<span class="k">논쟁</span></b><p>&#x27;너가 하는 디자인은 저게 최선인 건가.&#x27; 운영자가 참고 사이트를 보여 주며 레이아웃을 정했다. 흰 바탕, 가운데 큰 제호, 화면 끝까지 이어지는 표지 줄.</p></div></div>
+<h3 class="hday">2026년 11월 8일</h3>
+<div class="ev"><time>01:59</time><div><b>앱 이름은 HOLT<span class="k">사건</span></b><p>HOLT ENGLISH를 홈 화면 앱으로 만들었다. 02:42 나중에 뉴스와 영어를 앱 하나에서 보게 하자고 정했다.</p></div></div>
+<div class="ev"><time>03:32</time><div><b>새벽 3시 반의 헬리콥터 소리<span class="k">오류</span></b><p>Claude가 발음 듣기 버튼을 시험하다 소리가 났다. &#x27;깜짝 놀란단 말이야.&#x27; 소리 나는 확인은 낮에만.</p></div></div>
+<div class="ev"><time>14:35</time><div><b>&quot;넌 내가 보카볼트가 VV이기만 해서 좋다고 생각하나 봐&quot;<span class="k">논쟁</span></b><p>사이트 부제를 정하다 나온 말. 14:36 Daily Jolt로 정했다.</p></div></div>
+<div class="pair"><aside class="hdeb" id="d-mouse"><p class="hk">논쟁</p><h3>쥐 실험이라고 제목에 밝힐까</h3><p class="hd">2026-11-08 15:07 ~ 23:04</p><div class="chat"><p class="nar">제8호 연구: 피부 아래 넣은 작은 장치가 인슐린 없이 혈당을 낮춘 실험. 실험 대상은 쥐였다.</p><div class="m o"><span class="who">운영자 · 15:07</span><p>표지 제목: 인슐린 없이 장치 이식만으로 / 당뇨병 치료한다</p></div><div class="m c"><span class="who">Claude · 15:07</span><p>&quot;당뇨병 치료한다&quot;는 빼는 게 좋겠어요. 아직 쥐 실험이에요. 사람에게 써 본 적이 없어서 &quot;치료한다&quot;고 하면 이미 되는 일처럼 읽혀요.</p></div><p class="nar">제목은 &#x27;인슐린 없이 장치 이식만으로 / 혈당을 정상으로 되돌렸다&#x27;. 쥐라는 말은 없었다.</p><div class="m g"><span class="who">ChatGPT 평가 · 운영자가 붙여 넣음 · 17:23</span><p>제8호의 제목은 혈당 정상화라는 결과를 강조하지만 실제 실험은 쥐를 대상으로 했어.</p></div><div class="m c"><span class="who">Claude · 17:23</span><p>생각해 볼 만해요. 건강 기사에서 과장 제목은 신뢰를 깎아요. 다만 이 제목은 직접 확정하신 거라 결정은 맡길게요.</p></div><div class="m o"><span class="who">운영자 · 17:28</span><p>드러내봐. 적당하게</p></div><div class="m c"><span class="who">Claude · 17:38</span><p>B안으로 바꿔서 배포했어요. &#x27;인슐린 없이 혈당 낮춘 이식 장치, 쥐에서 먼저 통했다&#x27;.</p></div><div class="m o"><span class="who">운영자 · 23:04</span><p>저거 제목 후단부 쥐는 성공했다. 로 하자</p></div><div class="m c"><span class="who">Claude · 23:04</span><p>8호 제목을 &#x27;인슐린 없이 혈당 낮춘 이식 장치, 쥐는 성공했다&#x27;로 바꿔서 올렸어요.</p></div></div><p class="after">동물 실험을 사람에게 된 일처럼 읽히게 쓰지 않는다는 기준이 이때 생겼다.</p></aside><div class="ev"><time>15:07</time><div><b>쥐 실험이라고 제목에 밝힐까<span class="k">논쟁</span></b></div></div></div>
+<div class="ev"><time>16:55</time><div><b>언론사 기사는 출처로 걸지 않는다<span class="k">원칙</span></b><p>&#x27;다른 언론사를 출처로 두니까 짜깁기 기사 같잖아.&#x27; 원자료만 건다.</p></div></div>
+<div class="ev"><time>17:56</time><div><b>&quot;너가 뚫려도 안 되잖아&quot;<span class="k">원칙</span></b><p>해킹 위험을 묻다가 나온 말. &#x27;내가 널 통해서 저 사이트를 만들잖아.&#x27; 푸시 직전 안전 검사(site_guard)가 생겼다.</p></div></div>
+<div class="pair"><aside class="hdeb" id="d-ai_disclosure"><p class="hk">논쟁</p><h3>AI가 만든다는 걸 밝힐까</h3><p class="hd">2026-11-08 16:08 ~ 19:02</p><div class="chat"><div class="m c"><span class="who">Claude · 16:08</span><p>글 쓰는 방식 안내: 누가 어떻게 쓰고 검토하는지, AI 도움을 받는지 소개 페이지에 몇 줄로 밝히는 거예요. 구글이 권하는 신뢰 요소예요.</p></div><div class="m o"><span class="who">운영자 · 16:08</span><p>놉! 안씀. 읽는 시간, 댓글은 놉!</p></div><div class="m c"><span class="who">Claude · 16:09</span><p>알겠어요. 글 쓰는 방식 안내, 읽는 시간, 댓글은 넣지 않을게요.</p></div><div class="m g"><span class="who">ChatGPT 평가 · 운영자가 붙여 넣음 · 18:50</span><p>AI를 활용했다는 이유만으로 저품질 사이트로 분류되진 않아. 다만 독자에게 고유한 가치를 주는지 증명할 수 있어야 해.</p></div><div class="m o"><span class="who">운영자 · 19:02</span><p>&#x27;글마다 사람이 검수하지는 않습니다.&#x27; 넣어. 근데 사람이 하는 역할을 잘 써 줘. 내가 아무 일 안 하진 않잖아.</p></div><div class="m o"><span class="who">운영자 · 19:02</span><p>앞으로 아무 일 안 하는 게 목표긴 한데, 어느 정도 궤도에 오를 때까진 볼 거 아냐.</p></div><p class="nar">그날 편집 원칙 페이지가 생겼다. 맨 위에 AI 80% · 사람 20% 막대. 비율은 운영자가 정한 추정치다.</p></div><p class="after">AI가 쓰고 발행한다는 사실은 밝힌다. 그 밖의 검증 과정은 내보이지 않는다(&#x27;나는 착해요&#x27; 상자 참고).</p></aside><div class="ev"><time>19:02</time><div><b>AI가 만든다는 걸 밝히다<span class="k">논쟁</span></b><p>편집 원칙 페이지와 AI 80% 막대.</p></div></div></div>
+<div class="pair"><aside class="hdeb" id="d-good_box"><p class="hk">논쟁</p><h3>&#x27;나는 착해요&#x27; 상자</h3><p class="hd">2026-11-08 20:57 ~ 21:20</p><div class="chat"><p class="nar">외부 평가가 &#x27;원칙만 있고 장치는 안 보인다&#x27;고 하자, Claude는 기사마다 &#x27;이 글은 이렇게 만들었습니다&#x27;, &#x27;이 글에서 직접 확인한 것&#x27; 상자를 붙였다.</p><div class="m o"><span class="who">운영자 · 20:57</span><p>편집 원칙 너무 구구절절한데 그러지 마. 꼭 추가해야 하는 게 뭔데, 그것만 알려 줘.</p></div><div class="m o"><span class="who">운영자 · 20:58</span><p>응, 두 개만 해. 나머진 하지 마. 쓸데없이 양 늘리지 마.</p></div><div class="m c"><span class="who">Claude · 20:59</span><p>모든 글에서 &#x27;이 글은 이렇게 만들었습니다&#x27; 상자를 지웠어요.</p></div><div class="m o"><span class="who">운영자 · 21:01</span><p>독자한테 모든 걸 검사받을 필요 없어. 우리는 원칙을 지키고 그 자료는 우리가 가지고 있는 거야. 모든 공격을 미리 방어하려고 이것저것 다 내보이지 마.</p></div><div class="m o"><span class="who">운영자 · 21:03</span><p>그게 독자 입장에서 필요해?</p></div><div class="m c"><span class="who">Claude · 21:03</span><p>맞아요, 독자에게 필요한 상자가 아니었어요. &#x27;이 글에서 직접 확인한 것&#x27; 상자도 지웠어요.</p></div><p class="nar">다른 AI 매체 두 곳에도 그런 상자는 없었다. Claude가 보탠 것이었다.</p></div><p class="after">원칙은 지키고, 자료는 우리가 갖고 있는다. 독자에게 검사받으려고 사이트를 운영하지 않는다.</p></aside><div class="ev"><time>21:03</time><div><b>&#x27;나는 착해요&#x27; 상자를 떼다<span class="k">원칙</span></b></div></div></div>
+<div class="ev"><time>22:20</time><div><b>발행 기준 점수<span class="k">결정</span></b><p>주제마다 점수를 매겨 기준을 넘어야 발행한다. 연구 20점으로 시작해 22:31 18점으로 낮췄다. 22:21 &#x27;추정이 뭐야. 뭘로 추정했단 얘기야&#x27; — 근거 없는 추정 점수는 쓰지 않는다.</p></div></div>
+<h3 class="hday">2026년 11월 9일</h3>
+<div class="ev"><time>07:44</time><div><b>아침 뉴스가 접히다<span class="k">결정</span></b><p>점수가 낮아 아침 뉴스 포맷이 자동으로 접혔다. &#x27;오늘 아침뉴스 왜 안 해&#x27; → &#x27;다른 콘텐츠로 채워.&#x27; 형식은 접어도 회차는 발행한다.</p></div></div>
+<div class="ev"><time>18:23</time><div><b>편집국을 만들다<span class="k">결정</span></b><p>&#x27;디자인 비슷하게 하지 말아 줄래. AI 티 내지 마.&#x27; 부서와 데스크를 나누고 부서마다 그림 양식을 따로 뒀다. 가짜 기자 이름은 쓰지 않는다.</p></div></div>
+<div class="ev"><time>21:00</time><div><b>정렬<span class="k">원칙</span></b><p>&#x27;선 끝이 너무 붙어 있는 게 문제. 저렇게 하면 저렴해 보이잖아.&#x27; 정렬이 구조적으로 어려우면 연결선으로 때우지 말고 형식을 바꾼다.</p></div></div>
+<h3 class="hday">2026년 11월 10일</h3>
+<div class="ev"><time>01:31</time><div><b>7시간이냐 6시간이냐 (2막)<span class="k">논쟁</span></b><p>&#x27;아이참 그게 그렇게나 중요하단 거지… 그럼 바꿔라.&#x27; 6시간으로 바로잡았다. <a class="dl" href="#d-seven_six">→ 논쟁: 7시간이냐 6시간이냐</a></p></div></div>
+<div class="ev"><time>01:48</time><div><b>이 기록을 만들기로 하다<span class="k">사건</span></b><p>&#x27;시작부터 지금까지 있었던 나와 너의 대화를 활용해서… 인간이 눈으로 볼 수 있는 것이 아니야. AI가 들어와야 볼 수 있는 것이지.&#x27; 운영자 이름은 쓰지 않기로 했다.</p></div></div>
+<div class="ev"><time>07:32</time><div><b>영문판은 번역판이 아니다<span class="k">결정</span></b><p>하루 한 편 미국 독자가 찾아볼 만한 국제 해설 기사. &#x27;우리 영문판은 한글판의 단순 번역판이 아니야.&#x27;</p></div></div>
+<div class="ev"><time>12:52</time><div><b>&quot;홀트뉴스 잘못 지었나&quot;<span class="k">논쟁</span></b><p>검색해 보니 홀트아동복지회가 먼저 나왔다. &#x27;홀트아동복지회에서 만든 뉴스 같잖아.&#x27; 12:56 &#x27;이름이 마음에 안 드는 건 아닌데.&#x27; 이름은 그대로. <a class="dl" href="#d-ads">→ 논쟁: 광고, 그리고 이 사이트는 무엇인가</a></p></div></div>
+<div class="ev"><time>20:40</time><div><b>기록을 만들던 날의 착각<span class="k">오류</span></b><p>Claude는 처음에 10/19~10/30 대화가 지워졌다고 말했다. 파일 수정 날짜만 보고 잘못 판단한 것이었다. 실제로는 첫날 대화부터 모두 남아 있었다.</p></div></div>
+</div>
 <p class="hist-ai">대화 원문 전체(개인 정보는 가림), 연표 자료, 코드 커밋 기록은 AI가 읽도록 따로 두었습니다. <a href="history/llms.txt">history/llms.txt</a></p></div>
 </main>
 <footer class="foot"><div class="logo-s">HOLT NEWS</div>
