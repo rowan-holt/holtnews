@@ -940,3 +940,8 @@
 2026-11-11 00:23  feat(holt): HOLT NEWS 영어판 기사 표현을 HOLT ENGLISH로 — site_vocab/*.json, 새벽 예약 작업이 하루 3편씩
 2026-11-11 00:26  feat(holt): 같은 기사면 인스타·HOLT NEWS 링크 둘 다, 첫 표본(height_century·pay_300_half)
 2026-11-11 00:30  fix(holt): HOLT ENGLISH 라벨 '연구 해설에 나온 문장' → '연구에 나온 문장'
+2026-11-11 00:33  fix(holt): HOLT NEWS 뉴스 기사 표현 라벨 '뉴스에 나온 문장'
+2026-11-11 00:34  fix(holtnews): 공연·전시·축제 지역마다 20개 담기 — 자정 지나 하루짜리 공연 빠지면 서울 2장만 남던 문제
+2026-11-11 00:35  feat(holt): HOLT NEWS 표현 쪽에 '무슨 뉴스/연구였나요' — 영어 원문 문장 + 정확한 해석 짝, 뉴스 라벨 통일
+2026-11-11 00:43  feat(holt): HOLT ENGLISH 모든 쪽 같은 순서 — 뉴스/연구에 나온 문장 → 무슨 뉴스/연구 → 알아 두면 좋은 표현 → 퀴즈, 따로 만든 예문 칸 제거, HOLT NEWS 소개는 3~4문장
+2026-11-11 00:57  feat(holt): 댓글 응대 — 글자 없는 댓글은 💕, 말 있는 댓글은 대화 대기열(pending/reply/skip), 이어지는 대화·예전 💕만 단 댓글 포함, comment_voice.md
