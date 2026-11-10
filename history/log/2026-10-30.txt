@@ -2,21 +2,21 @@
 
 === 대화 Claude Code 세션 dca8ca51 ===
 [06:04] 예약 작업: [예약 작업 holt-morning-auto 실행 — 정해 둔 지시문으로 자동 시작]
-[06:05] Claude: 아침 뉴스는 접히지 않음(active) 확인했고, 지금 오늘 뉴스 3개를 찾는 중입니다.
-[06:06] Claude: 후보 압축 중입니다: 1번 수도권 7.7만 가구 공급, 2번 구글(알파벳) 상장 후 최악의 하루, 3번은 아직 탐색 중.
-[06:10] Claude: 아침 뉴스 렌더 완료(카드·캡션 이상 없음). 이제 08:30 단일 주제(구글 최악의 하루)를 만듭니다.
-[06:10] Claude: 카피바라는 어제 단일 주제로 이미 올린 소식이라 3번을 캔자스 입양 재판 소식으로 바꿉니다.
-[06:12] Claude: 표지용 구글 간판 실사(CC BY-SA 4.0) 확보했습니다. 환율 확인 후 단일 주제 원고를 씁니다.
-[06:13] Claude: 단일 주제 카드 렌더 완료, 6장 검토 중입니다.
-[06:14] Claude: 아침 뉴스·단일 주제 둘 다 제작·검토 끝났습니다(캡션 양식 문제 없음). 먼저 커밋해 두고 07:20 재렌더까지 기다립니다.
-[06:14] Claude: 07:20까지 대기 중입니다(그때 날씨로 표지 다시 렌더 → 07:30 업로드).
-[07:20] Claude: Icon changed (code 2 → 1); re-checking cover and first frame.
-[07:20] Claude: Sunny cover looks right. Copying to holt/ and waiting to 07:30.
-[07:30] Claude: IG reel upload running in background; waiting for it.
-[07:34] Claude: 아침 뉴스 업로드 완료(릴스·스레드·스토리). 08:30 단일 주제 업로드까지 대기합니다.
-[07:34] Claude: 단일 주제는 08:30에 자동으로 올라가도록 걸어 두었습니다.
-[08:34] Claude: The glob failure stopped the add; adding the files explicitly.
-[08:34] Claude: 10/30 아침 뉴스와 08:30 단일 주제를 모두 올리고 커밋·푸시까지 마쳤습니다. 페이스북은 368 제한이 아직 안 풀려서 올리지 않았습니다.
+[06:05] AI: 아침 뉴스는 접히지 않음(active) 확인했고, 지금 오늘 뉴스 3개를 찾는 중입니다.
+[06:06] AI: 후보 압축 중입니다: 1번 수도권 7.7만 가구 공급, 2번 구글(알파벳) 상장 후 최악의 하루, 3번은 아직 탐색 중.
+[06:10] AI: 아침 뉴스 렌더 완료(카드·캡션 이상 없음). 이제 08:30 단일 주제(구글 최악의 하루)를 만듭니다.
+[06:10] AI: 카피바라는 어제 단일 주제로 이미 올린 소식이라 3번을 캔자스 입양 재판 소식으로 바꿉니다.
+[06:12] AI: 표지용 구글 간판 실사(CC BY-SA 4.0) 확보했습니다. 환율 확인 후 단일 주제 원고를 씁니다.
+[06:13] AI: 단일 주제 카드 렌더 완료, 6장 검토 중입니다.
+[06:14] AI: 아침 뉴스·단일 주제 둘 다 제작·검토 끝났습니다(캡션 양식 문제 없음). 먼저 커밋해 두고 07:20 재렌더까지 기다립니다.
+[06:14] AI: 07:20까지 대기 중입니다(그때 날씨로 표지 다시 렌더 → 07:30 업로드).
+[07:20] AI: Icon changed (code 2 → 1); re-checking cover and first frame.
+[07:20] AI: Sunny cover looks right. Copying to holt/ and waiting to 07:30.
+[07:30] AI: IG reel upload running in background; waiting for it.
+[07:34] AI: 아침 뉴스 업로드 완료(릴스·스레드·스토리). 08:30 단일 주제 업로드까지 대기합니다.
+[07:34] AI: 단일 주제는 08:30에 자동으로 올라가도록 걸어 두었습니다.
+[08:34] AI: The glob failure stopped the add; adding the files explicitly.
+[08:34] AI: 10/30 아침 뉴스와 08:30 단일 주제를 모두 올리고 커밋·푸시까지 마쳤습니다. 페이스북은 368 제한이 아직 안 풀려서 올리지 않았습니다.
 
 **아침 뉴스 (07:30)**
 - 릴스: https://www.instagram.com/reel/DfGFXT-v151/
@@ -44,20 +44,20 @@
 
 === 대화 Claude Code 세션 e2ce062e ===
 [09:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
-[09:02] Claude: D 유형(내 일이면?)으로 결정하고 주제 찾는 중이에요. 09:56 업로드 목표.
-[09:02] Claude: Disney+ 광고형 요금제(월 7천원) 소식으로 D 유형 만드는 중이에요. 사실 확인 중.
-[09:03] Claude: Disney+ 기사 3곳 교차확인 완료. 표지 그림(광고 나오는 TV + 카드) 새로 그리는 중이에요.
-[09:03] Claude: Now write the scene function and topic file.
-[09:04] Claude: 표지 제목 길이 맞추는 중이에요.
-[09:05] Claude: 표지 그림 다듬는 중(화면 색·카드 위치).
-[09:05] Claude: Cover OK. Checking other cards and caption.
-[09:05] Claude: Quiz blank looks doubled; checking code.
-[09:06] Claude: Reel built (14s). Writing threads.txt and checking frames.
-[09:06] Claude: Korean story card is dense for a 7s scene; trimming and re-rendering.
-[09:06] Claude: FB still restricted → IG reel, Threads, IG story only. Waiting until 09:56.
-[09:26] Claude: Background wait runs until 09:56; I'll upload when it finishes.
-[09:26] Claude: Cards and reel are ready. I'm waiting for the 09:56 upload time and will post to Instagram, Threads and Instagram Story as soon as the wait ends.
-[10:03] Claude: The 10:00 post is up: a "would you watch ads to pay less?" piece on Disney+'s new ad plan, posted to Instagram Reels, Threads and Instagram Story. Facebook was skipped.
+[09:02] AI: D 유형(내 일이면?)으로 결정하고 주제 찾는 중이에요. 09:56 업로드 목표.
+[09:02] AI: Disney+ 광고형 요금제(월 7천원) 소식으로 D 유형 만드는 중이에요. 사실 확인 중.
+[09:03] AI: Disney+ 기사 3곳 교차확인 완료. 표지 그림(광고 나오는 TV + 카드) 새로 그리는 중이에요.
+[09:03] AI: Now write the scene function and topic file.
+[09:04] AI: 표지 제목 길이 맞추는 중이에요.
+[09:05] AI: 표지 그림 다듬는 중(화면 색·카드 위치).
+[09:05] AI: Cover OK. Checking other cards and caption.
+[09:05] AI: Quiz blank looks doubled; checking code.
+[09:06] AI: Reel built (14s). Writing threads.txt and checking frames.
+[09:06] AI: Korean story card is dense for a 7s scene; trimming and re-rendering.
+[09:06] AI: FB still restricted → IG reel, Threads, IG story only. Waiting until 09:56.
+[09:26] AI: Background wait runs until 09:56; I'll upload when it finishes.
+[09:26] AI: Cards and reel are ready. I'm waiting for the 09:56 upload time and will post to Instagram, Threads and Instagram Story as soon as the wait ends.
+[10:03] AI: The 10:00 post is up: a "would you watch ads to pay less?" piece on Disney+'s new ad plan, posted to Instagram Reels, Threads and Instagram Story. Facebook was skipped.
 
 **Slot:** 10-30 10:00 (scheduled 09:56). Instagram Reels went up at 09:56, Threads at about 09:59 and the Instagram Story at about 10:02.
 
@@ -93,17 +93,17 @@ Nothing new to ask you this time.
 
 === 대화 Claude Code 세션 9cdac1ef ===
 [11:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
-[11:02] Claude: I'm reading the remaining rules and today's earlier uploads, then I'll pick a topic.
-[11:03] Claude: Still searching for a non‑US surprising story for the 12:00 slot (due 11:45).
-[11:03] Claude: Topic chosen: Japan's "jiko bukken" (stigmatised homes sold at half price) — non‑US, surprising, Halloween timing. Cross-checking a second source now.
-[11:04] Claude: Photo works (bright old Japanese house, CC BY 2.0). Writing the topic file now.
-[11:05] Claude: Cover lines overflow; shortening them.
-[11:05] Claude: Cards look clean. Fixing one fact ("about half", per BBC) and building the reel.
-[11:06] Claude: Reel frames check out (quiz answer filled, no stray blanks). Checking caption, then waiting for 11:45.
-[11:06] Claude: Everything is ready. Scheduling the upload for 11:45 (Instagram reel → Threads → Instagram story; Facebook skipped per the slot rule).
-[11:06] Claude: The upload is set to start at 11:45. I'll wait for it to finish.
-[11:06] Claude: The upload job will start on its own at 11:45, and I'll get a notice when it finishes. After that I'll record the post and commit.
-[11:52] Claude: **Slot 10‑30 12:00 is done.** Uploads started at 11:45:36, the scheduled time.
+[11:02] AI: I'm reading the remaining rules and today's earlier uploads, then I'll pick a topic.
+[11:03] AI: Still searching for a non‑US surprising story for the 12:00 slot (due 11:45).
+[11:03] AI: Topic chosen: Japan's "jiko bukken" (stigmatised homes sold at half price) — non‑US, surprising, Halloween timing. Cross-checking a second source now.
+[11:04] AI: Photo works (bright old Japanese house, CC BY 2.0). Writing the topic file now.
+[11:05] AI: Cover lines overflow; shortening them.
+[11:05] AI: Cards look clean. Fixing one fact ("about half", per BBC) and building the reel.
+[11:06] AI: Reel frames check out (quiz answer filled, no stray blanks). Checking caption, then waiting for 11:45.
+[11:06] AI: Everything is ready. Scheduling the upload for 11:45 (Instagram reel → Threads → Instagram story; Facebook skipped per the slot rule).
+[11:06] AI: The upload is set to start at 11:45. I'll wait for it to finish.
+[11:06] AI: The upload job will start on its own at 11:45, and I'll get a notice when it finishes. After that I'll record the post and commit.
+[11:52] AI: **Slot 10‑30 12:00 is done.** Uploads started at 11:45:36, the scheduled time.
 
 **Format and topic: news, type A (unusual story with a twist), in Japan.** In Japan, a home where someone died alone or in a sad way is called "사고 물건". These homes sell far below normal prices. Now that housing costs are rising, 54% of people in a 2025 survey said they would live in one if it were cheap.
 - **Why type A instead of the suggested D:** the view-collection script suggested D, but the 10:00 slot was already D (Disney+). I picked A to avoid a repeat. Posts with a surprising twist hold viewers longer: 3.2 seconds on average, versus 2.2 seconds without one.
@@ -129,20 +129,20 @@ Nothing new to ask you this time.
 
 === 대화 Claude Code 세션 16aca83b ===
 [15:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
-[15:02] Claude: 회차는 10/30 16:00(업로드 16:14)이에요. 지시문과 메모리를 다 읽었고, 이제 조회수 수집과 판단을 시작해요.
-[15:03] Claude: 데이터상 C(영어로 하면 틀려요)가 좋고, 오늘 미국 단일은 이미 2개라 미국 말고 다른 나라 소식을 찾고 있어요.
-[15:04] Claude: 주제는 '작년보다 28% 싸진 사과 + 마트 영어로 하면 틀려요'(유형 C, 한국)로 정했어요. 사전 두 곳으로 확인했고, 이제 원고를 써요.
-[15:06] Claude: Halloween's PHRASE has no trailing period, so I'm matching that. Next I render the cards.
-[15:06] Claude: Now look at the cards at small size.
-[15:06] Claude: The cover's bag shadow is too dark and heavy, so I'm lightening it.
-[15:06] Claude: Cover reads well. Now building the reel.
-[15:07] Claude: Frames look right. Writing threads.txt and checking captions.
-[15:07] Claude: Production done; upload is due at 16:14 (about 67 minutes away). Checking the Facebook restriction status first.
-[15:07] Claude: FB still restricted, so I'll post Instagram reel → Threads → Instagram story. Scheduling the upload for 16:14 in the background.
-[15:07] Claude: Meanwhile, I'll commit the code and topic file (upload record follows after posting).
-[15:07] Claude: Waiting for the 16:14 upload to run in the background.
-[15:07] Claude: 업로드는 16:14에 백그라운드에서 돌아갑니다. 끝나면 기록하고 커밋한 뒤 보고할게요.
-[16:21] Claude: **10월 30일 16시 회차를 16:14에 올렸어요.**
+[15:02] AI: 회차는 10/30 16:00(업로드 16:14)이에요. 지시문과 메모리를 다 읽었고, 이제 조회수 수집과 판단을 시작해요.
+[15:03] AI: 데이터상 C(영어로 하면 틀려요)가 좋고, 오늘 미국 단일은 이미 2개라 미국 말고 다른 나라 소식을 찾고 있어요.
+[15:04] AI: 주제는 '작년보다 28% 싸진 사과 + 마트 영어로 하면 틀려요'(유형 C, 한국)로 정했어요. 사전 두 곳으로 확인했고, 이제 원고를 써요.
+[15:06] AI: Halloween's PHRASE has no trailing period, so I'm matching that. Next I render the cards.
+[15:06] AI: Now look at the cards at small size.
+[15:06] AI: The cover's bag shadow is too dark and heavy, so I'm lightening it.
+[15:06] AI: Cover reads well. Now building the reel.
+[15:07] AI: Frames look right. Writing threads.txt and checking captions.
+[15:07] AI: Production done; upload is due at 16:14 (about 67 minutes away). Checking the Facebook restriction status first.
+[15:07] AI: FB still restricted, so I'll post Instagram reel → Threads → Instagram story. Scheduling the upload for 16:14 in the background.
+[15:07] AI: Meanwhile, I'll commit the code and topic file (upload record follows after posting).
+[15:07] AI: Waiting for the 16:14 upload to run in the background.
+[15:07] AI: 업로드는 16:14에 백그라운드에서 돌아갑니다. 끝나면 기록하고 커밋한 뒤 보고할게요.
+[16:21] AI: **10월 30일 16시 회차를 16:14에 올렸어요.**
 
 - **현재 단계:** 1차 목표는 게시물당 조회수 200회와 팔로워 50명이고, 기한은 11/05예요. 지금 팔로워는 22명이에요.
 - **이번 판단:** 스타벅스 곰 컵 게시물(D 유형)이 205회로 목표를 넘어서, 스크립트가 D를 한 번 더 내자고 했어요.
@@ -168,8 +168,8 @@ Nothing new to ask you this time.
 
 === 대화 Claude Code 세션 2800eb71 ===
 [17:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
-[17:06] Claude: 제작과 영상 프레임 확인을 마쳤고, 업로드는 18:00에 맞춰 예약해 두었습니다. 올라가면 기록과 커밋까지 마치고 보고하겠습니다.
-[18:08] Claude: ## HOLT 10-30 18시 회차 보고
+[17:06] AI: 제작과 영상 프레임 확인을 마쳤고, 업로드는 18:00에 맞춰 예약해 두었습니다. 올라가면 기록과 커밋까지 마치고 보고하겠습니다.
+[18:08] AI: ## HOLT 10-30 18시 회차 보고
 
 **회차·업로드:** 10-30 18:00 회차를 due 시각인 18:00에 맞춰 올렸습니다. 인스타 릴스 18:00, 스레드 18:04, 인스타 스토리 18:07입니다.
 
@@ -204,10 +204,10 @@ Nothing new to ask you this time.
 
 === 대화 Claude Code 세션 ed04c2f3 ===
 [19:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
-[19:02] Claude: 20시 회차는 오늘 아직 안 쓴 유형 F로 정했고, 지금 주제 후보의 사실을 확인하고 있어요. 첫 후보는 호주 해변에 밀려온 금속 공 이야기예요.
-[19:04] Claude: 표지 제목 한 줄이 넘쳐서 줄이고, 카드와 릴스를 다시 렌더해 화면을 확인할게요.
-[19:05] Claude: 표지와 영상 확인을 마쳤어요. 19:58 업로드를 예약해 뒀고, 끝나면 기록과 커밋까지 이어서 할게요.
-[20:06] Claude: **20시 회차 업로드를 마쳤어요.** 인스타 릴스는 예정대로 19:58에 올라갔어요.
+[19:02] AI: 20시 회차는 오늘 아직 안 쓴 유형 F로 정했고, 지금 주제 후보의 사실을 확인하고 있어요. 첫 후보는 호주 해변에 밀려온 금속 공 이야기예요.
+[19:04] AI: 표지 제목 한 줄이 넘쳐서 줄이고, 카드와 릴스를 다시 렌더해 화면을 확인할게요.
+[19:05] AI: 표지와 영상 확인을 마쳤어요. 19:58 업로드를 예약해 뒀고, 끝나면 기록과 커밋까지 이어서 할게요.
+[20:06] AI: **20시 회차 업로드를 마쳤어요.** 인스타 릴스는 예정대로 19:58에 올라갔어요.
 
 - **단계:** 2차 목표(조회수 500회·팔로워 200명, 11/30까지)이고, 지금 팔로워는 23명이에요.
 - **이번 판단:** 승급이나 쉼은 없었어요.
@@ -242,10 +242,10 @@ Nothing new to ask you this time.
 
 === 대화 Claude Code 세션 1ddd385f ===
 [21:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
-[21:02] Claude: 22시 회차 주제를 찾는 중이에요. 오늘 특집이 아직 없어서 뉴스 단어 릴스를 유력하게 보고, 쓸 만한 이색 소식을 확인하고 있어요.
-[21:04] Claude: 릴스 렌더가 끝나서 장면별 프레임을 확인하고 있어요.
-[21:04] Claude: 제작과 프레임 확인을 마쳤어요. 21:55에 업로드가 자동으로 시작되니, 끝나면 기록과 커밋을 이어서 할게요.
-[22:02] Claude: **22시 회차 업로드를 끝냈고, 기록도 커밋·푸시했어요.** 오류는 없었어요.
+[21:02] AI: 22시 회차 주제를 찾는 중이에요. 오늘 특집이 아직 없어서 뉴스 단어 릴스를 유력하게 보고, 쓸 만한 이색 소식을 확인하고 있어요.
+[21:04] AI: 릴스 렌더가 끝나서 장면별 프레임을 확인하고 있어요.
+[21:04] AI: 제작과 프레임 확인을 마쳤어요. 21:55에 업로드가 자동으로 시작되니, 끝나면 기록과 커밋을 이어서 할게요.
+[22:02] AI: **22시 회차 업로드를 끝냈고, 기록도 커밋·푸시했어요.** 오류는 없었어요.
 
 - **회차·포맷:** 10-30 22:00 회차, 뉴스 단어 #6 `side hustle`(유형 I)이에요.
 - **고른 이유:** 오늘 앞 회차가 아침 뉴스와 E·D·A·C·E·F로 모두 뉴스여서, 쿼터가 남은 특집으로 골랐어요. `collect_views next`는 C를 냈지만 C는 오늘 16시에 이미 나갔어요. 직전 회차가 문장이어서 이번엔 단어 차례이기도 했어요.
@@ -268,6 +268,6 @@ Nothing new to ask you this time.
 
 === 대화 Claude Code 세션 01776f5b ===
 [23:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
-[23:04] Claude: 표지 사진 후보를 고르고 있습니다.
-[23:06] Claude: 카드와 릴스 렌더는 끝났습니다. 프레임 추출에서 오류가 나서 다시 뽑아 화면을 확인합니다.
-[23:06] Claude: 제작과 영상 프레임 확인을 마쳤습니다. 업로드는 00:01에 시작하도록 예약해 두었고, 끝나면 기록·커밋·보고까지 이어서 진행합니다.
+[23:04] AI: 표지 사진 후보를 고르고 있습니다.
+[23:06] AI: 카드와 릴스 렌더는 끝났습니다. 프레임 추출에서 오류가 나서 다시 뽑아 화면을 확인합니다.
+[23:06] AI: 제작과 영상 프레임 확인을 마쳤습니다. 업로드는 00:01에 시작하도록 예약해 두었고, 끝나면 기록·커밋·보고까지 이어서 진행합니다.

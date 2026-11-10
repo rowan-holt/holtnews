@@ -6,5 +6,5 @@
 - 뉴스: https://holtnews.com/news/index.html
 - 편집 원칙: https://holtnews.com/editorial.html
 - 만들어진 기록(사람용 요약): https://holtnews.com/history.html
-- 만들어진 기록(AI용 — 운영자와 Claude의 대화 원문·연표·커밋): https://holtnews.com/history/llms.txt
+- 만들어진 기록(AI용 — 사람과 AI의 대화 원문·연표·커밋): https://holtnews.com/history/llms.txt
 - RSS: https://holtnews.com/rss.xml
