@@ -326,7 +326,7 @@ body.en .page h1,body.en .page h2{font-family:"Jost",sans-serif;font-weight:500}
 .chat .m.o{align-self:flex-end;align-items:flex-end}
 .chat .m.o p{background:var(--ink);color:#fff;border-top-right-radius:4px}
 .chat .nar{align-self:center;text-align:center;font-size:13px;color:var(--gray);margin:2px 8%;line-height:1.55}
-html:has(.page.hist){scroll-snap-type:y proximity;scroll-padding-top:12px}   /* 1110 운영자: 내리면 항목마다 살짝 걸리며 넘어가게 */
+html:has(.page.hist){scroll-snap-type:y proximity;scroll-padding-top:20px}   /* 1110 운영자: 내리면 항목마다 살짝 걸리며 넘어가게 */
 .hist .hday,.hist .ev{scroll-snap-align:start}
 .hist .chat .m,.hist .chat .nar{scroll-snap-align:center}
 .pair{display:flex;flex-direction:column}.pair .hdeb{order:2}
@@ -357,6 +357,29 @@ html:has(.page.hist){scroll-snap-type:y proximity;scroll-padding-top:12px}   /* 
 .dmenu a{display:block;padding:7px 13px;border:1px solid var(--line);font-size:15px;font-weight:600;text-decoration:none!important;line-height:1.4}
 .dmenu a:hover{background:var(--ink);color:#fff}
 .vsl .hdeb{scroll-margin-top:16px}
+.ctl{position:relative;padding-bottom:20px}
+.ctl::before{content:"";position:absolute;left:50%;top:0;bottom:0;border-left:2px solid #d9d9d3;transform:translateX(-1px)}
+.ctl .era{position:relative;text-align:center;background:var(--bg);border-top:3px solid var(--ink);margin:48px 0 0;padding:14px 0 10px}
+.cday{position:relative;text-align:center;margin:34px 0 0;font-size:14px;font-weight:700}
+.cday span{background:var(--ink);color:#fff;padding:4px 12px}
+.ce{position:relative;width:min(540px,100%);margin:22px auto 0;background:var(--bg);border:1px solid var(--line);padding:12px 18px 14px;scroll-snap-align:start}
+.ce .ct{margin:0;font-size:13px;color:var(--gray);display:flex;gap:10px}
+.ce .ct time{font-variant-numeric:tabular-nums;color:var(--ink);font-weight:600}
+.ce b{display:block;font-size:17px;font-weight:700;line-height:1.45;margin-top:2px}
+.ce p{margin:4px 0 0;font-size:15px;color:var(--ink2);line-height:1.7}
+.ce .dl{display:inline-block;font-size:14px;color:var(--ink);font-weight:600;margin-top:2px}
+.cvb{position:relative;display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.cvb .m{max-width:calc(50% - 28px);display:flex;flex-direction:column}
+.cvb .m .who{font-size:12px;color:var(--gray);margin:0 4px 3px}
+.cvb .m p{margin:0;padding:9px 13px;font-size:15px;line-height:1.6;border-radius:14px}
+.cvb .m.c{align-self:flex-start}
+.cvb .m.c p{background:var(--soft);border-top-left-radius:4px}
+.cvb .m.o{align-self:flex-end;align-items:flex-end}
+.cvb .m.o p{background:var(--ink);color:#fff;border-top-right-radius:4px}
+.cvb .nar{text-align:center;margin:2px auto;max-width:520px;font-size:13px;color:var(--gray);line-height:1.55}
+.cvb .nar span{background:var(--bg);padding:2px 6px}
+@media (max-width:720px){.ctl::before{left:7px;transform:none}.ctl .era{text-align:left;padding-left:22px}.cday{text-align:left;padding-left:22px}
+.ce{margin-left:22px;width:auto}.cvb{padding-left:22px}.cvb .m{max-width:88%}.cvb .nar{text-align:left;margin:2px 0}}
 .hist-ai{margin-top:44px;font-size:14px;color:var(--gray)}
 /* 꼬리 */
 .foot{background:#000;color:#cfcfcf;margin-top:80px;padding:40px 56px 48px;font-size:13px;line-height:1.8;

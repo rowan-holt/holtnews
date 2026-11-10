@@ -2345,3 +2345,5 @@ https://holtnews.com/news/naver_dunamu_merger_review.html — 영문판도 함�
 
 대신 각 논쟁 제목을 메뉴로 달아줘 골라보게 지금은 쭉 내려야하잖아
 [22:22] Claude: '착각' 항목은 다시 넣어서 올렸어요. 이제 사람이 읽는 페이지에서 `insights.py` 같은 파일 이름과 코드 용어를 찾아 쉬운 말로 바꿀게요.
+[22:28] Claude: 옆으로 오는 대화 레이아웃을 만들었는데, 기존 사이트 스타일과 겹쳐서 말풍선이 한쪽에 몰리고 글이 잘려요. 고치는 중이에요.
+[22:28] Claude: Existing `.cc` class (culture cards). Rename mine to `.cv` and `.ce` → check too.
