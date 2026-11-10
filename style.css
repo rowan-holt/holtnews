@@ -23,16 +23,16 @@ border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z
 .panels{display:grid;grid-auto-flow:column;grid-auto-columns:25%;overflow-x:auto;scroll-snap-type:x mandatory;
 scrollbar-width:none}
 .panels::-webkit-scrollbar{display:none}
-.panel{position:relative;display:flex;flex-direction:column;scroll-snap-align:start;background:#faf8f2;
+.panel{position:relative;display:block;aspect-ratio:4/5;overflow:hidden;scroll-snap-align:start;background:#faf8f2;
 border-right:1px solid var(--line)}
-/* 1110 사용자: 제목 글이 표지 그림·그림 속 글을 가림 → 제목은 그림 위에 겹치지 않고 표지 아래 칸에 */
-.panel .ph{display:block;aspect-ratio:4/5;overflow:hidden}
+/* 1110 사용자: 제목을 표지 아래 칸으로 뺐다가 '아까처럼(표지 위에 겹치게)' → 겹치는 방식 유지, 대신 표지 그림 글은 그림 위쪽에 둠 */
+.panel .ph{display:block;width:100%;height:100%}
 .panel img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
 .panel.fig img{object-fit:contain;padding:12% 6%}
 @media (hover:hover){.panel:hover img{transform:scale(1.03)}}   /* 1108: 폰은 누른 뒤 hover가 남아 그 칸만 커져 제호 줄이 어긋남 */
-.panel .cap{display:block;padding:14px 18px 18px;color:var(--ink,#111);font-size:clamp(14px,1.15vw,17px);font-weight:500;
-line-height:1.45;border-top:1px solid var(--line)}
-.panel .cap b{font-weight:500;color:#8a8a8a;margin-right:4px}
+.panel .cap{position:absolute;left:0;right:0;bottom:0;padding:90px 18px 16px;color:#fff;font-size:clamp(14px,1.15vw,17px);font-weight:500;text-shadow:0 1px 2px rgba(0,0,0,.3);
+line-height:1.45;background:linear-gradient(transparent,rgba(0,0,0,.55) 45%,rgba(0,0,0,.85))}
+.panel .cap b{font-weight:500;opacity:.8;margin-right:4px}
 .arrow{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border:0;background:rgba(255,255,255,.88);
 font-size:22px;cursor:pointer;z-index:2;display:flex;align-items:center;justify-content:center;color:#111}
 .arrow.l{left:10px}.arrow.r{right:10px}
@@ -199,7 +199,7 @@ img.logo-img{outline:1px solid #d4d4d4;outline-offset:-1px}   /* 1109: 흰 바�
 /* 1109 사용자: 홈 연구 포스터가 화면 너비 25%라 큰 모니터에서 너무 큼 → 뉴스와 같은 1400px 틀 안에 4장, 칸 사이도 뉴스와 같게 */
 .home-journal .rail{max-width:1400px;margin:0 auto;padding:0 24px;border-bottom:0}
 .home-journal .panels{grid-auto-columns:calc((100% - 84px) / 4);gap:28px}
-.home-journal .panel .cap{font-size:15px;padding:12px 2px 4px;border-top:0}
+.home-journal .panel .cap{font-size:15px;padding:70px 14px 12px}
 .home-journal .arrow.l{left:34px}.home-journal .arrow.r{right:34px}
 @media (max-width:900px){.home-journal .panels{grid-auto-columns:calc((100% - 28px) / 2.3)}}
 @media (max-width:640px){.home-journal .rail{padding:0 16px}.home-journal .panels{grid-auto-columns:62%;gap:12px}}
