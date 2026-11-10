@@ -947,3 +947,10 @@
 2026-11-11 00:57  feat(holt): 댓글 응대 — 글자 없는 댓글은 💕, 말 있는 댓글은 대화 대기열(pending/reply/skip), 이어지는 대화·예전 💕만 단 댓글 포함, comment_voice.md
 2026-11-11 02:46  fix(holt): 사이트 사후 검수 — chronic_care_nationwide
 2026-11-11 04:44  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — hungary_informer_files, korea_only_pricier, chronic_care_nationwide
+2026-11-11 06:48  feat(holt): HOLT ENGLISH 영어·한글 1:1 해석(site_ko.json, 1147문장) + 연구는 논문 원문 문장·표현(site_vocab/paper)
+2026-11-11 06:49  chore(holt): site_guard — 사용자가 허락한 한 번만 HOLT_ALLOW_DELETE로 삭제 한도 올림
+2026-11-11 06:56  fix(holt): HOLT ENGLISH 단어 카드 긴 단어가 칸 넘어가지 않게 하이픈 줄바꿈
+2026-11-11 06:57  fix(holt): HOLT ENGLISH 단어 카드 긴 단어가 칸 넘어가지 않게 하이픈 줄바꿈
+2026-11-11 06:59  fix(holt): HOLT ENGLISH 단어 카드 긴 단어는 칸에 맞게 글자 크기 줄임
+2026-11-11 07:32  fix(holt): HOLT ENGLISH 단어 카드 긴 단어는 뜻 단위 하이픈(over-confidence), 글자 크기 동일
+2026-11-11 07:37  feat(holt): 07:30 후속 — 튀르키예 제철소 폭발 회장 구금(유형 J)
