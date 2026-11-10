@@ -1,0 +1,103 @@
+# 홀트뉴스가 만들어진 기록 — 2026-06-17 대화 원문 (KST)
+
+=== 대화 claude.ai:클로드로 인스타 스토리 컨텐츠 만들기 ===
+[23:00] 운영자: 클로드를 가지고 인스타 스토리용 컨텐츠를 만들수있나 제미나이나 지피티는 그림을 만들어주잖아 클로드는 멀 할수있나
+[23:00] Claude: 클로드가 인스타 스토리 콘텐츠 제작에서 할 수 있는 것과 없는 것 정리해줄게.
+
+---
+
+**못 하는 것**
+
+- 이미지 생성 (텍스트→이미지). 제미나이, GPT-4o처럼 그림 직접 못 만듦
+
+---
+
+**할 수 있는 것**
+
+**1. SVG/HTML 콘텐츠 제작** (지금 이 채팅에서 바로)
+- 텍스트 카드, 타이포그래피 포스터, 인포그래픽
+- 9:16 비율 스토리 레이아웃
+- 애니메이션 효과 포함한 HTML (움직이는 텍스트, 카운트다운 등)
+- 스크린샷 찍어서 그대로 업로드 가능한 수준
+
+**2. 콘텐츠 기획/카피**
+- 캡션, 해시태그, CTA 문구
+- 시리즈 기획, 주제별 콘텐츠 달력
+
+**3. 외부 툴 연동용 프롬프트 제작**
+- 미드저니, DALL-E, Ideogram 등에 넣을 이미지 생성 프롬프트
+- Canva에서 쓸 레이아웃 설계
+
+---
+
+**실질적으로 제일 유용한 건** SVG/HTML 카드 제작이야. [가림:주소] 사진관 프로필 촬영 홍보용 스토리 같은 거 만들어줄 수 있어. 한번 해볼까?
+[23:01] 운영자: 오 뭔가 하나 만들어죠바 흰수염고래랑 낙타를 가지고 만들어줘 스토리 올릴만한거
+[23:01] Claude: 어떤 느낌으로 만들까?
+```
+This block is not supported on your current device yet.
+```
+[23:01] 운영자: 질문: 콘텐츠 방향?
+답변: 감성/미니멀
+
+질문: 텍스트 언어?
+답변: 영어
+[23:02] Claude: 바로 만들어볼게
+```
+This block is not supported on your current device yet.
+```
+
+```
+This block is not supported on your current device yet.
+```
+
+9:16 스토리 비율로 만들었어. 구성은:
+
+- 위: 밤바다 + 흰수염고래 (물보라 포함)
+- 아래: 사막 낙타 + 태양
+- 가운데: "same planet" 태그
+
+스크린샷 찍어서 그대로 올리면 됨. 색감이나 텍스트 내용 바꾸고 싶으면 말해줘.
+[23:16] 운영자: 고양이가 생선가게에서 생선을 물고 걸어오는 모습을 만들어 달라하게 하자 배경은 이탈리아 항구도시야. 근데 배경이 중요한건 아니고 포커스는 고양이랑 고양이 입에 물려있는 생선이야. 갈치로 하자. 이걸 제미나이한테 그려달라할래 고양이는 흰검 고양이
+[23:17] Claude: 지금 이 채팅에서 제미나이한테 직접 요청을 보내는 건 안 돼. 제미나이는 구글 서비스라 클로드가 연결해서 대신 쓸 수 있는 구조가 아니야.
+
+대신 할 수 있는 건 두 가지야:
+
+**1. 프롬프트 작성해줄게 → 네가 직접 붙여넣기**
+- Gemini, DALL-E, Midjourney, Ideogram 어디에 넣을지 말해줘
+- 각 툴마다 잘 먹히는 프롬프트 형식이 달라서 타겟 지정하면 더 정확하게 써줄 수 있음
+
+**2. 클로드가 SVG로 직접 만들기**
+- 사실적인 사진 스타일은 못 하지만, 일러스트/아트 느낌으로는 가능
+- 위에서 만든 것처럼
+
+어디에 넣을 프롬프트 필요해?
+[23:17] 운영자: 당연히 프롬푸트지
+[23:17] Claude: 어디에 넣을 거야?
+```
+This block is not supported on your current device yet.
+```
+[23:17] 운영자: 질문: 어떤 툴에 넣을 프롬프트?
+답변: 제미나이
+[23:17] Claude: A black-and-white cat walks confidently toward the camera, proudly carrying a large silver hairtail fish (갈치/beltfish) crosswise in its mouth. The fish is long, shiny, and metallic — clearly too big for the cat, with the tail dragging slightly. The cat's expression is smug and satisfied.
+
+Sharp focus on the cat and fish. Shallow depth of field. The background is softly blurred — a warm, sun-drenched Italian port town: pastel-colored buildings, fishing boats, cobblestone streets. Golden hour light.
+
+Photorealistic, high detail, natural photography style, eye-level shot.
+
+---
+
+이거 그대로 복붙하면 돼. 포커스 고양이+갈치에 맞추고 배경 흐리게 처리하도록 넣었어. 결과물 어떻게 나오는지 봐봐.
+[23:17] 운영자: 사진비율 인스타 스토리사이즈로 해죠
+[23:17] Claude: 프롬프트 끝에 이거 추가해:
+
+**`Vertical 9:16 aspect ratio, portrait orientation, optimized for Instagram Stories.`**
+
+---
+
+전체 프롬프트:
+
+A black-and-white cat walks confidently toward the camera, proudly carrying a large silver hairtail fish (beltfish) crosswise in its mouth. The fish is long, shiny, and metallic — clearly too big for the cat, with the tail dragging slightly. The cat's expression is smug and satisfied.
+
+Sharp focus on the cat and fish. Shallow depth of field. The background is softly blurred — a warm, sun-drenched Italian port town: pastel-colored buildings, fishing boats, cobblestone streets. Golden hour light.
+
+Photorealistic, high detail, natural photography style, eye-level shot. Vertical 9:16 aspect ratio, portrait orientation, optimized for Instagram Stories.

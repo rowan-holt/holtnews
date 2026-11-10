@@ -1,0 +1,864 @@
+# 홀트뉴스가 만들어진 기록 — 2026-10-25 대화 원문 (KST)
+
+=== 대화 Claude Code 세션 992ee657 ===
+[00:00] Claude: TTS 규칙은 메모리에 저장해뒀어요. 지금 뉴스 주제 찾는 중이에요.
+[00:01] Claude: TTS 규칙은 메모리에 저장했어요. 다음부터 비교 콘셉트에서는 "Then. … Now. …"처럼 딱지를 끊어 읽지 않을게요. 대신 "Back then, the ad said … These days, it says …", "In the US … In Korea …"처럼 문장 안에 넣어서 이어지게 쓸게요. 불닭 영상은 이미 만든 거라 그대로 두고, 다음 회부터 적용해요.
+
+**뉴스 주제 후보**
+
+1. **후디니 사망 100주년 (10/31)** — 마술사 후디니가 1926년 핼러윈에 죽었는데, 사인이 아직도 논쟁이에요. 배를 맞아서인지, 원래 맹장염이었는지 갈려요. 이번 주 CBS도 커버스토리로 다뤘어요. 가설 ①②③으로 풀기 좋아서 **Why? 포맷**에 딱 맞아요. 날짜도 맞고요.
+2. **미국 마작 세트 품귀** — 미국에서 마작 세트가 수십만 원에 팔리고, 중국 타이싱 공장들이 주문을 못 따라가고 있대요(NPR). 일상 주제라 **단일 주제**로 가볍게 쓰기 좋아요. 표현 후보는 *sell out*, *on backorder*예요.
+3. **꿀벌이 야생벌을 밀어낸다** — 영국 앵글리아 러스킨대가 2년 동안 관찰한 연구예요(10/18 보도). 꿀벌이 많은 곳엔 뒤영벌·꽃등에가 줄었고, 버틴 건 담쟁이벌(ivy bee)뿐이었대요. 더울수록 경쟁이 세졌어요. **Journal 포맷**에 어울려요.
+4. **펭귄 똥이 남극 눈을 빨리 녹인다** — 새로 나온 연구예요. 그림이 재밌게 나올 주제라 Journal이나 단일 주제로 쓸 수 있어요.
+
+제외한 것도 하나 있어요. 이기찬 '약국 버스킹'은 한국 이야기라 반응은 좋겠지만, 약사법 위반 논란이 중심이라 법·사회 문제 금지 규칙에 걸려요.
+
+**추천은 1번 후디니(Why?)**예요. 날짜가 딱 맞고, 하나로 정해진 답이 없는 미스터리라 투표 유도도 잘 될 것 같아요. 당분간 조심하는 기간이라 하루 3~4개 제한이 있어서 오늘은 하나만 올리는 게 좋아요. 고르면 표지와 캡션부터 보여줄게요.
+
+Sources:
+- [CBS Sunday Morning (Oct. 25)](https://www.cbsnews.com/news/[가림:긴문자열]/)
+- [NPR News](https://www.npr.org/sections/news/)
+- [NewsBytes – honeybees vs wild pollinators](https://www.newsbytesapp.com/news/science/[가림:긴문자열]/story)
+- [SBS – pharmacy busking](https://news.sbs.co.kr/english/article.do?news_id=N1008802995)
+[00:04] 운영자: 4번 단일뉴스로 해보자 펭귄 실사 찾아바바 응가는 실사 안찾아도 됨. 근데 저게 사실인지 부터 검증해바바바
+[00:05] Claude: 검증 결과 사실이에요. 이제 펭귄 실사 찾을게요.
+[00:06] Claude: **검증해보니 사실이에요. 다만 "녹인다"고 단정하면 안 되고 "더 빨리 녹이고 있을 수 있다"까지만 쓸 수 있어요.**
+
+**확인된 내용**
+- 학술지 *Journal of Geophysical Research: Biogeosciences*에 실린 논문이에요(DOI 10.1029/2026JG009918). 공동저자는 콜로라도대 볼더의 Alia Khan, 제1저자는 웨스턴워싱턴대의 Elise Ryan이에요. 10월 초에 나왔고 여러 매체가 보도했어요.
+- 2025년 1~3월에 남극반도 해안 9곳에서 눈 샘플 111개를 모아 분석했어요.
+- **초록색 눈**(조류가 핀 눈)에는 인산염이 깨끗한 눈의 약 70배, 붉은 눈의 약 10배 들어 있었어요. 인산염은 펭귄·도둑갈매기 똥에 많은 영양분이에요.
+- 초록 조류가 핀 눈은 햇빛을 최대 40% 더 흡수하고, 붉은 조류는 약 20% 더 흡수해요. 단, 이 수치는 2021년 Khan의 이전 연구에서 나온 거예요.
+
+**과장하면 안 되는 부분**
+- 이번 연구는 인과가 아니라 **연관성**을 밝힌 거예요. 똥이 조류를 키운다는 증거는 나왔지만, 눈이 녹는 속도나 반사율을 직접 재지는 않았어요.
+- "해수면 상승"까지 연결한 기사(뉴욕포스트)는 과장이라고 비판받았어요.
+
+**사진**
+위키미디어에서 자유 라이선스 사진 7장을 찾아 위에 보냈어요. 그중 3장을 [assets/photos](holt/assets/photos)에 저장하고 출처는 SOURCES.txt에 적어뒀어요.
+- **3번 (gentoo_snow_group.jpg):** 젠투펭귄 여러 마리가 눈밭에 서 있는 가까운 사진이에요. 표지로 추천해요.
+- **1번 (penguin_highways.jpg):** 펭귄이 다니는 길이 눈 위에 갈색·분홍빛으로 파여 있어요. 응가 길이 실제로 보여서 본문 장에 쓰기 좋아요.
+- **6번 (gentoo_cuverville.jpg):** 산을 배경으로 젠투 한 마리가 서 있는 사진이에요.
+
+젠투펭귄은 남극반도에서 남쪽으로 서식지를 넓히고 있는 종이라 이 주제에도 맞아요. 표지는 3번으로 가도 되면 표지와 캡션부터 만들어서 보여줄게요.
+
+Sources:
+- [Earth.com](https://www.earth.com/animals/[가림:긴문자열]/)
+- [SciTechDaily](https://scitechdaily.com/?p=534376)
+- [Discover Wildlife](https://www.discoverwildlife.com/environment/penguin-poop-melting-snow)
+- [Nature World News](https://www.natureworldnews.com/articles/73500/20261009/[가림:긴문자열].htm)
+[00:07] 운영자: 6번 마치 응가하는거 같고 좋네. 6번 펭귄 확대해주고 엉덩이 쪽에 응가 귀엽게 그림으로 해줘
+표지랑 캡션 만들어죠
+[00:08] Claude: 6번 펭귄 사진에서 확대할 부분을 잡고 있어요.
+[00:09] Claude: Now the topic file.
+[00:10] Claude: 표지 렌더링 끝났어요. 확인 중이에요.
+[00:10] Claude: 표지와 캡션 만들었어요. 표지는 위에 보냈어요.
+
+**표지:** 6번 사진에서 서 있는 젠투펭귄을 확대했어요. 하늘을 보고 눈을 감고 있어서 힘주는 것처럼 보여요. 엉덩이 쪽, 앞에 엎드린 펭귄 등 위에 웃는 응가 그림을 흰 테두리 스티커로 붙였어요. 남극이라 국기는 없어요.
+
+**제목:** 눈 녹이는 펭귄 응가 / '응가하다' / 영어로는?
+- 처음엔 "펭귄 응가가 눈을 녹인다?"로 쓰려 했는데 표지 폭을 넘어서 줄였어요.
+- 연구 결과는 "녹이고 있을 수 있다"까지만이라, 본문은 전부 may·can으로 썼어요.
+
+**표현:** go number two (응가하다)
+아이들이 쓰는 귀여운 말이에요. 쉬는 number one, 응가는 number two예요.
+
+**캡션 전문**
+```
+📰 눈 녹이는 펭귄 응가 '응가하다' 영어로는?
+
+Penguins go number two on the snow.
+
+펭귄은 눈 위에 응가를 해요.
+
+━━━━━
+📰 What happened
+
+Penguin poop may be making snow in Antarctica melt faster. Scientists took snow from nine places near penguin homes. Some of the snow was green. Tiny plants called algae grow in it, and penguin poop feeds them. Green snow is darker than white snow. It soaks up more sunlight, so it can melt faster.
+
+펭귄 응가가 남극의 눈을 더 빨리 녹이고 있을지도 몰라요. 과학자들이 펭귄 서식지 근처 아홉 곳에서 눈을 떠 왔어요. 눈 일부는 초록색이었어요. 조류라는 아주 작은 식물이 그 안에서 자라는데, 펭귄 응가가 이걸 먹여 키워요. 초록 눈은 흰 눈보다 어두워요. 햇빛을 더 많이 빨아들여서 더 빨리 녹을 수 있어요.
+
+━━━━━
+📚 Words to know
+
+1. go number two : 응가하다
+2. melt : 녹다
+3. feed : 먹이다, 영양을 주다
+4. soak up : 빨아들이다
+
+━━━━━
+✏️ 퀴즈: 빈칸에 들어갈 말은?
+Mom, stop the car! I need to ___ ______ ___! 
+엄마, 차 세워요! 나 응가 마려워요!
+
+👇 정답을 댓글로 남겨 보세요. 정답은 댓글에 있어요
+👀 이거 맞힐 것 같은 친구를 태그해 보세요
+
+━━━━━
+Journal of Geophysical Research: Biogeosciences, Earth.com
+[가림:이메일]
+```
+
+본문 이미지 다섯 장도 만들어져 있어요. 보여줄까요, 아니면 표지·캡션 수정부터 할까요? 코드와 주제 파일은 커밋하고 push했어요.
+[00:11] 운영자: 응가 이미지 없애자
+[00:11] Claude: 응가 스티커를 빼고 펭귄 실사만 남겼어요. 새 표지는 위에 보냈어요.
+
+제목, 표현, 캡션은 아까 보낸 그대로예요. 다음 단계로 본문 이미지 다섯 장 보여줄까요? 수정한 주제 파일은 커밋하고 push했어요.
+[00:13] 운영자: wht happend 에는 응가 말고 똥이라고 넣자
+영어는 poop 상관없지?
+[00:13] Claude: What happened의 한국어 두 군데를 '응가'에서 '똥'으로 바꿨어요. 캡션과 본문 이미지에 같이 반영됐어요.
+- 펭귄 똥이 남극의 눈을 더 빨리 녹이고 있을지도 몰라요.
+- …조류라는 아주 작은 식물이 그 안에서 자라는데, 펭귄 똥이 이걸 먹여 키워요.
+
+영어는 poop 그대로 둬도 괜찮아요. 미국 뉴스에서도 "penguin poop"이라고 그대로 쓰는 평범한 말이고, 이번 연구 기사 제목들도 다 poop이었어요. 더 점잖은 말은 guano(새 배설물)인데, 어려운 단어라 타깃층에는 poop이 맞아요.
+
+표지 제목 '눈 녹이는 펭귄 응가'와 표현 '응가하다'(go number two)는 그대로 뒀어요. 커밋하고 push했어요.
+[00:14] 운영자: 응 올리자
+[00:15] Claude: 릴스 영상 만들었고, 올리기 전에 장면을 뽑아서 확인하고 있어요.
+[00:15] Claude: 업로드 시작했어요. 영상 장면은 뽑아서 확인했고, 표지·본문·퀴즈·정답 화면 모두 문제없었어요.
+
+**순서:** 인스타 릴스 → 페북 릴스 → 스레드 → 인스타 스토리 → 페북 스토리, 플랫폼 사이 3분 간격이에요. 00:30쯤 끝나서 01시 업로드 금지 전에 마무리돼요.
+
+**스레드 글**
+```
+남극에 눈이 초록색으로 변하는 데가 있는데, 그게 펭귄 똥 때문일 수도 있대
+
+똥에 든 영양분을 먹고 눈 속에서 아주 작은 조류가 자라서 초록색이 된다고. 초록 눈은 흰 눈보다 햇빛을 더 빨아들여서 더 빨리 녹을 수 있다는 거
+
+지금 기후 예측에는 이게 아직 안 들어가 있다던데, 펭귄 똥까지 계산해야 하는 날이 올 줄은 몰랐다
+```
+
+퀴즈 정답 댓글은 3시간 뒤에 자동으로 달려요. 끝나면 링크랑 결과 알려줄게요.
+[00:30] Claude: 펭귄 응가 콘텐츠를 다섯 곳 모두에 올렸어요. 00:16에 시작해서 00:30에 끝났고, 실패한 곳은 없어요.
+
+- 인스타 릴스: https://www.instagram.com/reel/De4brUazw3V/
+- 페북 릴스: https://www.facebook.com/reel/[가림:숫자]
+- 스레드: https://www.threads.com/@[가림]/post/De4ciULHxjy
+- 인스타 스토리: https://www.instagram.com/stories/rowanholt_official/[가림:숫자]
+- 페북 스토리: https://www.facebook.com/stories/[가림:숫자] (24시간 뒤 사라짐)
+
+조회수 실험 표에는 '예약'으로 등록돼서 24시간 뒤 조회수가 자동으로 집계돼요. 퀴즈 정답 댓글은 03시 16분쯤 자동으로 달릴 예정이에요. 업로드 기록은 커밋하고 push했어요.
+
+=== 대화 Claude Code 세션 b6ba1508 ===
+[06:04] 예약 작업: [예약 작업 holt-morning-auto 실행 — 정해 둔 지시문으로 자동 시작]
+[06:05] Claude: Morning news is active (not dropped). Now reading yesterday's content and searching news.
+[06:06] Claude: Picking news now: candidates are airport bank exchange booths, KEPCO electricity prepayment, Starbucks China chains.
+[06:08] Claude: Cross-checking the KEPCO story with a second outlet.
+[06:08] Claude: Three picks verified: Starbucks China seating rule, airport bank booths losing to travel cards, KEPCO debt limit/electricity bill. Writing content now.
+[06:11] Claude: Cards look clean. Checking video frames and caption.
+[06:11] Claude: Video OK. Archiving and checking accounts.
+[06:11] Claude: Grid warning: the daily reel would sit right above the yellow word-series post. Checking whether I can post the IG reel after the 12:30 single topic instead.
+[06:12] Claude: Plan: at 07:30 post FB reel, Threads, and both stories; hold the IG reel until 14:30 (after the 12:30 single topic shifts the grid) via a one-off launchd job that re-checks the grid itself.
+[06:13] Claude: Adding a persistent memo section to the views table (the weekend comparison note needs somewhere that survives regeneration), then waiting for 07:30.
+[06:13] Claude: Uploads queued for 07:30. Meanwhile, grabbing narration script for the report.
+[06:13] Claude: Waiting for the 07:30 upload batch to finish.
+[06:13] Claude: The upload batch is waiting for 07:30. I'll finish the report and commit once it's done.
+[07:41] Claude: All four posted (the exit code 1 came from the last shell test, not an upload failure). Checking that the memo survives regeneration, then committing.
+[07:42] Claude: ## HOLT 아침 뉴스 10/25 (일) 보고
+
+인스타 릴스만 빼고 07:30에 모두 올렸어요. 인스타 릴스는 그리드 경고 때문에 오늘 14:30에 올라가도록 예약했어요. 아침 뉴스 상태는 `active`라서 접지 않았어요. 최근 아침 뉴스 24시간 조회수는 110·130·119로, 단일 주제(113~163)와 비슷해요.
+
+**고른 뉴스와 교차확인**
+1. **중국 스타벅스, 안 사면 못 앉아요**: 약 8천 개 매장에서 뭔가를 사야 자리에 앉을 수 있게 됐어요. 값싼 루이싱 커피에 밀린 게 배경이에요.
+   - [한국경제](https://m.news.nate.com/view/20261024n[가림:번호]), [Caixin](https://www.caixinglobal.com/2026-10-21/[가림:긴문자열].html), [Fortune](https://fortune.com/2026/10/23/[가림:긴문자열]/)
+   - 발표는 10/21이라 범위보다 조금 이르지만, 한국 보도는 10/24예요.
+2. **트래블카드에 밀린 공항 환전소**: 김해공항 은행 점포 입찰이 다섯 번 유찰됐고, 부산은행 혼자 응찰했어요.
+   - [중앙일보](https://m.news.nate.com/view/20261024n[가림:번호]), [부산일보](https://www.busan.com/view/busan/view.php?code=[가림:숫자])
+3. **전기요금, 또 오를 수도 있어요**: 한전이 돈을 더 빌릴 수 있게 해 준 특례가 내년 말에 끝나요. 그 뒤엔 빚이 법정 한도를 19조 원 넘게 웃돌 거라는 전망이에요. 한전 사장은 정부와 최소한의 요금 인상을 논의해야 한다고 했어요.
+   - [헤럴드경제](https://m.news.nate.com/view/20261024n[가림:번호]), [한국경제](https://www.hankyung.com/article/[가림:숫자]), [세계일보](https://www.segye.com/newsView/[가림:숫자])
+
+**확인**
+- `check_captions.py`: 전부 OK (인스타 캡션 1,370/2,200, 스레드 229/500)
+- 카드 6장과 영상 프레임을 열어 봤고, 글자 잘림이나 겹침은 없어요.
+- 영상 길이는 74.5초예요. ElevenLabs용 붙여넣기 원고는 `holt/out/narration_script.txt`에 있고, 사본은 `holt/output/2026-10-25/`에 있어요.
+
+**올린 링크**
+- 페이스북 릴스: https://www.facebook.com/reel/[가림:숫자]
+- 스레드: https://www.threads.com/@[가림]/post/De5NyxyE82N
+- 인스타 스토리: https://www.instagram.com/stories/rowanholt_official/[가림:숫자] (영상이 74초라 앞 59초만 올라갔어요)
+- 페이스북 스토리: 올림 (post_id [가림:숫자])
+
+**인스타 릴스는 14:30에 올라가요**
+- 지금 올리면 바로 아래 칸의 단어 시리즈(노랑)와 붙게 돼요. 그래서 `--force`는 쓰지 않았어요.
+- 12:30 단일 주제가 먼저 올라가면 붙지 않게 돼요. 그 뒤인 14:30에 올라가도록 일회성 launchd 작업(`com.holt.daily-igreel-1025`)을 걸어 뒀어요.
+- 올리기 직전에 그리드를 다시 확인하고, 그때도 붙으면 올리지 않아요. 결과는 `holt/upload_daily_igreel.log`에 남아요.
+
+**기타**
+- 주말 비교: 토요일 아침 뉴스 119회로 평일(110·130)과 비슷해요. `experiment_views.md` '## 메모' 칸에 적었어요.
+- 이 메모가 다음 집계 때 지워지지 않도록 `tools/collect_views.py`를 고쳤어요.
+- 미룬 릴스를 올리는 `tools/delayed_ig_reel.py`를 새로 만들었어요.
+- 커밋하고 푸시했어요 (9fcf4c1).
+- 인스타 팔로워는 10명(전체 11명)이에요. 100명이 안 돼서 캐러셀은 계속 쉬어요.
+- 사용자가 해 주면 좋은 일: 새로 추가한 건 없어요.
+
+=== 대화 Claude Code 세션 0e8818a4 ===
+[08:59] 운영자: 왜 오늘 아침뉴스 없어
+[09:00] Claude: 오늘 아침 뉴스는 올라갔어요. 인스타그램에만 아직 없습니다. 인스타 릴스는 오늘 14:30에 올라가도록 미뤄 둔 상태예요.
+
+**07:30에 올라간 것** (10/25 아침 뉴스: 스타벅스 중국 좌석, 공항 환전소, 한전 사채 한도)
+- 페이스북 릴스
+- 스레드
+- 인스타 스토리
+- 페이스북 스토리
+
+**인스타 릴스를 미룬 이유:** 어제(10/24) 아침 뉴스 뒤로 인스타에 3개(페이커 우표, 훔친 아이폰, 펭귄)가 올라갔어요. 인스타 프로필은 한 줄에 3칸이라, 07:30에 올렸으면 오늘 아침 뉴스가 어제 아침 뉴스 바로 아래 칸에 놓였을 거예요. 베이지 카드끼리 위아래로 붙는 거죠. 그래서 그리드 경고가 떠서 따로 올리기로 했습니다.
+
+**14:30 예약 상태:** 일회성 예약(`com.holt.daily-igreel-1025`)이 맥에 등록돼 있어요. 그 사이에 다른 게시물이 하나 들어가면 칸이 밀려서 붙지 않게 돼요. 결과는 `holt/upload_daily_igreel.log`에 남습니다.
+[09:01] 운영자: 먼소리야 위아래 바로 아닌데
+[09:02] Claude: 맞아요, 제가 잘못 말했어요. 어제 아침 뉴스는 지금 올리면 3번째 줄 왼쪽으로 내려가서 위아래로 붙지 않아요.
+
+그리드 경고가 걸린 건 노란 단어 카드 **perch** 때문이에요. 지금 아침 뉴스를 올리면 1번째 줄 왼쪽에 놓이고, perch는 한 칸씩 밀려 2번째 줄 왼쪽으로 내려가요. 그러면 베이지 아침 뉴스 바로 아래에 노란 단어 카드가 붙어요. 일간과 단어 카드는 붙이지 않는 규칙이라 07:30에 인스타 릴스만 빠졌어요.
+
+14:30 전에 게시물이 하나 더 올라가면 perch가 2번째 줄 가운데로 가요. 그러면 대각선이라 붙지 않아요. 아무것도 안 올라가도 14:30에 그리드 검사를 다시 하고, 그때도 붙으면 강제로 올리지 않고 그냥 끝나요.
+[09:02] 운영자: 그리드 경고 꺼. 신경쓰지마. 그리고 오늘 뉴스 올려
+[09:02] Claude: Disable the check, then upload now.
+[09:04] Claude: 오늘 아침 뉴스 인스타 릴스를 09:04에 올렸어요. 링크: https://www.instagram.com/reel/De5YBR8pMHi/ (업로드 로그에도 기록됨)
+
+- **14:30 예약:** 지웠어요. 두 번 올라갈 일은 없어요.
+- **그리드 경고:** 껐어요. `holt/meta_publish.py`에 `GRID_CHECK = False`를 넣어서, 이제 일간 뉴스나 단어 카드가 붙어도 멈추지 않고 바로 올라가요.
+- **매일 아침 자동 작업 지시문:** 지시문 3곳(`morning_news_prompt.md`, `task_prompt_v2.txt`, 아침 뉴스 예약 작업)에 있던 "경고 뜨면 인스타 건너뛰기" 규칙을 빼고 "신경 쓰지 않고 바로 올린다"로 바꿨어요. 다음 날부터 아침 뉴스는 07:30에 인스타까지 같이 올라가요.
+- **기억 메모:** "그리드 신경 쓰지 않기"로 고쳐 놨어요.
+- **커밋:** 커밋하고 GitHub에 올렸어요(`03a7a9e`).
+[09:06] 운영자: 뉴스가 언제 뉴스인거야
+[09:06] Claude: 세 뉴스의 원문 기사 날짜를 확인하고 있어요.
+[09:07] Claude: 오늘(10/25) 아침 뉴스 세 개는 기사 날짜가 서로 달라요. 한전은 어제 나온 뉴스, 스타벅스는 3~4일 전 뉴스예요. 공항 환전소는 사건 자체가 거의 한 달 전 일이에요.
+
+| 뉴스 | 사건이 일어난 날 | 우리가 쓴 기사 날짜 |
+|---|---|---|
+| 중국 스타벅스, 안 사면 못 앉음 | 10/21 발표, 10/22부터 시행 | 10/21~23 |
+| 김해공항 은행 점포 유찰 | 다섯 번째 유찰 9/29 | 10/23 (트래블카드 때문에 공항 환전소가 밀린다는 기사) |
+| 한전 사채 한도 초과, 요금 인상론 | 국회예산정책처 추계 보도 10/24 (한전 사장 국정감사 발언은 10/19) | 10/24 |
+
+공항 기사는 10/23에 나왔지만, 핵심인 "다섯 번 유찰"은 9월 말 일이에요. 그래서 아침 뉴스치고는 오래된 편이에요. 한전 뉴스에 넣은 "삼성·SK에 5년 치 전기요금 선납 제안했다가 거절"도 9/3 보도라서 배경 설명에 가까워요.
+
+Sources:
+- [중신망: 스타벅스 10/22 시행](https://www.chinanews.com.cn/cj/2026/10-21/10718603.shtml)
+- [후슈: 스타벅스 소비 입석 정책](https://www.huxiu.com/article/4899277.html)
+- [부산일보: 김해공항 5번째 유찰(9/29)](https://www.busan.com/view/busan/view.php?code=[가림:숫자])
+- [코리아데일리: 찬밥 신세 된 공항 점포(10/23)](https://www.koreadaily.com/article/[가림:숫자])
+- [한국경제: 한전 사채 한도 19조 초과(10/24)](https://www.hankyung.com/article/[가림:숫자])
+- [세계일보: 삼성·SK 25조 거절(10/24)](https://www.segye.com/newsView/[가림:숫자])
+- [더나은미래: 한전 선납 제안(9/3)](https://futurechosun.com/archives/159330)
+[09:08] 운영자: 구랭 오늘 자동 업로드 계획은 뭐야
+[09:08] Claude: 오늘 남은 자동 업로드는 세 번이에요. 아침 뉴스(07:30)는 이미 다 올라갔어요. 인스타 릴스만 아까 09:04에 따로 올렸고요.
+
+| 시각 | 작업 | 내용 |
+|---|---|---|
+| 12:30쯤 (12:36 예정) | 조회수 성장 루프 | 조회수를 모으고, 그 결과로 유형을 골라 단일 주제 하나를 만들어 바로 올림 |
+| 16:00쯤 (16:09 예정) | 게시글 실험 G | 릴스로 안 올린 주제 하나를 인스타 캐러셀로만 올림 |
+| 19:30쯤 | 조회수 성장 루프 | 12:30과 같은 방식으로 단일 주제 하나 더 |
+
+내일 아침 뉴스는 06:04에 만들기 시작해서 07:30에 올라가요. 그리드 경고를 껐으니 내일부터는 인스타 릴스도 07:30에 같이 올라가요.
+
+퀴즈 정답 댓글은 지금 남은 게 없어요. 오늘 새로 올라가는 퀴즈가 있으면 3시간 뒤에 자동으로 달려요.
+
+=== 대화 Claude Code 세션 b9b36035 ===
+[12:36] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
+[12:37] Claude: Collect 완료(1차 목표, 팔로워 11, 다음 유형 D). 오늘 올린 주제 2개라 제작 진행합니다. 실험 기록과 지시문을 확인 중입니다.
+[12:37] Claude: Searching recent news for this run's topic (aiming for an unusual/animal story, reel as type E short).
+[12:38] Claude: Topic picked: London Lime-bike "jousting" (LBC + 1News/BBC verified). Now drawing the cover scene and writing the topic file.
+[12:40] Claude: Cards look good. Building the short (type E) reel and checking frames.
+[12:51] Claude: All five uploads succeeded. Committing and pushing.
+[12:51] Claude: I made and posted today's 12:30 (KST) topic as a type E short reel, and it went up on all five platforms.
+
+**Where things stand:** you're still at stage 1. The target is 200 views per post and 50 followers by 2026-11-05. You have 11 followers now: 10 on Instagram, 1 on Threads and 0 on Facebook. A post's views count after 24 hours, and the last 7 posts landed between 113 and 163 views each (Instagram, Facebook and Threads combined). No type was promoted, boosted or paused this time.
+
+**This run's call:** the collect script picked type D. The rotation rule says the next single topic should be type E (a short reel), and no type E post existed yet. But type D's rule bans "영어로는?" on the cover, while E's reel is built around that question. So I picked an unusual-news story (type A rules), made the reel short and logged it as E. Today has 3 topics so far, so this run stayed under the daily cap of 4.
+
+**Topic:** "공유 자전거로 결투 '그 용도 아닌데' 영어로는?" Two artists in a London park wore armour and held a lance fight on rented Lime e-bikes, and Lime said its bikes aren't for that. The English phrase is "not meant for". I drew a new cover: two knights on green bikes, with the UK flag on one knight's shield and no company logo. The reel runs about 4.8 seconds: cover, then the answer scene with English voice and music. I checked the frames myself.
+
+**Sources (two outlets agree):**
+- [LBC](https://www.lbc.co.uk/news/entertainment/lime-bike-joust-london/)
+- [1News](https://www.1news.co.nz/2026/10/21/[가림:긴문자열]/) (Lime gave its statement to the BBC)
+
+I left out the 5 million view count because only one outlet reported it.
+
+**Posts:**
+- Instagram reel: https://www.instagram.com/reel/De5w-6fqmWA/ (quiz-answer comment scheduled for 15:41)
+- Facebook reel: https://www.facebook.com/reel/[가림:숫자]
+- Threads: https://www.threads.com/@[가림]/post/De5xjoWn3nW
+- Instagram story: https://www.instagram.com/stories/rowanholt_official/[가림:숫자]
+- Facebook story: posted (post_id [가림:숫자])
+
+The post is added to the experiment log, and the commit (031ddf4) is pushed. No errors.
+
+**Things you could do in the app:** nothing new this time; the existing items in `user_todo.md` still apply.
+
+=== 대화 Claude Code 세션 c914ae99 ===
+[16:02] 운영자: @"~/Downloads/4cut_comic.svg"
+이 네컷만화가지고 콘텐츠 만들려고 해.표지에 이 만화 넣을거야. 근데 만화 각 칸에 1234숫자는 빼줘.어떤 포멧, 디자인이 괜찮을지 표지랑 제작 의도 후보 몇개 만들어줘바
+[16:03] Claude: Removed the panel numbers and translated the speech bubbles into English. Now I'm putting the cover candidates together.
+[16:03] Claude: I made 4 cover candidates (1080×1350). I removed the 1, 2, 3, 4 in each panel. HOLT images go out in English only, so I translated the speech bubbles into English too. If you want the Korean bubbles kept, I'll switch them back.
+
+**A. Comic English** (cream paper + handwritten-style lettering)
+- Cover: *My bot did its job. So why am I mad?*
+- Pages: each panel gets a page, and each page teaches one real-life expression: order filled, stop-loss, -3.2% (down 3.2 percent), "Praise me!".
+- Why: a funny comic makes the English go down easily. It could become a new series that takes a comic each week. It fits your target audience best (people in their 20s and 30s who find English a bit hard).
+
+**B. Guess the last line** (black + yellow)
+- Cover: the last panel's bubble is hidden behind "? ? ?", with *What did the bot say? / Guess the last line.*
+- Pages: hints, then the reveal (the full comic), then an explanation of the expressions.
+- Why: it gets people commenting their guesses. You could also use the existing system that posts the answer as a comment 3 hours later (com.holt.answers). This is the strongest pick for engagement.
+
+**C. Why? spin-off** (navy, the existing feature.py style)
+- Cover: *Why do trading bots sell at the bottom?*
+- Pages: the comic is the hook, then hypotheses ①②③ (a set stop-loss rule, panic-proof but context-blind, the overnight gap).
+- Why: you get the comic's humor plus some substance. One concern is that it leans into investing, which is a bit away from your recent push for "everyday topics".
+
+**D. The HOLT Funnies** (white paper + serif masthead, a newspaper comics page)
+- Cover: the whole comic on a newspaper comics page, with *"Sleep tight, sell low."*
+- Pages: keep it short with just the comic and a one-line punchline. It suits a light Reel.
+- Why: it fits as a weekly series that takes the weekend slot. It's the lightest to produce, but the English-learning element is weak.
+
+I'd go with **A**, plus B's last-line quiz on the cover. That way it teaches English and gets people commenting.
+[16:07] 운영자: 한글로 해라아아
+[16:07] Claude: 죄송해요, 다시 한국어로 정리할게요. 앞으로 답변은 한국어로 하도록 메모리에도 저장했어요.
+
+표지 후보 4개(1080×1350)는 아까 보낸 이미지 그대로예요. 만화 각 칸의 1·2·3·4 숫자는 뺐고, HOLT 이미지는 영어만 쓰는 규칙이 있어서 말풍선도 영어로 바꿨어요. 말풍선을 한국어로 두고 싶으면 말해 주세요, 바로 바꿀게요.
+
+**A. Comic English** (크림색 종이 + 손글씨체)
+- 표지 문구: *My bot did its job. So why am I mad?*
+- 본문: 한 칸에 한 장씩, 칸마다 생활 표현 하나를 다뤄요. order filled(체결), stop-loss(손절), -3.2%(down 3.2 percent), "Praise me!"
+- 제작 의도: 웃긴 만화라 영어가 부담 없이 들어가요. 매주 만화 하나로 하는 새 시리즈로 키울 수 있고, 타깃층(영어가 부담스러운 2030)에 가장 잘 맞아요.
+
+**B. 마지막 대사 맞히기** (검정 + 노랑)
+- 표지: 4번째 칸 말풍선을 "? ? ?"로 가리고 *What did the bot say? / Guess the last line.*
+- 본문: 힌트 → 정답(만화 전체) → 표현 설명
+- 제작 의도: 댓글로 추측을 받는 참여형이에요. 3시간 뒤 정답을 댓글로 다는 기존 장치(com.holt.answers)도 그대로 쓸 수 있어요. 반응 끌어내기에는 가장 강해요.
+
+**C. Why? 시리즈 응용** (남색, 기존 feature.py 스타일)
+- 표지 문구: *Why do trading bots sell at the bottom?*
+- 본문: 만화로 시작해서 가설 ①②③(정해 둔 손절 규칙, 겁은 안 먹지만 상황을 모름, 밤사이 가격 갭)
+- 제작 의도: 만화의 재미에 해설을 더해요. 다만 투자 쪽 내용이라 요즘 밀고 있는 '일상 주제'와는 조금 어긋나요.
+
+**D. The HOLT Funnies** (흰 종이 + 세리프 제호, 신문 만화란)
+- 표지: 신문 만화란 느낌으로 만화 전체를 넣고 한 줄 *"Sleep tight, sell low."*
+- 본문: 만화와 한 줄 펀치라인으로 짧게 끝내요. 가벼운 릴스에 어울려요.
+- 제작 의도: 주말 자리에 들어가는 주간 연재로 좋아요. 만들기는 가장 가볍지만 영어 학습 요소는 약해요.
+
+추천은 **A**예요. 표지만 B처럼 마지막 대사를 가려 퀴즈로 만들면 영어 학습과 댓글 반응을 둘 다 챙길 수 있어요.
+
+본문까지 만들 후보를 골라 주세요: A, B, C, D, 또는 A+B 섞기.
+
+=== 대화 Claude Code 세션 60779beb ===
+[16:09] 예약 작업: [예약 작업 holt-carousel-g 실행 — 정해 둔 지시문으로 자동 시작]
+[16:10] Claude: 오늘 조건 확인 끝났습니다(주제 3개, 마지막 인스타 게시 12:5x로 3시간 지남, G 오늘 처음). 이제 HOLT 규칙 메모를 읽고 주제를 찾습니다.
+[16:11] Claude: 미네소타 옥수수밭에 떨어진 우주 물체(유형 A)를 주제로 잡고 사실 확인 중입니다.
+[16:13] Claude: 카드 6장 렌더 완료, 이제 한 장씩 확인합니다.
+[16:14] Claude: 인스타 캐러셀 업로드 성공. 기록하고 커밋합니다.
+[16:14] Claude: **유형 G 업로드 완료 (10/25 16:13, 인스타 캐러셀만)**
+
+- **주제:** 미국 미네소타 옥수수밭에 떨어진 지름 3.4m 금속 덩어리 '우주 쓰레기'(space junk). 원래 기준은 유형 A(이색)입니다. 오늘·어제 릴스로 올린 주제와 겹치지 않습니다.
+- **올린 링크:** https://www.instagram.com/p/De6JWPTH8QI/
+- **교차확인 출처:**
+  - [NewsNation](https://www.newsnationnow.com/space/[가림:긴문자열]/amp/)
+  - [Futurism](https://futurism.com/?p=471414)
+  - [KTTC](https://www.kttc.com/2026/10/16/[가림:긴문자열]/)
+  - [IFLScience](https://www.iflscience.com/[가림:긴문자열])
+- **판단:** '중국 로켓 일부'는 공식 확인이 없습니다. 그래서 카드에는 단정하지 않고 "Experts think"로만 썼습니다.
+- **표지:** 새로 그렸습니다. 해 질 녘 옥수수밭에 그을린 금속 원통과 농부 뒷모습을 넣었고, 성조기는 헛간 깃대에 달았습니다. 딱지와 로고는 넣지 않았습니다.
+- **만든 것:** 카드 6장은 모두 열어 확인했고 문제없었습니다.
+- **오류:** 없습니다. 2207051도 나지 않았습니다.
+- **기록:** 오늘 올린 주제는 이것까지 4개입니다. collect 결과 팔로워 11명, 다음 유형은 D입니다. 이 글의 도달 수는 다음 collect 때 확인하고, 그때 접는 조건(첫 3개 중 2개가 도달 0)을 판단합니다.
+- 커밋 `888b65e`을 push까지 마쳤습니다.
+
+=== 대화 Claude Code 세션 c914ae99 ===
+[16:31] 운영자: 만화도 한글로 해달라 문구는 1번인데 한글로. 디자인 2번처럼 하자 홀트뉴슨데 코믹세션인거지
+코멘트뉴어게스는삭제. 
+
+표지랑 캡션 만들어줘바
+[16:33] Claude: 표지와 캡션 만들었어요. 둘 다 [out_comic/bot_did_its_job/](holt/out_comic/bot_did_its_job/) 폴더에 저장했어요.
+
+**표지**
+- 2번 후보 디자인(검정 바탕에 노랑 포인트)에 1번 문구를 한글로 넣었어요.
+- 맨 위에 **HOLT NEWS**와 노란 딱지 **코믹 섹션**을 달았어요.
+- 문구: **봇은 할 일을 다 했다.**(흰색) / **근데 난 왜 화나지?**(노랑)
+- 만화는 원본 한글 말풍선 그대로이고, 칸 숫자만 뺐어요.
+- "Comment your guess"는 지웠어요.
+
+**캡션** (`ig_caption.txt`)
+```
+😤 봇은 할 일을 다 했다. 근데 난 왜 화나지?
+
+My bot did its job. So why am I mad?
+
+봇은 할 일을 다 했어요. 그런데 나는 왜 화가 날까요?
+
+━━━━━
+🎞️ The comic
+
+I built a trading bot. It makes money while I sleep. At night, my phone buzzed with alerts. The bot bought, and bought again. At 7 a.m., I checked my account. It was down 3.2 percent. The bot looked proud. It followed the stop-loss rule. Now it wants praise.
+
+트레이딩 봇을 만들었어요. 자는 동안 알아서 돈을 벌어 준대요. 밤새 휴대폰에 매수 체결 알림이 울렸어요. 아침 7시에 계좌를 열어 보니 3.2% 손실이었어요. 봇은 뿌듯한 얼굴이에요. 손절 규칙을 그대로 지켰으니 칭찬해 달래요.
+
+━━━━━
+📚 Words to know
+
+1. order filled : 주문 체결
+2. stop-loss : 손절
+3. be down 3 percent : 3% 손실이다, 3% 내렸다
+4. follow the rule : 규칙을 지키다
+
+━━━━━
+✏️ 퀴즈: 빈칸에 들어갈 말은?
+The bot sold at a loss. It just followed the _____-____ rule.
+봇은 손해를 보고 팔았어요. 손절 규칙을 지켰을 뿐이에요.
+
+👇 정답을 댓글로 남겨 보세요. 정답은 댓글에 있어요
+👀 봇한테 칭찬해 줄지 말지 친구를 태그해 보세요
+
+━━━━━
+[가림:이메일]
+```
+
+캡션은 다른 포맷과 같은 형식(제목, 영어 줄글, 한국어 줄글)으로 썼어요. 원작 만화라서 출처 줄은 넣지 않았어요. 본문 이미지와 영상은 아직 안 만들었고, 업로드도 안 했어요.
+[16:33] 운영자: 제목 ai한테 돈 맡기고 잤더니 생긴 일로 해주라
+[16:34] Claude: 표지 제목을 바꿨어요. 첫 줄 **AI한테 돈 맡기고 잤더니**는 흰색, 둘째 줄 **생긴 일**은 노랑이에요.
+
+캡션 첫머리도 같은 제목으로 맞췄어요.
+```
+😤 AI한테 돈 맡기고 잤더니 생긴 일
+
+I let AI handle my money and went to sleep.
+
+AI한테 돈을 맡기고 잠들었어요.
+```
+캡션 나머지(만화 줄거리, 표현 4개, 퀴즈)는 그대로예요. 본문 이미지와 영상은 아직 안 만들었고, 업로드도 안 했어요.
+[16:34] 운영자: 표지에 코믹세션은 뺴
+
+이거 그리드에 올려서 보여줘바
+[16:35] Claude: I took the 코믹 섹션 tag off the cover and built a grid preview from your latest Instagram posts. Checking it now.
+[16:35] Claude: 표지에서 '코믹 섹션' 딱지를 뺐어요. 맨 위에는 HOLT NEWS만 남았어요. 수정한 파일은 [cover.png](holt/out_comic/bot_did_its_job/cover.png)예요.
+
+실제 인스타 최근 게시물 11개 앞(왼쪽 위)에 새 표지를 넣어서 그리드 미리보기를 만들었어요. 프로필 그리드처럼 3:4 비율로 잘랐는데, 만화 양옆 여백만 조금 잘리고 그림은 다 보여요.
+
+그리드에서 보니 이런 점이 있어요.
+- **좋은 점:** 다른 단일 주제 표지들과 같은 검정 바탕이라 피드가 어색하지 않아요. 다른 표지는 그림이 위, 글이 아래인데 이건 글이 위, 만화가 아래라서 구분도 돼요.
+- **아쉬운 점:** 그리드 크기에서는 말풍선 글씨가 거의 안 읽혀요. 다른 칸들은 그림 하나가 크게 보이는데, 이건 네 칸이 작게 쪼개져서 조금 덜 눈에 띄어요.
+
+업로드는 하지 않았어요.
+[16:39] 운영자: 홀트뉴스말고 다른걸로 하고, 배경색 다른걸로 하자 그리드에 어울릴만한 색인데 푸른계열 하늘색 푸른색 그런거 해서 보여줘 후보
+[16:40] Claude: 파란 계열 표지 후보 4개를 만들었어요. 맨 위 'HOLT NEWS'는 다른 이름으로 바꿨어요. 실제 인스타 최근 게시물 5개 앞에 하나씩 넣은 그리드 비교 이미지도 같이 보냈어요.
+
+| 후보 | 배경 | 맨 위 이름 | 제목 색 (윗줄 / 아랫줄) |
+|---|---|---|---|
+| 1 | 하늘색 | HOLT COMICS | 남색 / 빨강 |
+| 2 | 파스텔 블루 | HOLT 4컷 | 남색 / 흰색 |
+| 3 | 코발트 | HOLT TOON | 흰색 / 노랑 |
+| 4 | 청록 | HOLT COMICS | 흰색 / 연노랑 |
+
+그리드에서 본 느낌은 이래요.
+- **1번 하늘색:** 바로 옆 검정 표지들, 아래 일간 뉴스(밝은 회색)와 가장 부드럽게 어울려요. 아랫줄 빨강이 만화 속 -3.2%와 색이 맞아요.
+- **2번 파스텔 블루:** 1번보다 조금 진해서 칸이 더 눈에 띄어요. 다만 아랫줄 흰색 '생긴 일'이 약해 보여요.
+- **3번 코발트:** 그리드에서 가장 튀어요. 피드를 볼 때 바로 눈에 걸리는 색이에요.
+- **4번 청록:** 차분하지만 1, 3번보다 개성이 약해요.
+
+후보들은 아직 확정 파일([cover.png](holt/out_comic/bot_did_its_job/cover.png))에 반영하지 않았어요.
+
+어느 걸로 할까요? 1~4번 중에 고르거나, 색은 그대로 두고 이름만 바꾸는 식으로 섞어도 돼요.
+
+=== 대화 Claude Code 세션 9ca42d28 ===
+[19:36] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
+[19:37] Claude: 오늘 이미 주제 4개(펭귄, 아침 뉴스, 공유 자전거, 옥수수밭)가 올라가 있어 이번 회차는 수집만 하고 커밋합니다.
+[19:37] Claude: 오늘(10/25, KST) 이미 주제 4개가 올라가 있어서 이번 회차는 조회수 수집만 하고 새로 만들거나 올리지 않았습니다. 올라간 4개는 펭귄 응가, 아침 뉴스, 공유 자전거 창 시합(E), 옥수수밭 우주 쓰레기 캐러셀(G)입니다.
+
+**지금 상태**
+- 1차 목표는 게시물당 200회, 팔로워 50명이고 기한은 11/05입니다.
+- 팔로워는 11명입니다(인스타 10, 스레드 1, 페북 0).
+- 24시간 조회수는 대부분 110~165회에 머물러 있습니다. 가장 높은 건 훔친 아이폰 164회, 엑스박스 155회입니다.
+
+**이번 판단**
+- 단계는 그대로이고, 몰아줄 유형도 쉴 유형도 없었습니다.
+- 다음에 만들 유형은 D(내 일이면?)입니다.
+- E(짧은 릴스)는 1개, G(캐러셀)는 아직 24시간이 지나지 않아 판정하지 않았습니다.
+
+**오류:** 없음.
+
+커밋하고 push했습니다(b3d743b). 사용자가 해 주면 좋은 일은 이번에 새로 나온 게 없습니다.
+
+=== 대화 Claude Code 세션 bc397063 ===
+[19:47] 운영자: 인스타 성과를 보자 조회수 어떤가
+[19:48] Claude: 방금 새로 집계했습니다(10/25 19:48 기준).
+
+**인스타 릴스 조회수: 올리는 족족 110~150회, 평균 약 127회**
+
+| 순위 | 게시물 | 인스타 |
+|---|---|---|
+| 1 | 엑스박스 주 4일 출근 (B 찬반) | 153 |
+| 2 | 도서관 들어온 곰 | 142 |
+| 3 | 10/25 아침 뉴스 (아직 24시간 안 됨) | 140 |
+| … | … | … |
+| 최저 | 김천김밥축제 | 106 |
+
+- **숫자 폭이 아주 좁습니다.** 주제·포맷이 달라도 110~150회에서 거의 안 움직여요. 인스타가 새 계정 릴스에 기본으로 나눠 주는 노출량 정도로 보입니다. 특정 콘텐츠가 터져서 퍼진 건 아직 하나도 없습니다.
+- 그래도 유형별로 보면 찬반(B 153)과 이색·동물(A 133~142)이 조금 높고, 아침 뉴스(110~140)와 축제·행사류가 조금 낮습니다. 다만 차이가 작아서 우연일 수도 있습니다.
+- **팔로워**: 인스타 6 → 10명(4일 동안 +4), 스레드는 1명입니다.
+- **1차 목표(게시물당 200회, 팔로워 50명, 11/5까지)**: 지금 속도로는 둘 다 기한 안에 못 맞춥니다.
+
+**눈에 띄는 점 두 가지**
+1. **페북 릴스는 전부 0회입니다.** 업로드는 되는데 아무도 안 보거나, 조회수가 제대로 안 읽히는 것 같습니다. 집계 문제인지 노출 문제인지 따로 확인해 볼 만합니다.
+2. 스레드는 대부분 0~8회인데 **훔친 아이폰 '먹통'(44회)** 하나만 튀었습니다. 사용자 요청 주제였어요.
+
+루프 규칙에 따르면 다음 순서는 D 유형(내 일이면? 찬반 v2)입니다. 지금 숫자로 보면 찬반 쪽이 그나마 가장 나으니 방향은 맞는 편입니다. 옥수수밭 우주 쓰레기(인스타 게시글 단독)는 집계 숫자가 아직 없어서 내일 다시 보면 됩니다.
+
+페북 0회 원인부터 확인해 볼까요?
+
+=== 대화 Claude Code 세션 985e2f80 ===
+[21:06] 운영자: 진짜임을 증명하기 위해, 우리는 화면을 일부러 더 흐리고 탁하게 남겨두었습니다."
+
+세계 최고 수준의 영상미를 자랑하는 BBC 다큐멘터리 팀이 내놓은 이 고백은, 지금 생성형 AI 시대가 도달한 가장 기묘한 역설을 보여줍니다. 
+
+이거 관련한 뉴스 찾아서 표지 캡션 만들어줘
+[21:06] Claude: BBC 블루 플래닛 III 기사를 찾았어요. 원문 출처를 한 번 더 확인한 뒤 표지를 만들게요.
+[21:08] Claude: 표지 그림(뿌연 바닷속 + 부표에 유니언 잭 + 촬영 화면 테두리)을 코드로 그리는 중이에요.
+[21:09] Claude: 표지와 캡션을 보내 드렸어요. 위에 붙인 이미지와 캡션 파일이에요.
+
+**찾은 뉴스: BBC 「블루 플래닛 III(Blue Planet III)」** (11월 1일 BBC One 첫 방송, 6부작, 4년 동안 촬영)
+- 예전에는 플랑크톤, 탁한 물, 부표가 걸린 장면을 잘라 냈어요. 이번에는 진짜 영상이라는 걸 보여 주려고 그런 장면을 일부러 남겼어요.
+- 총괄 PD 엘리자베스 화이트: "AI makes us want to be even more authentic."
+- BBC 커미셔닝 책임자 잭 부틀: "No gen AI was used in this series. Not a single frame."
+- 원문은 가디언 기사인데, 사이트 접근이 막혀서 직접 열어 보지는 못했어요. 여러 매체가 옮긴 인용문이 서로 같은 걸 확인했어요.
+
+**표지**
+- 그림: 뿌연 청록색 바닷속에 플랑크톤 알갱이가 떠 있고, 바다거북이 헤엄쳐요.
+- 수면의 부표 깃대에 유니언 잭을 달았어요. 기사에서 예전엔 잘라 냈다던 바로 그 부표예요.
+- 화면 테두리는 촬영 화면처럼 꾸몄어요(● REC, 타임코드).
+- 제목: "흐린 화면 남긴 BBC / '있는 그대로' / 영어로는?"
+- 정답 표현은 **warts and all**(흠까지 있는 그대로)이에요.
+
+**캡션 요약**
+- 예문: The BBC shows the ocean warts and all.
+- What happened: 뿌연 장면을 일부러 남겼다 → 예전엔 플랑크톤·부표 장면을 잘라 냈다 → AI 영상은 깨끗하고 완벽해 보인다, 이번 시리즈엔 AI를 한 장면도 안 썼다
+- Words to know: warts and all / murky / on purpose / leave in
+- 퀴즈: I love my old car, ______. (나는 내 낡은 차를 흠까지 다 좋아해.)
+- 출처: The Guardian, BBC
+
+본문 이미지 6장도 렌더는 해 뒀어요. 영상 제작과 업로드는 표지와 캡션 OK를 받은 뒤에 할게요. 표지 그림 함수와 원고는 커밋하고 push했어요.
+
+Sources:
+- [Karmactive – Blue Planet III Used Zero Generative AI](https://www.karmactive.com/[가림:긴문자열]/)
+- [Memesita – Blue Planet III Keeps Murky Footage to Prove No AI Was Used](https://www.memesita.com/[가림:긴문자열]/)
+- [Time News](https://time.news/[가림:긴문자열]/)
+- [Newsy Today](https://www.newsy-today.com/[가림:긴문자열]/)
+- [Wikipedia – Blue Planet III](https://en.wikipedia.org/wiki/Blue_Planet_III)
+[21:12] 운영자: 바다 표면 없이 완전 바다속으로 해주라 그리고 거북이 정면모습 해줘
+
+유니언잭은 거북이 옆에 카메라든 잠수부를 그리고 그 옷에 달아줘
+
+BBC는 이 다큐의 단 한 장면에도 AI를 쓰지 않았다고 해요.
+
+마지막 문장 이거 말고 시사점을 써줘. 해상도를 높여서 인정받기 의해 기술을 발달시켜왔는데, 이젠 AI발달로 오히려 해상도를 낮춰야 인정받는 세상이 되어가고 있다. 머 이런거
+[21:14] Claude: 거북이 등딱지 무늬를 다듬고 다시 렌더했어요. 확인할게요.
+[21:14] Claude: Good enough. Sending and committing.
+[21:14] Claude: 말씀하신 대로 표지와 캡션을 고쳐서 위에 보내 드렸어요.
+
+**표지**
+- 수면과 부표를 빼고 화면 전체를 뿌연 바닷속으로 바꿨어요.
+- 거북이는 카메라 쪽을 보는 정면 모습이에요. 양옆으로 지느러미를 펴고 있어요.
+- 오른쪽에 잠수부를 그렸어요. 수중 카메라와 조명을 거북이 쪽으로 겨누고 있고, 어깨에 유니언 잭 패치를 달았어요.
+
+**캡션 마지막 문장 (시사점으로 바꿈)**
+
+> AI videos look clean and perfect. For years, sharper pictures won trust. Now a blurry picture may prove a video is real.
+>
+> AI 영상은 깨끗하고 완벽해 보여요. 오랫동안 영상 기술은 더 선명한 화면으로 인정받으려고 발전해 왔어요. 그런데 이제는 AI 때문에 오히려 화면이 흐려야 진짜로 인정받는 세상이 되어 가고 있어요.
+
+이 문장이 들어가니 본문 카드(What happened)에서 글이 아래 출처와 겹쳤어요. 그래서 앞 문장도 짧게 줄였고, 뜻은 그대로예요.
+- "The BBC made a new ocean show, Blue Planet III."는 "The BBC's new ocean show is Blue Planet III."로 바꿨어요.
+- "In the past, they cut shots…"는 "They used to cut shots with plankton or a buoy."로 바꿨어요.
+
+캡션의 한국어 해석도 같이 맞췄어요.
+
+수정한 내용은 커밋하고 push까지 했어요.
+[21:15] 운영자: 업로드 해주는데 너 실험 다 끝났나 안끝났으면 적당한 시간에 해주고 오늘 실험 더 없으면 지금 올려죠
+[21:15] Claude: 오늘 실험은 끝났어요(19:30 루프는 주제 4개라 수집만 했어요). 지금 21:15라 업로드 금지 시간대도 아니니 바로 올릴게요. 릴스부터 만들게요.
+[21:15] Claude: 카드 6장을 확인하면서 릴스를 만들게요.
+[21:15] Claude: Threads 글을 써 뒀고, 릴스 렌더가 끝나길 기다리는 중이에요.
+[21:16] Claude: 릴스를 렌더하고 있어요. 끝나면 장면 프레임을 확인한 뒤 바로 올릴게요.
+[21:16] Claude: 영상에 문제없고, 퀴즈 정답 화면도 정상이에요. 이제 올릴게요.
+[21:24] Claude: 두 가지 다 고칠게요. 먼저 TTS가 "III"를 어떻게 읽는지 고쳐 둘게요.
+[21:25] Claude: 업로드는 끝났지만, 올라간 영상은 문제를 고치기 전 버전이에요.
+
+**올린 곳 (21:17쯤)**
+- 인스타 릴스: https://www.instagram.com/reel/De6r-QnuQIS/
+- 페북 릴스: https://www.facebook.com/reel/[가림:숫자]
+- 스레드: https://www.threads.com/@[가림]/post/De6sVwYn9YH
+- 인스타·페북 스토리도 올렸어요. 퀴즈 정답 댓글은 내일 00:17에 자동으로 달려요.
+
+**말씀하신 두 가지는 코드에서 고쳤어요 (다음 게시물부터 적용)**
+1. **"아이아이아이" 발음:** TTS가 로마 숫자 III를 글자 하나씩 읽었어요. 이제 III는 "three", II는 "two"로 읽어요. 영상도 "Blue Planet three"로 다시 만들어 뒀어요.
+2. **캡션 퀴즈:** "✏️ 퀴즈: 빈칸에 들어갈 말은?" 다음에 한 줄을 띄우고 문장을 쓰게 바꿨어요. 단일 주제뿐 아니라 Journal, Sold in English 포맷에도 똑같이 넣었어요.
+
+**이미 올라간 게시물은 그대로예요.** 영상에는 "아이아이아이" 발음이 남아 있고, 캡션에는 빈 줄이 없어요.
+- 인스타 API로는 올린 영상이나 캡션을 바꿀 수 없어요.
+- 게시물 삭제는 제가 할 수 없어서, 바꾸려면 앱에서 직접 지우셔야 해요. 인스타·페북 릴스와 스토리를 지우고 알려 주시면, 고친 영상과 캡션으로 바로 다시 올릴게요.
+
+=== 대화 Claude Code 세션 a8ff492b ===
+[22:54] 운영자: 뉴스거리 찾아서 콘텐트 만들어서 자동 업로드 해줘 경제뉴스 하나 찾아서 해주라
+[22:55] Claude: 요청하신 경제 뉴스를 찾고 있습니다. 오늘 이미 4개를 올려서 이번이 5번째가 됩니다. 직접 시키신 거라 그대로 진행합니다.
+[22:56] Claude: 메모리 칩 가격 때문에 출시 7개월 된 갤럭시 S26 값이 오른 뉴스로 정했습니다(인사이트·데일리팝 교차확인). 지금 표지 그림을 그리고 있습니다.
+[22:58] Claude: 카드 6장 확인 끝났습니다. 지금 릴스를 만들고 있습니다.
+[22:58] Claude: 영상 프레임 문제 없습니다. 업로드 시작합니다.
+[23:08] Claude: 경제 뉴스 하나를 골라 콘텐츠로 만들고 5개 채널에 모두 올렸습니다. 오늘 5번째 주제라 '하루 4개' 조심 기간 기준을 넘었지만, 직접 시키신 거라 그대로 진행했습니다.
+
+**주제:** 출시 7달 된 갤럭시 S26 값이 10월 1일부터 올랐습니다. 기본형 256GB 기준 125만 4천 원에서 140만 3,600원이 됐습니다.
+- **원인:** AI 데이터센터가 메모리 칩을 대량으로 사들여서 폰에 들어갈 칩이 모자랍니다. 칩 부족은 2027년까지 이어질 수 있다는 전망입니다.
+- **고른 이유:** 2030이 매일 쓰는 폰 값 이야기이고, "폰은 원래 시간이 지나면 싸진다"는 상식이 거꾸로 된 소식이라 눈길을 끌 수 있습니다. 왜 생겼는지까지 쉽게 풀 수 있는 것도 장점입니다.
+- **교차확인 출처:** [인사이트 10/2](https://www.insight.co.kr/news/576364), [데일리팝 10/15](http://www.dailypop.kr/news/articleView.html?idxno=103347), 배경 설명은 [Money.com](https://money.com/[가림:긴문자열]/)
+- **뺀 내용:** "새 폰 평균 25% 인상"처럼 한 곳에서만 확인된 숫자는 넣지 않았습니다.
+
+**형식:** 아직 한 번도 안 올린 '퀴즈 없는 짧은 뉴스'(12초 릴스)로 만들었습니다. 영상은 표지, 무슨 일이냐면, 오늘의 영어(price hike) 순서입니다.
+- **표지:** 'AI' 서버 괴물이 사람 손에 든 폰에서 램 칩을 빨아 먹는 그림입니다. 제목은 "7달 된 갤럭시 / '값이 올랐다' / 범인은 AI"입니다.
+- **확인:** 카드 6장과 영상 장면들을 직접 열어 보고 잘림이나 겹침이 없는 것을 확인했습니다.
+
+**올린 곳:**
+- 인스타 릴스: https://www.instagram.com/reel/De63pCQMk3h/
+- 페북 릴스: https://www.facebook.com/reel/[가림:숫자]
+- 스레드: https://www.threads.com/@[가림]/post/De64GNHn30W
+- 인스타 스토리: https://www.instagram.com/stories/rowanholt_official/[가림:숫자]
+- 페북 스토리: https://www.facebook.com/stories/[가림:숫자]
+
+업로드 오류는 없었습니다. 퀴즈 정답 댓글은 내일 새벽 01:59에 자동으로 달리도록 예약됐습니다. 조회수 기록에도 올렸고, 원고와 표지 코드는 커밋해서 push까지 마쳤습니다.
+
+=== 대화 Claude Code 세션 1c57dde8 ===
+[23:20] 운영자: 너 이 사람 계정에 있는 게시글들 볼수있나? 지금 보여준 사진상으로 말고 저 사람 계정 들어가서 보는거 말야 가능해? 피드 게시물 1번 2번3번이미지 다
+[23:21] Claude: 네, 볼 수 있어요. 방법은 두 가지예요.
+
+1. **Claude in Chrome(사용자 크롬)**: 크롬에 인스타그램 로그인이 되어 있으면 instagram.com/huh_kwan 에 들어가서 피드 1·2·3번을 하나씩 열어 볼 수 있어요. 캐러셀이면 넘겨서 모든 장을 다 볼 수 있어요. 이 방법이 가장 확실해요.
+2. **앱 안 브라우저**: 이 브라우저는 인스타 로그인이 안 되어 있어요. 로그인하지 않으면 인스타가 몇 장만 보여주고 로그인 창으로 막는 경우가 많아서 1~3번을 다 보기 어려울 수 있어요.
+
+다만 확인한 내용을 전달할 때는 요약이나 정리만 해 드릴 수 있어요. 남의 글이라 원문을 그대로 옮겨 적지는 못해요. 예를 들어 "어휘가 중요한 이유" 게시물이라면 핵심 내용과 구성, 카드 디자인 방식 같은 건 정리해 드릴 수 있어요.
+
+보길 원하시면 "크롬으로 봐줘"라고 해 주세요. 바로 들어가서 1·2·3번 게시물의 모든 장을 확인할게요.
+[23:22] 운영자: 1번하면 토큰을 많이 쓸거 아녀
+[23:22] Claude: 네, 다른 방법보다는 많이 써요. 그래도 감당 못 할 정도는 아니에요.
+
+- **토큰이 드는 이유**: 인스타 게시물은 글이 이미지 안에 들어 있어서 화면 텍스트로는 못 읽어요. 장마다 스크린샷을 찍어야 하고, 한 장에 1,000~1,500토큰 정도 들어요.
+- **대략 계산하면**: 게시물 3개에 캐러셀이 각각 5~10장이면 15~30장이에요. 이동·클릭 같은 과정까지 합쳐 **약 3만~5만 토큰**으로 예상해요.
+
+토큰을 줄이는 방법도 있어요.
+
+1. **스크린샷 해상도 낮추기**: 0.5배로 찍으면 장당 비용이 1/4 정도로 줄어요. 카드뉴스처럼 글씨가 큰 이미지는 이 정도로도 읽혀요. 이렇게 하면 **1만 토큰 안팎**이에요.
+2. **이미지 받아서 맥에서 글자 인식(OCR)**: 페이지에서 이미지 주소만 뽑아 받은 다음, 맥 내장 글자 인식으로 텍스트만 추출하는 방법이에요. 저는 이미지를 직접 보지 않고 글자만 받기 때문에 가장 적게 들어요. 대신 레이아웃이나 디자인은 볼 수 없어요.
+
+글 내용만 필요하면 2번, 카드 디자인도 봐야 하면 1번(0.5배)이 맞아요.
+[23:22] 운영자: 글만 필요함 근데 캐러셀 1번 이미지뿐 아니라 2345 다
+[23:23] Claude: 네, 캐러셀은 1장만이 아니라 2·3·4·5장까지 전부 가져올 수 있어요.
+
+진행하면 이렇게 할게요.
+
+1. 크롬에서 huh_kwan 피드 1·2·3번 게시물을 차례로 열어요.
+2. 게시물마다 캐러셀을 끝까지 넘기면서 모든 장의 이미지 주소를 모아요. 저장 버튼은 쓰지 않고 주소만 가져와요.
+3. 그 이미지들을 임시 폴더에 받아요. 인스타 이미지 서버(cdninstagram.com)에서 받는 jpg 파일로, 장당 100~300KB 정도이고 전부 합쳐도 몇 MB예요.
+4. 맥 내장 글자 인식으로 텍스트만 뽑아요. 저는 이미지를 보지 않으니 토큰은 **수천 단위**로 끝나요.
+5. 받은 이미지는 끝나면 지워요.
+
+결과는 게시물별, 장별로 **핵심 내용을 요약**해서 드릴게요. 원문 전체를 그대로 옮기지는 못해요. 대신 어떤 주장인지, 어떤 예시를 썼는지, 장을 어떤 순서로 구성했는지까지 자세히 정리할게요.
+
+크롬 조작과 이미지 다운로드가 들어가니까 "해줘"라고 하시면 바로 시작할게요.
+[23:23] 운영자: 아니 나한테 알려줄 필요없고 글쓰기에 대한 글이거든 저기서 배워서 앞으로 콘텐츠 글 쓸때 써먹으라고
+[23:24] Claude: Get first 3 post links.
+[23:25] Claude: 1번 게시물에서 캐러셀 이미지 주소를 모으고 있어요.
+[23:26] Claude: 2번 게시물 이미지를 모으는 중이에요.
+[23:26] Claude: 이미지 주소를 바로 꺼낼 수 없어서, 페이지에서 이미지를 다운로드 폴더로 받을게요.
+[23:26] Claude: Now OCR with macOS Vision via Swift.
+[23:27] Claude: 다운로드가 크롬에서 막혀서, 이미지 부분만 낮은 해상도로 찍어서 읽을게요.
+[23:27] Claude: Use smaller scale for the rest.
+[23:29] Claude: 배운 원칙을 정리해 두고 자동 제작 지시문에 연결하는 중이에요.
+[23:29] Claude: 허관 작가 피드 1~3번 게시물을 모든 장까지 다 읽고, HOLT 콘텐츠에 맞는 문장 원칙으로 정리했어요. 앞으로 만드는 원고·캡션·스레드 글부터 바로 적용돼요.
+
+**배운 것 (게시물 3개, 총 13장)**
+1. **어휘가 중요한 이유 (3장)**: 정확한 단어를 알아야 장면을 선명하게 그릴 수 있다는 내용이에요. 그래서 '말했다', '많이 올랐다' 같은 뭉뚱그린 말 대신 '반박했다', '두 배가 됐다'처럼 딱 맞는 단어를 고르기로 했어요.
+2. **규칙을 비웃는 사람들 (4장)**: 거장의 파격은 기본을 다 익힌 뒤 일부러 깬 것이라는 내용이에요. 그래서 기본 문법과 순서는 지키고, 깨는 건 노리는 효과가 있을 때만 하기로 했어요.
+3. **글쓰기 5계명 (6장)**: 내용에 따라 문장 길이와 형태를 바꾸라는 내용이에요.
+   - 사건은 짧게 쓰고, 이유는 길게 이어서 쓰고, 충격적인 대목은 끊어서 써요.
+   - 수동태 대신 능동태로 쓰고, 인용은 짧게 하고 뒤에 해설을 붙이지 않아요.
+
+**적용한 곳**
+- [holt/writing_craft.md](holt/writing_craft.md)에 원칙을 정리했어요. 원문을 옮기지 않고 HOLT 포맷별 예시로 바꿔 썼어요.
+- 자동 제작 지시문 3개(새벽 단일 주제, 아침 뉴스, 성장 루프)가 이 파일을 따르도록 연결했어요. 예약 작업에도 그대로 적용돼요.
+- 메모리에도 저장했고, git 커밋과 푸시까지 했어요.
+- "구조는 쉽게, 단어는 원래 단어 그대로"라는 기존 쉬운 영어 규칙과도 부딪히지 않게 맞췄어요.
+
+토큰은 예상보다 조금 더 들었어요. 이미지 다운로드가 크롬에서 막혀서 글자 인식 대신 저해상도 캡처로 읽었기 때문이에요. 받다 만 파일은 지웠어요.
+
+=== 대화 Claude Code 세션 c5cd64c1 ===
+[23:30] 운영자: 갤럭시 무슨 일이냐면 왜 한글이야
+[23:31] Claude: 갤럭시 릴스는 '유형 F' 실험 포맷으로 만들었고, 이 포맷은 영상 첫 장면인 '무슨 일이냐면'(7초)을 일부러 한국어로만 보여 줘요.
+
+- **누가 정했나:** 10/24에 조회수 실험을 하면서 제가 정했어요. 영어 퀴즈 표지("OO 영어로는?")가 영어에 관심 없는 사람을 첫 2초 만에 떠나게 하는지 보려고, 뉴스 내용은 한국어로 먼저 보여 주고 영어는 '오늘의 영어' 표현 하나만 붙였어요. 구성은 [single_reel.py:73](holt/tools/single_reel.py:73), 화면은 [single_topic.py:4713](holt/tools/single_topic.py:4713)의 `story_ko()`예요.
+- **문제점:** "카드 이미지에는 한국어를 넣지 않는다"는 원래 규칙에서 벗어나요. 아침 뉴스 표지처럼 따로 허락받은 예외도 아닌데, 실험을 시작할 때 이 점을 말씀드리지 않았어요. 제 잘못이에요.
+- **지금까지:** 이 포맷으로 올라간 글은 갤럭시 S26 하나뿐이고(experiment_log 기준), 이미 올라간 건 그대로 두려고 해요.
+
+다음 F부터는 이 장을 영어 'What happened'(긴 릴스와 같은 화면, 영어 TTS 포함)로 바꾸고, 한국어 설명은 캡션에만 넣을까요? 표지만 퀴즈 없이 두면 처음 알아보려던 실험은 그대로 할 수 있어요.
+[23:33] 운영자: 아냐 다양한 포맷 실험하는거니까 괜찮아 이따 새벽에도 콘텐츠 하나 올려줘라 어떤거 올릴지 스스로 판단해서 옿려봐 그리고 메모리에 말투, 문장에 대한거 읽고 반영해서 햐
+[23:33] Claude: 새벽 업로드 준비 중이에요. 지금은 제작 규칙과 오늘 올린 목록을 확인하고 있어요.
+[23:34] Claude: 보복성 퇴사 설문을 주제 후보로 보고, 출처를 확인하고 있어요.
+[23:35] Claude: 그 설문은 작년 11월 자료라 버리고, '청년이 원하는 월급 300만 원' 뉴스를 확인하고 있어요.
+
+=== 대화 Claude Code 세션 1c57dde8 ===
+[23:35] 운영자: 이것도 업데이트 해줘
+
+=== 대화 Claude Code 세션 c5cd64c1 ===
+[23:35] Claude: 출처 두 곳(국민일보, 머니투데이)에서 확인했어요. 이제 콘텐츠 파일을 쓰려고 이전 찬반 주제 형식을 보고 있어요.
+[23:36] Claude: 주제는 '청년 일자리 인식조사'(중소기업중앙회, 10/25 발표)로 정했어요. 유형은 D(찬반 질문, 긴 릴스)이고, 지금 표지 그림을 그리고 있어요.
+[23:36] Claude: Now I'll add the cover scene: a young person at a fork, with a giant faceless tower on one side and a smaller warm office with a wallet and clock on the other.
+
+=== 대화 Claude Code 세션 1c57dde8 ===
+[23:36] Claude: 새로 보내주신 게시물 두 개(깔끔한 글쓰기 팁 4장, 구체적으로 쓰기)의 내용을 [holt/writing_craft.md](holt/writing_craft.md)에 추가했어요. 앞으로 만드는 원고·캡션·스레드 글부터 적용돼요.
+
+**새로 넣은 원칙**
+- **6. 형용사 대신 숫자와 감각**
+  - "엄청난 인파"가 아니라 "3만 명"처럼 보이는 사실로 써요.
+  - 꾸밈말을 붙이기 전에 더 센 동사부터 찾아요. "비가 많이 왔다"보다 "비가 쏟아졌다", "went up a lot"보다 "soared"예요.
+- **7. 군더더기 꼬리 자르기**
+  - '~하고 있다'는 '~한다'로, '~것이다'는 대상을 바로 말하는 식으로 바꿔요.
+  - '~할 수 있다'를 습관처럼 쓰지 않아요. 실제로 일어나는 일은 '~하기도 한다', 가능성은 '~할지도 모른다'로 구분해요.
+  - 영어의 "It is ~ that", "There are", can/may도 같은 기준으로 줄여요.
+  - 같은 단어를 반복하거나 조사가 겹친 곳은 다 쓰고 나서 한 번 걸러요.
+- **8. 접속사 덜어 내기**: 그리고·그래서·하지만, and·so·but을 빼고 문장 순서만으로 이어지게 써요. 기존의 영어 원고 연결 규칙과도 같은 방향이에요.
+- **9. 빈 문장 자르기, 할 말 끝나면 멈추기**: 정보가 없는 문장은 지워요. 끝에 "앞으로가 주목된다" 같은 습관적인 맺음말을 붙이지 않아요.
+- **10. 단어 하나가 전체 인상을 만든다**: 올리기 전에 단어와 오타를 하나씩 다시 봐요.
+
+마지막 확인 목록에도 이 항목들을 넣었어요. 자동 제작 지시문 3곳의 요약 줄과 메모리도 같이 고쳤고, 커밋과 푸시까지 끝냈어요.
+
+=== 대화 Claude Code 세션 c5cd64c1 ===
+[23:37] Claude: 카드 6장은 잘림이나 겹침 없이 나왔어요. 이제 캡션을 확인하고 릴스를 만들게요.
+[23:38] Claude: 릴스가 나왔고, 퀴즈 빈칸 장면이 제대로 나오는지 프레임을 확인하고 있어요.
+[23:38] Claude: 영상은 빈칸 장면과 정답 장면 모두 정상이에요. 이제 스레드 글을 확인하고 업로드를 예약할게요.
+[23:39] Claude: 새벽 콘텐츠를 다 만들었고, **오늘 밤 00:40**에 자동으로 올라가게 예약해 뒀어요. 인스타 릴스부터 시작해 페북 릴스, 스레드, 인스타 스토리, 페북 스토리 순서로 3분 간격으로 올라가서 00:52에 끝나요.
+
+**주제: 첫 직장, 대기업 간판 vs 좋은 조건** (유형 D, 찬반 투표)
+- **내용:** 중소기업중앙회가 오늘 발표한 청년 1,000명 조사예요. 56.5%가 회사 크기보다 월급·근무 환경 같은 근로조건을 더 중요하게 봤어요. 중소기업을 꺼리는 이유는 1위가 근무 환경과 조직 문화, 2위가 낮은 월급이었어요.
+- **고른 이유:** 2030 누구나 고민하는 첫 직장 얘기라 편이 갈리는 질문으로 만들기 좋아요. 순서상 이번은 긴 릴스(유형 D) 차례였고요. 오늘 나온 기사이고, 숫자는 [국민일보](https://www.kmib.co.kr/article/[가림:숫자])와 [머니투데이](https://www.mt.co.kr/future/2026/10/25/[가림:숫자]) 두 곳에서 확인했어요.
+- **표지:** 갈림길에 선 청년의 뒷모습이에요. 왼쪽에는 구름에 가린 큰 빌딩, 오른쪽에는 아담한 사무실과 돈·시계 아이콘을 그렸어요.
+- **검토:** 카드 6장과 영상 프레임을 확인했고, 퀴즈 빈칸 장면과 정답 장면 모두 정상이에요.
+
+**`holt/writing_craft.md` 반영한 부분**
+- **정확한 단어:** 'want'를 'expect at least'로 바꿨어요. 기대하는 최저선이라는 뜻이 정확히 드러나요.
+- **사건은 짧게, 능동태로:** 영어 원고는 "A new survey asked…"처럼 주어부터 세운 짧은 문장으로 썼어요.
+- **흐름 정리:** 한국어 캡션에서 앞뒤가 맞지 않던 '그래도'를 뺐어요.
+- **스레드:** 반말로 쓰고, 질문 대신 감상 한 줄로 끝냈어요. 글 전문은 이래요.
+
+> 청년 1,000명한테 물었더니 절반 넘게 회사 크기보다 월급이랑 근무 환경을 더 본다고 했대
+>
+> 의외였던 건 중소기업을 피하는 이유 1위가 월급이 아니라 회사 분위기였다는 거. 낮은 월급은 근소하게 2위
+>
+> 돈도 돈인데 매일 가는 곳 공기가 더 크게 느껴지는 건 맞는 것 같음
+
+**참고할 점**
+- 00:40으로 잡은 건 조심 기간 규칙(01~06시 업로드 금지)에 걸리지 않게 하려고서예요.
+- 맥이 잠자기 상태면 업로드는 깨어날 때 실행돼요. 맥은 켜 두세요.
+- 결과는 `holt/upload_youthjob.log`에 남아요.
+- 이 글이 10/26의 첫 주제가 돼요. 그래서 10/26 19:30 자동 회차는 하루 4개 제한에 걸려 조회수 수집만 하고 넘어갈 수 있어요.
+[23:39] 운영자: 영어는 뜻에서 크게 다르지 않다면 그리고 문장 전체 글 전체 내용이 크게 달라지지 않는다면 또는 중요한 부분이 아니라면 쉬운 영어 쉬운 단어로 해줘 더 정확하고 엄밀한 표현을 하기 위해서 불필요하게 어려운 단어와 표현을 쓰거나 복잡한 문장구조로 쓰지는 마라
+[23:39] Claude: 쉬운 단어 쪽으로 규칙을 바꾸고, 00:40에 올라갈 원고에도 바로 반영할게요.
+[23:39] Claude: 하루 4개 제한도 같이 풀게요. 먼저 그 제한이 적힌 곳을 찾고 있어요.
+[23:39] Claude: 제한은 풀었어요. 이제 00:40 업로드분의 영어를 쉬운 단어로 고쳐서 다시 만들고 있어요.
+[23:41] Claude: 표지가 좋아졌어요. 바뀐 표지가 들어가게 릴스를 다시 만들고 커밋할게요.
+[23:41] Claude: 세 가지 다 반영했어요. 00:40 업로드도 그대로 예약돼 있고, 고친 카드와 영상이 그대로 올라가요.
+
+**1. 표지 색**
+2번째 줄이 민트였던 건 퀴즈형 템플릿이 정답 표현 자리를 칠하던 게 그대로 남은 거였어요. 찬반 표지에서는 한쪽 선택지만 눈에 띄게 되니 이유가 맞지 않았어요. 그래서 두 선택지를 그림 속 짝꿍 건물 색으로 같은 무게로 칠했어요.
+- **대기업 간판:** 빌딩과 같은 회청색
+- **좋은 조건:** 사무실과 같은 주황색
+
+앞으로 다른 찬반 표지에도 이렇게 쓸 수 있게 코드를 고쳤고, 이 기준을 메모리에도 적어 뒀어요.
+
+**2. 쉬운 영어**
+뜻이나 내용이 크게 달라지지 않으면 쉬운 단어와 쉬운 구조를 쓰는 걸 기본으로 바꿨어요. 이번 원고는 이렇게 고쳤어요.
+- expect at least → **want at least**
+- Small firms struggle to hold on to them → **Small companies find it hard to keep them**
+- drives them away → **pushes them away** (표현 장도 같이 바꿈)
+
+`holt/writing_craft.md`의 '정확한 단어' 원칙은 이제 뜻이 실제로 달라질 때만 적용돼요. 새벽 자동 작업과 다른 지시문, 메모리에도 같은 규칙을 넣었어요.
+
+**3. 하루 4개 제한 해제**
+성장 루프와 캐러셀 예약 작업, 지시문, 메모리에서 모두 뺐어요. 그래서 내일 19:30 회차도 정상적으로 만들고 올려요. 01~06시 업로드 금지 규칙은 그대로예요.
+[23:41] 운영자: 그리고 보통 대기업이 근로조건이 좋아 복지고 좋고 대기업간판에 대치될만한 좋은 조건이란게 뭔지 부정확해
+[23:41] Claude: 맞는 지적이에요. 조사가 실제로 물은 건 "기업 규모 vs 실질 근로조건(임금·근무 환경·성장 가능성) 중 뭘 더 보나"인데, 표지는 "대기업 = 조건 나쁨"처럼 읽혀서 부정확했어요. 조사 질문 그대로 '회사 크기 vs 월급·근무환경'으로 바꾸고, 그림도 작은 회사 건물 대신 조건 자체(돈·시계·새싹) 표지판으로 바꿀게요.
+[23:42] Claude: 표지가 조사 질문과 맞게 나왔어요. 릴스를 다시 만들고 커밋할게요.
+[23:42] Claude: 맞아요, 부정확했어요. 조사에서 실제로 물은 건 "회사 크기와 월급·근무 환경 같은 실제 조건 중 뭘 더 보나"였어요. 그런데 표지는 '대기업 = 조건 나쁨'처럼 읽혔고, '좋은 조건'이 뭔지도 흐렸어요. 조사 질문 그대로 바꿨어요.
+
+- **표지:** "첫 직장, 뭘 볼래? / 회사 크기 / vs 월급·근무환경"
+- **그림:** 오른쪽의 작은 회사 건물을 뺐어요. 그 자리에 월급·근무 시간·성장을 뜻하는 돈·시계·새싹 표지판을 세웠어요. 이제 '큰 회사 vs 작은 회사'가 아니라 '회사 크기 vs 조건'으로 읽혀요.
+- **댓글 투표:** "첫 직장 고를 때, 여러분은 뭘 먼저 보나요? A. 회사 크기와 이름 / B. 월급과 근무 환경"
+- **캡션 제목:** "첫 직장, 회사 크기 vs 월급·근무 환경"
+
+릴스도 바뀐 표지로 다시 만들었고, 00:40 예약은 그대로라 고친 버전이 올라가요. 앞으로는 찬반 표지의 두 선택지가 실제로 맞서는지, 그림이 한쪽을 깎아내리지 않는지 확인하도록 메모리에 적어 뒀어요.
+[23:44] 운영자: 청년 1,000명한테 물었더니 절반 넘게 회사 크기보다 월급이랑 근무 환경을 더 본다고 했대
+의외였던 건 중소기업을 피하는 이유 1위가 월급이 아니라 회사 분위기였다는 거. 낮은 월급은 근소하게 2위
+돈도 돈인데 매일 가는 곳 공기가 더 크게 느껴지는 건 맞는 것 같음
+
+이게 주요내용이랑거지?
+
+근데 왜 회사크기 vs 월급이랑 근무환경인거야
+
+월급보다 근무환경이 중요하단거 아냐??
+[23:44] Claude: 아니에요. "월급보다 근무 환경이 중요하다"는 조사 전체의 결론이 아니에요. 질문 두 개의 결과가 섞여 보여서 헷갈리게 됐어요.
+
+**조사에서 나온 주요 결과 (중소기업중앙회, 청년 1,000명)**
+
+| 질문 | 결과 |
+|---|---|
+| ① 일자리 고를 때 중요한 것 (여러 개 선택) | **월급 64.7%로 1위**, 근로시간 51.9%, 고용 안정 50.9% |
+| ② 회사 크기 vs 실제 근로조건(월급·근무 환경·성장) | **근로조건 56.5%**가 더 중요 |
+| ③ 중소기업을 피하는 이유 | 근무 환경·조직문화 52.3%, 낮은 월급 49.8% (2.5%p 차이) |
+
+- **왜 '회사 크기 vs 월급·근무환경'이었나:** 표지는 ② 질문을 그대로 옮긴 거예요. 거기서 '근로조건'은 월급과 근무 환경을 묶은 말이라, 월급과 환경이 맞서는 구도가 아니에요.
+- **"월급보다 근무 환경"은 어디서 나왔나:** ③에서만 그래요. 그것도 중소기업을 꺼리는 이유에 한해 근소하게 앞선 거예요. 일자리 전체로는 ①처럼 월급이 1위예요.
+- **스레드 글은 왜 그렇게 썼나:** ③이 의외라서 그 부분을 골랐어요. 다만 "1위가 월급이 아니라"라고 쓰면 월급이 덜 중요하다고 읽힐 수 있으니 그 문장은 고치는 게 맞아요.
+
+**제 추천:** 표지를 **"첫 직장, 뭘 고를래? / 월급 vs 회사 분위기"**로 바꾸는 게 더 나아요.
+- '회사 크기 vs 조건'은 근로조건 쪽이 당연한 정답처럼 보여서 투표가 갈리기 어려워요.
+- '월급 vs 분위기'는 실제로 사람마다 갈리는 질문이에요. 조사에서도 두 쪽 다 근거가 있어요(월급은 전체 1위, 분위기는 중소기업 기피 이유 1위).
+- 스레드도 "일자리 고를 땐 월급이 1위인데, 중소기업을 피하는 이유로는 분위기가 월급을 근소하게 앞섰다"로 정확하게 고칠게요.
+
+00:40 업로드까지 시간이 충분해요. 이렇게 바꿀까요?
+[23:47] 운영자: 이거 중소기업 피하는 이유에 초점 맞추자 월급뿐보다 근무환경이 나빠서 그런게 크다
+
+표지도 월급 vs 근무환경
+표지에 대기업 중소기업 넣지말고 
+
+내용도 그런식~~
+[23:47] Claude: 중소기업을 꺼리는 이유에 맞춰 다시 만들게요. 표지는 '월급 vs 근무환경'으로 하고 대기업·중소기업은 넣지 않을게요. 본문도 '1위는 근무 환경·조직 문화(52.3%), 낮은 월급은 바로 뒤(49.8%)'에 맞추고요. 표지 그림은 회사 건물을 두고, 한쪽엔 얇은 지갑(월급), 다른 쪽엔 먹구름(분위기)을 그려서 새로 만들어요.
+[23:48] Claude: '근무 환경'이 조사에서 구체적으로 뭘 가리키는지 기사 원문을 확인할게요.
+[23:49] Claude: 두 가지가 어색해요. 3장에서 'work culture'와 'came first' 강조가 붙어 한 덩어리로 보이고, 표지 청년의 얼굴도 이상하게 나왔어요. 둘 다 고칠게요.
+[23:49] Claude: 'topped the list'보다 쉬운 말로 바꿀게요.
+[23:49] Claude: 표지와 본문이 정리됐어요. 릴스를 다시 만들고, 예약 작업의 제목도 바꿀게요.
+[23:50] Claude: 실사 표지로 바꿀게요. 위키미디어 공용에서 자유 라이선스 사진(사직서, 짐 싸서 나가는 장면)을 찾고 있어요.
+[23:50] Claude: 'Typing Letter of Resignation on Typewriter'(CC BY 2.0) 사진이 맞아 보여요. 받아서 확인할게요.
+[23:50] Claude: 좋은 사진이에요. 표지 칸(1080×720)과 비율이 같아서 자르지 않고 그대로 쓸 수 있어요.
+[23:51] Claude: 실사 표지가 잘 나왔어요. 릴스를 다시 만들고 커밋할게요.
+[23:51] Claude: 표지를 실사로 바꾸고 내용도 '중소기업을 꺼리는 이유'에 맞춰 다시 만들었어요. 00:40 예약은 그대로라 이 버전이 올라가요. 카드와 영상은 잘림 없이 나왔고, 퀴즈 빈칸과 정답 장면도 확인했어요.
+
+**표지**
+- **사진:** 타자기로 'Letter Of Resignation'을 치는 손이에요. 위키미디어 공용의 CC BY 2.0 사진이라 표지에 출처를 적었어요.
+- **제목:** "그 회사 피한 이유 / 월급 vs 조직문화". 대기업·중소기업이라는 말은 넣지 않았고, 두 선택지는 같은 민트색이에요.
+
+**'근무환경'이 뭔지**
+조사 원문을 확인했는데, 항목이 '열악한 근무환경·조직문화' 하나로 묶여 있고 세부 내용은 없었어요. 시설인지, 상사인지, 야근인지는 나누지 않았어요. 그래서 예를 지어내지 않고, 항목명에 실제로 있는 말 중 더 구체적인 '조직문화'를 표지와 오늘의 표현(work culture)으로 썼어요.
+
+**본문 흐름 (영어도 같은 순서)**
+1. 청년 1,000명에게 왜 중소기업을 꺼리는지 물었더니, 1위는 낮은 월급이 아니었어요.
+2. 근무 환경·조직문화가 52.3%로 1위, 낮은 월급은 49.8%로 바로 뒤였어요.
+3. 그렇다고 월급이 덜 중요한 건 아니에요. 일자리를 고를 때 가장 먼저 보는 건 여전히 월급이었어요.
+
+**나머지**
+- **댓글 투표:** "회사를 고를 때 하나만 본다면? A. 월급이 높은 곳 / B. 조직 문화가 좋은 곳"
+- **스레드:** 같은 흐름으로 다시 썼고, 질문 대신 "분위기는 들어가 봐야 아니까 더 겁나는 걸지도"로 끝냈어요.
+- **메모리:** 그린 표지가 허술하면 실사부터 찾는다는 기준을 적어 뒀어요.
+[23:52] 운영자: 이정도면 월급 vs 조직문화 한줄에 쓸수있지 않으까
+[23:52] Claude: 한 줄에 들어가요. 릴스를 다시 만들고 커밋할게요.
+[23:53] Claude: 네, 한 줄에 들어가요. 표지 제목을 "그 회사 피한 이유 / **월급 vs 조직문화**" 두 줄로 바꿨고, 릴스도 다시 만들었어요. 00:40 업로드는 이 버전으로 나가요.
+
+제목 시작 위치는 그리드에서 표지끼리 줄이 맞도록 고정돼 있어서, 대신 제목 아래 여백이 조금 넓어졌어요.
+
+=== 대화 Claude Code 세션 d7f835d1 ===
+[23:57] 운영자: 7달된이 뭐야 7개월이지
+
+그리고 저 표지는 이상해 저렇게 만들지말렴 괴물같애 ai가 괴물이고 메모리칩은 왜 던지고 있는건데 +15만은 머야 15만원이면 15만원이지
+
+표지만봐도 뭔 상황인지 대충이나마 이해되게 해줘
+[23:58] Claude: Already-uploaded topic(phone_price_hike) 표지를 확인했어요. 이미 인스타·페북·스레드에 올라간 상태라 그건 그대로 두고, 코드와 규칙을 고치는 중이에요.
+[23:59] Claude: 컨베이어 위치만 고쳐서 다시 그려봤어요. 확인 중이에요.

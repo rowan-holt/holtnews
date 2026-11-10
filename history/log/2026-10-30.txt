@@ -1,0 +1,273 @@
+# 홀트뉴스가 만들어진 기록 — 2026-10-30 대화 원문 (KST)
+
+=== 대화 Claude Code 세션 dca8ca51 ===
+[06:04] 예약 작업: [예약 작업 holt-morning-auto 실행 — 정해 둔 지시문으로 자동 시작]
+[06:05] Claude: 아침 뉴스는 접히지 않음(active) 확인했고, 지금 오늘 뉴스 3개를 찾는 중입니다.
+[06:06] Claude: 후보 압축 중입니다: 1번 수도권 7.7만 가구 공급, 2번 구글(알파벳) 상장 후 최악의 하루, 3번은 아직 탐색 중.
+[06:10] Claude: 아침 뉴스 렌더 완료(카드·캡션 이상 없음). 이제 08:30 단일 주제(구글 최악의 하루)를 만듭니다.
+[06:10] Claude: 카피바라는 어제 단일 주제로 이미 올린 소식이라 3번을 캔자스 입양 재판 소식으로 바꿉니다.
+[06:12] Claude: 표지용 구글 간판 실사(CC BY-SA 4.0) 확보했습니다. 환율 확인 후 단일 주제 원고를 씁니다.
+[06:13] Claude: 단일 주제 카드 렌더 완료, 6장 검토 중입니다.
+[06:14] Claude: 아침 뉴스·단일 주제 둘 다 제작·검토 끝났습니다(캡션 양식 문제 없음). 먼저 커밋해 두고 07:20 재렌더까지 기다립니다.
+[06:14] Claude: 07:20까지 대기 중입니다(그때 날씨로 표지 다시 렌더 → 07:30 업로드).
+[07:20] Claude: Icon changed (code 2 → 1); re-checking cover and first frame.
+[07:20] Claude: Sunny cover looks right. Copying to holt/ and waiting to 07:30.
+[07:30] Claude: IG reel upload running in background; waiting for it.
+[07:34] Claude: 아침 뉴스 업로드 완료(릴스·스레드·스토리). 08:30 단일 주제 업로드까지 대기합니다.
+[07:34] Claude: 단일 주제는 08:30에 자동으로 올라가도록 걸어 두었습니다.
+[08:34] Claude: The glob failure stopped the add; adding the files explicitly.
+[08:34] Claude: 10/30 아침 뉴스와 08:30 단일 주제를 모두 올리고 커밋·푸시까지 마쳤습니다. 페이스북은 368 제한이 아직 안 풀려서 올리지 않았습니다.
+
+**아침 뉴스 (07:30)**
+- 릴스: https://www.instagram.com/reel/DfGFXT-v151/
+- 스레드: https://www.threads.com/@[가림]/post/DfGFmDok6rj
+- 스토리: https://www.instagram.com/stories/rowanholt_official/[가림:숫자] (영상이 70초라 앞 59초만 올라갔습니다)
+
+**고른 뉴스 3개**
+1. **경제:** 김포·구리·하남 등 서울 경계 5km 안 6곳에 7만 6,700가구를 짓습니다. 대부분 그린벨트였던 땅이고, 서울 안은 한 곳도 없습니다. 헤럴드경제, 아이뉴스24, 서울경제, SBS Biz에서 확인했습니다.
+2. **국제 경제:** 구글 모회사 알파벳 주가가 하루 12% 넘게 떨어졌습니다. 2004년 상장 후 최악의 하루입니다. 같이 넣은 연결 소식은 반도체주도 함께 떨어졌다는 것입니다. Yahoo Finance, Benzinga, IBTimes, 뉴스1, 머니투데이에서 확인했습니다.
+3. **감동:** 미국 캔자스의 6살 아이가 입양 재판에 반 친구 전원을 데려왔습니다. TODAY, KWCH, Emporia Gazette에서 확인했습니다.
+   - 처음엔 영국 카피바라 탈출 소식을 골랐습니다. 그런데 어제 단일 주제로 이미 올린 소식이라 이걸로 바꿨습니다.
+
+**08:30 단일 주제:** 구글 상장 후 최악의 하루, 'AI 거품 아니야?'(Is AI a bubble?)
+- 릴스: https://www.instagram.com/reel/DfGMO-BhxMH/ (정답 댓글은 11:30에 자동으로 달립니다)
+- 스레드: https://www.threads.com/@[가림]/post/DfGMeoXH7MB
+- 스토리: https://www.instagram.com/stories/rowanholt_official/[가림:숫자]
+- **고른 이유:** 밤사이 해외 증시가 크게 움직인 소식이라 몇 시간만 지나도 낡습니다. 1·2·3번 중 가장 급한 뉴스였습니다.
+- 표지는 구글 간판 실사(위키미디어, CC BY-SA 4.0)입니다. 앞 단일 주제가 그림이라 이번엔 실사로 했고, '영어로는?'은 앞이 단어라 이번엔 문장으로 했습니다. 표지 한 줄에는 'AI 잘돼도 구글 폭락'이라는 반전을 넣었습니다.
+
+**그 밖의 확인 결과**
+- 06시엔 표지 날씨가 흐림이었는데, 07:20 다시 렌더할 때 맑음으로 바뀌었습니다. 표지와 영상 첫 화면을 다시 확인하고 올렸습니다.
+- `check_captions.py`는 두 콘텐츠 모두 글자 수 초과와 양식(FORM) 문제가 없었습니다.
+- 결과물은 `output/2026-10-30/`과 `out_single/alphabet_worst_day_2026-10-30/`에 있습니다.
+- 인스타 팔로워는 21명이라 캐러셀은 계속 쉽니다.
+
+=== 대화 Claude Code 세션 e2ce062e ===
+[09:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
+[09:02] Claude: D 유형(내 일이면?)으로 결정하고 주제 찾는 중이에요. 09:56 업로드 목표.
+[09:02] Claude: Disney+ 광고형 요금제(월 7천원) 소식으로 D 유형 만드는 중이에요. 사실 확인 중.
+[09:03] Claude: Disney+ 기사 3곳 교차확인 완료. 표지 그림(광고 나오는 TV + 카드) 새로 그리는 중이에요.
+[09:03] Claude: Now write the scene function and topic file.
+[09:04] Claude: 표지 제목 길이 맞추는 중이에요.
+[09:05] Claude: 표지 그림 다듬는 중(화면 색·카드 위치).
+[09:05] Claude: Cover OK. Checking other cards and caption.
+[09:05] Claude: Quiz blank looks doubled; checking code.
+[09:06] Claude: Reel built (14s). Writing threads.txt and checking frames.
+[09:06] Claude: Korean story card is dense for a 7s scene; trimming and re-rendering.
+[09:06] Claude: FB still restricted → IG reel, Threads, IG story only. Waiting until 09:56.
+[09:26] Claude: Background wait runs until 09:56; I'll upload when it finishes.
+[09:26] Claude: Cards and reel are ready. I'm waiting for the 09:56 upload time and will post to Instagram, Threads and Instagram Story as soon as the wait ends.
+[10:03] Claude: The 10:00 post is up: a "would you watch ads to pay less?" piece on Disney+'s new ad plan, posted to Instagram Reels, Threads and Instagram Story. Facebook was skipped.
+
+**Slot:** 10-30 10:00 (scheduled 09:56). Instagram Reels went up at 09:56, Threads at about 09:59 and the Instagram Story at about 10:02.
+
+**Format and why:** type D, "what would you do?". Its last post, the Starbucks bear cup, reached 205 views, past the 200 goal, so the system pushes 2 more D posts. Special formats (word, Why?, comic) were allowed today, but the D push took priority, so this is a news post. The 08:30 post was US news (Alphabet), so this one is Korean. The reel uses the short "what happened in Korean → English sentence" version (14 seconds), which has the longest watch time of any video layout so far.
+
+**Topic:** From November 10, Disney+ adds a 7,000 won monthly plan with ads. The ad-free plans go up: Standard from 9,900 to 11,500 won, Premium from 13,900 to 16,500 won, for new subscribers only. The related news is that Tving and Wavve already sell 5,500 won ad plans.
+- The cover reads "광고 보면 4,500원 싸진다면? 참는다 vs 더 낸다" ("If ads made it 4,500 won cheaper, would you put up with them or pay more?"). The "4,500 won cheaper" condition is the twist the cover needs.
+- The cover picture is a TV showing an ad with a countdown, plus a credit card. I added it as a new drawing to the cover tool.
+- Today's English: "I'll sit through the ads." I used a sentence rather than a single word because sentences hold viewers longer (3.1 vs 2.4 seconds).
+- Fact-checked in three outlets: [Newsis](https://n.news.naver.com/mnews/article/003/[가림:숫자]), [Money Today](https://n.news.naver.com/mnews/article/008/[가림:숫자]), [Dailian](https://n.news.naver.com/mnews/article/119/[가림:숫자]).
+
+**Links:**
+- Instagram Reels: https://www.instagram.com/reel/DfGWH4OTW3D/
+- Threads: https://www.threads.com/@[가림]/post/DfGWfCeH6Q7
+- Instagram Story: https://www.instagram.com/stories/rowanholt_official/[가림:숫자]
+- The quiz answer comment is set to post at 12:57.
+
+**Stage:**
+- **Goal:** 200 views per post and 50 followers by 11/05.
+- **Followers:** 21 now.
+- **Format scores:**
+  - News is the strongest format and is set to run more often.
+  - The best-performing styles are a twist on the cover, an English sentence rather than a word, and the "what happened → English" reel.
+  - By country: US 2.8 seconds and Korea 2.8 seconds of average watch time, so country makes no real difference.
+  - B (debate) and G (carousel-only) stay closed.
+
+**Problems:**
+- **Facebook:** still skipped because of the posting limit (error 368). It needs you to check the page's restriction in the Facebook app; this is already in `user_todo.md`, so I didn't add it again.
+- **Cover title:** the first version was too wide for the cover, so I split it into three lines.
+- **Quiz blanks:** they came out doubled at first. I fixed it and checked the cards again.
+
+Nothing new to ask you this time.
+
+=== 대화 Claude Code 세션 9cdac1ef ===
+[11:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
+[11:02] Claude: I'm reading the remaining rules and today's earlier uploads, then I'll pick a topic.
+[11:03] Claude: Still searching for a non‑US surprising story for the 12:00 slot (due 11:45).
+[11:03] Claude: Topic chosen: Japan's "jiko bukken" (stigmatised homes sold at half price) — non‑US, surprising, Halloween timing. Cross-checking a second source now.
+[11:04] Claude: Photo works (bright old Japanese house, CC BY 2.0). Writing the topic file now.
+[11:05] Claude: Cover lines overflow; shortening them.
+[11:05] Claude: Cards look clean. Fixing one fact ("about half", per BBC) and building the reel.
+[11:06] Claude: Reel frames check out (quiz answer filled, no stray blanks). Checking caption, then waiting for 11:45.
+[11:06] Claude: Everything is ready. Scheduling the upload for 11:45 (Instagram reel → Threads → Instagram story; Facebook skipped per the slot rule).
+[11:06] Claude: The upload is set to start at 11:45. I'll wait for it to finish.
+[11:06] Claude: The upload job will start on its own at 11:45, and I'll get a notice when it finishes. After that I'll record the post and commit.
+[11:52] Claude: **Slot 10‑30 12:00 is done.** Uploads started at 11:45:36, the scheduled time.
+
+**Format and topic: news, type A (unusual story with a twist), in Japan.** In Japan, a home where someone died alone or in a sad way is called "사고 물건". These homes sell far below normal prices. Now that housing costs are rising, 54% of people in a 2025 survey said they would live in one if it were cheap.
+- **Why type A instead of the suggested D:** the view-collection script suggested D, but the 10:00 slot was already D (Disney+). I picked A to avoid a repeat. Posts with a surprising twist hold viewers longer: 3.2 seconds on average, versus 2.2 seconds without one.
+- **Why Japan:** the 08:30 and 10:00 posts were both US stories, so a third in a row wasn't allowed. Halloween week also makes a "haunted house" topic timely.
+- **English for the day:** `haunted`. The two posts before this one taught full sentences, so this one is a single word, following the alternation rule.
+- **Cover and reel:** real photo this time, since the previous cover was a drawing. It's an old Japanese house from Wikimedia, CC BY 2.0, with a Japanese flag in the top right. The reel is the long quiz version (39 seconds), following the short-reel, news-reel, long-reel rotation.
+- **Handling the deaths:** the article includes a suicide case, which I left out. Deaths are described only as "alone" or "in a sad way", and there are no ghost‑sighting stories.
+
+**Fact checks**
+- BBC (10/29): https://www.bbc.co.uk/news/articles/cqwy78elyrlzo
+- SoraNews24 and Unseen Japan both confirm the 54.2% figure.
+- Yen to won: about 8.47 won per yen (two sources). 20 million yen ≈ 170 million won; 45 million yen ≈ 380 million won.
+
+**Links**
+- Instagram reel: https://www.instagram.com/reel/DfGinULP2aR/ (11:45; the quiz answer comment is scheduled for 14:46)
+- Threads: https://www.threads.com/@[가림]/post/DfGjBXWn6S6 (11:49)
+- Instagram story: https://www.instagram.com/stories/rowanholt_official/[가림:숫자] (11:51)
+- **Not posted to Facebook:** the posting limit (error 368) hasn't been lifted, and 12:00 isn't one of the Facebook slots anyway.
+
+**Progress toward the first goal (200 views per post, 50 followers by 11/05):** followers are at 21. The Starbucks bear‑cup post (type D) reached 205 views, so the script will give D one more slot. No new type was added this time.
+
+**Records:** the post is logged as type A and tagged country "other" with a twist. The commit is `5f098d3` and is pushed. There were no errors.
+
+=== 대화 Claude Code 세션 16aca83b ===
+[15:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
+[15:02] Claude: 회차는 10/30 16:00(업로드 16:14)이에요. 지시문과 메모리를 다 읽었고, 이제 조회수 수집과 판단을 시작해요.
+[15:03] Claude: 데이터상 C(영어로 하면 틀려요)가 좋고, 오늘 미국 단일은 이미 2개라 미국 말고 다른 나라 소식을 찾고 있어요.
+[15:04] Claude: 주제는 '작년보다 28% 싸진 사과 + 마트 영어로 하면 틀려요'(유형 C, 한국)로 정했어요. 사전 두 곳으로 확인했고, 이제 원고를 써요.
+[15:06] Claude: Halloween's PHRASE has no trailing period, so I'm matching that. Next I render the cards.
+[15:06] Claude: Now look at the cards at small size.
+[15:06] Claude: The cover's bag shadow is too dark and heavy, so I'm lightening it.
+[15:06] Claude: Cover reads well. Now building the reel.
+[15:07] Claude: Frames look right. Writing threads.txt and checking captions.
+[15:07] Claude: Production done; upload is due at 16:14 (about 67 minutes away). Checking the Facebook restriction status first.
+[15:07] Claude: FB still restricted, so I'll post Instagram reel → Threads → Instagram story. Scheduling the upload for 16:14 in the background.
+[15:07] Claude: Meanwhile, I'll commit the code and topic file (upload record follows after posting).
+[15:07] Claude: Waiting for the 16:14 upload to run in the background.
+[15:07] Claude: 업로드는 16:14에 백그라운드에서 돌아갑니다. 끝나면 기록하고 커밋한 뒤 보고할게요.
+[16:21] Claude: **10월 30일 16시 회차를 16:14에 올렸어요.**
+
+- **현재 단계:** 1차 목표는 게시물당 조회수 200회와 팔로워 50명이고, 기한은 11/05예요. 지금 팔로워는 22명이에요.
+- **이번 판단:** 스타벅스 곰 컵 게시물(D 유형)이 205회로 목표를 넘어서, 스크립트가 D를 한 번 더 내자고 했어요.
+- **고른 포맷과 이유:** D를 따르지 않고 C('영어로 하면 틀려요')로 바꿨어요.
+  - 오늘 10시에 이미 D를 올렸어요.
+  - 특징별 점수에서 '영어로 하면 틀려요'가 1.17로 1위이고, 문장도 1.24로 단어(0.98)보다 높았어요.
+  - 미국 단일 주제는 오늘 2개를 이미 올렸고 직전 회차가 일본이라, 이번엔 한국 소식으로 했어요.
+  - 특집은 오늘 낼 수 있었지만, 단어 평균(147회)과 Why? 평균(69회)이 뉴스 평균(159회)보다 낮아서 뉴스로 했어요.
+- **주제:** 올가을 부사 사과값이 작년 같은 기간보다 약 28% 내렸어요. 날씨가 좋아 수확이 늘었고, 대형마트도 할인에 들어갔어요.
+  - 영어 표현: '마트 갔다 올게' → *I'm going to the grocery store.*
+  - 영어 mart는 주로 가게 이름에 붙는 말이라는 걸 Longman과 Oxford 사전 두 곳에서 확인했어요.
+  - 표지는 직전 회차가 실사라 이번엔 그림으로 새로 그렸어요. 쓰러진 장바구니에서 사과가 굴러 나오는 장면이에요.
+  - 릴스는 '무슨 일이냐면' 한국어 설명 뒤에 영어 표현이 나오는 흐름이고, 길이는 13초예요.
+- **교차확인:** [Korea JoongAng Daily](https://www.koreajoongangdaily.com/business/[가림:긴문자열]/12946718), [전자신문](https://www.etnews.com/[가림:숫자])
+- **올린 링크:**
+  - 인스타 릴스: https://www.instagram.com/reel/DfHBY19yF3m/
+  - 스레드: https://www.threads.com/@[가림]/post/DfHBvSin5fV
+  - 인스타 스토리: https://www.instagram.com/stories/rowanholt_official/[가림:숫자]
+- **기록:** 퀴즈 정답 댓글은 19:15에 자동으로 달리게 예약됐어요. 게시물을 기록하고 커밋 2개를 push했어요.
+- **못 한 것:** 페이스북은 게시 빈도 제한(오류 368)이 아직 풀리지 않아 건너뛰었어요. 그 밖의 오류는 없었어요.
+
+**사용자가 해 주면 좋은 일:** 이미 적어 둔 페이스북 빈도 제한 확인이 아직 남아 있어요(holt/user_todo.md).
+
+=== 대화 Claude Code 세션 2800eb71 ===
+[17:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
+[17:06] Claude: 제작과 영상 프레임 확인을 마쳤고, 업로드는 18:00에 맞춰 예약해 두었습니다. 올라가면 기록과 커밋까지 마치고 보고하겠습니다.
+[18:08] Claude: ## HOLT 10-30 18시 회차 보고
+
+**회차·업로드:** 10-30 18:00 회차를 due 시각인 18:00에 맞춰 올렸습니다. 인스타 릴스 18:00, 스레드 18:04, 인스타 스토리 18:07입니다.
+
+**단계:** 1차 목표(200회)를 달성했습니다. 최근 7개 게시물 중앙값은 205회입니다. 다음 목표는 조회수 500회·팔로워 200명(11/30까지)이고, 지금 팔로워는 23명입니다.
+
+**주제:** 뉴질랜드 경찰이 오클랜드의 한 집을 덮쳐 장전된 총, 현금과 함께 도난 포켓몬 카드 약 2,200만 원어치를 압수했습니다. 표지 문구는 "경찰이 덮친 집 / 총 옆에 포켓몬 카드 / '압수하다' 영어로?"이고, 오늘의 단어는 seize입니다.
+
+**포맷과 이유**
+- **세계 뉴스:** 금요일 18시 자리라 세부 지역은 오세아니아, 나라는 14일 안에 안 쓴 뉴질랜드로 골랐습니다.
+- **유형 E(짧은 릴스, 4.5초):** 오늘 앞 회차가 F, F, 긴 릴스, 긴 릴스여서 겹치지 않게 했습니다. E는 점수도 1.21로 높은 편입니다.
+- **유형 C를 쓰지 않은 이유:** `collect_views.py next`는 C를 냈지만, 이 뉴스에는 억지 없이 쓸 콩글리시가 없었습니다. 그래서 의외 상황이 있는 소식으로 태그해 E로 올렸습니다.
+- **특집:** 이 자리는 뉴스로 치는 자리라 쓰지 않았습니다.
+
+**링크**
+- [인스타 릴스](https://www.instagram.com/reel/DfHNhWIMTV1/)
+- [스레드](https://www.threads.com/@[가림]/post/DfHN7hUn1lX)
+- [인스타 스토리](https://www.instagram.com/stories/rowanholt_official/[가림:숫자])
+
+**교차확인 출처**
+- 사건: [뉴질랜드 경찰 발표(Scoop)](https://www.scoop.co.nz/stories/AK2610/S[가림:번호]/[가림:긴문자열].htm), [RNZ](https://www.rnz.co.nz/news/crime-and-justice/2225966/[가림:긴문자열]), [1News](https://www.1news.co.nz/2026/10/29/[가림:긴문자열]/). 카드가 도난품이라는 내용은 경찰 발표에 있고, Stuff와 NZ Herald 제목도 같지만 1News 기사에는 없습니다.
+- 연결 소식(카드값 상승과 절도 증가): [CNN 재게재](https://krdo.com/news/2026/04/04/[가림:긴문자열]/), [RNZ](https://www.rnz.co.nz/news/national/585426/[가림:긴문자열]). '1년 새 145%' 수치는 CNN 한 곳에서만 확인했고, RNZ는 뉴질랜드 수집가들의 절도 걱정을 다룬 기사입니다.
+- 기소 단계라 갱단 이름과 피의자 신상은 넣지 않았고, 포켓몬 캐릭터 이미지도 쓰지 않았습니다.
+
+**확인 필요·건너뛴 것**
+- **환율:** 원화 금액은 open.er-api.com 한 곳(1뉴질랜드달러 약 752원)으로 계산했습니다. 두 번째 출처 조회는 명령 오류로 실패해, 두 곳 확인 규칙을 채우지 못했습니다.
+- **페이스북:** 빈도 제한이 풀렸다는 표시가 없고 20시 회차 자리도 아니라 올리지 않았습니다.
+- **버린 후보:** 뉴질랜드 입국 부담금 100달러는 2024년 소식이라 제외했습니다.
+
+**코드 변경:** 밝은 사진 위에서 연재 이름이 안 읽혀, 실사 표지의 연재 이름에 어두운 판을 깔았습니다(`tools/single_topic.py`). 앞으로 만드는 실사 표지에 모두 적용됩니다.
+
+**커밋:** `f30d4c6`까지 푸시했습니다. 새 포맷 실험은 이번 회차에 하지 않았습니다.
+
+=== 대화 Claude Code 세션 ed04c2f3 ===
+[19:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
+[19:02] Claude: 20시 회차는 오늘 아직 안 쓴 유형 F로 정했고, 지금 주제 후보의 사실을 확인하고 있어요. 첫 후보는 호주 해변에 밀려온 금속 공 이야기예요.
+[19:04] Claude: 표지 제목 한 줄이 넘쳐서 줄이고, 카드와 릴스를 다시 렌더해 화면을 확인할게요.
+[19:05] Claude: 표지와 영상 확인을 마쳤어요. 19:58 업로드를 예약해 뒀고, 끝나면 기록과 커밋까지 이어서 할게요.
+[20:06] Claude: **20시 회차 업로드를 마쳤어요.** 인스타 릴스는 예정대로 19:58에 올라갔어요.
+
+- **단계:** 2차 목표(조회수 500회·팔로워 200명, 11/30까지)이고, 지금 팔로워는 23명이에요.
+- **이번 판단:** 승급이나 쉼은 없었어요.
+- **주제:** 재난문자가 오늘부터 157자로 늘었는데, 제일 급한 문자만 90자 그대로예요. 옛날 휴대폰이 긴 문자를 못 받을까 봐 늘리지 않았어요. 연결 소식으로 중복 문자를 거르는 기능을 넣었어요(시험 기간 발송 약 20% 감소).
+- **포맷:** 유형 F(표지 → 한국어 '무슨 일' → 오늘의 영어, 약 13초)예요.
+    - **고른 이유:** 추천은 C였지만 16시에 이미 C를 썼고, 이 뉴스엔 억지 없이 쓸 콩글리시가 없었어요. F는 오늘 처음이에요.
+    - **특집을 안 고른 이유:** 고를 수 있는 단어(평균 147)와 Why?(69)가 뉴스 평균 160보다 낮았어요. 만화는 아직 기록이 없어요.
+- **영어 표현:** "My phone keeps going off." (폰이 계속 울려)
+- **표지:** 안전안내문자 157자 폰과 긴급재난문자 90자 폰을 나란히 그렸어요. 직전이 실사라 이번엔 그림으로 했어요.
+
+**올린 시각과 링크**
+
+| 플랫폼 | 시각 | 링크 |
+|---|---|---|
+| 인스타 릴스 | 19:58 | https://www.instagram.com/reel/DfHa_c2y2_m/ |
+| 스레드 | 20:01 | https://www.threads.com/@[가림]/post/DfHbZEkH98A |
+| 인스타 스토리 | 20:05 | https://www.instagram.com/stories/rowanholt_official/[가림:숫자] |
+
+퀴즈 정답 댓글은 22:58에 자동으로 달려요.
+
+**교차확인 출처**
+- [뉴스1](https://www.news1.kr/local/moi/6335661)
+- [아주경제](https://www.ajunews.com/view/[가림:숫자])
+- [아시아투데이](https://www.asiatoday.co.kr/kn/view.php?key=[가림:숫자])
+- [매일신문](https://www.imaeil.com/page/view/[가림:숫자]): 구형 휴대폰 22만 대는 이곳에서만 확인돼서 쓰지 않았어요.
+
+**빠진 것과 확인 범위**
+- **페이스북:** 오류 368 제한이 아직 안 풀려서 릴스와 스토리를 건너뛰었어요.
+- **새 포맷 실험:** 이번 회차엔 하지 않았어요. 이틀에 한 번 규칙이 있으니 다음 회차들에서 챙겨야 해요.
+- **검수:** 표지와 영상 프레임은 눈으로 봤고, 안전 영역 스크립트(`safe.py`)는 돌렸지만 결과가 출력되지 않아 통과 여부는 몰라요. 표지 그림만 고친 뒤라 프레임은 수정 전에 뽑은 걸로 봤어요. 카드 6장은 하나씩 열어 보지 않았는데, 이 릴스에 쓰인 장면은 프레임으로 확인했어요.
+- **캡션 검사:** `check_captions.py`에서 FORM 오류는 없었어요. 업로드 대상이 아닌 파일 몇 개가 없다는 표시만 나왔고, `threads.txt`는 그 뒤에 만들었어요.
+
+=== 대화 Claude Code 세션 1ddd385f ===
+[21:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
+[21:02] Claude: 22시 회차 주제를 찾는 중이에요. 오늘 특집이 아직 없어서 뉴스 단어 릴스를 유력하게 보고, 쓸 만한 이색 소식을 확인하고 있어요.
+[21:04] Claude: 릴스 렌더가 끝나서 장면별 프레임을 확인하고 있어요.
+[21:04] Claude: 제작과 프레임 확인을 마쳤어요. 21:55에 업로드가 자동으로 시작되니, 끝나면 기록과 커밋을 이어서 할게요.
+[22:02] Claude: **22시 회차 업로드를 끝냈고, 기록도 커밋·푸시했어요.** 오류는 없었어요.
+
+- **회차·포맷:** 10-30 22:00 회차, 뉴스 단어 #6 `side hustle`(유형 I)이에요.
+- **고른 이유:** 오늘 앞 회차가 아침 뉴스와 E·D·A·C·E·F로 모두 뉴스여서, 쿼터가 남은 특집으로 골랐어요. `collect_views next`는 C를 냈지만 C는 오늘 16시에 이미 나갔어요. 직전 회차가 문장이어서 이번엔 단어 차례이기도 했어요.
+- **주제:** 샌프란시스코 스타트업 Dimensional이 시급 20달러(약 2만 7천 원)에 로봇 개 산책 알바를 구한 소식이에요. AI가 사람보다 로봇 조종을 못 해서 사람을 뽑았고, 개가 고장 나면 안고 돌아와야 해요.
+- **실제 업로드 시각:** 인스타 릴스 21:55, 스레드 21:58, 인스타 스토리 22:01이에요. 페이스북은 빈도 제한이 아직 안 풀렸고 20시 회차 몫만 올리는 규칙이라 건너뛰었어요.
+- **단계:** 2차 목표는 조회수 500회·팔로워 200명(11/30까지)이고, 지금 팔로워는 23명이에요. 이번 수집에서 승급·쉼 판단은 없었어요.
+- **새 포맷 실험:** 이번 회차에는 하지 않았어요.
+
+**올린 링크**
+- [인스타 릴스](https://www.instagram.com/reel/DfHoWwVzBk6/)
+- [스레드](https://www.threads.com/@[가림]/post/DfHotGNH99i)
+- [인스타 스토리](https://www.instagram.com/stories/rowanholt_official/[가림:숫자])
+
+**교차확인 출처**
+- [UPI](https://www.upi.com/Odd_News/2026/10/28/[가림:긴문자열]/[가림:숫자]/)
+- [Fox Business](https://www.foxbusiness.com/technology/[가림:긴문자열])
+- [The Star(NYT 기사 게재)](https://www.thestar.com.my/tech/tech-news/2026/10/28/[가림:긴문자열])
+
+`side hustle`은 기사에 나온 말이 아니라 이 소식을 본 사람이 쓸 만한 말로 제가 고른 표현이에요. 원고: [006_side_hustle.py](words/006_side_hustle.py)
+
+=== 대화 Claude Code 세션 01776f5b ===
+[23:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
+[23:04] Claude: 표지 사진 후보를 고르고 있습니다.
+[23:06] Claude: 카드와 릴스 렌더는 끝났습니다. 프레임 추출에서 오류가 나서 다시 뽑아 화면을 확인합니다.
+[23:06] Claude: 제작과 영상 프레임 확인을 마쳤습니다. 업로드는 00:01에 시작하도록 예약해 두었고, 끝나면 기록·커밋·보고까지 이어서 진행합니다.
