@@ -945,3 +945,5 @@
 2026-11-11 00:35  feat(holt): HOLT NEWS 표현 쪽에 '무슨 뉴스/연구였나요' — 영어 원문 문장 + 정확한 해석 짝, 뉴스 라벨 통일
 2026-11-11 00:43  feat(holt): HOLT ENGLISH 모든 쪽 같은 순서 — 뉴스/연구에 나온 문장 → 무슨 뉴스/연구 → 알아 두면 좋은 표현 → 퀴즈, 따로 만든 예문 칸 제거, HOLT NEWS 소개는 3~4문장
 2026-11-11 00:57  feat(holt): 댓글 응대 — 글자 없는 댓글은 💕, 말 있는 댓글은 대화 대기열(pending/reply/skip), 이어지는 대화·예전 💕만 단 댓글 포함, comment_voice.md
+2026-11-11 02:46  fix(holt): 사이트 사후 검수 — chronic_care_nationwide
+2026-11-11 04:44  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — hungary_informer_files, korea_only_pricier, chronic_care_nationwide
