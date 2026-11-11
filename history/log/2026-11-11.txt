@@ -1604,3 +1604,5 @@ Nine topics didn't pass the first checks, mainly because Korean and foreign medi
 [12:09] 사람: 호주 정부 ai기사 그림이 주요내용을 담고 있지 않은데 어떻게 생각해 특별히 주요내용을 그림으로 그릴게 없으면 호주정부 실사를 쓰거나 해
 [12:09] AI: 호주 의회 실사 사진 후보를 찾는 중이에요. 하나 내려받아 확인할게요.
 [12:10] AI: Good. Now updating the article file to swap the photo.
+[12:10] AI: 알겠어요, 의사당 건물과 국기 쪽으로 바짝 크롭할게요.
+[12:10] AI: Now the building and flag read clearly. Rebuilding and pushing, then committing.
