@@ -1521,3 +1521,86 @@ Sources:
 [11:49] AI: The two desk reviewers (Korean and English) are still checking the article. I'll apply their notes and publish once they come back.
 [11:51] AI: I've applied the English desk's notes to both the English and Korean versions. The international desk's review is still running.
 [11:53] AI: Reviews are recorded and the fact check passes. Building the site and pushing now.
+[11:54] AI: **12:00 slot (Korea lunchtime explainer)**: posted "AI가 혼자 정부 사이트를 뚫었다, 죄는 누구에게?", the explainer on Australia considering a "failure to prevent" crime for AI companies. It's live in Korean and English.
+- Korean: https://holtnews.com/news/australia_ai_failure_to_prevent.html
+- English: https://holtnews.com/en/news/australia_ai_failure_to_prevent.html
+
+**Why this topic**
+- This slot couldn't pick an economy story: the field-rest rule blocks it, because 4 of the last 6 news articles were economy.
+- It was also the slot for a broader field (science, tech, culture or environment), since none has run for more than 3 days.
+- This topic scored highest at 22 points. It counts as tech, and almost nothing in Korean has covered the review's recommendations or the criminal-law idea.
+- I used the draft the 05:00 run finished but didn't get through review before its time ran out. I shortened the title to fit the title rule and re-scored search demand for Korean readers.
+
+**Review**
+- **Fact check:** all 20 numbers in the article are in the evidence ledger.
+- **Desk reviews:** the international desk and the English desk both passed it after changes.
+  - Events from the incident timeline that only news reports support are now marked as reported.
+  - The new AI regulator is now described as a proposal, not a done deal.
+  - The English title now names Australia, so US readers don't take it for US Medicare.
+  - California's 15-day deadline counts from when a company discovers an incident. The comparison with OpenAI's 84 days now also gives 10–40 days, counted from the August discovery. That's in both the text and the chart.
+- **Editor and push:** the editor-in-chief step and the safety check before pushing both passed.
+- **Telegram:** the publishing report went out.
+- **Report timestamp:** the report's publish time says 11:53, which looks earlier than the actual push. I didn't fix this.
+
+**Score table**
+
+| Candidate | Score | Result |
+|---|---|---|
+| Australia "failure to prevent" crime for AI companies | 22 | Selected |
+| California billionaire wealth tax (Prop 40) | 21 | Economy resting, carried over |
+| Fair Trade Commission dark-pattern guidelines | 21 | Economy resting, carried over |
+| Privy Council ruling on Trinidad and Tobago law | 18 | Less time-sensitive, carried over |
+| El Niño and the Korean winter | 16 | Below the 18 cutoff |
+| Korean tidal flats heritage centre | 14 | Below the 18 cutoff |
+
+Nine topics didn't pass the first checks, mainly because Korean and foreign media had already covered them. They include Voyager 1 reaching one light-day, the ozone hole, the carbon budget and the Starship catch.
+
+**Candidates left after cleanup**: 3 news (Prop 40 at 21, dark patterns at 21, Trinidad at 18) and 4 Journal, unchanged (24, 20, 19, 18).
+
+=== 대화 Claude Code 세션 96f2d025 ===
+[12:06] AI: **11/11 12시 회차를 12:00:01에 올렸어요**
+
+**지금 단계:** 2차 목표는 게시물당 500회, 팔로워 200명이고 기한은 11/30이에요. 지금 팔로워는 55명이에요. 이번 수집에서는 단계가 오르거나 유형을 쉬게 하는 판정은 나오지 않았어요.
+
+**고른 포맷과 이유**
+- 대기 중인 후속이 있어서 `next`가 고른 C 대신 그 후속을 만들었어요. 어제 22시 프랑스 사이버 반격 게시물이 히트였고, 시의성이 있어 11/13까지가 기한이었어요.
+- 유형은 원래 히트와 같은 J(전체 화면 실사)로 했어요. 인사이트에서도 J는 '늘림'이에요(점수 1.2, 평균 시청 4.8초).
+- 직전 두 회차가 프랑스와 튀르키예라 나라 규칙에도 걸리지 않아요. 전쟁 주제가 아니라 사이버 공격 책임 공방이에요.
+
+**주제:** 프랑스가 마트 냉장고 해킹 범인으로 이란을 지목한 데 대해 이란 외무부가 "근거 없고 악의적"이라는 성명을 냈어요. 프랑스는 해커 3명의 이름과 사진을 공개했고, 파리 검찰은 국제 체포영장을 청구했어요.
+- 표지 문구: "프랑스 냉장고 해킹 / 이란은 '근거 없다'"
+- 오늘의 영어: *These claims are baseless.*
+- 앞 두 편과 영어 표현이 겹치지 않게 했어요.
+- 표지는 이란 외무부 대변인 실사(위키미디어 CC BY 4.0)예요. 처음 고른 클로즈업은 세로로 자르면 제목이 턱을 가려서, 같은 사진가의 전신 사진으로 바꿨어요. 왼쪽 아래 워터마크는 잘라 냈어요.
+- 유일하게 한 곳에서만 나온 이란 쪽 조롱 문구("냉장고 온도도 관리 못 한다")는 빼 두었어요.
+
+**교차확인 출처**
+- [NPR](https://www.npr.org/2026/11/09/g-s1-152724/[가림:긴문자열])
+- [CNBC](https://www.cnbc.com/2026/11/10/iran-fridge-cyberattacks-france.html)
+- [CBC(Reuters)](https://www.cbc.ca/news/world/[가림:긴문자열].7415031)
+- [Xinhua](https://english.news.cn/20261111/[가림:긴문자열]/c.html)
+- [Anadolu](https://www.aa.com.tr/en/middle-east/[가림:긴문자열]/4119026)
+- [BBC 기사(Yahoo 게재)](https://www.yahoo.com/news/world/articles/[가림:긴문자열].html)
+
+**올린 링크** (12:00~12:05)
+- 인스타 릴스: https://www.instagram.com/reel/DfldzlSyJpd/ (캐러셀은 1시간 뒤 자동으로 올라가요. 정답 댓글은 15:00 예약)
+- 스레드: https://www.threads.com/@[가림]/post/DfleCndn4Mn
+- 인스타 스토리: https://www.instagram.com/stories/rowanholt_official/[가림:숫자]
+- 유튜브 쇼츠: https://youtube.com/shorts/1Esymz65BfE (비공개로 올렸고, 표지가 확인되면 yt-release가 공개해요)
+- 페이스북은 오류 368 제한 해제를 아직 확인하지 않아서 건너뛰었어요.
+
+**오늘 첫 회차 인사이트**
+- 늘림: C(1.25), J(1.2), 예약 업로드(1.11). 줄임: D(0.77).
+- 최근 7일 시청 시간 상위는 라부부 18.0초, 하위는 아침 뉴스 11/07의 2.0초예요.
+- 직전 07:30 캐러셀은 정상 게시됐고, carousel.log에 실패나 2207051은 없었어요.
+
+**기록·커밋**
+- `add`(J), `followup-done`, `tag`까지 기록했어요.
+- 커밋 7de180d를 main에 푸시했어요. 결과 폴더(`out_single`)는 git 제외 대상이라 커밋에 들어가지 않았어요.
+
+**오류:** 없음.
+
+=== 대화 Claude Code 세션 da2ea338 ===
+[12:09] 사람: 호주 정부 ai기사 그림이 주요내용을 담고 있지 않은데 어떻게 생각해 특별히 주요내용을 그림으로 그릴게 없으면 호주정부 실사를 쓰거나 해
+[12:09] AI: 호주 의회 실사 사진 후보를 찾는 중이에요. 하나 내려받아 확인할게요.
+[12:10] AI: Good. Now updating the article file to swap the photo.
