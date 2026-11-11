@@ -1183,3 +1183,46 @@ GA4에서 영문판 홈 → 기사 클릭률과 영어 검색 유입 기사 순�
 [08:57] AI: Second-round reviews are running.
 [08:58] AI: Editor step: the VALUE points (critique and reply issues, the Queensland blood study) are all in the body, and the title stays as is. Building now.
 [08:58] AI: Page renders correctly (the other "broken" images are lazy-loaded ones below the fold). Pushing now.
+[08:59] AI: 이번 회차는 09시 Journal이에요. 뇌 미세플라스틱 연구에 같은 학술지의 반박 서한과 저자 답신까지 함께 다룬 글 「플라스틱 숟가락 하나가 정말 뇌에 있을까」를 발행했어요.
+- 한국어판: https://holtnews.com/journal/microplastics_brain.html
+- 영문판: https://holtnews.com/en/journal/microplastics_brain.html
+
+검수는 사실 확인, 데스크, 영문판 데스크, 편집장, site_guard 다섯 단계를 모두 통과했어요. 발행 리포트도 텔레그램으로 나갔고, 커밋과 푸시도 끝났어요(d7882a2).
+
+**검수에서 고친 것:** 처음 원고에 '논문은 정정되지 않았다'고 썼는데, 2025년 3월에 저자 정정이 나와 있었어요. 데스크 두 곳이 모두 잡아냈어요. 정정은 그림 중복, 눈금 막대 오류, 시료 준비 단계 설명을 바로잡은 것이고, 본문 농도 값은 고치지 않았어요. 이 내용과 '얼마나 믿을 만한가' 칸을 새로 넣어 바로잡았어요.
+
+**점수표** (기준점 18, 분야 연속 감점 없음)
+
+| 후보 | 분야 | 기본 점수 | 최종 | 결과 |
+|---|---|---|---|---|
+| 뇌 미세플라스틱 + 반박·답신 (Nature Medicine 2025) | 과학·의학 | 24 | 26 (시의성 가점 +2) | 선정 |
+| 연봉과 행복, 카너먼·킬링스워스 (PNAS 2023) | 경제·금융 | 24 | 24 | 이월 |
+| 사회적 자본과 계층 이동, 체티 (Nature 2022) | 경제·금융 | 20 | 20 | 이월 |
+| 돈 보상 효과의 문화 차이 (NHB 2024) | 심리·사회 | 19 | 19 | 이월 |
+| 죄책감과 돕는 행동, 20개국 (NHB 2025) | 심리·사회 | 18 | 20 (가점 +2) | 이월 |
+
+- 관문에서 떨어진 주제가 8개 더 있어요:
+  - 동료 심사 전 워킹페이퍼: NBER 3편
+  - 학술지 원문 확인 못 함: 2026년 연구 2편
+  - 이미 발행: 초가공식품
+  - 국내 기사와 내용이 같음: 7,000보 연구
+  - 새 연구가 아닌 총설: 1편
+
+**대기 후보** (prune 결과, Journal 4개)
+- 24 연봉과 행복
+- 20 사회적 자본
+- 19 돈 보상 문화 차이
+- 18 죄책감 연구
+
+뉴스 후보 4개는 그대로예요.
+
+**새로 만든 것**
+- 표지 그림 'brain'을 [tools/journal.py](holt/tools/journal.py)에 추가했어요.
+- 본문 그림 도구 [tools/site_fig_microplastics_brain.py](holt/tools/site_fig_microplastics_brain.py)를 만들었어요(로그 눈금 점 그림).
+
+=== 대화 Claude Code 세션 dc7f795c ===
+[09:50] 사람: 오늘 저널 제목 
+내 뇌 속에 플라스틱 숟가락이 들어있다고?
+
+어때
+[09:50] AI: 이목 끄는 쪽이 맞습니다. 이미 사이트에 올라간 글이라 제목만 바꿔서 다시 올리겠습니다.
