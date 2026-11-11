@@ -575,8 +575,10 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 #pg{position:relative}
 .wx{position:absolute;top:9px;right:16px;margin:0!important;padding:0!important;border:0!important;display:flex;flex-direction:column;align-items:flex-end;gap:1px;font-size:12px;line-height:1.35;background:none!important}
 .wx ul{margin:0;padding:0}.wx li{gap:4px;font-size:12px}.wx li svg{width:15px;height:15px}.wx .aq{display:none}
-.ad-top{margin:14px 16px 0}.ad-top .psa-in{padding:16px 18px!important;gap:5px!important}.ad-top b{font-size:17px!important}.ad-top .ad-p{font-size:12.5px!important}
-.ad-top .psa-n{font-size:24px!important;margin-top:2px!important}.ad-top .ad-l{margin-bottom:6px}
+.ad-top.psa{margin:10px 16px 0;border:0;padding:0;background:none}.ad-top .ad-l{font-size:10px;margin:0 0 3px;letter-spacing:.06em}
+.ad-top .psa-in{flex-direction:row!important;align-items:center;flex-wrap:wrap;padding:9px 14px!important;gap:1px 12px!important}
+.ad-top .psa-k{flex-basis:100%;font-size:11px!important}.ad-top b{flex:1;min-width:0;font-size:14.5px!important;line-height:1.35!important}.ad-top b br{display:none}
+.ad-top .ad-p{display:none}.ad-top .psa-n{font-size:18px!important;margin:0!important;white-space:nowrap}
 .topband+.ad-top+.hs,.topband+.hs{margin-top:30px}}
 @media (min-width:641px){.ad-top{display:none}}
 @media (max-width:640px) and (prefers-reduced-motion:reduce){.ek-dup{display:none}}
