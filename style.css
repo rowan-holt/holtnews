@@ -88,7 +88,7 @@ body.en .sec h2{font-family:"Jost",sans-serif;font-weight:500;letter-spacing:0}
 .sharebar{display:flex;gap:2px;align-items:center}
 .sharebar .ic{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;padding:0;color:#888;background:none;border:0;border-radius:50%;cursor:pointer}
 .sharebar .ic:hover{color:var(--ink);background:var(--soft)}
-.paper{align-items:center}
+.paper{align-items:center;flex-wrap:nowrap}.paper>div:first-child{min-width:0}.paper .sharebar{flex:none}   /* 1111: 영문판 날짜가 길어 ⋯가 왼쪽 줄로 밀리면 메뉴가 화면 밖으로 잘림 → ⋯는 늘 오른쪽 */
 .paper .pd{display:flex;align-items:center;gap:10px}
 .paper .pd .dt{white-space:nowrap}
 .sharebar.sb-top{margin:-8px -8px -8px 0}
