@@ -1020,3 +1020,13 @@
 2026-11-11 22:53  feat(holt): holtnews 메뉴·꼬리말에 HOLT ISSUE 링크(한국어판만, HOLT ENGLISH 옆)
 2026-11-11 22:55  feat(holt): HOLT ISSUE 대기열(--queue)·검사(--check: 형식·발행일·숫자가 기사 본문에 있는지) — 매일 22:41 예약 작업 holt-issue-daily
 2026-11-11 22:58  feat(holt): HOLT ISSUE GA4 연결(G-QCVEJ0EWHV), 내 기기·미리보기 제외
+2026-11-11 23:10  feat(holt): HOLT ISSUE 이슈 카드 구조(요약 3문장→기사 전문→문제), 세 사이트 꼬리말 HOLT NEWS | ENGLISH | ISSUE, ISSUE 상단 NEWS·ENGLISH 링크, GA 아침 보고에 ISSUE
+2026-11-11 23:10  chore(holt): 만들어진 기록 연표 자동 갱신 — 10개 추가
+2026-11-11 23:11  feat(holt): HOLT ISSUE 꼬리말 ENGLISH와 같은 형식·소개 쪽 제거, 빙 소유 확인 파일·IndexNow 알림, 네이버·다음 확인값 자리
+2026-11-11 23:19  feat(holt): HOLT ISSUE 네이버 서치어드바이저 소유확인 태그
+2026-11-11 23:20  feat(holt): HOLT ISSUE 다음 웹마스터도구 PIN(robots.txt)
+2026-11-11 23:21  feat(holt): HOLT ISSUE RSS(rss.xml, 이슈 하나=글 하나)
+2026-11-11 23:25  feat(holt): HOLT ENGLISH 꼬리말을 HOLT ISSUE와 통일(소개·중복 HOLT NEWS 링크 제거)
+2026-11-11 23:26  feat(holt): 소개 → 이용 방법(HOLT ENGLISH), HOLT ISSUE 이용 방법 쪽 추가, 두 사이트 꼬리말에 이용 방법 링크
+2026-11-11 23:27  feat(holt): HOLT ENGLISH 상단에 HOLT ISSUE 링크
+2026-11-11 23:31  feat(holt): HOLT ISSUE 로고 밑 문구 '읽고 푸는 시사상식'
