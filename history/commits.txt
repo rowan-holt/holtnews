@@ -1031,3 +1031,5 @@
 2026-11-11 23:27  feat(holt): HOLT ENGLISH 상단에 HOLT ISSUE 링크
 2026-11-11 23:31  feat(holt): HOLT ISSUE 로고 밑 문구 '읽고 푸는 시사상식'
 2026-11-12 00:01  fix(holt): holtnews 오디오 개별 쪽 검색 제외(noindex, follow) — 기사와 겹치는 얇은 쪽
+2026-11-12 00:22  feat(holt): HOLT 앱 하나로 NEWS·ISSUE·ENGLISH — 아래 탭 이동 + 처음 볼 화면 설정
+2026-11-12 00:25  feat(holt): 대량 생산 방지 — HOLT ENGLISH 하루 새 표현 쪽 최대 6개(처음 공개일 장부), 뉴스→ENGLISH 표현 하루 1편, holtnews 발행 5→3회차(09·12·21)
