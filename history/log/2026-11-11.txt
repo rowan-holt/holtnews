@@ -1919,3 +1919,17 @@ cd "~/Desktop/app launch/holt" && /opt/homebrew/bin/python3.10 -m venv .venv_mel
 - PC 화면에는 이 띠가 나오지 않아요.
 [13:57] 사람: 날씨랑 낢자는 메뉴 옮겨다녀도 그대로여야지 홈에만 있다 지금
 [13:57] AI: 날씨·날짜를 본문이 아니라 로고 줄(머리)로 옮겨서 모든 페이지에 나오게 할게요.
+[13:58] AI: 두 가지 고쳐서 holtnews.com에 올렸어요.
+
+**날씨·날짜:** 본문에서 빼서 로고 줄(머리)로 옮겼어요. 이제 어느 메뉴로 가도 그대로 나와요. 홈, 분야 페이지, 오디오, 영문판 연구에서 모두 확인했어요.
+- 폰: 로고 오른쪽에 두 줄
+- PC: 로고 줄 오른쪽 끝
+
+**국기:** 꺽쇠는 이미 사이트에서 빠져 있었어요. 보내 준 화면에서 국기가 회색 상자 안에 든 것처럼 보였는데, 폰에서 한 번 누르면 그 상태가 남아서 생긴 거였어요. 이제 회색 바탕 없이 국기만 보이고, 누르면 목록이 펼쳐지는 건 그대로예요.
+
+제가 짐작한 게 이 회색 상자였는데, 국기에서 거슬린 게 다른 부분이면 화면에 표시해서 보내 주세요.
+[14:02] 사람: 여전히 뜨는데에에
+[14:03] AI: 네, 국기를 누르면 바로 다른 언어판으로 넘어가게 할게요. 목록은 없애고, 국기는 지금 보는 판의 국기를 그대로 보여 줄게요.
+[14:03] AI: Got it, continuing with "tap the flag to switch right away." Fixing a syntax error I made.
+[14:04] AI: I accidentally deleted the audio icon definitions while replacing the language button. Restoring from the last commit.
+[14:05] AI: Restored cleanly. Testing the flag tap.
