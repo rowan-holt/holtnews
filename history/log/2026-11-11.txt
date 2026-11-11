@@ -2045,3 +2045,25 @@ HOLT ENGLISH 표현은 매일 04:42 예약 작업이 홀트뉴스 영어판 기�
 - 폰에서 바로 안 바뀌어 보이면 새로고침하면 돼요. 페이지가 10분 동안 저장돼 있어서 그래요.
 [14:17] 사람: 저것은 왜 에러인가
 [14:18] AI: Menu now fully inside the screen (x 248–378) in both Korean and English. Pushing.
+[14:18] AI: Two things: making the HOLT ENGLISH → HOLT NEWS path stand out, and auditing article search keywords. Starting with how HOLT ENGLISH pages link to the news.
+[14:18] AI: Making the HOLT NEWS link in HOLT ENGLISH into a prominent card under the "what was the news" section.
+
+=== 대화 Claude Code 세션 c8282f0e ===
+[14:19] 사람: 국기가 태극기가 성조기보다 작은거 같은데 만약 그렇다면 태극기사이즈로 성조기 맞춰줘 모든 국기는 지금 태극기 사이즈
+
+=== 대화 Claude Code 세션 da2ea338 ===
+[14:19] AI: The card looks good (65 pages). Pushing HOLT ENGLISH.
+[14:19] AI: HOLT ENGLISH is live. Next, the search keyword audit. Pulling each article's title tag, description, and core terms.
+
+=== 대화 Claude Code 세션 c8282f0e ===
+[14:19] AI: 두 국기 크기는 원래 같아서 고치지 않았어요. 실제 holtnews.com의 한국어판과 영문판을 PC 화면과 폰 화면에서 재 보니, 태극기와 성조기 모두 가로 27px × 세로 18px였어요. 코드에서도 두 국기는 같은 틀, 같은 크기로 그려지고 있어요.
+
+작아 보이는 건 그림 차이 때문이에요. 성조기는 빨간 줄과 파란 칸이 틀 끝까지 꽉 차 있고, 태극기는 흰 바탕이 많고 무늬가 가운데에 모여 있어요. 그래서 같은 크기여도 태극기가 작아 보여요.
+
+참고로 국기는 이 버튼 하나뿐이라 다른 국기는 없어요.
+[14:20] 사람: 같다면 태극기가 틀에 좀더 차게 해줘. 작아보임 저게 혹시 태극기 만들때 비율 사이즈 다 지켜서 만든거라 바탕이 줄어들면 안되는거리면 그대로 둬
+[14:20] AI: Now applying official proportions via Edit.
+
+=== 대화 Claude Code 세션 da2ea338 ===
+[14:21] AI: All 22 articles now have search terms in the search-result title; SNS share cards keep the on-page title. So future articles get this too, I'm adding the rule to the publishing guide and pushing.
+[14:21] AI: The build hit a "folder already exists" error, probably because a scheduled job was building at the same moment. Running it again.
