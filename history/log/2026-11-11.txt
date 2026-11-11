@@ -1606,3 +1606,18 @@ Nine topics didn't pass the first checks, mainly because Korean and foreign medi
 [12:10] AI: Good. Now updating the article file to swap the photo.
 [12:10] AI: 알겠어요, 의사당 건물과 국기 쪽으로 바짝 크롭할게요.
 [12:10] AI: Now the building and flag read clearly. Rebuilding and pushing, then committing.
+[12:11] AI: Both pushes went through. Committing to the work repo.
+[12:11] AI: 맞아요. 그 막대그래프(통보까지 84일 vs 캘리포니아 기한 15일)는 기사 네 번째 단락에 나오는 곁가지라, 기사 핵심인 "AI가 저지른 일에 회사를 처벌할 수 있나"를 못 담고 있었어요. 핵심을 그림으로 그리면 본문 설명을 반복하는 수준이라, 말씀대로 실사로 바꿨어요.
+
+- **사진:** 호주 캔버라 연방 의사당이에요. Wikimedia에 올라온 JJ Harrison의 사진이고, 라이선스는 CC BY-SA 3.0이라 상업적으로 써도 돼요. 크레딧은 사진 아래에 적었어요.
+- **크롭:** 바닥과 하늘을 걷어내고 건물 정면과 국기 기둥이 화면을 채우게 잘랐어요. 멀리서 봐도 의사당인 걸 알 수 있어요. 밝기도 조금 올렸어요.
+- **사진 설명:** 한국어판은 "'AI 회사가 막지 못한 죄'를 만들려면 이곳에서 형법을 고쳐야 해요"로 했어요. 영문판은 "where any new AI offense would have to pass"예요.
+- **반영:** 한국어판과 영문판 둘 다 holtnews.com에 푸시했어요. 작업 저장소에도 커밋하고 푸시했고, 이제 안 쓰는 막대그래프 그림과 그 생성 스크립트는 지웠어요.
+
+앞으로 사이트 그림을 고를 때도 이 기준을 적용하도록 메모리에 적어 뒀어요. 그림이 핵심 내용을 담는지 먼저 보고, 그릴 게 없으면 관련 실사를 주인공 위주로 크게 잘라 쓰는 방식이에요.
+
+=== 대화 Claude Code 세션 d9a79b58 ===
+[12:12] AI: That reminder was a backup in case the desk review stalled, and it's no longer needed. The 12:00 article ("AI가 혼자 정부 사이트를 뚫었다, 죄는 누구에게?") passed both desk reviews and is live at https://holtnews.com/news/australia_ai_failure_to_prevent.html. I've turned the reminder off.
+
+=== 대화 Claude Code 세션 da2ea338 ===
+[12:14] 사람: 스크롤 내릴때 로고랑 메뉴 줄 안따라오게 해주라
