@@ -1017,3 +1017,6 @@
 2026-11-11 22:15  fix(holt): 블로그 본문 복사에서 배경 지정 제거 — 네이버가 transparent를 검은 배경으로 읽음
 2026-11-11 22:45  fix(holt): 블로그 1주 차 요일 표기 바로잡음
 2026-11-11 22:47  feat(holt): HOLT ISSUE 시사상식 사이트(issue.holtnews.com) — 기사 17편 문제 43개, 날짜·월간·분야·오답 노트, site_guard issue 프로필
+2026-11-11 22:53  feat(holt): holtnews 메뉴·꼬리말에 HOLT ISSUE 링크(한국어판만, HOLT ENGLISH 옆)
+2026-11-11 22:55  feat(holt): HOLT ISSUE 대기열(--queue)·검사(--check: 형식·발행일·숫자가 기사 본문에 있는지) — 매일 22:41 예약 작업 holt-issue-daily
+2026-11-11 22:58  feat(holt): HOLT ISSUE GA4 연결(G-QCVEJ0EWHV), 내 기기·미리보기 제외
