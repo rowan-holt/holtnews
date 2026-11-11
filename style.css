@@ -157,7 +157,7 @@ body.en .rel-card .rt{font-family:"Jost",sans-serif;font-weight:500}
 .nx{max-width:1400px;margin:0 auto;padding:28px 24px 10px;display:grid;grid-template-columns:minmax(0,2.15fr) minmax(0,1fr);gap:16px;align-items:start}
 .nx.one{grid-template-columns:minmax(0,1fr)}
 .nx-lead{grid-column:1;grid-row:1}.nx-grid{grid-column:1;grid-row:2}.nx .ad-side{grid-column:2;grid-row:1;align-self:stretch;display:flex;flex-direction:column}.nx-side{grid-column:2;grid-row:2}
-.ad-side .ad-l{margin-bottom:6px}.ad.psa{border:1px solid #d6d6d6;padding:12px 12px 14px;background:#fff}.ad.psa a{flex:1;display:flex;flex-direction:column;justify-content:center;gap:8px;padding:24px 22px;color:#fff;border-radius:2px}.psa-blue a{background:#1f4e8c}.psa-red a{background:#b3261e}.psa-green a{background:#1e6b46}.psa .psa-k{font-size:12.5px;font-weight:600;opacity:.85}.psa b{font-size:21px;line-height:1.35;letter-spacing:-.02em}.psa .ad-p{font-size:13.5px;line-height:1.55;opacity:.9;color:#fff}.psa .psa-n{margin-top:6px;font-size:34px;font-weight:800;letter-spacing:.02em}.ad-side ins{flex:1}.ad-side.house a{flex:1;justify-content:center;padding:28px 26px}.ad-side.house .ad-l{margin:0 0 4px}
+.ad-side .ad-l{margin-bottom:6px}.ad.psa{border:1px solid #d6d6d6;padding:12px 12px 14px;background:#fff}.ad.psa .psa-in{flex:1;display:flex;flex-direction:column;justify-content:center;gap:8px;padding:24px 22px;color:#fff;border-radius:2px}.ad.psa .psa-in[hidden]{display:none}.psa-blue{background:#1f4e8c}.psa-red{background:#b3261e}.psa-green{background:#1e6b46}.psa-teal{background:#0f6470}.psa-purple{background:#5b3a8c}.psa-orange{background:#b45309}.ad.psa .psa-fest{flex-direction:row;align-items:center;justify-content:flex-start;gap:16px;background:#f3f1ec;color:var(--ink);padding:14px}.psa-fest img{width:96px;height:128px;object-fit:contain;background:#fff;flex:none}.psa-fest .pf-t{display:flex;flex-direction:column;gap:6px;min-width:0}.psa-fest .ad-p{color:var(--ink2)!important}.psa-fest b{font-size:18px!important}.psa .psa-k{font-size:12.5px;font-weight:600;opacity:.85}.psa b{font-size:21px;line-height:1.35;letter-spacing:-.02em}.psa .ad-p{font-size:13.5px;line-height:1.55;opacity:.9;color:#fff}.psa .psa-n{margin-top:6px;font-size:34px;font-weight:800;letter-spacing:.02em}.ad-side ins{flex:1}.ad-side.house a{flex:1;justify-content:center;padding:28px 26px}.ad-side.house .ad-l{margin:0 0 4px}
 .nx-lead{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.45fr);background:var(--soft)}
 .nx-lt{padding:28px 26px;align-self:center}
 .nx-lead h2{font-size:clamp(22px,2.2vw,32px);line-height:1.3;font-weight:800;letter-spacing:-.02em;margin:0 0 12px}
@@ -569,22 +569,26 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 /* 1111 경제 흐르는 가격창 */
 .ek-track{display:contents}.ek-dup{display:none}
 @media (max-width:640px){.topband{display:flex;flex-direction:column}.topband .hs.econ{order:-1;margin:0;padding:0}
-.topband .ek-row{border-top:0;-webkit-mask-image:none;mask-image:none;overflow:hidden;background:#f3f1ec}
-.ek-track{display:flex;width:max-content;animation:ektick 38s linear infinite}.ek-dup{display:flex}
-.ek-row:active .ek-track,.ek-row:hover .ek-track{animation-play-state:paused}
+.topband .ek-row{border-top:0;-webkit-mask-image:none;mask-image:none;overflow-x:auto;background:#f3f1ec}
+.ek-track{display:flex;width:max-content}.ek-dup{display:flex}
 .topband .ek,.topband .ek:first-child{padding:8px 14px 8px 0;margin:0 0 0 14px}.topband .ek:last-child{padding-right:0}
-.topband .weather,.topband .wx{margin-top:10px}}
-@keyframes ektick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@media (max-width:640px) and (prefers-reduced-motion:reduce){.ek-track{animation:none}.topband .ek-row{overflow-x:auto}.ek-dup{display:none}}
+#pg{position:relative}
+.wx{position:absolute;top:9px;right:16px;margin:0!important;padding:0!important;border:0!important;display:flex;flex-direction:column;align-items:flex-end;gap:1px;font-size:12px;line-height:1.35;background:none!important}
+.wx ul{margin:0;padding:0}.wx li{gap:4px;font-size:12px}.wx li svg{width:15px;height:15px}.wx .aq{display:none}
+.ad-top{margin:14px 16px 0}.ad-top .psa-in{padding:16px 18px!important;gap:5px!important}.ad-top b{font-size:17px!important}.ad-top .ad-p{font-size:12.5px!important}
+.ad-top .psa-n{font-size:24px!important;margin-top:2px!important}.ad-top .ad-l{margin-bottom:6px}
+.topband+.ad-top+.hs,.topband+.hs{margin-top:30px}}
+@media (min-width:641px){.ad-top{display:none}}
+@media (max-width:640px) and (prefers-reduced-motion:reduce){.ek-dup{display:none}}
 /* 1111 검색 아이콘 */
 .srch{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;color:var(--ink)}.srch:hover,.srch[aria-expanded=true]{background:#ecebe6}
 /* 1111 공익광고: 홈 가운데(mid)·가로(wide) 자리 */
-.ad-mid.psa{border-top:1px solid #d6d6d6;margin-top:0}.ad-mid.psa a{min-height:190px}
+.ad-mid.psa{border-top:1px solid #d6d6d6;margin-top:0}.ad-mid.psa .psa-in{min-height:190px}.ad-mid.psa .psa-fest{min-height:0}
 .ad-wide.psa{max-width:none;margin:56px max(24px,calc((100% - 1352px) / 2)) 0}
-.ad-wide.psa a{flex-direction:row;flex-wrap:wrap;align-items:center;column-gap:28px;row-gap:6px;padding:26px 30px}
+.ad-wide.psa .psa-in{flex-direction:row;flex-wrap:wrap;align-items:center;column-gap:28px;row-gap:6px;padding:26px 30px}
 .ad-wide.psa .psa-k{flex-basis:100%}.ad-wide.psa b{font-size:22px}.ad-wide.psa b br{display:none}
 .ad-wide.psa .ad-p{flex:1;min-width:240px}.ad-wide.psa .psa-n{margin:0 0 0 auto}
-@media (max-width:640px){.ad-wide.psa{margin:40px 16px 0}.ad-wide.psa a{padding:22px 20px}.ad-wide.psa b{font-size:19px}.ad-wide.psa .psa-n{margin:0}
+@media (max-width:640px){.ad-wide.psa{margin:40px 16px 0}.ad-wide.psa .psa-in{padding:22px 20px}.ad-wide.psa b{font-size:19px}.ad-wide.psa .psa-n{margin:0}
 /* 1111 사용자: 휴대폰 '오늘의 경제'는 작게 한 줄 — 제목 없이 이름·값·▲▼만 옆으로 밀어 봄 */
 .hs.econ{margin-top:14px}.hs.econ .sh{display:none}
 .ek-row{display:flex;overflow-x:auto;scrollbar-width:none;border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;

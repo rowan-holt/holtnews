@@ -1869,3 +1869,6 @@ cd "~/Desktop/app launch/holt" && /opt/homebrew/bin/python3.10 -m venv .venv_mel
 [13:47] AI: Navigation keeps the sound playing. But the forward-15s button didn't take effect, so fixing that.
 [13:48] AI: The local test server doesn't support seeking (Range requests), so it snapped back to the start. GitHub Pages supports it. Re-checking with a Range-capable local server.
 [13:48] AI: 15초 앞·뒤 버튼도 정상이에요(앞으로 5.2% → 뒤로 1.1%). 리모컨 작업을 먼저 사이트에 올릴게요.
+[13:49] AI: 리모컨을 올렸어요. 이제 날짜를 위로 올리고, 남는 자리에 광고를 넣고, 공익광고 종류를 늘릴게요. 먼저 날씨 위치(수원)를 어떻게 정하는지 볼게요.
+[13:49] AI: Weather picks the city on-device and stores it, so I can reuse that city to show region-specific numbers. Checking the city list and looking up official numbers.
+[13:49] AI: Checking region numbers for cities other than Seoul and Gyeonggi.
