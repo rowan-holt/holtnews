@@ -980,3 +980,4 @@
 2026-11-11 12:55  fix(holt): holtnews 언어 버튼 — 국기 대신 '한국어 | English'(지금 판 굵게), 폰은 KO | EN
 2026-11-11 12:57  fix(holt): holtnews 언어 — 지금 판 국기만, 누르면 태극기 한국어/성조기 English 세로 목록
 2026-11-11 13:02  feat(holt): holtnews 오디오 메뉴 — bbc.com/audio식 허브·에피소드 페이지·하단 플레이어, 영문판 Kokoro mp3+다운로드, 한국어판 기기 음성
+2026-11-11 13:08  fix(holt): site_guard에 검색 폼·오디오·홈 화면 아이콘 허용(검토 후 등록), 분야 페이지는 발행 리포트 제외
