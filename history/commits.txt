@@ -1030,3 +1030,4 @@
 2026-11-11 23:26  feat(holt): 소개 → 이용 방법(HOLT ENGLISH), HOLT ISSUE 이용 방법 쪽 추가, 두 사이트 꼬리말에 이용 방법 링크
 2026-11-11 23:27  feat(holt): HOLT ENGLISH 상단에 HOLT ISSUE 링크
 2026-11-11 23:31  feat(holt): HOLT ISSUE 로고 밑 문구 '읽고 푸는 시사상식'
+2026-11-12 00:01  fix(holt): holtnews 오디오 개별 쪽 검색 제외(noindex, follow) — 기사와 겹치는 얇은 쪽
