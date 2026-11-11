@@ -1848,3 +1848,24 @@ cd "~/Desktop/app launch/holt" && /opt/homebrew/bin/python3.10 -m venv .venv_mel
 [13:42] AI: 네, 맨 위 줄에서 '연구'가 분야들 뒤로 밀려 있어서 폰에선 한참 밀어야 보여요. '홈 · 뉴스 · 연구' 순서로 앞에 둘게요.
 [13:42] AI: 알겠어요, 맨 위 줄의 '연구'를 원래 자리(분야들 뒤)로 되돌릴게요.
 [13:43] AI: All good. Ticker flowing confirmed. Pushing.
+[13:43] AI: 말씀한 것 모두 holtnews.com에 반영했어요. 폰·PC 화면으로 확인했어요.
+
+- **국기:** 옆의 꺽쇠를 없앴어요. 국기만 누르면 "태극기 한국어 ✓ / 성조기 English" 목록이 세로로 나와요.
+- **돋보기:** 상단 줄에서 뺐어요. 검색은 ☰ 메뉴 맨 위 검색창으로 해요.
+- **폰 '오늘의 경제':** 메뉴 줄 바로 아래 옅은 띠로 붙였어요. 거래소 가격창처럼 "한국 기준금리 3.00% — · 소비자물가 상승률 2.8% ▼0.1%p …"가 오른쪽에서 왼쪽으로 계속 흘러가요.
+  - 손가락으로 누르고 있으면 멈춰요.
+  - 기기에서 '동작 줄이기'를 켠 사람에게는 흐르지 않고 손으로 밀어 보게 돼요.
+  - 날씨 줄은 그 아래로 내려갔어요. PC는 그대로예요.
+- **연구:** 맨 위 줄에서는 원래 자리(분야들 뒤)로 돌려놨어요. ☰ 메뉴의 '메뉴' 칸은 홈 · 뉴스 · 연구 · 오디오 · HOLT ENGLISH예요. 연구는 원래 있었고, 오디오를 새로 넣었어요.
+- **HOLT ENGLISH 두 줄 문제:** ☰ 메뉴에서는 화살표를 빼고 줄바꿈이 안 되게 해서 한 줄로 나와요. 맨 위 줄의 'HOLT ENGLISH ↗'는 그대로예요.
+
+이번엔 스크립트를 바꾸지 않아서 안전 검사도 그대로 통과했어요. 작업 저장소에도 커밋하고 푸시했어요.
+[13:44] 사람: 오디오 메뉴에서 재생눌러서 듣다가 같은내용 클릭하면 끊긴다 이어지게 해주라 이동해도 이어지게
+
+다른데로 클릭하거나 하면 그 오디오 재생 리모컨이 아래에 따라다니는거지 알지?
+[13:45] AI: 아래 리모컨(플레이어)이 페이지를 옮겨도 계속 따라다니며 이어서 재생되게 할게요. 지금은 다른 페이지로 가면 페이지가 새로 열리면서 소리가 끊겨요. 재생 중일 때는 페이지 전체를 새로 열지 않고 본문만 갈아 끼우는 방식(BBC와 같은 방식)으로 바꿀게요.
+[13:45] AI: 네, 리모컨 가운데는 재생/멈춤, 양옆은 15초 뒤로·15초 앞으로로 만들게요. 리모컨이 모든 페이지 아래에 따라다니게 구조를 바꾸는 중이에요.
+[13:46] AI: Testing in the browser: play → move to other pages → remote stays, sound continues, skip buttons, back button.
+[13:47] AI: Navigation keeps the sound playing. But the forward-15s button didn't take effect, so fixing that.
+[13:48] AI: The local test server doesn't support seeking (Range requests), so it snapped back to the start. GitHub Pages supports it. Re-checking with a Range-capable local server.
+[13:48] AI: 15초 앞·뒤 버튼도 정상이에요(앞으로 5.2% → 뒤로 1.1%). 리모컨 작업을 먼저 사이트에 올릴게요.
