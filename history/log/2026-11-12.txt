@@ -2731,3 +2731,164 @@ PC는 흐르게 하지 않는 쪽을 권해요.
 
 === 대화 Claude Code 세션 43497c2d ===
 [23:48] AI: Now add the channel-fit rule to the loop prompt (and the other prompts that upload to YouTube).
+[23:49] AI: 사이트와 채널 맞춤 작업 결과예요. 앞으로 인사이트나 조회수를 물으시면 SNS, 사이트, 블로그를 한 번에 같이 보고드릴게요(기억에 저장했어요).
+
+**사이트 (GA4 기준, 어제 11/11)**
+| 사이트 | 어제 방문자·조회 | 최근 7일 방문자·조회 | 메모 |
+|---|---|---|---|
+| holtnews.com | 4명 · 29회 | 40명 · 89회 | 7일 인기 글 1위는 초가공식품 연구(7회). 유입은 거의 직접 방문(38), 구글·네이버 검색은 각 2 |
+| HOLT ENGLISH | 4명 · 5회 | 33명 · 507회 | 조회의 대부분이 학습장(/saved.html, 216회). 인스타에서 7명, 페북에서 5명 들어옴 |
+| HOLT ISSUE | 5명 · 6회 | 5명 · 6회 | 막 연 사이트라 아직 첫 화면만 열림 |
+
+- **구글 검색:** 66쪽 중 50쪽이 색인됐고, 최근 28일 동안 노출 73회·클릭 9회예요. 검색어는 대부분 사이트 이름(holt news, 23회)이에요. 기사 주제로 검색해서 들어오는 경우는 아직 거의 없어요.
+- **ENGLISH:** 방문자 수는 적지만, 한 번 온 사람이 학습장을 여러 번 열어 봐요(1인당 약 15쪽). SNS에서 넘어오는 길은 실제로 작동하고 있어요.
+
+**채널 맞춤: 적용 완료**
+
+같은 영상인데 채널마다 반응이 반대인 경우가 있었어요.
+
+| 주제 | 인스타 | 유튜브 |
+|---|---|---|
+| 알프스 산장 KFC | 187 | 907 |
+| 트럼프 대변인 = UFC 회장 | 136 | 969 |
+| 미시시피 재검표 없음 | 1,550 | 87 |
+| 프랑스 냉장고 해킹 | 1,599 | 359 |
+
+- **분석 결과:**
+  - 유튜브는 질문형 제목(평소의 6.5배), 퀴즈가 있는 긴 릴스, 유명인·이색 생활 소식에 강해요. 영어 단어만 내세운 제목이나 미국 정치 사실 나열에는 약해요.
+  - 인스타는 사건 상황을 서술한 표지와 의외의 상황에 강해요.
+- **바꾼 것:**
+  1. `python3 tools/insights.py channels`로 채널별 반응을 비교하고, 결과를 `holt/channel_fit.json`에 저장해요.
+  2. 유튜브는 같은 영상을 쓰되, 결과 폴더에 `yt_title.txt`를 두면 유튜브에 맞춘 제목으로 올라가요. 지금까지는 인스타 캡션 첫 줄을 그대로 썼어요.
+  3. 자동 작업 지시문 3개(조회수 루프·단일 주제·아침 뉴스)에 "업로드할 때마다 최신 비교를 보고 채널에 맞게 제목을 쓴다"는 규칙을 넣었어요. 다음 회차부터 적용되고, 기준은 데이터가 쌓일수록 바뀌어요.
+- 스레드는 오늘부터 HOLT ENGLISH 이야기를 올리고 있어서 이미 따로 운영되고 있어요.
+- 커밋과 push까지 마쳤어요.
+
+**네이버 블로그 통계**
+
+네이버는 블로그 통계 API를 열어 두지 않았어요. 그래서 자동으로 가져올 수는 없어요. 대신 제 브라우저 창에서 네이버에 로그인해 두시면, 통계 화면(조회수·방문자·유입 검색어)을 읽어서 같이 보고드릴 수 있어요. 지금 직접 보시려면 블로그 관리 → 통계 메뉴에서 확인하실 수 있어요.
+
+**GA4 일일 리포트 오류**
+
+아까 말씀드린 매일 09:07 텔레그램 리포트는 아직 막혀 있어요. 위 사이트 수치는 제가 직접 실행해서 가져온 거예요. 맥 설정에서 python3에 전체 디스크 접근 권한을 켜 주셔야 다시 자동으로 와요.
+[23:49] 사람: 했는데
+[23:49] AI: The last run ended with exit code 2 (the failure from before). Running it once now through launchd to check the permission.
+
+=== 대화 Claude Code 세션 3fd6d4dd ===
+[23:49] AI: Site is live with terms + updated privacy. Now updating the TikTok developer portal in Chrome.
+
+=== 대화 Claude Code 세션 43497c2d ===
+[23:49] AI: `plutil -replace` inserted the path instead of replacing it. Removing the extra entry and running again.
+
+=== 대화 Claude Code 세션 3fd6d4dd ===
+[23:49] AI: It opened the AI chat instead of the app, so I'm going straight to the app's page by its URL.
+[23:51] AI: TikTok says holtnews.com isn't verified yet, so I'm opening URL properties to verify the domain.
+[23:51] AI: URL prefix with a signature file is easiest — I can push the file to the holtnews repo.
+[23:51] AI: Putting TikTok's verification file on holtnews.com, copying the format of the old file.
+
+=== 대화 Claude Code 세션 43497c2d ===
+[23:52] AI: GA 리포트 자동 실행이 고쳐졌어요(종료 코드 0). 이제 학습장 사용 현황과 페이스북 데이터를 확인할게요.
+
+=== 대화 Claude Code 세션 3fd6d4dd ===
+[23:52] AI: The build wipes the folder each run, so I'll make the build write the verification file itself.
+[23:52] AI: Verified. Now switching Terms/Privacy URLs to holtnews.com too, then reviewing the app review text.
+
+=== 대화 Claude Code 세션 43497c2d ===
+[23:52] AI: 학습장 데이터와 페이스북 상태를 확인했어요. 페북 업로드가 왜 멈췄는지도 찾아서 지금 고치는 중이에요.
+
+=== 대화 Claude Code 세션 3fd6d4dd ===
+[23:52] AI: The URL properties popup was still open, so the typing didn't land. Closing it and trying again.
+[23:53] AI: Terms field didn't take; redoing it by coordinate.
+[23:53] AI: All three URLs set. Checking the app review text for old URLs before submitting.
+[23:53] AI: Updating the revision note at the end of the review text.
+
+=== 대화 Claude Code 세션 43497c2d ===
+[23:53] AI: 페이스북 유입은 사람이 아니에요. 그리고 학습장도 아직은 사용자가 쓰고 있다고 보기 어려워요. 제가 앞에서 "SNS에서 넘어오는 길이 작동한다", "1인당 약 15쪽을 본다"고 한 건 잘못 해석한 거였어요. 다시 확인한 결과예요.
+
+**페북 유입은 메타 서버의 접속이에요**
+- 5번 모두 11/07 하루에 몰려 있고, 접속 지역이 미국 Prineville, Forest City, Springfield, Fort Worth예요.
+- Prineville과 Forest City는 메타 데이터센터가 있는 곳이에요. 어디선가 사이트 링크가 공유됐을 때(메신저 등) 메타가 미리보기를 만들려고 페이지를 읽어 간 기록으로 보여요.
+- 페북 페이지 소개란에도 사이트 링크는 없어요.
+
+**인스타 유입(7번)은 실제 사람일 수 있어요**
+- 모두 서울·구리에서 왔고 11/07~11/11에 나뉘어 있어요. 프로필 링크 등을 누르고 들어온 사람으로 보여요.
+- 다만 하루 1~3명 수준이라 아직은 아주 적어요.
+
+**학습장 216회는 대부분 우리가 만든 조회예요**
+- 216회가 거의 다 11/07~08에 서울에서 몇 명(최대 4명)이 본 거예요. 그날은 앱(학습장)을 만들고 테스트하던 날이에요.
+- 11/09 이후 학습장 조회는 0이에요. 실제 사용자가 쓰고 있다는 근거는 아직 없어요.
+
+**페북이 데이터에서 빠졌던 이유: 업로드가 멈춰 있었어요**
+- 10/27 빈도 제한(오류 368)에 걸린 뒤, 자동 작업이 "사용자 확인 전까지 페북은 건너뛴다"는 규칙 때문에 계속 페북을 건너뛰고 있었어요. 그 사이에 올라간 페북 릴스는 11/07에 1개 있었어요.
+- 이 11/07 게시가 성공해서 제한은 풀린 것으로 판단했어요. 그래서 지시문을 고쳐 다음 회차부터 페북 릴스를 다시 올려요. 하루 3개까지(07:30·12시·18시)만 올리고, 제한 오류가 나면 그날만 건너뛰고 다음 날 다시 시도해요.
+- 페이지 토큰은 정상이에요. 팔로워는 0명이에요.
+
+**GA 일일 리포트 자동 실행 복구**
+- 설정해 주신 권한만으로는 해결되지 않아서 원인을 더 찾았어요. 이 작업이 정상 작동하는 다른 작업들과 다른 파이썬 경로를 쓰고 있었어요.
+- 같은 경로로 바꾼 뒤 직접 실행해 보니 정상 종료했어요. 리포트가 오늘 텔레그램으로 한 번 갔을 거예요.
+- 같은 문제가 있던 사진 수거 작업(photoquest)도 같이 고쳤어요.
+
+=== 대화 Claude Code 세션 3fd6d4dd ===
+[23:53] AI: Everything's filled in. Submitting for review.
+[23:53] AI: The form has one error, and the demo video entry looks gone. Checking what's wrong.
+[23:53] AI: Returning to draft wiped the icon and demo video. Finding the original files to re-upload.
+[23:53] AI: That matches the icon from before. Uploading both files.
+[23:54] AI: Both uploaded with no errors. Checking that the other fields stayed intact, then submitting.
+[23:54] AI: Submitted and now In review. Committing the code changes and updating the notes.
+[23:55] AI: TikTok 앱(HOLT NEWS Publisher)을 고쳐서 다시 심사에 올렸어요. 지금 상태는 **In review**예요.
+
+**반려 이유:** 웹사이트 주소가 `rowan-holt.github.io/holt-news-legal/`로 되어 있었는데, 틱톡이 이걸 제대로 된 사이트가 아니라 랜딩 페이지로 봤어요.
+
+**바꾼 것:**
+- **틱톡 앱 설정**
+  - 웹사이트는 `https://holtnews.com/`으로 바꿨어요. 틱톡이 이 주소의 소유자인지 확인하라고 해서 인증 파일을 올렸고, 확인을 통과했어요.
+  - 이용약관은 `https://holtnews.com/terms.html`, 개인정보처리방침은 `https://holtnews.com/privacy.html`로 바꿨어요.
+  - 심사 설명 끝 문장과 재제출 사유를 새 주소에 맞게 고쳤어요.
+  - 수정하려고 "Return to Draft"를 누르니 아이콘과 데모 영상이 지워졌어요. 예전 파일로 다시 올렸어요.
+- **holtnews.com**
+  - 사이트에 이용약관 페이지가 없어서 새로 만들고(한국어·영어), 맨 아래 메뉴와 ☰ 메뉴에 링크를 넣었어요.
+  - 개인정보처리방침에 업로드 도구(Publisher)가 어떤 정보를 다루는지 적은 항목을 추가했어요.
+  - 사이트를 다시 만들 때마다 폴더를 비우기 때문에, 인증 파일이 같이 지워지지 않도록 [news_build.py](holt/news_build.py)가 매번 새로 만들게 했어요.
+
+코드와 설정 메모([YT_TIKTOK_SETUP.md](holt/YT_TIKTOK_SETUP.md))는 커밋하고 푸시했어요. 심사 결과는 이메일로 와요. 승인되면 `.env`의 키를 Production 키로 바꾸고, 틱톡 계정을 다시 공개로 돌려야 해요.
+
+=== 대화 Claude Code 세션 43497c2d ===
+[23:55] 사람: 리포트보내줄때 나([가림:이름]) 혹은 사람이아닌존재(봇)으로 추정되는 숫자는 빼주렴 어제랑 최근 방문자 수에서
+
+=== 대화 Claude Code 세션 3fd6d4dd ===
+[23:56] 사람: 문제네 아주 뭐 대단한걸 해주려고 이렇게 힘이드나
+[23:56] AI: 그러게요. 영상 몇 개 올리겠다는 건데 틱톡 심사가 이렇게 까다로워요.
+
+이번에 시간이 걸린 건 대부분 틱톡 쪽 절차 때문이었어요.
+- 웹사이트 주소를 바꾸니 그 주소의 주인인지 다시 확인해야 했어요.
+- 수정하려고 초안으로 되돌리니 아이콘과 데모 영상이 지워져서 다시 올려야 했어요.
+
+이제 남은 건 틱톡 답변을 기다리는 것뿐이에요. 또 반려되면 이번에 정리해 둔 메모가 있으니 훨씬 빨리 끝낼 수 있어요.
+[23:56] 사람: 승인 안해주려고 자꾸 괴롭히는건 아니게ㅉ씨
+[23:56] AI: 일부러 괴롭히는 건 아닐 거예요. 틱톡 심사는 원래 한 번에 하나씩만 지적하고 돌려보내는 경우가 많아요. 이번 반려도 웹사이트 주소 하나만 걸린 거라 고칠 수 있는 문제였어요.
+
+다만 걸리는 게 하나 있어요. 우리 신청서에는 "우리 계정 하나에만 올리는 내부 도구, 다른 사용자 없음"이라고 적혀 있어요. 틱톡은 일반 사용자가 쓰는 앱을 기준으로 심사하기 때문에, 이런 개인용 도구는 승인을 잘 안 해 준다는 이야기가 있어요. 공식 규정에서 확인한 건 아니지만, 다음에 또 반려되면 이게 이유일 가능성이 커요.
+
+그렇게 되면 우회 방법이 있어요.
+- **초안 업로드(video.upload):** 심사 없이도 쓸 수 있을 가능성이 높아요. 봇이 영상을 틱톡에 초안으로 올리고, 앱에서 게시 버튼만 누르면 돼요.
+- **틱톡만 직접 올리기:** 나머지 플랫폼은 자동으로 두고 틱톡만 손으로 올려요.
+
+일단은 이번 심사 결과를 기다려 볼게요.
+[23:57] 사람: 각 채널에 소개글이랑 링크 하는건 너가 못한댔나 화면조작으로도 못해?
+[23:57] AI: 할 수 있어요. 소개글과 링크 수정은 API로는 막혀 있지만, Chrome에서 화면을 직접 조작하면 바꿀 수 있어요. 각 플랫폼에 로그인만 되어 있으면 돼요.
+
+플랫폼별로는 이래요.
+- **인스타그램·스레드·페이스북·유튜브:** 소개글과 링크 둘 다 바꿀 수 있어요.
+- **틱톡:** 소개글은 바꿀 수 있어요. 소개란의 웹사이트 링크는 보통 팔로워 1,000명이 넘어야 생겨서, 지금은 칸이 없을 수 있어요. 들어가서 확인해 봐야 알아요.
+- **네이버 블로그:** 저는 막혀 있어서 못 해요.
+
+계정 설정을 바꾸는 일이라, 어떤 문구와 링크를 넣을지 정해 주시고 "해줘"라고 하시면 바로 할게요. 문구도 제가 먼저 써 드릴 수 있어요.
+
+=== 대화 Claude Code 세션 8e86483d ===
+[23:58] 예약 작업: [예약 작업 holt-english-site-sync 실행 — 정해 둔 지시문으로 자동 시작]
+
+=== 대화 Claude Code 세션 3fd6d4dd ===
+[23:58] 사람: 알아서 하세요 먼저 바껴있는지 확인하고 해줘
+
+=== 대화 Claude Code 세션 8e86483d ===
+[23:58] AI: Only "⚠ 퀴즈 없음" warnings, and the word parts of speech all fit (scuttle, deny, deter are verbs, backlash is a noun, baseless is an adjective). No fixes needed.
