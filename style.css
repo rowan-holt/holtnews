@@ -100,6 +100,8 @@ body.en .sec h2{font-family:"Jost",sans-serif;font-weight:500;letter-spacing:0}
 .sharebar .ic:hover{color:var(--ink);background:var(--soft)}
 .paper{align-items:center;flex-wrap:nowrap}.paper>div:first-child{min-width:0}.paper .sharebar{flex:none}   /* 1111: 영문판 날짜가 길어 ⋯가 왼쪽 줄로 밀리면 메뉴가 화면 밖으로 잘림 → ⋯는 늘 오른쪽 */
 .paper .pd{display:flex;align-items:center;gap:10px}
+.paper.jp{flex-direction:column;align-items:stretch;gap:8px}.paper.jp .pd{justify-content:space-between}   /* 1112: 연구 글은 논문 정보 위·날짜 줄 아래 — nowrap(1111) 뒤 논문 정보가 한 글자 폭으로 눌리던 것 */
+.paper .by{display:block;font-weight:600;color:var(--ink);margin-bottom:2px}.paper .by:hover{text-decoration:underline;text-underline-offset:3px}   /* 1112 바이라인 */
 .paper .pd .dt{white-space:nowrap}
 .sharebar.sb-top{margin:-8px -8px -8px 0}
 .sharebar.sb-end{justify-content:flex-end;margin:28px -8px 0 0}
