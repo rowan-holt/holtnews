@@ -2199,3 +2199,20 @@ holtnews.com 첫 글 발행 이건
 
 holtnews.com을 만들기로 한 뒤 지금 이거랑 색 같게
 [22:24] AI: Adding the left-side "첫 글" labels now (10/18 SNS, 11/7 holtnews·HOLT ENGLISH, 11/11 블로그).
+[22:25] AI: 첫 글이 나간 날마다 날짜 상자 왼편에 표시를 달아서 사이트에 올렸어요. 색과 크기는 "holtnews.com을 만들기로 한 뒤"와 같은 회색 보통 글씨예요. PC와 모바일 화면을 찍어서 확인했고, 커밋과 푸시까지 끝냈어요.
+
+| 날짜 | 왼편 글씨 |
+|---|---|
+| 10월 18일 | SNS 첫 글 발행 |
+| 11월 7일 (웹사이트 시절) | holtnews.com 첫 글 발행<br>HOLT ENGLISH 첫 글 발행 |
+| 11월 11일 | 네이버 블로그 첫 글 발행 |
+
+- **날짜를 잡은 근거:** holtnews와 HOLT ENGLISH는 둘 다 11월 7일에 첫 발행 기록이 있어서 두 줄로 넣었어요. 블로그는 11월 11일 밤 대화에서 "해따"라고 하신 걸 첫 발행으로 봤어요.
+- **SNS 날짜는 확인해 주세요.** 10월 18일 밤에 첫 콘텐츠를 만든 기록은 있어요. 다만 그날 실제로 몇 시에 올렸는지는 기록에 확실히 남아 있지 않아요. 다른 날이면 말씀해 주세요.
+- **모바일:** 화면이 좁아서 날짜 상자 위에 나와요.
+
+이 표시는 [history/timeline.json](holt/history/timeline.json)의 `day_marks`에 모아 뒀어요.
+[22:30] 사람: sns는 인스타 페북 스레드 틱톡 먼지 다 써줘
+HOLT NEWS 라고 하자
+홀티슈는 왜 안써죠 써죠
+[22:30] AI: Checking per-platform first-post dates (Instagram 10/18, YouTube 10/19, Threads·Facebook·TikTok 10/20 so far), plus X and HOLT ISSUE.
