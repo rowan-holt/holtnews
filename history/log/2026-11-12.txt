@@ -2892,3 +2892,18 @@ PC는 흐르게 하지 않는 쪽을 권해요.
 
 === 대화 Claude Code 세션 8e86483d ===
 [23:58] AI: Only "⚠ 퀴즈 없음" warnings, and the word parts of speech all fit (scuttle, deny, deter are verbs, backlash is a noun, baseless is an adjective). No fixes needed.
+
+=== 대화 Claude Code 세션 3fd6d4dd ===
+[23:58] AI: Checking each channel's current bio and link first.
+
+=== 대화 Claude Code 세션 8e86483d ===
+[23:59] AI: 영어 사이트를 518쪽으로 다시 빌드해서 푸시했고, HOLT NEWS도 11편(한국어·영어 2판)으로 빌드해 푸시했어요. 두 저장소 모두 원격과 같은 상태인 것까지 확인했어요.
+
+- **새 쪽 점검:** 오늘 고친 품사·예문은 0개예요. 최근 2일 새 쪽 가운데 경고는 '퀴즈 없음' 6쪽뿐인데, 지침상 그대로 두는 경우예요. 새 단어 5개(scuttle, deny, deter, backlash, baseless)는 품사가 뜻과 맞았어요.
+- **공개 대기:** 하루 새 쪽 한도가 6개라서, 대기 중인 18쪽은 다음 날부터 공개돼요.
+- **커밋:** `site_build.py`를 고치지 않아서 커밋은 하지 않았어요.
+
+=== 대화 Claude Code 세션 3fd6d4dd ===
+[23:59] AI: 인스타는 소개글과 HOLT ENGLISH 링크가 이미 있어요. 다른 채널도 확인할게요.
+[23:59] AI: 스레드는 소개글과 링크가 있고, 유튜브는 소개글만 있고 링크가 없어요. 틱톡·X·페이스북도 확인할게요.
+[23:59] AI: 인스타는 링크를 모바일 앱에서만 바꿀 수 있게 되어 있어서 웹에서는 못 해요. 스레드로 넘어갈게요.
