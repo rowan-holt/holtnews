@@ -2218,3 +2218,19 @@ HOLT NEWS 라고 하자
 [22:30] AI: Checking per-platform first-post dates (Instagram 10/18, YouTube 10/19, Threads·Facebook·TikTok 10/20 so far), plus X and HOLT ISSUE.
 [22:31] AI: 3-line label at 10/20 crowds 10/19; adding spacing proportional to line count.
 [22:31] AI: Bottom gap too large; switching the label to absolute positioning.
+[22:32] AI: 첫 글 표시를 플랫폼별로 나누고, HOLT ISSUE도 넣고, 날짜 상자 세로 중앙에 맞춰서 사이트에 올렸어요. 커밋과 푸시까지 끝냈어요.
+
+| 날짜 | 왼편 표시 |
+|---|---|
+| 10/18 | 인스타그램 첫 글 발행 |
+| 10/19 | 유튜브 첫 글 발행 |
+| 10/20 | 스레드 · 페이스북 · 틱톡 첫 글 발행 (세 줄) |
+| 11/7 | HOLT NEWS 첫 글 발행 · HOLT ENGLISH 첫 글 발행 |
+| 11/11 | 네이버 블로그 첫 글 발행 · HOLT ISSUE 첫 글 발행 |
+
+- **날짜 근거:** 대화 기록과 업로드 기록에서 각 플랫폼에 처음 올라간 날을 찾았어요. HOLT ISSUE는 11월 11일 밤 22:47에 첫 공개됐어요. 그런데 이 날짜를 안 넣고 지나갔어서 이번에 같이 넣었어요.
+- **틱톡:** 10/20 첫 업로드는 비공개 게시물이었어요. 공개로 처음 올라간 날을 따로 원하시면 말씀해 주세요.
+- **X:** 실제로 글을 올린 기록이 없어서 넣지 않았어요.
+- **중앙 맞춤:** 두 줄, 세 줄 묶음의 가운데가 날짜 상자 가운데선과 정확히 같은 높이예요. 표시 5곳을 PC 화면에서 재서 확인했어요. 10/20처럼 세 줄인 날은 위아래 날짜와 겹치지 않게 간격을 조금 넓혔어요.
+[22:33] 사람: 11/8 AI가 만든다는걸 밝히다 · 나는 착해요 상자를 떼다
+11/7 굳이 내 발에 족쇄는 안채워
