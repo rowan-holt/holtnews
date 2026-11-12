@@ -169,10 +169,12 @@ body.en .rel-card .rt{font-family:"Jost",sans-serif;font-weight:500}
 .nx-lead{grid-column:1;grid-row:1}.nx-grid{grid-column:1;grid-row:2}.nx .ad-side{grid-column:2;grid-row:1;align-self:stretch;display:flex;flex-direction:column}.nx-side{grid-column:2;grid-row:2}
 .ad-side .ad-l{margin-bottom:6px}.ad.psa{border:1px solid #d6d6d6;padding:12px 12px 14px;background:#fff}.ad.psa .psa-in{flex:1;display:flex;flex-direction:column;justify-content:center;gap:8px;padding:24px 22px;color:#fff;border-radius:2px}.ad.psa .psa-in[hidden]{display:none}.psa-blue{background:#1f4e8c}.psa-red{background:#b3261e}.psa-green{background:#1e6b46}.psa-teal{background:#0f6470}.psa-purple{background:#5b3a8c}.psa-orange{background:#b45309}.psa-vlime{background:#5cf000;color:#06240f!important}.psa-vpink{background:#ff1f7a}.psa-vsky{background:#1d5bff}.psa-vsun{background:#ffc400;color:#2b1300!important}.psa-vviolet{background:#7b2cff}.psa-vlime .ad-p,.psa-vsun .ad-p{color:inherit!important}.psa-camp .psa-n{font-size:28px;letter-spacing:-.01em}.psa-in[class*=psa-v] b{font-weight:900}.ad.psa .psa-fest{flex-direction:row;align-items:center;justify-content:flex-start;gap:16px;background:#f3f1ec;color:var(--ink);padding:14px}.psa-fest img{width:96px;height:128px;object-fit:contain;background:#fff;flex:none}.psa-fest .pf-t{display:flex;flex-direction:column;gap:6px;min-width:0}.psa-fest .ad-p{color:var(--ink2)!important}.psa-fest b{font-size:18px!important}.psa .psa-k{font-size:12.5px;font-weight:600;opacity:.85}.psa b{font-size:21px;line-height:1.35;letter-spacing:-.02em}.psa .ad-p{font-size:13.5px;line-height:1.55;opacity:.9;color:#fff}.psa .psa-n{margin-top:6px;font-size:34px;font-weight:800;letter-spacing:.02em}.ad-side ins{flex:1}.ad-side.house a{flex:1;justify-content:center;padding:28px 26px}.ad-side.house .ad-l{margin:0 0 4px}
 .nx-lead{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.45fr);background:var(--soft)}
-.nx-lt{padding:28px 26px;align-self:center}
+.nx-lt{padding:28px 26px;display:flex;flex-direction:column;min-height:0;overflow:hidden;contain:size}   /* 1112 사용자: 글 칸 위아래를 그림 위아래 선에 맞춤 — 칸 높이는 그림(3:2)이 정하고 글은 그 안에 */
+.nx-lt .nx-date{margin-top:auto;padding-top:12px}
+.nx-lead p{display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden}
 .nx-lead h2{font-size:clamp(22px,2.2vw,32px);line-height:1.3;font-weight:800;letter-spacing:-.02em;margin:0 0 12px}
 .nx-lead p{font-size:15px;color:var(--ink2);line-height:1.6;margin:0}
-.nx-lead img,.nx-lead .nx-noimg{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;align-self:center}   /* 1112 사용자: 글 칸이 길면 그림이 늘어나 잘림 → 늘 3:2 그대로, 남는 높이는 바탕색 */
+.nx-lead img,.nx-lead .nx-noimg{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;align-self:start}   /* 1112 사용자: 그림은 늘 3:2 그대로(잘리지 않게) */
 .nx-lead:hover h2,.nx-card:hover h3,.nx-side a:hover,.nx-col li a:hover{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
 .nx-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:0}
 .nx-card img,.nx-noimg{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;background:var(--soft)}
@@ -192,7 +194,7 @@ body.en .rel-card .rt{font-family:"Jost",sans-serif;font-weight:500}
 .nx-col ul{list-style:none;margin:12px 0 0;padding:0}
 .nx-col li a{display:block;padding:10px 0;border-top:1px solid #e3e3e3;font-size:14.5px;font-weight:600;line-height:1.45}
 body.en .nx-lead h2,body.en .nx-card h3,body.en .nx-col h2{font-family:"Jost",sans-serif;font-weight:600}
-@media (max-width:900px){.nx{grid-template-columns:minmax(0,1fr);padding:16px 16px 4px}.nx-lead,.nx-grid,.nx .ad-side,.nx-side{grid-column:1;grid-row:auto}.nx .ad-side{order:3}.nx-lead{grid-template-columns:minmax(0,1fr)}.nx-lead img,.nx-lead .nx-noimg{order:-1;height:auto}.nx-lt{padding:18px 16px}.nx-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.nx-fields{padding:0 16px;margin-top:32px;gap:24px}}
+@media (max-width:900px){.nx{grid-template-columns:minmax(0,1fr);padding:16px 16px 4px}.nx-lead,.nx-grid,.nx .ad-side,.nx-side{grid-column:1;grid-row:auto}.nx .ad-side{order:3}.nx-lead{grid-template-columns:minmax(0,1fr)}.nx-lead img,.nx-lead .nx-noimg{order:-1;height:auto}.nx-lt{padding:18px 16px;contain:none;overflow:visible}.nx-lead p{-webkit-line-clamp:unset!important}.nx-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.nx-fields{padding:0 16px;margin-top:32px;gap:24px}}
 body.en .card h3{font-family:"Jost",sans-serif;font-weight:500}
 .home-news{margin-top:30px}
 .vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
