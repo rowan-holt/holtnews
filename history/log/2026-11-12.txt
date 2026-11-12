@@ -1164,3 +1164,19 @@ SECTION = "경제"
 [18:34] 사람: 1번으로 해. 그리고 본문 적절한 곳에 국고채 경매 방식도 넣어줘
 [18:35] AI: Now the edits: title, and an auction explanation right after the call (with section 2's duplicate line trimmed).
 [18:35] AI: Only `TITLE_KO` holds the title; the rest are generated pages. Rebuilding and pushing the site.
+[18:37] AI: The live site has the new version. Committing the source repo now.
+[18:37] AI: 두 가지 다 고쳐서 holtnews.com에 올렸어요. 실제 사이트에 바뀐 제목과 문단이 뜨는 것도 확인했어요.
+
+**제목**
+> "70 쓸거야" 5초 만에 맞춘 국고채 금리 3.70%
+
+**본문**: 국고채 입찰 방식은 첫 칸 '입찰 날, 5초짜리 통화'의 통화 문단 바로 뒤에 넣었어요. 처음 읽는 사람이 거기서부터 막히니까요.
+
+- 통화 문단에 한 줄 추가: "'70'은 3.70%를 줄여 부른 말이에요."
+- 새 문단: "국고채 입찰은 정부가 나랏빚을 낼 때 여는 경매예요. 정부가 "몇 % 이자면 돈을 빌려주겠냐"고 물으면, 금융회사들이 받고 싶은 금리와 살 물량을 써 내요. 가장 낮은 금리를 써 낸 곳부터 차례로 낙찰되고, 발행 물량이 다 차면 끝나요. 금리를 높게 써 낼수록 정부가 내는 이자가 늘어나는 구조예요."
+
+둘째 칸 '딜러들은 왜 금리를 높게 맞췄을까요'에도 같은 입찰 설명이 있었어요. 두 번 나오지 않게 그쪽은 뺐고, 딜러만 입찰에 들어올 수 있다는 내용은 남겼어요.
+
+원본 파일([gov_bond_bid_rigging.py](holt/site_news/gov_bond_bid_rigging.py))도 커밋하고 GitHub에 푸시했어요.
+[18:44] 사람: 그래프 각주에 (억원) 말고 그냥 그래프 숫자에 써줘 1조 789억 뭐 이런식
+[18:44] AI: 두 장 다 잘 나왔어요. 사이트 다시 올리고 커밋할게요.
