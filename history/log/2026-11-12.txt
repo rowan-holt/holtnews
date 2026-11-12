@@ -2216,3 +2216,5 @@ holtnews.com을 만들기로 한 뒤 지금 이거랑 색 같게
 HOLT NEWS 라고 하자
 홀티슈는 왜 안써죠 써죠
 [22:30] AI: Checking per-platform first-post dates (Instagram 10/18, YouTube 10/19, Threads·Facebook·TikTok 10/20 so far), plus X and HOLT ISSUE.
+[22:31] AI: 3-line label at 10/20 crowds 10/19; adding spacing proportional to line count.
+[22:31] AI: Bottom gap too large; switching the label to absolute positioning.
