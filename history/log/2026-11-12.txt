@@ -2387,3 +2387,34 @@ HOLT 릴스도 이 방식이에요. 파이썬(PIL)으로 카드 장면을 그리
 [22:54] AI: Earnings + indicators look good on both. Now the footer.
 [22:54] AI: Moved the install button in all three footers; now building and checking.
 [22:55] AI: All three footers look right. Pushing the three sites and committing.
+[22:56] AI: 세 가지 다 해서 올렸어요. 사이트 세 곳 모두 올렸고, 코드도 커밋하고 푸시했어요.
+
+**1. 실적 발표 옆 빈자리 → 주요 경제 지표**
+- 경제 분야 페이지의 "막 나온 실적" 오른쪽에 **주요 경제 지표** 표를 넣었어요.
+  - **한국 5개:** 기준금리, 소비자물가, 주담대 금리, 원/달러, 원/100엔
+  - **미국·국제 5개:** 미 기준금리, 미 소비자물가, 미 10년 국채금리, 달러 지수, WTI 유가
+- 줄마다 이름 옆에 기준 시점을 작게 달았어요. 값 오른쪽에는 직전 발표보다 오르면 빨강 ▲, 내리면 파랑 ▼로 보여요.
+- 이미 매일 받고 있는 자료라 새 API는 필요 없었어요. 자료 출처는 칸 아래 줄에 덧붙였어요.
+- 다가오는 발표 일정이 있는 주에는 원래대로 그 달력이 이 자리에 나와요. 일정이 비는 주에만 지표 표가 들어가서 빈 공간은 안 생겨요.
+- 휴대폰에서는 실적 표 아래로 이어져요.
+
+**2. 꼬리말 "앱으로 설치" → 오른쪽**
+- HOLT NEWS, ENGLISH, ISSUE 세 곳 다 왼쪽에는 메뉴 두 줄만 남겼어요. 설치 버튼은 오른쪽 © 줄 바로 위로 옮겼어요.
+- 휴대폰에서는 메뉴 두 줄 → 설치 버튼 → © 순서예요.
+- 세 사이트 모두 PC와 휴대폰 화면을 찍어서 확인했어요.
+
+**3. 어제 받아 달라고 한 미국 API**
+11/11 밤에 미국 경제 자료 쪽을 얘기하면서 말씀드린 무료 키 세 개예요.
+- **BLS** (노동통계국): 물가·고용
+- **BEA** (경제분석국): GDP·PCE
+- **FRED** (연준 경제 데이터): 금리·각종 지표
+
+그때 이 세 키를 받기 전에 미국 쪽을 갈지, HOLT NEWS·ENGLISH·ISSUE에 집중할지 먼저 정하자고 했었어요. 받기로 하시면 발급 단계를 처음부터 적어 드릴게요.
+
+**4. 1년 11.17달러면 하루에?**
+하루 약 **0.031달러**, 3센트 정도예요. 오늘 환율(1,336.70원)로 치면 **하루 약 41원**이고, 1년이면 약 14,900원이에요.
+[23:01] 사람: 실적 발표 옆 빈자리 → 주요 경제 지표 이거 홈화면에 있자나 왜 거기다 너어
+[23:01] AI: Switching to 주요 공시 from DART (key already in use). Checking dart_feed.py.
+[23:02] AI: Got it — earnings will show fixed representative companies (KR 4, US 4), and the right column becomes 주요 공시. Checking what data exists for those companies.
+[23:05] AI: NVIDIA shows a 2020 quarter — revenue tag issue. Checking its SEC tags.
+[23:05] AI: Data fixed (NVIDIA tag bug also fixed, which brought back Alphabet). Now updating the earnings section rendering.
