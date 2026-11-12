@@ -1137,3 +1137,7 @@
 2026-11-13 01:02  fix(holt): photo_quest 동시 실행 잠금 — 요청 중복 발송 방지
 2026-11-13 04:43  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — south_africa_hung_councils
 2026-11-13 05:29  chore(holt): 만들어진 기록 연표 자동 갱신 — 8개 추가
+2026-11-13 07:32  feat(holt): 07:30 회차 — 엔비디아 젠슨 황 사임 [J]
+2026-11-13 07:33  feat(holt): 젠슨 황 주제 파일·표지 사진 추가
+2026-11-13 08:13  fix(holt): HOLT ENGLISH 문장 분류 전수조사 — 단어·표현으로 충분한 35개 이동, 옛 주소 넘김, 1:1 한글 즉시 표시 / HOLT ISSUE 11/12치
+2026-11-13 08:18  fix(holt): HOLT ENGLISH 단어·표현 2차 전수조사 — 합성 명사 단어로, 자유 조합은 뜻을 쥔 단어로

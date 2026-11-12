@@ -618,6 +618,12 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 /* 1112 사용자: '공익광고' 표시는 색 상자 안 빈 쪽(오른쪽 위)에 */.ad.psa{position:relative}.ad.psa>.ad-l{position:absolute;top:22px;right:26px;z-index:1;margin:0;font-size:10.5px;letter-spacing:.06em;color:#fff;opacity:.75;pointer-events:none}.ad.psa .psa-k{padding-right:72px}.ad.psa:has(.psa-vlime:not([hidden]),.psa-vsun:not([hidden]))>.ad-l{color:#000}
 .ad-mid.psa{border-top:1px solid #d6d6d6;margin-top:0}.ad-mid.psa .psa-in{min-height:190px}.ad-mid.psa .psa-fest{min-height:0}
 .ad-wide.psa{max-width:none;margin:56px max(24px,calc((100% - 1352px) / 2)) 0}
+/* 1113 사용자: 광고 표시가 번호 위에 있으면 번호가 '광고하는 번호'처럼 읽힘 → 상자 오른쪽 위 모서리에 딱 붙은 작은 딱지 */
+.ad.psa>.ad-l,.ad-top.psa .ad-l,.ad.house .ad-l,.ad-wide.house .ad-l{top:0!important;right:0!important;padding:2px 6px!important;font-size:9px!important;line-height:1.4!important;letter-spacing:.04em!important;opacity:1!important;color:rgba(255,255,255,.85)!important;background:rgba(0,0,0,.22)!important}
+.ad.psa:has(.psa-vlime:not([hidden]),.psa-vsun:not([hidden]))>.ad-l,.ad-top.psa:has(.psa-vlime:not([hidden]),.psa-vsun:not([hidden])) .ad-l{color:rgba(0,0,0,.7)!important;background:rgba(255,255,255,.45)!important}
+.ad.house .ad-l,.ad-wide.house .ad-l{color:var(--gray)!important;background:#ecebe6!important}
+.ad.psa .psa-k,.ad-top .psa-k{padding-right:0!important}
+.ad-mid.psa>.ad-l,.ad-wide.psa>.ad-l{top:13px!important;right:13px!important}   /* 이 둘은 색 상자가 13px 안쪽에 있음 */
 .ad-wide.psa .psa-in{flex-direction:row;flex-wrap:wrap;align-items:center;column-gap:28px;row-gap:6px;padding:26px 30px}
 .ad-wide.psa .psa-k{flex-basis:100%}.ad-wide.psa b{font-size:22px}.ad-wide.psa b br{display:none}
 .ad-wide.psa .ad-p{flex:1;min-width:240px}.ad-wide.psa .psa-n{margin:0 0 0 auto}
