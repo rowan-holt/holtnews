@@ -1816,7 +1816,7 @@
    "\"AI 티 내지 마렴\""
   ],
   "2026-11-11": [
-   "HOLT ISSUE의 시작"
+   "AI 시대에 인간이 시사상식을 알아야 하는 이유"
   ],
   "2026-11-10": [
    "이 기록을 만들기로 하다"
@@ -1846,9 +1846,9 @@
  },
  "stats": {
   "days": 27,
-  "messages": 6752,
-  "operator_messages": 1850,
-  "commits": 1099,
+  "messages": 6754,
+  "operator_messages": 1851,
+  "commits": 1100,
   "first": "2026-06-17",
   "last": "2026-11-12"
  },
@@ -2038,9 +2038,9 @@
   {
    "date": "2026-11-12",
    "file": "log/2026-11-12.txt",
-   "messages": 402,
-   "operator": 102,
-   "bytes": 221420
+   "messages": 404,
+   "operator": 103,
+   "bytes": 221810
   }
  ]
 }
