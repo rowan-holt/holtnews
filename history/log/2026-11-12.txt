@@ -2569,3 +2569,24 @@ Follow @[가림] on twitter for API updates.
 [23:19] AI: I'm pulling the exact statute text — judgment fetched; now checking the official consolidated Act PDF.
 [23:20] AI: BLS registration complete — noted. Rewriting the figure with the statute text now.
 [23:20] AI: Small fix: spaces between highlighted words and particles ("징역 5년 에").
+[23:21] AI: 기사 그림을 13조 원문으로 바꿔서 사이트에 올렸어요. 커밋과 푸시까지 끝냈어요.
+
+**그림**
+- 왼쪽은 **지금 조문(2012년 개정)**, 오른쪽은 **1심이 고친 문구(2018년)**예요. 두 칸에 영어 원문을 나란히 넣었어요.
+- 1심이 바꾼 곳만 굵게 표시했어요. 1항의 형량 twenty-five(25년) → five(5년), 2항 정의에 들어간 without consent(동의 없이)예요.
+- 국문판은 원문 아래에 우리말 옮김을 붙였고, 영문판은 원문만 넣었어요.
+- 1심 문구는 판결문에 바뀐 곳까지 표시된 원문이 그대로 실려 있어서 그걸 옮겼어요.
+- 지금 조문은 판결문에 통째로 실려 있지 않아요. 판결문에 나온 2012년 개정 사실과 1심이 바꾼 곳 표시를 맞춰서 되짚었어요. 2012년 개정으로 형량이 모두 25년이 됐다는 것과, 항소법원이 "25년을 지우고 5년으로" 고친 대목이 근거예요. 트리니다드토바고 정부 법령 PDF로 원문을 직접 대조하려 했는데, 여기 맥에서 PDF 글자를 꺼낼 도구가 없어서 못 했어요.
+
+**이대로 끝나면 1심 문구로 고쳐지나?**
+네, 법원이 적용하는 13조는 1심 문구가 돼요. 다만 조건이 있어요.
+- **이미 정해진 것:** 합의한 성인 동성 간 사적인 행위에는 13조와 16조를 적용할 수 없어요. 최종 명령과 상관없이 확정됐어요.
+- **아직 남은 것:** 어떤 문구로 고칠지예요. 추밀원 잠정 의견은 1심 문구 유지예요. 존스 쪽이 두 조항을 통째로 지우자는 서면 의견을 낼 수 있고, 그걸 본 뒤 최종 명령이 나와요. 추밀원이 "겹치는 범죄 정리는 의회 몫"이라고 선을 그어 둬서 1심 문구로 갈 가능성이 커 보여요.
+- **법전 글자는 그대로예요.** 법원 명령은 법원이 조문을 그 문구대로 읽고 적용하게 하는 거예요. 의회가 개정하기 전까지 법전에 인쇄된 글자가 저절로 바뀌지는 않아요. 의회는 나중에 다른 문구로 직접 개정할 수도 있어요.
+
+**BLS:** 등록 완료 화면 확인했어요. 이제 FRED, BLS, BEA 세 키 모두 쓸 수 있어요.
+[23:25] 사람: 그럼 모바일 흘러가는 오늘의 경제에 더 많은걸 띄워보자
+[23:25] AI: Plan: keep the 6 desktop tiles, and add extra tiles that show only in the mobile ticker. Sources are ECOS, BLS and BEA. First I'll check the stat codes.
+[23:26] AI: Now implementing: new feeds plus mobile-only extra tiles.
+[23:27] AI: Feeds work. Now the mobile-only extra tiles in the renderer, then the article title.
+[23:28] AI: Ticker works: 16 items on mobile and 6 unchanged on desktop. Now the article title.

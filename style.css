@@ -592,7 +592,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .ap-mt{grid-area:t}.ap-x{grid-area:x}.ap-ctl{grid-area:c;justify-content:center;gap:28px}body.ap-on{padding-bottom:110px}}
 @media (max-width:900px){.ar-row{grid-auto-columns:calc((100% - 2 * 14px) / 2.4);gap:14px}.ah-in{grid-template-columns:1fr;gap:24px;padding:26px 16px}.ah-pic{order:-1;max-width:260px}.ar,.a-note,.a-body{padding:0 16px}}
 /* 1111 경제 흐르는 가격창 */
-.ek-track{display:contents}.ek-dup{display:none}
+.ek-track{display:contents}.ek-dup{display:none}@media (min-width:641px){.ek-more{display:none!important}}   /* 1112 더 띄운 지표는 휴대폰 흐르는 줄에만 */
 @media (max-width:640px){.topband{display:flex;flex-direction:column}.topband .hs.econ{order:-1;margin:0;padding:0}
 .topband .ek-row{border-top:0;-webkit-mask-image:none;mask-image:none;overflow-x:auto;background:#f3f1ec}
 .ek-track{display:flex;width:max-content}.ek-dup{display:flex}
