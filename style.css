@@ -426,7 +426,7 @@ body.en .page h1,body.en .page h2{font-family:"Jost",sans-serif;font-weight:500}
 display:grid;grid-template-columns:auto 1fr auto;gap:20px 48px;align-items:start}
 .foot .logo-s{font-family:"Jost",sans-serif;font-weight:600;color:#fff;font-size:17px;letter-spacing:.04em}
 .foot nav{display:flex;gap:10px;flex-wrap:wrap;color:#fff}
-.foot nav+nav{margin-top:6px;color:#cfcfcf}
+.foot nav+nav{margin-top:6px}.foot nav:last-child{color:#cfcfcf}
 .foot nav span{opacity:.5}
 .foot .c{text-align:right;align-self:end}.foot .c .install{margin:0 0 12px}/* 1112 사용자: 앱으로 설치는 꼬리말 오른쪽(© 위)으로 */
 @media (max-width:900px){.panels{grid-auto-columns:42%}.more .panels{grid-auto-columns:33.333%}
