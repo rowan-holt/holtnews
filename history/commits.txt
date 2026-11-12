@@ -1131,3 +1131,8 @@
 2026-11-13 00:20  fix(holt): 내 도시 제외는 11/08까지(11/09부터 ?me=1)
 2026-11-13 00:24  fix(holt): 구리 방문은 날짜 무관 제외
 2026-11-13 00:42  fix(holt): 리눅스 PC 크롤러 제외
+2026-11-13 00:53  feat(holt): 구글 서치콘솔 새 글 색인 요청 대기열(gsc_queue.py) + 예약 작업 holt-gsc-index
+2026-11-13 00:53  fix(holt): holtnews 파비콘 PNG·ICO 추가 — 구글 검색 지구본 대신 H
+2026-11-13 01:00  chore(holt): quest bot 연결, 기본 사진 요청 5개 발송
+2026-11-13 01:02  fix(holt): photo_quest 동시 실행 잠금 — 요청 중복 발송 방지
+2026-11-13 04:43  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — south_africa_hung_councils
