@@ -2711,3 +2711,23 @@ PC는 흐르게 하지 않는 쪽을 권해요.
 
 말씀하신 대로("횡당"만 "횡단"으로 고쳐서) 바꿀까요?
 [23:43] 사람: 웅
+[23:44] AI: 제목을 **"대서양 횡단하던 초고속 여객선, 물고기 집 된다"**로 바꿔서 사이트에 올렸어요. 커밋과 푸시까지 끝냈어요.
+
+제목에서 "74년"을 빼서, 그 숫자를 위해 넣었던 확인 목록 항목도 같이 지웠어요.
+
+=== 대화 Claude Code 세션 43497c2d ===
+[23:45] 사람: 반응하는 주제가 다르면 그 채널에 맞는걸로 그때끄대 수정하도록 하삼
+[23:45] AI: 지금은 업로드 흐름을 살펴보고 있어요. 유튜브가 인스타와 같은 영상·제목을 그대로 받는 구조라서, 채널별로 고칠 지점을 찾는 중이에요.
+
+=== 대화 Claude Code 세션 3fd6d4dd ===
+[23:47] 사람: 해결해 나한테 묻지말고 해결해
+
+=== 대화 Claude Code 세션 43497c2d ===
+[23:47] AI: GA4 리포트를 기다리는 동안, 앞으로 인사이트를 물으시면 사이트와 SNS를 같이 보고하도록 기억에 저장해 둘게요.
+
+=== 대화 Claude Code 세션 3fd6d4dd ===
+[23:48] AI: I'm adding a terms page (이용약관) to holtnews.com, since TikTok wants a fully built website and the site currently has no terms page.
+[23:48] AI: Now editing news_build.py (terms page, footer/menu links, publisher section in privacy) and the site_guard allowlist.
+
+=== 대화 Claude Code 세션 43497c2d ===
+[23:48] AI: Now add the channel-fit rule to the loop prompt (and the other prompts that upload to YouTube).
