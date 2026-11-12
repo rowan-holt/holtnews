@@ -2613,3 +2613,4 @@ PC는 흐르게 하지 않는 쪽을 권해요.
 
 원하시면 PC는 두 줄 12칸으로 바꿔 둘게요.
 [23:29] 사람: 합의한 동성 성인은 처벌 못해요 삭제
+[23:30] AI: Table-only figure looks right. Deploying and committing.
