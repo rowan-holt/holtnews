@@ -239,6 +239,7 @@ img.logo-img{outline:1px solid #d4d4d4;outline-offset:-1px}   /* 1109: 흰 바�
 .ad-wide{max-width:1400px;margin:56px auto 0;padding:0 24px}
 .ad-wide.house a{flex-direction:row;align-items:center;flex-wrap:wrap;gap:6px 18px;padding:26px 28px}
 .ad-wide.house .ad-l{margin:0}.ad-wide.house .ad-b{margin:0 0 0 auto}
+.ad.house a{position:relative}.ad.house .ad-l,.ad-wide.house .ad-l{position:absolute;top:12px;right:16px;margin:0;font-size:10.5px}   /* 1112 사용자: 광고 표시는 상자 안 오른쪽 위 (애드센스 실제 광고는 광고 위에 겹치면 안 돼서 바깥 그대로) */
 .ad-article{margin:36px 0 0}
 /* 1109 날씨 줄 */
 .top{position:relative}.top .wx{position:absolute;right:24px;top:50%;transform:translateY(-50%);max-width:none;padding:0}
@@ -614,6 +615,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 /* 1111 검색 아이콘 */
 .srch{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;color:var(--ink)}.srch:hover,.srch[aria-expanded=true]{background:#ecebe6}
 /* 1111 공익광고: 홈 가운데(mid)·가로(wide) 자리 */
+/* 1112 사용자: '공익광고' 표시는 색 상자 안 빈 쪽(오른쪽 위)에 */.ad.psa{position:relative}.ad.psa>.ad-l{position:absolute;top:22px;right:26px;z-index:1;margin:0;font-size:10.5px;letter-spacing:.06em;color:#fff;opacity:.75;pointer-events:none}.ad.psa .psa-k{padding-right:72px}.ad.psa:has(.psa-vlime:not([hidden]),.psa-vsun:not([hidden]))>.ad-l{color:#000}
 .ad-mid.psa{border-top:1px solid #d6d6d6;margin-top:0}.ad-mid.psa .psa-in{min-height:190px}.ad-mid.psa .psa-fest{min-height:0}
 .ad-wide.psa{max-width:none;margin:56px max(24px,calc((100% - 1352px) / 2)) 0}
 .ad-wide.psa .psa-in{flex-direction:row;flex-wrap:wrap;align-items:center;column-gap:28px;row-gap:6px;padding:26px 30px}
