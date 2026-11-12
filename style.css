@@ -85,6 +85,7 @@ body.en .sec h2{font-family:"Jost",sans-serif;font-weight:500;letter-spacing:0}
 .fn-i:hover,.fn.open .fn-i{border-color:var(--ink);color:var(--ink)}
 .fn-box{display:none;position:absolute;left:0;top:calc(100% + 6px);z-index:30;width:300px;max-width:calc(100vw - 24px);padding:12px 14px;background:var(--bg);border:1px solid var(--ink);box-shadow:0 6px 18px rgba(0,0,0,.12);font-size:15px;line-height:1.65;font-weight:400;color:var(--ink2);white-space:normal;text-align:left}
 @media (hover:hover){.fn:hover .fn-box{display:block}}
+@media (hover:none){.fn-box{top:auto;bottom:calc(100% + 6px)}.fn.down .fn-box{top:calc(100% + 6px);bottom:auto}}
 .fn.open .fn-box{display:block}
 .sec p+p{margin-top:14px}
 .sec.limits{background:var(--soft);padding:22px 24px}
