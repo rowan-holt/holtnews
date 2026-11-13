@@ -1121,3 +1121,36 @@ https://holtnews.com/journal/income_wellbeing.html
 **기록·커밋:** `collect_views add`를 처음엔 'journal' 유형으로 넣어 오류가 났어요. Journal 게시물이 쓰는 '예약' 유형으로 다시 등록하고 태그도 달았어요. 커밋 2개(2149a2a, 6b6f10e)를 push했어요.
 
 **오류:** 업로드 중 오류는 없어요. 직전 캐러셀(carousel.log)도 정상이었어요.
+
+=== 대화 Claude Code 세션 1f38dfde ===
+[13:23] 예약 작업: [예약 작업 holt-gsc-index-v2 실행 — 정해 둔 지시문으로 자동 시작]
+
+=== 대화 Claude Code 세션 a339c28f ===
+[14:21] 예약 작업: [예약 작업 holt-site-audit 실행 — 정해 둔 지시문으로 자동 시작]
+[14:21] AI: Now find candidates.
+[14:21] AI: 기존 글 사후 검수는 모두 끝나서 이번 실행에서는 검수할 글이 없었습니다.
+
+- **확인 결과:** 사이트 뉴스 17편은 모두 확인 장부가 있습니다. 그중 11월 9일 전에 나간 글도 전부 포함됩니다. Journal 가운데 사이트 본문이 있는 글도 모두 장부가 있습니다.
+- **변경:** 파일 수정, 사이트 빌드, 푸시, 커밋 모두 하지 않았습니다.
+- **남은 검수 대상:** 0편.
+
+=== 대화 Claude Code 세션 7b23a8fa ===
+[17:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
+[17:02] AI: Friday 18:00 is the world-news slot (오세아니아). Looking for candidates now.
+[17:02] AI: Picked the Australian teen rescued after 6 days in the bush; cross-checking a second source now.
+[17:03] AI: Now finding a free-license cover photo (Victorian bush / police helicopter rescue).
+[17:04] AI: Downloaded a rescue-helicopter stock clip; checking its frames for the cover.
+[17:04] AI: Cover: rescue helicopter descending into the forest (stock clip 28–34s). Trimming it and writing the topic file next.
+[17:05] AI: Shortening the cover title to fit (~10 chars per line), then reviewing the cover.
+[17:06] AI: Cover crop was off (only a rotor blade visible); fixing the framing now.
+[17:07] AI: Cover approved after re-cropping; checking reel frames and writing the YouTube title.
+[17:07] AI: Content is ready (cover, reel, caption checked). Waiting for the 18:00 upload time.
+[17:07] AI: Waiting for the 18:00 timer to finish.
+
+=== 대화 Claude Code 세션 c93afecd ===
+[17:21] 예약 작업: [예약 작업 holt-site-audit 실행 — 정해 둔 지시문으로 자동 시작]
+[17:21] AI: Now find candidates.
+[17:21] AI: Every news and Journal article now has CHECKS, so there is nothing left to audit. Nothing was changed.
+[17:21] AI: 11-09 이전 기존 글의 사후 검수가 모두 끝나서, 이번에 검수한 글은 없습니다.
+- `site_news/*.py` 뉴스 17편과 SITE_KO가 있는 `journals/*.py` 전부에 확인 장부(CHECKS)가 이미 들어 있습니다. 마지막으로 검수한 글은 south_africa_hung_councils입니다.
+- 남은 검수 대상은 0편이라 아무것도 바꾸지 않았습니다. 배포와 커밋도 하지 않았습니다. 이 예약 작업(holt-site-audit)은 더 할 일이 없으니 꺼도 됩니다.
