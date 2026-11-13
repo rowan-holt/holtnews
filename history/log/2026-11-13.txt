@@ -961,3 +961,103 @@ https://holtnews.com/editorial.html
 [09:02] AI: English desk passed. Applying the two recommendations, then recording the review results and moving to the editor-in-chief step.
 [09:02] AI: Editor-in-chief step: confirmed the VALUE content is in the body and finalized the headline. Building next.
 [09:03] AI: Rendering is fine. One fix: the dek's "통과했고" doesn't match the body's "통과가 유력", so I'm aligning it, then pushing.
+[09:04] AI: Push and report sent. Committing.
+[09:04] AI: This was the 09:00 news slot. I published a piece on California's three tax ballot measures. Prop 40, a billionaire wealth tax, was rejected. Prop 3, which makes a tax on high earners permanent, is on track to pass. Prop 42, a constitutional ban on new taxes on owning financial assets, is ahead.
+- Headline: 부자 소득세는 이어 가고, 부유세는 거부
+- URL: https://holtnews.com/news/california_tax_votes.html
+- Published 09:04, Telegram report sent, commit and push to GitHub done.
+
+**Why this topic**
+- Korean articles only reported the billionaire tax failing. The Prop 3 and Prop 42 results don't appear in Korean coverage, so the piece passed the "what would readers lose without this" check.
+- It scored 21, the highest of the 5 candidates that passed the gates. It is sourced to the California Secretary of State's vote count, the Legislative Analyst's Office analyses and an OECD report.
+- None of the results are certified yet, so the piece says Prop 3 "통과가 유력" and that Prop 42 is not final.
+
+**Topics not written**
+- **Jensen Huang's resignation (reserved topic):** the 11/12 8-K is a new primary source. But his forfeited stock awards, the new board chair, succession and the effect on Korean suppliers are already covered at home and abroad. It failed the check, and I'll look again after the 11/17 earnings. I noted this in site_plan.md.
+- **Fed's 2027 meeting schedule, 재초환 (reconstruction-profit charge) timing dispute, October import and export prices:** already covered in depth by Korean media, so they failed the same check.
+- **Carried-over candidates:** three news candidates remain (credit-loan collateral waiver 19, NDAA chip export clause 18, Section 232 robotics probe 18). The California candidate was removed now that it's written.
+
+**Review**
+- The automated fact check passed. The economics desk returned hold twice and passed on the third round. The English desk returned hold once and passed on the second.
+- The fixes they asked for:
+  - The headline originally called Prop 3 a "증세" (tax increase); it only keeps an existing rate.
+  - Prop 42's scope was too broad: it covers only state taxes on owning financial assets and other non-real-estate property.
+  - An unsourced claim that Prop 42 was aimed at Prop 40 was cut.
+  - The description of Korean holding taxes was corrected.
+  - The "2028 retry" year was removed because it couldn't be confirmed.
+- The article runs about 1,800 Korean characters (excluding spaces), above the 1,500 target, because of facts the desks asked to add.
+
+=== 대화 Claude Code 세션 cd80167c ===
+[10:14] 예약 작업: [예약 작업 holt-error-reports 실행 — 정해 둔 지시문으로 자동 시작]
+
+=== 대화 Claude Code 세션 5902f63c ===
+[10:23] 예약 작업: [예약 작업 holt-gsc-index-v2 실행 — 정해 둔 지시문으로 자동 시작]
+
+=== 대화 Claude Code 세션 ea4c9840 ===
+[10:41] 예약 작업: [예약 작업 holt-issue-daily 실행 — 정해 둔 지시문으로 자동 시작]
+[10:42] AI: 모든 검사를 통과해서 이제 배포합니다.
+[10:43] AI: HOLT ISSUE 오늘 작업을 마쳤어요. 기사 4편에 문제 12개를 새로 올렸어요.
+- **california_tax_votes**(캘리포니아 부유세·소득세 주민투표, 경제): 용어·사실·이해 3문제
+- **sleep_cold**(잠이 부족하면 감기에 잘 걸린다는 연구, 과학): 사실 2·이해 1, 3문제
+- **cold_hand**(찬물 실험, 정점과 끝의 법칙, 과학): 용어 1·이해 2, 3문제
+- **spotlight_shirt**(스포트라이트 효과 실험, 과학): 용어·사실·이해 3문제
+
+4편 모두 검사를 통과했어요. 배포 때 사이트 안전 검사 경고는 나오지 않았어요. 해당 날짜 쪽(11-02, 11-04, 11-07, 11-13)이 생긴 것도 확인했어요. 커밋(e23f8bc)과 푸시까지 끝났어요.
+
+남은 대기는 4편이에요.
+
+=== 대화 Claude Code 세션 9f238f3e ===
+[11:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
+[11:02] AI: Rules digest read. Now running the collection and decision steps for the 12:00 slot.
+[11:02] AI: Gathering Korean headlines to find a news story with a Konglish phrase (type C was picked).
+[11:04] AI: Picked the story: "padded jacket + seatbelt is dangerous" warning (widely covered this week) with Konglish "패딩" → puffer jacket. Verifying facts from the original articles now.
+[11:05] AI: Still searching for a usable free cover photo (person in a puffy coat with a seatbelt). Checking a few Pixabay candidates.
+[11:09] AI: Journal draft has the site article but lacks the SNS fields. Adding those now (easy English, no hyphens), then rendering.
+[11:09] AI: Caption is over Instagram's length budget (2,342 > 2,100). Trimming sentences.
+[11:09] AI: Caption fits now. Checking the cover and a body card.
+[11:09] AI: Cards look right. Rendering the reel.
+[11:11] AI: Reel frames check out. Writing the YouTube title and checking the Threads procedure before waiting for 12:00.
+[11:11] AI: Everything is ready; waiting for the 12:00 due time.
+[11:11] AI: The cards, reel and captions are ready. The upload is set to start at 12:00, and the background wait will wake me then.
+
+=== 대화 Claude Code 세션 7da4ea73 ===
+[11:21] 예약 작업: [예약 작업 holt-site-audit 실행 — 정해 둔 지시문으로 자동 시작]
+[11:21] AI: Now find candidates.
+[11:21] AI: holtnews.com에 예전에 올린 글의 사후 검수는 모두 끝났습니다.
+- 대상 조건을 두 번 확인했습니다. 11-09 이전에 나간 뉴스 중 CHECKS가 없는 글, 그리고 사이트에 게시된 Journal 중 CHECKS가 없는 글을 찾았는데 둘 다 0편이었습니다. 뉴스는 모든 파일에 CHECKS가 이미 들어 있습니다.
+- 그래서 이번 실행에서는 아무것도 바꾸지 않았고, 빌드·커밋·푸시도 하지 않았습니다. 남은 검수 대상은 0편입니다.
+
+이 예약 작업은 앞으로 할 일이 없으니 꺼도 됩니다.
+
+=== 대화 Claude Code 세션 05806f67 ===
+[11:26] 사람: Z:\마케팅팀 공유폴더\05. 디자인\★촬영본 A컷\00_공통\01_변호사\◆회의
+
+이 경로 폴더 안에 사용가능폴더가 있어. 그 중에 파일명에 이름이 없는거 알려줄래
+[11:26] AI: 결과부터 말씀드리면, 이 폴더는 지금 확인할 수 없었어요. `Z:\`는 Windows에서 네트워크 공유 폴더에 붙인 드라이브 문자인데, 이 Mac에는 그 공유 폴더가 연결돼 있지 않아요. 연결된 디스크는 `Macintosh HD`뿐이고, 네트워크 드라이브(SMB 등)는 하나도 없어요. 폴더 이름(`◆회의`, `사용가능`)으로 검색해도 나오지 않았어요.
+
+방법은 둘 중 하나예요.
+
+**1. 이 Mac에 공유 폴더 연결하기**
+1. Finder 메뉴에서 **이동 → 서버에 연결**(⌘K)을 누르세요.
+2. 서버 주소를 입력하세요. 예: `smb://서버이름/마케팅팀 공유폴더`
+   - 서버 주소를 모르면 Z: 드라이브가 있는 Windows PC의 명령 프롬프트에서 `net use`를 실행해 보세요. Z: 옆에 `\\서버\공유이름`이 나오는데, 그걸 `smb://서버/공유이름`으로 바꿔 입력하면 돼요.
+3. 연결되면 말씀해 주세요. 제가 바로 `사용가능` 폴더 안에서 파일명에 이름이 없는 파일을 찾아 드릴게요.
+
+**2. 파일 목록만 붙여넣기**
+Windows PC에서 해당 `사용가능` 폴더를 열고, 주소창에 `cmd`를 입력해 명령 프롬프트를 띄우세요. 아래 명령을 실행하고 결과를 여기에 붙여넣어 주시면 됩니다.
+```
+dir /b /s
+```
+
+참고로 "이름"이 변호사 이름(예: `홍길동_01.jpg`)을 뜻하는 거라면, 목록을 받은 뒤 한글 이름 패턴이 없는 파일을 골라 드릴게요. 기준이 다르면 알려주세요.
+
+=== 대화 Claude Code 세션 c20077c5 ===
+[11:46] 예약 작업: [예약 작업 holt-site-publish 실행 — 정해 둔 지시문으로 자동 시작]
+[11:46] AI: Friday 12:00 slot → this round is a Journal piece. Candidates are lined up; now checking the source paper.
+[11:47] AI: Source paper and rebuttal letters confirmed; now verifying a contradicting study and building the remaining candidates.
+[11:49] AI: Now writing the cover illustration and the article file.
+[11:52] AI: The desk and English-desk reviews are running in the background. Meanwhile I'm drawing the body figure (the timeline).
+[11:52] AI: Figures look fine. Waiting on the two desk reviews; logging the author entry in the meantime.
+[11:53] AI: The two desk reviews (Korean and English editions) are still running. Once they come back I'll apply their notes, then publish.
+[11:55] AI: Desk feedback is applied and the fact check passed. Now building and previewing.
+[11:56] AI: Page exists. Rendering it once with headless Playwright to check for breakage, then publishing.
