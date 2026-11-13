@@ -1169,3 +1169,4 @@
 2026-11-14 01:06  feat(holt): 앱 광고 11/14 20:00 예약 업로드용 — no_carousel 표시면 캐러셀 예약 건너뜀, scheduled_upload HOLT_STEPS·yt 단계
 2026-11-14 01:23  feat(holt): 스레드 광고 글 — 폴더의 threads_ad.txt 본문 + threads_ad_reply.txt 링크 답글(40분 조용할 때)
 2026-11-14 04:43  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — delivery_app_mfn
+2026-11-14 05:29  chore(holt): 만들어진 기록 연표 자동 갱신 — 9개 추가
