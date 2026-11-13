@@ -1154,3 +1154,36 @@ https://holtnews.com/journal/income_wellbeing.html
 [17:21] AI: 11-09 이전 기존 글의 사후 검수가 모두 끝나서, 이번에 검수한 글은 없습니다.
 - `site_news/*.py` 뉴스 17편과 SITE_KO가 있는 `journals/*.py` 전부에 확인 장부(CHECKS)가 이미 들어 있습니다. 마지막으로 검수한 글은 south_africa_hung_councils입니다.
 - 남은 검수 대상은 0편이라 아무것도 바꾸지 않았습니다. 배포와 커밋도 하지 않았습니다. 이 예약 작업(holt-site-audit)은 더 할 일이 없으니 꺼도 됩니다.
+
+=== 대화 Claude Code 세션 7b23a8fa ===
+[18:06] AI: The glob failed and stopped the add. Re-adding with the actual file names.
+[18:07] AI: 11월 13일 18시 회차를 정각 18:00에 올렸어요.
+
+- **회차:** 금요일 세계 뉴스 · 오세아니아 차례였어요. 예약 주제도, 후속으로 만들 주제도 없었어요.
+- **주제:** 호주 멜버른 동쪽 숲에서 캠핑하던 17살이 6일 동안 실종됐다가 살아서 구조됐어요. 엄마 말로는 한자리에서 움직이지 않고 기다렸다고 해요.
+  - 오늘의 영어는 **stay put**(그 자리에 가만히 있다)이에요.
+  - 표지 제목은 "숲에서 6일 실종 / 17살이 버틴 비결"이에요.
+- **포맷과 이유:** 유형 J(전체 화면 표지 + 짧은 뉴스)로 만들었어요.
+  - 다음 유형은 C(콩글리시)로 나왔지만 이 소식에는 자연스러운 콩글리시가 없어서 점수 1위인 J로 바꿨어요.
+  - 특집은 오늘 12시 Journal로 이미 찼어요.
+  - 나라는 오늘 앞 회차가 미국(엔비디아)과 Journal(미국 연구)이라 호주로 섞었어요.
+- **표지 영상:** Pixabay 자료 영상(구조 헬기, Guyjass)이에요. 캡션에 "이번 구조에 나선 헬기가 아니에요"라고 적었어요.
+  - 처음엔 헬기 날개만 잘려 보여서, 영상을 헬기 쪽으로 다시 잘라 만들었어요.
+  - 제목 뒤 배경이 밝아서 제목 쪽에 그라데이션이 자동으로 들어갔어요.
+- **교차확인:** [BBC](https://www.bbc.co.uk/news/articles/ckvg25zmppglo), [1News](https://www.1news.co.nz/2026/11/13/[가림:긴문자열]/). Guardian, ABC, RNZ 등도 같은 내용으로 보도했어요.
+- **올린 링크:**
+  - 인스타 릴스: https://www.instagram.com/reel/DfrQn9iI2sH/
+  - 페이스북 릴스: https://www.facebook.com/reel/[가림:숫자]
+  - 인스타 스토리: https://www.instagram.com/stories/rowanholt_official/[가림:숫자]
+  - 유튜브: https://youtube.com/shorts/bGbvDO-HX3I (비공개로 올렸고, 표지가 확인되면 yt-release가 자동으로 공개해요)
+  - 스레드: https://www.threads.com/@[가림]/post/DfrRTeKn1Rh (HOLT ENGLISH 쪽 baseless 이야기, 링크 답글은 18:46에 예약돼 있어요)
+  - 인스타 캐러셀은 19:00 자동 게시 대기 중이라 아직 확인 전이에요.
+- **현재 단계:** 2차 목표는 게시물당 조회수 500회, 팔로워 200명이에요(11/30까지). 지금 팔로워는 55명이에요.
+- **기록:** `collect_views add/tag`와 world_rotation(오세아니아·호주)에 기록하고 커밋 bddfe14로 푸시했어요.
+- **오류:** 없었어요.
+
+=== 대화 Claude Code 세션 a36eeec5 ===
+[18:57] 사람: 연구 소득 행복 저거 표지 제목 바꿔줄래 그리고 그림 무슨 뜻인지 설명해줘
+[18:58] AI: 표지랑 그림 확인하고 있어요.
+[18:59] AI: 한국어 왼쪽 글이 잘려서 줄이고 다시 만들고 있어요.
+[18:59] AI: Looks good. Pushing the site and committing now.
