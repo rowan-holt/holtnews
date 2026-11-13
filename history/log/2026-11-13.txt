@@ -1061,3 +1061,63 @@ dir /b /s
 [11:53] AI: The two desk reviews (Korean and English editions) are still running. Once they come back I'll apply their notes, then publish.
 [11:55] AI: Desk feedback is applied and the fact check passed. Now building and previewing.
 [11:56] AI: Page exists. Rendering it once with headless Playwright to check for breakage, then publishing.
+[11:57] AI: Published. Now updating the candidate file and committing.
+[11:58] AI: Waiting for the GitHub Pages build to finish, then I'll recheck the address.
+[11:59] AI: This was the Friday 12:00 Journal round, and one study write-up went up on the site. The address loads normally (it returns 200).
+
+**Published:** "소득이 높을수록 더 행복했다, 가장 불행한 쪽만 빼고" (English edition: "Kahneman's $75,000 happiness ceiling, revisited")
+https://holtnews.com/journal/income_wellbeing.html
+
+- **What it covers:** the 2023 PNAS study by Kahneman, Killingsworth and Mellers. It explains why Kahneman's 2010 "$75,000 ceiling" and Killingsworth's 2021 "keeps rising" reached opposite answers: the 2010 survey asked yes/no questions about the day before, and most higher earners were already at the top of that scale. It also includes two letters PNAS printed in 2024 disputing the study, the authors' reply, a 2024 reanalysis that puts the plateau near $200,000, and a study finding that income is linked to sadness rather than happiness. Korean coverage I found only repeated the conclusion; the 2024 rebuttals and the reanalysis had not been reported in Korean.
+- **Selection:** it scored 25 out of 30 against a cutoff of 18. It does not get the extra points for recency, because the paper is from March 2023 and the rebuttal letters came out about two weeks more than two years ago.
+- **Reviews:** both the Korean-edition desk and the English-edition desk first held the piece. Every issue they raised is fixed:
+  - One number was wrong: 96% should have been about 91%.
+  - Some job titles weren't in the sources, so I removed them.
+  - One percentile's rise wasn't statistically significant.
+  - The size of the effect was missing, so I added it (a correlation of 0.09).
+  - The title and cover text read as cause and effect; I softened them.
+
+  I applied the changes as the desks wrote them but did not send the piece back for a second review, to stay within the 50-minute limit for the round. The site's automatic fact check passed.
+- **Commit and report:** f70b992 is committed and pushed, and the publication report went to Telegram.
+
+**Candidates waiting for the next Journal round:**
+
+| Study | Score |
+|---|---|
+| Shingles vaccine and dementia (Nature 2025, added this round) | 21 |
+| Social capital and social mobility (Chetty, Nature 2022) | 20 |
+| Money rewards work better than psychological ones, more so in Western countries (2024) | 19 |
+| Guilt, not shame, makes people help others (2025) | 18 |
+
+=== 대화 Claude Code 세션 9f238f3e ===
+[12:06] AI: Uploads done. Recording and committing.
+[12:07] AI: **11/13 12:00 회차가 12:00 정각에 올라갔어요.** Journal 포맷이고 제목은 "영양을 맞춰도 초가공 쪽을 하루 508kcal 더 먹었다"(Hall et al. 2019, Cell Metabolism)예요.
+
+**포맷을 바꾼 이유:** `next`는 C(이거 영어로 하면 틀려요)를 냈어요. 그래서 '패딩 입고 안전벨트 매면 위험' 경고 기사(서울경제·농민신문·SBS·JTBC)로 '패딩'은 틀린 영어라는 내용을 준비했어요.
+- 표지에 쓸 '패딩 입은 사람이 안전벨트를 맨' 자유 이용 실사를 Pixabay·위키미디어·Openverse에서 찾지 못했어요. Pixabay 사진은 해상도가 낮아 전체 화면으로 쓰면 흐려졌어요.
+- 그래서 Journal로 바꿨어요. 오늘 특집 0/2개로 가능했고 판정은 '늘림'(점수 1.13)이에요. 사이트 대기열 맨 앞인 `ultraprocessed_diet`를 썼어요.
+- 패딩·안전벨트 주제는 표지 사진이 생기면 나중에 다시 쓸 수 있어요.
+
+**만든 것:**
+- 기존 사이트 원고에 SNS 카드·릴스 문장을 새로 넣었어요. 쉬운 영어로, 하이픈 없이 썼어요.
+- 원래 캡션이 2,342자였어서 문장을 줄여 2,097자로 맞췄어요(인스타 한도 2,200자). 캡션 양식 검사(FORM)는 통과했고, 해석 없는 영어 문장도 0개예요.
+- SNS 표지 제목도 사이트 제목과 같게 바꿨어요. 비교 대상(영양 같은 식단)이 보이게 하려는 거예요.
+- 카드 4장과 릴스 프레임 4장을 직접 봤어요.
+
+**올린 링크:**
+- 인스타 릴스: https://www.instagram.com/reel/DfqnaziMbZD/ (캐러셀은 13:00에 자동 게시, 정답 댓글은 15:01 예약)
+- 페이스북 릴스: https://www.facebook.com/reel/[가림:숫자]
+- 인스타 스토리: https://www.instagram.com/stories/rowanholt_official/[가림:숫자] (91초라 앞 59초만 올라감)
+- 유튜브: https://youtube.com/shorts/HWEBb4co-GY (지금은 비공개, 표지 확인되면 yt-release가 공개)
+- 스레드: https://www.threads.com/@[가림]/post/DfqoG-rnzgb (HOLT ENGLISH 'face a backlash', 이탈리아 KFC 이야기. 링크 답글은 12:46 예약)
+
+**현재 단계:** 2차 목표는 조회수 500회·팔로워 200명, 기한은 11/30이에요. 지금 팔로워는 55명이고, 이번 수집에서 승급이나 쉼으로 바뀐 판정은 없어요.
+
+**인사이트(12시 점검):**
+- 늘림: J 전체 화면 1.26, C 1.22, 예약 1.11
+- 줄임: D(내 일이면?) 0.75
+- 접음으로 바뀐 유형은 없어요.
+
+**기록·커밋:** `collect_views add`를 처음엔 'journal' 유형으로 넣어 오류가 났어요. Journal 게시물이 쓰는 '예약' 유형으로 다시 등록하고 태그도 달았어요. 커밋 2개(2149a2a, 6b6f10e)를 push했어요.
+
+**오류:** 업로드 중 오류는 없어요. 직전 캐러셀(carousel.log)도 정상이었어요.
