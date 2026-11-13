@@ -760,3 +760,204 @@ https://holtnews.com/editorial.html
 [08:31] AI: ENGLISH 쪽에서 오디오 126개 삭제가 걸렸어요. 이번 변경과 상관없어 보여서 원인부터 볼게요.
 [08:32] AI: 약관·개인정보 페이지를 언어별로 나누는 중이에요.
 [08:33] AI: 꼬리말 줄 배치가 바뀌었고, 약관 페이지도 언어별로 나뉘었어요. 올릴게요.
+[08:34] AI: 네, 바꿨어요. 꼬리말은 이제 `소개 | 편집 원칙 | 만들어진 기록` 다음 줄에 `이용약관 | 개인정보처리방침`이 와요.
+
+**이용약관은 언제, 왜 생겼나**
+- 어제(11/12) 밤 11:54에 만들었어요. 틱톡 앱 재심사 때문이에요.
+- 틱톡 개발자 앱은 심사 신청서에 이용약관 주소와 개인정보처리방침 주소를 꼭 적어야 해요. 그래서 holtnews.com/terms.html을 새로 만들어 제출했어요.
+- 앱에만 있는 게 아니에요. 앱은 웹사이트를 그대로 띄우는 구조라, 휴대폰 웹과 PC에도 똑같이 있어요.
+
+**필수인가**
+- 개인정보처리방침은 필요해요. 사이트가 구글 방문 통계와 애드센스의 쿠키를 쓰고, 애드센스도 이 방침을 요구해요.
+- 이용약관은 회원가입 없는 무료 사이트라 법으로 꼭 있어야 하는 건 아니에요.
+- 다만 틱톡 심사가 이 주소를 확인하니, 심사가 진행 중이고 승인된 뒤에도 페이지는 남겨 두는 게 안전해요.
+
+**한글·영어 같이 보이던 것**
+- 틱톡 심사관이 읽을 수 있게 한 페이지에 영어를 덧붙였던 거예요. 꼭 그래야 하는 건 아니라서 나눴어요.
+- 한국어판(terms.html, privacy.html)에는 이제 한국어만 나와요.
+- 영어판(en/terms.html, en/privacy.html)에는 영어만 나와요.
+- 국기 버튼을 누르면 두 판 사이를 오가요.
+- 걸리는 점이 하나 있어요. 틱톡에 제출한 주소가 한국어판이라, 심사관이 처음 열면 한국어만 보여요. 국기 버튼으로 영어판에 갈 수는 있어요. 혹시 다시 제출할 일이 생기면 영어판 주소로 내면 된다고 [YT_TIKTOK_SETUP.md](holt/YT_TIKTOK_SETUP.md)에 적어 뒀어요.
+- 방금 확인했을 때 영어판 약관 주소(en/terms.html)는 아직 '없는 페이지'(404)로 나왔어요. 사이트에 올리자마자 확인해서 그런 것 같은데, 다시 확인은 안 해 봤어요.
+
+**앱 꼬리말 (앞서 요청하신 것)**
+- 앱 안에서만 꼬리말의 `HOLT NEWS | ENGLISH | ISSUE` 줄을 숨겼어요. 아래 탭이 같은 역할을 해서요.
+- 꼬리말 높이도 절반 정도로 줄였어요. NEWS, ENGLISH, ISSUE 세 사이트 모두 같아요.
+- 휴대폰 웹에서는 그 줄이 그대로 보여요.
+[08:34] 사람: 꼬리말 뉴스잉글리시이슈없는건 세 사이트 공통이야
+[08:34] AI: 네, 세 사이트 공통으로 이미 적용돼 있어요. 앱 화면에서 꼬리말 `HOLT NEWS | ENGLISH | ISSUE` 줄을 숨기고 꼬리말 높이를 줄이는 규칙을 세 사이트가 함께 쓰는 파일 하나에 넣었어요. 방금 HOLT NEWS, HOLT ENGLISH, HOLT ISSUE 사이트 세 곳 모두 그 규칙이 올라간 걸 확인했어요.
+
+휴대폰 웹에서는 세 사이트 모두 그 줄이 그대로 보여요.
+[08:37] AI: 둘 다 지금 holtnews에 띄우는 건 이용 범위 밖이에요. 사이트에 광고가 붙어 있어 상업적 이용이 되고, 방문자에게 보여주는 순간 제3자 제공이 되기 때문이에요.
+
+**한국거래소(KRX) Open API**
+[약관](https://openapi.krx.co.kr/contents/OPP/INFO/OPPINFO005.jsp)에 막는 조항이 분명히 있어요.
+- 제6조 2항: 비영리 목적으로만 쓸 수 있어요. holtnews는 애드센스 광고가 붙은 사이트라 여기에 걸려요.
+- 제11조 2항: 거래소가 준 데이터를 제3자에게 줄 수 없어요. 사이트 방문자에게 보여주는 것도 제3자 제공이에요.
+- 그래서 처음 경제 칸을 만들 때 이미 '이용 조건 때문에 쓰지 않음'으로 빼 두었어요([site_feeds.py](holt/site_feeds.py)에 적혀 있어요). 공공데이터포털의 금융위원회 주식·지수 시세도 상업 이용 금지라 같은 이유로 뺐어요.
+
+**한국투자증권 Open API**
+약관 원문 조항은 찾지 못했어요. 대신 [제휴 안내](https://apiportal.koreainvestment.com/provider)에 이렇게 나와요.
+- 제3자에게 서비스를 하려면 따로 제휴를 맺어야 해요. 제휴 없이 쓸 수 있는 건 자기 계좌를 위한 용도뿐이에요.
+- 시세 정보를 쓰려면 거래소(KRX·코스콤)와 정보이용계약을 맺었는지 확인하라고 해요. 계약 없이는 제휴사 앱 화면에 시세를 띄우는 것도 안 된다고 코스콤이 통보했다고 적혀 있어요.
+
+지금 그 키로 매매봇(kis_bot)을 돌리는 건 본인 계좌용이라 괜찮아요. 받은 시세를 사이트에 올리는 건 개인이 맺기 어려운 거래소 계약이 필요한 영역이에요.
+
+사이트 경제 칸에 지금 쓰는 출처(한국은행, 통계청, 수출입은행, 미국 정부 통계 등)는 재배포가 되는 것들만 골라 둔 거예요.
+[08:38] 사람: 그럼 시세는 영원히 못받아? 방법이 뭐가 있나
+[08:38] AI: 못 받는 건 아니에요. 길은 있는데, 시세를 우리가 직접 받아서 보여주는 방식만 막혀 있어요.
+
+**1. 시세 권한이 있는 회사의 위젯을 붙이기 (가장 현실적)**
+- TradingView, Investing.com 같은 곳은 거래소와 계약을 맺고, 다른 사이트에 붙일 수 있는 시세 위젯을 무료로 줘요.
+- 위젯은 데이터를 그 회사 서버에서 바로 보여줘요. 우리는 데이터를 넘겨받는 게 아니라서 재배포 문제가 그쪽 계약 안에서 해결돼요.
+- 대신 고려할 점이 세 가지예요.
+  - 한국 시세는 15~20분쯤 늦게 나오는 경우가 많아요.
+  - 위젯 모양이 우리 사이트 디자인과 똑같이 맞지는 않아요.
+  - 외부 스크립트나 iframe이 들어가요. 지금 사이트 안전 검사가 이걸 막고 있어서, 그 회사 주소를 허용 목록에 넣어야 해요. 그쪽 쿠키가 생기니 개인정보처리방침에도 한 줄 추가해야 해요.
+
+**2. 코스콤과 정보이용계약을 맺기 (정식 경로)**
+- 직접 받아서 우리 디자인 그대로 띄울 수 있어요. 증권 앱이나 포털이 쓰는 방식이에요.
+- 다만 돈이 들고 법인 위주의 절차예요. 비용이나 개인 사업자도 가능한지는 확인하지 못했어요. 코스콤에 문의해야 알 수 있어요.
+
+**3. 숫자 대신 링크만 두기**
+- '코스피 보기 ↗'처럼 네이버증권 같은 곳으로 보내는 링크만 다는 거예요. 아무 문제가 없지만, 화면에 숫자는 안 보여요.
+
+**지금도 되는 것: 기사 속 숫자**
+'코스피가 오늘 2% 올랐다' 같은 사실을 기사로 쓰는 건 시세를 재배포하는 게 아니라 사실 보도예요. 다른 언론처럼 뉴스 본문에 넣는 건 지금 방식대로 괜찮아요.
+
+경제 칸에 시세를 꼭 보여주고 싶다면 1번이 가장 빨라요. 원하시면 무료 위젯 중에 한국 지수를 제공하는 곳과 그 이용 조건부터 알아볼게요.
+[08:40] 사람: 위젯이 어찌 보이는지만 보여줘
+[08:41] AI: TradingView 위젯을 따로 시험 페이지에 띄워서 휴대폰·PC 크기로 찍어 보냈어요. 사이트에는 넣지 않았어요.
+
+결론부터 말하면, 무료 위젯으로는 한국 시세를 보여줄 수 없어요.
+
+**사진 1 (휴대폰, 위젯 3종)**
+- **① 흐르는 띠:** 원/달러와 S&P 500은 숫자가 정상으로 나와요. SK하이닉스는 숫자 없이 빨간 느낌표만 떠요.
+- **② 지수 카드, ③ 미니 차트:** 코스피를 넣었더니 "허가 거부되었음, 이 심볼은 트레이딩뷰에서만 볼 수 있습니다"라고 나와요.
+
+**사진 2 (PC, 흐르는 띠)**
+- 원/달러, S&P 500, 나스닥100은 잘 나와요.
+- 코스피 이름을 바꿔서 다시 넣어 봤지만 역시 느낌표만 떠요.
+
+한국 시세를 막은 건 앞서 말씀드린 한국거래소 라이선스 조건 때문으로 보여요. TradingView 같은 큰 회사도 다른 사이트에 붙이는 위젯으로는 한국 시세를 못 내보내는 거예요. Investing.com 위젯도 같이 시험했는데 화면에 아예 뜨지 않아서 확인하지 못했어요.
+
+정리하면 무료 위젯으로 가능한 건 환율, 미국 지수(S&P 500·나스닥), 해외 종목까지예요. 코스피, 코스닥, 한국 종목을 숫자로 보여주려면 앞서 말씀드린 코스콤 정식 계약밖에 길이 없어요.
+[08:42] 사람: 미국지수 해외종목은 위젯아니더라도 가져올수있는지
+
+정식 계약 비용은 얼만지
+[08:43] AI: **1. 미국 지수·해외 종목을 위젯 없이 가져올 수 있나**
+
+가능해요. 다만 공짜이면서 상업 사이트에 마음대로 띄워도 되는 출처는 찾지 못했어요.
+
+- **FRED(미 연준 경제 데이터)의 S&P 500·다우:** 우리 경제 칸이 이미 쓰는 곳이에요. 그런데 이 두 지수는 S&P 다우존스 인덱스 소유라, 다시 싣거나 보여주려면 S&P에 서면 허락을 받아야 해요. 받을 곳은 [가림:이메일] 나스닥 지수도 나스닥 저작권 표시가 붙어 있어서 따로 확인이 필요해요. ([FRED S&P 500](https://fred.stlouisfed.org/graph/?id=SP500%2C), [FRED 인용 안내](https://www.stlouisfed.org/publications/page-one-economics/2020/10/21/data-citations-with-fred))
+- **유료 데이터 회사:** 예를 들어 Twelve Data는 개인 요금제가 '본인 혼자 보는 용도'로 묶여 있어요. 외부에 보여주는 용도는 Venture 요금제(월 149달러)나 Business 요금제여야 한다고 요금표에 나와 있어요. 그런데 같은 회사 고객지원 글은 더 느슨하게 적혀 있어서, 계약 전에 직접 확인해야 해요. ([요금표](https://twelvedata.com/pricing.md), [지원 문서](https://support.twelvedata.com/en/articles/9935903-us-stocks-market-data))
+  - Finnhub, Polygon 같은 다른 회사는 공식 조건을 찾지 못했어요.
+- **원/달러 환율:** 지금처럼 수출입은행 자료로 이미 보여주고 있어서 문제없어요.
+
+정리하면, 미국 지수는 S&P에 허락을 받거나 데이터 회사에 월 150달러 이상을 내는 방법이 있어요. 해외 종목은 데이터 회사 쪽이 현실적이에요.
+
+**2. 코스콤 정식 계약 비용**
+
+공개된 일반 요금표는 없어요. 정보 이용료가 기본료와 변동료로 나뉘고, 정보 종류에 따라 다르니 개별 문의하라고 안내해요. ([코스콤 FAQ](https://www.koscom.co.kr/portal/main/contents.do?menuNo=200407))
+
+참고할 만한 숫자는 두 가지예요.
+- **상장사가 자기 회사 주가 하나를 홈페이지에 띄우는 경우:** 2021년 기준 월 10만 원(부가세 별도)이었어요. 이건 상장사 전용이라 우리에게는 해당하지 않아요. ([파이낸셜뉴스](https://www.fnnews.com/news/[가림:숫자]), [뉴스토마토](https://www.newstomato.com/readNewspaper.aspx?no=1056177))
+- **코스콤 오픈API 경로:** 중소기업은 기본료를 면제해 준다는 안내가 있어요. 개인 사업자도 되는지, 변동료가 얼마인지는 나와 있지 않아요. ([코스콤 오픈API](https://koscom.gitbook.io/open-api/faq/oppf))
+
+코스피·코스닥 지수 몇 개만 지연 시세로 뉴스 사이트에 띄울 때 얼마인지는 코스콤 고객의 소리나 영업 담당에게 직접 물어봐야 알 수 있어요.
+[08:45] 사람: 코스콤 api 정보 찾아바바
+
+=== 대화 Claude Code 세션 1593bd81 ===
+[08:46] 예약 작업: [예약 작업 holt-site-publish 실행 — 정해 둔 지시문으로 자동 시작]
+
+=== 대화 Claude Code 세션 47d52f04 ===
+[08:46] AI: 코스콤 오픈API는 지금 형태로는 쓸 수 없어요. **법인만 신청할 수 있고, 개인·개인사업자는 처음부터 대상에서 빠져 있어요.** ([이용 대상 안내](https://koscom.gitbook.io/open-api/how-to-use/procedure/charge))
+
+**누가 쓸 수 있나**
+- 중소기업기본법상 중소기업인 법인 중에서, 아래 셋 중 하나여야 해요.
+  - 금융위원회가 분류한 핀테크 업종
+  - 전자금융업자나 전자금융보조업자
+  - 코스콤이 따로 필요하다고 인정한 업체
+- 뉴스 사이트가 세 번째 항목으로 인정받을 수 있을지는 코스콤이 판단할 문제라 알 수 없어요.
+
+**받을 수 있는 시세** ([시세 서비스 목록](https://koscom.gitbook.io/open-api/api/marketv3))
+- 코스피·코스닥 종목: 종가 묶음과 실시간 묶음이 따로 있어요.
+- ETF 종가, 선물·옵션, KRX 업종지수(종가·실시간), 투자자별 매매 동향도 있어요.
+- 해외 시세는 목록에 없어요. 지연 시세를 따로 파는 항목도 보이지 않아요.
+
+**비용**
+- 금액은 공개돼 있지 않아요. 시세를 어떤 묶음으로 받느냐에 따라 따로 매기고, 요금 안내는 첨부 파일로만 되어 있어요.
+- 업력 7년 미만 중소기업은 기본료를 36개월 동안 면제해 줘요. 기본료 말고 따로 붙는 이용료는 여전히 내야 해요. ([FAQ](https://koscom.gitbook.io/open-api/faq/oppf))
+
+**절차**
+1. 시세 이용 계약(시세 라이선스)을 먼저 맺어요.
+2. 그다음 오픈API 플랫폼 이용 계약을 맺어요.
+3. 신청서를 내고 승인되면 테스트용 키를 받아요. ([이용 절차](https://koscom.gitbook.io/open-api/how-to-use/procedure))
+
+**문의처**
+- 시세 라이선스·요금: 시장데이터영업팀, [가림:이메일], 02-767-7537
+- 오픈API 계약: API플랫폼팀, [가림:이메일], 02-767-7933
+
+정리하면, 법인을 세우지 않으면 이 길은 막혀 있어요. 법인이 있어도 "뉴스 사이트에 지수 몇 개를 보여주는 용도"를 받아 주는지와 그 가격은 시장데이터영업팀에 물어봐야 알 수 있어요.
+
+문의하신다면 이 세 가지를 같이 물으시면 돼요.
+- 개인이 운영하는 뉴스 사이트에 코스피·코스닥 지수를 20분 지연으로 게시하려면 계약이 가능한지
+- 가능하다면 월 비용이 얼마인지
+- 오픈API가 아닌 다른 계약 경로도 있는지
+
+=== 대화 Claude Code 세션 1593bd81 ===
+[08:46] AI: Read all guideline files.
+[08:46] AI: There's an 8-K dated 11/12. Checking the original filing now.
+[08:47] AI: Found the angle: Huang's unvested shares, the first-ever board chair, and the one-share-one-vote structure. Checking the proxy for forfeiture conditions and how other outlets are covering it.
+
+=== 대화 Claude Code 세션 47d52f04 ===
+[08:48] 사람: 우리도 법인세우고 핀테크해
+
+=== 대화 Claude Code 세션 1593bd81 ===
+[08:48] AI: Huang topic set aside. Now scanning domestic and international feeds broadly for this round's candidates (import prices, US household wealth survey, UK growth, right-turn school-zone accident, etc.).
+
+=== 대화 Claude Code 세션 47d52f04 ===
+[08:49] AI: 법인을 세울 수는 있어요. 다만 시세 하나 때문에 핀테크까지 가는 건 순서가 거꾸로일 수 있어서, 먼저 걸리는 점을 말씀드릴게요.
+
+**1. 법인 설립 자체는 쉬워요**
+- 자본금 하한이 사실상 없고, 온라인 법인 설립 시스템으로 직접 하면 등록 비용은 수십만 원 선이에요. 법무사에 맡기면 그만큼 더 들어요.
+- 대신 매년 비용이 계속 들어요. 법인세 신고를 해야 하고, 장부 정리를 세무사에게 맡기면 보통 월 10만~20만 원이에요. 대표 급여를 주면 4대보험도 따라와요. 대표 개인 돈과 법인 돈도 엄격하게 나눠야 해요.
+
+**2. 핀테크로 인정받는 게 진짜 관문이에요**
+- 코스콤 조건은 '금융위 핀테크 업종이거나 전자금융업자, 또는 코스콤이 인정한 업체'예요. 뉴스 사이트를 하는 법인은 셋 다 확실히 해당하지는 않아요.
+- 핀테크 업종으로 들어가려면 실제 금융 서비스가 있어야 해요.
+- 그런데 주식 정보를 내보내는 서비스가 '이 종목 사라' 같은 의견을 담기 시작하면 유사투자자문업 신고 대상이 될 수 있어요. 이건 금융위 소관이라 정확한 선은 따로 확인해야 해요.
+- 지금 돌리시는 매매봇도 본인 계좌용이라 문제없는 거예요. 남에게 서비스로 제공하면 성격이 달라져요.
+
+**3. 뉴스 사이트에는 더 맞는 길이 있을 수 있어요**
+- 언론사들은 보통 핀테크 자격이 아니라 시세 정보를 파는 회사와 언론용 계약을 맺어 시세를 받아요.
+- 그래서 코스콤에 '오픈API 핀테크' 경로가 아니라 언론·웹 게시용 시세 계약이 따로 있는지 묻는 게 먼저예요.
+- 그때 인터넷신문 등록(지자체에 신고)이 조건인지도 같이 물어보면 좋아요.
+
+**제 추천 순서**
+1. 법인을 세우기 전에 코스콤 시장데이터영업팀(02-767-7537)에 한 번 물어보세요. "언론 사이트에 코스피·코스닥 지수를 지연 시세로 게시하는 계약이 있는지, 법인·인터넷신문 등록이 조건인지, 월 비용이 얼마인지"요.
+2. 답을 들어 보고, 비용과 조건이 맞으면 그때 법인을 세워요. 핀테크 사업 자체를 하고 싶은 거라면 그건 시세와 별개로 따로 계획할 일이에요.
+
+세부 절차나 세금은 법무사·세무사에게 한 번 확인받는 게 안전해요. 코스콤에 보낼 문의 메일 초안이 필요하면 써 드릴게요.
+
+=== 대화 Claude Code 세션 1593bd81 ===
+[08:50] AI: Prop 40 has been reported as defeated, but Prop 42's final result isn't confirmed. Checking the domestic reconstruction excess-profit charge (재초환) issue as an alternative.
+[08:51] AI: Secured the Fed primary sources (revised 2027 schedule, original schedule, Warsh's 10/28 press conference). Now looking for the BOK's original 2027 MPC schedule release.
+[08:53] AI: Leading candidate locked: California's three tax measures (Prop 40, 3, 42). Pulling the primary sources: the Legislative Analyst's Office (LAO) analyses of each measure.
+[08:54] AI: Selected: California's three tax measures (Prop 40/3/42). The core question is tax policy, so I'll assign it to the economics desk. Checking the reporter roster.
+[08:55] AI: Now writing sel.json, and also pulling the OECD wealth-tax decline figures for the international-precedent section.
+[08:55] AI: Selection recorded. Drawing the figure (economics desk style, 100% stacked bars of yes/no shares for the three measures).
+[08:56] AI: Figure done. Checking the previous US article's format values and search autocomplete, then writing the article.
+[08:58] AI: Fact check passed (all numbers in the ledger). Now running the economics desk and English-edition desk as two independent subagents in parallel.
+[08:58] AI: While the two desks review, I'll update the carry-over candidates file.
+[08:58] AI: Waiting on the two desk reviews.
+[08:58] AI: Both desk reviews are still running; I'll make the fixes and publish once their results arrive.
+[09:00] AI: The English-edition desk came back with hold (4 required fixes). Applying them; the Korean-edition desk is still running.
+[09:00] AI: Waiting on the Korean-edition desk review.
+[09:01] AI: The economics desk also returned hold (5 required fixes). Checking the Prop 41/40 conflict clause in LAO's 41 analysis, then fixing everything.
+[09:01] AI: Rewriting the Korean edition and the related English sentences per the desk's required items.
+[09:01] AI: Fixes applied. Sending it back to both desks for a second pass.
+[09:02] AI: Figure looks good. Waiting on the second-pass reviews.
+[09:02] AI: English desk passed. Applying the two recommendations, then recording the review results and moving to the editor-in-chief step.
+[09:02] AI: Editor-in-chief step: confirmed the VALUE content is in the body and finalized the headline. Building next.
+[09:03] AI: Rendering is fine. One fix: the dek's "통과했고" doesn't match the body's "통과가 유력", so I'm aligning it, then pushing.
