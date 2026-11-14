@@ -2575,3 +2575,4 @@ D가 가장 독특하지만 '사진은 밝게' 원칙과 부딪히고, 음식이
 
 4단계가 뭔지 보는사람은 모른다. 여행금지 지역을 제외한 모든 지역 이렇게 써줘.
 [13:44] AI: Myanmar now reads "여행금지 지역을 제외한 모든 지역". Publishing.
+[13:45] AI: No leftover "N단계" anywhere now (detail lists and summaries both). Now making scroll zoom only inside the selected country.
