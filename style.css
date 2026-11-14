@@ -696,6 +696,9 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wmap .land:hover{fill:#c9c6bd}
 .wmap .land.sel{fill:#9e9a90}
 .wmap .land.sel.ban{fill:#111}   /* 1114 사용자: 전 지역 여행금지는 누르면 검정 */
+.walert{margin:0 0 8px}.walert summary{cursor:pointer;list-style:none;display:grid;grid-template-columns:auto 1fr;gap:14px}.walert summary::-webkit-details-marker{display:none}
+.walert summary span{color:var(--gray)}.walert summary::after{content:'';}
+.walert[open] summary{font-weight:600}.walert ul{margin:6px 0 4px;padding:8px 12px;list-style:none;background:var(--soft);font-size:14.5px}.walert li{margin:3px 0}.walert li b{margin-right:6px}
 .wside .wban{display:inline-block;margin:2px 0 10px;padding:2px 8px;background:#111;color:#fff;font-size:13px;font-weight:600}   /* 1114 사용자: 선택은 색만, 굵은 테두리 X */
 .wmap .land.sel.hasadm{fill:none;stroke:none}
 .wmap .adm path{fill:#b9b5ab;stroke:#fff;stroke-width:.8px;vector-effect:non-scaling-stroke}
@@ -703,6 +706,8 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wmap .adm2 path{fill:none;stroke:#fff;stroke-width:.5px;vector-effect:non-scaling-stroke;pointer-events:none}
 .wmap .adm1line path{fill:none;stroke:#8a8a8a;stroke-width:.9px;vector-effect:non-scaling-stroke;pointer-events:none}
 .wmap .dot{fill:var(--ink);pointer-events:none}
+.wmap .wriver path{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}.wmap .wriver .r0,.wmap .wriver .r1,.wmap .wriver .r2,.wmap .wriver .r3{stroke-width:1.5px}.wmap .wriver .r4,.wmap .wriver .r5{stroke-width:1.1px}.wmap .wriver .r6,.wmap .wriver .r7{stroke-width:.8px}
+.wmap .wlake path{fill:#fff;stroke:none;pointer-events:none}   /* 1114 사용자: 주요 강·호수 */
 .wmap .wdis path{fill:url(#whatch);stroke:none}
 .wmap .land.hatch{fill:url(#whatch);stroke:#fff}
 .wkey .wh{display:inline-block;width:12px;height:12px;margin-right:5px;vertical-align:-1px;background:repeating-linear-gradient(45deg,#6f6b62 0 1.3px,#e9e7e1 1.3px 4px)}
