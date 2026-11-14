@@ -318,7 +318,7 @@ Promise.all([fetch(CFG.world).then(function(r){return r.json()}),fetch(CFG.data+
    .on('click',function(ev,f){ev.stopPropagation();hideTip();var c=D[f.id];if(c)tapSelect(c.i,ev);else if(NM[f.properties.name])pickDispute({h:K?'시아첸 빙하':'Siachen Glacier',t:NM[f.properties.name],w:K?'인도가 대부분 통제, 파키스탄도 영유권 주장':'',x:CFG.siachen||'',a:'',cl:['IND','PAK']})});
   // 1114 사용자: 울릉도·독도는 점이 아니라 실제 섬 모양으로, 한국 본토와 같은 색 — 보일 만큼 확대하면 보임
   gi.selectAll('path').data([{type:'Feature',properties:{},geometry:CFG.isl.shape}]).join('path').attr('class','land isl'+(D['410']&&D['410'].hw?' news':''))
-   .on('mousemove',function(ev){showTip(ev,K?'한국 · 울릉도와 독도':'South Korea · Ulleungdo and Dokdo')}).on('mouseleave',hideTip)
+   .on('mousemove',function(ev){showTip(ev,K?'대한민국 · 울릉도와 독도':'South Korea · Ulleungdo and Dokdo')}).on('mouseleave',hideTip)
    .on('click',function(ev){ev.stopPropagation();hideTip();tapSelect('KOR',ev)});
   Promise.all([getJSON(CFG.data+'rivers_major.json'),getJSON(CFG.data+'lakes.json')]).then(function(a){gR.selectAll('path').data(a[0].features).join('path');gLk.selectAll('path').data(a[1].features).join('path');redraw()});
   if(GLOBE)redraw();else applyFlat();
@@ -354,7 +354,7 @@ document.getElementById('wzr').onclick=function(){sel=null;gl.selectAll('path').
 /* 1114 사용자: 지도에 뜨는 이름은 다 찾기 — 나라·분쟁 지역·행정구역(모든 나라)·한국 시·군·구·독도. 결과는 이름 + 어디인지 한 줄 */
 var qi=document.getElementById('wqi'),ql=document.getElementById('wql'),qx=document.getElementById('wqx'),SX=null,SXP=null,QH=[],QN=-1,PEND=null,PEND2=null,QGO=0;
 function norm(s){return String(s||'').toLowerCase().replace(/[\s·\-‐–,.'’()]+/g,'')}
-var QALIAS={KOR:K?'대한민국 남한':'Republic of Korea',PRK:K?'조선민주주의인민공화국':'DPRK',GBR:K?'잉글랜드 스코틀랜드 웨일스':'England Scotland Wales UK',USA:K?'미합중국':'US America',ARE:'UAE',TUR:K?'터키':'Turkey',CZE:K?'체코공화국':'Czech Republic',NLD:K?'홀란드':'Holland'};
+var QALIAS={KOR:K?'한국 남한 대한민국':'Republic of Korea',PRK:K?'조선민주주의인민공화국':'DPRK',GBR:K?'잉글랜드 스코틀랜드 웨일스':'England Scotland Wales UK',USA:K?'미합중국':'US America',ARE:'UAE',TUR:K?'터키':'Turkey',CZE:K?'체코공화국':'Czech Republic',NLD:K?'홀란드':'Holland'};
 function sxBuild(s){var A=[],kr=byI('KOR');
   Object.keys(D).forEach(function(k){var c=D[k];if(!byIso[c.i])return;var rg=CFG.regions.find(function(r){return r[0]!='all'&&(r[2].indexOf(c.i)>=0||r[1].indexOf(c.i)>=0)});A.push({n:c.n,m:[c.x,QALIAS[c.i]],s:rg?rg[3]:'',t:'c',i:c.i,w:0})});
   var dk={};(DIS||[]).forEach(function(f){var p=f.properties,L2=String(p.t||'').split('\n'),n=p.h||L2[0],sb=L2[1]||(K?'분쟁 지역':'Disputed'),key=n+'|'+sb.split('-').sort().join('-');
