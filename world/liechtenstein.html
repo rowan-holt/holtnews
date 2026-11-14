@@ -96,7 +96,7 @@ function E(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'
 function load(){return D?Promise.resolve(D):fetch('data/cmp-ko.json').then(function(r){return r.json()}).then(function(j){D=j;return j})}
 function list(t){t=(t||'').trim();
   if(!t)ks=['KOR','USA','CHN','JPN'].filter(function(k){return k!=me&&D[k]}); // 1115 사용자: 누르면 한국·미국·중국·일본이 먼저
-  else ks=Object.keys(D).filter(function(k){var x=D[k];return k!=me&&(x.n.indexOf(t)>=0||(x.a||[]).some(function(a){return a.indexOf(t)>=0}))}).sort(function(a,c){return D[a].n.indexOf(t)-D[c].n.indexOf(t)||D[a].n.length-D[c].n.length}).slice(0,8);
+  else ks=Object.keys(D).filter(function(k){var x=D[k];return k!=me&&(x.n.indexOf(t)>=0||(x.a||[]).some(function(a){return a.indexOf(t)>=0}))}).sort(function(a,c){function rk(k){var i=D[k].n.indexOf(t);return i>=0?i:100}return rk(a)-rk(c)||D[a].n.length-D[c].n.length}).slice(0,8);
   act=-1;ul.innerHTML=ks.length?ks.map(function(k,i){return '<li role="option" id="cpo'+i+'" data-k="'+k+'" aria-selected="false">'+E(D[k].n)+'</li>'}).join(''):'<li class="cpnone">찾는 나라가 없어요</li>';
   ul.hidden=false;inp.setAttribute('aria-expanded','true')}
 function hl(i){act=i;ul.querySelectorAll('li[data-k]').forEach(function(l,j){l.setAttribute('aria-selected',j==i?'true':'false')});inp.setAttribute('aria-activedescendant',i>=0?'cpo'+i:'')}
