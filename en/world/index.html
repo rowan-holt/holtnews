@@ -240,11 +240,11 @@ Promise.all([fetch(CFG.world).then(function(r){return r.json()}),fetch(CFG.data+
    .join('path').on('mousemove',function(ev,d){showTip(ev,d.properties.t)}).on('mouseleave',hideTip)
    .on('click',function(ev,d){ev.stopPropagation();hideTip();pickDispute(d.properties)});
   getJSON(CFG.data+'hi_korea.json').then(function(h){feats.forEach(function(f){if(h[f.id]&&f.properties.name!='Somaliland'){f.geometry=h[f.id];f.g50=h[f.id];f.g10=h[f.id]}});redraw()}); // 1114 사용자: 휴전선 틈 — 남북한은 더 정밀한 경계로
-  gl.selectAll('path').data(feats).join('path').attr('class',function(f){var c=D[f.id];return 'land'+(c&&c.w&&c.w.length?' news':'')+(HATCH[f.properties.name]?' hatch':'')})
+  gl.selectAll('path').data(feats).join('path').attr('class',function(f){var c=D[f.id];return 'land'+(c&&c.hw?' news':'')+(HATCH[f.properties.name]?' hatch':'')})
    .on('mousemove',function(ev,f){var c=D[f.id];showTip(ev,c?c.n:(NM[f.properties.name]||f.properties.name))}).on('mouseleave',hideTip)
    .on('click',function(ev,f){ev.stopPropagation();hideTip();var c=D[f.id];if(c)tapSelect(c.i);else if(NM[f.properties.name])pickDispute({h:K?'시아첸 빙하':'Siachen Glacier',t:NM[f.properties.name],w:K?'인도가 대부분 통제, 파키스탄도 영유권 주장':'',x:CFG.siachen||'',a:'',cl:['IND','PAK']})});
   // 1114 사용자: 울릉도·독도는 점이 아니라 실제 섬 모양으로, 한국 본토와 같은 색 — 보일 만큼 확대하면 보임
-  gi.selectAll('path').data([{type:'Feature',properties:{},geometry:CFG.isl.shape}]).join('path').attr('class','land isl'+(D['410']&&D['410'].w&&D['410'].w.length?' news':''))
+  gi.selectAll('path').data([{type:'Feature',properties:{},geometry:CFG.isl.shape}]).join('path').attr('class','land isl'+(D['410']&&D['410'].hw?' news':''))
    .on('mousemove',function(ev){showTip(ev,K?'한국 · 울릉도와 독도':'South Korea · Ulleungdo and Dokdo')}).on('mouseleave',hideTip)
    .on('click',function(ev){ev.stopPropagation();hideTip();tapSelect('KOR')});
   Promise.all([getJSON(CFG.data+'rivers_major.json'),getJSON(CFG.data+'lakes.json')]).then(function(a){gR.selectAll('path').data(a[0].features).join('path');gLk.selectAll('path').data(a[1].features).join('path');redraw()});
