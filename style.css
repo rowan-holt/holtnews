@@ -715,9 +715,10 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wmap{position:relative;background:#fff;touch-action:none;overflow:hidden;width:100vw;margin-left:calc(50% - 50vw);border-bottom:1px solid #ddd}
 .wmap #wsvg{display:block;width:100%;height:min(78vh,900px);cursor:grab}.wmap #wsvg:active{cursor:grabbing}
 .wmap .land{fill:#e9e7e1;stroke:#fff;stroke-width:.6px;vector-effect:non-scaling-stroke;paint-order:stroke}   /* 경계선을 땅 밑에 — 작은 섬이 흰 선에 지워지지 않게 */
-.wmap .land.isl{stroke:#e9e7e1;stroke-width:1.2px;paint-order:normal}.wmap .land.isl.news{stroke:#d3d0c8}.wmap .land.isl.sel{stroke:#9e9a90}
-.wmap .land.news{fill:#d3d0c8}
-.wmap .land:hover{fill:#c9c6bd}
+.wmap .land.isl{stroke:#e9e7e1;stroke-width:1.2px;paint-order:normal}.wmap .land.isl.news{stroke:#e8d3b4}.wmap .land.isl.sel{stroke:#9e9a90}
+.wmap .land.news{fill:#e8d3b4}   /* 1114 사용자: 기사 있는 곳은 회색 단계(기본·지역·선택)와 겹치지 않게 황토빛 */
+.wmap .land.reg{fill:#c2beb4}.wmap .land.reg.news{fill:#d4b48a}.wmap .land.isl.reg{stroke:#c2beb4}.wmap .land.isl.reg.news{stroke:#d4b48a}   /* 1114 사용자: 지역 단추를 누르면 그 지역 나라들 — 아무것도 안 고른 때보다 진하게, 나라를 고른 때보다 연하게 */
+.wmap .land:hover{fill:#b0aca2}
 .wmap .land.sel{fill:#9e9a90}
 .wmap .land.sel.ban{fill:#111}   /* 1114 사용자: 전 지역 여행금지는 누르면 검정 */
 .walert{margin:0}.walert summary{cursor:pointer;list-style:none;font-weight:600;text-decoration:underline;text-decoration-color:#ccc;text-underline-offset:4px}.walert summary::-webkit-details-marker{display:none}.walert ul{margin:6px 0 4px;padding:8px 12px;list-style:none;background:var(--soft);font-size:14.5px}.walert li{margin:3px 0}.walert li b{margin-right:6px}
@@ -758,7 +759,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wtip{position:absolute;pointer-events:none;background:#fff;color:var(--ink);font-size:13.5px;line-height:1.4;padding:7px 11px;max-width:min(300px,calc(100% - 20px));display:none;z-index:4;border:1px solid rgba(0,0,0,.12);border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.12)}   /* 1114 사용자: 안내판 모던하게 */
 .wtip b{display:block;font-weight:700}.wtip span{display:block;margin-top:1px;font-size:12.5px;color:var(--gray)}
 .wkey{position:absolute;left:10px;bottom:10px;font-size:12.5px;line-height:1.5;color:var(--ink2);background:rgba(255,255,255,.85);padding:4px 8px;display:flex;flex-direction:column;gap:2px}   /* 1114 사용자: 범례 두 줄 */
-.wkey i{display:inline-block;width:12px;height:12px;background:#d3d0c8;margin-right:5px;vertical-align:-1px}
+.wkey i{display:inline-block;width:12px;height:12px;background:#e8d3b4;margin-right:5px;vertical-align:-1px}
 .wkey b{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--ink);margin-right:5px;vertical-align:1px}
 .wside{padding:22px 0 26px;max-width:880px;margin:0 auto;font-size:15.5px;line-height:1.65}
 .wside h2{font-size:24px;margin:0 0 4px;line-height:1.3}
