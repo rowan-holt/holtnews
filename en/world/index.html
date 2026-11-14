@@ -173,8 +173,9 @@ function toWorld(){if(GLOBE){globeHome();return}animTo(HOME[0],0,kMin())} // '�
 function globeHome(){ // 1114 사용자: 지구본 '전체'·⟲는 확대 없이 지구 전체, 한국이 가운데
   var r0=proj.rotate(),r1=[-HOME[0],-HOME[1],0],s0=proj.scale(),ri=d3.interpolate(r0,r1),si=d3.interpolate(s0,SW);
   svg.transition().duration(800).tween('rot',function(){return function(t){proj.rotate(ri(t)).scale(si(t));redraw()}}).on('end',function(){base.s=SW;svg.call(zoom.transform,d3.zoomIdentity)})}
-function fitGlobe(f,pad){var fc=f.type=='FeatureCollection',c=d3.geoCentroid(fc?f:bigPart(f)),r0=proj.rotate(),r1=[-c[0],-c[1],0],s0=proj.scale(),v=vis(); // 1114 사용자: 지역 단추는 지역 나라 전체(FeatureCollection)에 맞춤
-  var p=d3.geoOrthographic().rotate(r1).scale(SW).translate(base.t).clipAngle(90),b=d3.geoPath(p).bounds(fc?f:mainParts(f)),
+function bcen(o){var b=d3.geoBounds(o),x0=b[0][0],x1=b[1][0];if(x1<x0)x1+=360;return[((x0+x1)/2+540)%360-180,(b[0][1]+b[1][1])/2]} // 범위의 가운데(가장 큰 섬 X)
+function fitGlobe(f,pad){var fc=f.type=='FeatureCollection',mp=fc?f:mainParts(f),c=bcen(mp),r0=proj.rotate(),r1=[-c[0],-c[1],0],s0=proj.scale(),v=vis(); // 1114 사용자: 지역 단추는 지역 나라 전체(FeatureCollection)에 맞춤
+  var p=d3.geoOrthographic().rotate(r1).scale(SW).translate(base.t).clipAngle(90),b=d3.geoPath(p).bounds(mp),
   k=Math.max(1,Math.min(60,(pad||.85)/Math.max((b[1][0]-b[0][0])/v[0],(b[1][1]-b[0][1])/v[1])));
   var ri=d3.interpolate(r0,r1),si=d3.interpolate(s0,SW*k);
   svg.transition().duration(900).tween('rot',function(){return function(t){proj.rotate(ri(t)).scale(si(t));redraw()}})
@@ -194,7 +195,7 @@ function countryHtml(c,src){ // 1114 사용자: 뉴스 사이트라 소식이 �
   var al=c.t?'<dt>여행경보</dt><dd><details class="walert"><summary>'+c.t.map(function(x){return E(x[2])}).join(' · ')+'</summary><ul>'+c.t.map(function(x){return '<li><b>'+E(x[0])+'</b> '+E(x[1])+'</li>'}).join('')+'</ul></details></dd>':''; // 1114 사용자: 다른 칸과 줄 맞춤
   var info=dl(c.f).replace('<dl class="wdl">','<dl class="wdl">'+al)+(c.e&&c.e.length?'<h4>'+(K?'경제':'Economy')+'</h4>'+dl(c.e):'')+(c.k&&c.k.length?'<h4>'+(K?'한국과의 교역':'Trade with Korea')+'</h4>'+dl(c.k):'');
   h+='<div class="winfo"><h3>'+(K?'기본 정보':'FACTS')+'</h3>'+info+'</div>'; // 1114 사용자: 접지 말고 뉴스 밑에 그대로
-  if(c.s)h+='<a class="wmore" href="'+E(c.s)+'">'+(K?(c.kr?'한국과의 관계·상세 정보 보기 →':'상세 정보 보기 →'):'More about this country →')+'</a>'; // 1114 사용자
+  if(c.s)h+='<a class="wmore" href="'+E(c.s)+'">'+(K?'상세 정보 보기 →':'More about this country →')+'</a>'; // 1114 사용자
   if(src)h+='<p class="wsrc">'+CFG.src+'</p>';
   return h}
 function byI(iso){var f=byIso[iso];return f&&D[f.id]}
