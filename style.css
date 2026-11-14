@@ -730,7 +730,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wnews{list-style:none;margin:0;padding:0}.wnews li{padding:6px 0;border-bottom:1px solid #eee}
 .wnews a:hover{text-decoration:underline;text-underline-offset:3px}.wnews time{display:block;font-size:12.5px;color:var(--gray)}
 .wside h3.wfirst{border-top:0;padding-top:0;margin-top:4px}
-.winfo{margin-top:18px;border-top:1px solid #ddd;padding-top:10px}.winfo summary{cursor:pointer;font-weight:700;font-size:14.5px;list-style:none}
+.winfo{margin-top:4px}.winfo summary{cursor:pointer;font-weight:700;font-size:14.5px;list-style:none}
 .winfo summary::-webkit-details-marker{display:none}.winfo summary::after{content:' +';color:var(--gray)}.winfo[open] summary::after{content:' −'}
 .winfo .wdl{margin-top:10px}.winfo h4{font-size:13px;margin:14px 0 6px;color:var(--ink2)}
 .wct{display:inline-block;min-width:18px;padding:0 5px;font-size:11.5px;line-height:18px;text-align:center;background:var(--ink);color:#fff;border-radius:9px;font-weight:600}
