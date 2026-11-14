@@ -2626,3 +2626,11 @@ D가 가장 독특하지만 '사진은 밝게' 원칙과 부딪히고, 음식이
 환불 돈은 누가 내나 >> 환불금액은 누가 지불하나로 해줘 환불 돈 이라고 쓰지 않는다. 환불금액이라고 보통 씀
 돌아가는중이야???
 뭘하는데
+
+=== 대화 Claude Code 세션 0155d439 ===
+[13:53] 사람: 넘어갈것도 없을땐 화살표 없앨것
+[13:55] 사람: 메뉴 항목 분야 한목 위치 바꾸기
+"메뉴" 단어 삭제 
+잉글리시, 이슈는 오른쪽 맨 아래로 옮기기
+[13:56] AI: Fixing a syntax slip in the menu edit, then adding click-outside-to-close for the search box.
+[13:57] AI: Arrows, menu layout and outside-click close all check out locally. Publishing now.
