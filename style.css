@@ -715,7 +715,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wq .wqe{padding:10px 12px;font-size:14px;color:var(--gray);cursor:default}.wq .wqe:hover{background:none}
 .wgrid{display:block}   /* 1114 사용자: 넓은 화면에선 지도를 꽉 차게, 나라 정보는 그 아래 */
 .wmap{position:relative;background:#fff;touch-action:none;overflow:hidden;width:100vw;margin-left:calc(50% - 50vw);border-bottom:1px solid #ddd}
-.wmap #wsvg{display:block;width:100%;height:min(78vh,900px);cursor:grab}.wmap #wsvg:active{cursor:grabbing}
+.wmap #wsvg{display:block;width:100%;height:calc(100vh - 54px);height:calc(100dvh - 54px);min-height:480px;cursor:grab}   /* 1114 사용자: 모니터 크기에 맞춰 최대한 크게 */.wmap #wsvg:active{cursor:grabbing}
 .wmap .land{fill:#e9e7e1;stroke:#fff;stroke-width:.6px;vector-effect:non-scaling-stroke;paint-order:stroke}   /* 경계선을 땅 밑에 — 작은 섬이 흰 선에 지워지지 않게 */
 .wmap .land.isl{stroke:#e9e7e1;stroke-width:1.2px;paint-order:normal}.wmap .land.isl.news{stroke:#e8d3b4}.wmap .land.isl.sel{stroke:#9e9a90}
 .wmap .land.news{fill:#e8d3b4}   /* 1114 사용자: 기사 있는 곳은 회색 단계(기본·지역·선택)와 겹치지 않게 황토빛 */
@@ -762,7 +762,23 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wcmp[hidden]{display:none}
 .wtip{position:absolute;pointer-events:none;background:#fff;color:var(--ink);font-size:13.5px;line-height:1.4;padding:7px 11px;max-width:min(300px,calc(100% - 20px));display:none;z-index:4;border:1px solid rgba(0,0,0,.12);border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.12)}   /* 1114 사용자: 안내판 모던하게 */
 .wtip b{display:block;font-weight:700}.wtip span{display:block;margin-top:1px;font-size:12.5px;color:var(--gray)}
-.wkey{position:absolute;left:10px;bottom:10px;font-size:12.5px;line-height:1.5;color:var(--ink2);background:rgba(255,255,255,.85);padding:4px 8px;display:flex;flex-direction:column;gap:2px}   /* 1114 사용자: 범례 두 줄 */
+.wkey [hidden]{display:none}
+.walrt{position:absolute;right:10px;top:10px;z-index:4;display:flex;flex-direction:column;align-items:flex-end;gap:6px}   /* 1114 사용자: 여행경보 단추 */
+.walb{all:unset;cursor:pointer;font-size:14px;font-weight:600;padding:6px 14px;border:1px solid var(--ink);border-radius:18px;background:var(--bg);color:var(--ink)}
+.walb[aria-expanded=true]{background:var(--ink);color:#fff}
+.walp{background:#fff;border:1px solid rgba(0,0,0,.12);border-radius:10px;box-shadow:0 8px 22px rgba(0,0,0,.14);padding:6px;min-width:190px}
+.walp[hidden]{display:none}.walh{margin:2px 6px 6px;font-size:12px;color:var(--gray)}
+.walp button{all:unset;cursor:pointer;display:flex;align-items:center;gap:9px;width:100%;box-sizing:border-box;padding:7px 8px;border-radius:7px;font-size:14.5px}
+.walp button:hover{background:var(--soft)}.walp button[aria-pressed=true]{background:var(--soft);font-weight:700}
+.walp button b{font-weight:inherit;flex:1}.walp button span{font-size:12.5px;color:var(--gray)}
+.walp i,.wmap svg.amode .land[data-al]{transition:fill .15s}
+.walp i{width:14px;height:14px;border-radius:3px;flex:none;opacity:.35}.walp button[aria-pressed=true] i{opacity:1}
+.walp i.a1{background:#7fa8d9}.walp i.a2{background:#f0cc55}.walp i.a3{background:#de7461}.walp i.a4{background:#2b2b2b}
+.wmap svg.amode .land.news{fill:#e9e7e1}.wmap svg.amode .land.isl.news{stroke:#e9e7e1}   /* 여행경보를 칠할 땐 기사 색 X(헷갈리지 않게) */
+.wmap svg.amode .land.reg{fill:#c2beb4}
+.wmap svg.amode .land[data-al=a1]{fill:#7fa8d9}.wmap svg.amode .land[data-al=a2]{fill:#f0cc55}.wmap svg.amode .land[data-al=a3]{fill:#de7461}.wmap svg.amode .land[data-al=a4]{fill:#2b2b2b}
+.wmap svg.amode .land[data-al=a1p]{fill:url(#wpa1)}.wmap svg.amode .land[data-al=a2p]{fill:url(#wpa2)}.wmap svg.amode .land[data-al=a3p]{fill:url(#wpa3)}.wmap svg.amode .land[data-al=a4p]{fill:url(#wpa4)}   /* 일부 지역만 경보면 줄무늬 */
+.wmap svg.amode .land.sel{fill:#9e9a90}.wkey{position:absolute;left:10px;bottom:10px;font-size:12.5px;line-height:1.5;color:var(--ink2);background:rgba(255,255,255,.85);padding:4px 8px;display:flex;flex-direction:column;gap:2px}   /* 1114 사용자: 범례 두 줄 */
 .wkey i{display:inline-block;width:12px;height:12px;background:#e8d3b4;margin-right:5px;vertical-align:-1px}
 .wkey b{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--ink);margin-right:5px;vertical-align:1px}
 .wside{padding:22px 0 26px;max-width:880px;margin:0 auto;font-size:15.5px;line-height:1.65}
@@ -783,7 +799,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wsrc{font-size:12.5px;color:var(--gray);margin-top:14px;line-height:1.6;white-space:pre-line}
 .wside .wsrc{margin-top:76px}   /* 1114 사용자: 지도 칸 출처는 밑줄 없이, 원래 선 있던 자리까지 내려 */
 .wnote{font-size:13px;color:var(--gray)}
-@media (max-width:900px){.wmap{width:auto;margin-left:0}.wmap #wsvg{height:min(58vh,400px)}.wkey{font-size:11.5px;padding:2px 6px}.wside{padding:18px 20px 22px}
+@media (max-width:900px){.wmap{width:auto;margin-left:0}.wmap #wsvg{height:72vh;height:72dvh;min-height:360px}.wkey{font-size:11.5px;padding:2px 6px}.wside{padding:18px 20px 22px}
 .wq{margin-left:0;width:100%}.wpage{padding:16px 16px 32px}}
 /* 나라 쪽 */
 .wc{max-width:860px;margin:0 auto;padding:26px 24px 40px}
