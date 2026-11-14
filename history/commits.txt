@@ -1331,3 +1331,5 @@
 2026-11-14 21:11  feat(holt): 세계 지도 영어판도 바다 이름 — 동해는 East Sea
 2026-11-14 21:15  fix(holt): holtnews 영어판 메뉴·꼬리말·광고 칸에서 HOLT ENGLISH 링크 뺌(ISSUE와 같이 한국어판만)
 2026-11-14 21:19  feat(holt): holtnews 영어판 꼬리말에도 'Install the app' — 영어판에서 온 설치는 안내창·앱 ⚙ 화면 영어(holt_lang 기억, 없으면 기기 언어)
+2026-11-14 21:59  feat(holt): 나라 쪽은 상세 해설 있는 곳만 검색 공개(하루 한도 폐지), ENGLISH 쪽별 함께 알아 두면 좋은 표현·퀴즈, 유형별 색인 보고
+2026-11-14 22:09  feat(holt): 단일 주제 — 트럼프·시진핑·푸틴, 다음 주 처음 셋이 만난다 (on the sidelines of)
