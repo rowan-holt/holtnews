@@ -18,7 +18,7 @@ border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z
 .bar nav a:hover{border-bottom-color:#c9c7c0}.bar nav a.on{border-bottom-color:var(--ink);font-weight:700}
 .cat-sep{flex:none;width:1px;background:var(--line);margin:8px 0 0}
 .logo{font-family:"Jost",sans-serif;font-weight:500;font-size:clamp(34px,5.6vw,78px);letter-spacing:.05em;line-height:1.15;white-space:nowrap}
-.top .logo{display:flex;flex-direction:column;align-items:center;gap:.08em;line-height:.95;padding-bottom:4px}   /* 1115 사용자: 로고 바로 밑에 작은 부제(ENGLISH·ISSUE와 같은 모양) */
+.top .logo{display:flex;flex-direction:column;align-items:center;gap:.02em;line-height:.92;padding-bottom:4px}   /* 1115 사용자: 로고 바로 밑에 작은 부제(ENGLISH·ISSUE와 같은 모양) */
 .logo .tag{font-family:"Jost",sans-serif;font-weight:400;font-size:.2em;letter-spacing:.16em;line-height:1;color:var(--ink2)}
 .bar .right{display:flex;align-items:center;gap:18px;font-size:clamp(14px,1.3vw,19px);white-space:nowrap}
 .lang{display:inline-flex;align-items:center;gap:8px}
@@ -437,7 +437,7 @@ display:grid;grid-template-columns:auto 1fr auto;gap:12px 48px;align-items:start
 .foot .c{text-align:right;align-self:end}.foot .c .install{margin:0 0 12px}/* 1112 사용자: 앱으로 설치는 꼬리말 오른쪽(© 위)으로 */
 @media (max-width:900px){.panels{grid-auto-columns:42%}.more .panels{grid-auto-columns:33.333%}
 .row{grid-template-columns:60px minmax(0,1fr) 90px}.row .j{display:none}}
-@media (max-width:640px){.top{justify-content:flex-start;padding:8px 16px 0}.top .logo{font-size:30px}.top .logo{align-items:flex-start}.logo .tag{font-size:.36em;letter-spacing:.12em}
+@media (max-width:640px){.top{justify-content:flex-start;padding:8px 16px 0}.top .logo{font-size:30px}.top .logo{align-items:flex-start;gap:1px}.logo .tag{font-size:.36em;letter-spacing:.12em}
 .bar .lsw .lang{font-size:15px}.bar{padding:6px 16px 8px;gap:10px}.bar nav{gap:16px;font-size:15px;-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent);padding-right:24px}.bar .right{font-size:14px}.bar .right{gap:14px}.lsw summary{gap:4px;padding:5px 2px}.lsw summary svg:first-child{width:25px;height:17px}
 .panels{grid-auto-columns:78%}.more .panels{grid-auto-columns:46%}.arrow{display:none}
 .index{padding:40px 16px 10px}.row{grid-template-columns:44px minmax(0,1fr);gap:10px}.row .d{display:none}
