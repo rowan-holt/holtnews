@@ -111,7 +111,7 @@ function panel(c){ // 1114 사용자: 뉴스 사이트라 소식이 먼저, 기�
   side.innerHTML=h;if(!window.matchMedia('(max-width:900px)').matches)side.scrollTop=0}
 function regionPanel(r){ // 지역 단추: 그 지역 소식 먼저, 그다음 나라 목록
   var seen={},w=[],cs=[];Object.keys(D).forEach(function(k){var c=D[k];if(r[1].indexOf(c.i)<0&&!(r[2]&&r[2].indexOf(c.i)>=0))return;cs.push(c);
-    (c.w||[]).forEach(function(x){if(!seen[x[1]]){seen[x[1]]=1;w.push([x[0],x[1],x[2],c.n,x[4]])}})});
+    (c.w||[]).forEach(function(x){if(!seen[x[1]]){seen[x[1]]=1;w.push(x)}})});
   w.sort(function(a,b){return (b[4]||'')<(a[4]||'')?-1:1});
   var h='<h2>'+E(r[3])+'</h2><h3 class="wfirst">'+(K?'최근 뉴스':'RECENT STORIES')+'</h3>';
   h+=w.length?newsList(w):'<p class="wnote">'+(K?'아직 이 지역을 다룬 기사가 없어요.':'No stories from this region yet.')+'</p>';
@@ -128,10 +128,16 @@ function select(iso,noZoom){
   if(c.a)loadAdm(c,f);
   document.querySelectorAll('.wreg button').forEach(function(b){b.classList.remove('on')});
   if(window.track)track('world_country',{country:iso})}
-var lastTap={i:null,t:0};
-function tapSelect(iso){ // 1114 사용자: 지도에서 한 번 누르면 화면 그대로 색만, 두 번 누르면 그 지역 전체가 보이게
-  var now=Date.now(),dbl=lastTap.i==iso&&now-lastTap.t<400;lastTap={i:iso,t:dbl?0:now};
-  if(dbl||!sel||sel.iso!=iso)select(iso,!dbl)}
+var lastTap={i:null,t:0},clearT=null;
+function tapSelect(iso){ // 1114 사용자: 한 번 누르면 화면 그대로 색만 · 빠르게 두 번이면 그 지역 전체로 · 이미 칠한 곳을 (천천히) 한 번 더 누르면 색 지움
+  var now=Date.now();clearTimeout(clearT);
+  if(lastTap.i==iso&&now-lastTap.t<400){lastTap={i:null,t:0};select(iso,false);return}
+  lastTap={i:iso,t:now};
+  if(sel&&sel.iso==iso)clearT=setTimeout(clearSel,400);else select(iso,true)}
+function clearSel(){ // 색만 지우고 화면(확대·위치)은 그대로
+  sel=null;gl.selectAll('path').classed('sel',false).classed('ban',false).classed('hasadm',false);gi.selectAll('path').classed('sel',false);
+  ga.selectAll('*').remove();ga2.selectAll('*').remove();gal.selectAll('*').remove();svg.selectAll('clipPath').remove();
+  side.innerHTML=home;bindHome();history.replaceState(null,'',location.pathname+location.search)}
 function getJSON(u){if(!admCache[u])admCache[u]=fetch(u).then(function(r){return r.json()});return admCache[u]}
 function loadAdm(c,f){getJSON(CFG.data+c.a+'.json').then(function(fc){
   if(!sel||sel.f!==f)return;gl.selectAll('path').classed('hasadm',function(d){return d===f&&c.i=='KOR'});
@@ -201,7 +207,7 @@ function bindHome(){side.querySelectorAll('[data-i]').forEach(function(a){a.oncl
 bindHome();
 function sizeSide(){side.style.maxHeight=window.matchMedia('(max-width:900px)').matches?'':svg.node().getBoundingClientRect().height+'px'} // 옆 칸 = 지도 높이, 넘치면 칸 안에서 스크롤
 sizeSide();window.addEventListener('resize',sizeSide);
-svg.on('click',function(){hideTip()});
+svg.on('click',function(){hideTip();if(sel)clearSel()}); // 바다(빈 곳)를 누르면 색 지움
 window.addEventListener('hashchange',function(){var h=(location.hash||'').slice(1).toUpperCase();if(h&&byIso[h]&&(!sel||sel.iso!=h))select(h)});
 })();
 </script>
