@@ -3120,3 +3120,5 @@ D가 가장 독특하지만 '사진은 밝게' 원칙과 부딪히고, 음식이
 
 === 대화 Claude Code 세션 a0d15dca ===
 [15:59] AI: 나머지 '사회주의' 표현은 북한과 몽골 과거의 국가 체제를 가리키는 말이라 맞게 쓰였어요. 발행합니다.
+[16:02] AI: Mongolia shows the "울란바토르" hollow circle. Now checking a capital that has news (Washington).
+[16:02] AI: Washington, which has news, shows as a bullseye (◉). Publishing.

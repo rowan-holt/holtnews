@@ -733,6 +733,8 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wmap .adm path.rsel,.wmap .adm2 path.rsel{fill:#6f6b62!important}   /* 누른 행정구역 */
 .wmap .adm2 path{fill:transparent;stroke:#fff;stroke-width:.5px;vector-effect:non-scaling-stroke;pointer-events:none}
 .wmap .adm1line path{fill:none;stroke:#8a8a8a;stroke-width:.9px;vector-effect:non-scaling-stroke;pointer-events:none}
+.wmap .wcap circle{fill:#fff;stroke:var(--ink);stroke-width:1.6px;pointer-events:none}.wmap .wcap text{font-size:12.5px;font-weight:600;fill:#4a473f;dominant-baseline:central;paint-order:stroke;stroke:#fff;stroke-width:3.5px;stroke-linejoin:round;pointer-events:none}
+.wkey .wcp{display:inline-block;width:8px;height:8px;border-radius:50%;border:1.5px solid var(--ink);background:#fff;margin-right:5px;vertical-align:0}
 .wmap .wptl text{font-size:13px;font-weight:700;fill:var(--ink);dominant-baseline:central;paint-order:stroke;stroke:#fff;stroke-width:3.5px;stroke-linejoin:round;pointer-events:none}
 .wmap .dot{fill:var(--ink);stroke:rgba(0,0,0,0);stroke-width:14px;cursor:pointer}   /* 손가락으로 누르기 쉽게 투명 테두리 */
 .wpop{position:absolute;z-index:3;display:none;width:min(320px,calc(100% - 16px));max-height:min(60%,380px);overflow:auto;overscroll-behavior:contain;background:#fff;border:1px solid rgba(0,0,0,.12);border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.14);padding:4px 0}
