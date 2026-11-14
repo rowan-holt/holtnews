@@ -2634,3 +2634,27 @@ D가 가장 독특하지만 '사진은 밝게' 원칙과 부딪히고, 음식이
 잉글리시, 이슈는 오른쪽 맨 아래로 옮기기
 [13:56] AI: Fixing a syntax slip in the menu edit, then adding click-outside-to-close for the search box.
 [13:57] AI: Arrows, menu layout and outside-click close all check out locally. Publishing now.
+
+=== 대화 Claude Code 세션 6aba1889 ===
+[13:57] 사람: 해주ㅝ
+
+=== 대화 Claude Code 세션 0155d439 ===
+[13:58] AI: 세 가지 다 고쳐서 사이트에 올렸어요. 올리기 전에 오디오 쪽에서 직접 띄워 확인했어요.
+
+**넘길 게 없을 때 화살표 숨김**
+- 넘길 기사가 없는 줄은 양쪽 화살표가 다 사라져요.
+- 넘길 게 있는 줄도 맨 앞에선 왼쪽(←), 맨 끝에선 오른쪽(→)이 숨어요.
+- 오디오 쪽뿐 아니라 사이트의 옆으로 넘기는 줄 전부에 같은 규칙이 들어갔어요.
+
+**☰ 메뉴**
+- 순서를 바꿔서 왼쪽이 홈·뉴스·연구·세계 지도·오디오, 가운데가 분야예요.
+- '메뉴' 글자는 지웠어요. 그 자리는 두 칸의 줄이 맞도록 빈칸으로 남겼어요.
+- HOLT ENGLISH·HOLT ISSUE는 오른쪽 칸 맨 아래로 옮기고, 얇은 선으로 위 목록과 나눴어요.
+- '분야' 글자에도 표시가 있었는데, 글로는 '메뉴'만 말씀하셔서 '분야'는 남겨 뒀어요. 그것도 빼려면 말씀해 주세요.
+
+**검색창(메뉴) 밖을 누르면 닫힘**: 메뉴를 연 채로 메뉴 영역 밖을 누르면 닫혀요. 메뉴 안의 빈 곳을 누르면 열린 채로 있어요.
+
+=== 대화 Claude Code 세션 18271738 ===
+[14:02] 사람: 경쟁 선거로 정권이 바뀌지 않기 때문에, >> 경쟁선거로 바뀌지 않는단게 투표를 안한단거야? 정권이 어떻게 바뀌는지가 안나와있잖아
+[14:02] AI: Korean only. I'll rewrite the China entry so it says how power actually changes hands.
+[14:03] AI: Rebuilding and publishing the site.
