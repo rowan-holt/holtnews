@@ -694,7 +694,9 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wmap .land{fill:#e9e7e1;stroke:#fff;stroke-width:.6px;vector-effect:non-scaling-stroke}
 .wmap .land.news{fill:#d3d0c8}
 .wmap .land:hover{fill:#c9c6bd}
-.wmap .land.sel{fill:#9e9a90}   /* 1114 사용자: 선택은 색만, 굵은 테두리 X */
+.wmap .land.sel{fill:#9e9a90}
+.wmap .land.sel.ban{fill:#111}   /* 1114 사용자: 전 지역 여행금지는 누르면 검정 */
+.wside .wban{display:inline-block;margin:2px 0 10px;padding:2px 8px;background:#111;color:#fff;font-size:13px;font-weight:600}   /* 1114 사용자: 선택은 색만, 굵은 테두리 X */
 .wmap .land.sel.hasadm{fill:none;stroke:none}
 .wmap .adm path{fill:#b9b5ab;stroke:#fff;stroke-width:.8px;vector-effect:non-scaling-stroke}
 .wmap .adm path:hover{fill:#8f8b81}
