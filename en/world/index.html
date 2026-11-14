@@ -61,7 +61,13 @@ var HOME=[127.8,36],V={lon:HOME[0],lat:0,k:1},MERC=2.6,SWF=1,RM=1;
 function clampLat(){var lim=V.k<=1?0:Math.min(80,88*(V.k-1)/V.k); /* 1114: 지도 위아래 끝이 화면 밖에 있는 만큼만 — 북미·남미 지역 단추가 가운데로 오게 */V.lat=Math.max(-lim,Math.min(lim,V.lat))}
 function flatProj(){var merc=V.k>=MERC,p=merc?d3.geoMercator():d3.geoEqualEarth();
   p.rotate([-V.lon,0]).scale(SWF*V.k*(merc?RM:1)).translate([W/2,H/2]);var c=p([V.lon,V.lat]);p.translate([W-c[0],H-c[1]]);return p}
-function applyFlat(){if(GLOBE)return;clampLat();proj=flatProj();path=d3.geoPath(proj);MODE=V.k>=MERC?'local':'world';SW=SWF;redraw()}
+function edgeLat(){ // 1114 사용자: 평면 지도는 위아래 끝(빈 곳)이 화면에 들어오지 않게 — 지도 끝이 보이면 그만큼 되돌림
+  var vh=vis()[1],y0=(H-vh)/2,y1=(H+vh)/2,pl=V.k>=MERC?84:90;
+  for(var n=0;n<3;n++){var p=flatProj(),t=p([V.lon,pl]),b=p([V.lon,-pl]);if(!t||!b)return;
+    if(b[1]-t[1]<=vh){V.lat=0;return}
+    var dy=t[1]>y0?t[1]-y0:b[1]<y1?b[1]-y1:0;if(!dy)return;
+    var c=p.invert([W/2,H/2+dy]);if(!c||!isFinite(c[1]))return;V.lat=c[1]}}
+function applyFlat(){if(GLOBE)return;clampLat();edgeLat();proj=flatProj();path=d3.geoPath(proj);MODE=V.k>=MERC?'local':'world';SW=SWF;redraw()}
 function animTo(lon,lat,k,ms){if(GLOBE)return;var l0=V.lon,dl=((lon-l0+540)%360)-180,a0=V.lat,k0=V.k;
   svg.transition().duration(ms==null?650:ms).tween('v',function(){return function(t){V.lon=l0+dl*t;V.lat=a0+(lat-a0)*t;V.k=Math.exp(Math.log(k0)+(Math.log(k)-Math.log(k0))*t);applyFlat()}})}
 function zoomAt(r,pt){if(GLOBE)return;var geo=pt&&proj.invert(pt);V.k=Math.max(kMin(),Math.min(150,V.k*r));applyFlat();
