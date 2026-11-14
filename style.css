@@ -702,11 +702,13 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wdisp{margin:0 0 6px}.wdisp .wk{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.04em;padding:1px 7px;background:repeating-linear-gradient(45deg,#6f6b62 0 1.3px,#e9e7e1 1.3px 4px);color:var(--ink)}
 .wdisp h2{margin:6px 0 4px}.wdisp .ww{font-weight:600;margin:0 0 8px}.wdisp p{margin:0 0 8px}.wdisp .wm{color:var(--ink2);font-size:14.5px}
 .wunder{margin:16px 0 4px;padding-top:12px;border-top:1px solid var(--line);font-size:12.5px;font-weight:700;letter-spacing:.04em;color:var(--gray)}
+.wrel{margin:0 0 6px}
 .wside .wban{display:inline-block;margin:2px 0 10px;padding:2px 8px;background:#111;color:#fff;font-size:13px;font-weight:600}   /* 1114 사용자: 선택은 색만, 굵은 테두리 X */
 .wmap .land.sel.hasadm{fill:none;stroke:none}
 .wmap .adm path{fill:#b9b5ab;stroke:#fff;stroke-width:.8px;vector-effect:non-scaling-stroke}
-.wmap .adm path:hover{fill:#8f8b81}
-.wmap .adm2 path{fill:none;stroke:#fff;stroke-width:.5px;vector-effect:non-scaling-stroke;pointer-events:none}
+.wmap .adm path:hover{fill:#aaa69c}
+.wmap .adm path.rsel,.wmap .adm2 path.rsel{fill:#6f6b62!important}   /* 누른 행정구역 */
+.wmap .adm2 path{fill:transparent;stroke:#fff;stroke-width:.5px;vector-effect:non-scaling-stroke;pointer-events:none}
 .wmap .adm1line path{fill:none;stroke:#8a8a8a;stroke-width:.9px;vector-effect:non-scaling-stroke;pointer-events:none}
 .wmap .dot{fill:var(--ink);pointer-events:none}
 .wmap .wriver path{fill:none;stroke:#cbdae2;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}.wmap .wriver .r0,.wmap .wriver .r1,.wmap .wriver .r2,.wmap .wriver .r3{stroke-width:1.5px}.wmap .wriver .r4,.wmap .wriver .r5{stroke-width:1.1px}.wmap .wriver .r6,.wmap .wriver .r7{stroke-width:.8px}
@@ -724,7 +726,8 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wzoom{position:absolute;right:10px;bottom:10px;display:flex;flex-direction:column;border:1px solid var(--ink);background:var(--bg)}
 .wzoom button{all:unset;cursor:pointer;width:34px;height:34px;display:grid;place-items:center;font-size:20px;line-height:1}
 .wzoom button+button{border-top:1px solid #ddd}.wzoom button:hover{background:var(--soft)}
-.wtip{position:absolute;pointer-events:none;white-space:pre-line;background:var(--ink);color:#fff;font-size:13px;line-height:1.45;padding:4px 8px;max-width:min(320px,calc(100% - 20px));display:none;z-index:4}
+.wtip{position:absolute;pointer-events:none;background:#fff;color:var(--ink);font-size:13.5px;line-height:1.4;padding:7px 11px;max-width:min(300px,calc(100% - 20px));display:none;z-index:4;border:1px solid rgba(0,0,0,.12);border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.12)}   /* 1114 사용자: 안내판 모던하게 */
+.wtip b{display:block;font-weight:700}.wtip span{display:block;margin-top:1px;font-size:12.5px;color:var(--gray)}
 .wkey{position:absolute;left:10px;bottom:10px;font-size:12.5px;line-height:1.5;color:var(--ink2);background:rgba(255,255,255,.85);padding:4px 8px;display:flex;flex-direction:column;gap:2px}   /* 1114 사용자: 범례 두 줄 */
 .wkey i{display:inline-block;width:12px;height:12px;background:#d3d0c8;margin-right:5px;vertical-align:-1px}
 .wkey b{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--ink);margin-right:5px;vertical-align:1px}
