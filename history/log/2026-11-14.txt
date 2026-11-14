@@ -2521,3 +2521,6 @@ D가 가장 독특하지만 '사진은 밝게' 원칙과 부딪히고, 음식이
 
 === 대화 Claude Code 세션 0155d439 ===
 [13:39] 사람: 아냐 나침판만 두고옆에 상자는 삭제. 나침판 클릭하면 북쪽이 위로
+
+=== 대화 Claude Code 세션 e8ec129d ===
+[13:41] AI: All articles pass the fact check. I'll also add the rule to the site writing guide so future articles follow it, then publish.
