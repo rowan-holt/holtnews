@@ -289,7 +289,7 @@ Promise.all([fetch(CFG.world).then(function(r){return r.json()}),fetch(CFG.data+
    .on('click',function(ev){ev.stopPropagation();hideTip();tapSelect('KOR')});
   Promise.all([getJSON(CFG.data+'rivers_major.json'),getJSON(CFG.data+'lakes.json')]).then(function(a){gR.selectAll('path').data(a[0].features).join('path');gLk.selectAll('path').data(a[1].features).join('path');redraw()});
   if(GLOBE)redraw();else applyFlat();
-  var h=(location.hash||'').slice(1).toUpperCase();if(h&&byIso[h])select(h);else if(/^R-/.test(h))region(h.slice(2).toLowerCase()); // 나라 쪽 위 지역 이름에서 옴
+  var h=(location.hash||'').slice(1).toUpperCase();if(h&&byIso[h])select(h);else if(/^R-/.test(h))region(h.slice(2).toLowerCase());else if(/^AT-/.test(h)&&byIso[h.slice(3)]){var hc=d3.geoCentroid(bigPart(byIso[h.slice(3)]));HOME=[hc[0],hc[1]];if(GLOBE){proj.rotate([-hc[0],-hc[1],0]);redraw()}else{V.lon=hc[0];applyFlat()}} /* 1114 사용자: 나라 쪽 '세계 지도'는 그 나라를 가운데 둔 세계 전체 */ // 나라 쪽 위 지역 이름에서 옴
   /* 1114 사용자: 새로 열면 접속한 나라가 가운데 — 위치를 이미 허용한 경우만(여기서 새로 묻지 않음), 아니면 한국 */
   if(!h&&navigator.geolocation&&navigator.permissions&&navigator.permissions.query)navigator.permissions.query({name:'geolocation'}).then(function(st){if(st.state!=='granted')return;
     navigator.geolocation.getCurrentPosition(function(p){var pt=[p.coords.longitude,p.coords.latitude],f=feats.find(function(f){return d3.geoContains(f,pt)}),c=f?d3.geoCentroid(bigPart(f)):pt;
