@@ -278,6 +278,10 @@ function seaZoom(pt){var geo=proj.invert(pt);if(!geo||!isFinite(geo[0]))return;g
   hit.sort(function(a,b){return a.properties.a-b.properties.a});
   // 애매한 곳: 아주 작은 만·해협·석호는 건너뛰고 한 단계 큰 바다로
   var f=hit.filter(function(f){var c=f.properties.c;return f.properties.a>=3||c=='sea'||c=='ocean'||c=='gulf'})[0]||hit[0];if(!f)return;
+  if(f.properties.c=='ocean'||f.properties.a>1500){ // 1114 사용자: 대양은 누른 곳을 가운데로, 적당히 넓게(한 단계 확대)
+    if(GLOBE){var r0=proj.rotate(),r1=[-geo[0],-geo[1]],s0=proj.scale(),ri=d3.interpolate(r0,r1),si=d3.interpolate(s0,Math.max(s0,SW*1.6));
+      svg.transition().duration(700).tween('rot',function(){return function(t){proj.rotate(ri(t)).scale(si(t));redraw()}}).on('end',function(){base.s=SW;svg.call(zoom.transform,d3.zoomIdentity.scale(proj.scale()/SW))});return}
+    animTo(geo[0],geo[1],Math.max(V.k*1.6,2));return}
   if(GLOBE)fitGlobe(f,.9);else fitFlat([f],.92)})}
 window.addEventListener('hashchange',function(){var h=(location.hash||'').slice(1).toUpperCase();if(h&&byIso[h]&&(!sel||sel.iso!=h))select(h)});
 })();
