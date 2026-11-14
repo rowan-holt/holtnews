@@ -97,7 +97,11 @@ function kMin(){return Math.min(1,vis()[0]/W*.98)} // 1114 사용자: 휴대폰(
 var lastK=1,zoom=d3.zoom().scaleExtent([.05,500]).on('start',function(ev){lastK=ev.transform.k}).on('zoom',function(ev){var t=ev.transform;
   if(GLOBE){proj.scale(base.s*t.k);redraw();return}
   var r=t.k/lastK;lastK=t.k;var se=ev.sourceEvent,pt=se?d3.pointer(se.touches&&se.touches.length?se.touches[0]:se,svg.node()):[W/2,H/2];zoomAt(r,pt)});
-zoom.filter(function(ev){return ev.type=='wheel'||(ev.touches&&ev.touches.length>1)}); // 끌기는 아래 drag가 맡음(회전·이동)
+function onGlobe(ev){ // 1114 사용자: 지구(테두리) 안에서만 확대·축소, 밖에서 굴리면 페이지가 움직임
+  var e=ev.touches&&ev.touches.length?ev.touches[0]:ev,pt=d3.pointer(e,svg.node());
+  if(GLOBE){var t=proj.translate();return Math.hypot(pt[0]-t[0],pt[1]-t[1])<=proj.scale()}
+  if(MODE!='world')return true;var n=sph.node();if(!n||!n.isPointInFill)return true;var q=svg.node().createSVGPoint();q.x=pt[0];q.y=pt[1];return n.isPointInFill(q)}
+zoom.filter(function(ev){return (ev.type=='wheel'||(ev.touches&&ev.touches.length>1))&&onGlobe(ev)}); // 끌기는 아래 drag가 맡음(회전·이동)
 svg.call(d3.drag().filter(function(ev){return !ev.button&&!(ev.touches&&ev.touches.length>1)}).on('drag',function(ev){
   var r=proj.rotate(),s;
   if(GLOBE){s=.25/zl();proj.rotate([r[0]+ev.dx*s,Math.max(-90,Math.min(90,r[1]-ev.dy*s))]);redraw();return} // 남극점·북극점까지
