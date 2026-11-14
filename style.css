@@ -688,9 +688,9 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wq input{font:inherit;font-size:15px;border:1px solid #ccc;padding:6px 10px;width:200px;background:var(--bg);color:var(--ink);border-radius:0}
 .wq ul{position:absolute;right:0;top:100%;z-index:9;margin:0;padding:0;list-style:none;background:var(--bg);border:1px solid var(--ink);min-width:200px;max-height:260px;overflow:auto}
 .wq li{padding:7px 12px;cursor:pointer;font-size:15px}.wq li:hover,.wq li.on{background:var(--soft)}
-.wgrid{display:grid;grid-template-columns:minmax(0,1fr) 360px;border-bottom:1px solid var(--line);align-items:start}
-.wmap{position:relative;border-right:1px solid #ddd;background:#fff;touch-action:none;overflow:hidden}
-.wmap #wsvg{display:block;width:100%;height:auto;cursor:grab}.wmap #wsvg:active{cursor:grabbing}
+.wgrid{display:block;border-bottom:1px solid var(--line)}   /* 1114 사용자: 넓은 화면에선 지도를 꽉 차게, 나라 정보는 그 아래 */
+.wmap{position:relative;background:#fff;touch-action:none;overflow:hidden;width:100vw;margin-left:calc(50% - 50vw);border-bottom:1px solid #ddd}
+.wmap #wsvg{display:block;width:100%;height:min(78vh,900px);cursor:grab}.wmap #wsvg:active{cursor:grabbing}
 .wmap .land{fill:#e9e7e1;stroke:#fff;stroke-width:.6px;vector-effect:non-scaling-stroke}
 .wmap .land.news{fill:#d3d0c8}
 .wmap .land:hover{fill:#c9c6bd}
@@ -731,7 +731,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wkey{position:absolute;left:10px;bottom:10px;font-size:12.5px;line-height:1.5;color:var(--ink2);background:rgba(255,255,255,.85);padding:4px 8px;display:flex;flex-direction:column;gap:2px}   /* 1114 사용자: 범례 두 줄 */
 .wkey i{display:inline-block;width:12px;height:12px;background:#d3d0c8;margin-right:5px;vertical-align:-1px}
 .wkey b{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--ink);margin-right:5px;vertical-align:1px}
-.wside{padding:18px 20px 22px;max-height:640px;overflow:auto;font-size:15.5px;line-height:1.65}
+.wside{padding:22px 0 26px;max-width:880px;margin:0 auto;font-size:15.5px;line-height:1.65}
 .wside h2{font-size:24px;margin:0 0 4px;line-height:1.3}
 .wside .wone{margin:0 0 14px;color:var(--ink2)}
 .wside h3{font-size:13px;font-weight:700;letter-spacing:.04em;margin:18px 0 6px;padding-top:10px;border-top:1px solid #ddd}
@@ -740,8 +740,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wnews{list-style:none;margin:0;padding:0}.wnews li{padding:6px 0;border-bottom:1px solid #eee}
 .wnews a:hover{text-decoration:underline;text-underline-offset:3px}.wnews time{display:block;font-size:12.5px;color:var(--gray)}
 .wside h3.wfirst{border-top:0;padding-top:0;margin-top:4px}
-.winfo{margin-top:4px}.winfo summary{cursor:pointer;font-weight:700;font-size:14.5px;list-style:none}
-.winfo summary::-webkit-details-marker{display:none}.winfo summary::after{content:' +';color:var(--gray)}.winfo[open] summary::after{content:' −'}
+.winfo{margin-top:4px}
 .winfo .wdl{margin-top:10px}.winfo h4{font-size:13px;margin:14px 0 6px;color:var(--ink2)}
 .wct{display:inline-block;min-width:18px;padding:0 5px;font-size:11.5px;line-height:18px;text-align:center;background:var(--ink);color:#fff;border-radius:9px;font-weight:600}
 .wmore{display:inline-block;margin-top:14px;font-weight:700;border-bottom:2px solid var(--ink)}
@@ -749,7 +748,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wlist a:hover{text-decoration:underline;text-underline-offset:3px}
 .wsrc{font-size:12.5px;color:var(--gray);margin-top:14px;line-height:1.6}
 .wnote{font-size:13px;color:var(--gray)}
-@media (max-width:900px){.wmap #wsvg{height:min(58vh,400px)}.wkey{font-size:11.5px;padding:2px 6px}.wgrid{grid-template-columns:1fr}.wmap{border-right:0;border-bottom:1px solid #ddd}.wside{max-height:none}
+@media (max-width:900px){.wmap{width:auto;margin-left:0}.wmap #wsvg{height:min(58vh,400px)}.wkey{font-size:11.5px;padding:2px 6px}.wside{padding:18px 20px 22px}
 .wq{margin-left:0;width:100%}.wq input{width:100%}.wpage{padding:16px 16px 32px}}
 /* 나라 쪽 */
 .wc{max-width:860px;margin:0 auto;padding:26px 24px 40px}
