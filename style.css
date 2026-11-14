@@ -699,6 +699,9 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .walert{margin:0 0 8px}.walert summary{cursor:pointer;list-style:none;display:grid;grid-template-columns:auto 1fr;gap:14px}.walert summary::-webkit-details-marker{display:none}
 .walert summary span{color:var(--gray)}.walert summary::after{content:'';}
 .walert[open] summary{font-weight:600}.walert ul{margin:6px 0 4px;padding:8px 12px;list-style:none;background:var(--soft);font-size:14.5px}.walert li{margin:3px 0}.walert li b{margin-right:6px}
+.wdisp{margin:0 0 6px}.wdisp .wk{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.04em;padding:1px 7px;background:repeating-linear-gradient(45deg,#6f6b62 0 1.3px,#e9e7e1 1.3px 4px);color:var(--ink)}
+.wdisp h2{margin:6px 0 4px}.wdisp .ww{font-weight:600;margin:0 0 8px}.wdisp p{margin:0 0 8px}.wdisp .wm{color:var(--ink2);font-size:14.5px}
+.wunder{margin:16px 0 4px;padding-top:12px;border-top:1px solid var(--line);font-size:12.5px;font-weight:700;letter-spacing:.04em;color:var(--gray)}
 .wside .wban{display:inline-block;margin:2px 0 10px;padding:2px 8px;background:#111;color:#fff;font-size:13px;font-weight:600}   /* 1114 사용자: 선택은 색만, 굵은 테두리 X */
 .wmap .land.sel.hasadm{fill:none;stroke:none}
 .wmap .adm path{fill:#b9b5ab;stroke:#fff;stroke-width:.8px;vector-effect:non-scaling-stroke}
@@ -706,8 +709,8 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wmap .adm2 path{fill:none;stroke:#fff;stroke-width:.5px;vector-effect:non-scaling-stroke;pointer-events:none}
 .wmap .adm1line path{fill:none;stroke:#8a8a8a;stroke-width:.9px;vector-effect:non-scaling-stroke;pointer-events:none}
 .wmap .dot{fill:var(--ink);pointer-events:none}
-.wmap .wriver path{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}.wmap .wriver .r0,.wmap .wriver .r1,.wmap .wriver .r2,.wmap .wriver .r3{stroke-width:1.5px}.wmap .wriver .r4,.wmap .wriver .r5{stroke-width:1.1px}.wmap .wriver .r6,.wmap .wriver .r7{stroke-width:.8px}
-.wmap .wlake path{fill:#fff;stroke:none;pointer-events:none}   /* 1114 사용자: 주요 강·호수 */
+.wmap .wriver path{fill:none;stroke:#a9c3d0;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}.wmap .wriver .r0,.wmap .wriver .r1,.wmap .wriver .r2,.wmap .wriver .r3{stroke-width:1.5px}.wmap .wriver .r4,.wmap .wriver .r5{stroke-width:1.1px}.wmap .wriver .r6,.wmap .wriver .r7{stroke-width:.8px}
+.wmap .wlake path{fill:#c9dbe3;stroke:none;pointer-events:none}   /* 1114 사용자: 강·호수는 쨍하지 않은 하늘색 */
 .wmap .wdis path{fill:url(#whatch);stroke:none}
 .wmap .land.hatch{fill:url(#whatch);stroke:#fff}
 .wkey .wh{display:inline-block;width:12px;height:12px;margin-right:5px;vertical-align:-1px;background:repeating-linear-gradient(45deg,#6f6b62 0 1.3px,#e9e7e1 1.3px 4px)}
@@ -721,7 +724,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wzoom{position:absolute;right:10px;bottom:10px;display:flex;flex-direction:column;border:1px solid var(--ink);background:var(--bg)}
 .wzoom button{all:unset;cursor:pointer;width:34px;height:34px;display:grid;place-items:center;font-size:20px;line-height:1}
 .wzoom button+button{border-top:1px solid #ddd}.wzoom button:hover{background:var(--soft)}
-.wtip{position:absolute;pointer-events:none;background:var(--ink);color:#fff;font-size:13px;padding:3px 8px;white-space:nowrap;display:none;z-index:4}
+.wtip{position:absolute;pointer-events:none;white-space:pre-line;background:var(--ink);color:#fff;font-size:13px;line-height:1.45;padding:4px 8px;max-width:min(320px,calc(100% - 20px));display:none;z-index:4}
 .wkey{position:absolute;left:10px;bottom:10px;font-size:12.5px;line-height:1.5;color:var(--ink2);background:rgba(255,255,255,.85);padding:4px 8px;display:flex;flex-direction:column;gap:2px}   /* 1114 사용자: 범례 두 줄 */
 .wkey i{display:inline-block;width:12px;height:12px;background:#d3d0c8;margin-right:5px;vertical-align:-1px}
 .wkey b{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--ink);margin-right:5px;vertical-align:1px}
