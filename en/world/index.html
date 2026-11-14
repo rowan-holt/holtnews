@@ -49,7 +49,25 @@ function worldProj(){var p;
   else p=d3.geoNaturalEarth1().rotate([-150,0]);
   return p.fitExtent([[6,6],[W-6,H-6]],{type:'Sphere'})}
 function setProj(p,mode){proj=p;path=d3.geoPath(proj);base={s:p.scale(),t:p.translate()};MODE=mode;if(mode=='world')SW=p.scale()}
-setProj(worldProj(),'world');
+// 1114 사용자: 평면 지도는 '가운데 경도·위도 + 배율' 하나로 — 옆으로 끌면 지구를 돌려 끝없이 이어지고,
+// MERC배 이상 확대하면 그 자리를 가운데 둔 평평한 지도(메르카토르), 줄이면 다시 이퀄 어스 (가운데는 그대로)
+var V={lon:150,lat:0,k:1},MERC=2.6,SWF=1,RM=1;
+(function(){var e=d3.geoEqualEarth().scale(1).translate([0,0]),m=d3.geoMercator().scale(1).translate([0,0]);RM=(e([1,0])[0]-e([0,0])[0])/(m([1,0])[0]-m([0,0])[0]);
+  SWF=d3.geoEqualEarth().rotate([-150,0]).fitExtent([[6,6],[W-6,H-6]],{type:'Sphere'}).scale()})();
+function clampLat(){var lim=V.k<=1?0:Math.min(80,30*(V.k-1));V.lat=Math.max(-lim,Math.min(lim,V.lat))}
+function flatProj(){var merc=V.k>=MERC,p=merc?d3.geoMercator():d3.geoEqualEarth();
+  p.rotate([-V.lon,0]).scale(SWF*V.k*(merc?RM:1)).translate([W/2,H/2]);var c=p([V.lon,V.lat]);p.translate([W-c[0],H-c[1]]);return p}
+function applyFlat(){if(GLOBE)return;clampLat();proj=flatProj();path=d3.geoPath(proj);MODE=V.k>=MERC?'local':'world';SW=SWF;redraw()}
+function animTo(lon,lat,k,ms){if(GLOBE)return;var l0=V.lon,dl=((lon-l0+540)%360)-180,a0=V.lat,k0=V.k;
+  svg.transition().duration(ms==null?650:ms).tween('v',function(){return function(t){V.lon=l0+dl*t;V.lat=a0+(lat-a0)*t;V.k=Math.exp(Math.log(k0)+(Math.log(k)-Math.log(k0))*t);applyFlat()}})}
+function zoomAt(r,pt){if(GLOBE)return;var geo=pt&&proj.invert(pt);V.k=Math.max(kMin(),Math.min(150,V.k*r));applyFlat();
+  if(geo&&pt&&V.k>1){var q=proj(geo);if(q){var c=proj.invert([W/2+(q[0]-pt[0]),H/2+(q[1]-pt[1])]);if(c&&isFinite(c[0])){V.lon=c[0];V.lat=c[1];applyFlat()}}}}
+function fitFlat(fs,pad){ // 그 지역이 화면에 맞게 — 가운데·배율만 정하고 그리기는 applyFlat
+  var fc={type:'FeatureCollection',features:fs},bd=d3.geoBounds(fc),w=bd[0][0],e=bd[1][0],lon=w+((e-w+360)%360)/2;
+  if(e-w<0&&fs.length>1)lon=d3.geoCentroid(fc)[0];
+  var v=vis(),pr=d3.geoMercator().rotate([-lon,0]),pw=v[0]*pad,ph=v[1]*pad;pr.fitExtent([[W/2-pw/2,H/2-ph/2],[W/2+pw/2,H/2+ph/2]],fc);
+  var c=pr.invert([W/2,H/2]),k=pr.scale()/(SWF*RM);if(k<MERC)k=Math.max(1,Math.min(k*1.05,MERC-.01));animTo(c[0],c[1],k)}
+if(!GLOBE)setProj(worldProj(),'world');else setProj(worldProj(),'world');
 svg.attr('viewBox','0 0 '+W+' '+H).attr('preserveAspectRatio','xMidYMid slice');
 var sph=g.append('path').attr('class','sphere'),grat=g.append('path').attr('class','grat').datum(d3.geoGraticule10());
 var gl=g.append('g'),gi=g.append('g'),ga=g.append('g').attr('class','adm'),gLk=g.append('g').attr('class','wlake'),gR=g.append('g').attr('class','wriver'),ga2=g.append('g').attr('class','adm2'),gal=g.append('g').attr('class','adm1line'),gx=g.append('g').attr('class','wdis'),gd=g.append('g'),gt=g.append('g').attr('class','wlab');
@@ -71,16 +89,16 @@ function redraw(){
   gLk.selectAll('path').attr('d',function(d){return d.properties.r<=rmax+1?path(d):null});
   if(sel&&sel.iso=='KOR'&&pd>=K2)loadAdm2();else{ga2.selectAll('*').remove();gal.selectAll('*').remove()}}
 function kMin(){return Math.min(1,vis()[0]/W*.98)} // 1114 사용자: 휴대폰(세로로 길게 잘린 화면)에서도 끝까지 줄이면 세계 전체가 가로에 다 들어오게
-var zoom=d3.zoom().scaleExtent([.3,80]).on('zoom',function(ev){var t=ev.transform;
-  if(GLOBE){proj.scale(base.s*t.k)}else if(MODE=='world'){var k=Math.max(kMin(),t.k);proj.scale(base.s*k).translate([base.t[0]*k+(k>1?t.x:W/2*(1-k)),base.t[1]*k+(k>1?t.y:H/2*(1-k))])}
-  else{proj.scale(base.s*t.k).translate([base.t[0]*t.k+t.x,base.t[1]*t.k+t.y])}
-  redraw()});
-zoom.filter(function(ev){if(ev.type=='wheel'||(ev.touches&&ev.touches.length>1))return true;return MODE=='local'&&!GLOBE&&!ev.button}); // 세계 화면·지구본에서 끌기는 회전 담당
-svg.call(d3.drag().filter(function(ev){return (GLOBE||MODE=='world')&&!ev.button&&!(ev.touches&&ev.touches.length>1)}).on('drag',function(ev){
+var lastK=1,zoom=d3.zoom().scaleExtent([.05,500]).on('start',function(ev){lastK=ev.transform.k}).on('zoom',function(ev){var t=ev.transform;
+  if(GLOBE){proj.scale(base.s*t.k);redraw();return}
+  var r=t.k/lastK;lastK=t.k;var se=ev.sourceEvent,pt=se?d3.pointer(se.touches&&se.touches.length?se.touches[0]:se,svg.node()):[W/2,H/2];zoomAt(r,pt)});
+zoom.filter(function(ev){return ev.type=='wheel'||(ev.touches&&ev.touches.length>1)}); // 끌기는 아래 drag가 맡음(회전·이동)
+svg.call(d3.drag().filter(function(ev){return !ev.button&&!(ev.touches&&ev.touches.length>1)}).on('drag',function(ev){
   var r=proj.rotate(),s;
   if(GLOBE){s=.25/zl();proj.rotate([r[0]+ev.dx*s,Math.max(-90,Math.min(90,r[1]-ev.dy*s))]);redraw();return} // 남극점·북극점까지
-  proj.rotate([r[0]+ev.dx*180/(Math.PI*proj.scale()),r[1],r[2]]);
-  var t=d3.zoomTransform(svg.node());if(t.k>1.01)svg.call(zoom.translateBy,0,ev.dy/t.k);else redraw()}));
+  var rc=svg.node().getBoundingClientRect(),f=vis()[0]/rc.width,c=proj.invert([W/2-ev.dx*f,H/2-ev.dy*f]);
+  if(c&&isFinite(c[0])){V.lon=c[0];V.lat=c[1]}else V.lon-=ev.dx*f/(proj.scale()*Math.PI/180);
+  applyFlat()}));
 svg.call(zoom).on('dblclick.zoom',null);
 function E(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function showTip(ev,t){var r=svg.node().parentNode.getBoundingClientRect();tip.style.display='block';var L2=String(t).split('\n');tip.innerHTML='<b>'+E(L2[0])+'</b>'+(L2[1]?'<span>'+E(L2.slice(1).join(' '))+'</span>':'');
@@ -90,13 +108,8 @@ function bigPart(f){if(f.geometry.type!='MultiPolygon')return f;var best=null,ba
 function mainParts(f){ // 본토 + 큰 섬(해외 작은 섬 때문에 화면이 너무 넓어지지 않게)
   if(f.geometry.type!='MultiPolygon')return f;var ps=f.geometry.coordinates.map(function(c){return{c:c,a:d3.geoArea({type:'Polygon',coordinates:c})}});
   var m=d3.max(ps,function(x){return x.a});return{type:'Feature',geometry:{type:'MultiPolygon',coordinates:ps.filter(function(x){return x.a>m*.04}).map(function(x){return x.c})}}}
-function local(fs,pad){ // 그곳을 가운데 둔 메르카토르로 다시 그림
-  var fc={type:'FeatureCollection',features:fs},bd=d3.geoBounds(fc),w=bd[0][0],e=bd[1][0],lon=w+((e-w+360)%360)/2;
-  if(e-w<0&&fs.length>1)lon=d3.geoCentroid(fc)[0];
-  var v=vis(),p=d3.geoMercator().rotate([-lon,0]),pw=v[0]*pad,ph=v[1]*pad;
-  p.fitExtent([[W/2-pw/2,H/2-ph/2],[W/2+pw/2,H/2+ph/2]],fc);
-  g.interrupt().style('opacity',.15);setProj(p,'local');svg.call(zoom.transform,d3.zoomIdentity);g.transition().duration(350).style('opacity',1)}
-function toWorld(){g.interrupt().style('opacity',.15);setProj(worldProj(),'world');svg.call(zoom.transform,d3.zoomIdentity.scale(kMin()));g.transition().duration(350).style('opacity',1)} // 1114 사용자: '전체'는 휴대폰에서도 세계 전체가 다 보이게
+function local(fs,pad){fitFlat(fs,pad)}
+function toWorld(){if(GLOBE){setProj(worldProj(),'world');svg.call(zoom.transform,d3.zoomIdentity);redraw();return}animTo(150,0,kMin())} // '전체'는 휴대폰에서도 세계 전체
 function fitGlobe(f,pad){var c=d3.geoCentroid(bigPart(f)),r0=proj.rotate(),r1=[-c[0],-c[1]],s0=proj.scale(),v=vis();
   var p=d3.geoOrthographic().rotate(r1).scale(SW).translate(base.t).clipAngle(90),b=d3.geoPath(p).bounds(mainParts(f)),
   k=Math.max(1,Math.min(60,(pad||.85)/Math.max((b[1][0]-b[0][0])/v[0],(b[1][1]-b[0][1])/v[1])));
@@ -202,20 +215,20 @@ Promise.all([fetch(CFG.world).then(function(r){return r.json()}),fetch(CFG.data+
    .on('mousemove',function(ev){showTip(ev,K?'한국 · 울릉도와 독도':'South Korea · Ulleungdo and Dokdo')}).on('mouseleave',hideTip)
    .on('click',function(ev){ev.stopPropagation();hideTip();tapSelect('KOR')});
   Promise.all([getJSON(CFG.data+'rivers_major.json'),getJSON(CFG.data+'lakes.json')]).then(function(a){gR.selectAll('path').data(a[0].features).join('path');gLk.selectAll('path').data(a[1].features).join('path');redraw()});
-  redraw();
+  if(GLOBE)redraw();else applyFlat();
   var h=(location.hash||'').slice(1).toUpperCase();if(h&&byIso[h])select(h);
 });
 document.querySelectorAll('.wreg button').forEach(function(b){b.onclick=function(){region(b.dataset.r)}});
 function setView(v){PJ=v;GLOBE=v=='globe';try{localStorage.setItem('holt-map',v)}catch(e){}
   document.querySelectorAll('.wview button').forEach(function(b){b.classList.toggle('on',b.dataset.v==(GLOBE?'globe':'flat'));b.setAttribute('aria-pressed',b.classList.contains('on'))});
   document.querySelector('.wview').classList.toggle('g',GLOBE);
-  setProj(worldProj(),'world');svg.call(zoom.transform,d3.zoomIdentity);
+  setProj(worldProj(),'world');svg.call(zoom.transform,d3.zoomIdentity);if(!GLOBE){V={lon:150,lat:0,k:1};applyFlat()}
   if(sel){var s0=sel;sel=null;select(s0.iso)}else{var r=document.querySelector('.wreg button.on');if(r&&r.dataset.r!='all')region(r.dataset.r)}
   if(window.track)track('world_view',{view:v})}
 document.querySelectorAll('.wview button').forEach(function(b){b.onclick=function(){setView(b.dataset.v=='globe'?'globe':(CFG.proj||'ee'))}});
 document.querySelectorAll('.wview button').forEach(function(b){b.classList.toggle('on',b.dataset.v==(GLOBE?'globe':'flat'))});document.querySelector('.wview').classList.toggle('g',GLOBE);
-document.getElementById('wzi').onclick=function(){svg.transition().duration(300).call(zoom.scaleBy,1.8)};
-document.getElementById('wzo').onclick=function(){svg.transition().duration(300).call(zoom.scaleBy,1/1.8)};
+document.getElementById('wzi').onclick=function(){if(GLOBE)svg.transition().duration(300).call(zoom.scaleBy,1.8);else animTo(V.lon,V.lat,Math.min(150,V.k*1.8),300)};
+document.getElementById('wzo').onclick=function(){if(GLOBE)svg.transition().duration(300).call(zoom.scaleBy,1/1.8);else animTo(V.lon,V.lat,Math.max(kMin(),V.k/1.8),300)};
 document.getElementById('wzr').onclick=function(){sel=null;gl.selectAll('path').classed('sel',false).classed('hasadm',false);ga.selectAll('*').remove();ga2.selectAll('*').remove();gal.selectAll('*').remove();side.innerHTML=home;bindHome();history.replaceState(null,'',location.pathname+location.search);region('all')};
 var qi=document.getElementById('wqi'),ql=document.getElementById('wql');
 function norm(s){return s.toLowerCase().replace(/\s+/g,'')}
