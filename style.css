@@ -709,8 +709,8 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wmap .adm2 path{fill:none;stroke:#fff;stroke-width:.5px;vector-effect:non-scaling-stroke;pointer-events:none}
 .wmap .adm1line path{fill:none;stroke:#8a8a8a;stroke-width:.9px;vector-effect:non-scaling-stroke;pointer-events:none}
 .wmap .dot{fill:var(--ink);pointer-events:none}
-.wmap .wriver path{fill:none;stroke:#a9c3d0;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}.wmap .wriver .r0,.wmap .wriver .r1,.wmap .wriver .r2,.wmap .wriver .r3{stroke-width:1.5px}.wmap .wriver .r4,.wmap .wriver .r5{stroke-width:1.1px}.wmap .wriver .r6,.wmap .wriver .r7{stroke-width:.8px}
-.wmap .wlake path{fill:#c9dbe3;stroke:none;pointer-events:none}   /* 1114 사용자: 강·호수는 쨍하지 않은 하늘색 */
+.wmap .wriver path{fill:none;stroke:#cbdae2;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}.wmap .wriver .r0,.wmap .wriver .r1,.wmap .wriver .r2,.wmap .wriver .r3{stroke-width:1.5px}.wmap .wriver .r4,.wmap .wriver .r5{stroke-width:1.1px}.wmap .wriver .r6,.wmap .wriver .r7{stroke-width:.8px}
+.wmap .wlake path{fill:#dbe6eb;stroke:none;pointer-events:none}   /* 1114 사용자: 강·호수는 쨍하지 않은 하늘색 */
 .wmap .wdis path{fill:url(#whatch);stroke:none}
 .wmap .land.hatch{fill:url(#whatch);stroke:#fff}
 .wkey .wh{display:inline-block;width:12px;height:12px;margin-right:5px;vertical-align:-1px;background:repeating-linear-gradient(45deg,#6f6b62 0 1.3px,#e9e7e1 1.3px 4px)}
