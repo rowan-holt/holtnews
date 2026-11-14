@@ -2034,3 +2034,56 @@ D가 가장 독특하지만 '사진은 밝게' 원칙과 부딪히고, 음식이
 
 === 대화 Claude Code 세션 5637ae27 ===
 [11:57] AI: The industry desk found that the Korean edition of Microsoft's consumer agreement sets a different damages limit from the US one. Checking it against the original text.
+
+=== 대화 Claude Code 세션 0155d439 ===
+[11:58] AI: 지구본에서 ⟲ 단추나 '전체'를 누르면 이제 확대하지 않고 지구본 전체가 보입니다. 한국이 정확히 가운데로 오도록 돌아가고, 처음 지구본을 열 때도 같은 위치입니다. 사이트(holtnews.com/world)에 올렸습니다.
+[11:58] 사람: 최근 뉴스
+아직 이곳을 다룬 기사가 없어요.
+
+이런거 삭제
+[11:58] AI: 기사가 없는 곳에서는 "최근 뉴스" 제목과 "아직 이곳을 다룬 기사가 없어요" 문구를 통째로 빼겠습니다. 지도 정보 칸, 지역 단추 칸, 나라 쪽 모두 같습니다.
+
+=== 대화 Claude Code 세션 5637ae27 ===
+[11:59] AI: The fact check passes and every review stage is recorded. Checking for overlap with existing articles, then building.
+
+=== 대화 Claude Code 세션 0155d439 ===
+[11:59] AI: 다른 예약 작업의 사이트 빌드와 겹쳐 출력 폴더가 지워진 것 같습니다. 다시 돌립니다.
+
+=== 대화 Claude Code 세션 5637ae27 ===
+[11:59] AI: The build failed on an image from a different article (`cold_hand`). Checking the cause.
+[11:59] AI: That image is written one line before it's read, so the file probably got deleted underneath it, likely by another build running at the same time. Retrying.
+
+=== 대화 Claude Code 세션 0155d439 ===
+[11:59] AI: 다른 세션에서 새 기사(ms365)로 사이트 빌드를 돌리는 중이라 겹쳤습니다. 오류 내용을 확인합니다.
+
+=== 대화 Claude Code 세션 5637ae27 ===
+[11:59] AI: The earlier failure didn't recur. My article file is just missing the `PHOTO_CREDIT` field; checking how other articles handle it for their own graphics.
+[12:00] AI: The article pages were generated. Checking the page renders with a headless browser.
+[12:00] AI: The page renders correctly on mobile. Pushing and committing.
+[12:02] AI: Committed and pushed to GitHub. Sending a Telegram note that the site publish is on hold.
+[12:02] AI: The 12:00 article (Saturday, all fields) is written and passed every review, but it isn't on holtnews.com yet. The site push was blocked by the site safety check (`site_guard`).
+
+- **Article:** "아웃룩 24시간 먹통, 보상은 얼마?" (Outlook down for 24 hours: how much compensation?). The address will be https://holtnews.com/news/ms365_outage_credits.html once it's pushed; that page doesn't exist on the site yet.
+- **Why this angle:** The 9:00 run had excluded this outage because coverage of its cause was already everywhere. This time the article works through the compensation rules instead, using Microsoft's October 2026 service agreement:
+  - Under the same 24-hour outage, a company gets nothing if 3% or fewer of its staff lost email the whole time, 25% of that month's email fee if more than 3%, and 50% if more than 30%. This outage alone can't reach the 100% tier.
+  - Business customers get only these credits; lost business is not compensated.
+  - Personal subscriptions differ by country: the US terms cap damages at one month's fee ($10 for free accounts), while the Korean terms follow Korean law and cover damage caused by Microsoft's intent or negligence.
+  - Claims are due by December 31.
+- **Reviews:** The industry desk flagged that the Korean consumer terms differ from the US ones. I checked the Korean original and rewrote that section. One example the desk proposed ("half the staff down 12 hours each = 50%") was wrong: it works out to 360 minutes, under the 432-minute line. I replaced it with "15 hours each", which does reach 50%. The English desk removed claims about Korea that the sources didn't support and changed the title. The fact check passed.
+- **Score table** (cutoff 18):
+
+  | Candidate | Score | Status |
+  |---|---|---|
+  | Microsoft 365 outage compensation | 22 | Selected |
+  | Brokerage margin-loan collateral rule waived | 19 | Carried over |
+  | US immigration agency (ICE) arrests and deportations | 19 | Carried over |
+  | US defense bill: China chip-export clause | 18 | Carried over |
+  | US robotics trade investigation (Section 232) | 18 | Carried over |
+  | Second data leak in the government startup program 모두의창업 | 18 | Newly carried over |
+
+  Eleven other topics failed the screening checks.
+- **Why it's on hold:** The block isn't from this article. The uncommitted `world_build.py` change adds a world map script (`en/world/index.html`) that `site_guard` hasn't approved. Per memory, that map is still waiting on your approval, so I didn't register it myself.
+- **Where it stands:** The article files are committed and pushed to GitHub (`12b31db`), and I sent a Telegram note explaining the hold. Once the map script is approved and `news_build.py --push` runs, this article goes up with it.
+
+=== 대화 Claude Code 세션 0259caa2 ===
+[12:02] AI: Now threads (HOLT ENGLISH pick).
