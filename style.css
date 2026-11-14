@@ -726,7 +726,8 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wmap .land.reg{fill:#c2beb4}.wmap .land.reg.news{fill:#d4b48a}.wmap .land.isl.reg{stroke:#c2beb4}.wmap .land.isl.reg.news{stroke:#d4b48a}   /* 1114 사용자: 지역 단추를 누르면 그 지역 나라들 — 아무것도 안 고른 때보다 진하게, 나라를 고른 때보다 연하게 */
 .wmap .land:hover{fill:#b0aca2}
 .wmap .land.sel{fill:#9e9a90}
-.wmap .land.sel.ban{fill:#111}   /* 1114 사용자: 전 지역 여행금지는 누르면 검정 */
+.wmap .land.sel.ban{fill:#111}
+.wmap .land.tiny{stroke:#e9e7e1;stroke-width:1.6px;paint-order:normal}.wmap .land.tiny.news{stroke:#e8d3b4}.wmap .land.tiny.reg{stroke:#c2beb4}.wmap .land.tiny.reg.news{stroke:#d4b48a}.wmap .land.tiny.sel{stroke:#9e9a90}.wmap .land.tiny:hover{stroke:#b0aca2}   /* 1115 사용자: 작은 섬은 테두리를 같은 색으로 — 색칠이 보이게 */   /* 1114 사용자: 전 지역 여행금지는 누르면 검정 */
 .walert{margin:0}.walert summary{cursor:pointer;list-style:none;font-weight:600;text-decoration:underline;text-decoration-color:#ccc;text-underline-offset:4px}.walert summary::-webkit-details-marker{display:none}.walert ul{margin:6px 0 4px;padding:8px 12px;list-style:none;background:var(--soft);font-size:14.5px}.walert li{margin:3px 0}.walert li b{margin-right:6px}
 .wdisp{margin:0 0 6px}.wdisp .wk{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.04em;padding:1px 7px;background:repeating-linear-gradient(45deg,#6f6b62 0 1.3px,#e9e7e1 1.3px 4px);color:var(--ink)}
 .wdisp h2{margin:6px 0 4px}.wdisp .ww{font-weight:600;margin:0 0 8px}.wdisp p{margin:0 0 8px}.wdisp .wm{color:var(--ink2);font-size:14.5px}
@@ -840,6 +841,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 footer.site nav a,footer.foot nav a,header.top .right a{display:inline-block;padding-block:2px}
 main:focus{outline:none}
 :where(a,button,input,select,textarea,summary,label,[tabindex]):focus-visible{outline:2px solid #111!important;outline-offset:2px!important;box-shadow:0 0 0 4px #fff!important}
+html[data-ptr] :focus-visible,html[data-ptr] :focus{outline:none!important;box-shadow:none!important}
 a:has(> .a11y-nw),.a11y-memo{position:relative}
 .a11y-live{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
 .a11y-pause{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;padding:0;border:0}
