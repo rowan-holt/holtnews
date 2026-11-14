@@ -45,7 +45,7 @@ proj,path,base,MODE='world',SW=1,feats=[],byIso={},sel=null,admCache={},
 tip=document.getElementById('wtip'),side=document.getElementById('wside'),home=side.innerHTML;
 function worldProj(){var p;
   if(PJ=='ee')p=d3.geoEqualEarth().rotate([-150,0]);
-  else if(PJ=='globe')p=d3.geoOrthographic().rotate([-127,-25]).clipAngle(90);
+  else if(PJ=='globe')p=d3.geoOrthographic().rotate([-127.8,-36]).clipAngle(90); // 한국이 가운데
   else if(PJ=='merc'){p=d3.geoMercator().rotate([-150,0]);var s=1,yN=-Math.log(Math.tan(Math.PI/4+82*Math.PI/360)),yS=-Math.log(Math.tan(Math.PI/4-58*Math.PI/360));
     s=Math.min(W/(2*Math.PI),(H-8)/(yS-yN));return p.scale(s).translate([W/2,H/2-s*(yN+yS)/2])}
   else p=d3.geoNaturalEarth1().rotate([-150,0]);
@@ -113,7 +113,10 @@ function mainParts(f){ // 본토 + 큰 섬(해외 작은 섬 때문에 화면이
   if(f.geometry.type!='MultiPolygon')return f;var ps=f.geometry.coordinates.map(function(c){return{c:c,a:d3.geoArea({type:'Polygon',coordinates:c})}});
   var m=d3.max(ps,function(x){return x.a});return{type:'Feature',geometry:{type:'MultiPolygon',coordinates:ps.filter(function(x){return x.a>m*.04}).map(function(x){return x.c})}}}
 function local(fs,pad){fitFlat(fs,pad)}
-function toWorld(){if(GLOBE){setProj(worldProj(),'world');svg.call(zoom.transform,d3.zoomIdentity);redraw();return}animTo(150,0,kMin())} // '전체'는 휴대폰에서도 세계 전체
+function toWorld(){if(GLOBE){globeHome();return}animTo(150,0,kMin())} // '전체'는 휴대폰에서도 세계 전체
+function globeHome(){ // 1114 사용자: 지구본 '전체'·⟲는 확대 없이 지구 전체, 한국이 가운데
+  var r0=proj.rotate(),r1=[-127.8,-36],s0=proj.scale(),ri=d3.interpolate(r0,r1),si=d3.interpolate(s0,SW);
+  svg.transition().duration(800).tween('rot',function(){return function(t){proj.rotate(ri(t)).scale(si(t));redraw()}}).on('end',function(){base.s=SW;svg.call(zoom.transform,d3.zoomIdentity)})}
 function fitGlobe(f,pad){var c=d3.geoCentroid(bigPart(f)),r0=proj.rotate(),r1=[-c[0],-c[1]],s0=proj.scale(),v=vis();
   var p=d3.geoOrthographic().rotate(r1).scale(SW).translate(base.t).clipAngle(90),b=d3.geoPath(p).bounds(mainParts(f)),
   k=Math.max(1,Math.min(60,(pad||.85)/Math.max((b[1][0]-b[0][0])/v[0],(b[1][1]-b[0][1])/v[1])));
@@ -204,7 +207,7 @@ function loadAdm2(){if(ga2.node().childNodes.length)return;getJSON(CFG.data+'adm
 })}
 function region(id){var r=CFG.regions.find(function(x){return x[0]==id});
   document.querySelectorAll('.wreg button').forEach(function(b){b.classList.toggle('on',b.dataset.r==id)});
-  if(GLOBE){var gf=r&&r[1].length?byIso[r[1][0]]:byIso.KOR;if(gf)fitGlobe(gf,.25);if(r&&r[1].length)regionPanel(r);return}
+  if(GLOBE){if(!r||!r[1].length){globeHome();return}var gf=byIso[r[1][0]];if(gf)fitGlobe(gf,.25);regionPanel(r);return}
   if(!r||!r[1].length){toWorld();sel=null;gl.selectAll('path').classed('sel',false);side.innerHTML=home;bindHome();return}
   sel=null;gl.selectAll('path').classed('sel',false);ga.selectAll('*').remove();regionPanel(r);
   local(r[1].map(function(i){return byIso[i]}).filter(Boolean).map(mainParts),.92)}

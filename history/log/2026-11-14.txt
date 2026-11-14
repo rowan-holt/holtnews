@@ -2004,3 +2004,33 @@ D가 가장 독특하지만 '사진은 밝게' 원칙과 부딪히고, 음식이
 === 대화 Claude Code 세션 0155d439 ===
 [11:55] AI: 휴전선 부분이 제대로 이어지는지 화면에서 확인하고 있습니다.
 [11:55] AI: 휴전선을 따라 남북한이 틈 없이 붙어서 이어집니다. 발행합니다.
+[11:56] AI: 두 가지를 사이트(holtnews.com/world)에 반영했습니다.
+
+**점을 누르면 기사 제목**
+나라를 눌러 나온 점을 누르면 그 자리에 연결된 기사 제목이 카드로 뜹니다.
+- 제목 밑에 날짜와 분야가 붙고, 제목을 누르면 기사로 넘어갑니다.
+- 한 점에 기사가 여러 개면 모두 나열합니다. 미국의 워싱턴 D.C. 점은 기사 5개가 나옵니다.
+- 손가락으로도 누르기 쉽게 점 주변의 터치 범위를 넓혔습니다.
+- 바다나 다른 지역을 누르면 카드가 닫힙니다.
+
+**휴전선의 흰 틈**
+남한은 통계청의 정밀한 경계로, 북한은 세계 지도의 거친 경계로 그리고 있어서 휴전선에서 두 선이 어긋나 그 사이가 비어 보였습니다.
+- 남북한을 둘 다 더 정밀한 자료(Natural Earth 1:1천만)로 바꿨습니다.
+- 행정구역을 그릴 때 그 밑에 같은 색 바탕을 깔아서, 자료가 조금 어긋나도 틈이 보이지 않게 했습니다.
+- 한국을 확대한 화면에서 휴전선을 따라 남북한이 틈 없이 붙어 있는 것을 확인했습니다.
+
+=== 대화 Claude Code 세션 5637ae27 ===
+[11:57] AI: Applying the English desk's fixes to the English edition.
+
+=== 대화 Claude Code 세션 0155d439 ===
+[11:57] 사람: 지구본에서 새로고침누르면 한반도쪽으로 확대되는데 그러지말고 전체 지구본 보이게 해. 한국이 중심에 오게
+[11:57] AI: 지구본에서 새로 고침(⟲) 단추를 누르면 한반도로 확대되던 것을, 한국이 가운데 오는 지구본 전체 모습으로 바꾸겠습니다.
+
+=== 대화 Claude Code 세션 5637ae27 ===
+[11:57] AI: I've applied the English desk's fixes. It said the edition passes once those are in. Now waiting for the industry desk's review.
+
+=== 대화 Claude Code 세션 0155d439 ===
+[11:57] AI: 처음 지구본을 열 때도 한국이 정확히 가운데 오게 같은 위치로 맞춥니다.
+
+=== 대화 Claude Code 세션 5637ae27 ===
+[11:57] AI: The industry desk found that the Korean edition of Microsoft's consumer agreement sets a different damages limit from the US one. Checking it against the original text.
