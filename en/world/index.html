@@ -103,9 +103,21 @@ function onGlobe(ev){ // 1114 사용자: 지구(테두리) 안에서만 확대·
   if(GLOBE){var t=proj.translate();return Math.hypot(pt[0]-t[0],pt[1]-t[1])<=proj.scale()}
   if(MODE!='world')return true;var n=sph.node();if(!n||!n.isPointInFill)return true;var q=svg.node().createSVGPoint();q.x=pt[0];q.y=pt[1];return n.isPointInFill(q)}
 zoom.filter(function(ev){return (ev.type=='wheel'||(ev.touches&&ev.touches.length>1))&&onGlobe(ev)}); // 끌기는 아래 drag가 맡음(회전·이동)
-svg.call(d3.drag().filter(function(ev){return !ev.button&&!(ev.touches&&ev.touches.length>1)}).on('drag',function(ev){
+/* 1114 사용자: 지구본은 구글 어스처럼 모든 방향으로 — 잡은 곳이 손가락을 따라옴(쿼터니언, 극에서도 막히지 않음) */
+var RD=Math.PI/180,gv0,gq0,gr0;
+function cart(e){var l=e[0]*RD,p=e[1]*RD,c=Math.cos(p);return[c*Math.cos(l),c*Math.sin(l),Math.sin(p)]}
+function vsr(e){var l=e[0]/2*RD,sl=Math.sin(l),cl=Math.cos(l),p=e[1]/2*RD,sp=Math.sin(p),cp=Math.cos(p),g=(e[2]||0)/2*RD,sg=Math.sin(g),cg=Math.cos(g);return[cl*cp*cg+sl*sp*sg,sl*cp*cg-cl*sp*sg,cl*sp*cg+sl*cp*sg,cl*cp*sg-sl*sp*cg]}
+function vrot(q){return[Math.atan2(2*(q[0]*q[1]+q[2]*q[3]),1-2*(q[1]*q[1]+q[2]*q[2]))/RD,Math.asin(Math.max(-1,Math.min(1,2*(q[0]*q[2]-q[3]*q[1]))))/RD,Math.atan2(2*(q[0]*q[3]+q[1]*q[2]),1-2*(q[2]*q[2]+q[3]*q[3]))/RD]}
+function vmul(a,b){return[a[0]*b[0]-a[1]*b[1]-a[2]*b[2]-a[3]*b[3],a[0]*b[1]+a[1]*b[0]+a[2]*b[3]-a[3]*b[2],a[0]*b[2]-a[1]*b[3]+a[2]*b[0]+a[3]*b[1],a[0]*b[3]+a[1]*b[2]-a[2]*b[1]+a[3]*b[0]]}
+function vdelta(v0,v1){var w=[v0[1]*v1[2]-v0[2]*v1[1],v0[2]*v1[0]-v0[0]*v1[2],v0[0]*v1[1]-v0[1]*v1[0]],l=Math.sqrt(w[0]*w[0]+w[1]*w[1]+w[2]*w[2]);if(!l)return[1,0,0,0];
+  var t=Math.acos(Math.max(-1,Math.min(1,v0[0]*v1[0]+v0[1]*v1[1]+v0[2]*v1[2])))/2,s=Math.sin(t);return[Math.cos(t),w[2]/l*s,-w[1]/l*s,w[0]/l*s]}
+function gPt(ev){var se=ev.sourceEvent,q=se?d3.pointer(se.touches&&se.touches.length?se.touches[0]:(se.changedTouches&&se.changedTouches.length?se.changedTouches[0]:se),svg.node()):[ev.x,ev.y],t=proj.translate(),R=proj.scale(),dx=q[0]-t[0],dy=q[1]-t[1],d=Math.sqrt(dx*dx+dy*dy),m=R*.98;if(d>m){dx*=m/d;dy*=m/d}return[t[0]+dx,t[1]+dy]} /* 지구본 밖을 잡아도 가장자리 기준으로 */
+svg.call(d3.drag().filter(function(ev){return !ev.button&&!(ev.touches&&ev.touches.length>1)}).on('start',function(ev){
+  if(!GLOBE)return;gr0=proj.rotate();gq0=vsr(gr0);var g=proj.invert(gPt(ev));gv0=g&&isFinite(g[0])?cart(g):null}).on('drag',function(ev){
   var r=proj.rotate(),s;
-  if(GLOBE){s=.25/zl();proj.rotate([r[0]+ev.dx*s,Math.max(-90,Math.min(90,r[1]-ev.dy*s))]);redraw();return} // 남극점·북극점까지
+  if(GLOBE){if(!gv0){s=.25/zl();proj.rotate([r[0]+ev.dx*s,r[1]-ev.dy*s,r[2]]);redraw();return}
+    var g=proj.rotate(gr0).invert(gPt(ev));if(!g||!isFinite(g[0])){proj.rotate(r);return}
+    proj.rotate(vrot(vmul(gq0,vdelta(gv0,cart(g)))));redraw();return}
   var rc=svg.node().getBoundingClientRect(),f=vis()[0]/rc.width,c=proj.invert([W/2-ev.dx*f,H/2-ev.dy*f]);
   if(c&&isFinite(c[0])){V.lon=c[0];V.lat=c[1]}else V.lon-=ev.dx*f/(proj.scale()*Math.PI/180);
   applyFlat()}));
@@ -122,9 +134,9 @@ function mainParts(f){ // 본토 + 큰 섬(해외 작은 섬 때문에 화면이
 function local(fs,pad){fitFlat(fs,pad)}
 function toWorld(){if(GLOBE){globeHome();return}animTo(150,0,kMin())} // '전체'는 휴대폰에서도 세계 전체
 function globeHome(){ // 1114 사용자: 지구본 '전체'·⟲는 확대 없이 지구 전체, 한국이 가운데
-  var r0=proj.rotate(),r1=[-127.8,-36],s0=proj.scale(),ri=d3.interpolate(r0,r1),si=d3.interpolate(s0,SW);
+  var r0=proj.rotate(),r1=[-127.8,-36,0],s0=proj.scale(),ri=d3.interpolate(r0,r1),si=d3.interpolate(s0,SW);
   svg.transition().duration(800).tween('rot',function(){return function(t){proj.rotate(ri(t)).scale(si(t));redraw()}}).on('end',function(){base.s=SW;svg.call(zoom.transform,d3.zoomIdentity)})}
-function fitGlobe(f,pad){var c=d3.geoCentroid(bigPart(f)),r0=proj.rotate(),r1=[-c[0],-c[1]],s0=proj.scale(),v=vis();
+function fitGlobe(f,pad){var c=d3.geoCentroid(bigPart(f)),r0=proj.rotate(),r1=[-c[0],-c[1],0],s0=proj.scale(),v=vis();
   var p=d3.geoOrthographic().rotate(r1).scale(SW).translate(base.t).clipAngle(90),b=d3.geoPath(p).bounds(mainParts(f)),
   k=Math.max(1,Math.min(60,(pad||.85)/Math.max((b[1][0]-b[0][0])/v[0],(b[1][1]-b[0][1])/v[1])));
   var ri=d3.interpolate(r0,r1),si=d3.interpolate(s0,SW*k);
