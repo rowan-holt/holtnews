@@ -759,7 +759,8 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wc h1{font-size:clamp(30px,4vw,44px);margin:6px 0 6px}
 .wc .dek{font-size:19px;color:var(--ink2);margin:0 0 18px}
 .wloc{border-top:1px solid var(--line);border-bottom:1px solid #ddd;padding:12px 0;margin:0 0 6px}
-.wloc svg{display:block;width:100%;height:auto}
+.wloc{position:relative}.wloc svg{display:block;width:100%;height:auto}
+.wlocnote{position:absolute;left:8px;bottom:6px;margin:0;font-size:12.5px;line-height:1.4;color:var(--ink2);background:rgba(255,255,255,.88);padding:2px 7px;max-width:calc(100% - 16px)}
 .wc h2{font-size:21px;margin:34px 0 10px;padding-top:12px;border-top:1px solid var(--line)}
 .wc .wdl{font-size:16px;gap:6px 18px}
 .wc p{margin:0 0 12px}
