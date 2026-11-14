@@ -192,3 +192,8 @@ Sources:
 [00:41] AI: Both functions are hoisted, so I can build the default home with the world description at load.
 [00:41] AI: 세계 설명이 기본으로 뜨게 고쳤어요. 영토 인구 자료도 받아졌어요. 빌드해서 확인할게요.
 [00:42] AI: All good. Approve the script change and push.
+[00:43] AI: 'RCEP 자유무역협정' 같은 말에 ⓘ 설명을 다는 거죠. 말씀하신 '호주 178.1조'가 어디에 쓰였는지와 ⓘ 장치가 어디에 있는지 찾아볼게요.
+[00:44] AI: Now the glossary file.
+[00:45] AI: 이제 이 사전을 지도 칸(자바스크립트)과 나라 쪽(파이썬)에 연결할게요.
+[00:50] AI: '한·아세안 FTA'에서 '아세안'에만 ⓘ가 붙어 어색하네요. FTA 줄에서는 그 말을 빼고, 교역 품목 수집 상태도 볼게요.
+[00:50] AI: 품목 수집은 36분째 돌고 있어요. 그 사이 지금까지 고친 것을 먼저 올리고 커밋할게요.
