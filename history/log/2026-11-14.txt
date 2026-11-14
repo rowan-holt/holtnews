@@ -2820,3 +2820,4 @@ D가 가장 독특하지만 '사진은 밝게' 원칙과 부딪히고, 음식이
 [14:59] AI: Adding capital dots for unlabeled small countries: hovering shows the name, clicking opens the country page.
 [15:00] AI: The name appears on hover. Publishing.
 [15:02] AI: Moved the search box beside the title; checking it on desktop and phone.
+[15:05] AI: Renamed on the map to 가자지구 and 서안지구. Publishing.
