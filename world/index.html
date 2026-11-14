@@ -140,7 +140,7 @@ function countryHtml(c,src){ // 1114 사용자: 뉴스 사이트라 소식이 �
   var has=c.w&&c.w.length,h='<h2>'+E(c.n)+'</h2>'+(c.b?'<p class="wban">여행금지 · 외교부 여행경보 4단계, 전 지역</p>':'')+(c.o?'<p class="wone">'+E(c.o)+'</p>':'');
   if(has)h+='<h3 class="wfirst">'+(K?'최근 뉴스':'RECENT STORIES')+'</h3>'+newsList(c.w); // 1114 사용자: 기사 없으면 칸째 X
   if(c.r)h+='<h3>'+(K?'주변국과의 관계':'NEIGHBORS')+'</h3><p class="wrel">'+E(c.r)+'</p>'; // 1114 사용자: 한국 중심 X, 그 나라 나름의 이웃·국제 관계
-  var al=c.t?'<dt>여행경보</dt><dd><details class="walert"><summary>'+c.t.map(function(x){return E(x[0])}).join(' · ')+'</summary><ul>'+c.t.map(function(x){return '<li><b>'+E(x[0])+'</b> '+E(x[1])+'</li>'}).join('')+'</ul></details></dd>':''; // 1114 사용자: 다른 칸과 줄 맞춤
+  var al=c.t?'<dt>여행경보</dt><dd><details class="walert"><summary>'+c.t.map(function(x){return E(x[0])+(x[1]=='전 지역'?'':'(일부 지역)')}).join(' · ')+'</summary><ul>'+c.t.map(function(x){return '<li><b>'+E(x[0])+'</b> '+E(x[1])+'</li>'}).join('')+'</ul></details></dd>':''; // 1114 사용자: 다른 칸과 줄 맞춤
   var info=dl(c.f).replace('<dl class="wdl">','<dl class="wdl">'+al)+(c.e&&c.e.length?'<h4>'+(K?'경제':'Economy')+'</h4>'+dl(c.e):'')+(c.k&&c.k.length?'<h4>'+(K?'한국과의 교역':'Trade with Korea')+'</h4>'+dl(c.k):'');
   h+='<div class="winfo"><h3>'+(K?'기본 정보':'FACTS')+'</h3>'+info+'</div>'; // 1114 사용자: 접지 말고 뉴스 밑에 그대로
   if(c.s)h+='<a class="wmore" href="'+E(c.s)+'">'+(K?'정치 구도·한국과의 관계 자세히 →':'More about this country →')+'</a>';
