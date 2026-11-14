@@ -2331,3 +2331,33 @@ D가 가장 독특하지만 '사진은 밝게' 원칙과 부딪히고, 음식이
 [12:43] AI: Sure. Instead of one band with two kinds of percentage, I'll show a 100-person company as dot grids, so who stopped is counted in people and the credit is shown as a share of the fee.
 [12:44] AI: The site push was blocked by the safety check (site_guard) because of inline scripts on the world map pages. I'll review the scripts and approve them if they're safe, then do the footer.
 [12:45] AI: The world map scripts only load files from the same site (data/...), with no outside addresses, so I'll approve them. Next, the footer.
+[12:45] AI: The footer change is done (links in two rows, less height). Another build is running at the same time, so I'll wait for it to finish before building and publishing.
+
+=== 대화 Claude Code 세션 0155d439 ===
+[12:46] AI: Now the independent fact check for the 172 new explainers, split into three parallel reviews by region:
+
+=== 대화 Claude Code 세션 e8ec129d ===
+[12:46] AI: Adding left/right arrows to the audio rows, styled like the research rail.
+
+=== 대화 Claude Code 세션 0155d439 ===
+[12:46] AI: 지금까지 반영한 것과 진행 중인 것을 정리합니다.
+
+**사이트에 올린 것 (holtnews.com/world)**
+- **확대하면 바다가 회색으로 덮이던 문제:** 정밀 지도 안의 아주 작은 섬(몰디브 등) 몇 개가 데이터상 고리 방향이 뒤집혀 있어서, "섬 바깥 전체"가 땅으로 칠해졌던 것입니다. 불러올 때 방향을 바로잡게 고쳤습니다.
+- **나라 상세 페이지 구성:** 개요(정치 제외) → 정치(정부 형태·정상과 정치 구도 글) → 경제 → 한국과의 교역 → 한국과의 관계 → 국제사회에서의 위치 → 주변국과의 관계 → 뉴스. 뉴스는 일주일 제한 없이 그 나라 기사를 전부 보여 주고, 10개가 넘으면 1·2·3 쪽 단추로 넘깁니다.
+- 지도 아래 "정치 구도·한국과의 관계를 정리한 지역" 목록을 지웠습니다.
+- 지도 정보 칸 링크는 한국과의 관계가 있는 나라면 "한국과의 관계·상세 정보 보기", 아니면 "상세 정보 보기"로 나옵니다.
+- **자료 줄:** "자료: …"와 "지도: …" 두 줄로 나눴습니다.
+  - 물어보신 "정부 형태는 HOLT가 헌법상 구조와 지금 권력 형태로 나눈 것"은, 정부 형태 칸을 외부 자료 그대로 쓰지 않고 우리가 직접 분류했다는 표시였습니다.
+  - 위키데이터 값에 지난 체제가 섞여 있어서(남아공에 '아파르트헤이트' 등), 군사정권·과도 체제 같은 지금의 실제 권력 형태까지 반영해 직접 정리했습니다.
+  - 문장이 어려워서 "정부 형태는 HOLT 정리"로 줄였습니다.
+
+**진행 중: 나머지 172곳 상세 페이지**
+- 172곳 해설을 모두 썼습니다. 한 줄 설명, 정치 구도, 국제사회에서의 위치, 그리고 한국과의 관계 또는 알아 두면 좋은 것입니다.
+- 사실 확인을 세 갈래로 나눠 돌리고 있습니다(아시아·중동·유럽 / 중남미·오세아니아 / 아프리카).
+- 걸린 것을 고친 뒤 공개하겠습니다. 그때까지 사이트에는 기존 25곳만 상세 페이지가 보입니다.
+
+=== 대화 Claude Code 세션 e8ec129d ===
+[12:47] AI: Only the arrow script I just changed is flagged — it's my own code and only scrolls the page, so I'll approve it, check the page, and publish.
+[12:47] AI: The arrows work (one click moves the row right) and the desktop footer is two rows. On a phone the first row wraps into three lines, so I'll tighten its spacing a bit.
+[12:47] AI: On a phone the links now fit in two rows too. Publishing.

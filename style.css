@@ -435,7 +435,7 @@ display:grid;grid-template-columns:auto 1fr auto;gap:12px 48px;align-items:start
 .bar .lsw .lang{font-size:15px}.bar{padding:6px 16px 8px;gap:10px}.bar nav{gap:16px;font-size:15px;-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent);padding-right:24px}.bar .right{font-size:14px}.bar .right{gap:14px}.lsw summary{gap:4px;padding:5px 2px}.lsw summary svg:first-child{width:25px;height:17px}
 .panels{grid-auto-columns:78%}.more .panels{grid-auto-columns:46%}.arrow{display:none}
 .index{padding:40px 16px 10px}.row{grid-template-columns:44px minmax(0,1fr);gap:10px}.row .d{display:none}
-.article{padding-top:34px}.bbc{grid-template-columns:1fr!important;padding:24px 16px}.sec p{font-size:17px}.foot{grid-template-columns:1fr;padding:22px 20px 26px}.foot .c{text-align:left}}
+.article{padding-top:34px}.bbc{grid-template-columns:1fr!important;padding:24px 16px}.sec p{font-size:17px}.foot{grid-template-columns:1fr;padding:22px 20px 26px;font-size:12px}.foot nav{gap:6px}.foot .c{text-align:left}}
 @media (max-width:350px){.bar nav{gap:12px;font-size:14px}.bar .lsw .lang{font-size:14px}.bar{padding:6px 12px 8px}}
 
 /* ===== 1109 홈 정리: 섹션 머리 통일·구분·다채로운 배치 ===== */
@@ -564,6 +564,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .ar-h h2{margin:0;font-size:16px;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
 .ar-row{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 5 * 18px) / 6.3);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px}
 .ar-row::-webkit-scrollbar{display:none}
+.ar-rail{border-bottom:0;container-type:inline-size}.ar-rail .arrow{top:calc((100cqw - 90px) / 6.3 / 2)}   /* 1114: 단추는 그림(정사각) 세로 가운데 */
 .ae{scroll-snap-align:start;display:flex;flex-direction:column;min-width:0}
 .ae-pic{position:relative;display:block;aspect-ratio:1/1;background:#eee}
 .ae-show{margin-top:10px;font-size:12.5px;color:var(--gray)}
