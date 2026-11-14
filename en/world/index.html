@@ -255,6 +255,7 @@ function loadAdm2(){if(ga2.node().childNodes.length)return;getJSON(CFG.data+'adm
 })}
 function region(id){var r=CFG.regions.find(function(x){return x[0]==id});
   document.querySelectorAll('.wreg button').forEach(function(b){b.classList.toggle('on',b.dataset.r==id)});
+  gd.selectAll('*').remove();hidePop();gl.selectAll('path').classed('ban',false);gi.selectAll('path').classed('sel',false); /* 1114 사용자: 나라를 고르지 않은 상태엔 점 X */
   if(GLOBE){if(!r||!r[1].length){globeHome();return}var gf=byIso[r[1][0]];if(gf)fitGlobe(gf,.25);regionPanel(r);return}
   if(!r||!r[1].length){toWorld();sel=null;gl.selectAll('path').classed('sel',false);side.innerHTML=home;bindHome();return}
   sel=null;gl.selectAll('path').classed('sel',false);ga.selectAll('*').remove();regionPanel(r);
