@@ -691,7 +691,8 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wgrid{display:block;border-bottom:1px solid var(--line)}   /* 1114 사용자: 넓은 화면에선 지도를 꽉 차게, 나라 정보는 그 아래 */
 .wmap{position:relative;background:#fff;touch-action:none;overflow:hidden;width:100vw;margin-left:calc(50% - 50vw);border-bottom:1px solid #ddd}
 .wmap #wsvg{display:block;width:100%;height:min(78vh,900px);cursor:grab}.wmap #wsvg:active{cursor:grabbing}
-.wmap .land{fill:#e9e7e1;stroke:#fff;stroke-width:.6px;vector-effect:non-scaling-stroke}
+.wmap .land{fill:#e9e7e1;stroke:#fff;stroke-width:.6px;vector-effect:non-scaling-stroke;paint-order:stroke}   /* 경계선을 땅 밑에 — 작은 섬이 흰 선에 지워지지 않게 */
+.wmap .land.isl{stroke:#e9e7e1;stroke-width:1.2px;paint-order:normal}.wmap .land.isl.news{stroke:#d3d0c8}.wmap .land.isl.sel{stroke:#9e9a90}
 .wmap .land.news{fill:#d3d0c8}
 .wmap .land:hover{fill:#c9c6bd}
 .wmap .land.sel{fill:#9e9a90}
