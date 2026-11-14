@@ -710,7 +710,10 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wmap .adm path.rsel,.wmap .adm2 path.rsel{fill:#6f6b62!important}   /* 누른 행정구역 */
 .wmap .adm2 path{fill:transparent;stroke:#fff;stroke-width:.5px;vector-effect:non-scaling-stroke;pointer-events:none}
 .wmap .adm1line path{fill:none;stroke:#8a8a8a;stroke-width:.9px;vector-effect:non-scaling-stroke;pointer-events:none}
-.wmap .dot{fill:var(--ink);pointer-events:none}
+.wmap .dot{fill:var(--ink);stroke:rgba(0,0,0,0);stroke-width:14px;cursor:pointer}   /* 손가락으로 누르기 쉽게 투명 테두리 */
+.wpop{position:absolute;z-index:5;display:none;width:min(300px,calc(100% - 16px));background:#fff;border:1px solid rgba(0,0,0,.12);border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.14);padding:4px 0}
+.wpop a{display:block;padding:8px 12px;line-height:1.4}.wpop a+a{border-top:1px solid #eee}.wpop a:hover{background:var(--soft)}
+.wpop b{display:block;font-size:14px;font-weight:600}.wpop span{display:block;margin-top:2px;font-size:12px;color:var(--gray)}
 .wmap .wriver path{fill:none;stroke:#cbdae2;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}.wmap .wriver .r0,.wmap .wriver .r1,.wmap .wriver .r2,.wmap .wriver .r3{stroke-width:1.5px}.wmap .wriver .r4,.wmap .wriver .r5{stroke-width:1.1px}.wmap .wriver .r6,.wmap .wriver .r7{stroke-width:.8px}
 .wmap .wlake path{fill:#dbe6eb;stroke:none;pointer-events:none}   /* 1114 사용자: 강·호수는 쨍하지 않은 하늘색 */
 .wmap .wdis path{fill:url(#whatch);stroke:none}
