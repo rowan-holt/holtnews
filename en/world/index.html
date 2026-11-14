@@ -128,6 +128,10 @@ function select(iso,noZoom){
   if(c.a)loadAdm(c,f);
   document.querySelectorAll('.wreg button').forEach(function(b){b.classList.remove('on')});
   if(window.track)track('world_country',{country:iso})}
+var lastTap={i:null,t:0};
+function tapSelect(iso){ // 1114 사용자: 지도에서 한 번 누르면 화면 그대로 색만, 두 번 누르면 그 지역 전체가 보이게
+  var now=Date.now(),dbl=lastTap.i==iso&&now-lastTap.t<400;lastTap={i:iso,t:dbl?0:now};
+  if(dbl||!sel||sel.iso!=iso)select(iso,!dbl)}
 function getJSON(u){if(!admCache[u])admCache[u]=fetch(u).then(function(r){return r.json()});return admCache[u]}
 function loadAdm(c,f){getJSON(CFG.data+c.a+'.json').then(function(fc){
   if(!sel||sel.f!==f)return;gl.selectAll('path').classed('hasadm',function(d){return d===f&&c.i=='KOR'});
@@ -135,7 +139,7 @@ function loadAdm(c,f){getJSON(CFG.data+c.a+'.json').then(function(fc){
   if(c.c){var id='clip'+f.id;svg.append('clipPath').attr('id',id).append('path').attr('d',path(f));ga.attr('clip-path','url(#'+id+')')}
   ga.selectAll('path').data(fc.features).join('path').attr('d',path)
    .on('mousemove',function(ev,d){showTip(ev,K?d.properties.ko:(d.properties.en||d.properties.ko))}).on('mouseleave',hideTip)
-   .on('click',function(ev,d){ev.stopPropagation();showTip(ev,K?d.properties.ko:(d.properties.en||d.properties.ko))});
+   .on('click',function(ev,d){ev.stopPropagation();showTip(ev,K?d.properties.ko:(d.properties.en||d.properties.ko));if(sel)tapSelect(sel.iso)});
 })}
 function loadAdm2(){if(ga2.node().childNodes.length)return;getJSON(CFG.data+'adm2_KOR.json').then(function(fc){
   if(!sel||sel.iso!='KOR'||zl()<14||ga2.node().childNodes.length)return;
@@ -162,13 +166,13 @@ Promise.all([fetch(CFG.world).then(function(r){return r.json()}),fetch(CFG.data+
   // 1114 외교부 입장 없는 분쟁 지역 = 빗금
   gx.selectAll('path').data(a[2].features.concat(feats.filter(function(f){return OVER[f.properties.name]}).map(function(f){return{type:'Feature',geometry:f.geometry,properties:{t:NM[f.properties.name],a:D[f.id]?D[f.id].i:''}}})))
    .join('path').on('mousemove',function(ev,d){showTip(ev,d.properties.t)}).on('mouseleave',hideTip)
-   .on('click',function(ev,d){ev.stopPropagation();showTip(ev,d.properties.t);if(d.properties.a)select(d.properties.a)});
+   .on('click',function(ev,d){ev.stopPropagation();showTip(ev,d.properties.t);if(d.properties.a)tapSelect(d.properties.a)});
   gl.selectAll('path').data(feats).join('path').attr('class',function(f){var c=D[f.id];return 'land'+(c&&c.w&&c.w.length?' news':'')+(HATCH[f.properties.name]?' hatch':'')})
    .on('mousemove',function(ev,f){var c=D[f.id];showTip(ev,c?c.n:(NM[f.properties.name]||f.properties.name))}).on('mouseleave',hideTip)
-   .on('click',function(ev,f){ev.stopPropagation();hideTip();var c=D[f.id];if(c)select(c.i)});
+   .on('click',function(ev,f){ev.stopPropagation();hideTip();var c=D[f.id];if(c)tapSelect(c.i)});
   gi.selectAll('path').data([{type:'Feature',properties:{},geometry:CFG.isl.shape}]).join('path').attr('class','land isl')
    .on('mousemove',function(ev){showTip(ev,K?'한국 · 울릉도와 독도':'South Korea · Ulleungdo and Dokdo')}).on('mouseleave',hideTip)
-   .on('click',function(ev){ev.stopPropagation();hideTip();select('KOR')});
+   .on('click',function(ev){ev.stopPropagation();hideTip();tapSelect('KOR')});
   gt.selectAll('circle').data(CFG.isl.labels).join('circle').attr('r',2.4).append('title').text(function(d){return d[1]});
   gd.selectAll('circle').data(feats.filter(function(f){var c=D[f.id];return c&&c.w&&c.w.length&&byIso[c.i]===f})).join('circle').attr('class','dot').attr('r',3.2);
   redraw();
