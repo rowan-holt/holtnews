@@ -1170,3 +1170,8 @@
 2026-11-14 01:23  feat(holt): 스레드 광고 글 — 폴더의 threads_ad.txt 본문 + threads_ad_reply.txt 링크 답글(40분 조용할 때)
 2026-11-14 04:43  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — delivery_app_mfn
 2026-11-14 05:29  chore(holt): 만들어진 기록 연표 자동 갱신 — 9개 추가
+2026-11-14 07:42  content(holt): 11/14 07:30 회차 — 월급 다음 날 57% (paycheck to paycheck, C)
+2026-11-14 08:50  chore(holt): 사이트 11/14 09시 회차 건너뜀 — 후보 이월 갱신(FAA 이륙 중단 추가, 로봇 232조 원문 분류)
+2026-11-14 09:07  fix(holt): HOLT ISSUE 파비콘 — SVG만 있던 걸 favicon.ico·PNG·apple-touch-icon 추가(사파리·검색 결과에 안 뜨던 문제)
+2026-11-14 09:09  fix(holt): HOLT ENGLISH 파비콘 H→E (H는 HOLT NEWS), favicon.ico·96 PNG 추가
+2026-11-14 09:13  docs(holt): 사이트 그림 원칙 — 그래프·표는 본문 숫자 정리용으로만, 아니면 실사·장면·도형
