@@ -422,10 +422,10 @@ function inGeom(g,x,y){var ps=g.type=='Polygon'?[g.coordinates]:g.coordinates;re
 function evGeo(ev){var g=proj.invert(d3.pointer(ev,svg.node()));if(!g||!isFinite(g[0]))return null;if(GLOBE){var r=proj.rotate();if(d3.geoDistance(g,[-r[0],-r[1]])>1.57)return null}return[((g[0]+540)%360)-180,g[1]]}
 function seaAt(ev){if(!SEAS){if(!seaReq){seaReq=true;getJSON(CFG.data+'seas.json').then(function(fc){SEAS=fc.features.map(function(f){return{f:f,b:bbx(f.geometry)}})})}return null}
   var g=evGeo(ev);if(!g)return null;var hit=SEAS.filter(function(s){return g[0]>=s.b[0]&&g[0]<=s.b[2]&&g[1]>=s.b[1]&&g[1]<=s.b[3]&&inGeom(s.f.geometry,g[0],g[1])}).map(function(s){return s.f});
-  hit.sort(function(a,b){return a.properties.a-b.properties.a});var f=hit.filter(function(f){var c=f.properties.c;return f.properties.a>=3||c=='sea'||c=='ocean'||c=='gulf'})[0]||hit[0];return f?f.properties.ko:null}
+  hit.sort(function(a,b){return a.properties.a-b.properties.a});var f=hit.filter(function(f){var c=f.properties.c;return f.properties.a>=3||c=='sea'||c=='ocean'||c=='gulf'})[0]||hit[0];return f?(K?f.properties.ko:f.properties.en):null}
 var LAKES=null;function lakeAt(ev){var fs=gLk.selectAll('path').data();if(!fs.length)return null;if(!LAKES)LAKES=fs.filter(function(f){return f.properties.ko}).map(function(f){return{f:f,b:bbx(f.geometry)}});
   if(!K)return null;var g=evGeo(ev);if(!g)return null;var h=LAKES.find(function(s){return g[0]>=s.b[0]&&g[0]<=s.b[2]&&g[1]>=s.b[1]&&g[1]<=s.b[3]&&inGeom(s.f.geometry,g[0],g[1])});return h?h.f.properties.ko:null}
-function seaTip(ev){var t=ev.target;if(t!==svg.node()&&!(t.classList&&(t.classList.contains('sphere')||t.classList.contains('grat'))))return false;var n=K?seaAt(ev):null;if(n){showTip(ev,n);return true}return false}
+function seaTip(ev){var t=ev.target;if(t!==svg.node()&&!(t.classList&&(t.classList.contains('sphere')||t.classList.contains('grat'))))return false;var n=seaAt(ev);if(n){showTip(ev,n);return true}return false}
 svg.on('mousemove.sea',function(ev){var now=Date.now();if(now-lastSeaT<60)return;lastSeaT=now;var t=ev.target;if(t===svg.node()||(t.classList&&(t.classList.contains('sphere')||t.classList.contains('grat')))){if(!seaTip(ev))hideTip()}});
 /* 1114 사용자: 여행경보 단추 — 단계를 누르면 그 단계 지역을 외교부 색으로, 그동안 기사 색은 지움 */
 var ALV=[['여행금지','a4'],['출국권고','a3'],['여행자제','a2'],['여행유의','a1']],AON={},walb=document.getElementById('walb'),walp=document.getElementById('walp');
