@@ -1372,3 +1372,4 @@
 2026-11-15 04:43  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — uk_rate_hike_energy
 2026-11-15 04:49  feat(holt): 한국과의 교역 품목 원자료 다 모음 — HS 99(분류 안 한 품목)는 Comtrade가 늘 거절해서 빼고 완료 판정, 나라별 품목 줄 공개
 2026-11-15 05:23  content(holt): HOLT ENGLISH 쪽별 표현·퀴즈 25쪽 + 점검
+2026-11-15 05:31  chore(holt): 만들어진 기록 연표 자동 갱신 — 10개 추가, 논쟁 1개 이어 붙임
