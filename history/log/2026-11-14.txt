@@ -2872,3 +2872,33 @@ D가 가장 독특하지만 '사진은 밝게' 원칙과 부딪히고, 음식이
 [15:15] 사람: 지금 국가 페이지에서 국가명위에 세계지도 클릭하면 마치 세계지도에서 그 나라 더블클릭했을때처럼 보이잖아. 그러지말고 그 나라를 중심에 두되 넓게. 그러니까 새로고침했을때 한국을 중심에 두고 넓게 보여주잖아. 그정도로 해줘. 왜냐면 옆에 동남아시아클릭한것보다 세계지도 클릭한게 더 좁잖아. 세계지도가 더 넓은 의미인데.
 [15:16] AI: Checking why the map didn't recenter on Brazil.
 [15:17] AI: After a real page load it's centered on Brazil at world scale. Publishing.
+
+=== 대화 Claude Code 세션 b5a57b2f ===
+[15:17] AI: 배경이 레퍼런스처럼 부드러운 빛 띠가 됐어요. 블러도 줄여서 다시 렌더링해요.
+
+=== 대화 Claude Code 세션 0155d439 ===
+[15:18] AI: Looking for the existing tooltip style (the "호주 487.1조" one) so the Taiwan list can match it.
+[15:19] AI: Found it: the "i" footnote box used in articles. I'm adding a list version with a different marker, plus an "i" note explaining Penghu, Kinmen and Matsu.
+[15:19] AI: Only Taiwan (and Chad's six neighbors) have long lists. Implementing the list marker and updating those texts.
+
+=== 대화 Claude Code 세션 b5a57b2f ===
+[15:20] AI: 움직임만 남기고 디자인은 원래 HOLT 광고 그대로 되돌릴게요 — 빛 띠 삭제, 휴대폰 테두리·아일랜드도 원래 모양으로.
+
+=== 대화 Claude Code 세션 a0d15dca ===
+[15:21] 사람: 코카서스, 사하라이남 아프리카를 별도로 둔 이유는?
+북아프리카는 그냥 북아프리칸데 사하라이남은 굳이 사하라 이남을 넣은 이유는?
+
+=== 대화 Claude Code 세션 0155d439 ===
+[15:21] AI: Markers render (≡ box for lists, ⓘ for explanations). Publishing.
+
+=== 대화 Claude Code 세션 a0d15dca ===
+[15:21] AI: **코카서스를 따로 둔 이유**
+- 중앙아시아라고 하면 보통 카자흐스탄·우즈베키스탄·투르크메니스탄·타지키스탄·키르기스스탄 다섯 나라를 가리켜요. 조지아·아르메니아·아제르바이잔은 카스피해 건너 흑해 쪽에 있어서 보통 따로 묶어요.
+- 뉴스 흐름도 달라요. 코카서스는 아르메니아-아제르바이잔 분쟁이나 조지아의 EU·러시아 문제처럼 러시아·튀르키예·이란 사이의 이야기가 많아요. 중앙아시아는 자원, 그리고 러시아·중국 사이의 이야기가 많아요.
+- 하나로 묶으면 단추를 눌렀을 때 화면이 흑해부터 중국 국경까지 넓게 잡혀서 나라들이 작게 보여요.
+- 다만 외교부 등 한국 기관은 두 지역을 한 묶음으로 다루기도 해요. 원래 사이트 자료도 '중앙아시아·코카서스' 한 묶음이었고요. 합쳐도 틀린 건 아니에요.
+
+**'남아프리카' 대신 '사하라 이남'이라고 쓴 이유**
+- 북아프리카를 빼고 남은 곳은 서·중앙·동·남부 아프리카를 다 합친 넓은 지역이에요. 이걸 '남아프리카'라고 하면 남아프리카공화국이나 아프리카 남쪽 끝 지역으로 읽혀요.
+- '사하라 이남 아프리카'는 세계은행, UN, 국내 언론이 이 지역을 부를 때 쓰는 표준 이름이에요. 북아프리카는 지중해에 붙은 방향 이름이라 그냥 '북아프리카'로 불러요. 이름이 서로 다른 모양인 건 원래 쓰는 관례가 그래서예요.
+- 이름이 길다면 서아프리카·중앙아프리카·동아프리카·남부 아프리카 네 단추로 나누는 방법도 있어요. 대신 단추가 세 개 늘어나요.
