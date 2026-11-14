@@ -2683,3 +2683,8 @@ D가 가장 독특하지만 '사진은 밝게' 원칙과 부딪히고, 음식이
 - 다시 만든 세계 지도 쪽에 붙여 쓴 '국가원수'가 하나도 남지 않은 것까지 확인했어요.
 [14:06] 사람: 저 여행금지는 나라이름 옆에 써줄것. 크기는 저대로 가줘. 그리고 전지역 여행금지 이케 써주라
 [14:08] AI: Checking how the badge looks beside the name before publishing.
+[14:10] AI: Converted 144 example-style lists to commas. A few kept dots still read as lists, so I'm fixing those by hand.
+[14:11] AI: Now publishing and saving the rule.
+
+=== 대화 Claude Code 세션 9e3f9c4e ===
+[14:11] 사람: 홀트뉴스가 만들어진 기록 이거 영어판 왜케 빈약해
