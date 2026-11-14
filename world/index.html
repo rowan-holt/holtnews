@@ -168,7 +168,7 @@ function select(iso,noZoom){
   ga.selectAll('*').remove();ga2.selectAll('*').remove();gal.selectAll('*').remove();
   panel(c);history.replaceState(null,'','#'+iso.toLowerCase());
   hidePop();gd.selectAll('circle').data(c.dp||[]).join('circle').attr('class','dot').attr('r',3.6)
-   .on('click',function(ev,d){ev.stopPropagation();hideTip();showPop(ev,d[2].map(function(i){return c.w[i]}).filter(Boolean),d[3])});redraw(); // 1114 사용자: 누른 나라의 뉴스 지역에만 점, 누르면 기사 제목
+   .on('click',function(ev,d){ev.stopPropagation();hideTip();showPop(ev,d[2].map(function(g){return [g[0],g[1].map(function(i){return c.w[i]}).filter(Boolean)]}))});redraw(); // 1114 사용자: 누른 나라의 뉴스 지역에만 점, 누르면 기사 제목
   // 1114 사용자: 휴대폰에서 지도를 누를 때 설명 칸으로 화면을 내리지 않음 — 지도에서 노는 동안은 지도에 그대로
   if(!noZoom){if(GLOBE)fitGlobe(f,c.a?.9:.6);else local([mainParts(f)],c.a?.9:.6)}
   if(c.a)loadAdm(c,f);
@@ -186,9 +186,9 @@ function clearSel(){ // 색만 지우고 화면(확대·위치)은 그대로
   side.innerHTML=home;bindHome();history.replaceState(null,'',location.pathname+location.search)}
 var minorR=false;function loadMinorRivers(){if(minorR)return;minorR=true;getJSON(CFG.data+'rivers_minor.json').then(function(fc){gR.selectAll('path').data(gR.selectAll('path').data().concat(fc.features)).join('path');redraw()})}
 var pop=null;function hidePop(){if(pop)pop.style.display='none'}
-function showPop(ev,ws,place){ // 점을 누르면 그 자리 기사 제목 카드(제목을 누르면 기사로)
+function showPop(ev,groups){ // 점을 누르면 그 자리 기사 제목 카드(제목을 누르면 기사로)
   if(!pop){pop=document.createElement('div');pop.className='wpop';svg.node().parentNode.appendChild(pop)}
-  pop.innerHTML=(place?'<div class="wph">'+E(place)+'</div>':'')+ws.map(function(x){return '<a href="'+E(x[1])+'"><b>'+E(x[0])+'</b><span>'+E(x[2])+(x[3]?' · '+E(x[3]):'')+'</span></a>'}).join('');
+  pop.innerHTML=groups.map(function(gr){return '<div class="wph">'+E(gr[0])+'</div>'+gr[1].map(function(x){return '<a href="'+E(x[1])+'"><b>'+E(x[0])+'</b><span>'+E(x[2])+(x[3]?' · '+E(x[3]):'')+'</span></a>'}).join('')}).join('');
   var r=svg.node().parentNode.getBoundingClientRect();pop.style.display='block';pop.scrollTop=0;
   pop.style.left=Math.max(8,Math.min(ev.clientX-r.left-pop.offsetWidth/2,r.width-pop.offsetWidth-8))+'px';
   var y=ev.clientY-r.top,h=pop.offsetHeight,top=y-h-12;if(top<8)top=y+14;top=Math.max(8,Math.min(top,r.height-h-8)); // 지도 칸 안에서만
