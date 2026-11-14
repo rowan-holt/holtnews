@@ -631,7 +631,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .ad.psa:has(.psa-vlime:not([hidden]),.psa-vsun:not([hidden]))>.ad-l,.ad-top.psa:has(.psa-vlime:not([hidden]),.psa-vsun:not([hidden])) .ad-l{color:rgba(0,0,0,.7)!important;background:rgba(255,255,255,.45)!important}
 .ad.house .ad-l,.ad-wide.house .ad-l{color:var(--gray)!important;background:#ecebe6!important}
 .ad.psa .psa-k,.ad-top .psa-k{padding-right:0!important}
-.ad-mid.psa>.ad-l,.ad-wide.psa>.ad-l{top:13px!important;right:13px!important}   /* 이 둘은 색 상자가 13px 안쪽에 있음 */
+.ad.psa:not(.ad-top)>.ad-l{top:12px!important;right:12px!important;border-top-right-radius:2px}   /* 1115 사용자: 딱지는 색 상자 오른쪽 위 모서리에 딱 맞게(밖으로 X) — 색 상자는 흰 틀 12px 안쪽, side 자리도 같음 */
 .ad-wide.psa .psa-in{flex-direction:row;flex-wrap:wrap;align-items:center;column-gap:28px;row-gap:6px;padding:26px 30px}
 .ad-wide.psa .psa-k{flex-basis:100%}.ad-wide.psa b{font-size:22px}.ad-wide.psa b br{display:none}
 .ad-wide.psa .ad-p{flex:1;min-width:240px}.ad-wide.psa .psa-n{margin:0 0 0 auto}
@@ -649,6 +649,21 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .fields{max-width:1400px;margin:18px auto 0;padding:0 24px;display:flex;flex-wrap:wrap;gap:8px}
 .fields a{font-size:14px;padding:6px 14px;border:1px solid #d4d4d4;border-radius:999px;white-space:nowrap}
 .fields a:hover{border-color:var(--ink)}.fields a.on{background:var(--ink);border-color:var(--ink);color:#fff}
+/* 1115 사용자: ECONOMICS 시리즈 — 회차 띠(기사 맨 위)와 목차 쪽 */
+.eco-bar{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin:0 0 18px;padding:10px 0;border-top:2px solid var(--ink);border-bottom:1px solid #ddd;font-size:14px}
+.eco-bar a{color:var(--ink);text-decoration:none}.eco-bar a:hover{text-decoration:underline}
+.eco-name{font-family:"Jost",sans-serif;font-weight:600;letter-spacing:.08em}.eco-no{color:var(--ink2)}
+.eco-nav{margin-left:auto;display:flex;gap:14px;color:var(--gray)}.eco-nav a{color:var(--gray)}
+.fpage.eco{max-width:860px;margin:0 auto;padding:0 24px 40px}.fpage.eco h1{max-width:none;padding:0;font-family:"Jost",sans-serif;letter-spacing:.06em}
+.eco-lead{margin:10px 0 0;color:var(--ink2);font-size:16px}
+.eco-part{margin-top:34px}.eco-part h2{font-size:19px;font-weight:700;margin:0 0 6px;padding-bottom:8px;border-bottom:2px solid var(--ink);display:flex;align-items:baseline;gap:10px}
+.eco-part h2 .n{font-family:"Jost",sans-serif;font-weight:400;font-size:14px;color:var(--gray)}
+.eco-part ol{list-style:none;margin:0;padding:0}.eco-part li{border-bottom:1px solid #e5e5e2}
+.eco-part li a,.eco-part li.soon{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;padding:12px 0;color:var(--ink);text-decoration:none}
+.eco-part li.soon{color:var(--gray)}.eco-n{font-family:"Jost",sans-serif;font-size:14px;color:var(--gray);min-width:22px}
+.eco-t{font-weight:700}.eco-part li.soon .eco-t{font-weight:400}.eco-h{flex-basis:100%;padding-left:34px;color:var(--ink2);font-size:15px}
+.eco-part li a:hover .eco-h{text-decoration:underline}
+@media (max-width:640px){.fpage.eco{padding:0 16px 32px}.eco-nav{margin-left:0;flex-basis:100%}}
 .fpage h1{max-width:1400px;margin:34px auto 0;padding:0 24px;font-size:28px;font-weight:800;letter-spacing:-.02em}
 .fpage .nlist{max-width:1400px;margin:26px auto 0;padding:0 24px}
 @media (max-width:640px){.fields{padding:0 16px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.fields::-webkit-scrollbar{display:none}.fpage h1,.fpage .nlist{padding:0 16px}.fpage h1{font-size:22px;margin-top:24px}}
