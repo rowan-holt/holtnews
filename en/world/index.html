@@ -44,7 +44,8 @@ var TOUCH=matchMedia('(hover: none)').matches,CFG=window.WCFG,L=CFG.lang,K=L=='k
 var g=svg.append('g'),
 PJ=(new URLSearchParams(location.search).get('p'))||(function(){try{return localStorage.getItem('holt-map')}catch(e){}})()||CFG.proj||'ee',GLOBE=PJ=='globe',
 proj,path,base,MODE='world',SW=1,feats=[],byIso={},sel=null,admCache={},
-tip=document.getElementById('wtip'),side=document.getElementById('wside'),home=side.innerHTML;
+tip=document.getElementById('wtip'),side=document.getElementById('wside'),home0=side.innerHTML,home=regHtml('all')+home0; // 1115 사용자: 아무것도 안 골랐을 땐 '세계' 설명이 기본
+side.innerHTML=home;
 function worldProj(){var p;
   if(PJ=='ee')p=d3.geoEqualEarth().rotate([-150,0]);
   else if(PJ=='globe')p=d3.geoOrthographic().rotate([-HOME[0],-HOME[1],0]).clipAngle(90); // 한국이 가운데
@@ -217,7 +218,7 @@ function disPanel(d){ // 분쟁 설명 → 관리하는 나라 → 영유권을 
   cl.forEach(function(c){parts.push([d.a?(K?'영유권을 주장하는 나라':'CLAIMED BY'):(K?'영유권을 다투는 나라':'CLAIMANT'),c])});
   return disBlock(d)+parts.map(function(x){return '<p class="wunder">'+x[0]+'</p>'+countryHtml(x[1],false)}).join('')+'<p class="wsrc">'+CFG.src+'</p>'}
 function regHtml(id){var t=CFG.rd&&CFG.rd[id];return t?'<div class="wregd"><h2>'+E(t[0])+'</h2><p class="wrel">'+E(t[1])+'</p></div>':''} // 1115 사용자: 지역 단추도 나라처럼 밑에 설명
-function regionPanel(r){side.innerHTML=regHtml(r[0])+home;bindHome();redraw()} // 1114 사용자: 지도 아래 나라 목록 X — 이름은 지도 위에
+function regionPanel(r){side.innerHTML=regHtml(r[0])+home0;bindHome();redraw()} // 1114 사용자: 지도 아래 나라 목록 X — 이름은 지도 위에
 function select(iso,noZoom){
   var f=byIso[iso];if(!f)return;var c=D[f.id];sel={iso:iso,f:f};
   regPaint(null);
@@ -289,8 +290,8 @@ function region(id){var r=CFG.regions.find(function(x){return x[0]==id});if(r&&w
   document.querySelectorAll('.wreg button').forEach(function(b){b.classList.toggle('on',b.dataset.r==id)});
   gd.selectAll('*').remove();hidePop();gl.selectAll('path').classed('ban',false);gi.selectAll('path').classed('sel',false); /* 1114 사용자: 나라를 고르지 않은 상태엔 점 X */
   var rfs=r&&r[1].length?r[1].map(function(i){return byIso[i]}).filter(Boolean).map(function(f){var b=bigPart(f);return{type:'Feature',geometry:b.type=='Feature'?b.geometry:b}}):[]; /* 1114 사용자: 지역 단추는 붙어 있는 본토만 */
-  if(GLOBE){if(!rfs.length){globeHome();sel=null;gl.selectAll('path').classed('sel',false);ga.selectAll('*').remove();side.innerHTML=regHtml('all')+home;bindHome();return}sel=null;gl.selectAll('path').classed('sel',false);ga.selectAll('*').remove();fitGlobe({type:'FeatureCollection',features:rfs},r[4]||.92);regionPanel(r);return}
-  if(!r||!r[1].length){toWorld();sel=null;gl.selectAll('path').classed('sel',false);side.innerHTML=regHtml('all')+home;bindHome();return}
+  if(GLOBE){if(!rfs.length){globeHome();sel=null;gl.selectAll('path').classed('sel',false);ga.selectAll('*').remove();side.innerHTML=home;bindHome();return}sel=null;gl.selectAll('path').classed('sel',false);ga.selectAll('*').remove();fitGlobe({type:'FeatureCollection',features:rfs},r[4]||.92);regionPanel(r);return}
+  if(!r||!r[1].length){toWorld();sel=null;gl.selectAll('path').classed('sel',false);side.innerHTML=home;bindHome();return}
   sel=null;gl.selectAll('path').classed('sel',false);ga.selectAll('*').remove();regionPanel(r);
   local(rfs,r[4]||.92)}
 Promise.all([fetch(CFG.world).then(function(r){return r.json()}),fetch(CFG.data+'countries-'+L+'.json').then(function(r){return r.json()}),fetch(CFG.data+'disputed-'+L+'.json').then(function(r){return r.json()})]).then(function(a){
