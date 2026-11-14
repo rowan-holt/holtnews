@@ -711,7 +711,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wq li i{flex:none;font-style:normal;font-size:11.5px;color:var(--gray);border:1px solid #dcd9d1;border-radius:9px;padding:0 7px;line-height:17px}
 .wq li i.d{border:0;background:repeating-linear-gradient(45deg,#6f6b62 0 1.3px,#e9e7e1 1.3px 4px);color:var(--ink);font-weight:600}
 .wq .wqe{padding:10px 12px;font-size:14px;color:var(--gray);cursor:default}.wq .wqe:hover{background:none}
-.wgrid{display:block;border-bottom:1px solid var(--line)}   /* 1114 사용자: 넓은 화면에선 지도를 꽉 차게, 나라 정보는 그 아래 */
+.wgrid{display:block}   /* 1114 사용자: 넓은 화면에선 지도를 꽉 차게, 나라 정보는 그 아래 */
 .wmap{position:relative;background:#fff;touch-action:none;overflow:hidden;width:100vw;margin-left:calc(50% - 50vw);border-bottom:1px solid #ddd}
 .wmap #wsvg{display:block;width:100%;height:min(78vh,900px);cursor:grab}.wmap #wsvg:active{cursor:grabbing}
 .wmap .land{fill:#e9e7e1;stroke:#fff;stroke-width:.6px;vector-effect:non-scaling-stroke;paint-order:stroke}   /* 경계선을 땅 밑에 — 작은 섬이 흰 선에 지워지지 않게 */
@@ -777,6 +777,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wlist{columns:2;column-gap:16px;margin:0;padding:0;list-style:none}.wlist.w3{columns:3}.wlist li{break-inside:avoid;padding:3px 0}
 .wlist a:hover{text-decoration:underline;text-underline-offset:3px}
 .wsrc{font-size:12.5px;color:var(--gray);margin-top:14px;line-height:1.6;white-space:pre-line}
+.wside .wsrc{margin-top:76px}   /* 1114 사용자: 지도 칸 출처는 밑줄 없이, 원래 선 있던 자리까지 내려 */
 .wnote{font-size:13px;color:var(--gray)}
 @media (max-width:900px){.wmap{width:auto;margin-left:0}.wmap #wsvg{height:min(58vh,400px)}.wkey{font-size:11.5px;padding:2px 6px}.wside{padding:18px 20px 22px}
 .wq{margin-left:0;width:100%}.wpage{padding:16px 16px 32px}}
