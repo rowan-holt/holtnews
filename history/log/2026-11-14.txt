@@ -2402,3 +2402,7 @@ D가 가장 독특하지만 '사진은 밝게' 원칙과 부딪히고, 음식이
 상세 쪽의 긴 '주변국과의 관계' 글은 계속 쓰고 있어요. 동아시아·동남아·남아시아·중앙아시아·코카서스 33곳 초안을 끝냈어요. 사이트에는 아직 안 나가고, 나머지 지역까지 쓴 뒤 사실 확인을 마치면 공개할게요.
 [13:00] 사람: 1번 이미지? 저 출처가 저 지도에서 보기랑 너무 붙어있다. 출처 같은 경우는 좀 띄워줘? 위에 있는 거랑 띄워서 써줘. 위에 있는 거랑. 그리고 두 번째 이미지, 일부 지역 특별여행주의보고 여행유의가 특별여행주의보 제외한 전 지역이면은 사실상 중국 전체가 지금 여행경보인 거잖아. 저렇게 쓰면 마치 중국 전체는 여행경보가 아닌데 어떤 지역은 특별여행주의보고 어떤 지역은 여행유의국가의 지역이에요 라는 느낌 같잖아. 그걸 좀 명확하게 드러나도록 쓸 수 있는 방법을 고민해봐.
 [13:01] AI: Refactoring the alert summary so the map panel and country page share one wording.
+[13:03] AI: Working on three fixes: the map buttons now fit to each country's mainland only, the source line gets more space, and I'm checking why the UK disappears when you select it.
+[13:05] AI: Testing the map locally on a phone-size screen; checking why it renders blank.
+[13:06] AI: Making the white region borders scale with zoom: lines disappear when regions are tiny on screen and stay thin when zoomed in.
+[13:07] AI: Checking that the UK stays visible when selected from the zoomed-out Europe view.

@@ -13,7 +13,7 @@
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="세계 지도 | HOLT NEWS"><meta name="twitter:description" content="지역별 최근 뉴스와 정치 체제, 경제, 언어, 한국과의 교역을 지도에서 한눈에 봐요.">
 <meta name="theme-color" content="#faf8f2">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="../style.css?v=4ae9c052">
+<link rel="stylesheet" href="../style.css?v=0f7ea5a5">
 <meta name="naver-site-verification" content="3d1f6ec1c5d4af4133151f55b84ee92e9b30f7d4"><link rel="icon" href="../favicon.ico" sizes="48x48"><link rel="icon" href="../favicon-96.png" sizes="96x96" type="image/png"><link rel="icon" href="../favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../apple-touch-icon.png"><link rel="manifest" href="../manifest.webmanifest"><link rel="alternate" type="application/rss+xml" title="HOLT NEWS" href="https://holtnews.com/rss.xml"><script>try{var q=location.search,D=';domain=.holtnews.com;path=/;max-age=';if(/[?&]me=1(&|$)/.test(q)){document.cookie='holt-me=1'+D+315360000;localStorage.setItem('holt-me','1');alert('이 기기는 이제 방문 통계에서 빠져요. (holtnews.com·english 둘 다)')}if(/[?&]me=0(&|$)/.test(q)){document.cookie='holt-me=0'+D+0;localStorage.removeItem('holt-me');alert('이 기기를 다시 방문 통계에 넣어요.')}if(!/(^|\.)holtnews\.com$/.test(location.hostname)||navigator.webdriver||/HeadlessChrome|Electron|Playwright/.test(navigator.userAgent)||localStorage.getItem('holt-me')||/(^|; )holt-me=1/.test(document.cookie))window['ga-disable-G-ML7J7T9X32']=true}catch(e){}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-ML7J7T9X32"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-ML7J7T9X32');</script>
 </head><body class="ko"><a class="skip" href="#main">본문 바로가기</a><script>(function(){try{if(window.top===window)return;var ao=location.ancestorOrigins;if(ao&&ao.length&&ao[0]!=='https://english.holtnews.com')return}catch(e){return}var R=/^https:\/\/(english\.|issue\.)?holtnews\.com$/;document.documentElement.classList.add('in-app');document.addEventListener('click',function(ev){var a=ev.target&&ev.target.closest?ev.target.closest('a[href]'):null;if(!a||ev.defaultPrevented)return;var u;try{u=new URL(a.href,location.href)}catch(e){return}if(!R.test(u.origin))return;if(u.origin===location.origin){if(a.target==='_blank')a.removeAttribute('target');return}ev.preventDefault();parent.postMessage({holt:'go',url:u.href},'https://english.holtnews.com')},true);var y0=null,pl=0,ind=null;function mk(){if(ind)return ind;ind=document.createElement('div');ind.setAttribute('aria-hidden','true');ind.style.cssText='position:fixed;left:50%;top:0;z-index:99;width:38px;height:38px;margin-left:-19px;border-radius:50%;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.18);display:grid;place-items:center;transform:translateY(-48px);opacity:0;pointer-events:none';ind.innerHTML='<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"><path d="M20 12a8 8 0 1 1-2.34-5.66"/><path d="M20 4v5h-5"/></svg>';document.body.appendChild(ind);return ind}function set(d,t){var i=mk();i.style.transition=t?'transform .2s,opacity .2s':'none';i.style.transform='translateY('+(d-48)+'px) rotate('+d*4+'deg)';i.style.opacity=Math.min(1,d/40)}document.addEventListener('touchstart',function(e){y0=null;if(window.scrollY>0||e.touches.length>1)return;if(e.target.closest&&e.target.closest('.wmap,input,textarea,select,[data-nopull]'))return;y0=e.touches[0].clientY;pl=0},{passive:true});document.addEventListener('touchmove',function(e){if(y0==null)return;var d=e.touches[0].clientY-y0;if(d<=0||window.scrollY>0){pl=0;set(0,1);return}pl=Math.min(d*.5,96);set(pl)},{passive:true});document.addEventListener('touchend',function(){if(y0==null)return;y0=null;if(pl>=64){set(72,1);ind.querySelector('svg').style.animation='hpr .7s linear infinite';location.reload()}else set(0,1)});var st=document.createElement('style');st.textContent='@keyframes hpr{to{transform:rotate(360deg)}}html.in-app{overscroll-behavior-y:contain}';document.head.appendChild(st)})();</script><div id="pg">
 <header class="top">
@@ -84,7 +84,7 @@ function vis(){var r=svg.node().getBoundingClientRect(),s=Math.max(r.width/W,r.h
 function redraw(){
   sph.classed('globe',GLOBE).attr('d',MODE=='world'||GLOBE?path({type:'Sphere'}):null);
   grat.attr('d',GLOBE?path:null);
-  gl.selectAll('path').attr('d',path);gi.selectAll('path').attr('d',path);ga.selectAll('path').attr('d',path);ga2.selectAll('path').attr('d',path);gal.selectAll('path').attr('d',path);gx.selectAll('path').attr('d',path);
+  admW();gl.selectAll('path').attr('d',path);gi.selectAll('path').attr('d',path);ga.selectAll('path').attr('d',path);ga2.selectAll('path').attr('d',path);gal.selectAll('path').attr('d',path);gx.selectAll('path').attr('d',path);
   svg.selectAll('clipPath path').attr('d',function(){return sel?path(sel.f):null});
   var r=proj.rotate();
   gd.selectAll('circle').attr('transform',function(pt){if(GLOBE&&d3.geoDistance(pt,[-r[0],-r[1]])>1.5)return 'translate(-99,-99)';var q=proj(pt);return q?'translate('+q+')':'translate(-99,-99)'});
@@ -117,7 +117,8 @@ function hideTip(){tip.style.display='none'}
 function bigPart(f){if(f.geometry.type!='MultiPolygon')return f;var best=null,ba=-1;f.geometry.coordinates.forEach(function(c){var q={type:'Polygon',coordinates:c},a=d3.geoArea(q);if(a>ba){ba=a;best=q}});return best}
 function mainParts(f){ // 본토 + 큰 섬(해외 작은 섬 때문에 화면이 너무 넓어지지 않게)
   if(f.geometry.type!='MultiPolygon')return f;var ps=f.geometry.coordinates.map(function(c){return{c:c,a:d3.geoArea({type:'Polygon',coordinates:c})}});
-  var m=d3.max(ps,function(x){return x.a});return{type:'Feature',geometry:{type:'MultiPolygon',coordinates:ps.filter(function(x){return x.a>m*.04}).map(function(x){return x.c})}}}
+  var m=d3.max(ps,function(x){return x.a}),mc=d3.geoCentroid({type:'Polygon',coordinates:ps.find(function(x){return x.a==m}).c}); /* 1114 사용자: 본토만, 멀리 떨어진 해외 영토 X */
+  return{type:'Feature',geometry:{type:'MultiPolygon',coordinates:ps.filter(function(x){return x.a>m*.04&&d3.geoDistance(d3.geoCentroid({type:'Polygon',coordinates:x.c}),mc)<.5}).map(function(x){return x.c})}}}
 function local(fs,pad){fitFlat(fs,pad)}
 function toWorld(){if(GLOBE){globeHome();return}animTo(150,0,kMin())} // '전체'는 휴대폰에서도 세계 전체
 function globeHome(){ // 1114 사용자: 지구본 '전체'·⟲는 확대 없이 지구 전체, 한국이 가운데
@@ -205,10 +206,12 @@ function swapDetail(){var want=ppd()>=30;
     topojson.feature(t,t.objects.countries).features.forEach(function(f){var k=(f.id||'')+'|'+f.properties.name;(by[k]=by[k]||[]).push(okWind(f.geometry))});
     feats.forEach(function(f){f.g50=f.g50||f.geometry;var gs=by[(f.id0||'')+'|'+f.properties.name];if(gs&&gs.length)f.g10=gs.length==1?gs[0]:{type:'GeometryCollection',geometries:gs}});hiState=2;redraw()})}
   if(hiState==2)feats.forEach(function(f){var g=want&&f.g10?f.g10:(f.g50||f.geometry);if(f.geometry!==g)f.geometry=g})}
+var admSide=1;function admW(){var px=(admSide||1)*ppd(),w=px<7?0:Math.min(.6,.12+px/120);ga.style('stroke-width',w+'px');ga.style('stroke-opacity',px<7?0:.85)} /* 1114 사용자: 흰 경계선은 확대 정도에 따라 얇게, 멀리선 없음 */
 function getJSON(u){if(!admCache[u])admCache[u]=fetch(u).then(function(r){return r.json()});return admCache[u]}
 function loadAdm(c,f){getJSON(CFG.data+c.a+'.json').then(function(fc){
   if(!sel||sel.f!==f)return;gl.selectAll('path').classed('hasadm',function(d){return d===f});
   ga.attr('clip-path',null);svg.selectAll('clipPath').remove();
+  var ar=0;fc.features.forEach(function(d){ar+=Math.min(d3.geoArea(d),.5)});admSide=Math.sqrt(ar/Math.max(1,fc.features.length))*180/Math.PI;admW(); /* 1114 사용자: 구역 평균 크기 — 화면에서 작으면 선을 지움 */
   ga.selectAll('path').data(fc.features).join('path').attr('d',path)
    .on('mousemove',function(ev,d){showTip(ev,K?d.properties.ko:(d.properties.en||d.properties.ko))}).on('mouseleave',hideTip)
    .on('click',function(ev,d){ev.stopPropagation();showTip(ev,K?d.properties.ko:(d.properties.en||d.properties.ko));var on=!d3.select(this).classed('rsel');ga.selectAll('path').classed('rsel',false);d3.select(this).classed('rsel',on);
@@ -227,7 +230,7 @@ function region(id){var r=CFG.regions.find(function(x){return x[0]==id});
   if(GLOBE){if(!r||!r[1].length){globeHome();return}var gf=byIso[r[1][0]];if(gf)fitGlobe(gf,.25);regionPanel(r);return}
   if(!r||!r[1].length){toWorld();sel=null;gl.selectAll('path').classed('sel',false);side.innerHTML=home;bindHome();return}
   sel=null;gl.selectAll('path').classed('sel',false);ga.selectAll('*').remove();regionPanel(r);
-  local(r[1].map(function(i){return byIso[i]}).filter(Boolean).map(mainParts),.92)}
+  local(r[1].map(function(i){return byIso[i]}).filter(Boolean).map(function(f){return{type:'Feature',geometry:bigPart(f)}}),.92) /* 1114 사용자: 지역 단추는 붙어 있는 본토만 */}
 Promise.all([fetch(CFG.world).then(function(r){return r.json()}),fetch(CFG.data+'countries-'+L+'.json').then(function(r){return r.json()}),fetch(CFG.data+'disputed-'+L+'.json').then(function(r){return r.json()})]).then(function(a){
   var topo=a[0];D=a[1];
   // 분쟁 지역 빗금(외교부 입장 없는 곳)은 나라를 다 읽은 뒤 아래에서 그림

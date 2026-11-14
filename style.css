@@ -705,7 +705,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wrel{margin:0 0 6px}
 .wside .wban{display:inline-block;margin:2px 0 10px;padding:2px 8px;background:#111;color:#fff;font-size:13px;font-weight:600}   /* 1114 사용자: 선택은 색만, 굵은 테두리 X */
 .wmap .land.sel.hasadm{fill:#b9b5ab;stroke:none}   /* 행정구역 밑에 같은 색을 깔아 경계 자료가 어긋나도 틈이 안 보이게 */
-.wmap .adm path{fill:#b9b5ab;stroke:#fff;stroke-width:.8px;vector-effect:non-scaling-stroke}
+.wmap .adm path{fill:#b9b5ab;stroke:#fff;stroke-width:inherit;stroke-opacity:inherit;vector-effect:non-scaling-stroke}
 .wmap .adm path:hover{fill:#aaa69c}
 .wmap .adm path.rsel,.wmap .adm2 path.rsel{fill:#6f6b62!important}   /* 누른 행정구역 */
 .wmap .adm2 path{fill:transparent;stroke:#fff;stroke-width:.5px;vector-effect:non-scaling-stroke;pointer-events:none}
@@ -761,7 +761,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wc .dek{font-size:19px;color:var(--ink2);margin:0 0 18px}
 .wloc{border-top:1px solid var(--line);border-bottom:1px solid #ddd;padding:12px 0;margin:0 0 6px}
 .wloc{position:relative}.wloc svg{display:block;width:100%;height:auto}
-.wlocnote{position:absolute;left:8px;bottom:6px;margin:0;font-size:12.5px;line-height:1.4;color:var(--ink2);background:rgba(255,255,255,.88);padding:2px 7px;max-width:calc(100% - 16px)}
+.wlocnote{margin:10px 0 0;font-size:13px;line-height:1.5;color:var(--ink2)}   /* 1114 사용자: 해외 영토 문장은 지도 아래 */
 .wc h2{font-size:21px;margin:34px 0 10px;padding-top:12px;border-top:1px solid var(--line)}
 .wc .wdl{font-size:16px;gap:6px 18px}
 .wc p{margin:0 0 12px}
