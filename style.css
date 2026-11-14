@@ -821,6 +821,24 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wlocnote{margin:10px 0 0;font-size:13px;line-height:1.5;color:var(--ink2)}   /* 1114 사용자: 해외 영토 문장은 지도 아래 */
 .wc h2{font-size:21px;margin:34px 0 10px;padding-top:12px;border-top:1px solid var(--line)}
 .wc .wdl{font-size:16px;gap:6px 18px}
+.cpw{position:relative;margin:14px 0 4px}.cpw [hidden]{display:none!important}
+.cpb{display:inline-flex;align-items:center;gap:7px;font:inherit;font-size:14px;padding:7px 14px;border:1px solid var(--ink);border-radius:20px;background:#fff;color:var(--ink);cursor:pointer}
+.cpb:hover{background:var(--ink);color:#fff}
+.cpq{position:relative;max-width:340px}
+.cpq input{width:100%;box-sizing:border-box;font:inherit;font-size:15px;padding:9px 14px;border:1px solid var(--ink);border-radius:20px;background:#fff;outline:none}
+.cpq ul{position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:40;list-style:none;margin:0;padding:6px 0;background:#fff;border:1px solid #ddd;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.1)}
+.cpq li{padding:8px 16px;font-size:15px;cursor:pointer}.cpq li[aria-selected=true],.cpq li[data-k]:hover{background:#f3f2ee}.cpq li.cpnone{color:var(--gray);cursor:default}
+.cpbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font-size:14px;color:var(--ink2);padding:10px 14px;background:#f6f5f1;border-radius:10px}
+.cpbar span{flex:1 1 260px}.cpbar button{font:inherit;font-size:13px;padding:5px 12px;border:1px solid #cfccc4;border-radius:16px;background:#fff;cursor:pointer}.cpbar button:hover{border-color:var(--ink)}
+.wc.cmp .wdl.cpt{grid-template-columns:minmax(96px,max-content) minmax(0,1fr) minmax(0,1fr);gap:0;margin:6px 0 4px;border-top:1px solid var(--ink)}
+.wc.cmp .wdl.cpt>dt,.wc.cmp .wdl.cpt>dd{padding:10px 14px 10px 0;border-bottom:1px solid #ebe9e3;min-width:0;overflow-wrap:anywhere}
+.wc.cmp .wdl.cpt>dt{white-space:normal;font-size:14px}
+.wc.cmp .wdl.cpt>.cpv{background:#f8f7f3;padding-left:14px}
+.wc.cmp .wdl.cpt>.cph{font-size:13px;font-weight:700;color:var(--ink);padding-top:8px;padding-bottom:8px;border-bottom:1px solid #d9d6ce}
+.cpd{display:block;font-size:12.5px;margin-top:3px;color:var(--gray);font-variant-numeric:tabular-nums}.cpd.up{color:#2d5b8a}.cpd.dn{color:#a2452f}
+.cpna{color:#c9c6be}
+@media (max-width:640px){.wc.cmp .wdl.cpt{grid-template-columns:1fr 1fr}.wc.cmp .wdl.cpt>dt{grid-column:1/-1;border-bottom:0;padding:10px 0 2px;font-size:13px}
+.wc.cmp .wdl.cpt>dt.cph{display:none}.wc.cmp .wdl.cpt>dd{padding:2px 10px 10px 0}.wc.cmp .wdl.cpt>.cpv{padding-left:10px}.wc.cmp .wdl.cpt>dd.cph{padding:8px 10px 8px 0}.wc.cmp .wdl.cpt>dd.cph.cpv{padding-left:10px}}
 .wc p{margin:0 0 12px}
 .wc .wmore{display:block;width:max-content;margin-top:30px}
 .wmore+.wsrc{margin-top:40px}   /* 1114 사용자: 출처는 링크와 띄움 */
