@@ -2466,3 +2466,28 @@ D가 가장 독특하지만 '사진은 밝게' 원칙과 부딪히고, 음식이
 
 지구본에서 북극을 정면에 두고 위로 스크롤하는데 안넘어가. 러시아쪽을 붙잡고 내리면 러시아쪽으로 넘어가야할꺼아냐. 근데 그냥 북극이 여전히 정면이고 옆으로만 움직임. 구글어스처럼 부드럽게 모든 방향 넘어가게 해줘
 [13:19] AI: Region labels are split now; testing the new globe drag across the North Pole in the browser.
+[13:20] AI: 두 가지 다 고쳐서 사이트에 올렸어요.
+
+**지역 칸**: '유럽·중앙아시아' 묶음을 나라마다 나눴어요. 영국은 이제 '유럽'으로 나와요.
+
+| 나라 | 지역 칸 |
+|---|---|
+| 카자흐스탄·우즈베키스탄·투르크메니스탄·타지키스탄·키르기스스탄 | 중앙아시아 |
+| 조지아·아르메니아·아제르바이잔 | 코카서스 |
+| 튀르키예 | 중동 (지도 지역 단추 분류와 같게) |
+| 러시아 | 유럽·아시아 |
+| 나머지 | 유럽 |
+
+**지구본 끌기**: 이제 구글 어스처럼 잡은 곳이 손가락을 그대로 따라와요. 북극을 정면에 두고 러시아 쪽을 잡아 내리면 극을 넘어 러시아 쪽으로 넘어가고, 막히는 방향은 없어요. 지구본 바깥을 잡고 끌어도 가장자리 기준으로 부드럽게 돌아가요.
+- 브라우저에서 아래로 계속 끌어 북극을 넘어 반대편까지 가는 것을 확인했어요.
+- 극을 넘어가면 지구본이 위아래가 뒤집힌 채로 보여요. 구글 어스와 같은 방식이고, '전체'나 ⟲를 누르면 북쪽이 위인 한국 중심 화면으로 돌아와요.
+[13:23] 사람: 그 자리에서 방향만 똑바로 잡게 저 나침판두고 나침판 더블클릭하면 북쪽이 위로하고 방향 슬라이더 두자ㅏ. 기울이기는 안될거고 안해도됨
+
+=== 대화 Claude Code 세션 79a16431 ===
+[13:24] 예약 작업: [예약 작업 holt-gsc-index-v2 실행 — 정해 둔 지시문으로 자동 시작]
+[13:24] AI: 이번에는 색인 요청을 하지 않았어요. `gsc_queue.py next`가 "오늘 한도 도달"을 알려 와서 브라우저는 열지 않았습니다. 그래서 새로 요청한 글, 이미 등록돼 있던 글, 오류 모두 0건이고 바뀐 기록이 없어 커밋도 하지 않았습니다. 내일 예약 실행 때 이어서 합니다.
+
+=== 대화 Claude Code 세션 0155d439 ===
+[13:24] AI: Adding the compass; now finding how the site's weather gets the visitor's location so the map can reuse it.
+[13:25] AI: Adding the compass and centering on the visitor's country are done in code. Now adding Google Maps-style smooth dragging: one redraw per frame, plus a glide after you let go.
+[13:27] AI: Compass and slider work. Quick flat-map drag check, then publishing.
