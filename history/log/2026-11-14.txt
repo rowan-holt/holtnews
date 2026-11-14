@@ -2817,3 +2817,5 @@ D가 가장 독특하지만 '사진은 밝게' 원칙과 부딪히고, 음식이
 [14:55] AI: Swapping the inline click handler for a delegated listener (keeps the site's script-safety check happy), then rebuilding.
 [14:56] AI: My two waiting loops were matching each other's command lines, so they deadlocked. Stopping them and rebuilding directly.
 [14:57] AI: Checking the hover underline on the Japan label.
+[14:59] AI: Adding capital dots for unlabeled small countries: hovering shows the name, clicking opens the country page.
+[15:00] AI: The name appears on hover. Publishing.
