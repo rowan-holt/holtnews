@@ -2160,3 +2160,33 @@ D가 가장 독특하지만 '사진은 밝게' 원칙과 부딪히고, 음식이
 
 === 대화 Claude Code 세션 5637ae27 ===
 [12:16] AI: This is the backup wake-up I scheduled earlier. The desk fixes were already applied, so I'll just check whether the push is still blocked.
+
+=== 대화 Claude Code 세션 e8ec129d ===
+[12:16] 사람: 아웃룩 기사 아웃룩이라하면 사람들 모르거든 제목 바꿔줘. 그리고 표지그림을 마이크로소프트 365 로고있지 그걸로 해줘, 그리고 지금 있는 저 보상구간 그림은 적절한 위치로 이동
+
+=== 대화 Claude Code 세션 5637ae27 ===
+[12:16] AI: The article is live and the address returns 200. Committing the updated publish report.
+[12:16] AI: The 12:00 article is now live on holtnews.com.
+
+- **Article:** "아웃룩 24시간 먹통, 보상은 얼마?" (Outlook down for 24 hours: how much compensation?) at https://holtnews.com/news/ms365_outage_credits.html
+- **Push:** This time `site_guard` didn't block it. The publish report records 12:03 as the publish time, and the address returns 200.
+- **Approval box:** The question I left you about registering the world map script is no longer needed. I don't know whether the map script was approved separately in the meantime.
+- **Telegram:** The note I sent earlier saying the publish was on hold is now out of date. I didn't send a correction.
+- **Git:** The publish report with the address and time is committed and pushed (`0ebcba6`).
+
+=== 대화 Claude Code 세션 e8ec129d ===
+[12:16] AI: Building blocks found. Now checking how news articles put figures in the body and use logos.
+[12:17] AI: Found the Microsoft 365 logo on Wikimedia Commons. Checking whether a version with the "Microsoft 365" text exists.
+[12:18] AI: Got it — the graph's two kinds of percentage (share of staff vs. credit) need to be told apart. Title edit and cover logo done; now fixing the figure labels.
+
+=== 대화 Claude Code 세션 0155d439 ===
+[12:18] 사람: 한반도 북쪽하니까 한반도 벗어난 북쪽같애 표현 바꿔줘
+
+=== 대화 Claude Code 세션 e8ec129d ===
+[12:18] AI: Edits done. Checking the site build and deploy steps.
+
+=== 대화 Claude Code 세션 0155d439 ===
+[12:18] AI: 다른 세션의 사이트 빌드와 또 겹쳤습니다. 끝나기를 기다렸다가 다시 올립니다.
+
+=== 대화 Claude Code 세션 e8ec129d ===
+[12:19] AI: Placement checks out: the logo is the cover, and the credit-tier figure sits right under the "24시간이면 50%일까" heading. Publishing now.
