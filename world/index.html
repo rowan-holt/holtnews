@@ -95,7 +95,9 @@ function redraw(){
   cmpDraw();
   sph.classed('globe',GLOBE).attr('d',MODE=='world'||GLOBE?path({type:'Sphere'}):null);
   grat.attr('d',GLOBE?path:null);
-  admW();gl.selectAll('path').attr('d',path);gi.selectAll('path').attr('d',path);ga.selectAll('path').attr('d',path);ga2.selectAll('path').attr('d',path);gal.selectAll('path').attr('d',path);gx.selectAll('path').attr('d',path);
+  var pdm=ppd(),lowG=MOV?(pdm<8?'g110':pdm>=30?'g50':null):null; /* 1114 사용자: 움직이는 동안은 가벼운 지도로 그리고 멈추면 정밀하게(구글 지도처럼) */
+  ga.style('display',MOV?'none':null);ga2.style('display',MOV?'none':null);gal.style('display',MOV?'none':null);
+  admW();gl.selectAll('path').attr('d',function(f){var lg=lowG&&f[lowG];return path(lg?{type:'Feature',geometry:lg}:f)});gi.selectAll('path').attr('d',path);if(!MOV){ga.selectAll('path').attr('d',path);ga2.selectAll('path').attr('d',path);gal.selectAll('path').attr('d',path)}gx.selectAll('path').attr('d',path);
   svg.selectAll('clipPath path').attr('d',function(){return sel?path(sel.f):null});
   var r=proj.rotate();
   gd.selectAll('circle').attr('transform',function(pt){if(GLOBE&&d3.geoDistance(pt,[-r[0],-r[1]])>1.5)return 'translate(-99,-99)';var q=proj(pt);return q?'translate('+q+')':'translate(-99,-99)'});
@@ -112,7 +114,7 @@ function redraw(){
   gpl.selectAll('text,circle').attr('transform',function(pt){if(GLOBE&&d3.geoDistance(pt,[-r[0],-r[1]])>1.5)return 'translate(-999,-999)';var q=proj(pt);return q?'translate('+q+')':'translate(-999,-999)'});
   swapDetail();
   var pd=ppd(),rmax=pd<4?3:pd<12?5:pd<40?7:9; // 확대할수록 작은 강까지
-  var light=TOUCH&&MOV;gR.style('display',light?'none':null);gLk.style('display',light?'none':null); // 1114 사용자: 휴대폰은 끄는 동안 강·호수를 잠깐 숨겨 가볍게, 멈추면 다시
+  var light=MOV;gR.style('display',light?'none':null);gLk.style('display',light?'none':null); // 1114 사용자: 휴대폰은 끄는 동안 강·호수를 잠깐 숨겨 가볍게, 멈추면 다시
   if(!light){gR.selectAll('path').attr('d',function(d){return d.properties.r<=rmax?path(d):null}).attr('class',function(d){return 'r'+Math.min(d.properties.r,7)});
   gLk.selectAll('path').attr('d',function(d){return d.properties.r<=rmax+1?path(d):null})}
   if(sel&&sel.iso=='KOR'&&pd>=K2)loadAdm2();else{ga2.selectAll('*').remove();gal.selectAll('*').remove()}}
@@ -139,7 +141,7 @@ function vdelta(v0,v1){var w=[v0[1]*v1[2]-v0[2]*v1[1],v0[2]*v1[0]-v0[0]*v1[2],v0
   var t=Math.acos(Math.max(-1,Math.min(1,v0[0]*v1[0]+v0[1]*v1[1]+v0[2]*v1[2])))/2,s=Math.sin(t);return[Math.cos(t),w[2]/l*s,-w[1]/l*s,w[0]/l*s]}
 function gPt(ev){var se=ev.sourceEvent,q=se?d3.pointer(se.touches&&se.touches.length?se.touches[0]:(se.changedTouches&&se.changedTouches.length?se.changedTouches[0]:se),svg.node()):[ev.x,ev.y],t=proj.translate(),R=proj.scale(),dx=q[0]-t[0],dy=q[1]-t[1],d=Math.sqrt(dx*dx+dy*dy),m=R*.98;if(d>m){dx*=m/d;dy*=m/d}return[t[0]+dx,t[1]+dy]} /* 지구본 밖을 잡아도 가장자리 기준으로 */
 /* 1114 사용자: 지도 이동은 구글 지도·카카오맵처럼 부드럽게 — 그리기는 화면 한 프레임에 한 번, 손을 놓으면 미끄러지듯 멈춤(관성) */
-var MOV=false,movT=0;function mov(){if(!TOUCH)return;MOV=true;clearTimeout(movT);movT=setTimeout(function(){MOV=false;redraw()},180)}
+var MOV=false,movT=0;function mov(){MOV=true;clearTimeout(movT);movT=setTimeout(function(){MOV=false;redraw()},180)}
 var rafP=0;function frame(){mov();if(!rafP)rafP=requestAnimationFrame(function(){rafP=0;redraw()})}
 function flatSet(){clampLat();proj=flatProj();path=d3.geoPath(proj);MODE=V.k>=MERC?'local':'world';SW=SWF}
 function scrF(){var rc=svg.node().getBoundingClientRect();return rc.width?vis()[0]/rc.width:1}
@@ -312,6 +314,7 @@ Promise.all([fetch(CFG.world).then(function(r){return r.json()}),fetch(CFG.data+
   gx.selectAll('path').data(a[2].features)
    .join('path').on('mousemove',function(ev,d){showTip(ev,d.properties.t)}).on('mouseleave',hideTip)
    .on('click',function(ev,d){ev.stopPropagation();hideTip();pickDispute(d.properties)});
+  getJSON(CFG.data+'world-110m.json').then(function(t){var by={};topojson.feature(t,t.objects.countries).features.forEach(function(f){by[(f.id||'')+'|'+f.properties.name]=f.geometry});feats.forEach(function(f){var g=by[(f.id0||'')+'|'+f.properties.name];if(g)f.g110=g})}).catch(function(){}); // 움직일 때 쓸 가벼운 지도
   getJSON(CFG.data+'hi_korea.json').then(function(h){feats.forEach(function(f){if(h[f.id]&&f.properties.name!='Somaliland'){f.geometry=h[f.id];f.g50=h[f.id];f.g10=h[f.id]}});redraw()}); // 1114 사용자: 휴전선 틈 — 남북한은 더 정밀한 경계로
   gl.selectAll('path').data(feats).join('path').attr('class',function(f){var c=D[f.id];return 'land'+(c&&c.hw?' news':'')+(HATCH[f.properties.name]?' hatch':'')})
    .on('mousemove',function(ev,f){var lk=lakeAt(ev);if(lk){showTip(ev,lk);return}var c=D[f.id];showTip(ev,f.tn||(c?c.n:(NM[f.properties.name]||f.properties.name)))}).on('mouseleave',hideTip)
