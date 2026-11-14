@@ -2819,3 +2819,4 @@ D가 가장 독특하지만 '사진은 밝게' 원칙과 부딪히고, 음식이
 [14:57] AI: Checking the hover underline on the Japan label.
 [14:59] AI: Adding capital dots for unlabeled small countries: hovering shows the name, clicking opens the country page.
 [15:00] AI: The name appears on hover. Publishing.
+[15:02] AI: Moved the search box beside the title; checking it on desktop and phone.
