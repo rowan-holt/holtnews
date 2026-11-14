@@ -774,7 +774,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .winfo .wdl{margin-top:10px}.winfo h4{font-size:13px;margin:14px 0 6px;color:var(--ink2)}
 .wct{display:inline-block;min-width:18px;padding:0 5px;font-size:11.5px;line-height:18px;text-align:center;background:var(--ink);color:#fff;border-radius:9px;font-weight:600}
 .wmore{display:inline-block;margin-top:14px;font-weight:700;border-bottom:2px solid var(--ink)}
-.wlist{columns:2;column-gap:16px;margin:0;padding:0;list-style:none}.wlist li{break-inside:avoid;padding:3px 0}
+.wlist{columns:2;column-gap:16px;margin:0;padding:0;list-style:none}.wlist.w3{columns:3}.wlist li{break-inside:avoid;padding:3px 0}
 .wlist a:hover{text-decoration:underline;text-underline-offset:3px}
 .wsrc{font-size:12.5px;color:var(--gray);margin-top:14px;line-height:1.6;white-space:pre-line}
 .wnote{font-size:13px;color:var(--gray)}
