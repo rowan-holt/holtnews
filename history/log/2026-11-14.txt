@@ -5128,3 +5128,45 @@ Sources:
 
 === 대화 Claude Code 세션 e0f8615e ===
 [20:57] AI: 검수 셋이 통과했고, 편집장 단계를 기록한 뒤 빌드해 올립니다.
+[21:00] AI: Push and report are done. Now the commit.
+[21:00] AI: **21시 국제 해설 뉴스** 회차로 기사 한 편을 올렸습니다.
+
+- **제목:** 로봇 관세는 미뤘다, 자동차 때는 어땠나
+- **주소:** https://holtnews.com/news/us_232_robotics_negotiation.html
+- **분류:** 미국 · 경제 (경제부 서진)
+- **내용:** 10월 28일 미국 대통령이 수입 로봇·산업기계를 무역확장법 232조의 안보 위협으로 판정하고도 관세 대신 협상을 지시했습니다. 기사는 같은 방식이었던 2019년 자동차가 합의 없이 끝나고 2025년 25% 관세가 붙은 경과를 원문으로 짚었습니다. 한국산 자동차가 이후 15%로 내려간 일도 넣었습니다. 올해 같은 방식의 포고가 네 건이고, 그중 핵심 광물은 180일 기한이 이미 지났다는 점도 다뤘습니다.
+- **검수:** 사실 확인 통과. 경제부 데스크와 영문판 데스크는 처음에 둘 다 보류를 냈습니다. 지적받은 곳을 모두 고친 뒤 '수정 후 통과'로 적었지만, 고친 판을 두 데스크에 다시 검토받지는 않았습니다.
+  - 주요 지적: 부제의 '처음' 단정, 풍력 터빈 일부 부품에 이미 붙은 232조 관세, 영어 제목의 사실 오류, 인용문 오기
+- **확인 못 한 것:** 정해진 50분을 넘겼고, 시간이 없어 Playwright로 화면을 띄워 보는 확인은 하지 못했습니다. 기사 html과 이미지 경로만 확인했습니다.
+
+**점수표** (기준점 18):
+
+| 후보 | 점수 | 결과 |
+|---|---|---|
+| 로봇 232조 협상 | 18 | 선정 |
+| ICE 추방 집계 | 19 | 이월 |
+| 국방수권법 반도체 조항 | 18 | 이월 |
+| 신용융자 담보비율 면제 | 19 | 이월 |
+| 모두의창업 유출 | 18 | 이월 |
+| 카타르·튀르키예 방위조약 | 15 | 기준점 미달 |
+
+- **ICE 추방 집계:** 1점 차라 규칙상 동점입니다. 동점이면 시의성이 앞서는 ICE를 써야 했는데, 두 집계를 맞춰 볼 ICE 통계표가 열리지 않아(DHS 페이지가 스크립트로 막힘) 이월했습니다.
+- **국방수권법 반도체 조항:** 의회 협의회 결과를 기다리는 중입니다.
+- **신용융자 담보비율 면제, 모두의창업 유출:** 국내 사안이라 국제 회차 대상이 아닙니다.
+- **관문에서 뺀 주제:**
+  - 트럼프·푸틴·시진핑 3자 회담: 이미 해설이 많아서
+  - 미국 장기기증 NRP 규칙: 원자료 사이트(OPTN·HRSA)가 열리지 않아서
+
+**정리 후 남은 후보:** 뉴스 4개, Journal 4개입니다. 신용융자 건은 내일(11/15) 만료됩니다.
+
+=== 대화 Claude Code 세션 60b3496e ===
+[21:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
+[21:01] AI: No planned topic for 11-14 22:00. Reading the loop prompt.
+
+=== 대화 Claude Code 세션 a0d15dca ===
+[21:02] AI: Dokdo marking is built. I confirmed that Dokdo wasn't left out of the dispute list on purpose. Next I'm checking why the Microsoft article landed under Korea, and changing the tooltip label.
+[21:02] AI: I found the Microsoft article's source file. Next I'm checking its section and title.
+[21:02] AI: Next I'm changing the label next to the dot to show only the region name, then rebuilding.
+
+=== 대화 Claude Code 세션 60b3496e ===
+[21:02] AI: Checking the slot (22:00 due); now choosing a topic — leaning toward the White House's announced Trump–Xi–Putin first three-way meeting in China.
