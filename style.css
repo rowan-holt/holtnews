@@ -666,6 +666,17 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .ap tr.few td,.ap tr.few td span,.ap-bars li.few,.ap-bars li.few .ay span{color:#767676}
 .cb-bar .ai{color:#1f6f7a}.cb-bar .hu{color:#8a4a12}
 .sharebar .ic{color:#666}
+/* 1114 사용자(휴대폰 캡처): 메뉴 줄이 위아래로 움직임 — 링크의 아래 여백(-8px)이 넘쳐 nav가 세로로도 밀렸음.
+   ☰·분야 글자·국기를 한 가운데 선에 놓고, 줄 높이를 고정(위아래 같은 폭), 세로로는 안 밀리게. 선택된 분야 밑줄은 줄 맨 아래 그대로 */
+.bar{height:52px;padding-top:0;padding-bottom:0;align-items:center;box-sizing:border-box}
+.bar .left,.bar .right{align-self:stretch;align-items:center}
+.bar nav{align-self:stretch;align-items:stretch;overflow-y:hidden;touch-action:pan-x;overscroll-behavior:contain}
+.bar nav a{padding:0;margin:0;border-top:3px solid transparent;border-bottom:3px solid transparent;box-sizing:border-box}
+.bar nav .cat-sep{margin:13px 0}
+.bar .lsw,.bar .lsw .lang{display:flex;align-items:center;height:100%;padding-top:0;padding-bottom:0}.bar .lsw .lang svg{transform:none}
+@media (max-width:640px){.bar{height:48px}}
+/* 1114: 가로로 흐르는 경제 칸 안의 숨김 글(.vh, position:absolute)이 칸 밖 기준으로 놓여 휴대폰에서 페이지 전체가 옆으로 밀렸음 → 칸을 기준점으로 */
+.ek-row,.ek,.bar nav{position:relative}
 .wpage{max-width:1280px;margin:0 auto;padding:22px 24px 40px}
 .wpage h1{font-size:clamp(26px,3vw,38px);margin:0 0 4px;letter-spacing:-.01em}
 .wlead{color:var(--ink2);margin:0 0 16px;font-size:16px}
@@ -752,9 +763,10 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 footer.site nav a,footer.foot nav a,header.top .right a{display:inline-block;padding-block:2px}
 main:focus{outline:none}
 :where(a,button,input,select,textarea,summary,label,[tabindex]):focus-visible{outline:2px solid #111!important;outline-offset:2px!important;box-shadow:0 0 0 4px #fff!important}
+a:has(> .a11y-nw),.a11y-memo{position:relative}
 .a11y-live{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
-.a11y-pause{position:absolute;left:-9999px}
-.a11y-pause:focus{position:static;left:auto;display:inline-block;margin:6px 0;font:inherit;font-size:13px;padding:4px 10px;border:1px solid #111;background:#fff;color:#111}
+.a11y-pause{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;padding:0;border:0}
+.a11y-pause:focus{position:static;width:auto;height:auto;overflow:visible;clip-path:none;display:inline-block;margin:6px 0;font:inherit;font-size:13px;padding:4px 10px;border:1px solid #111;background:#fff;color:#111}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 @media (forced-colors:active){.skip:focus{outline:3px solid CanvasText}}
 html.in-app header.top .right{visibility:hidden}html.in-app .install{display:none!important}html.in-app .foot .brand,html.in-app footer.site .brand{display:none!important}html.in-app .foot,html.in-app footer.site{margin-top:40px!important;padding:20px 20px 22px!important;gap:6px 24px!important;line-height:1.6!important}html.in-app .foot nav+nav{margin-top:2px!important}
