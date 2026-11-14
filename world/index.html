@@ -65,8 +65,9 @@ function redraw(){
   var r=proj.rotate();
   gd.selectAll('circle').attr('transform',function(f){var c=d3.geoCentroid(bigPart(f));if(GLOBE&&d3.geoDistance(c,[-r[0],-r[1]])>1.5)return 'translate(-99,-99)';var q=proj(c);return q?'translate('+q+')':'translate(-99,-99)'});
   if(sel&&sel.iso=='KOR'&&zl()>=14)loadAdm2();else{ga2.selectAll('*').remove();gal.selectAll('*').remove()}}
-var zoom=d3.zoom().scaleExtent([.5,80]).on('zoom',function(ev){var t=ev.transform;
-  if(GLOBE){proj.scale(base.s*t.k)}else if(MODE=='world'){var k=Math.max(1,t.k);proj.scale(base.s*k).translate([base.t[0]*k+(k>1?t.x:W/2*(1-k)),base.t[1]*k+(k>1?t.y:H/2*(1-k))])}
+function kMin(){return Math.min(1,vis()[0]/W*.98)} // 1114 사용자: 휴대폰(세로로 길게 잘린 화면)에서도 끝까지 줄이면 세계 전체가 가로에 다 들어오게
+var zoom=d3.zoom().scaleExtent([.3,80]).on('zoom',function(ev){var t=ev.transform;
+  if(GLOBE){proj.scale(base.s*t.k)}else if(MODE=='world'){var k=Math.max(kMin(),t.k);proj.scale(base.s*k).translate([base.t[0]*k+(k>1?t.x:W/2*(1-k)),base.t[1]*k+(k>1?t.y:H/2*(1-k))])}
   else{proj.scale(base.s*t.k).translate([base.t[0]*t.k+t.x,base.t[1]*t.k+t.y])}
   redraw()});
 zoom.filter(function(ev){if(ev.type=='wheel'||(ev.touches&&ev.touches.length>1))return true;return MODE=='local'&&!GLOBE&&!ev.button}); // 세계 화면·지구본에서 끌기는 회전 담당
