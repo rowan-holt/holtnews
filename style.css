@@ -847,7 +847,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wc.cmp .cpL,.wc.cmp .cpR{padding:12px 16px 4px 0;min-width:0}.wc.cmp .cpR{background:#f8f7f3;padding-left:16px}
 .wc.cmp .cpt2{font-size:13px;font-weight:700;margin:0 0 6px;color:var(--ink)}
 .wc.cmp .cp2 h3.wsub,.wc.cmp .cp2 h4{font-size:15px;margin:12px 0 4px}.wc.cmp .cp2 p{font-size:15.5px}
-@media (max-width:640px){.cpw{top:auto;bottom:16px;right:12px;transform:none}.cpbar,.cpq{width:min(300px,calc(100vw - 24px))}
+@media (max-width:640px){.cpw{top:auto;bottom:14px;right:12px;transform:none}.cpq{width:min(300px,calc(100vw - 24px))}.cpbar{width:auto;max-width:calc(100vw - 24px);display:flex;align-items:center;gap:8px;padding:8px 8px 8px 14px;border-radius:24px;font-size:13px}.cpbar p{margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}.cpbar div{flex:none}.cpbar button{flex:none;padding:5px 10px;font-size:12.5px}.cpb{padding:9px 14px;font-size:13.5px}
 .wc.cmp .wdl.cpt{grid-template-columns:1fr 1fr}.wc.cmp .wdl.cpt>dt{grid-column:1/-1;border-bottom:0;padding:10px 0 2px;font-size:13px}
 .wc.cmp .wdl.cpt>dt.cph{display:none}.wc.cmp .wdl.cpt>dd{padding:2px 10px 10px 0}.wc.cmp .wdl.cpt>.cpv{padding-left:10px}.wc.cmp .wdl.cpt>dd.cph{padding:8px 10px 8px 0}.wc.cmp .wdl.cpt>dd.cph.cpv{padding-left:10px}
 .wc.cmp .cp2{grid-template-columns:1fr}.wc.cmp .cpR{padding:12px 12px 4px}}
