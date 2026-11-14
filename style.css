@@ -801,7 +801,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wc p{margin:0 0 12px}
 .wc .wmore{margin-top:22px}
 .wmore+.wsrc{margin-top:40px}   /* 1114 사용자: 출처는 링크와 띄움 */
-.wc .wdw{font-weight:600;margin:0 0 6px}
+.wc .wdw{font-weight:600;margin:0 0 6px}.wc a.wdl2{border-bottom:1px solid var(--ink)}.wc a.wdl2:hover{background:var(--soft)}
 .wc h3.wsub{font-size:15px;margin:18px 0 8px;color:var(--ink2)}
 .wpg{display:flex;gap:6px;margin:14px 0 0;flex-wrap:wrap}.wpg button{all:unset;cursor:pointer;min-width:30px;height:30px;display:grid;place-items:center;border:1px solid #ddd;font-size:14px}.wpg button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
 /* 기사 끝 상자 */
