@@ -78,7 +78,7 @@ var zoom=d3.zoom().scaleExtent([.3,80]).on('zoom',function(ev){var t=ev.transfor
 zoom.filter(function(ev){if(ev.type=='wheel'||(ev.touches&&ev.touches.length>1))return true;return MODE=='local'&&!GLOBE&&!ev.button}); // 세계 화면·지구본에서 끌기는 회전 담당
 svg.call(d3.drag().filter(function(ev){return (GLOBE||MODE=='world')&&!ev.button&&!(ev.touches&&ev.touches.length>1)}).on('drag',function(ev){
   var r=proj.rotate(),s;
-  if(GLOBE){s=.25/zl();proj.rotate([r[0]+ev.dx*s,Math.max(-80,Math.min(80,r[1]-ev.dy*s))]);redraw();return}
+  if(GLOBE){s=.25/zl();proj.rotate([r[0]+ev.dx*s,Math.max(-90,Math.min(90,r[1]-ev.dy*s))]);redraw();return} // 남극점·북극점까지
   proj.rotate([r[0]+ev.dx*180/(Math.PI*proj.scale()),r[1],r[2]]);
   var t=d3.zoomTransform(svg.node());if(t.k>1.01)svg.call(zoom.translateBy,0,ev.dy/t.k);else redraw()}));
 svg.call(zoom).on('dblclick.zoom',null);
@@ -96,7 +96,7 @@ function local(fs,pad){ // 그곳을 가운데 둔 메르카토르로 다시 그
   var v=vis(),p=d3.geoMercator().rotate([-lon,0]),pw=v[0]*pad,ph=v[1]*pad;
   p.fitExtent([[W/2-pw/2,H/2-ph/2],[W/2+pw/2,H/2+ph/2]],fc);
   g.interrupt().style('opacity',.15);setProj(p,'local');svg.call(zoom.transform,d3.zoomIdentity);g.transition().duration(350).style('opacity',1)}
-function toWorld(){g.interrupt().style('opacity',.15);setProj(worldProj(),'world');svg.call(zoom.transform,d3.zoomIdentity);g.transition().duration(350).style('opacity',1)}
+function toWorld(){g.interrupt().style('opacity',.15);setProj(worldProj(),'world');svg.call(zoom.transform,d3.zoomIdentity.scale(kMin()));g.transition().duration(350).style('opacity',1)} // 1114 사용자: '전체'는 휴대폰에서도 세계 전체가 다 보이게
 function fitGlobe(f,pad){var c=d3.geoCentroid(bigPart(f)),r0=proj.rotate(),r1=[-c[0],-c[1]],s0=proj.scale(),v=vis();
   var p=d3.geoOrthographic().rotate(r1).scale(SW).translate(base.t).clipAngle(90),b=d3.geoPath(p).bounds(mainParts(f)),
   k=Math.max(1,Math.min(60,(pad||.85)/Math.max((b[1][0]-b[0][0])/v[0],(b[1][1]-b[0][1])/v[1])));
@@ -186,9 +186,9 @@ function region(id){var r=CFG.regions.find(function(x){return x[0]==id});
 Promise.all([fetch(CFG.world).then(function(r){return r.json()}),fetch(CFG.data+'countries-'+L+'.json').then(function(r){return r.json()}),fetch(CFG.data+'disputed-'+L+'.json').then(function(r){return r.json()})]).then(function(a){
   var topo=a[0];D=a[1];
   // 분쟁 지역 빗금(외교부 입장 없는 곳)은 나라를 다 읽은 뒤 아래에서 그림
-  feats=topojson.feature(topo,topo.objects.countries).features.filter(function(f){return f.properties.name!='Antarctica'});
+  feats=topojson.feature(topo,topo.objects.countries).features; // 1114 사용자: 남극도 보이게
   var MERGE={'Somaliland':'706','N. Cyprus':'196','Falkland Is.':'826','W. Sahara':'504'},HATCH={'Siachen Glacier':1}, // 1114: 관리하는 나라에 붙이고 빗금(빗금 자료는 disputed-*.json), 관리 주체가 없는 시아첸만 빗금 단독
-  NM={'Siachen Glacier':K?'시아첸 빙하\n인도-파키스탄 분쟁 지역':'Siachen Glacier\ndisputed'};
+  NM={'Antarctica':K?'남극\n남극조약으로 영유권 주장이 동결된 대륙':'Antarctica','Siachen Glacier':K?'시아첸 빙하\n인도-파키스탄 분쟁 지역':'Siachen Glacier\ndisputed'};
   feats.forEach(function(f){var id=f.id||MERGE[f.properties.name]||(f.properties.name=='Kosovo'?'XKS':f.properties.name);f.id=id;var c=D[id];f.A=d3.geoArea(f);if(c&&(!byIso[c.i]||byIso[c.i].A<f.A))byIso[c.i]=f}); // 같은 번호 작은 섬 조각보다 본토
   // 1114 외교부 입장 없는 분쟁 지역 = 빗금
   gx.selectAll('path').data(a[2].features)
