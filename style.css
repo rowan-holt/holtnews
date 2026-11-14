@@ -718,7 +718,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wq .wqe{padding:10px 12px;font-size:14px;color:var(--gray);cursor:default}.wq .wqe:hover{background:none}
 .wgrid{display:block}   /* 1114 사용자: 넓은 화면에선 지도를 꽉 차게, 나라 정보는 그 아래 */
 .wmap{position:relative;background:#fff;touch-action:none;overflow:hidden;width:100vw;margin-left:calc(50% - 50vw);border-bottom:1px solid #ddd}
-.wmap #wsvg{display:block;width:100%;height:70vh;height:70dvh;max-height:820px;min-height:420px;cursor:grab}   /* 1114 사용자: 모니터 크기에 맞춰 최대한 크게 */.wmap #wsvg:active{cursor:grabbing}
+.wmap #wsvg{display:block;width:100%;height:70vh;height:70dvh;max-height:820px;min-height:420px;cursor:default}   /* 1114 사용자: 모니터 크기에 맞춰 최대한 크게 */.wmap #wsvg.drag{cursor:grabbing}   /* 1114 사용자: 평소엔 기본 화살표(손 모양이 안 보이는 브라우저 있음), 끌 때만 손 */
 .wmap .land{fill:#e9e7e1;stroke:#fff;stroke-width:.6px;vector-effect:non-scaling-stroke;paint-order:stroke}   /* 경계선을 땅 밑에 — 작은 섬이 흰 선에 지워지지 않게 */
 .wmap .land.isl{stroke:#e9e7e1;stroke-width:1.2px;paint-order:normal}.wmap .land.isl.news{stroke:#e8d3b4}.wmap .land.isl.sel{stroke:#9e9a90}
 .wmap .land.news{fill:#e8d3b4}   /* 1114 사용자: 기사 있는 곳은 회색 단계(기본·지역·선택)와 겹치지 않게 황토빛 */
