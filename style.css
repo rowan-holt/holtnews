@@ -765,6 +765,9 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wc .dek{font-size:19px;color:var(--ink2);margin:0 0 18px}
 .wloc{border-top:1px solid var(--line);border-bottom:1px solid #ddd;padding:12px 0;margin:0 0 6px}
 .wloc{position:relative}.wloc svg{display:block;width:100%;height:auto}
+.wll text{text-anchor:middle;dominant-baseline:central;fill:#6f6b62;font-weight:500;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round}   /* 1114 사용자: 위치 지도 나라·바다 이름 */
+.wll .me{fill:var(--ink);font-weight:700}.wll .sea{fill:#7f9cad;font-style:italic;stroke:none;font-weight:400}
+.wll.lbm{display:none}@media (max-width:640px){.wll.lbd{display:none}.wll.lbm{display:inline}.wll text{stroke-width:6px}}
 .wlocnote{margin:10px 0 0;font-size:13px;line-height:1.5;color:var(--ink2)}   /* 1114 사용자: 해외 영토 문장은 지도 아래 */
 .wc h2{font-size:21px;margin:34px 0 10px;padding-top:12px;border-top:1px solid var(--line)}
 .wc .wdl{font-size:16px;gap:6px 18px}

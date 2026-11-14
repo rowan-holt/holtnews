@@ -2714,6 +2714,9 @@ D가 가장 독특하지만 '사진은 밝게' 원칙과 부딪히고, 음식이
 
 **여행금지 딱지**: 이름 바로 옆에 '여행금지'만 쓰고, 크기는 그대로 뒀어요. 말씀하신 대로 '전 지역 여행금지' 나라에만 붙는 딱지예요.
 
+=== 대화 Claude Code 세션 9e3f9c4e ===
+[14:12] AI: Now writing the English translation of all 93 events, 9 debates and day summaries.
+
 === 대화 Claude Code 세션 94b0bbbc ===
 [14:13] 사람: 00:46
 결정
@@ -2724,3 +2727,46 @@ AI는 구글 색인 요청을 사람이 직접 눌러야 한다며 주소 열 �
 이거 구글이 안좋아할거 같은데 빼면 어때
 [14:13] AI: Google 색인 자동 요청 작업은 지웠고, 이제 연표 항목 정리 규칙대로 반영하는 중이에요.
 [14:14] AI: Now deploy via the build.
+[14:15] AI: I misread that — restoring the scheduled task now.
+
+=== 대화 Claude Code 세션 0155d439 ===
+[14:17] 사람: 각 국가 상세페이지 상단에 지도 그림 있잖아. 그 지도에 보이는 나라랑 바다에 이름 써주자
+
+=== 대화 Claude Code 세션 9e3f9c4e ===
+[14:18] AI: 코드 교체는 끝났고, 이제 사이트를 빌드해서 한국어판은 그대로인지, 영어판이 제대로 나오는지 확인하는 중입니다.
+
+=== 대화 Claude Code 세션 0155d439 ===
+[14:18] AI: Building labels for the detail-page maps: country and sea names, with larger countries by area placed first and overlapping names dropped.
+
+=== 대화 Claude Code 세션 9e3f9c4e ===
+[14:18] AI: 한국어판은 따옴표 표기 방식만 다르고(화면상 같음) 내용은 그대로예요. 영어판 화면을 찍어 확인합니다.
+[14:19] AI: 영어판 연표 92개 항목이 다 뜨는 걸 확인했어요. 날짜 줄과 휴대폰 화면만 마저 보고 배포하겠습니다.
+[14:19] AI: 화면 정상입니다. 이제 매일 밤 연표를 자동으로 이어 쓰는 작업이 영어판도 같이 채우도록 지시문을 고칩니다.
+
+=== 대화 Claude Code 세션 0155d439 ===
+[14:20] AI: Labels are generated; checking how they look on desktop and phone.
+[14:21] AI: Overlaps are minor: no country drops more than two names. So there's nothing to ask you about; publishing the labels.
+[14:21] AI: Another build ran at the same time and the push failed; retrying after it finishes.
+
+=== 대화 Claude Code 세션 1b59bf9b ===
+[14:21] 예약 작업: [예약 작업 holt-site-audit 실행 — 정해 둔 지시문으로 자동 시작]
+[14:21] AI: Now find candidates.
+[14:21] AI: 기존 글 사후 검수는 모두 끝났습니다.
+- 사이트 뉴스 20편 모두 확인 장부(CHECKS)가 있습니다. 사이트에 실린 Journal 글도 확인 장부가 없는 글은 한 편도 없습니다.
+- 그래서 이번에는 아무것도 바꾸지 않았고, 커밋과 푸시도 하지 않았습니다. 남은 검수 대상은 0편이라 이 예약 작업은 꺼도 됩니다.
+
+=== 대화 Claude Code 세션 94b0bbbc ===
+[14:21] AI: 처음에 작업까지 없애는 걸로 잘못 알아들었어요. 지금은 원래대로 돌려놨고, 연표에서만 빠진 상태예요.
+
+- **연표:** 「새 글은 구글에 먼저 알린다」 항목을 지웠고, 사이트에도 반영했어요. 연표를 매일 갱신하는 작업이 다시 올리지 않도록 '뺀 항목' 목록에도 넣어 뒀어요.
+- **색인 요청 작업:** 아까 실수로 지웠던 작업을 같은 내용, 같은 시각(10:10, 13:10, 22:10)으로 다시 만들었어요. 다음 실행은 오늘 22:10이에요. 지시문에는 "이 작업은 연표에 올리지 않는다"는 줄을 덧붙였어요.
+- 다시 만든 작업이라 브라우저 권한 승인이 초기화됐을 수 있어요. 첫 실행이 권한 창에서 멈추지 않게, 앱 사이드바의 Scheduled에서 'HOLT 새 글 구글 색인 요청'을 열고 Run now를 한 번 눌러 승인해 주세요.
+
+커밋하고 push까지 했어요.
+
+=== 대화 Claude Code 세션 9e3f9c4e ===
+[14:22] AI: 사이트 안전 검사가 "파일 1065개 삭제"로 푸시를 막았어요. 같은 시각에 다른 빌드가 같은 폴더를 쓰고 있었던 것 같아 확인합니다.
+[14:22] AI: 다른 대화 세션이 마침 같은 시각에 사이트 빌드·푸시를 돌리고 있었어요(FAA 기사 수정). 두 빌드가 겹친 거라 그쪽이 끝날 때까지 기다립니다.
+
+=== 대화 Claude Code 세션 94b0bbbc ===
+[14:22] 사람: 연표에 외부에 굳이 알릴 필요없는 우리의 작업방식은 넣지마
