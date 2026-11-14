@@ -4973,3 +4973,5 @@ site_style.md 독립 검토 기준에 ⑤해석 검증을 넣었어요. 사이�
 [19:41] 사람: 023년까지는 태어나자마자 한 살로 치고 새해마다 한 살씩 더하는 '한국식 나이'도 함께 썼어요.
 
 이거말고 딴거 써 별로 흥미롭지 않음 이미 지난일이기도 하고
+[19:43] AI: Simplifying the "뉴스 더보기" button to a plain text link and putting "지도에서 보기" on its own line below.
+[19:44] AI: Looks right. Publishing.

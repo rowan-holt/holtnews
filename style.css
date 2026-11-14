@@ -820,11 +820,11 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wc h2{font-size:21px;margin:34px 0 10px;padding-top:12px;border-top:1px solid var(--line)}
 .wc .wdl{font-size:16px;gap:6px 18px}
 .wc p{margin:0 0 12px}
-.wc .wmore{margin-top:22px}
+.wc .wmore{display:block;width:max-content;margin-top:30px}
 .wmore+.wsrc{margin-top:40px}   /* 1114 사용자: 출처는 링크와 띄움 */
 .wc .wdw{font-weight:600;margin:0 0 6px}.wc a.wdl2{border-bottom:1px solid var(--ink)}.wc a.wdl2:hover{background:var(--soft)}
 .wc h3.wsub{font-size:15px;margin:18px 0 8px;color:var(--ink2)}
-.wmorebtn{all:unset;cursor:pointer;display:inline-block;margin-top:12px;padding:7px 16px;border:1px solid var(--ink);border-radius:18px;font-size:14.5px;font-weight:600}.wmorebtn:hover{background:var(--soft)}.wmorebtn span{color:var(--gray);font-weight:400;margin-left:4px}
+.wmorebtn{all:unset;cursor:pointer;display:block;width:max-content;margin-top:10px;font-size:14.5px;font-weight:600;color:var(--ink2)}.wmorebtn:hover{color:var(--ink);text-decoration:underline;text-underline-offset:3px}.wmorebtn span{color:var(--gray);font-weight:400;margin-left:4px}   /* 1114 사용자: 테두리 없이 심플하게, 지도에서 보기와 따로 줄 */
 .wpg{display:flex;gap:6px;margin:14px 0 0;flex-wrap:wrap}.wpg button{all:unset;cursor:pointer;min-width:30px;height:30px;display:grid;place-items:center;border:1px solid #ddd;font-size:14px}.wpg button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
 /* 기사 끝 상자 */
 .wbox{display:block;border:1px solid var(--ink);padding:14px 18px;margin:28px 0 0}
