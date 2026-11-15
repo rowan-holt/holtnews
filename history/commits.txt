@@ -1401,3 +1401,8 @@
 2026-11-15 12:15  feat(holt): 사이트 뉴스 — 세무사 수석 AI 부정행위 기사에 '형사처벌도 받을 수 있을까' 칸 추가(형법 137·314·52조, 65도1164, 2009도4166)
 2026-11-15 12:17  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — tax_exam_ai_cheating (turn oneself in, miss the cut, take back, smuggle in, count for something)
 2026-11-15 12:24  feat(holt): 단일 주제 — 세무사 1등의 'AI 커닝' 자수, '커닝' 영어로 하면 틀려요(cheating) [유형 C], 새 표지 spy_cam_exam
+2026-11-15 12:31  fix(holt): 세무사 수석 AI 부정행위 기사 — 제목 '처벌받을까'로, 부제·VALUE 형사처벌 중심, 형사처벌 칸 둘째로 / site_guard에 세계 지도 스크립트 등록
+2026-11-15 12:40  feat(holt): LABOR 101 시리즈 목차 초안 — 돈과 관련된 노동법 25회(labor_series.py)
+2026-11-15 12:41  docs(holt): 노동경제학은 ECON 101에서 — labor_series 범위 메모
+2026-11-15 12:47  feat(holt): LABOR 101 회차 구성(적용 대상→문제→학설→판례→정리→계산)·노동 공익광고 목록
+2026-11-15 12:48  feat(holt): LABOR 101 회차에 '어떻게 바뀌어 왔나'(제도 변화 연혁) 칸
