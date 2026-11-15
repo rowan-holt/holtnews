@@ -1374,3 +1374,6 @@
 2026-11-15 05:23  content(holt): HOLT ENGLISH 쪽별 표현·퀴즈 25쪽 + 점검
 2026-11-15 05:31  chore(holt): 만들어진 기록 연표 자동 갱신 — 10개 추가, 논쟁 1개 이어 붙임
 2026-11-15 07:33  content(holt): 11-15 07:30 메타 이탈리아 사진첩 벌금 — 'SNS'는 social media [유형 C]
+2026-11-15 08:57  feat(holt): 사이트 뉴스 — 반대매매선 140%→130%, 몇 % 더 버티나
+2026-11-15 08:58  feat(holt): HOLT ISSUE 시사상식 문제 — credit_collateral_130
+2026-11-15 10:20  chore(gsc): 색인 요청 기록
