@@ -1398,3 +1398,6 @@
 2026-11-15 12:05  content(holt): 11-15 12시 Journal — 뇌 속 미세플라스틱 숟가락과 반박(microplastics_brain), 이탈리아 메타 HOLT ENGLISH 해석
 2026-11-15 12:06  feat(holt): ECON 101을 뉴스 목록(홈 배열·뉴스 메뉴·분야 쪽)에서 빼고 홈에 따로 작은 칸(최신 회·다음 회·목차)
 2026-11-15 12:07  fix(holt): HOLT ISSUE 모바일 메뉴 — 가로 스크롤 없이 다섯 칸 고정(옆으로 흔들리지 않게)
+2026-11-15 12:15  feat(holt): 사이트 뉴스 — 세무사 수석 AI 부정행위 기사에 '형사처벌도 받을 수 있을까' 칸 추가(형법 137·314·52조, 65도1164, 2009도4166)
+2026-11-15 12:17  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — tax_exam_ai_cheating (turn oneself in, miss the cut, take back, smuggle in, count for something)
+2026-11-15 12:24  feat(holt): 단일 주제 — 세무사 1등의 'AI 커닝' 자수, '커닝' 영어로 하면 틀려요(cheating) [유형 C], 새 표지 spy_cam_exam
