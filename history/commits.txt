@@ -1493,3 +1493,4 @@
 2026-11-16 04:43  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — naver_dunamu_merger_review
 2026-11-16 05:22  content(holt): HOLT ENGLISH 쪽별 표현·퀴즈 25쪽 + 점검
 2026-11-16 05:31  chore(holt): 만들어진 기록 연표 자동 갱신 — 7개 추가
+2026-11-16 07:09  docs(holt): 무역 데스크 참고서 — 독자가 무엇이 궁금해서 오나(0장), 장식 금지
