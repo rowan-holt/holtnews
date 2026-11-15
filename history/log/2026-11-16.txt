@@ -1,0 +1,7 @@
+# 홀트뉴스가 만들어진 기록 — 2026-11-16 대화 원문 (KST)
+
+=== 대화 Claude Code 세션 d3f8d034 ===
+[00:00] AI: Use the browser pane instead.
+[00:00] AI: 모바일에서 ECONOMY가 HOLT NEWS 아래 가운데로 맞춰졌습니다. 이제 배포합니다.
+[00:02] AI: Let me review the changed WCFG script before registering it.
+[00:03] AI: The changed script is just a data object (refresh dates, map data, no external URLs), so it's safe to register.
