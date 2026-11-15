@@ -90,6 +90,7 @@ body.en .sec h2{font-family:"Jost",sans-serif;font-weight:500;letter-spacing:0}
 .fn-box{display:none;position:absolute;left:calc(100% + 6px);bottom:calc(100% - 2px);z-index:30;width:300px;max-width:calc(100vw - 24px);padding:12px 14px;background:var(--bg);border:1px solid var(--ink);box-shadow:0 6px 18px rgba(0,0,0,.12);font-size:15px;line-height:1.65;font-weight:400;color:var(--ink2);white-space:normal;text-align:left}
 @media (hover:hover){.fn:hover .fn-box{display:block}}
 .fn.down .fn-box{top:calc(100% + 6px);bottom:auto}
+.fn-src{display:block;margin-top:6px;font-size:12px;color:var(--gray)}.fn-ch{display:block;margin-top:8px;font-size:13px;font-weight:600;color:var(--ink);text-decoration:underline;text-underline-offset:3px}
 .fn.open .fn-box{display:block}
 .sec p+p{margin-top:14px}
 .sec.limits{background:var(--soft);padding:22px 24px}
