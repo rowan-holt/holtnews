@@ -772,7 +772,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wmap .adm path.rsel,.wmap .adm2 path.rsel{fill:#6f6b62!important}   /* 누른 행정구역 */
 .wmap .adm2 path{fill:transparent;stroke:#fff;stroke-width:.5px;vector-effect:non-scaling-stroke;pointer-events:none}
 .wmap .adm1line path{fill:none;stroke:#8a8a8a;stroke-width:.9px;vector-effect:non-scaling-stroke;pointer-events:none}
-.wmap .wcap circle{fill:#fff;stroke:var(--ink);stroke-width:1.6px;pointer-events:none}.wmap .wcap text{font-size:12.5px;font-weight:600;fill:#4a473f;dominant-baseline:central;paint-order:stroke;stroke:#fff;stroke-width:3.5px;stroke-linejoin:round;pointer-events:none}
+.wmap .wcap circle{fill:#fff;stroke:var(--ink);stroke-width:1.6px;pointer-events:none}.wmap .wcap .x circle{pointer-events:all;cursor:pointer}.wmap .wcap text{font-size:12.5px;font-weight:600;fill:#4a473f;dominant-baseline:central;paint-order:stroke;stroke:#fff;stroke-width:3.5px;stroke-linejoin:round;pointer-events:none}
 .wkey .wcp{display:inline-block;width:8px;height:8px;border-radius:50%;border:1.5px solid var(--ink);background:#fff;margin-right:5px;vertical-align:0}
 .wmap .wlab text{font-size:12.5px;font-weight:600;fill:#3d3a33;text-anchor:middle;dominant-baseline:central;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round;cursor:pointer}   /* 1114 사용자: 지역 나라 이름 */
 .wmap .wptl .wplc{fill:var(--ink);stroke:#fff;stroke-width:1.5px}
