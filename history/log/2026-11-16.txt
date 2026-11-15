@@ -538,3 +538,72 @@ Sources:
 [01:17] AI: Before pushing, checking what the site's safety check (site_guard) inspects so the new section doesn't trip it:
 [01:17] AI: No new scripts, so the only change needed is allowing the new `trade/` folder (my code, same site, so I can add it myself per your rule):
 [01:17] AI: Publishing the section now (full build + push):
+[01:20] AI: The section is live at holtnews.com/en/trade/ and /trade/. Committing the code:
+[01:20] AI: The data pages are live. Next is the analysis articles that sit on top of them. Let me look at the article format the site uses:
+[01:21] AI: Now adding the Korea Trade plan to the site publishing task's instructions. Reading where the 21:00 slot is described:
+[01:22] AI: 오늘부터 Korea Trade 칸을 깔기 시작했어요. 숫자로 된 바탕은 지금 사이트에 올라가 있고, 해설 기사는 오늘 밤부터 21일까지 매일 하나씩 나가도록 일정을 걸어 뒀습니다.
+
+## 지금 사이트에 올라간 것
+[holtnews.com/en/trade](https://holtnews.com/en/trade/index.html) (영문판)과 [holtnews.com/trade](https://holtnews.com/trade/index.html) (한국어판)에 34쪽씩 올라갔어요. 위쪽 메뉴에도 "Korea Trade"가 생겼고, 실제 주소로 열리는 것까지 확인했습니다.
+
+- **첫 화면**
+  - 11월 1~10일 잠정치: 수출 335억 달러로 작년 같은 기간의 두 배가 넘어요(+112%).
+  - 10대 품목과 10개 나라를 작년 같은 기간과 비교한 표
+  - 10월 확정치와 25개월 그래프
+  - 품목별·나라별 표, 항구·공항별 표(인천공항이 수출의 63%)
+  - 다음 발표일: "11월 21일 · 12월 1일 · 12월 11일"을 보여줘서 다시 올 날짜를 알려줘요.
+- **품목 쪽 15개:** 반도체, 자동차, 배터리, 화장품, 라면, 김, 김치 등. 월별 그래프, 어느 나라로 가는지, kg당 단가 추이가 들어가요.
+- **나라 쪽 17개:** 미국, 중국, 베트남, 대만 등. 한국과 사고판 금액, 비중, 주요 품목을 보여줘요.
+- **운임 쪽:** 미국 서부·동부, 유럽 등으로 가는 컨테이너 운임 변화와 항공 운임
+
+숫자는 하루 세 번(08:40, 11:40, 20:40) 관세청에서 자동으로 새로 받아요. 사이트가 갱신될 때마다 최신 숫자가 들어갑니다.
+
+## 21일까지 나갈 해설 기사
+holtnews 하루 3편 원칙은 지키면서, 21시 국제 경제 자리를 무역 해설로 쓰도록 사이트 발행 작업에 일정을 넣었어요.
+
+| 날짜 | 해설 |
+|---|---|
+| 11/16 (오늘 밤) | 10월 수출 확정: 무엇이 늘었나 |
+| 11/17 | 11월 1~10일: 어느 나라로 가는 수출이 늘었나 |
+| 11/18 | K-뷰티 수출 지도: 화장품은 어디로, kg당 얼마에 |
+| 11/19 | 컨테이너·항공 운임 변화 |
+| 11/20 | 비행기로 나가는 수출: 인천공항 |
+| 11/21 | **1~20일 잠정치 속보** (이후 매달 1일·11일·21일) |
+
+기사는 평소처럼 사실 확인과 데스크 검토를 다 거쳐요. 원인은 산업통상부 발표나 공시, 언론 보도로 확인된 것만 씁니다. 기사가 나가면 관련 품목·나라 쪽에 해설 카드가 자동으로 붙고, 기사 끝에는 "숫자로 더 보기" 링크가 달려요.
+
+## 알려 드릴 점
+- **해상 운임:** 관세청이 단위를 공개하지 않아 절대 금액은 쓰지 않고 변화율로만 보여줘요.
+- **같은 이름, 다른 숫자:** 품목 쪽의 "반도체"와 10일 잠정치의 "반도체"는 관세청 분류 기준이 달라서 숫자가 달라요. 쪽마다 기준을 적어 뒀어요.
+- **나중에 손볼 것:** 지금 품목·나라 쪽의 글은 숫자를 요약한 문장이에요. 해설 기사가 하나씩 나갈 때마다 그 내용으로 쪽 설명을 보강하게 해 뒀습니다.
+[01:22] 사람: 그리고 그 코리아 트레이드 사이트는 외국인 타겟이잖아요. 영어 말고 다른 말도 준비해보자. 우리나라하고 무역 순위가 꽤 되는, 아니면은 그 말한 그 제품들, 타겟 제품들 뭐라 그랬더라? 뭐 파는지도 나올 거 아니야. 외국이랑 우리가 뭘 주고받는지 나오잖아. 그런 것들을 많이 가져가는, 혹은 우리한테 많이 파는 나라 언어들 조사해서 언어판도 확대하는 거야. 그 코리아 트레이드에 한해서만큼은. 이해했어?
+그래, 세계 지도랑 또 묶어서 세계 지도 쪽도 연결할 수 있게. 그리고 세계 지도를 그렇게 하는 거야. 너 그거 알아? 세계 지리, 사회과 부도 같은 거 보면 지도에 이렇게 화살표를 쭉 그어서 이렇게 어떤 품목이 어떻게 이동하는지 그런 경로를 보여주는 게 있단 말이야. 알지? 그래서 뭐 각 나라를 클릭하면 그 나라와 코리아 간에 이렇게 무역 이렇게 보여주는 거지, 경로를. 그리고 품목별로도 메뉴를 달아서 품목별로 필터링을 하면 뭐 반도체 딱 하면은 뭐 이렇게 만들어진 대만이나 한국에서 이렇게 미국 쪽으로 쭉, 중국 쪽으로 쭉, 중국에서 이렇게 쭉쭉쭉 이동하는 그런 화살표를 구현하는 것도 괜찮을 것 같다.
+약간 경제지리 같은 거지. 경제지리. 우리의 세계지도는 경제지리 느낌으로 간다. 좋다.
+그 저기 데이터 포털에 내가 몇 개 수출입 통계 몇 개 더 갖다 놨거든, API. 그리고 항만별로 출항, 입출항 통계도 받아가지고 그런 것도 한번 해봐봐. 그리고 선용용품, 뭐 선박에 뭐 들어간지 뭐 그런 것도 API 받아놨거든. 그런 것도 쓸 수 있는지 보고, 그리고 각 지역별로 항만별로 입출항 뭐 이런 관세 통계, 뭐 수출입 통계, 그리고 품목별로 별 수출입 통계 같은 것들, 뭐 지금이 갖고 있는 게 최신이면 할 필요 없는데 없는 것들도 필요한 것들 갖고 와가지고 코리아 트레이드를 좀 채워보자고. 그리고 단순히 데이터만 채우는 게 아니라 관련된 뉴스도 갖고 와서 조금씩 채워놔봐. 관련된 뉴스 있잖아, 코리아 트레이드와 관련된 뉴스들. 뉴스 당연히 그냥 소식만 전달하는 거 당연히 우리 취지에 어긋나니까 해설도 당연히 붙여야 되고, 똑같이 검수하는 체계랑 똑같이 뉴스로 나가야 된다. 그리고 그게 뭐 우리말로 나가도 괜찮을 만한 콘텐츠다 라고 판단한다면 우리말로 바꿔가지고 올리면 되죠. 그런 것도 해주면 좋겠다. 이거는 영어로 먼저 내고 영어로 먼저 하고 이렇게 거꾸로 가는 형식으로, 물론 찾아보는 거는 국내외 뉴스 소식 다 찾아보는 걸로 하면 되겠습니다.
+그리고 이 무역 발표 일정도 저 캘린더에 넣어놓으세요. 캘린더에 뉴스 캘린더 있잖아요. 거기다 넣어두세요. 모든 우리가 파악할 수 있는 일정들 그런 것들은 저 캘린더에 넣어두세요. 그리고 거기도 분야별로 이제 뭐 증권 일정, 무역 쪽 일정, 뭐 부동산 쪽 일정 이런 것들이 있을 거 아니에요. 그런 것도 이렇게 너무 다 해놓으면 복잡할 수 있으니까 그런 분야별로 껐다 켰다 할 수 있게 필터 걸을 수 있게 해두면 좋잖아요. 그리고 이렇게 누가 와서 자기가 걸어놨다 그럼 까먹지 않게 그런 것도 있지. 우리 저거 뭐야 잉글리시나 이슈 하는 것처럼 오답노트 하는 것처럼 학습방 하는 것처럼 캐시를 지우지 않으면 계속 그 상태가 저장이 되는 거지. 그 사람한테는 그게 계속 저장이 되는 거지. 그 사람이 들어오면 누가 들어오면 증권 일정이 먼저 보이는 거고 다른 거 안 건들면 누가 들어오면 부동산 일정이 먼저 보이는 거고 그런 거
+[01:22] AI: 이해했어요. 정리하면 이렇습니다.
+
+1. **언어판 확대 (Korea Trade만):** 한국과 많이 사고파는 나라, 우리 주요 품목을 많이 사는 나라의 언어로 Korea Trade를 늘려요.
+2. **세계 지도 → 경제지리:** 사회과부도처럼 화살표로 품목이 오가는 길을 보여줘요. 나라를 누르면 한국과의 무역 경로가, 품목 필터(예: 반도체)를 고르면 그 품목의 흐름이 나와요. Korea Trade와도 서로 연결해요.
+3. **새로 받아 두신 API 활용:** 항만 입출항, 선박용품 등 쓸 수 있는지 보고, 빠진 통계도 가져와서 Korea Trade를 채워요.
+4. **무역 뉴스 해설:** 국내외 뉴스를 찾아 해설을 붙이고, 같은 검수를 거쳐 **영어로 먼저** 내요. 한국어로도 낼 만하면 한국어판도 내요.
+5. **경제 일정 달력:** 무역 발표 일정을 포함해 파악할 수 있는 일정을 모두 넣어요. 증권·무역·부동산 등 분야별로 켜고 끌 수 있게 하고, 고른 상태는 방문자 기기에 저장해요. ENGLISH와 ISSUE의 오답 노트처럼요.
+
+양이 많아서 빨리 끝나는 것부터 차례로 할게요. 먼저 새로 받아 두신 API부터 확인합니다.
+[01:22] AI: Faster to read your actual application list in the portal (still logged in) than to guess:
+[01:23] AI: Four of them are file-based datasets (odcloud). Checking how current each one is:
+[01:25] AI: The form is open. Filling it in by clicking, App development as the purpose:
+[01:25] AI: The agreement box didn't take. Clicking it again from a fresh screenshot:
+[01:26] AI: The second form won't open while the browser pane is hidden, so I'll leave both for you at the end and move on to the calendar. Looking at how the homepage economic calendar is built:
+[01:27] AI: Now the calendar data: categories, trade releases, futures/options expiry days, Korea's weekly apartment price report (Thursdays 14:00), and US trade/housing releases from FRED.
+[01:28] AI: Calendar data now has 74 events across 5 categories. Now the on/off filter chips on the homepage calendar, remembered per visitor:
+[01:29] AI: Supporting English-only articles touches about eight spots in the build (article pages, home and lists, sitemaps, RSS, related posts, search, audio). Reading them to patch carefully:
+[01:29] AI: Implementing English-only article support (fact check falls back to the English body; Korean pages, lists, sitemaps, RSS, search, audio and world-map links skip English-only articles):
+[01:30] AI: Testing English-only handling with a dry build into a scratch folder (marking one existing article English-only in memory only):
+[01:32] AI: Searches gave me the breaking-news format references. Now pulling headlines directly from the trade outlets' front pages and a real 2026 10-day story:
+[01:32] AI: Reddit blocks plain requests, so I'll read it in the browser pane:
+[01:33] AI: Reddit can't be opened in the browser pane, so I'll read it through search instead:
+[01:33] AI: Research done. Writing it up as a reference file the publishing rounds will read before every trade article:
+[01:33] AI: Now updating the publishing task's Korea Trade block: the 21st → 23rd correction, English-first, the reference file, and daily trade-news scanning.
+[01:34] AI: Building and publishing (calendar filters, English-only support, release-date fix):
+[01:35] AI: The only flag is my new calendar script, as expected. It only reads and writes this site's own browser storage, with no outside requests, so I'm registering it under your rule:
