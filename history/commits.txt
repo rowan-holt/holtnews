@@ -1396,3 +1396,5 @@
 2026-11-15 12:02  feat(holt): 사이트 뉴스 — AI 부정행위 자수한 세무사 수석, 합격은 취소될까(세무사법엔 '합격 취소' 대신 '무효')
 2026-11-15 12:03  feat(holt): HOLT ISSUE 시사상식 문제 — tax_exam_ai_cheating
 2026-11-15 12:05  content(holt): 11-15 12시 Journal — 뇌 속 미세플라스틱 숟가락과 반박(microplastics_brain), 이탈리아 메타 HOLT ENGLISH 해석
+2026-11-15 12:06  feat(holt): ECON 101을 뉴스 목록(홈 배열·뉴스 메뉴·분야 쪽)에서 빼고 홈에 따로 작은 칸(최신 회·다음 회·목차)
+2026-11-15 12:07  fix(holt): HOLT ISSUE 모바일 메뉴 — 가로 스크롤 없이 다섯 칸 고정(옆으로 흔들리지 않게)
