@@ -1393,3 +1393,6 @@
 2026-11-15 11:43  docs(holt): 댓글 응대는 상대 말·상황 파악한 대화만, 광고·영어 표현 X
 2026-11-15 11:44  docs(holt): 댓글 응대 1115 규칙은 스레드만 — 인스타·페북·유튜브는 기존 그대로
 2026-11-15 11:59  feat(holt): ECON 표지 B안 확정 — 위 회차 주제 사진(COVER_SRC)+강조색 줄+아래 종이에 과목·장, 1회는 노란 문(Pixabay qimono)
+2026-11-15 12:02  feat(holt): 사이트 뉴스 — AI 부정행위 자수한 세무사 수석, 합격은 취소될까(세무사법엔 '합격 취소' 대신 '무효')
+2026-11-15 12:03  feat(holt): HOLT ISSUE 시사상식 문제 — tax_exam_ai_cheating
+2026-11-15 12:05  content(holt): 11-15 12시 Journal — 뇌 속 미세플라스틱 숟가락과 반박(microplastics_brain), 이탈리아 메타 HOLT ENGLISH 해석
