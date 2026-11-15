@@ -935,6 +935,14 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wbox b{display:block;font-size:18px;margin:2px 0 4px}.wbox .wo{display:block;color:var(--ink2);font-size:15.5px}
 .wbox .wa{display:inline-block;margin-top:8px;font-size:14.5px;border-bottom:1px solid var(--ink)}
 .wbox:hover{background:var(--soft)}
+.tmk td:first-child{min-width:240px;max-width:380px;white-space:normal}.tmk td b{font-weight:600}.tmk .hs{color:var(--gray);font-size:12px}
+.tmk td.sup{white-space:normal;text-align:left;min-width:180px;font-size:14px;color:var(--ink2)}
+.ttabs{display:flex;flex-wrap:wrap;gap:0;border-bottom:1px solid var(--line);margin:4px 0 18px;font-size:15px}
+.ttabs a{padding:9px 14px;border-bottom:3px solid transparent;margin-bottom:-1px}.ttabs a.on{border-bottom-color:var(--ink);font-weight:700}
+.ttabs a:hover{background:var(--soft)}
+.tjump{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 6px;font-size:14px}.tjump a{border:1px solid #ddd;border-radius:14px;padding:3px 11px}.tjump a:hover{border-color:#111}
+.tgap{font-size:14px;color:var(--ink2);margin:0 0 8px;max-width:760px}
+
 .tpage{max-width:1180px;margin:0 auto;padding:22px 24px 48px}
 .tpage h1{font-size:clamp(28px,3.4vw,44px);margin:0 0 6px;letter-spacing:-.01em;line-height:1.2}
 .tpage .tlead{color:var(--ink2);margin:0 0 18px;max-width:760px}
