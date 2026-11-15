@@ -928,6 +928,10 @@ a:has(> .a11y-nw),.a11y-memo{position:relative}
 .calc input{font:inherit;font-size:16px;padding:9px 10px;border:1px solid #bbb;border-radius:0;background:#fff;color:var(--ink)}
 .calc-out{display:flex;align-items:baseline;gap:8px;margin:18px 0 0;font-size:15px}.calc-out output{font-size:24px;font-weight:700;margin-left:auto}
 .calc-note{font-size:12.5px;color:var(--gray);margin:10px 0 0}
+/* 1115 사용자: 퇴직금 계산 — 달력으로 날짜, 직전 3개월 임금은 달마다 */
+.sev input[type=date]{min-height:42px;-webkit-appearance:none;appearance:none}.sev .sv-ms{margin-top:14px}
+.sv-out{margin:16px 0 0;padding:12px 0 0;border-top:1px solid #ddd;display:grid;gap:6px}.sv-out div{display:flex;justify-content:space-between;gap:12px;font-size:14px}
+.sv-out dt{color:var(--ink2)}.sv-out dd{margin:0;text-align:right;font-weight:600}
 .nx-col li .nx-sec{display:block;font-weight:400;font-size:12.5px;color:var(--gray);margin-bottom:2px}
 @media (max-width:640px){.ecf{position:static;margin:0 0 10px}.ecg{display:block;border:0;border-top:1px solid #111}.ecg .cw,.ecg .cd.empty{display:none}
 .ecg .cd{min-height:0;display:grid;grid-template-columns:92px minmax(0,1fr);gap:8px;padding:10px 0;border:0;border-bottom:1px solid #eee}
