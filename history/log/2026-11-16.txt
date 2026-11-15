@@ -756,3 +756,17 @@ Korea Trade 안에 탭을 달았어요: **Sell to Korea · Buy from Korea · By 
 [05:16] 예약 작업: [예약 작업 holt-english-site-sync 실행 — 정해 둔 지시문으로 자동 시작]
 [05:18] AI: 새 쪽 점검에서 품사 하나(consent→명사)를 고쳤고, 이제 오늘 채울 25쪽의 표현·퀴즈를 작성해 검수합니다.
 [05:20] AI: Restore the compact format:
+[05:22] AI: Both pushed. Commit:
+[05:22] AI: 오늘 매일 점검을 끝냈고 두 사이트 모두 푸시했어요.
+
+- **영어 사이트:** 지금 519쪽이에요. 하루 새 쪽 한도가 6개라서 64쪽이 다음 날부터 차례로 공개돼요.
+- **품사·예문:** 품사는 1개 고쳤어요. consent가 형용사로 잘못 나와서 명사로 바꿨어요. 문장이나 예문이 없는 쪽은 없었어요. keep your distance 쪽은 퀴즈만 없는데, 원칙대로 그대로 뒀어요.
+- **쪽별 표현·퀴즈:** 오늘 25쪽을 채웠어요. fight over, rate hike, backlash, go unnoticed 같은 쪽이에요. 검수에 걸린 항목은 없었고, 다시 읽어 봤을 때도 뺄 만한 항목은 없었어요. 지금까지 채운 쪽은 60개이고, 남은 쪽은 455개예요. 그중 내용이 얇은 하위 쪽이 327개예요.
+- **HOLT NEWS:** 지금 38편이에요. 이번 빌드에서 12편을 한국어판과 영어판으로 만들어 올렸어요.
+- **푸시:** 두 사이트 모두 올라갔어요. 고친 파일 두 개도 커밋해서 푸시했어요(cdd3284).
+
+=== 대화 Claude Code 세션 bbca9649 ===
+[05:27] 예약 작업: [예약 작업 holt-history-timeline 실행 — 정해 둔 지시문으로 자동 시작]
+[05:28] AI: Log reviewed; now reading context around the candidates.
+[05:28] AI: Still reviewing candidate conversations; next I'll write the entries.
+[05:29] AI: 7 entries added; now building and pushing the site.

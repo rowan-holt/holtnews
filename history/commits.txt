@@ -1491,3 +1491,4 @@
 2026-11-16 01:57  feat(holt): Korea Trade 엮은 해석 — 해운 항로(컨테이너 왕복·빈 컨테이너 + 방향별 운임), 나라별 kg당 가격 vs 한국 평균, 빈자리 표에 공급국 가격; 해양수산부 컨테이너·항만 수집(trade_ports)
 2026-11-16 02:01  fix(holt): Korea Trade 해운 칸 — 짐 찬 컨테이너끼리 비교, 유럽은 항로 전체 운임을 따로; 검증 스크립트(trade_verify, 전 줄 대조·논리 검사)
 2026-11-16 04:43  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — naver_dunamu_merger_review
+2026-11-16 05:22  content(holt): HOLT ENGLISH 쪽별 표현·퀴즈 25쪽 + 점검
