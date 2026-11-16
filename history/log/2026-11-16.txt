@@ -2384,3 +2384,41 @@ I opened the live pages to confirm the changes are there, and the commit is push
 
 처음 받은 실제 독자 피드백이 이렇게 쓸모 있었다는 점도 좋은 신호예요. 다른 커뮤니티에서 댓글이 달리면 이번처럼 내용과 제 의견을 텔레그램으로 보내 드릴게요.
 [20:45] 사람: 수정일에 밑줄 보이게 하지마 마우스 올리면 밑줄생기도록 해죠
+
+=== 대화 Claude Code 세션 14cf0348 ===
+[20:46] 예약 작업: [예약 작업 holt-site-publish 실행 — 정해 둔 지시문으로 자동 시작]
+
+=== 대화 Claude Code 세션 1b3d2557 ===
+[20:47] 사람: 저 국기 나열하지말고 누르면 목록이 세로로 나오게 하도록 하자
+
+=== 대화 Claude Code 세션 14cf0348 ===
+[20:48] AI: 후보 기록 형식 오류를 고치는 중입니다(선정 사유 문구가 관문 탈락 단어와 겹침).
+[20:48] AI: 그림 두 장을 그렸습니다. 그림을 확인한 뒤 기사 본문을 씁니다.
+[20:48] AI: Overlap at bottom — tighten rows.
+
+=== 대화 Claude Code 세션 4ebba621 ===
+[20:49] AI: 스타일 파일이 실제로 바뀌었는지 확인하는 중이에요.
+[20:50] AI: 이제 수정일 밑줄은 평소에는 안 보이고, 마우스를 올릴 때만 생겨요. 홀트뉴스에 올렸고, 실제 사이트에 바뀐 스타일이 들어간 것까지 확인했어요. 바뀐 스타일은 휴대폰에서 예전 모양이 남지 않고 바로 새로 받아지게 되어 있어요.
+
+휴대폰에는 마우스가 없어서 밑줄이 보이지 않아요. 그래도 수정일을 누르면 '바로잡습니다'로 내려가는 건 똑같아요.
+
+=== 대화 Claude Code 세션 14cf0348 ===
+[20:50] AI: 기사 초안을 썼고, 자료 주소를 실제 API 주소로 고친 뒤 사실 확인을 돌립니다.
+[20:51] AI: Three reviewers (산업부 데스크, 영문판 데스크, 보탬·그림) are checking the article in the background; meanwhile I'm adding the trade notes for the US/Mexico/China pages.
+[20:51] AI: Notes written. Waiting on the three reviewers now.
+
+=== 대화 Claude Code 세션 1b3d2557 ===
+[20:52] AI: The dropdown works. Next I'm checking whether pages outside Trade (Korean and English only) use the same dropdown.
+[20:52] AI: The other pages still show a single flag. I'm switching them to the same dropdown so the whole site behaves the same way.
+
+=== 대화 Claude Code 세션 14cf0348 ===
+[20:53] AI: Sent the revised draft back to all three reviewers for a re-check. I'll fold in their answers and then build and publish.
+
+=== 대화 Claude Code 세션 1b3d2557 ===
+[20:55] AI: Another session's build was running at the same time and was rewriting the output folder. I'm waiting for it to finish and then checking again.
+
+=== 대화 Claude Code 세션 4ebba621 ===
+[20:56] 사람: 무역메뉴에 뉴스들어간 거기 뉴스로 해줘 해설말고
+
+=== 대화 Claude Code 세션 14cf0348 ===
+[20:56] AI: All reviews passed and the fact check is clean (54 numbers). The site build is running now; I'll push and verify once it finishes.
