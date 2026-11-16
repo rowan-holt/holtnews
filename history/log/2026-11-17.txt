@@ -177,3 +177,23 @@ Sources:
 
 === 대화 Claude Code 세션 1b3d2557 ===
 [00:52] AI: Taiwan labels I took out of the map's English label dictionary changed the map script, so it has to be registered again. That's my change, so I'll register it and publish.
+
+=== 대화 Claude Code 세션 aa8e8415 ===
+[04:42] 예약 작업: [예약 작업 holt-news-vocab 실행 — 정해 둔 지시문으로 자동 시작]
+[04:43] AI: Daily cap held the new pages back (78 waiting). Checking the queue ledger.
+[04:43] AI: **처리한 기사:** us_cpi_october_no_annual (미국 10월 소비자물가, 연간 상승률이 빠진 이유)
+
+**가져간 표현 4개:**
+- lead with — ~을 앞세우다, ~로 시작하다
+- carry forward — 그대로 이어 쓰다, 넘기다
+- understate — 실제보다 작게 보이게 하다, 축소하다
+- rest on — ~에 기반하다, ~에 달려 있다
+
+- **검사:** 통과(✓ 4개)했어요. 해석이 비어 있는 문장은 없었어요.
+- **배포:** 사이트를 빌드해서 푸시했고, 커밋(501bdb7)도 올렸어요. 안전 검사 경고는 나오지 않았어요.
+- **공개 시점:** 하루에 새 쪽은 6개까지만 열리는데 지금 78개가 기다리고 있어요. 그래서 이번 표현 쪽들은 아직 사이트에 안 보여요. 차례가 되면 다음 날 이후 자동으로 열리고, 그 쪽에 붙는 HOLT NEWS 영어판 기사 링크는 그때 확인해야 해요.
+- **남은 대기:** 23편
+
+=== 대화 Claude Code 세션 3b1f5a1f ===
+[05:16] 예약 작업: [예약 작업 holt-english-site-sync 실행 — 정해 둔 지시문으로 자동 시작]
+[05:16] AI: 품사·예문 문제 없음. 쪽별 표현 단계로 넘어갑니다.
