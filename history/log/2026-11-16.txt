@@ -2050,3 +2050,43 @@ Not done yet:
 - [Focus Taiwan](https://focustaiwan.tw/politics/[가림:숫자])
 - [China Daily HK](https://www.chinadailyhk.com/article/642471)
 - [China Global South](https://chinaglobalsouth.com/2026/11/09/[가림:긴문자열]/)
+[18:07] AI: Instagram, Facebook, and Threads are done; recorded. Waiting for the story and YouTube to finish.
+[18:07] AI: 18:00 회차는 인스타 릴스, 페이스북 릴스, 스레드까지 올라갔고, 인스타 스토리와 유튜브는 아직 올라가는 중입니다.
+
+- 인스타 릴스: 18:00 https://www.instagram.com/reel/Dfy_ASiB3K4/ (캐러셀은 60분 뒤 자동 게시 예약)
+- 페이스북 릴스: 18:03 https://www.facebook.com/reel/[가림:숫자]
+- 스레드: 18:05 https://www.threads.com/@[가림]/post/Dfy_k5ZH7yX (리네르 대선 출마 이야기)
+
+성과 기록(유형 J), 나라·의외 상황 태그, 세계 뉴스 순환 기록(대만)은 해 뒀습니다. 커밋·푸시는 남은 업로드가 끝나면 하고, 그때 최종 보고를 드리겠습니다.
+[18:10] AI: 18:00 회차를 모든 채널에 정각부터 올렸고, 오류는 없었습니다. 기록과 커밋·푸시까지 마쳤습니다.
+
+**회차:** 11-16 18:00. 월요일 18시는 세계 뉴스 자리이고, 이번 세부 지역은 대만·몽골·홍콩 쪽(처음 다룸)이었습니다.
+
+**포맷과 이유:** 사진을 화면 가득 채운 표지의 짧은 뉴스(유형 J)로 만들었습니다. 11/16 재분석에서 상위 게시물이 모두 이런 실사 표지에 '누가 무엇을 잃나'가 보이는 주제였습니다. 이번 주제에서는 파푸아뉴기니가 LNG 수출의 약 3분의 1을 사 가던 큰손을 잃을 판입니다. 07:30이 미국, 12시가 브라질이라 나라도 겹치지 않습니다.
+
+**주제:** "파푸아뉴기니가 쫓아내자 / 대만은 가스 주문 끊었다". 오늘의 영어는 blindsided(뒤통수를 맞은)입니다.
+- 출처: [Al Jazeera](https://www.aljazeera.com/news/2026/11/6/[가림:긴문자열]), [ABC Pacific](https://www.abc.net.au/pacific/[가림:긴문자열]/107362812), [Focus Taiwan](https://focustaiwan.tw/politics/[가림:숫자])
+- 중국이 더 사 주겠다고 한 부분은 [China Daily HK](https://www.chinadailyhk.com/article/642471), [China Global South](https://chinaglobalsouth.com/2026/11/09/[가림:긴문자열]/)로 확인했습니다.
+- 소식은 11/6 발표라 열흘쯤 지났습니다. 이 지역에서 2곳 이상 확인된 더 새 소식을 못 찾았습니다.
+
+**올린 시각과 링크:**
+- 18:00 인스타 릴스: https://www.instagram.com/reel/Dfy_ASiB3K4/ (캐러셀은 19:00 자동 게시, 정답 댓글은 21:01 예약)
+- 18:03 페이스북 릴스: https://www.facebook.com/reel/[가림:숫자]
+- 18:05 스레드: https://www.threads.com/@[가림]/post/Dfy_k5ZH7yX
+  - 소재 고르는 도구가 오늘 12시 인스타와 같은 호나우지뉴를 골라서, 어제 주제인 리네르 대선 출마로 직접 바꿨습니다.
+- 인스타 스토리: https://www.instagram.com/stories/rowanholt_official/[가림:숫자]
+- 18:09 유튜브: https://youtube.com/shorts/9AGON2vv35Y
+  - 지금은 비공개입니다. 표지가 확인되면 자동으로 공개되는 평소 흐름입니다.
+
+**현재 단계:** 2차 목표(조회수 500회·팔로워 200명, 11/30까지), 지금 팔로워 56명입니다. 대기 중인 후속 주제는 없었습니다.
+
+**기록:** 성과 기록(J)과 태그(그 외·의외 상황 있음), 세계 뉴스 순환 기록(대만)을 남겼습니다. 커밋 `a0444a5`, `8ccb1a1`을 푸시했습니다.
+
+=== 대화 Claude Code 세션 1b3d2557 ===
+[19:03] 사람: 언어전환 국기로 해야지 코리아트레이드가면 다른 언어들도 활성화되는거지
+[19:03] AI: Now replace the text bar with header flags.
+[19:06] AI: Changing the product bars so they grow left to right, then putting four flags in the header. Building and taking a screenshot now.
+[19:14] AI: The Korean page fits on screen now. On the English page the column headings are too long and the table spills off the side, so I'm letting the headings wrap.
+[19:22] AI: Only the Korean country table on the Korean page is still about 22px too wide on a phone. I'm letting long amounts wrap onto a second line there.
+[19:27] AI: Wrapping makes the rows look ragged. Instead, on phones I'm moving "달러" (dollars) out of each cell and into one unit note above the table.
+[19:30] AI: That works. Publishing the site and committing.
