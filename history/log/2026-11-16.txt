@@ -2006,3 +2006,47 @@ PC도 다시 캡처해서 그대로인 것을 확인했어요. 고친 코드는 
 [16:43] AI: Screenshots of the Chinese and Japanese pages are being taken to check the result.
 [16:43] AI: The pages render as intended (Chinese home, Japanese country page, Chinese product page; the period-total view works too). Next I'll record this in the site's history page, then publish.
 [16:43] AI: Publishing the site now (build, safety check, push).
+[16:47] AI: Pages are live. Now commit and push the code.
+[16:47] AI: Update memory.
+[16:48] AI: The Chinese and Japanese editions of Korea Trade are live, and the code is committed and pushed.
+
+- **Addresses:** holtnews.com/zh/trade/ (Chinese) and holtnews.com/ja/trade/ (Japanese).
+- **What's there:** 34 pages per language, the same as the Korean edition. That's the home page, 15 product pages, 17 country pages and the freight page. Choosing several periods to see their total also works in Chinese and Japanese.
+- **Wording:** Sentences are written as natural Chinese and Japanese, not translated word for word, for example "韩国与日本的贸易" and "韓国の輸出全体に占める日本の割合は3.1%です". Money uses each language's units: 335亿美元 and 2,701億ドル.
+- **Moving between languages:** Every Korea Trade page now has a "한국어 · English · 中文 · 日本語" row at the top, and all four language versions are linked to each other for search engines.
+- **Checks:**
+  - Every Chinese and Japanese page was scanned for leftover Korean or English text, and none is left.
+  - I looked at the pages at desktop and phone widths, and none spill sideways on a phone.
+  - After publishing, I opened the live addresses directly to confirm they work.
+- **Fixed in passing:** On the English pages, 11 country names were showing in Korean (Marshall Islands, Liberia and others that show up mostly in ship exports). They're in English now.
+
+Not done yet:
+- **Site chrome stays English:** The top menu and footer on the Chinese and Japanese pages are in English, because the rest of the site only has Korean and English.
+- **English-only pieces:** The three small-business tabs (Sell to Korea, Buy from Korea, By country) and the trade analysis articles are still English only. Translating the tabs means preparing Chinese and Japanese names for thousands of products, so that's a separate job.
+- **More languages:** Vietnamese and Spanish come next on the plan.
+
+=== 대화 Claude Code 세션 082724f8 ===
+[17:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
+[17:01] AI: No planned topic for today 18:00. Now the loop prompt in full.
+[17:02] AI: 진행 상황: 18:00 회차(월요일 세계 뉴스, 대만·몽골·홍콩 지역)로 주제를 찾는 중입니다.
+[17:04] AI: 표지에 쓸 자유 이용 LNG 운반선 사진 후보를 비교하고 있습니다.
+[17:05] AI: 원고를 썼고, 이제 카드와 릴스를 만듭니다.
+[17:06] AI: 카드 넘침을 고쳐 다시 만들었고, 영상 프레임을 확인하고 있습니다.
+[17:07] AI: 스레드 소재 고르기를 확인하는 중입니다(오늘 인스타와 겹치지 않게).
+[17:07] AI: 제작을 마쳤고, 18:00 정각에 맞춰 올리는 업로드 스크립트를 백그라운드로 걸어 둡니다.
+[17:07] AI: 업로드는 18:00에 시작되도록 걸려 있고, 끝나면 기록과 커밋을 이어서 하겠습니다.
+[17:08] AI: 18:00 회차는 다 만들었고 아직 올리지는 않았습니다. 백그라운드 스크립트가 18:00 정각에 인스타 릴스, 페북 릴스, 스레드, 인스타 스토리, 유튜브 순으로 올립니다. 끝나면 기록, 커밋, 보고를 이어서 하겠습니다.
+
+- **주제:** 파푸아뉴기니가 대만 대표부를 쫓아내자, 대만이 원조를 끊고 그때그때 사던 가스(LNG) 주문도 멈췄다는 소식입니다. 대만은 파푸아뉴기니 LNG 수출의 약 3분의 1을 사 온 큰손이고, 중국은 더 사 주겠다고 나섰습니다. 오늘의 영어는 blindsided(뒤통수를 맞은)입니다.
+- **포맷:** 유형 J(사진을 화면 가득 채운 표지)로 만들었습니다. 월요일 18시는 세계 뉴스 자리이고, 이번 세부 지역은 대만·몽골·홍콩 쪽입니다. 11/16 재분석에서 상위 게시물이 모두 '누가 무엇을 잃나'가 보이는 실사 표지여서 이 포맷을 골랐습니다. 07:30이 미국, 12시가 브라질이라 나라도 겹치지 않습니다.
+- **주의할 점:** 소식은 11/6 발표라 열흘쯤 지났습니다. 이 지역에서 2곳 이상 확인된 더 새 소식을 못 찾았습니다.
+- **스레드:** 도구가 오늘 12시 인스타 주제(호나우지뉴)를 골라서, 오늘 인스타와 겹치지 않는 어제 주제(테디 리네르 대선 출마)로 바꿨습니다.
+- **표지 사진:** 위키미디어의 LNG 운반선 사진(CC BY 2.1 JP)을 썼습니다. 파푸아뉴기니 배가 아니어서 캡션에 '자료 사진'이라고 적었습니다. 대만 국기 파일도 새로 추가했습니다.
+- **고친 것:** 영어 본문이 카드 밖으로 넘쳐 문장을 줄였고, 본문에 없는 표현 하나를 바꿨습니다. 캡션 양식 검사는 통과했습니다.
+
+교차확인 출처:
+- [Al Jazeera](https://www.aljazeera.com/news/2026/11/6/[가림:긴문자열])
+- [ABC Pacific](https://www.abc.net.au/pacific/[가림:긴문자열]/107362812)
+- [Focus Taiwan](https://focustaiwan.tw/politics/[가림:숫자])
+- [China Daily HK](https://www.chinadailyhk.com/article/642471)
+- [China Global South](https://chinaglobalsouth.com/2026/11/09/[가림:긴문자열]/)
