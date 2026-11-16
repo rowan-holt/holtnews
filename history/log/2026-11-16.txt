@@ -2307,3 +2307,5 @@ I opened the live pages to confirm the changes are there, and the commit is push
 === 대화 Claude Code 세션 4ebba621 ===
 [20:29] AI: Found the cause (장부 숫자 '300,000'을 쉼표에서 잘라 '000'이 모든 문장에 걸림). 고치는 중이에요.
 [20:31] AI: Build with all changes running now (takes a few minutes).
+[20:34] AI: Built fine. Checking the page in the browser pane (click the date and a number).
+[20:34] AI: Local server blocked; I'll publish through the normal path (with the safety check) and verify on the live site instead.
