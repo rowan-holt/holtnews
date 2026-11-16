@@ -1077,26 +1077,6 @@ Sources:
 - [Sci.News](https://www.sci.news/biology/[가림:긴문자열].html)
 - [ScienceDaily Strange & Offbeat](https://www.sciencedaily.com/news/strange_offbeat/)
 [21:53] 사람: 아니 연구말고 뉴스 올릴건데 안되나
-[21:54] AI: 네, 됩니다. 오늘 날짜 뉴스로 찾아봤어요.
-
-**추천: 스타벅스 '검은 고양이 프라푸치노' (할로윈 한정)**
-- **내용:** 미국 스타벅스가 어제(10/22) 할로윈 음료를 냈어요. 초콜릿 케이크 맛 프라푸치노에 초콜릿 고양이 귀를 얹었고, 그란데 한 사이즈만 팔아요. 다크초콜릿 쿠키도 같이 나왔어요.
-- **나라마다 다른 점:** 싱가포르는 라즈베리·블랙커런트 맛을 넣어 10/31까지만 팔고, 일본은 블랙베리 요거트 맛이에요.
-- **고른 이유:** 할로윈 주간이라 시기가 딱 맞고 2030이 좋아할 일상 주제예요. "나라별로 맛이 다르다"는 비교가 카드로 풀기 좋아요.
-
-**뺀 것:** 오늘 많이 본 뉴스는 대부분 피해야 하는 쪽이라 뺐어요.
-- 오세훈 시장 무죄: 법·정치
-- 티베트 지진, 프랑스 홍수: 재난
-- 나스닥 2.6% 급락, 메타 7% 하락: 시장 뉴스는 요즘 줄이기로 했어요
-
-**시간:** 지금이 밤 10시쯤이라 새벽 1시 전에 올리려면 오늘 안에 만들어야 해요. 아니면 내일 아침 뉴스 뒤 낮에 올려도 되고요. 만들라고 하시면 바로 시작할게요.
-
-Sources:
-- [Starbucks 공식](https://about.starbucks.com/?p=294061)
-- [Food Network 시음기](https://www.foodnetwork.com/fn-dish/news/[가림:긴문자열])
-- [Alvinology (싱가포르)](https://alvinology.com/2026/10/20/[가림:긴문자열]/)
-- [네이트 랭킹뉴스](https://m.news.nate.com/rank/list?date=20261023&mid=m2001&rmode=interest&section=sisa)
-- [2026년 10월 23일 해외 뉴스 요약](https://www.new1cm.com/2026/10/2026-10-23.html)
 [21:59] AI: Journal #2가 다섯 곳 모두 올라갔어요. 예약 작업도 스스로 지워졌어요.
 
 - 인스타 릴스: https://www.instagram.com/reel/De1ldSjEdB2/
