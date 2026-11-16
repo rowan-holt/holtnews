@@ -371,3 +371,31 @@ Sources:
 [08:23] AI: Static links look mostly fine, so checking the actual China page and the menu script to find what's redirecting.
 [08:23] AI: HTML links are correct, so testing the real click in a browser to see where it actually lands.
 [08:24] AI: Down to zero bad links (404 page aside, which is meant to go home). Now a full rebuild so the English country pages link to the Korean country page, then push.
+
+=== 대화 Claude Code 세션 1fd273ed ===
+[08:29] 사람: 다른 것 때문에 탐색하다가도 문제를 발견하면 지나치지 말고 고치렴 버그만 고치지말고 사용자가 사용하기 불편할것 같은것 혹은 정렬이 어긋나거나 한줄로 보여야할것 같은데 두줄로 보이거나, 문장이 적절하지 않은데서 끊긴채로 줄바꿈이 됐다거나 하는거는 그때그때 수정하렴
+
+=== 대화 Claude Code 세션 3c390c44 ===
+[08:29] AI: 고쳐서 사이트에 올렸어요. 이제 언어판을 바꾸면 항상 같은 쪽의 다른 언어판으로 가요. 그 언어판이 없는 쪽에서는 그 언어가 메뉴에 아예 안 보이고, 다른 쪽으로 보내지 않아요.
+
+**한국과 중국의 교역 쪽**
+- 지금 중국어판에서 한국어 국기를 직접 눌러 봤는데 한국어판 같은 쪽으로 잘 갔어요.
+- 그래서 그 쪽에서 무역 홈으로 갔던 이유는 확인하지 못했어요. 예전 화면이 남아 있었을 수 있어요. 지금도 홈으로 가면 몇 시에 어느 언어에서 눌렀는지 알려 주세요.
+
+**사이트 전체를 훑어서 찾은 문제**
+- **영어판 나라 쪽 36곳**: 캄보디아, 미얀마 같은 나라 쪽에서 한국어 국기를 누르면 Korea Trade 홈으로 갔어요. 이제 한국어판 같은 나라 쪽으로 가요. 실제 사이트에서도 확인했어요.
+- **한국어판 나라 쪽**: 중국어, 일본어, 베트남어판이 없는 나라 쪽에도 그 국기들이 떠 있어서, 누르면 없는 쪽이 나왔어요. 이제 그런 쪽에는 그 국기들이 안 보여요.
+- 다시 검사하니 언어 메뉴가 다른 쪽이나 없는 쪽으로 가는 경우가 하나도 남지 않았어요. '없는 쪽' 안내 화면만 원래대로 홈으로 가요.
+
+**앞으로 만드는 쪽**
+- 사이트를 만들 때마다 마지막에 모든 쪽의 언어 메뉴를 자동으로 검사해요. 같은 쪽의 다른 언어판이 아니거나 그 언어판이 없으면 메뉴에서 빼요.
+- 그래서 새 쪽이 생겨도 다른 쪽으로 가는 언어 메뉴가 생기지 않아요.
+
+변경은 커밋하고 푸시했어요.
+
+=== 대화 Claude Code 세션 1fd273ed ===
+[08:29] AI: I found that my previous change broke the Vietnamese tables (first column squeezed to one letter per line). Fixing that now, plus the multi-line headers in the other language editions.
+[08:31] AI: Still fixing the table layout across all five language editions; rebuilding and re-running the automatic check on all 240 trade pages.
+[08:33] AI: Korean is now clean. Tightening the Japanese header and settling Vietnamese/English on balanced wrapping.
+[08:34] AI: Vietnamese headers still stack to 3 lines; finding where those translations live so I can shorten them.
+[08:35] AI: Korean, Chinese and Japanese pages are now clean at both phone widths. Deploying.
