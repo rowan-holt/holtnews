@@ -365,15 +365,15 @@ body.en .page h1,body.en .page h2{font-family:"Jost",sans-serif;font-weight:500}
 .fl-k{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--ink);color:#fff;font-size:12px;flex:none}
 .fl dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 10px;margin:8px 0 0;font-size:13px;color:var(--ink2)}
 .fl dt{font-weight:700;color:var(--ink);white-space:nowrap}.fl dd{margin:0}
-.fl-g .fl-s{border:1.5px solid var(--ink);border-radius:16px;background:var(--soft);padding:10px 20px;font-size:13.5px;text-align:center;width:fit-content;max-width:min(100%,420px);margin:0 auto}
+.fl-g .fl-s{position:relative;border:1.5px solid var(--ink);border-radius:16px;background:var(--soft);padding:10px 20px;font-size:13.5px;text-align:center;width:fit-content;max-width:min(100%,420px);margin:0 auto}
 .fl-g .fl-s b{display:block;font-weight:700}
-/* 1116 사용자: 판단 마디 언밸런스·화살표 끊김 → 가운데 둥근 상자 안에 질문 + 작은 갈래 줄(아니요 →), 화살표는 상자에서 다음 단계로 바로. 단계 상자와 같은 칸 */
+/* 1116 사용자: PC는 질문+작은 '아니요 →' 줄을 한 상자에(이 모양 그대로 유지, 건드리지 말 것). 휴대폰은 아래 미디어 쿼리에서 알약+옆으로 뺀 갈래 */
 .fl li.fl-g>*{grid-column:1}
 .fl-no{display:block;margin-top:4px;font-size:12.5px;line-height:1.45;color:var(--ink2);font-weight:400}
-.fl-no i{font-style:normal;font-weight:600;margin-right:5px}.fl-no i::after{content:" →";font-weight:400}
+.fl-no i{font-style:normal;font-weight:600;margin-right:5px}.fl-no i::after{content:" →";font-weight:400}.fl-no-out{display:none}
 .fl-y{position:absolute;left:calc(50% + 8px);top:calc(100% + 4px);font-style:normal;font-size:11.5px;color:var(--gray)}
 @media (max-width:640px){.fl li{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);column-gap:14px}.fl li.fl-st,.fl li.fl-g{grid-template-columns:1fr}
-.fl-g .fl-s{padding:10px 18px;max-width:88%}.fl dl{grid-template-columns:1fr;gap:1px}.fl dd+dt{margin-top:6px}}
+/* 휴대폰: 1fr|알약|1fr 세 칸 → 알약은 정확히 가운데(화살표와 일직선), 갈래는 오른쪽 칸에 선으로 연결 */.fl li.fl-g .fl-n{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center}.fl li.fl-g{position:relative}.fl li.fl-g::before{content:"";position:absolute;left:50%;top:0;bottom:0;border-left:1.5px solid var(--ink)}.fl li.fl-g .fl-s{position:relative;z-index:1}.fl li.fl-g .fl-s::before{content:"";position:absolute;left:calc(50% - 4.5px);top:-7px;border:5px solid transparent;border-top:6px solid var(--ink);border-bottom:0}.fl li.fl-st:has(+li.fl-g) .fl-n::before{display:none}.fl li.fl-st:has(+li.fl-g) .fl-n::after{height:30px}.fl-g .fl-s{grid-column:2;border-radius:22px;padding:8px 14px;font-size:13px;max-width:50vw}.fl-no-in{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}.fl-no-out{display:block;padding:4px 0;grid-column:3;position:relative;margin:0 0 0 20px;font-size:12px;line-height:1.4;color:var(--ink2)}.fl-no-out>span{display:block}.fl-no-out::before{content:"";position:absolute;right:calc(100% + 4px);top:50%;width:14px;border-top:1.5px solid #9a9a9a}.fl-no-out i{display:block;font-style:normal;font-weight:400;font-size:11.5px;color:var(--gray);margin:0}.fl-no-out i::after{content:none}.fl dl{grid-template-columns:1fr;gap:1px}.fl dd+dt{margin-top:6px}}
 .page a{text-decoration:underline}
 .page a.plain,.page a.plain:hover{text-decoration:none!important}
 .page .contact p{margin:6px 0;display:flex;gap:28px;align-items:center}
