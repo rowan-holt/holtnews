@@ -27,7 +27,7 @@ border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z
 .bar .lsw .lang{font-size:clamp(15px,1.25vw,18px)}.bar .lsw .lang svg{transform:translateY(calc(.578em - 9px))}html[lang=en] .bar .lsw .lang svg{transform:translateY(calc(.177em - 3.8px))}   /* 영문판: 글자 아랫선 = 기준선 */.lsw summary{list-style:none;display:flex;align-items:center;gap:6px;cursor:pointer;padding:6px 4px;border-radius:4px}
 .lsw summary::-webkit-details-marker{display:none}.lsw summary{background:none!important;-webkit-tap-highlight-color:transparent}.lsw summary:focus{outline:none}.lsw summary:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 .lsw summary svg:first-child,.lmenu svg{width:27px;height:18px;display:block;border-radius:2px;box-shadow:0 0 0 .5px rgba(0,0,0,.18)}
-.ldd .lcar{width:10px;height:6px;display:block;color:var(--ink2)}.ldd[open] .lcar{transform:rotate(180deg)}.ldd .lmenu a,.ldd .lmenu .lcur{color:var(--ink)}.ldd .lmenu svg{flex:none}   /* 1116 사용자: 국기 누르면 언어 목록 세로로 */
+.ldd .lmenu a,.ldd .lmenu .lcur{color:var(--ink)}.ldd .lmenu svg{flex:none}   /* 1116 사용자: 국기 누르면 언어 목록 세로로 */
 .lmenu{position:absolute;right:0;top:calc(100% + 8px);z-index:7;min-width:170px;background:#fff;border:1px solid var(--line);box-shadow:0 10px 24px rgba(0,0,0,.1);padding:6px 0}
 .lmenu>a,.lmenu>.lcur{display:flex;align-items:center;gap:10px;padding:10px 16px;font-size:15px;white-space:nowrap}
 .lmenu>a:hover{background:#f3f1ec}.lmenu .lcur{font-weight:700}.lmenu .lcur em{margin-left:auto;font-style:normal;font-size:13px}
