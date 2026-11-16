@@ -989,6 +989,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .tkpi .d{font-size:14px;font-variant-numeric:tabular-nums}.up{color:#0b6b3a}.dn{color:#b42318}
 .tnext{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:15px;background:var(--soft);padding:10px 14px;margin:14px 0 0}
 .tnext b{font-weight:700}
+.thublinks{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 18px;font-size:15px;margin:10px 0 0}.thublinks a{white-space:nowrap}
 .tpage .tlead1{max-width:none}
 .trel{margin:12px 0 0}.trel h3{font-size:13px;font-weight:600;color:var(--ink2);margin:0 0 6px;letter-spacing:.02em}.trel ol{list-style:none;margin:0;padding:0 0 8px;display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--ink);border-bottom:1px solid rgba(128,128,128,.35)}.trel li{padding:2px 10px 0 12px;border-left:1px solid rgba(128,128,128,.25);margin-top:8px}.trel li:first-child{border-left:0;padding-left:0}.trel b{display:block;font-size:17px;font-weight:700;line-height:1.2}.trel span{display:block;font-size:13px;color:var(--ink2);margin-top:3px;line-height:1.35}.trel li:not(:first-child) b{color:var(--ink2)}
 .tchart{margin:6px 0 4px;overflow-x:auto}.tchart svg{display:block;width:100%;min-width:560px;height:auto}
@@ -1027,7 +1028,7 @@ body.x-zh{font-family:"Jost","PingFang SC","Hiragino Sans GB","Microsoft YaHei",
 body.x-ja{font-family:"Jost","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo","Noto Sans JP",sans-serif}
 .tp h3{font-size:18px;margin:22px 0 8px}.tp h3.tph{font-size:22px;margin:6px 0 10px}.tp h3 small,.tp h3.tph small{font-weight:400;font-size:13px;color:var(--gray);margin-left:6px}
 details.tdata{margin:6px 0 0;font-size:14px}details.tdata summary{cursor:pointer;color:var(--ink2)}
-@media (max-width:640px){.tpage{padding:16px 16px 40px}.tkpi{border-right:0;border-bottom:1px solid #ddd}.ttab{font-size:13px}.ttab th,.ttab td{padding:7px 4px}html[lang=ko] .twrapcells .tu{display:none}.tunote{display:block!important}}
+@media (max-width:640px){.tpage{padding:16px 16px 40px}.tkpi{border-right:0;border-bottom:1px solid #ddd}.ttab{font-size:13px}.ttab th,.ttab td{padding:7px 4px}html[lang=ko] .twrapcells .tu{display:none}.tunote{display:block!important}html[lang=ko] .ttab thead th{white-space:nowrap}.ttab thead th{word-break:keep-all}.ttab td:first-child,.ttab th:first-child{word-break:keep-all;overflow-wrap:anywhere}.tpage .tmk td:first-child{min-width:0}.tpage h2 small{display:inline-block;white-space:nowrap}}   /* 1117 사용자: 머리 칸·기간이 어중간하게 두 줄로 잘리지 않게 */
 /* ===== 접근성 공통 (tools/a11y.py, 1114) ===== */
 .vh,.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important}
 .skip{position:absolute;left:8px;top:-200px;z-index:10000;background:#111;color:#fff!important;padding:12px 18px;font-size:16px;font-weight:700;text-decoration:none!important;border-radius:4px}
