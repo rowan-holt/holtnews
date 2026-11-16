@@ -490,7 +490,7 @@ svg.append('defs').html('<marker id="wtae" viewBox="0 0 10 10" refX="7" refY="5"
 function trLoad(){if(TR.d)return Promise.resolve(TR.d);return getJSON(CFG.data+'trade-'+L+'.json').then(function(d){TR.d=d;TR.p=d.a.slice();trOpts();trSum();return d}).catch(function(){return null})}
 function trYm(s){var y=+s.slice(0,4),m=+s.slice(5,7);return K?y+'년 '+m+'월':new Date(y,m-1,1).toLocaleString('en-US',{month:'short',year:'numeric'})}
 function trSum(){ /* 1116 사용자: 기간 고르기 — 고른 달만 더해 d.c[나라][품목]=[수출,수입](달러)로. 월 자료는 천 달러 단위 */
-  var d=TR.d,a=TR.p[0],b=TR.p[1];Object.keys(d.c).forEach(function(iso){var r=d.c[iso];Object.keys(r.m).forEach(function(k){var e=0,i=0,x=r.m[k];for(var j=a;j<=b;j++){e+=x[0][j];i+=x[1][j]}r[k]=[e*1000,i*1000]})});
+  var d=TR.d,a=TR.p[0],b=TR.p[1];Object.keys(d.c).forEach(function(iso){var r=d.c[iso];Object.keys(r.m).forEach(function(k){var e=0,i=0,ea=0,ia=0,x=r.m[k];for(var j=a;j<=b;j++){e+=x[0][j];i+=x[1][j];if(x[2]){ea+=x[2][j];ia+=x[3][j]}}r[k]=[e*1000,i*1000,ea*1000,ia*1000]})});
   d.period=a==b?trYm(d.ms[a]):trYm(d.ms[a])+(K?'~':' – ')+trYm(d.ms[b]);TR.def=a==d.a[0]&&b==d.a[1];var rb=document.getElementById('wpr');if(rb)rb.hidden=TR.def}
 function trOpts(){var d=TR.d,A=document.getElementById('wpa'),B=document.getElementById('wpb');if(!A||!B)return;
   var o=d.ms.map(function(m,i){return '<option value="'+i+'">'+trYm(m)+'</option>'}).join('');A.innerHTML=o;B.innerHTML=o;A.value=TR.p[0];B.value=TR.p[1]}
@@ -509,11 +509,12 @@ function trDraw(){if(!TR.on||!TR.d||MOV){gtr.selectAll('*').remove();return}
    .classed('dim',function(r){return !!sel&&sel.iso!=r[0]&&sel.iso!='KOR'}).classed('hl',function(r){return !!sel&&sel.iso==r[0]}) /* 나라를 고르면 그 화살표만 진하게 */
    .on('mousemove',function(ev,r){var gw=trGate(r[0]);showTip(ev,TR.d.n[r[0]]+'\n'+(ex?(K?'한국 → ':'Korea → ')+TR.d.n[r[0]]:TR.d.n[r[0]]+(K?' → 한국':' → Korea'))+' '+trM(r[1])+(gw.t?' · '+gw.t:''))}).on('mouseleave',hideTip)
    .on('click',function(ev,r){ev.stopPropagation();hideTip();select(r[0],true)});trPorts(rows)}
-function trGate(iso){ /* 한국 쪽 끝: 반도체는 인천공항, 그 밖엔 그 나라와 짐 찬 컨테이너가 가장 많이 오간 항구(없으면 부산신항) */
+function trGate(iso){ /* 한국 쪽 끝: 고른 기간 금액의 절반 넘게가 비행기로 나르는 품목이면 인천공항, 그 밖엔 그 나라와 짐 찬 컨테이너가 가장 많이 오간 항구(없으면 부산신항) */
   var d=TR.d,r=d.c[iso]||{},ex=TR.dir=='exp';
-  if((d.airk||[]).indexOf(TR.g)>=0)return{p:[d.air[0],d.air[1]],n:d.air[2],a:1,t:(K?'주로 ':'mostly via ')+d.air[2]};
+  var v=r[TR.g]||[0,0,0,0],ix=ex?0:1,sa=v[ix]>0?v[ix+2]/v[ix]:0;
+  if(sa>.5)return{p:[d.air[0],d.air[1]],n:d.air[2],a:1,t:(K?'금액의 약 '+Math.round(sa*100)+'%가 비행기로 나르는 품목 → ':'about '+Math.round(sa*100)+'% by value is air-freight goods → ')+d.air[2]};
   var g=ex?r.ge:r.gi;if(!g)return{p:d.kr,n:'',t:''};
-  return{p:[g[1],g[2]],n:g[0],a:0,t:(K?'주로 ':'mostly via ')+g[3].map(function(x){return x[0]+' '+x[1]+'%'}).join(' · ')}}
+  return{p:[g[1],g[2]],n:g[0],a:0,t:(sa>=.05?(K?'비행기로 나르는 품목 약 '+Math.round(sa*100)+'%, 배로는 ':'air-freight goods about '+Math.round(sa*100)+'%; by sea ')+(K?'':'mostly via '):(K?'주로 ':'mostly via '))+g[3].map(function(x){return x[0]+' '+x[1]+'%'}).join(' · ')}}
 function trPorts(rows){ /* 쓰인 항구·공항: 작은 네모(수도 동그라미와 구분), 항구 청록·공항 주황, 이름은 마우스를 올리면 */
   var seen={},pts=[];rows.forEach(function(r){var g=trGate(r[0]);if(g.n&&!seen[g.n]){seen[g.n]=1;pts.push([g.p[0],g.p[1],g.n,g.a])}});
   gtr.selectAll('rect.wport').data(pts,function(p){return p[2]}).join('rect').attr('class',function(p){return 'wport '+(p[3]?'air':'sea')}).attr('width',7).attr('height',7)
@@ -547,7 +548,7 @@ function trPanel(){var P=document.getElementById('wtrp');if(!P)return;if(!TR.on|
       :(E(d.n[rows[0][0]])+' is the largest at '+pc(rows[0][1])+', and the top three take '+pc(t3)+' — out of '+trM(tot)+' across Korea\'s '+rows.length+' main partners.')):(K?'이 품목은 주요 교역국과 오간 금액이 없어요.':'No trade in this product with Korea\'s main partners.');
   var li=top.map(function(r,n){return '<li><button type="button" data-i="'+r[0]+'"><span class="wn">'+(n+1)+'</span><span class="wcn">'+E(d.n[r[0]])+'</span><span class="wbar"><i class="'+(ex?'e':'i')+'" style="width:'+Math.max(2,r[1]/mx*100).toFixed(1)+'%"></i></span><span class="wv">'+tu.f(r[1])+'</span><span class="wp">'+pc(r[1])+'</span></button></li>'}).join('');
   P.innerHTML='<h2>'+E(head)+' <small>'+E(d.period)+'</small></h2><p class="wtrline">'+line+'</p>'+(top.length?'<p class="wunit">'+(K?'금액 단위: ':'Values in ')+tu.t+'</p>':'')+'<ol class="wrank">'+li+'</ol>'
-    +'<p class="wtrnote">'+(K?'화살표 굵기는 금액이에요. 한국 쪽 끝은 그 나라와 짐 찬 컨테이너가 가장 많이 오간 항구(반도체는 인천국제공항)예요. 네모 점에 마우스를 올리면 이름이 나와요. 관세청 품목별·나라별 수출입 실적과 국가별 출항·입항 물동량, 한국과 교역이 큰 50개국 기준. 줄을 누르면 지도에서 그 나라를 보여 줘요.':'Arrow width shows value. On the Korean end, each arrow lands at the seaport that handled the most full containers to or from that country (chips: Incheon International Airport); hover over a square for its name. Korea Customs Service trade and port cargo data, Korea\'s 50 biggest partners. Select a row to see the country on the map.')
+    +'<p class="wtrnote">'+(K?'화살표 굵기는 금액이에요. 한국 쪽 끝은 금액의 절반 넘게가 비행기로 나르는 품목이면 인천국제공항, 아니면 그 나라와 짐 찬 컨테이너가 가장 많이 오간 항구예요. 비행기 몫은 달마다 관세청 항구·공항별 실적의 공항 비중만큼, kg당 값이 비싼 품목부터 나눴어요. 네모 점에 마우스를 올리면 이름이 나와요. 관세청 품목별·나라별 수출입 실적과 국가별 출항·입항 물동량, 한국과 교역이 큰 50개국 기준. 줄을 누르면 지도에서 그 나라를 보여 줘요.':'Arrow width shows value. On the Korean end, an arrow lands at Incheon International Airport when more than half its value is air-freight goods, otherwise at the seaport that handled the most full containers to or from that country. The air share follows Korea Customs Service figures by port and airport each month, assigned to the goods with the highest value per kg first. Hover over a square for its name. Korea Customs Service trade and port cargo data, Korea\'s 50 biggest partners. Select a row to see the country on the map.')
     +' <a href="../trade/'+(K?'index.html':(ex?'buy.html':'sell.html'))+'">'+(K?'무역 자료 더 보기 →':(ex?'Buy from Korea →':'Sell to Korea →'))+'</a></p>';
   P.querySelectorAll('[data-i]').forEach(function(b){b.onclick=function(){select(b.dataset.i);document.querySelector('.wmap').scrollIntoView({behavior:'smooth',block:'start'})}})}
 var _ch0=countryHtml;countryHtml=function(c,src){var h=_ch0(c,src),b=trBlock(c);if(!b)return h;if(TR.on)return b+h;var i=h.indexOf('<div class="winfo">');return i<0?h+b:h.slice(0,i)+b+h.slice(i)};
