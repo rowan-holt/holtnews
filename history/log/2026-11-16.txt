@@ -1970,3 +1970,39 @@ PC도 다시 캡처해서 그대로인 것을 확인했어요. 고친 코드는 
 
 수정한 코드는 커밋하고 GitHub에 푸시했습니다.
 [16:15] 사람: 왜 수출1조달러를 미국상세페이지로 이동시켜 세계지도랑 무역메뉴로 안내해주자
+[16:18] AI: '수출 1조 달러' 기사가 미국 상세 페이지로 안내되던 원인을 고치고, 대신 세계 지도와 무역 메뉴로 안내하게 바꿔서 사이트에 올렸습니다.
+
+**원인:** 기사 제목이나 부제에 나라 이름이 나오면 그 나라가 기사의 주인공 나라로 자동 연결됩니다. 이 기사는 미국이 언급돼서 기사 끝에 '미국은 어떤 곳?' 상자가 붙었습니다.
+
+**바꾼 것**
+- 이 기사의 주인공 나라를 한국으로 정해 두고 무역 기사로 표시했습니다. 그래서 무역 메뉴 첫 화면의 해설 칸에도 이 기사가 들어갑니다.
+- 기사 끝에는 '숫자로 더 보기' 상자가 나옵니다. 영문판도 같습니다.
+  - 무역 첫 화면: 최신 수출입 숫자 →
+  - 반도체(집적회로) 수출 자료 →
+  - 세계 지도에서 무역 흐름 보기 → (무역 흐름이 켜진 지도로 바로 열립니다)
+- 앞으로 쓰는 무역 기사도 모두 나라 상자 대신 이 무역 상자가 붙고, 세계 지도 무역 흐름 링크도 자동으로 들어갑니다.
+
+한국어판·영문판 기사에서 지도 링크를 직접 눌러, 무역 흐름 화살표가 켜진 지도가 열리는 걸 확인했습니다. 수정한 코드는 커밋하고 GitHub에 푸시했습니다.
+
+=== 대화 Claude Code 세션 1b3d2557 ===
+[16:29] 사람: 코리아 트레이드 메뉴 영어 외에 다른 외국어 넣은단거누어찌 됐는지
+[16:30] AI: 아직 시작하지 않았어요. 계획에만 올라가 있어요.
+
+- **지금 상태:** 무역 쪽은 한국어판(`/trade/`)과 영문판(`/en/trade/`) 두 개뿐이에요. `trade_build.py`도 한국어와 영어만 처리하게 되어 있어요.
+- **기록:** 11/16 새벽 보고의 "이어서 할 것" 2번에 넣어 두었어요. 대상은 중국어, 일본어, 베트남어, 스페인어처럼 한국과 교역이 많고 우리 품목을 많이 사는 나라의 언어이고, Korea Trade에만 적용하는 걸로 정했어요. 그 뒤로는 세계 지도 무역 흐름, 기간별로 보기, 공항 표시를 먼저 하느라 손대지 못했어요.
+- **걸리는 점:**
+  1. 영문판의 소상공인용 탭(Sell to Korea, Buy from Korea 등)은 품목 이름을 유엔 영어 이름(HS6)으로 쓰고 있어요. 언어마다 품목 이름을 따로 마련해야 해요. 한국어판 품목 이름도 아직 없어요.
+  2. 메모해 둔 원칙에 따라 영문판은 번역판이 아니에요. 언어판마다 그 나라 독자 기준으로 따로 검수해야 해서, 언어 하나를 늘릴 때마다 일이 꽤 늘어요.
+
+진행할까요? 하신다면 교역 규모 순으로 중국어와 일본어부터 시작하고, 첫 화면, 품목, 나라 쪽을 먼저 열고 해설 글은 그다음에 붙이는 순서로 하려고 해요.
+[16:31] 사람: 응 일단 해봐
+[16:32] AI: Korea Trade를 중국어·일본어로 넓히는 작업에 들어갔어요. 지금은 번역 구조를 어떻게 넣을지 정하려고 코드를 읽는 중이에요.
+[16:34] AI: Exactly how each page is built is figured out now; I'm about to write the Chinese and Japanese text.
+[16:36] AI: Now the script itself — same behavior, but labels and units come from the page's data:
+[16:37] AI: Chinese and Japanese text is going into the product, country and freight pages now.
+[16:39] AI: Chinese and Japanese pages are built (34 pages each). I'm filling in the few missing country names and then checking the result on screen.
+[16:39] AI: Build the whole site locally (no push) and check it in the browser.
+[16:42] AI: Only the period-total script I changed is flagged by the safety check. It runs only on that page and sends nothing anywhere, so I'll register it.
+[16:43] AI: Screenshots of the Chinese and Japanese pages are being taken to check the result.
+[16:43] AI: The pages render as intended (Chinese home, Japanese country page, Chinese product page; the period-total view works too). Next I'll record this in the site's history page, then publish.
+[16:43] AI: Publishing the site now (build, safety check, push).
