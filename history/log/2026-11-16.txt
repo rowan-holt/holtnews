@@ -2422,3 +2422,19 @@ I opened the live pages to confirm the changes are there, and the commit is push
 
 === 대화 Claude Code 세션 14cf0348 ===
 [20:56] AI: All reviews passed and the fact check is clean (54 numbers). The site build is running now; I'll push and verify once it finishes.
+
+=== 대화 Claude Code 세션 28c010e4 ===
+[21:00] 사람: 메뉴 순서 변경
+홈 뉴스 경제 시장 산업 생활금융 무역 세계지도 연구 오디오 
+
+근데 생활금융이 왜 wealth 인가
+
+=== 대화 Claude Code 세션 14cf0348 ===
+[21:00] AI: The article push is running. While it runs I've drafted the HOLT ISSUE notes and 3 questions, and I'm sending them to a separate reviewer.
+
+=== 대화 Claude Code 세션 28c010e4 ===
+[21:00] AI: Top bar: move 연구 after 세계 지도; ☰ menu same order. Wealth → Personal finance.
+
+=== 대화 Claude Code 세션 14cf0348 ===
+[21:00] AI: Waiting on the push and the issue reviewer.
+[21:01] AI: Issue fixes applied; the earlier check and the article push are both still running. Waiting for them to finish.
