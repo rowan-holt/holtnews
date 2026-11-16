@@ -563,7 +563,7 @@ function trSw(){var w=document.getElementById('wsw');if(!w)return;var m=TR.on?TR
   if(m!='off'){var cw=document.querySelector('.wchips');if(cw){var at=m=='exp'?'oe':'oi',bs=[].slice.call(cw.querySelectorAll('[data-g]'));bs.sort(function(x,y){return x.dataset[at]-y.dataset[at]});bs.forEach(function(b){b.style.order='';cw.appendChild(b)});cw.scrollLeft=0}}}
 function trMode(m){if(m=='off'){if(TR.on)trSet(false);return}if(TR.on&&TR.dir==m)return;var was=TR.on;TR.dir=m;if(was){trSw();redraw();trPanel();if(sel)panel(D[sel.f.id]);if(window.track)track('world_trade',{g:TR.g,dir:m})}else trSet(true)}
 function trPick(sel_,attr,val){document.querySelectorAll(sel_).forEach(function(b){var o=b.getAttribute(attr)==val;b.classList.toggle('on',o);b.setAttribute('aria-pressed',o?'true':'false')})}
-(function(){var sw=document.getElementById('wsw');if(!sw)return;trLoad();
+(function(){var sw=document.getElementById('wsw');if(!sw)return;trLoad().then(function(){if(sel&&!curDis)panel(D[sel.f.id])}); /* 1116: 나라 칸이 무역 자료보다 먼저 그려지면 '무역 정보 자세히 보기' 링크를 붙이려고 다시 그림 */
   sw.querySelectorAll('button[data-m]').forEach(function(b){b.onclick=function(){trMode(TR.on&&TR.dir==b.dataset.m?'off':b.dataset.m)}});
   var A=document.getElementById('wpa'),B=document.getElementById('wpb'),R=document.getElementById('wpr');
   A.onchange=function(){trPer(+A.value,Math.max(+A.value,+B.value))};B.onchange=function(){trPer(Math.min(+A.value,+B.value),+B.value)};
