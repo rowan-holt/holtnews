@@ -1006,6 +1006,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .tper{display:flex;gap:6px;overflow-x:auto;padding:2px 0 10px;scrollbar-width:thin;font-size:14px}.tper input{position:absolute;opacity:0;pointer-events:none}
 .tper label{flex:none;padding:5px 12px;border:1px solid #ccc;border-radius:16px;cursor:pointer;white-space:nowrap;color:var(--ink2)}.tper input:checked+label{background:#111;border-color:#111;color:#fff}
 .tper input:focus-visible+label{outline:2px solid #111;outline-offset:2px}
+.tperiod.multi .tp{display:none!important}.tpsum{display:none}.tperiod.multi .tpsum{display:block}   /* 1116 사용자: 기간 중복 선택 → 고른 기간 합계 */
 .tp h3{font-size:18px;margin:22px 0 8px}.tp h3.tph{font-size:22px;margin:6px 0 10px}.tp h3 small,.tp h3.tph small{font-weight:400;font-size:13px;color:var(--gray);margin-left:6px}
 details.tdata{margin:6px 0 0;font-size:14px}details.tdata summary{cursor:pointer;color:var(--ink2)}
 @media (max-width:640px){.tpage{padding:16px 16px 40px}.tkpi{border-right:0;border-bottom:1px solid #ddd}.ttab{font-size:14px}.ttab th,.ttab td{padding:7px 6px}}
