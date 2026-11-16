@@ -975,6 +975,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .tkpi .d{font-size:14px;font-variant-numeric:tabular-nums}.up{color:#0b6b3a}.dn{color:#b42318}
 .tnext{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:15px;background:var(--soft);padding:10px 14px;margin:14px 0 0}
 .tnext b{font-weight:700}
+.trel{margin:16px 0 0}.trel h3{font-size:13px;font-weight:600;color:var(--ink2);margin:0 0 6px;letter-spacing:.02em}.trel ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--ink)}.trel li{padding:8px 10px 2px 12px;border-left:1px solid rgba(128,128,128,.25);margin-top:10px}.trel li:first-child{border-left:0;padding-left:0}.trel b{display:block;font-size:17px;font-weight:700;line-height:1.2}.trel span{display:block;font-size:13px;color:var(--ink2);margin-top:3px;line-height:1.35}.trel li:not(:first-child) b{color:var(--ink2)}
 .tchart{margin:6px 0 4px;overflow-x:auto}.tchart svg{display:block;width:100%;min-width:560px;height:auto}
 .tchart .ax{font-size:11px;fill:#6b6b6b}.tchart .tb{fill:#1f4e79}.tchart .tb.prev{fill:#c9d3de}.tchart .tb.hi{fill:#0f2f4d}
 .tchart .ln{fill:none;stroke:#1f4e79;stroke-width:2}.tchart .ln.b{stroke:#b45309}.tchart .grid{stroke:#eee}
