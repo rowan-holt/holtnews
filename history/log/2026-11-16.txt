@@ -2468,3 +2468,35 @@ I opened the live pages to confirm the changes are there, and the commit is push
 [21:05] AI: Meanwhile, close the browser tab and prepare the Threads pick.
 [21:06] AI: 스레드 글을 써 두었습니다. 22:00 업로드가 끝나면 이어서 올립니다.
 [21:06] AI: Upload is still waiting for 22:00. I'll continue when it finishes.
+
+=== 대화 Claude Code 세션 14cf0348 ===
+[21:06] AI: The article is live and checks out on the site. Now finishing the HOLT ISSUE check and then the commit.
+[21:06] AI: Meanwhile, I'm committing the article files to git (only the files from this run).
+
+=== 대화 Claude Code 세션 28c010e4 ===
+[21:06] AI: 빌드 끝나서 메뉴 순서 확인 중입니다. 루트 index.html이 안 보여 상태부터 봅니다.
+
+=== 대화 Claude Code 세션 14cf0348 ===
+[21:06] AI: Article committed. Waiting for the HOLT ISSUE publish to finish, then I'll commit and push.
+
+=== 대화 Claude Code 세션 28c010e4 ===
+[21:07] AI: Another session's build is rewriting the folder right now (the deleted files are being regenerated). I'll wait for it to finish.
+
+=== 대화 Claude Code 세션 14cf0348 ===
+[21:09] AI: 이번 회차는 21시 Korea Trade 해설 자리였고(11/16 예약 주제 '한국행 배의 빈자리'), 오늘은 무역 통계 발표일이 아닙니다. 해설 한 편을 holtnews.com에 21:01에 올렸습니다.
+
+- **올린 글:** 「미국에서 한국 오는 배, 운임은 반대쪽 4분의 1 이하」
+  - 한국어판: https://holtnews.com/news/korea_backhaul_freight.html
+  - 영문판: https://holtnews.com/en/news/korea_backhaul_freight.html (영어 제목 "Container freight from the US to South Korea now costs a quarter of the outbound rate or less")
+- **내용:** 관세청 방향별 해상 운임과 해양수산부 나라별 컨테이너 통계를 엮었습니다.
+  - 2026년 10월 미국에서 한국으로 오는 40피트 컨테이너 운임은 반대 방향의 16~24%였습니다. 1년 전 미국 서부는 92%였습니다.
+  - 미국에서 들어오는 컨테이너의 34.8%가 빈 상자입니다.
+  - 다만 이 기울기는 1년 전에도 비슷했습니다(39.4%). 그래서 빈 상자만으로는 운임 격차가 벌어진 이유를 설명할 수 없다고 밝혔습니다. 빈 상자가 41%인데도 한국행 운임이 반대쪽의 2.2배인 일본을 반례로 넣었습니다.
+- **검수:** 처음 원고는 데스크, 영문판 데스크, 보탬·그림 검토에서 모두 보류됐습니다. 숫자는 맞았지만 '빈 상자 때문에 싸다'는 인과를 너무 세게 단정했다는 이유였습니다. 제목·부제·본문을 고친 뒤 셋 다 통과했습니다. 사실 확인은 본문 숫자 54개 모두 통과했고, 발행 뒤 실제 쪽의 한·영 제목, 숫자, 그림 4장, 자료 주소도 확인했습니다.
+- **원자료 이상한 점:** 한국→미국 서부 운임이 9월과 10월 모두 9,377로 같습니다. API를 다시 불러 보니 관세청이 공표한 값 그대로여서, 본문에 그 사실을 적었습니다.
+- **나라 쪽 해설:** Korea Trade 미국·멕시코·중국 나라 쪽에 붙을 두세 문장 해설을 `holt/site_data/trade/notes.json`에 넣었습니다.
+- **HOLT ISSUE:** 같은 회차에 냈습니다. 주제는 '무역 불균형과 백홀 운임', 문제는 3개이며 분리된 검토에서 고친 뒤 통과했습니다.
+- **커밋:** 두 커밋 모두 GitHub에 올렸습니다. 다른 작업이 고치던 `trade_build.py` 등은 커밋에 넣지 않았습니다.
+
+=== 대화 Claude Code 세션 4ebba621 ===
+[21:10] AI: 꺽쇠 삭제는 배포까지 끝났어요. 이어서 무역 첫 화면 머리를 고칠게요.
