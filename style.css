@@ -1009,8 +1009,9 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .tper label{flex:none;padding:5px 12px;border:1px solid #ccc;border-radius:16px;cursor:pointer;white-space:nowrap;color:var(--ink2)}.tper input:checked+label{background:#111;border-color:#111;color:#fff}
 .tper input:focus-visible+label{outline:2px solid #111;outline-offset:2px}
 .tperiod.multi .tp{display:none!important}.tpsum{display:none}.tperiod.multi .tpsum{display:block}   /* 1116 사용자: 기간 중복 선택 → 고른 기간 합계 */
-.bar .lsw.tflags{gap:12px}.lsw.tflags .lang{position:relative}.lsw.tflags a.lang{opacity:.55}.lsw.tflags a.lang:hover{opacity:1}.lsw.tflags .cur::after{content:"";position:absolute;left:2px;right:2px;bottom:-1px;height:2px;background:var(--ink)}@media (max-width:600px){.bar .lsw.tflags{gap:8px}.bar .lsw.tflags .lang svg{width:24px;height:16px}}
+.bar .lsw.tflags{gap:12px}.lsw.tflags .lang{position:relative}.lsw.tflags a.lang{opacity:.55}.lsw.tflags a.lang:hover{opacity:1}.lsw.tflags .cur::after{content:"";position:absolute;left:2px;right:2px;bottom:-1px;height:2px;background:var(--ink)}@media (max-width:600px){.bar .lsw.tflags{gap:6px}.bar .lsw.tflags .lang svg{width:21px;height:14px}}
 body.x-zh .tpage,body.x-ja .tpage{word-break:normal;line-break:strict}
+body.x-vi .tpage{font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}   /* 1116: 베트남어 성조 글자 — 시스템 글꼴 */
 body.x-zh{font-family:"Jost","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif}
 body.x-ja{font-family:"Jost","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo","Noto Sans JP",sans-serif}
 .tp h3{font-size:18px;margin:22px 0 8px}.tp h3.tph{font-size:22px;margin:6px 0 10px}.tp h3 small,.tp h3.tph small{font-weight:400;font-size:13px;color:var(--gray);margin-left:6px}

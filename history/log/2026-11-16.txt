@@ -2090,3 +2090,27 @@ Not done yet:
 [19:22] AI: Only the Korean country table on the Korean page is still about 22px too wide on a phone. I'm letting long amounts wrap onto a second line there.
 [19:27] AI: Wrapping makes the rows look ragged. Instead, on phones I'm moving "달러" (dollars) out of each cell and into one unit note above the table.
 [19:30] AI: That works. Publishing the site and committing.
+[19:34] AI: I fixed both things and they're live on the site.
+
+**1. The language switch now uses flags**
+- I removed the "한국어 · English · 中文 · 日本語" text row at the top of the page.
+- On Korea Trade pages, the flag spot in the header now shows four flags: 🇰🇷 🇺🇸 🇨🇳 🇯🇵. The current language's flag has a line under it, and tapping another flag takes you straight to that language.
+- Everywhere else on the site the single flag stays as it was, because those pages only come in Korean and English.
+
+**2. The bar chart direction**
+- The bars were right-aligned, so they looked like they were growing from right to left. Now every bar starts from the same left edge and grows to the right.
+- On phones, the bar sits under each number and runs left to right across the full cell width.
+
+**Also fixed in the same place**
+- **Cut-off columns:** In your screenshot the leftmost column was cut off and you had to scroll sideways. I checked the tables on all four language pages at phone width, and they now fit without scrolling.
+- **"By country" table on phones (Korean page only):** Instead of repeating "달러" in every cell, there's one "단위: 달러" (unit: dollars) note above the table.
+- **Japanese line breaks:** Japanese text could start a line with "。". It no longer does, and the same rule applies to Chinese.
+
+I opened the live pages to confirm the changes are there, and the commit is pushed.
+[19:34] 사람: 그리고 천천히 다른 메뉴들도 언어 확대하자 앞에 있는 메뉴부터 순차적으로 하렴 22일 저녁 6전까지 하는걸로 하자
+그리고 베트남어 추가핮
+[19:34] AI: Now let me read the branch sites to add Vietnamese.
+[19:35] AI: Starting with Vietnamese for Korea Trade. First I'm checking the remaining language-specific spots.
+[19:35] AI: Now the Vietnamese patch itself: translation tables, number and date formats, and the flag.
+[19:37] AI: Next, the Vietnamese number format in the script that totals the selected periods.
+[19:39] AI: That leftover is only in the English footer, so the page body is fine. Next I'm capitalizing the first letter of Vietnamese month labels, then checking the screen.
