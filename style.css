@@ -1022,7 +1022,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .tper input:focus-visible+label{outline:2px solid #111;outline-offset:2px}
 .tperiod.multi .tp{display:none!important}.tpsum{display:none}.tperiod.multi .tpsum{display:block}   /* 1116 사용자: 기간 중복 선택 → 고른 기간 합계 */
 body.x-zh .tpage,body.x-ja .tpage{word-break:normal;line-break:strict}
-.thome{margin:8px 0 6px}.thome h2{margin-top:18px}.ttab .thome-row td{background:#fff7e6;font-weight:700}
+.thome{margin:8px 0 6px}.thome h2{margin-top:18px}.thome h2 small{display:inline-block;max-width:100%}.ttab .thome-row td{background:#fff7e6;font-weight:700}
 body.x-vi .tpage{font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}   /* 1116: 베트남어 성조 글자 — 시스템 글꼴 */
 body.x-zh{font-family:"Jost","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif}
 body.x-ja{font-family:"Jost","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo","Noto Sans JP",sans-serif}
