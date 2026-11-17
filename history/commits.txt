@@ -1595,3 +1595,4 @@
 2026-11-18 04:43  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — australia_ai_failure_to_prevent
 2026-11-18 05:27  content(holt): HOLT ENGLISH 쪽별 표현·퀴즈 5쪽 + 점검
 2026-11-18 05:34  chore(holt): 만들어진 기록 연표 자동 갱신 — 6개 추가
+2026-11-18 07:31  feat(holt): 11-18 07:30 단일 뉴스 — 젠슨 황 사임 닷새 만에 '부르면 돌아가겠다'(유형 J) + 스레드 대만·파푸아뉴기니
