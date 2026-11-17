@@ -1093,5 +1093,7 @@ a:has(> .a11y-nw),.a11y-memo{position:relative}
 .ecg .cd.past{display:none}.ecg .dn{display:block;margin:0}.ecg .dn b{display:none}.ecg .dn .dfull{display:inline-block;font-weight:600;font-size:14px}
 .ecg .dn em{display:inline-block;margin-top:3px}.ecg li{font-size:14.5px}
 .ecal:has(#ecf-k:checked) .cd:not(.hkr),.ecal:has(#ecf-u:checked) .cd:not(.hus){display:none}.ecg .cd.nohit{display:none}}
+
+body.x-zh main,body.x-ja main{word-break:normal;line-break:strict}
 html.in-app header.top .right{visibility:hidden}html.in-app .install{display:none!important}html.in-app .foot .brand,html.in-app footer.site .brand{display:none!important}html.in-app .foot,html.in-app footer.site{margin-top:40px!important;padding:20px 20px 22px!important;gap:6px 24px!important;line-height:1.6!important}html.in-app .foot nav+nav{margin-top:2px!important}
 .foot .install{display:inline-block;margin-top:14px;color:#fff;border:1px solid #fff;padding:6px 16px;font-size:13px;line-height:1.4;text-decoration:none}.foot .install:hover{background:#fff;color:#000}html.in-app .foot .install{display:none}@media (display-mode: standalone){.foot .install{display:none}}
