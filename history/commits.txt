@@ -1593,3 +1593,4 @@
 2026-11-17 21:08  feat(holt): 사이트 뉴스 — 한국 수입 고기, 1년 새 몫이 바뀐 나라들(Korea Trade, 브라질 닭·호주 쇠고기·스페인 돼지) + HOLT ISSUE 문제 3개
 2026-11-17 22:07  feat(holt): 11-17 22시 Journal SNS — 소득과 행복(Killingsworth·Kahneman·Mellers 2023) / 스레드 눈표범 / site_ko 해석 3줄
 2026-11-18 04:43  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — australia_ai_failure_to_prevent
+2026-11-18 05:27  content(holt): HOLT ENGLISH 쪽별 표현·퀴즈 5쪽 + 점검
