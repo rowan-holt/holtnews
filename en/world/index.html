@@ -160,7 +160,7 @@ function glide(vx,vy){stopIn();var last=performance.now();function step(now){var
 svg.on('wheel.stopin pointerdown.stopin',stopIn);
 svg.call(d3.drag().filter(function(ev){return !ev.button&&!(ev.touches&&ev.touches.length>1)}).on('start',function(ev){
   stopIn();smp=[];svg.classed('drag',true);if(!GLOBE)return;gr0=proj.rotate();gq0=vsr(gr0);var g=proj.invert(gPt(ev));gv0=g&&isFinite(g[0])?cart(g):null}).on('drag',function(ev){
-  var now=performance.now();smp.push([now,ev.dx,ev.dy]);while(smp.length&&now-smp[0][0]>100)smp.shift();
+  if(ev.dx||ev.dy)hideTip();var now=performance.now();smp.push([now,ev.dx,ev.dy]);while(smp.length&&now-smp[0][0]>100)smp.shift();
   var r=proj.rotate(),s;
   if(GLOBE){if(!gv0){s=.25/zl();proj.rotate([r[0]+ev.dx*s,r[1]-ev.dy*s,r[2]]);frame();return}
     var g=proj.rotate(gr0).invert(gPt(ev));if(!g||!isFinite(g[0])){proj.rotate(r);return}
@@ -170,8 +170,10 @@ svg.call(d3.drag().filter(function(ev){return !ev.button&&!(ev.touches&&ev.touch
   var vx=sx/T,vy=sy/T;if(Math.abs(vx)+Math.abs(vy)>.15)glide(vx,vy)}));
 svg.call(zoom).on('dblclick.zoom',null);
 function E(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-var tipT=null;
-function showTip(ev,t){clearTimeout(tipT);if(TOUCH)tipT=setTimeout(hideTip,1800); /* 1114 사용자: 휴대폰은 말풍선이 따라다니지 않게 잠깐 뒤 사라짐 */var r=svg.node().parentNode.getBoundingClientRect();tip.style.display='block';var L2=String(t).split('\n');tip.innerHTML='<b>'+E(L2[0])+'</b>'+(L2[1]?'<span>'+E(L2.slice(1).join(' '))+'</span>':'');
+var tipT=null,lastPT='';document.addEventListener('pointerdown',function(e){lastPT=e.pointerType},true);
+/* 1117 사용자: 휴대폰에서 바다 이름이 계속 따라다님 — (hover:none)을 잘못 알려 주는 기기가 있어 누른 방식(pointerType)으로도 판단, 글 길이만큼 보여 주고 사라짐, 지도를 움직이면 바로 숨김 */
+function touchy(){return TOUCH||lastPT==='touch'||lastPT==='pen'}
+function showTip(ev,t){clearTimeout(tipT);if(touchy())tipT=setTimeout(hideTip,Math.min(4500,1800+String(t).length*60));var r=svg.node().parentNode.getBoundingClientRect();tip.style.display='block';var L2=String(t).split('\n');tip.innerHTML='<b>'+E(L2[0])+'</b>'+(L2[1]?'<span>'+E(L2.slice(1).join(' '))+'</span>':'');
   tip.style.left=Math.max(4,Math.min(ev.clientX-r.left+12,r.width-tip.offsetWidth-4))+'px';tip.style.top=(ev.clientY-r.top-30)+'px'}
 function hideTip(){tip.style.display='none'}
 function bigPart(f){if(f.geometry.type!='MultiPolygon')return f;var best=null,ba=-1;f.geometry.coordinates.forEach(function(c){var q={type:'Polygon',coordinates:c},a=d3.geoArea(q);if(a>ba){ba=a;best=q}});return best}

@@ -105,8 +105,8 @@ f();setInterval(f,30000)})()</script><script>(function(){var w=document.querySel
 if(matchMedia('(hover: none)').matches)w.querySelectorAll('a.wcap').forEach(function(a){a.addEventListener('click',function(ev){if(a.classList.contains('on'))return;ev.preventDefault();
   w.querySelectorAll('a.wcap.on').forEach(function(x){x.classList.remove('on')});a.classList.add('on')})});
 if(!w.querySelector('.wld'))return; // 1114 사용자: 위치 지도 분쟁 지역에 올리면 세계 지도와 같은 안내
-var tip=document.createElement('div'),T=null;tip.className='wtip';w.appendChild(tip);function hide(){tip.style.display='none'}
-function show(ev,t){var r=w.getBoundingClientRect(),L=String(t).split('\n');tip.innerHTML='<b></b><span></span>';tip.firstChild.textContent=L[0];tip.lastChild.textContent=L[1]||'';tip.style.display='block';
+var tip=document.createElement('div'),T=null;tip.className='wtip';w.appendChild(tip);function hide(){tip.style.display='none'}var PT='';document.addEventListener('pointerdown',function(e){PT=e.pointerType},true);window.addEventListener('scroll',hide,{passive:true});
+function show(ev,t){clearTimeout(T);if(PT==='touch'||PT==='pen'||matchMedia('(hover: none)').matches)T=setTimeout(hide,Math.min(4500,1800+String(t).length*60));var r=w.getBoundingClientRect(),L=String(t).split('\n');tip.innerHTML='<b></b><span></span>';tip.firstChild.textContent=L[0];tip.lastChild.textContent=L[1]||'';tip.style.display='block';
   var x=ev.clientX-r.left+14,y=ev.clientY-r.top+14;if(x+tip.offsetWidth>r.width-4)x=ev.clientX-r.left-tip.offsetWidth-10;if(y+tip.offsetHeight>r.height-4)y=ev.clientY-r.top-tip.offsetHeight-10;tip.style.left=Math.max(4,x)+'px';tip.style.top=Math.max(4,y)+'px';
   clearTimeout(T);if(matchMedia('(hover: none)').matches)T=setTimeout(hide,1800)}
 w.querySelectorAll('.wld').forEach(function(p){p.addEventListener('mousemove',function(ev){show(ev,p.dataset.t)});p.addEventListener('mouseleave',hide);p.addEventListener('click',function(ev){show(ev,p.dataset.t)})})})()</script><script>(function(){ // 1115 사용자: 다른 나라와 비교 — 따라다니는 검색창 하나에서 '비교'를 누르면 칸은 '항목|이 나라|비교 나라' 표, 줄글은 나란히
