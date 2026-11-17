@@ -1584,3 +1584,4 @@
 2026-11-17 14:45  fix(holtnews): 착오송금 공익광고 문구 '송금일로부터 1년 이내'로
 2026-11-17 14:45  docs(holt): Journal SNS 차례엔 journals_sns/ 따로 원고 + journal_sns.py (사이트 파일 그대로)
 2026-11-17 14:46  feat(holt): SNS 표지에서 국기 삭제 — 주제 파일 국기 칸을 load에서 지움, Sold in English도 국기 X
+2026-11-17 16:00  feat(holtnews): 언어 확대 2단계 — 중·일·베트남어 뉴스 목록·기사 쪽, 첫 번역 3편(철강 zh·vi, 수출 1조 달러 ja)
