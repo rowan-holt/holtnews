@@ -1,0 +1,30 @@
+# 홀트뉴스가 만들어진 기록 — 2026-11-18 대화 원문 (KST)
+
+=== 대화 Claude Code 세션 a049a585 ===
+[04:42] 예약 작업: [예약 작업 holt-news-vocab 실행 — 정해 둔 지시문으로 자동 시작]
+[04:42] AI: No SNS 짝 for this one. 표현 파일을 작성할게요.
+[04:43] AI: The checker can't find "make public" because the phrase is split ("made the incident public"). I'm swapping it for "by comparison" and adding the translations to site_ko.json.
+[04:43] AI: The check passes and the missing translations are at 0. Now I'm building and pushing the site.
+[04:43] AI: Today's 6-page daily limit is already used, so the new expression pages are waiting in line (87 queued). I'll check that they are in the queue and that existing pages' links work.
+[04:43] AI: The article links have the correct format. Now I'm committing and pushing.
+[04:43] AI: 호주 OpenAI 에이전트 침입 기사(`australia_ai_failure_to_prevent`)에서 표현 5개를 가져갔어요. 검사를 통과했고 커밋·푸시도 마쳤어요.
+
+- **by comparison**: 그에 비해, 비교하자면
+- **run into**: 부딪히다, 맞닥뜨리다
+- **for now**: 지금으로서는, 당분간
+- **find out**: 알아내다, 알게 되다
+- **an open question**: 아직 답이 없는 문제, 미지수
+
+- **사이트 반영:** 빌드와 푸시는 됐지만 이번 표현 쪽은 아직 사이트에 안 보여요. 하루 새 쪽 한도 6개가 이미 차서 87개가 대기 중이고, 이 쪽들도 그 줄에 섰어요. 그래서 새 쪽의 기사 링크는 직접 열어 보지 못했어요. 대신 이미 공개된 다른 표현 쪽에서 링크가 holtnews.com/en/... 기사 주소로 걸려 있는 건 확인했어요.
+- **바꾼 표현:** 처음 고른 make public은 본문에서 'made the incident public'처럼 단어가 떨어져 있어 검사기가 찾지 못했어요. 그래서 by comparison으로 바꿨어요.
+- **해석 채우기:** 해석이 빠진 9문장은 모두 이번 기사 문장이었고, 채워서 0개가 됐어요. 그 가운데 빼 버린 make public 예문의 해석 한 줄이 site_ko.json에 쓰이지 않은 채 남아 있지만 사이트에는 영향이 없어요.
+- **남은 대기:** 25편이에요.
+
+=== 대화 Claude Code 세션 460c91fe ===
+[05:16] 예약 작업: [예약 작업 holt-english-site-sync 실행 — 정해 둔 지시문으로 자동 시작]
+[05:16] AI: Step 1에선 고칠 게 없습니다(품사 정상, 예문 없는 쪽 없음). 다음 단계로.
+[05:17] AI: 남은 쪽이 5개뿐이라 5쪽을 채웁니다.
+[05:18] AI: No warnings, push synced. Now news_build.
+[05:22] AI: site_guard가 세계 지도 쪽 인라인 설정 스크립트(WCFG)를 막았습니다. 메모 기준(내 코드·같은 사이트면 검토 후 직접 등록)에 따라 내용을 확인합니다.
+[05:22] AI: Inline WCFG 전체 내용을 확인합니다.
+[05:22] AI: 바뀐 건 환율 날짜(11-16→11-17) 한 곳뿐이고 외부 주소도 없어 안전합니다. 등록 후 다시 푸시합니다.

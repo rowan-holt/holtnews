@@ -1590,3 +1590,6 @@
 2026-11-17 18:56  feat(holtnews): 언어 확대 2b — 베트남어 미국 관세(한국산 vs 베트남산)·중국어 수출 1조 달러 번역, 번역 기사 계산기 지원
 2026-11-17 20:48  fix(holtnews): 표지는 실사, 그림은 본문으로 — 1116 전수조사 때 그림으로 바꾼 7편(호주 AI·헝가리·KBO·SS 유나이티드 스테이츠·트리니다드·에볼라·FAA) 실사 표지 복원, 표지 그림은 본문 첫 소제목 아래로, 실사 대체 텍스트 추가 / site_style 표지 기준 고침
 2026-11-17 20:53  fix(holt): HOLT ISSUE 퀴즈 구조화 데이터에 구글 권장 칸(encodingFormat·comment·learningResourceType·educationalAlignment·typicalAgeRange·assesses) 채움 / 한국시리즈 글은 격자 그림 표지 유지
+2026-11-17 21:08  feat(holt): 사이트 뉴스 — 한국 수입 고기, 1년 새 몫이 바뀐 나라들(Korea Trade, 브라질 닭·호주 쇠고기·스페인 돼지) + HOLT ISSUE 문제 3개
+2026-11-17 22:07  feat(holt): 11-17 22시 Journal SNS — 소득과 행복(Killingsworth·Kahneman·Mellers 2023) / 스레드 눈표범 / site_ko 해석 3줄
+2026-11-18 04:43  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — australia_ai_failure_to_prevent
