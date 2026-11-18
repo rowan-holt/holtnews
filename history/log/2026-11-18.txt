@@ -479,3 +479,96 @@ ISSUE 문제 쪽 구조화 데이터에서 문제 하나하나에 `name` 칸이 
 === 대화 Claude Code 세션 b2d3c22b ===
 [20:56] AI: The site build is running in the background.
 [21:00] AI: Images are copied as jpg. Pushing now.
+
+=== 대화 Claude Code 세션 3d656012 ===
+[21:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
+[21:02] AI: 22시 회차 제작 중입니다. 규칙 확인을 마쳤고, 이제 조회수 수집과 주제 선정으로 넘어갑니다.
+[21:02] AI: 주제는 '미국 홍역 퇴치 국가 지위 상실'로 정하고 사실 확인 중입니다.
+[21:03] AI: 한국 쪽 사실(13년 연속 퇴치국 인증·해외 유입 환자 수)을 두 곳에서 확인하는 중입니다.
+[21:04] AI: 홍역 사실 확인 완료(BBC·DW·가디언, 한국은 연합뉴스·뉴스핌 등). 이제 주제 파일 양식과 표지 사진을 준비합니다.
+[21:05] AI: 표지 사진 후보 세 장을 비교하는 중입니다.
+
+=== 대화 Claude Code 세션 b2d3c22b ===
+[21:06] AI: Published. Now post-publish verification.
+[21:06] AI: Not deployed yet (likely still building on the host). I'll recheck with a wait loop.
+
+=== 대화 Claude Code 세션 3d656012 ===
+[21:06] AI: 오늘의 표현 용례를 사전에서 확인하는 중입니다(보건 사이트들이 자동 조회를 막아 사전 위주로 확인).
+
+=== 대화 Claude Code 세션 56ea4a00 ===
+[21:06] AI: 요청 7가지 모두 이어서 처리할게요. 먼저 해당 코드부터 찾아볼게요.
+
+=== 대화 Claude Code 세션 3d656012 ===
+[21:06] AI: 표현은 'make a comeback'(케임브리지·옥스퍼드 확인)으로 정했고, 주제 파일을 씁니다.
+
+=== 대화 Claude Code 세션 b2d3c22b ===
+[21:07] AI: Now HOLT ISSUE. Reading its procedure.
+
+=== 대화 Claude Code 세션 56ea4a00 ===
+[21:07] AI: 표와 숫자 칸 이름을 바꾸고 있어요. '수출/수입' 대신 '한국이 판 것/산 것'이 보이게 합니다.
+[21:07] AI: 무역 첫 화면·뉴스 쪽은 고쳤어요. 이제 나라 쪽 줄바꿈과 세계 지도 무역 흐름을 고칠게요.
+
+=== 대화 Claude Code 세션 b2d3c22b ===
+[21:07] AI: Meanwhile committing the article files.
+[21:08] AI: The article is live and committed. The separate check on the HOLT ISSUE questions is still running.
+
+=== 대화 Claude Code 세션 56ea4a00 ===
+[21:08] AI: 네, 무역 쪽 남은 걸 마치고 발행 점수표도 볼게요. 먼저 세계 지도 무역 흐름 화면부터 손봅니다.
+
+=== 대화 Claude Code 세션 3d656012 ===
+[21:08] AI: 표지가 너무 확대돼 구도를 조정하는 중입니다.
+
+=== 대화 Claude Code 세션 b2d3c22b ===
+[21:08] AI: I've fixed the problems the reviewer found in the HOLT ISSUE questions and sent them back for another check.
+
+=== 대화 Claude Code 세션 56ea4a00 ===
+[21:08] AI: 세계 지도: 무역 흐름을 켜면 아래 '세계' 설명이 숨게 하는 중이에요.
+
+=== 대화 Claude Code 세션 3d656012 ===
+[21:08] AI: 카드 4장 확인 완료. 캡션 검사, 영상 프레임 확인, 유튜브 제목 작성으로 넘어갑니다.
+[21:09] AI: Frames fine. Fixing one context sentence, writing yt_title, and filling HOLT ENGLISH translations.
+
+=== 대화 Claude Code 세션 b2d3c22b ===
+[21:09] AI: **21시 회차(11/18 수) — Korea Trade 예약 주제 'K-뷰티 바이어' 해설을 발행했어요.** 오늘은 무역 통계 발표일이 아니라서 1116 일정표에 있던 주제로 썼어요.
+
+- **한국어판:** "K-뷰티 사 가는 나라, 1년 새 판이 바뀌었다" — https://holtnews.com/news/korea_kbeauty_buyers.html
+- **영문판:** "K-beauty exports: US overtakes China as top market for Korean skincare; UK, Netherlands surge" — https://holtnews.com/en/news/korea_kbeauty_buyers.html
+
+**내용:** 관세청 품목·나라별 자료(기초화장품)로 직접 계산했어요.
+- 최근 12개월 미국행 수출이 39.8% 늘어 중국행(2.5% 감소)을 앞질렀어요.
+- 영국행은 2.8배, 네덜란드행은 4.3배가 됐어요.
+- kg당 값은 수출액 상위 9개 나라 가운데 미국이 27달러로 가장 낮았어요.
+- 한국 쪽 공급 사정은 DART 공시로 붙였어요. 코스맥스가 평택 증축 투자 기간 종료일을 2027년 1월 31일로 미뤘고, 코스메카코리아는 2030년까지 1,360억 원을 새 공장에 쓰겠다고 공시했어요.
+
+**검수:** 사실 확인, 산업부 데스크, 영문판 데스크, 보탬·그림 검토, 편집장, 발행 후 1차 검증을 모두 통과했어요. 데스크 세 곳에서 1~2번 보류가 나왔고, 범위·해석 표현을 고친 뒤 통과했어요. 발행 후에는 실제 쪽의 제목, 숫자, 그림, 목록 노출까지 확인했고, 텔레그램 발행 리포트도 나갔어요.
+
+**판단해서 정한 것 하나:** 분야 쉼 계산에서 '해외 산업'이 쉬는 분야로 나왔어요. 이 글은 한국 수출 기업과 국내 공장 이야기라서 SECTION을 '한국 · 경제'가 아니라 '경제'(국내 산업)로 적었고, 기사 파일 머리말에 이유를 남겼어요. 영어 분류 표시는 'South Korea · Economy' 그대로예요.
+
+**HOLT ISSUE:** 같은 회차에 문제 3개(ODM, 기저효과, kg당 가격 해석)를 같이 냈어요. 분리된 검토는 한 번 보류된 뒤 고쳐서 통과했어요.
+
+Korea Trade 화장품 쪽 해설(`notes.json`)도 새 숫자로 고쳤어요.
+
+=== 대화 Claude Code 세션 56ea4a00 ===
+[21:09] AI: 다른 세션이 번역 원고 파일을 찾고 있어서 원래 자리로 돌려놓을게요. 검수 전 원고는 파일을 옮기지 않고 빌드에서만 빼는 방식으로 바꿉니다.
+
+=== 대화 Claude Code 세션 3d656012 ===
+[21:09] AI: Ready. Waiting until 22:00 to upload (~50 min). Threads gets a separate story; checking its procedure meanwhile.
+
+=== 대화 Claude Code 세션 c417f496 ===
+[21:09] AI: 운임 기사 번역 3편(zh·ja·vi)의 숫자를 원자료와 대조하는 중입니다.
+[21:09] AI: 숫자(중국 3.7배·일본 2.2배·베트남 78%)가 관세청 원자료 재계산과 일치합니다. 이제 빌드합니다.
+
+=== 대화 Claude Code 세션 3d656012 ===
+[21:09] AI: Waiting for 22:00. Meanwhile checking upload commands: no Facebook (22:00 isn't a Facebook slot), so ig-reel → threads → ig-story → YouTube.
+[21:09] AI: Everything's ready. Waiting for 22:00.
+[21:09] AI: The 22:00 wait timer is running; I'll start uploading when it finishes.
+
+=== 대화 Claude Code 세션 56ea4a00 ===
+[21:12] AI: 이름이 기존 변수와 겹쳐서 바꿀게요.
+[21:18] AI: 빌드 성공했어요. 화면으로 하나씩 확인합니다.
+[21:19] AI: 다른 세션의 빌드가 돌고 있어서 그 빌드 하나만 끝나길 기다릴게요(이번엔 PID로 확인해요).
+[21:27] 사람: 언제해
+[21:27] AI: 지금 바로 빌드하고 올릴게요.
+[21:32] AI: "HS " text still remains on the Korean and English trade home pages. Checking where it comes from.
+[21:32] AI: 남은 'HS'는 표가 아니라 맨 아래 출처 설명 문장 하나뿐이라 그대로 뒀어요. 화면만 확인하고 바로 올릴게요.
+[21:32] AI: Good. Pushing now.
