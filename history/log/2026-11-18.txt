@@ -594,3 +594,135 @@ Korea Trade 화장품 쪽 해설(`notes.json`)도 새 숫자로 고쳤어요.
 [21:46] AI: Now building and checking the page.
 [21:51] AI: 모바일에서 제목이 '약속한 / 건'처럼 어색하게 끊겨서 제목을 조금 줄여요.
 [21:56] AI: Title breaks cleanly now. Publishing.
+[22:03] AI: 발행과 실제 화면 확인까지 끝났어요. 이어서 줄표 사용 기준을 문서로 정리하고 커밋할게요.
+
+=== 대화 Claude Code 세션 3d656012 ===
+[22:05] AI: All uploads succeeded. Committing and pushing next.
+
+=== 대화 Claude Code 세션 56ea4a00 ===
+[22:05] AI: Trade pages now have no dashes. Committing.
+[22:06] AI: 커밋·푸시까지 끝났어요. 마지막으로 광고단가 점수가 실제로 어떻게 매겨졌는지 최근 발행 기록으로 확인할게요.
+
+=== 대화 Claude Code 세션 3d656012 ===
+[22:06] AI: My commit is already on the remote (another session's push carried it along). Wrapping up.
+
+=== 대화 Claude Code 세션 56ea4a00 ===
+[22:06] AI: Only the publish-task instructions use this, so I'll change it there.
+
+=== 대화 Claude Code 세션 3d656012 ===
+[22:06] AI: The 22:00 slot is done: the US measles story (type J) went up right on time at 22:00:03, on every channel except Facebook. The 22:00 slot isn't one of Facebook's three daily posts, so skipping it was planned.
+
+**Story:** "The US, where measles had been gone, sees it spread again after 26 years" (type J, full-screen photo cover)
+- **Why I picked it:**
+  - The next slot due was type C, but this week already has two, which is the weekly cap.
+  - The last two posts were about Pakistan and Serbia, so a US story was allowed. It's the second US single-topic post today, within the limit of two.
+  - Children's lives are clearly at stake and it touches people traveling abroad, which matches the pattern of our recent top posts.
+- **Card 3 ("What about Korea?"):** Korea has kept its WHO measles elimination status for 13 years in a row. Even so, there were 86 cases from 2025 through the first half of this year, 61 of them caught abroad.
+- **Fact checks:**
+  - [BBC](https://www.bbc.co.uk/news/articles/c977p71jx0xxo), [DW](https://www.dw.com/en/[가림:긴문자열]/a-79973966) and [The Guardian](https://www.theguardian.com/us-news/2026/nov/17/[가림:긴문자열]) confirm 5,400+ cases this year, 10 deaths and a 92.4% vaccination rate.
+  - The Korea figures come from Yonhap, Newspim and the KDCA (질병관리청) press release.
+- **Cover photo:** a 2014 CDC public-domain photo of a baby with measles, taken in the Philippines. The caption labels it a stock photo from the Philippines. I reviewed the cards and the video frames myself.
+- **Today's expression:** "make a comeback", checked in the Cambridge and Oxford Learner's dictionaries.
+
+**Links**
+- Instagram Reel: https://www.instagram.com/reel/Df4kC9ROJa9/ (the carousel auto-posts around 23:00)
+- Threads: https://www.threads.com/@[가림]/post/Df4kSfiH2-1 (a separate story the picker chose: Disney+'s ad-supported plan. It's from 10/30, but no other recent story qualified.)
+- Instagram Story: https://www.instagram.com/stories/rowanholt_official/[가림:숫자]
+- YouTube Shorts: https://youtube.com/shorts/tDP0PDY0rRw (uploaded private for now; it goes public once the cover is confirmed)
+
+**Status:** We're at stage 2, targeting 500 views per post and 200 followers by 11/30. We have 57 followers. No errors in the carousel log.
+
+**Records:**
+- The post is logged and tagged.
+- I added Korean translations for 7 English sentences to the HOLT ENGLISH translation file, including 3 from the Serbia story that were missing.
+- The commit is on GitHub. My push was rejected because another session was pushing at the same moment, but that session's push carried my commit along, and I confirmed it's on the remote.
+
+=== 대화 Claude Code 세션 56ea4a00 ===
+[22:07] AI: 요청하신 것 모두 끝냈어요. 서울경제 기사 팩트체크와 발행, 무역 메뉴 수정, 줄표 정리, 점수표 개편까지 사이트에 반영하고 커밋·푸시도 했어요.
+
+**1. 서울경제 기사 팩트체크 → 발행**
+- **팩트체크 결과:** 정부합동 보도자료 원문과 대조했어요. 8년 8개월 만의 타결, 영화·게임 최혜국대우, 여행사·로펌·기술이전 내용은 모두 원문과 맞아요.
+- **틀린 점:** 제목 '한한령 푼다'는 원문에 없는 평가예요. 원문에는 '한한령'이나 '해제'라는 말이 없어요. 중국이 약속한 건 '다른 나라보다 불리하게 대하지 않겠다'와 '사전심사 비차별'뿐이에요. 사전심사 자체는 남고, 아직 서명·국회 동의·발효 전이에요.
+- **우리 기사:** 「한한령 풀린다? 중국 약속은 '차별 금지'」를 22:02에 올렸어요(holtnews.com/news/korea_china_fta_services.html, 영어판 포함).
+  - 다른 매체 기사에 없는 내용을 넣었어요. 2015년 원협정은 타결부터 발효까지 약 13개월 걸렸고, 서비스 교역에서 중국 비중은 12.4%로 상품 교역(20.7%)보다 낮아요. 원협정 앞뒤로 교역은 12년간 19% 늘었어요.
+  - 검수 네 단계(사실 확인, 데스크, 영문판 데스크, 보탬·그림)를 모두 거쳤어요. 고칠 점이 나온 곳은 고친 뒤 올렸어요.
+- **표지 사진:** 명동 롯데백화점 본점 야경이에요(CC BY 4.0, 출처 표기함). 정상회담 사진은 모두 연합뉴스·뉴스1 것이라 쓸 수 없었어요. 검토 담당은 관광·유통과는 이어지지만 기사 핵심인 콘텐츠와는 거리가 있다고 봤어요. 다른 사진을 원하시면 바꿀게요.
+- **아직 안 된 것:** 이 기사의 HOLT ISSUE 문제는 내일 오전 정기 작업에서 올라가요.
+
+**2. 무역 메뉴**
+- **HS 코드:** 동그라미 치신 HS 코드를 표에서 모두 뺐어요. 실제 사이트에서도 남은 게 없는 걸 확인했어요.
+- **판 것/산 것:** 교역국 카드는 '한국이 판 것 / 한국이 산 것' 두 줄로 바꿨어요. 수출·수입만 적혀 있던 다른 표와 숫자 칸도 '한국이 판 것(수출)' 식으로 바꿨어요.
+- **첫 화면 뉴스:** PC는 표지와 제목 카드 4개, 휴대폰은 헤드라인 4개만 보여요. '+더보기'는 무역 뉴스만 모은 쪽으로 가고, 메뉴에는 넣지 않았어요. 휴대폰에서 뉴스 4개가 보이는 것도 확인했어요.
+- **나머지:**
+  - '무역 첫 화면' 링크와 '한국이 ~ 정리해요' 설명 줄을 뺐어요.
+  - '무역' 제목은 경제·시장 메뉴 제목과 같은 28px로 맞췄어요.
+  - 세계 지도에서 무역 흐름을 켜면 아래 '세계' 설명이 숨고 무역 표만 보여요.
+  - 해설 문단은 뜻이 바뀌는 곳에서 끊었어요. 중국 쪽 운임 문장도 따로 떨어졌어요.
+
+**3. 줄표(—)**
+- '반도체 — 디램'은 '디램 반도체'로, '축전지 — 전기차용'은 '전기차용 축전지'로 바꿨어요. 이름이 겹치면 '천연가스'처럼 세부 이름만 써요. 무역 쪽에 줄표가 하나도 남지 않은 걸 확인했어요.
+- 가운뎃점처럼 사용 기준을 만들어 편집 기준 문서(site_style.md)와 메모리에 적었어요. 공식 이름에 든 것(한-중 FTA)과 영어판만 예외예요.
+
+**4. 광고단가 점수표 — 바꿨어요**
+직전 12회차 후보 78개를 세어 보니 65개에 경제금융 가점 +3이 붙었고, 74개가 광고단가 4~5점이었어요. 말씀대로 후보끼리 차이를 못 내고 있었어요.
+- **가점:** 경제금융 +3, 생활 금융 +1을 없앴어요. 경제금융 우대는 평일 회차 배정이 이미 맡고 있어요.
+- **새 광고단가 기준:** 분야가 아니라 독자가 자기 돈으로 무엇을 정하는지로 매겨요.
+
+| 점수 | 기준 |
+|---|---|
+| 5 | 대출·보험·연금·세금·청약처럼 독자가 직접 고르는 돈 |
+| 4 | 투자 규칙, 부동산 제도, 의료·법률 |
+| 3 | 거시 해설, 기업·산업·통상 |
+| 2 | 과학·환경·사회 정책 |
+| 1 | 해외 정치, 스포츠·문화 |
+
+같은 기준금리 소식도 '내 대출 이자'로 쓰면 5점, 정책 해설이면 3점이에요. 다음 발행 회차부터 이 기준으로 매겨요.
+
+**5. 서치 콘솔 '지원 중단 예정' 안내**
+구글이 연습 문제(Practice problem) 구조화 데이터의 특별 검색 결과 표시를 단계적으로 끈다는 뜻이에요. 우리 사이트에 대한 경고나 벌점이 아니고, 검색 순위에도 영향이 없어요. 앞으로 연습 문제 칸이 검색 결과에 따로 뜨지 않을 뿐이에요. 넣어 둔 표시는 해가 없어서 그대로 두고, 이 항목 경고는 더 쫓아가지 않으려고 해요. 오늘 'name' 경고를 고친 건 그대로 유효해요.
+
+**참고:** 언어 확대 회차가 쓰다 멈춘 운임 기사 번역 3편(중·일·베트남어)은 검수 전이라 이번 공개에서 뺐어요. 파일은 원래 자리에 그대로 있어요.
+[22:08] 사람: 표지 사진 바꾸자. 뉴스내용과 관련있는 실사들 좀 더 찾아서 후보 보여줘
+[22:08] AI: 관련 실사 사진 후보를 찾아볼게요. 저작권상 쓸 수 있는 것(CC·퍼블릭 도메인·공공누리 1유형)만 고릅니다.
+[22:09] AI: 후보가 몇 장 나왔어요. 실제로 어떤 사진인지 내려받아 확인할게요.
+[22:11] AI: 오늘 선전 APEC 현장 사진(러시아 대통령실, CC BY 4.0)이 위키미디어에 올라와 있어요. 같은 묶음에 한국 대통령이 나온 사진이 있는지 더 찾아볼게요.
+[22:12] AI: Now making one sheet with all candidates for comparison.
+[22:13] AI: 뉴스 내용과 이어지는 실사 사진 다섯 장을 더 찾아 지금 표지와 함께 한 장에 모아 보냈어요. 모두 위키미디어 공용 사진이고, 이용 조건을 하나씩 확인했어요. 표지는 아직 바꾸지 않았어요.
+
+| 후보 | 무엇인가 | 기사와의 연결 | 이용 조건 | 걸리는 점 |
+|---|---|---|---|---|
+| ① | 시진핑 주석, 오늘(18일) 선전 APEC 현장 | 약속한 당사자, 같은 날 같은 도시 | CC BY 4.0, 러시아 대통령실 | 러시아와의 회담 사진이라 앞쪽에 러시아 측 뒤통수가 보임 |
+| ② | 선전 거리의 'APEC CHINA 2026' 표지 | 이번 회담이 열린 도시 | CC0 | 글자를 뒤에서 찍어 거꾸로 보이고, 밤이라 어두움 |
+| ③ | 작년 경주 APEC 단체 사진, 이재명 대통령과 시진핑 주석이 함께 나옴 | 두 정상 | CC BY 4.0, 일본 총리실 | 올해가 아니라 2025년 행사 |
+| ④ | 중국 최대 게임쇼 ChinaJoy 2025(상하이) | 기사 핵심인 '게임 최혜국대우' 시장 | CC BY-SA 4.0 | 특정 회사(스마트폰 브랜드 iQOO) 무대가 크게 보임 |
+| ⑤ | 같은 게임쇼의 입장 줄(2013) | 중국 게임 시장 규모 | CC BY-SA 4.0 | 오래된 사진 |
+| ⑥ | 지금 표지(명동 롯데) | 관광·유통 | CC BY 4.0 | 핵심인 콘텐츠와 거리가 있음 |
+
+추천은 ①이에요. 제목 '중국 약속은 차별 금지'의 주체가 직접 나오고, 오늘 선전에서 찍은 사진이에요. 사진 설명은 '18일 APEC 정상회의가 열린 중국 선전에서의 시진핑 국가주석'처럼 사실대로만 쓸게요. 기사 핵심인 게임·콘텐츠를 앞세우려면 ④가 맞아요.
+
+번호만 말씀해 주시면 사진을 바꾸고, 사진 설명·출처를 고쳐 다시 검수한 뒤 올릴게요.
+[22:15] 사람: 중국인 관광객이 한국 관광하는 사진(중국 국기를 든 가이드 혹은 중국말이 적힌 깃발을 든 가이드가 한국여행중) 찾아바 있나
+[22:16] AI: 중국인 단체관광객 사진을 찾아볼게요. 위키미디어와 정부 사진(공공누리 1유형)을 같이 봅니다.
+[22:16] AI: 위키미디어에는 맞는 사진이 없어요. 정부 정책브리핑의 공공누리 사진을 찾아볼게요(중국 단체관광 무비자 입국 때 찍은 사진이 있을 수 있어요).
+[22:17] AI: 문체부 보도자료와 정부 Korea.net 사진(대개 CC BY-SA) 쪽을 확인할게요.
+[22:18] AI: 정부 Korea.net(해외문화홍보원) 사진 중 2014년 동대문 쇼핑몰의 중국인 관광객 사진이 있어요. 내용을 확인해 볼게요.
+[22:20] AI: Korea.net 사진에는 깃발 든 가이드가 없어요. 플리커 등 CC 사진을 모아 둔 Openverse에서 더 찾아볼게요.
+[22:26] AI: 찾으시던 사진이 있어요. 중국 국기나 중국어 깃발은 아니지만, 가이드가 팻말을 들고 중국인 단체관광객을 이끄는 서울 사진이에요. 관광 문장과 이어지는 중국 쪽 사진 세 장을 더해 네 장을 한 장에 모아 보냈어요. 표지는 아직 바꾸지 않았어요.
+
+| 후보 | 무엇인가 | 이용 조건 | 걸리는 점 |
+|---|---|---|---|
+| ① | 서울에서 팻말 든 가이드(형광 조끼)를 따라 걷는 중국인 단체관광객 | CC BY-SA 2.0, 플리커 simonwilliamsim, 제목 'Chinese tourists explore Seoul' | 2014년 무렵 사진이고 1024px라 표지로는 작은 편. 얼굴이 잘 보이는 일반인이 여럿 있음 |
+| ② | 중국 온라인 여행사 퉁청여행(同程旅游)의 쑤저우 매장 | CC BY-SA 4.0, 2017년 | 사진 설명에 '지금은 문 닫음'이라고 적혀 있음 |
+| ③ | 중국철도여행사 베이징 본사(국제 열차표 판매) | CC BY-SA 4.0, 2025년 | 철도 여행사라 해외 단체여행과는 조금 다름 |
+| ④ | 선전 바오안공항 출국장 | CC BY-SA 4.0, 2026년 10월 | 회담 도시라 장면은 좋은데, 여행사라는 점은 안 드러남 |
+
+추천은 ①이에요. 사진만 봐도 '중국인 단체관광'이 읽히고, 중국은 한국을 찾는 외국인이 가장 많은 나라라는 사진 설명과도 바로 이어져요. 이번 약속은 한국 여행사가 중국에서 관광객을 모으는 것이라, 사진 설명에서 이 점을 짚을게요.
+
+다만 ①은 CC BY-SA라 밝기를 고친 사진도 같은 조건으로 표기해야 해요. 출처 줄에 'CC BY-SA 2.0'을 적으면 돼요.
+
+①로 할지 번호만 주시면 사진을 바꾸고, 사진 설명·출처를 고쳐 그림 검토를 다시 거친 뒤 올릴게요.
+[22:30] 사람: 1번으로 하자. 사용조건 괜찮으면 쓰자.
+그리고 무역 한국 상세페이지 독도 저거 왜 저렇게 찍어놨으까. 울릉도보다 작아야할거 아냐 왜 저렇게크고 동그란 원으로 그렸나.
+[22:30] AI: ①로 바꿀게요. 먼저 플리커 원본 쪽에서 이용 조건을 확인합니다.
+[22:31] AI: 표지 교체를 반영했고 사실 확인도 통과했어요. 이제 독도 문제를 볼게요. 지도 그리는 코드를 찾습니다.
+[22:36] AI: 독도는 이제 울릉도보다 작은 점으로 나와요. 기사 표지를 확인하고 함께 올릴게요.
