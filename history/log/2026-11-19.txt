@@ -56,3 +56,14 @@
 [05:16] 예약 작업: [예약 작업 holt-english-site-sync 실행 — 정해 둔 지시문으로 자동 시작]
 [05:16] AI: Only 6 left. Let me look at existing entry format.
 [05:17] AI: Formatting kept. Now build & push.
+[05:22] AI: All 6 pass the checker and are on the pages. Committing.
+[05:22] AI: - **영어 사이트**: 536쪽을 빌드해 올렸어요. 하루 공개 한도가 6쪽이라 97쪽은 다음 날부터 차례로 공개돼요. 새 쪽을 점검해 보니 품사나 예문을 고칠 곳은 없었어요(0건). '퀴즈 없음' 표시는 play a role 한 쪽에만 있었는데, 지침대로 그대로 뒀어요.
+- **쪽별 표현·퀴즈**: 오늘 채울 쪽이 6개만 남아 있어서 6쪽을 채웠어요(take one's seat, power bill, win by a landslide, make a comeback, go off the grid, give someone a second chance). 6쪽 모두 검수를 통과해 실제 쪽에 들어간 것까지 확인했어요. 이제 남은 쪽은 0개예요(공개 532쪽 모두 완료).
+- **HOLT NEWS**: 12편(한국어·영어)을 빌드해 푸시했어요. 언어 메뉴 점검에서 37쪽이 자동으로 고쳐졌어요.
+- **푸시**: 두 사이트 모두 푸시했고, 바뀐 표현 파일은 커밋 642f4cd로 GitHub에 올렸어요.
+
+=== 대화 Claude Code 세션 b2dcf40d ===
+[05:27] 예약 작업: [예약 작업 holt-history-timeline 실행 — 정해 둔 지시문으로 자동 시작]
+[05:29] AI: 언어판 회차 멈춤·AI용 요약 상자·돈과 제도 원칙 등 후보를 골랐고, 나머지 로그를 마저 확인합니다.
+[05:29] AI: Skip day titles. 항목을 넣습니다.
+[05:30] AI: Good. 빌드·푸시합니다.
