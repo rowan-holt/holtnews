@@ -1621,3 +1621,6 @@
 2026-11-19 04:43  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — gov_bond_bid_rigging
 2026-11-19 05:22  content(holt): HOLT ENGLISH 쪽별 표현·퀴즈 6쪽 + 점검
 2026-11-19 05:34  chore(holt): 만들어진 기록 연표 자동 갱신 — 4개 추가
+2026-11-19 07:32  feat(holt): 사이트 뉴스 — 미국 최저임금 25달러 법안, 하원안 상한과 상원안 바닥
+2026-11-19 07:33  feat(holt): HOLT ISSUE 시사상식 문제 — us_minimum_wage_25
+2026-11-19 07:36  content(holt): 07:30 회차 — 중국과 같이 만든 K드라마, 이제 '중국 드라마'로 (J)

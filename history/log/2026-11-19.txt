@@ -140,3 +140,88 @@
 [07:21] AI: Fact check now passes. Building the site and checking the new page before pushing.
 [07:25] AI: Images are copied under the article id. Rendering the page headlessly for a quick visual check.
 [07:25] AI: Page renders cleanly, with the House chamber cover and the chart under section 2. Pushing it live.
+[07:31] AI: Published. Checking the live page after a short wait, then the ISSUE note.
+[07:31] AI: Not deployed yet (GitHub Pages usually takes a minute or two). Doing the ISSUE step meanwhile.
+[07:31] AI: Only the minimum wage ISSUE note is mine to publish. It needs its own separate review first.
+[07:31] AI: The site push went out 41 seconds ago, so Pages is still deploying. Meanwhile, committing the article files.
+[07:32] AI: 기사를 발행했고, 저장소 커밋과 푸시까지 끝냈어요. 다만 실제 사이트에서는 아직 404가 나와요. 사이트 반영이 1~2분쯤 걸려서, 페이지가 열리는 순간 바로 확인되게 해 뒀어요.
+
+- **제목:** 미국 최저임금 25달러, 바닥일까 천장일까
+- **주소:** https://holtnews.com/news/us_minimum_wage_25.html (영어판 /en/news/…)
+- **핵심 내용:** 하원안의 25달러에는 '중위 시급의 3분의 2'라는 상한이 붙어 있어서, 지금 임금 수준으로 계산하면 16.34달러예요. 상원안에서 25달러는 내려가지 않는 바닥이고요. 알자지라를 비롯해 확인한 다른 보도에는 이 차이가 없었어요.
+- **표지:** 미국 하원 본회의장 실사예요. 저작권이 없는 퍼블릭 도메인 사진이에요.
+- **검수:** 사실 확인 장부에서 본문 숫자 62개를 모두 맞췄어요. 데스크, 영문판 데스크, 보탬·그림 검토는 처음에 모두 '보류'였는데, 지적 사항을 고친 뒤 분리된 검토자가 세 검토 모두 '통과'로 판정했어요.
+- **발행 리포트:** 텔레그램으로 보냈어요.
+
+**남은 일**
+- **실제 화면 확인:** 사이트가 열리면 제목, 숫자, 그림이 기사 파일과 같은지 볼게요.
+- **HOLT ISSUE:** 문제 3개짜리 노트를 별도 검토자가 보고 있어요. 통과하면 바로 올릴게요.
+
+참고로 오늘 기사는 4편째예요. 하루 3편 한도를 넘었지만, 직접 지정해 주신 주제라 추가로 발행했어요.
+[07:32] AI: The live pages check out on both editions (title, numbers, images, home and news list). Applying the ISSUE reviewer's five wording fixes, then sending it back for a verdict.
+[07:32] AI: The study note's 'what happened' summary is now over the 160-character limit. Shortening it.
+[07:32] AI: 기사는 지금 실제 사이트에 올라가 있고, 화면 확인도 끝냈어요.
+
+- **한국어판:** https://holtnews.com/news/us_minimum_wage_25.html
+- **영어판:** https://holtnews.com/en/news/us_minimum_wage_25.html
+
+제목과 핵심 숫자(16.34달러, 24.51달러), 법안 원문 링크, 표지와 본문 그림이 두 판 모두 기사 파일 그대로 나와요. 홈과 뉴스 목록에도 새 글이 보여요.
+
+HOLT ISSUE 문제는 아직 올리지 않았어요. 검토자가 해설에서 기사보다 단정한 표현 다섯 곳을 짚어서 고쳤어요. 예를 들어 상한을 고정값처럼 쓴 곳, 기사에 없는 '그래서'로 이은 인과 같은 거예요. 같은 검토자에게 최종 판정을 다시 받는 중이고, 통과가 나오면 바로 올리고 커밋할게요.
+[07:32] AI: ISSUE review passed. Recording the reviewer's verdict and publishing.
+[07:33] AI: 알자지라 기사를 확인해 뉴스로 내보냈고, 실제 사이트에서 제대로 나오는 것까지 확인했어요. HOLT ISSUE 문제 3개도 올렸고, 둘 다 커밋과 푸시까지 끝냈어요.
+
+- **기사:** 미국 최저임금 25달러, 바닥일까 천장일까
+  - 한국어판 https://holtnews.com/news/us_minimum_wage_25.html
+  - 영어판 https://holtnews.com/en/news/us_minimum_wage_25.html
+- **확인한 것:** 사이트에서 두 판의 제목, 핵심 숫자, 그림이 기사 파일과 같고, 홈과 뉴스 목록에도 새 글이 보여요.
+- **핵심 내용:** 알자지라는 법안 내용만 전했지만, 하원안과 상원안 원문을 나란히 놓으니 25달러의 성격이 달랐어요.
+  - **하원안:** '중위 시급의 3분의 2'라는 상한이 붙어 있어서, 지금 임금 수준으로 계산하면 16.34달러까지만 올라요.
+  - **상원안:** 25달러가 내려가지 않는 바닥이에요.
+  - 확인한 국내외 보도(알자지라, 뉴스위크, 리즌 등)에는 이 차이가 없었어요.
+- **표지:** 말씀하신 대로 미국 하원 본회의장 실사로 바꿨어요. 저작권 걱정 없는 퍼블릭 도메인 사진이에요.
+- **검수:**
+  - 처음에는 세 검토 모두 '보류'였어요. 가장 큰 문제는 팁 최저임금과 상원안 일정에서 연차를 한 해씩 앞당겨 센 제 실수였어요.
+  - 표지를 바꿀 때 본문 그래프의 출처 표기까지 덮어쓴 실수도 있었어요.
+  - 둘 다 고친 뒤 분리된 검토자가 세 검토 모두 통과로 판정했어요.
+- **HOLT ISSUE:** 중위 임금, 팁 크레딧, 필리버스터를 다루는 공부 노트와 문제 3개예요. 검토에서 해설의 단정 다섯 곳을 고친 뒤 통과했어요.
+
+참고로 오늘 사이트 기사는 이걸로 4편째예요. 하루 3편 한도를 넘었지만, 직접 지정해 주신 주제라 추가로 냈어요.
+
+=== 대화 Claude Code 세션 a9c93c28 ===
+[07:36] AI: Commit and push.
+[07:36] AI: 07:30 회차를 올렸고, 커밋과 푸시까지 마쳤습니다(506ab60).
+
+- **상황:** 아침 뉴스는 접힌 상태라 다른 포맷 콘텐츠로 대신했습니다. 07:30 예약 주제와 대기 중인 후속은 없었습니다.
+- **고른 유형:** 다음 차례는 유형 C였지만 이번 주 C를 이미 2개 올려서 주 2개 상한에 걸렸습니다. 그래서 유형 J(전체 화면 실사 표지 뉴스)로 만들었습니다. 직전 두 회차가 세르비아와 미국이라 이번엔 한국 소식입니다.
+- **주제:** 한중 FTA 서비스·투자 후속협상이 사실상 타결된 소식입니다.
+  - 공동제작 대상이 영화에서 드라마·예능까지 넓어지고, 같이 만든 작품은 중국 콘텐츠로 인정돼 외국 프로그램 30% 제한을 받지 않습니다.
+  - 2024년 중국 수출은 게임이 2조 5천억 원인데 방송은 200억 원뿐이었습니다.
+  - 정식 서명과 발효 절차가 아직 남았다는 점도 본문에 넣었습니다.
+- **오늘의 표현:** get a foot in the door(첫발을 들이다). Cambridge와 Collins 사전에서 확인했습니다.
+- **교차확인 출처:** [연합뉴스](https://www.yna.co.kr/view/AKR20261118156252005), [뉴시스](https://www.newsis.com/view/NISX20261118_0003873629)
+- **표지 사진:** Pixabay 촬영 현장 자료 사진입니다. 한국 드라마 실사 중 자유 이용 가능한 사진이 없어서 썼고, 캡션에 '자료 사진'으로 적었습니다.
+
+**올린 곳**
+- 인스타 릴스: https://www.instagram.com/reel/Df5lROHhYbP/ (캐러셀은 08:30쯤 자동 게시)
+- 페이스북 릴스: https://www.facebook.com/reel/[가림:숫자]
+- 인스타 스토리: https://www.instagram.com/stories/rowanholt_official/[가림:숫자]
+- 유튜브 쇼츠: https://youtube.com/shorts/tbg0OduEACc (지금은 비공개, 표지가 확인되면 자동 공개)
+- 스레드: https://www.threads.com/@[가림]/post/Df5lv1ykwyy (규칙대로 인스타와 다른 뉴스인 패틴슨 007 이야기)
+
+**현재 단계:** 2차 목표는 조회수 500회·팔로워 200명(11/30까지)이고, 지금 팔로워는 57명입니다.
+
+업로드 오류는 없었습니다. HOLT ENGLISH 사이트에 해석이 빠진 문장 9개도 채워서 지금은 0개입니다.
+
+=== 대화 Claude Code 세션 609e9dda ===
+[07:40] 예약 작업: [예약 작업 holt-lang-rollout-v2 실행 — 정해 둔 지시문으로 자동 시작]
+[07:40] AI: zh 숫자 전부 원자료 재계산과 일치. ja·vi 원고 확인합니다.
+[07:40] AI: 세 원고 숫자 모두 원자료와 일치. 빌드·검증 진행합니다.
+[07:45] AI: 다른 언어 걸린 것은 설계상 영문 기사 카드('English' 표시)와 참고 자료 원제목뿐이라 정상. 스크린샷 확인합니다.
+[07:46] AI: 검증 통과. 다음으로 최근 기사 중 각 나라와 관련 큰 것을 찾습니다.
+[07:46] AI: 후보: 한중 FTA 서비스(zh), K뷰티 수출(zh·ja·vi). 원문을 읽습니다.
+[07:47] AI: Now Japanese.
+[07:48] AI: ja·vi 원고 완료. 다시 빌드·검증합니다.
+[07:53] AI: 새 기사 쪽 모두 통과(홈의 영어는 설계상 'English' 카드). 화면과 한국어판 국기 짝 확인합니다.
+[07:53] AI: 한국어판 쪽 hreflang에 zh가 빠져 있어 원인 확인합니다.
+[07:53] AI: zh는 `zh-Hans`로 정상 들어가 있었습니다(제 grep 패턴 문제). 배포합니다.
