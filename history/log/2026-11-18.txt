@@ -105,3 +105,46 @@
 [07:47] AI: 전 쪽 통과(가로 넘침·오류·한국어 남음·깨진 링크 0, 국기 짝 정상). 화면을 눈으로 확인합니다.
 [07:47] AI: 화면 정상입니다. 안전 검사 후 공개합니다.
 [07:53] AI: 공개 확인. 분야 쪽 제목 어순이 어색해서(“Doanh nghiệp Tin tức”, “产业 新闻”) 바로 고칩니다.
+[07:59] AI: 이번 회차(11/18 07:40~08:00)에서는 언어 확대 2단계 중 2b까지 마치고 공개했어요.
+
+**새로 공개한 것**
+- **일본어 번역 2편**
+  - 철강 기사: 중국산이 빠진 한국 열연 시장에서 일본산 점유율이 44%에서 65%로 올랐어요. 늘어난 물량은 JFE·일본제철 등의 가격 약속이 시작된 6월 23일 이후에 몰려 있어요.
+  - 미국 관세 기사: 일본산도 한국산과 같이 '합계 12.5%'를 내는 쪽이에요. 베트남·태국산과 관세가 얼마나 벌어지는지를 일본 독자 입장에서 썼어요.
+- **베트남어 번역 1편**: 수출 1조 달러 기사예요. 베트남이 한국의 3위 수출 시장이라는 내용을 앞에 넣었어요(1~10월 800억 달러, 8.6%, 56.6% 증가, 흑자 479억 달러).
+- **분야 목록 쪽**: 세 언어에 산업·경제 분야 목록이 생겼어요. 번역 기사가 늘면 해당 분야 쪽도 자동으로 생겨요. 한국어·영어 분야 쪽의 국기 버튼에도 세 언어가 이어져요.
+
+**검증**
+- 20쪽을 휴대폰 너비(390px)로 확인했어요. 가로 넘침, 페이지 오류, 남은 한국어·영어 문장, 깨진 링크는 모두 0건이에요.
+- 국기 버튼을 누르면 같은 쪽의 다른 언어판으로 가요.
+- 숫자는 한국어판과 관세청 자료를 다시 계산해서 맞춰 봤어요.
+- 공개 주소는 모두 정상으로 열려요(200).
+- 하는 김에 분야 쪽 제목의 어순이 어색하던 것도 고쳤어요(예: "Doanh nghiệp Tin tức" → "Tin tức doanh nghiệp").
+
+**현재 상태와 다음 회차**
+- 언어별 기사 수는 중국어 2편, 일본어 3편, 베트남어 3편이에요.
+- 다음 회차에서는 중국어 3번째 기사로 쓸 만한 게 있는지부터 봐요.
+- 최근 기사 중 그 나라와 관련이 큰 게 없으면 2단계를 닫고 3단계로 넘어가요. 3단계부터는 새 기사를 낼 때 세 언어판도 같이 써요.
+
+진행표 `holt/lang_rollout.md`도 갱신했고 커밋·푸시까지 했어요.
+
+=== 대화 Claude Code 세션 f6a36c8d ===
+[08:46] 예약 작업: [예약 작업 holt-site-publish 실행 — 정해 둔 지시문으로 자동 시작]
+[08:48] AI: 표지 실사(여의도 금융가, CC BY 4.0)를 확보하는 중이고, 이어서 기사 본문을 씁니다.
+[08:49] AI: 세금 예시(해외주식 랩, 계좌 손실인데 양도세)와 중도해지 수수료 계산을 법 조문으로 확인했습니다. 이제 기사 파일을 씁니다.
+[08:51] AI: 기사 초안과 그림이 나왔고 숫자 장부도 통과했습니다. 후보 점수 기록을 남긴 뒤 데스크·영문판·보탬 검토 세 서브에이전트를 동시에 돌립니다.
+[08:52] AI: Issue file drafting while three reviewers run in background.
+[08:52] AI: Waiting for the three reviewers to report back.
+[08:52] AI: 검토 세 건이 돌아오길 기다리는 중입니다(시작 6분째라 시간 여유 있음).
+[08:52] AI: 검토자 세 명이 검토를 진행 중이에요. 결과가 오면 고칠 곳을 반영해 발행하겠습니다.
+[08:53] AI: 영문판 데스크 지적(제목 과장, 문법, 그림 글자 잘림)을 반영하는 중입니다. 한국어 쪽에도 같은 문제(‘90% 넘게’→‘90% 이상’, ‘법정’ 한도)가 있어 함께 고칩니다.
+[08:53] AI: Applied the English-desk fixes and redrew the figure; waiting on the Korean desk and the value reviewer.
+[08:54] AI: Korean desk flagged three problems: '한 종목' isn't in the source, the title overstates, and an investor right was reversed. Applying the fixes now.
+[08:55] AI: Fixing the remaining date/subtitle edits (one string didn't match).
+[08:55] AI: Now sending the revised file back to the three reviewers for a second pass.
+[08:55] AI: I've sent the revised article back to all three reviewers for a second check. I'll publish once they return.
+[08:56] AI: The edit script tripped on a leftover placeholder line, so nothing was saved. Re-running without it.
+[08:56] AI: All checks passed. Recording the editor-in-chief step and building the site.
+[08:58] AI: The build is taking longer than two minutes; waiting for it to finish.
+[09:00] AI: Build looks right (cover, body figure, calculator, both languages). Pushing now.
+[09:00] AI: Push is running in the background; I'll verify the live page once it finishes.
