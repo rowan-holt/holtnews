@@ -1626,3 +1626,7 @@
 2026-11-19 07:36  content(holt): 07:30 회차 — 중국과 같이 만든 K드라마, 이제 '중국 드라마'로 (J)
 2026-11-19 07:59  feat(holt): 언어 확대 2c — 운임(backhaul) zh·ja·vi 검증·공개, K뷰티 수출 zh·ja·vi 번역
 2026-11-19 08:15  fix(holt): ISSUE 퀴즈 구조화 데이터에 educationalLevel 추가 (서치콘솔 hasPart 오류)
+2026-11-19 09:10  feat(holt): 사이트 뉴스 — 일본 50년 주담대 상품 확산과 한국 수도권 30년 만기 제한
+2026-11-19 10:21  chore(gsc): 색인 요청 기록
+2026-11-19 10:43  feat(holt): HOLT ISSUE 시사상식 문제 — ai_agent_blocking, korea_china_fta_services
+2026-11-19 12:08  feat(holt): 12시 회차 — 앤트로픽 역대 최대 IPO (유형 J)
