@@ -1640,3 +1640,4 @@
 2026-11-19 21:17  chore(gsc): 색인 요청 기록
 2026-11-19 22:07  feat(holt): 22시 회차 — 프랑스 조류독감 최고 경보, 'AI'는 영어로 bird flu (유형 C)
 2026-11-20 04:44  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — microplastics_brain
+2026-11-20 05:33  content(holt): HOLT ENGLISH 쪽별 표현·퀴즈 5쪽 + 점검

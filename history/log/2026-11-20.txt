@@ -26,3 +26,26 @@
 [05:17] AI: 새로 생긴 쪽 점검을 마쳤어요. 'behind'의 품사를 고쳤고, 이제 남은 5쪽에 쪽별 표현과 퀴즈를 채우고 있어요.
 [05:22] AI: HOLT ENGLISH는 푸시됐어요. HOLT NEWS 쪽은 사이트 안전 검사(site_guard)에 걸려 푸시가 멈췄고, 원인을 보고 있어요.
 [05:23] AI: Only the exchange-rate date (11-18→11-19) changed — our own config data, same site. Registering and pushing.
+
+=== 대화 Claude Code 세션 42eab71e ===
+[05:27] 예약 작업: [예약 작업 holt-history-timeline 실행 — 정해 둔 지시문으로 자동 시작]
+
+=== 대화 Claude Code 세션 2bc8455f ===
+[05:28] AI: HOLT NEWS 사이트를 다시 빌드한 뒤, 세계 지도가 실제 화면에서 제대로 열리는지 확인하는 중이에요.
+
+=== 대화 Claude Code 세션 42eab71e ===
+[05:29] AI: 연표 갱신 작업 중이에요. 지난 확인 뒤 새 대화에서 후보 두 개를 골랐고, 이제 기존 연표 양식을 읽어 맞춰 넣을게요.
+
+=== 대화 Claude Code 세션 2bc8455f ===
+[05:33] AI: 세계 지도 수정 뒤 빌드 결과 폴더를 확인하다 이상한 점이 보여서(일부 폴더가 안 보임) 상태를 살펴보고 있어요.
+[05:33] AI: 다른 작업(다른 세션)이 지금 HOLT NEWS를 빌드하며 폴더를 새로 쓰는 중이라 폴더가 잠깐 비어 보인 거예요. 그 작업이 끝날 때까지 기다릴게요.
+[05:33] AI: Meanwhile, I'll commit the ENGLISH-side files.
+[05:33] AI: Waiting for the other session's HOLT NEWS build to finish.
+[05:33] AI: 다른 세션의 HOLT NEWS 빌드가 끝나기를 기다리고 있어요. 끝나는 대로 세계 지도 수정을 확인하고 등록한 뒤 푸시할게요.
+
+=== 대화 Claude Code 세션 42eab71e ===
+[05:37] AI: 사이트 반영이 안전 검사(세계 지도 쪽 스크립트)에 걸려서, 원인을 보는 중이에요.
+[05:37] AI: 세계 지도 설정을 실행 스크립트에서 JSON 데이터 칸으로 옮긴 우리 쪽 변경이에요(더 안전한 방향). 검토 후 등록하고 다시 올릴게요.
+
+=== 대화 Claude Code 세션 2bc8455f ===
+[05:37] AI: Server start was declined, so I'll verify with code instead: the JSON parses and the JS syntax is valid.
