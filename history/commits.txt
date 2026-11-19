@@ -1635,3 +1635,8 @@
 2026-11-19 14:28  content(holt): 세계 지도 나라 상세 해설 — 폴란드, 네덜란드, 아프가니스탄, 예멘
 2026-11-19 18:05  feat(holt): 18시 회차 — 2027학년도 수능 끝 (유형 J, 사용자 표지)
 2026-11-19 18:05  chore(holt): 수능 회차 HOLT ENGLISH 해석 추가
+2026-11-19 21:06  feat(holt): 사이트 뉴스 — K-라면은 더 팔리고, 일본행 김은 값이 내렸다 (Korea Trade, + HOLT ISSUE)
+2026-11-19 21:06  chore(holt): korea_kfood_buyers 발행 후 1차 검증 기록
+2026-11-19 21:17  chore(gsc): 색인 요청 기록
+2026-11-19 22:07  feat(holt): 22시 회차 — 프랑스 조류독감 최고 경보, 'AI'는 영어로 bird flu (유형 C)
+2026-11-20 04:44  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — microplastics_brain
