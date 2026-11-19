@@ -1641,3 +1641,5 @@
 2026-11-19 22:07  feat(holt): 22시 회차 — 프랑스 조류독감 최고 경보, 'AI'는 영어로 bird flu (유형 C)
 2026-11-20 04:44  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — microplastics_brain
 2026-11-20 05:33  content(holt): HOLT ENGLISH 쪽별 표현·퀴즈 5쪽 + 점검
+2026-11-20 05:42  chore(holt): 만들어진 기록 연표 자동 갱신 — 2개 추가
+2026-11-20 05:42  fix(holt): 세계 지도 설정을 실행 안 되는 JSON 데이터 칸으로 — 환율 날짜가 매일 바뀌어 안전 검사에 매일 막히던 문제
