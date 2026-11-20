@@ -569,3 +569,38 @@ Also filled in 7 missing Korean translations in `site_ko.json` for the HOLT ENGL
 [21:07] AI: 빌드가 아직 돌고 있습니다(출력은 끝나야 나옴). 완료 알림을 기다립니다.
 [21:09] AI: Build looks right. Pushing to the site.
 [21:10] AI: 푸시 중입니다. 끝나면 발행 후 검증과 이슈를 진행합니다.
+[21:15] AI: Pushed. Now the post-publish check and the ISSUE quiz check.
+[21:15] AI: Site deploy is still propagating. Meanwhile I'm sending the quiz to a separate review agent.
+
+=== 대화 Claude Code 세션 bb2f77d8 ===
+[22:08] AI: 22시 회차는 22:00:02에 올렸고, 기록 후 커밋·푸시까지 끝냈습니다(`7b8b457`).
+
+- **회차:** 11-20 22:00. 예약 주제와 대기 중인 후속 주제는 없었습니다.
+- **포맷: 뉴스(전체 화면 실사 표지)**
+  - 다음 차례로 나온 '영어로 하면 틀려요' 포맷은 이번 주에 이미 2개(11/17, 11/19)라 주 2개 한도에 걸렸습니다.
+  - Why? 같은 특집은 올릴 수 있었지만 평균 조회수가 69~109회라, 420회인 뉴스로 갔습니다.
+- **주제:** "브렉시트 10년 만에… 영국·EU 청년 10만 명씩 다시 오간다". 영국과 EU 청년이 최대 10만 명씩 상대 쪽에서 최대 3년 살며 일하는 합의입니다. 다만 영국 대학이 EU 학생 등록금을 영국 학생만큼 낮춰야 효력이 나고, 6개월 안에 정하기로 했습니다.
+- **오늘의 표현:** make up (다투고 나서 화해하다)
+- **사진:** 런던 세인트판크라스역 유로스타 승강장, Wikimedia Commons, CC BY-SA 4.0
+- **교차확인 출처:**
+  - [BBC](https://www.bbc.co.uk/news/articles/c623j4kpg94go)
+  - [NPR](https://www.npr.org/2026/11/20/g-s1-154576/uk-eu-summit)
+  - [DW](https://www.dw.com/en/[가림:긴문자열]/a-80001076)
+  - [Al Jazeera](https://www.aljazeera.com/news/2026/11/20/eu-and-uk-seal-reset-deal)
+  - GOV.UK 청년 이동 비자 안내(한국은 18~35세 신청 가능)
+
+**올린 링크** (22:00~22:04)
+- 인스타 릴스: https://www.instagram.com/reel/Df9toMaPLhX/ (캐러셀은 23:00에 자동 게시)
+- 스레드: https://www.threads.com/@[가림]/post/Df9t7zOH6MZ
+  - 규칙대로 다른 이야기를 올렸습니다. `threads-pick`이 고른 젠슨 황 복귀 발언이고, 영어·출처 없이 본문만 썼습니다.
+- 인스타 스토리: https://www.instagram.com/stories/rowanholt_official/[가림:숫자]
+- 유튜브 쇼츠: https://youtube.com/shorts/oOo3xmdtswA
+  - 비공개로 올렸고, 그리드에서 표지가 확인되면 `yt-release`가 공개로 바꿉니다.
+- 페이스북은 하루 3개 한도(07:30·12·18시)를 이미 채워서 올리지 않았습니다.
+
+**현재 단계:** 2차 목표(게시물당 조회 500회·팔로워 200명, 11/30까지)이고 팔로워는 57명입니다. 승급·몰아주기·쉼 판단은 없었습니다.
+
+**오류**
+- 18시 회차 캐러셀은 정상 게시됐습니다.
+- 나라·의외 상황 태그를 처음 달 때 따옴표를 빠뜨려 실패했고, 다시 달아서 반영했습니다.
+- HOLT ENGLISH 사이트에 해석이 빠진 문장 3개(18시 케냐 회차)가 있어서, 이번 회차 문장과 함께 해석을 채웠습니다(`site_ko.json`).
