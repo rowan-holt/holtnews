@@ -444,3 +444,128 @@ https://www.axios.com/newsletters
 [17:04] AI: Writing the topic file and building the cover and reel.
 [17:05] AI: The reel is built and checked. Next I'll check the YouTube channel fit and pick the Threads topic.
 [17:05] AI: Production is done. A background job will run the uploads in order at 18:00 (Instagram Reel → Facebook → Threads → Instagram Story → YouTube); I'm waiting for it to finish.
+[18:08] AI: Uploads for the 11/20 (Fri) 18:00 slot started right at 18:00 and every platform finished by 18:08.
+
+**Format and topic:** a type J single-topic news post (full-screen photo cover) in the Friday Africa world-news series. Kenyan marathon world champion Peres Jepchirchir admitted to doping with EPO and was banned for three years.
+- **Why this topic:** It's Friday's Africa turn, and there was no planned topic or follow-up waiting. The stakes are easy to see: her Sydney Marathon title is gone and she will miss the 2028 LA Olympics.
+- **Format overlap:** Today's earlier posts were Myanmar at 07:30 and the KOSPI at 12:00. That's three different countries in a row, and no war or disaster topic.
+- **Special formats:** None of the available ones (Why?, Sold in English) was used.
+- **Newsletter notes:** nothing from the last three days, so none used.
+
+**Sources checked:**
+- [Al Jazeera](https://www.aljazeera.com/sports/2026/11/19/[가림:긴문자열])
+- [CBC](https://www.cbc.ca/sports/olympics/summer/athletics/[가림:긴문자열].7428104)
+- [Canadian Running](https://runningmagazine.ca/the-scene/[가림:긴문자열]/), which quotes the Athletics Integrity Unit (AIU) announcement
+
+**Cover photo:** Wikimedia Commons, 2022 Boston Marathon, CC BY-SA 4.0 (credit is in the caption).
+
+**Expression of the day:** come clean ("to own up to something you'd been hiding")
+
+**Links:**
+- Instagram Reel: https://www.instagram.com/reel/Df9SKgGyFAB/ (the carousel posts automatically 60 minutes later)
+- Facebook: https://www.facebook.com/reel/[가림:숫자]
+- Instagram Story: https://www.instagram.com/stories/rowanholt_official/[가림:숫자]
+- YouTube: https://youtube.com/shorts/osews6leVXk. It's uploaded as private for now and goes public automatically once the cover is confirmed.
+- Threads: https://www.threads.com/@[가림]/post/Df9Sn-2nwl9. Following the rule that Threads covers a different story, this post is about the US losing its measles-elimination status. It's the body text only, with no replies.
+
+**Status:** Stage 2 targets 500 views per post and 200 followers by 11-30; we have 56 followers now. There was no promotion, focus or pause call this run. The 12:00 carousel posted normally, and there were no errors. Upload records and the Africa/Kenya rotation entry are saved, and the commit (7727d85) is pushed.
+
+=== 대화 Claude Code 세션 45b58c3f ===
+[18:40] 예약 작업: [예약 작업 holt-lang-rollout-v2 실행 — 정해 둔 지시문으로 자동 시작]
+[18:40] AI: Gilt: 이전 회차들이 남긴 번역 원고 4개(zh FTA·kfood, ja 50년 주담대·kfood)가 미검증·미커밋 상태라, 이걸 검증해 공개하고 2단계를 닫는 중입니다.
+[18:45] AI: Build clean (번역 빠짐 0). Now Playwright verification of the four translated pages plus list/home pages.
+
+=== 대화 Claude Code 세션 cf1f1ff9 ===
+[20:14] 예약 작업: [예약 작업 holt-error-reports 실행 — 정해 둔 지시문으로 자동 시작]
+[20:15] AI: 메일함 확인 중입니다. 새 오류 제보는 없고, 오늘 온 메일(서치콘솔, KIEP·와튼 뉴스레터, KDI 인증)을 정리하고 있어요.
+[20:16] AI: Now the KIEP issue to trash via Chrome, and the Telegram note about KDI.
+[20:16] AI: Account is rowanholt.official. Clicking the delete (trash) icon.
+[20:16] AI: **오류 제보:** 새 제보는 없어요.
+
+**메일함: 챙길 것 2건**
+- **KDI 한국개발연구원:** 뉴스레터 신청 본인인증 메일이 오늘 오전 11시 1분에 왔어요. 인증 기한은 24시간이에요. 저는 오전에 이름과 출생연도를 넣어야 해서 신청을 건너뛰었어요. 그러니 직접 신청하신 거라면 내일 오전 11시 전에 메일에서 인증을 눌러 주세요. 텔레그램으로도 보냈어요.
+- **구글 서치콘솔:** 구글이 holtnews.com 색인 문제 6종(noindex 66쪽, 404 8쪽, 리디렉션 3쪽, 표준 태그 대체 1쪽, 크롤링 뒤 미색인 311쪽, 발견 뒤 미색인 216쪽)이 해결됐는지 확인하기 시작했다는 알림이에요. 문제가 새로 생겼다는 메일이 아니라서 지금 할 일은 없어요. 결과 메일이 오면 그때 다시 볼게요.
+
+**정리: 휴지통 1건, 스팸 0건**
+- KIEP '오늘의 세계경제'(대한국 품목별 관세 불확실성)는 단서로 적은 뒤 크롬 Gmail 화면에서 휴지통으로 옮겼어요.
+- 가입 환영 메일 14건(Axios, Semafor, 미라클레터, 어피티, 데일리바이트, 디그, Apricitas, 와튼 등)과 구글 계정 공유 안내는 받은편지함에 그대로 있어요. Gmail 커넥터에 휴지통·스팸 지정 도구가 없어서 옮기지 못했어요.
+
+**스팸함:** 저녁 실행이라 건너뛰었어요.
+
+**텔레그램:** KDI 인증 건 1통 보냄.
+
+뉴스레터: 읽음 1·단서 1·휴지통 1·구독 확인 0·취소 0
+- KIEP와 와튼 Frontier of Finance는 대화 기록에 제가 신청한 흔적이 없어요. 그런데 사용자분이 KDI를 직접 신청하신 시각과 겹쳐서, 이 둘도 직접 신청하신 걸로 보고 구독 목록 `newsletters.md`에 '지켜봄'으로 더했어요. 신청하신 적이 없다면 말씀해 주세요. 취소할게요.
+
+=== 대화 Claude Code 세션 2b0a4f68 ===
+[20:46] 예약 작업: [예약 작업 holt-site-publish 실행 — 정해 둔 지시문으로 자동 시작]
+[20:46] AI: Korea Trade 21시 회차(11/20 예약 주제: 인천·부산 환적)로 진행 중입니다. 기사 형식과 항만 자료를 읽는 단계입니다.
+[20:47] AI: 항만 원자료(해수부 3분기 물동량 보도자료)를 찾고 있습니다.
+[20:49] AI: 해수부 원문 보도자료 위치를 찾는 중입니다(목록 검색이 막혀 다른 경로로).
+[20:50] AI: Found it: docSeq 69154. Reading the release text.
+[20:51] AI: 원자료(해수부 3분기 물동량 보도자료 원문)를 확보했습니다. 이제 관세청·해수부 API 자료로 직접 계산합니다.
+[20:51] AI: 후보 기록(select)을 남기고 기사를 쓰는 단계로 넘어갑니다.
+[20:53] AI: 그림 두 장 완성. 이제 본문 숫자를 계산·정리합니다.
+[20:53] AI: 관세법 환적 조문을 법령 API로 확인 중입니다.
+[20:54] AI: 근거 확인 끝. 기사 파일을 씁니다.
+[20:56] AI: 사실 확인 통과. 데스크·영문판 데스크·보탬 검토 세 서브에이전트를 동시에 띄웁니다.
+[20:57] AI: 세 검토가 도는 동안 작성자 기록·Korea Trade 메모·이슈 절차를 준비합니다.
+[20:57] AI: 검토 결과를 기다리는 중입니다.
+[20:57] AI: 데스크·영문판 데스크·보탬 검토 세 건이 돌고 있습니다. 결과가 오면 고쳐서 발행합니다.
+[20:58] AI: 보탬 검토 결과가 왔습니다(제목 기간·처리량 기준, 광양 숫자, 그림 출처 글자). 나머지 두 검토를 기다렸다가 한꺼번에 고칩니다.
+[20:58] AI: 영문판 검토도 왔습니다. 산업부 데스크 결과를 기다립니다.
+[21:01] AI: 세 검토 모두 보류 — 지적을 반영해 본문을 다시 씁니다(관세청 항구 집계는 환적 포함이라 이름 바로잡기, 미·독 98.7%, 칩 단정 삭제, 원산지는 '표시 규정·원산지'까지만, 원인 판단 문장 → 해수부 월별 숫자, 제목에 3분기·처리량).
+[21:01] AI: Now rewriting the article body and metadata in one pass.
+
+=== 대화 Claude Code 세션 bb2f77d8 ===
+[21:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
+[21:02] AI: 22시 회차 진행 중입니다 — 규칙·데이터 확인 후 주제를 고르겠습니다.
+
+=== 대화 Claude Code 세션 2b0a4f68 ===
+[21:02] AI: 첫 수정 스크립트가 인코딩 문제로 안 돌았습니다. 파일로 저장해 다시 실행합니다.
+
+=== 대화 Claude Code 세션 bb2f77d8 ===
+[21:03] AI: EU·영국 '리셋' 합의, 미·중·러 선전 정상회담 등 후보를 추리는 중입니다.
+[21:03] AI: 주제는 'EU·영국 리셋 합의(청년 이동 제도)'로 정하고 사실 확인·사진을 찾습니다.
+
+=== 대화 Claude Code 세션 2b0a4f68 ===
+[21:03] AI: 수정본으로 세 검토자에게 재검토를 요청합니다.
+
+=== 대화 Claude Code 세션 bb2f77d8 ===
+[21:04] AI: Eurostar(런던–브뤼셀 열차) 실사 후보를 내려받아 표지로 쓸지 보는 중입니다.
+
+=== 대화 Claude Code 세션 2b0a4f68 ===
+[21:04] AI: 재검토 세 건이 돌고 있습니다. 결과가 오면 기록하고 발행합니다.
+
+=== 대화 Claude Code 세션 bb2f77d8 ===
+[21:04] AI: Topic file 작성 → 카드·릴스 제작 단계로 넘어갑니다.
+
+=== 대화 Claude Code 세션 2b0a4f68 ===
+[21:05] AI: 검수 모두 통과. 빌드합니다.
+
+=== 대화 Claude Code 세션 bb2f77d8 ===
+[21:05] AI: 카드 검수 중입니다(표지 OK, 본문 문구 한 줄 다듬는 중).
+[21:06] AI: Cards look good. Checking reel frames.
+[21:06] AI: 제작·검수 끝났습니다. 22:00 업로드 시각까지 대기합니다.
+[21:06] AI: Waiting for 22:00 (background timer running).
+[21:06] AI: 22:00 업로드 시각까지 백그라운드 타이머로 기다리는 중입니다. 시각이 되면 이어서 올립니다.
+[21:07] AI: The 22:00 card post and reel are ready, and nothing is uploaded yet. A background timer will wake me at 22:00 to post them.
+
+- **Slot:** 11-20 22:00. Nothing was booked for this slot in `planned_topics.md`, and no follow-up posts are queued.
+- **Format and why:** a regular news post with a full-screen photo cover. The scheduler suggested a "this is wrong in English" post next, but that format already ran twice this week (11/17 and 11/19), which is the weekly limit. Special formats like "Why?" were allowed, but news posts average 420 views against 69–109 for those.
+- **Topic:** "브렉시트 10년 만에… 영국·EU 청년 10만 명씩 다시 오간다". The UK and EU agreed a reset deal: up to 100,000 young people each way can live and work in the other for up to 3 years. The catch is that the deal only takes effect once the UK charges EU students the same university fees as UK students, to be settled within 6 months. I also link it to the UK youth mobility (working holiday) visa that Korean young people already use.
+- **Sources:** BBC, NPR (AP), DW, Al Jazeera, and GOV.UK for the youth mobility visa rules (Korea is eligible, ages 18–35).
+- **Phrase of the day:** "make up" (to make up after a fight), not the cosmetics word.
+- **Cover photo:** Eurostar platform at St Pancras station in London, Wikimedia Commons, CC BY-SA 4.0.
+- **Checks:** the cover, card text, three reel frames and the caption format all look fine. The cover headline background was busy, so a dark gradient was added under it automatically. The UK isn't the third post in a row from the same country.
+
+**Upload plan for 22:00:** Instagram reel (the carousel follows automatically an hour later), then Threads, Instagram story and YouTube Shorts. Facebook is left out because it's capped at 3 reels a day, all used at 07:30, 12:00 and 18:00.
+- The Threads post is about a different story, as the Threads rules require: Jensen Huang saying he would return to Nvidia, picked by `threads-pick`.
+
+Also filled in 7 missing Korean translations in `site_ko.json` for the HOLT ENGLISH site, including the 3 from the 18:00 Kenya post. The upload, logging, commit, push and the final report with links all come after 22:00.
+
+=== 대화 Claude Code 세션 2b0a4f68 ===
+[21:07] AI: Meanwhile, adding Korea Trade notes for the China and US pages.
+[21:07] AI: 빌드가 아직 돌고 있습니다(출력은 끝나야 나옴). 완료 알림을 기다립니다.
+[21:09] AI: Build looks right. Pushing to the site.
+[21:10] AI: 푸시 중입니다. 끝나면 발행 후 검증과 이슈를 진행합니다.
