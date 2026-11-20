@@ -93,3 +93,85 @@ ads.txt 스니펫
 
 === 대화 Claude Code 세션 8deac8f5 ===
 [01:11] AI: The guard is blocking ads.txt as a "file in an unexpected location", so I'll add it to the allowed paths.
+[01:17] AI: ISSUE went out. ENGLISH is blocked by inline scripts that aren't from my change, so I'll check where they came from.
+[01:17] AI: `tools/app_shell.py` has uncommitted changes (a splash screen) that aren't mine. I'll check whether another session is in the middle of this work.
+[01:17] AI: Pages deploy takes a minute or two, so I'm committing the code first and then checking again.
+[01:18] AI: **holtnews.com**과 **issue.holtnews.com**에 ads.txt와 애드센스 확인 코드를 올렸고, 실제 사이트에서 둘 다 뜨는 것까지 확인했습니다. 애드센스 화면으로 돌아가서 'ads.txt 스니펫 추가함'을 체크하고 사이트 확인을 누르시면 됩니다.
+
+**english.holtnews.com은 아직 올리지 못했어요.** 다른 작업에서 앱 시작 화면(스플래시)을 만드는 중인 수정이 17분 전쯤부터 커밋되지 않은 채 있습니다. 그런데 사이트 보호 검사가 그 수정에 들어 있는 스크립트를 막아서 이 사이트만 업로드가 멈췄어요. 남의 작업을 대신 허용해서 내보내지는 않았습니다. 그 작업이 이 사이트를 올릴 때 광고 코드도 같이 나가도록 이미 코드에 넣어 두었습니다. 심사는 루트 도메인인 holtnews.com만 보기 때문에 신청에는 지장이 없어요.
+
+**바꾼 것** (커밋하고 푸시까지 했습니다)
+- 세 사이트 빌드 코드에 게시자 ID를 넣고 ads.txt가 자동으로 생기게 했습니다.
+- 사이트 보호 검사(`site_guard.py`)에 애드센스 스크립트 주소와 ads.txt를 허용했습니다.
+- ENGLISH는 원래 ID만 넣으면 광고 단위 ID 없이 광고 칸이 자동으로 생기는 구조였습니다. 그래서 광고 단위 ID를 넣은 자리에만 광고가 나오게 바꿨어요. 세 사이트 모두 지금은 실제 광고 칸이 없습니다.
+
+승인 메일이 오면 알려 주세요. 검증 도구가 광고를 불러오지 않게 막는 처리를 먼저 하고, 광고 단위 4개를 받아 자리에 넣겠습니다.
+
+=== 대화 Claude Code 세션 ca91e0a8 ===
+[01:21] AI: Instead of waiting, I'm taking the screenshots from the live holtnews.com.
+[01:21] AI: The live site already has the centered phone logo (the other session's push carried my change). Now building the carousel cover from the screenshots.
+[01:22] AI: Making the carousel. For the cover, I'm cropping the HOLT NEWS masthead area of the homepage up close.
+[01:23] AI: Mostly good. Two things to fix: the phone's black notch covers the HOLT NEWS logo in the screenshots, and one line breaks awkwardly ("그래서 / SNS…").
+[01:24] AI: The other session's commit already took my changes to the three site build files. Checking whether they're live yet.
+[01:24] AI: HOLT NEWS and ISSUE are already live with the centered logo. Only ENGLISH (which carries the app's first screen) is left. Building and pushing it.
+[01:24] AI: The two blocked scripts are exactly the first-screen code I wrote. It only uses the browser's own storage, doesn't touch any other site, and sends nothing out, so I'm registering them and pushing.
+[01:25] AI: Live. Final check on the actual site: the app's first screen and the logo positions on all three sites.
+[01:25] AI: All three logos sit at the same center and height, and the app's first screen shows. Committing and saving notes.
+[01:26] AI: Sending task 3's cover and caption for review.
+[01:26] AI: 네 가지 중 2번과 4번은 사이트에 반영했고 실제 사이트에서 확인까지 마쳤습니다. 1번은 사진 파일과 문장을 드리니 직접 바꾸시면 되고, 3번은 표지와 캡션 확인을 기다립니다.
+
+**1. 프로필 사진·소개글**
+- 사진은 고르신 A안입니다. 흰 바탕에 NEWS가 진하고 ENGLISH, ISSUE가 연해지며, HOLT 글자는 없습니다. 파일은 [profile_v4_1121.png](holt/assets/brand/profile_v4_1121.png)이고 위에도 보내 드렸습니다.
+- 페이스북 페이지 사진만 API로 바꾸려 했는데 권한이 없어 실패했습니다. 이것도 앱에서 바꿔 주셔야 합니다.
+- 소개글(전 채널 공통):
+  ```
+  매일 세상 소식, 쉽고 깊게
+  무슨 일인지, 왜 중요한지 1분이면
+  마지막 장엔 영어 표현 하나
+  ```
+
+**2. 앱 첫 화면**
+- 검정 HOLT 아이콘을 없애고 글자만 남겼습니다. HOLT NEWS가 진하게 있고, NEWS 밑으로 ENGLISH와 ISSUE가 아래로 갈수록 연해집니다.
+- 앱을 열 때 1초쯤 보였다가 사라지고, 아이폰 시작 그림도 같은 디자인으로 바꿨습니다.
+- 안드로이드는 앱이 켜지는 순간 시스템이 아이콘과 이름을 아주 잠깐 먼저 띄웁니다. 지금 같은 홈 화면 앱 방식으로는 이걸 끌 수 없고, 정식 앱(플레이스토어용)으로 만들 때 없앨 수 있습니다.
+
+**3. 홈페이지 소개 SNS 콘텐츠 (8장, 확인 대기)**
+- 표지는 실제 홀트뉴스 첫 화면에 "AI와 둘이서 / 경제 신문을 만들었다"를 얹었습니다.
+- 본문은 '만들어진 기록'에서 골라 엮었습니다.
+  - 시작: "너가 쇼츠를 만들 수 있어?"
+  - 안 나온 조회수, 그리고 바퀴벌레 1등
+  - 3주 뒤 사이트를 연 이야기 (휴대폰 화면 2장)
+  - 'AI가 썼어요'를 붙이기까지
+  - 경제 신문으로 좁힌 결정
+  - 대화 1만 1천여 개를 기록에 남긴 이야기 (화면 2장)
+- 마지막 장 표현은 'from scratch'(맨바닥부터)입니다.
+- 표지와 캡션은 위에 보냈고, 나머지 장은 [out_promo5](holt/out_promo5) 폴더에 있습니다. OK 주시면 릴스 영상을 만들어 올리겠습니다.
+
+**4. 로고 정렬**
+- 컴퓨터 화면에서는 원래 가운데였습니다. 문제는 휴대폰과 앱이었습니다. 세 사이트 로고가 모두 왼쪽에 붙어 있었고, 크기와 높이도 조금씩 달라 탭을 바꿀 때마다 로고가 움직였습니다.
+- 이제 세 사이트 모두 같은 가운데 자리, 같은 크기, 같은 높이입니다. 화면 폭 390px과 360px 둘 다에서 확인했고, 홀트뉴스 오른쪽 날씨와도 겹치지 않습니다.
+- 가운데로 옮기면서 ENGLISH와 ISSUE 머리글 오른쪽의 다른 사이트 링크(HOLT NEWS ↗ 등)를 휴대폰 화면에서만 숨겼습니다. 같은 링크가 꼬리말에 있고, 앱에서는 원래 숨겨져 있던 링크입니다.
+
+다른 세션이 애드센스 작업을 올리면서 제 사이트 수정분도 그 커밋에 같이 들어갔습니다. 나머지(앱 첫 화면 코드, SNS 콘텐츠 스크립트, 이미지)는 따로 커밋하고 푸시했습니다.
+
+=== 대화 Claude Code 세션 74414b73 ===
+[04:42] 예약 작업: [예약 작업 holt-news-vocab 실행 — 정해 둔 지시문으로 자동 시작]
+[04:43] AI: 검사 통과했어요. 이제 빌드·배포합니다.
+[04:43] AI: 새 쪽은 하루 한도 때문에 오늘 대기열로 들어갔어요(대기 115개). 커밋합니다.
+[04:43] AI: **처리한 기사:** us_ebola_entry_orders (미국 에볼라 입국 규정)
+
+가져간 표현:
+- go on to — 이어서 ~하게 되다, 나중에 ~하다
+- say little about — ~에 대해 알려 주는 게 별로 없다
+- rest on — ~에 달려 있다, ~을 근거로 하다
+- funnel — 한곳으로 몰다, 보내다
+- pushback — 반발, 반대
+
+- 검사는 통과했고(✓ 5개), 사이트 빌드와 커밋·푸시까지 마쳤어요(544694d).
+- 표현 쪽은 오늘 사이트에 올라가지 않았어요. 하루 새 쪽 한도가 6개인데 대기 중인 쪽이 115개라, 이 5개도 순서대로 나중에 공개돼요. 그래서 'HOLT NEWS 영어판에서 기사 읽기' 링크가 맞는지는 아직 열어 보지 못했어요.
+- 해석이 빠진 문장은 0개라 새로 채운 건 없어요.
+- 남은 대기: 34편
+
+=== 대화 Claude Code 세션 7906cf39 ===
+[05:16] 예약 작업: [예약 작업 holt-english-site-sync 실행 — 정해 둔 지시문으로 자동 시작]
+[05:16] AI: Only 5 left. Let me look at existing entry format.

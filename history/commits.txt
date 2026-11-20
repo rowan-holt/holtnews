@@ -1657,3 +1657,6 @@
 2026-11-20 18:08  content(holt): 18시 세계 뉴스 아프리카 — 케냐 마라톤 챔피언 젭치르치르 도핑 3년 징계
 2026-11-20 21:15  chore(gsc): 색인 요청 기록
 2026-11-20 22:07  content(holt): 22시 영국·EU 리셋 합의, 청년 10만 명씩 이동 제도
+2026-11-21 01:17  feat(holt): 애드센스 신청 — 게시자 ID·ads.txt·심사 코드(세 사이트), 광고 단위는 슬롯 ID 넣을 때만
+2026-11-21 01:25  feat(holt): 앱 첫 화면 글자만(HOLT NEWS + ENGLISH·ISSUE 연한 그라데이션), 휴대폰 로고 가운데, 새 프로필 사진, 사이트 소개 SNS 캐러셀
+2026-11-21 04:43  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — us_ebola_entry_orders
