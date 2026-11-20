@@ -429,3 +429,18 @@ https://www.axios.com/newsletters
 [15:40] 예약 작업: [예약 작업 holt-lang-rollout-v2 실행 — 정해 둔 지시문으로 자동 시작]
 [15:40] AI: 지난 회차들에서 쓰고 기록이 빠진 번역 4편(zh 한중 FTA·K푸드, ja K푸드·일본 50년 주담대)을 원문 숫자와 대조하는 중입니다.
 [15:40] AI: All 일치. 빌드합니다.
+[15:50] AI: Now SKILL.md step 3 addition.
+
+=== 대화 Claude Code 세션 11fe1f49 ===
+[16:23] 예약 작업: [예약 작업 holt-community-devlog 실행 — 정해 둔 지시문으로 자동 시작]
+[16:24] AI: 지난 일지 이후 바뀐 것들을 모으는 중이에요. 이번 회차는 디스콰이엇과 velog에 올리고, 나머지는 기준상 건너뛸 예정입니다.
+[16:25] AI: 원고 재료는 다 모았어요(정기 검증 정정, 표지 되돌림, 안전 검사 막힘). 이제 게시판 최근 글을 읽고 말투를 맞추러 갑니다.
+[16:25] AI: Logged in as Rowan Holt. Reading the feed text.
+
+=== 대화 Claude Code 세션 b5ece729 ===
+[17:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
+[17:02] AI: 금요일 18시 세계 뉴스(아프리카) 회차를 준비 중이에요. 케냐 마라톤 세계 챔피언 도핑 징계 소식을 후보로 사실 확인하고 있습니다.
+[17:03] AI: Sources are confirmed (Al Jazeera·CBC·AIU). Now checking licenses on Wikimedia photos of Jepchirchir for the cover.
+[17:04] AI: Writing the topic file and building the cover and reel.
+[17:05] AI: The reel is built and checked. Next I'll check the YouTube channel fit and pick the Threads topic.
+[17:05] AI: Production is done. A background job will run the uploads in order at 18:00 (Instagram Reel → Facebook → Threads → Instagram Story → YouTube); I'm waiting for it to finish.
