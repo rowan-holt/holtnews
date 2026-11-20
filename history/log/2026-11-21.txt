@@ -175,3 +175,15 @@ ads.txt 스니펫
 === 대화 Claude Code 세션 7906cf39 ===
 [05:16] 예약 작업: [예약 작업 holt-english-site-sync 실행 — 정해 둔 지시문으로 자동 시작]
 [05:16] AI: Only 5 left. Let me look at existing entry format.
+[05:22] AI: Both pushed. Now commit.
+[05:22] AI: HOLT ENGLISH 사이트를 546쪽으로 빌드해 푸시했어요. 새 쪽 중 6개는 하루 한도에 따라 공개됐고, 115개는 다음 날 이후 차례로 공개돼요. 오늘 점검에서는 고칠 품사와 예문이 없어서 0개예요. 퀴즈만 없는 'keep indoors' 한 쪽은 지침대로 그대로 두었어요.
+
+쪽별 표현·퀴즈는 남은 5쪽을 채웠어요(work abroad, get back together, come clean, be found guilty of, a sea of red). 빌드할 때 경고(⚠)는 나오지 않았고, 남은 쪽은 0개라 공개된 542쪽이 모두 채워졌어요. 오늘 할 몫이 25쪽보다 적었던 건 남은 쪽이 5개뿐이었기 때문이에요.
+
+HOLT NEWS는 13편을 한국어와 영어로 빌드해 푸시했어요. 언어 메뉴 점검에서 37쪽의 링크가 자동으로 고쳐졌어요.
+
+앱 저장소에도 커밋 7c1baa5로 커밋하고 푸시했어요.
+
+=== 대화 Claude Code 세션 d9a92c5c ===
+[05:27] 예약 작업: [예약 작업 holt-history-timeline 실행 — 정해 둔 지시문으로 자동 시작]
+[05:29] AI: 새 대화에서 넣을 항목 3개를 골랐어요. 지금 연표와 영어판에 넣고 있어요.
