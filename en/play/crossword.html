@@ -43,14 +43,15 @@
 .cwc.ok{color:#0a7a3e}.cwc.no{color:#c8102e}.cwc.pre{color:#a0a0a0}.cwc.rev{color:#1f5fbf}
 .cwc i{position:absolute;left:3px;top:1px;font-size:10px;font-style:normal;font-weight:600;color:#555;line-height:1.2}
 .cwbar{margin-top:14px}
-.cwq{font-weight:700;font-size:16px;line-height:1.5;min-height:52px;margin-bottom:10px;padding:8px 12px;background:#fbeeb4}
-.cwq small{display:block;color:var(--gray);font-weight:500;font-size:13px}
 .cwgw{position:relative}
 #cwi{position:absolute;left:0;top:0;width:100%;height:100%;margin:0;padding:0;border:0;outline:0;background:transparent;color:transparent;caret-color:transparent;font-size:16px;text-align:center;z-index:2;pointer-events:none;-webkit-appearance:none;border-radius:0;opacity:.01}
 .gbtn{font:inherit;font-size:15px;font-weight:700;padding:10px 16px;border:2px solid #111;background:#111;color:#fff;cursor:pointer;border-radius:0}
 .gbtn.l{background:#fff;color:#111}
 .gbtn:disabled{opacity:.4;cursor:default}
-.cwops{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:10px}.cwops .gbtn{padding:10px 2px;font-size:14px;white-space:nowrap}
+.cwtop{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px}
+.cwtop select{font:inherit;font-size:15px;font-weight:700;padding:9px 8px;border:2px solid #111;border-radius:0;background:#fff;color:var(--ink);min-width:0}
+.cwtop .gbtn{padding:9px 14px;font-size:14px}
+.cwops{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:10px}.cwops .gbtn{padding:10px 2px;font-size:14px;white-space:nowrap}
 .cwl h2{font-size:15px;margin:0 0 8px;border-top:3px solid #111;padding-top:8px}
 .cwl ol{list-style:none;margin:0 0 22px;padding:0}
 .cwl li{padding:6px 8px;font-size:15px;line-height:1.5;cursor:pointer;display:flex;gap:8px}
@@ -60,11 +61,11 @@
 .gdone b{font-size:18px}
 .gdone p{margin:6px 0 0;font-size:15px}
 @media(max-width:760px){.cw{grid-template-columns:1fr;gap:18px}.cwg{max-width:420px;margin:0 auto}}
-</style><div class="gwrap"><h1>Crossword</h1><p class="gsub"><span id="cwdate"></span> · A new mini puzzle of money words every day</p><div class="cw"><div><div class="cwq" id="cwq" aria-live="polite"></div><div class="cwgw"><div class="cwg cwen" id="cwg"></div><input id="cwi" type="text" autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false" enterkeyhint="next" aria-label="Type your answer in the selected square"></div><div class="cwbar"><div class="cwops"><button type="button" class="gbtn l" id="cwnext">Next word</button><button type="button" class="gbtn l" id="cwchk">Check</button><button type="button" class="gbtn l" id="cwrev">Reveal</button><button type="button" class="gbtn l" id="cwreset">Restart</button></div><div class="gdone" id="cwdone" hidden><b></b><p style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" class="gbtn" id="cwshare">Share result</button><button type="button" class="gbtn l" id="cwagain">Play again</button></p></div></div></div><div class="cwl"><h2>Across</h2><ol id="cwa"></ol><h2>Down</h2><ol id="cwd"></ol></div></div></div><script type="application/json" id="cwdata">{"2026-11-21": {"n": 7, "words": [{"ans": "BANK", "r": 0, "c": 2, "d": "a", "no": 1, "clue": "Place to deposit money"}, {"ans": "DEBT", "r": 2, "c": 0, "d": "a", "no": 4, "clue": "Money owed"}, {"ans": "OIL", "r": 4, "c": 4, "d": "a", "no": 6, "clue": "Fuel pumped from the ground"}, {"ans": "BEAR", "r": 5, "c": 1, "d": "a", "no": 7, "clue": "Investor who expects prices to fall"}, {"ans": "TAX", "r": 6, "c": 4, "d": "a", "no": 8, "clue": "Money the government collects"}, {"ans": "BUBBLE", "r": 0, "c": 2, "d": "d", "no": 1, "clue": "Prices far above real value, waiting to pop"}, {"ans": "GDP", "r": 1, "c": 0, "d": "d", "no": 2, "clue": "Total output of an economy, in short"}, {"ans": "BULL", "r": 1, "c": 6, "d": "d", "no": 3, "clue": "Investor who expects prices to rise"}, {"ans": "PORT", "r": 3, "c": 4, "d": "d", "no": 5, "clue": "Harbor where ships load and unload"}]}, "2026-11-22": {"n": 7, "words": [{"ans": "LAYOFF", "r": 1, "c": 0, "d": "a", "no": 1, "clue": "Job cut by an employer"}, {"ans": "BID", "r": 3, "c": 0, "d": "a", "no": 3, "clue": "Offer to buy at a price"}, {"ans": "DIP", "r": 3, "c": 4, "d": "a", "no": 5, "clue": "Small, brief fall in price"}, {"ans": "RATE", "r": 5, "c": 0, "d": "a", "no": 7, "clue": "Price of borrowing money, as a percentage"}, {"ans": "CEO", "r": 6, "c": 4, "d": "a", "no": 8, "clue": "Company's top executive"}, {"ans": "LABOR", "r": 1, "c": 0, "d": "d", "no": 1, "clue": "Work, as a factor of production"}, {"ans": "FED", "r": 1, "c": 4, "d": "d", "no": 2, "clue": "America's central bank, informally"}, {"ans": "DUTY", "r": 3, "c": 2, "d": "d", "no": 4, "clue": "Charge paid on goods at the border"}, {"ans": "PESO", "r": 3, "c": 6, "d": "d", "no": 6, "clue": "Currency of Mexico"}]}}</script><script type="application/json" id="cwlang">{"en": 1, "a": "Across", "d": "Down", "letters": " letters", "min": "m ", "sec": "s", "revd": "You revealed the answers", "solved": "Solved · ", "over": "That's today's puzzle. A new one arrives tomorrow.", "share": "HOLT NEWS Crossword ", "url": "https://holtnews.com/en/play/crossword.html", "copied": "Copied", "crev": "Reveal all the answers?", "creset": "Clear every square and start over?", "months": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]}</script><script>(function(){
+</style><div class="gwrap"><h1>Crossword</h1><p class="gsub">A new mini puzzle of money words every day</p><div class="cw"><div><div class="cwtop"><select id="cwday" aria-label="Pick a date"></select><button type="button" class="gbtn l" id="cwnext">Next word →</button></div><div class="cwgw"><div class="cwg cwen" id="cwg"></div><input id="cwi" type="text" autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false" enterkeyhint="next" aria-label="Type your answer in the selected square"></div><div class="cwbar"><div class="cwops"><button type="button" class="gbtn l" id="cwhint">Hint a letter</button><button type="button" class="gbtn l" id="cwrev">Reveal all</button><button type="button" class="gbtn l" id="cwreset">Restart</button></div><div class="gdone" id="cwdone" hidden><b></b><p style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" class="gbtn" id="cwshare">Share result</button><button type="button" class="gbtn l" id="cwagain">Play again</button></p></div></div></div><div class="cwl"><h2>Across</h2><ol id="cwa"></ol><h2>Down</h2><ol id="cwd"></ol></div></div></div><script type="application/json" id="cwdata">{"2026-11-21": {"n": 7, "words": [{"ans": "BANK", "r": 0, "c": 2, "d": "a", "no": 1, "clue": "Place to deposit money"}, {"ans": "DEBT", "r": 2, "c": 0, "d": "a", "no": 4, "clue": "Money owed"}, {"ans": "OIL", "r": 4, "c": 4, "d": "a", "no": 6, "clue": "Fuel pumped from the ground"}, {"ans": "BEAR", "r": 5, "c": 1, "d": "a", "no": 7, "clue": "Investor who expects prices to fall"}, {"ans": "TAX", "r": 6, "c": 4, "d": "a", "no": 8, "clue": "Money the government collects"}, {"ans": "BUBBLE", "r": 0, "c": 2, "d": "d", "no": 1, "clue": "Prices far above real value, waiting to pop"}, {"ans": "GDP", "r": 1, "c": 0, "d": "d", "no": 2, "clue": "Total output of an economy, in short"}, {"ans": "BULL", "r": 1, "c": 6, "d": "d", "no": 3, "clue": "Investor who expects prices to rise"}, {"ans": "PORT", "r": 3, "c": 4, "d": "d", "no": 5, "clue": "Harbor where ships load and unload"}]}, "2026-11-22": {"n": 7, "words": [{"ans": "LAYOFF", "r": 1, "c": 0, "d": "a", "no": 1, "clue": "Job cut by an employer"}, {"ans": "BID", "r": 3, "c": 0, "d": "a", "no": 3, "clue": "Offer to buy at a price"}, {"ans": "DIP", "r": 3, "c": 4, "d": "a", "no": 5, "clue": "Small, brief fall in price"}, {"ans": "RATE", "r": 5, "c": 0, "d": "a", "no": 7, "clue": "Price of borrowing money, as a percentage"}, {"ans": "CEO", "r": 6, "c": 4, "d": "a", "no": 8, "clue": "Company's top executive"}, {"ans": "LABOR", "r": 1, "c": 0, "d": "d", "no": 1, "clue": "Work, as a factor of production"}, {"ans": "FED", "r": 1, "c": 4, "d": "d", "no": 2, "clue": "America's central bank, informally"}, {"ans": "DUTY", "r": 3, "c": 2, "d": "d", "no": 4, "clue": "Charge paid on goods at the border"}, {"ans": "PESO", "r": 3, "c": 6, "d": "d", "no": 6, "clue": "Currency of Mexico"}]}}</script><script type="application/json" id="cwlang">{"en": 1, "a": "Across", "d": "Down", "letters": " letters", "min": "m ", "sec": "s", "revd": "You revealed the answers", "solved": "Solved · ", "over": "That's today's puzzle. A new one arrives tomorrow.", "share": "HOLT NEWS Crossword ", "url": "https://holtnews.com/en/play/crossword.html", "copied": "Copied", "crev": "Reveal all the answers?", "creset": "Clear every square and start over?", "months": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], "today": " (today)", "hints": " · {n} hint(s)"}</script><script>(function(){
 var ALL=JSON.parse(document.getElementById('cwdata').textContent),L=JSON.parse(document.getElementById('cwlang').textContent);
 function kst(){return new Date(Date.now()+9*36e5).toISOString().slice(0,10)}
-var ks=Object.keys(ALL).sort(),day=kst(),key=ALL[day]?day:ks.filter(function(k){return k<=day}).pop()||ks[0],P=ALL[key],n=P.n,W=P.words;
-var G=document.getElementById('cwg'),inp=document.getElementById('cwi'),Q=document.getElementById('cwq'),SK='holt-cw-'+(L.en?'en-':'')+key;
+var ks=Object.keys(ALL).sort(),day=kst(),past=ks.filter(function(k){return k<=day}),hk=location.hash.slice(1),key=(ALL[hk]&&hk<=day)?hk:ALL[day]?day:past[past.length-1]||ks[0],P=ALL[key],n=P.n,W=P.words;
+var G=document.getElementById('cwg'),inp=document.getElementById('cwi'),SK='holt-cw-'+(L.en?'en-':'')+key;
 var ans={},fill={},owner={},cells={},cur=-1,st=0,base=0,prev=0,comp=false,state={f:{},t0:0,t1:0,rev:0};
 try{var sv=JSON.parse(localStorage.getItem(SK)||'null');if(sv)state=sv}catch(e){}
 fill=state.f;
@@ -72,7 +73,10 @@ function k(r,c){return r+','+c}
 var JAMO=/^[ㄱ-ㅎㅏ-ㅣ]$/;
 W.forEach(function(w,i){var dr=w.d=='a'?0:1,dc=w.d=='a'?1:0;w.cells=[];
  for(var j=0;j<w.ans.length;j++){var kk=k(w.r+dr*j,w.c+dc*j);w.cells.push(kk);ans[kk]=w.ans[j];(owner[kk]=owner[kk]||[]).push(i)}});
-var dm=document.getElementById('cwdate');if(dm){var p=key.split('-');dm.textContent=L.en?L.months[+p[1]-1]+' '+(+p[2]):(+p[1])+'월 '+(+p[2])+'일'}
+function dl(k){var p=k.split('-');return L.en?L.months[+p[1]-1]+' '+(+p[2]):(+p[1])+'월 '+(+p[2])+'일'}
+var DL=dl(key),dsel=document.getElementById('cwday');
+past.slice().reverse().forEach(function(k){var o=document.createElement('option');o.value=k;o.textContent=dl(k)+(k==day?L.today:'');if(k==key)o.selected=true;dsel.appendChild(o)});
+dsel.onchange=function(){location.hash=dsel.value;location.reload()};
 for(var r=0;r<n;r++)for(var c=0;c<n;c++){var kk=k(r,c),b=document.createElement(ans[kk]?'button':'div');b.className='cwc'+(ans[kk]?' on':'');
  if(ans[kk]){b.type='button';b.tabIndex=-1;b.dataset.k=kk;b.setAttribute('aria-label',L.en?'Row '+(r+1)+', column '+(c+1):(r+1)+'행 '+(c+1)+'열');
   W.forEach(function(w){if(w.r==r&&w.c==c&&!b.querySelector('i')){var t=document.createElement('i');t.textContent=w.no;b.appendChild(t)}});
@@ -104,15 +108,14 @@ function hangul(t){var J=[];Array.from(t).forEach(function(ch){var c=ch.charCode
  emit();return out}
 function seg(){return Array.from(L.en?inp.value.toUpperCase().replace(/[^A-Z]/g,''):hangul(inp.value.replace(/[^가-힣ㄱ-ㅎㅏ-ㅣ]/g,''))).slice(base)}
 function draw(){for(var kk in cells){var b=cells[kk],v=fill[kk]||'';b.lastChild.textContent=v;
-  b.classList.toggle('pre',JAMO.test(v));b.classList.toggle('rev',!!(state.rev&&state.rk&&state.rk[kk]));}
+  b.classList.toggle('pre',JAMO.test(v));b.classList.toggle('rev',!!(state.rk&&state.rk[kk]));}
  W.forEach(function(w,i){w.li.classList.toggle('done',filled(w));w.li.classList.toggle('on',i==cur)})}
 // 지금 쓰는 칸 = 단어 시작점(st) + 이번에 친 글자 수. 입력창(투명)을 그 칸 위에 올려 둠 — 한글 조합이 칸 안에서 일어나는 것처럼
 function pos(){if(cur<0)return null;var w=W[cur],L=w.ans.length,m=seg().length;return st+Math.min(comp?Math.max(m-1,0):m,L-1-st)}
 function hl(){for(var kk in cells)cells[kk].classList.remove('w','cur');if(cur<0)return;var w=W[cur];
  w.cells.forEach(function(kk){cells[kk].classList.add('w')});var c=cells[w.cells[pos()]];c.classList.add('cur');
 }
-function clue(){var w=W[cur];Q.innerHTML='';var t=document.createElement('span');t.textContent=w.no+' '+(w.d=='a'?L.a:L.d)+' · '+w.clue;
- var s=document.createElement('small');s.textContent=w.ans.length+L.letters;Q.appendChild(t);Q.appendChild(s)}
+function clue(){}   // 1121 사용자: 판 위 노란 문장 줄 삭제 — 지금 힌트는 목록에서 노랗게
 function reset(){inp.value='';base=0;prev=0}
 function sel(i,j){cur=i;st=j;reset();clue();hl();draw();inp.focus({preventScroll:true})}
 function firstEmpty(w){for(var j=0;j<w.cells.length;j++){var v=fill[w.cells[j]];if(!v||JAMO.test(v))return j}return 0}
@@ -125,9 +128,9 @@ function done(){return Object.keys(ans).every(function(kk){return fill[kk]==ans[
 function finish(){if(!state.t1){state.t1=Date.now();save();try{gtag('event','game_crossword_done',{rev:state.rev?1:0})}catch(e){}}
  var sec=Math.max(1,Math.round((state.t1-state.t0)/1000)),tm=(sec>=60?Math.floor(sec/60)+L.min:'')+(sec%60)+L.sec;
  var D=document.getElementById('cwdone');D.hidden=false;
- D.querySelector('b').textContent=state.rev?L.revd:L.solved+tm;
- inp.blur();inp.disabled=true;Q.textContent=L.over;cur=-1;hl();draw();
- var sh=document.getElementById('cwshare');sh.onclick=function(){var t=L.share+document.getElementById('cwdate').textContent+(state.rev?'':' · '+tm)+'\n'+L.url;
+ D.querySelector('b').textContent=state.rev?L.revd:L.solved+tm+(state.h?L.hints.replace('{n}',state.h):'');
+ inp.blur();inp.disabled=true;cur=-1;hl();draw();
+ var sh=document.getElementById('cwshare');sh.onclick=function(){var t=L.share+DL+(state.rev?'':' · '+tm)+'\n'+L.url+(key!=day?'#'+key:'');
   if(navigator.share)navigator.share({text:t}).catch(function(){});else if(navigator.clipboard)navigator.clipboard.writeText(t).then(function(){sh.textContent=L.copied})}}
 function nextIdx(){for(var s=1;s<=W.length;s++){var i=(cur+s)%W.length;if(!filled(W[i]))return i}for(var s=1;s<=W.length;s++){var i=(cur+s)%W.length;if(!solved(W[i]))return i}return -1}
 // 입력값은 타자 도중 절대 고치지 않음(한글 조합이 깨짐). 단어가 다 차서 넘치면 base만 옮겨 다음 단어로 이어 씀
@@ -145,15 +148,21 @@ function step(dr,dc){var w=W[cur],kk=w.cells[pos()].split(','),r=+kk[0],c=+kk[1]
  for(var t=1;t<n;t++){var nk=k(r+dr*t,c+dc*t);if(!(r+dr*t>=0&&r+dr*t<n&&c+dc*t>=0&&c+dc*t<n))return;if(cells[nk]){var os=owner[nk],want=dr?'d':'a',i=os.filter(function(x){return W[x].d==want})[0];if(i==null)i=os[0];return sel(i,W[i].cells.indexOf(nk))}}}
 inp.addEventListener('keydown',function(ev){if(cur<0||ev.isComposing||ev.keyCode==229)return;var m=seg().length;
  if(ev.key=='Enter'||ev.key==' '||ev.key=='Tab'){ev.preventDefault();var ni=nextIdx();if(ni>=0)selWord(ni);return}
+ if(ev.key=='Delete'){ev.preventDefault();var w=W[cur],j=pos(),kk=w.cells[j];delete fill[kk];if(state.rk)delete state.rk[kk];reset();st=j;state.f=fill;save();hl();draw();return}
  if(ev.key=='Backspace'&&m==0){ev.preventDefault();var w=W[cur];if(fill[w.cells[st]]&&fill[w.cells[st]]!=ans[w.cells[st]]){delete fill[w.cells[st]]}
   else if(st>0){st--;delete fill[w.cells[st]]}state.f=fill;save();hl();draw();return}
  var A={ArrowLeft:[0,-1],ArrowRight:[0,1],ArrowUp:[-1,0],ArrowDown:[1,0]}[ev.key];if(A){ev.preventDefault();step(A[0],A[1])}});
 document.getElementById('cwnext').onclick=function(){var ni=nextIdx();if(ni>=0)selWord(ni)};
-document.getElementById('cwchk').onclick=function(){for(var kk in cells){var v=fill[kk];cells[kk].classList.remove('ok','no');if(v&&!JAMO.test(v))cells[kk].classList.add(v==ans[kk]?'ok':'no')}inp.focus({preventScroll:true})};
-document.getElementById('cwrev').onclick=function(){if(!confirm(L.crev))return;state.rk={};
+// 한 글자 힌트: 지금 고른 칸(노란 칸) 하나만 정답으로 — 파랗게 표시, 힌트 수는 끝날 때 보여 줌
+document.getElementById('cwhint').onclick=function(){if(cur<0)return;var w=W[cur],j=pos(),kk=w.cells[j];
+ if(fill[kk]!=ans[kk]){fill[kk]=ans[kk];state.rk=state.rk||{};state.rk[kk]=1;state.h=(state.h||0)+1;if(!state.t0)state.t0=Date.now()}
+ var nj=-1;for(var t=j+1;t<w.cells.length;t++){var v=fill[w.cells[t]];if(!v||JAMO.test(v)){nj=t;break}}
+ state.f=fill;save();reset();if(nj>=0){st=nj;hl();draw()}else{var ni=nextIdx();if(ni>=0&&!done())sel(ni,0);else{hl();draw()}}
+ if(done())finish();else inp.focus({preventScroll:true})};
+document.getElementById('cwrev').onclick=function(){if(!confirm(L.crev))return;state.rk=state.rk||{};
  for(var kk in ans){if(fill[kk]!=ans[kk])state.rk[kk]=1;fill[kk]=ans[kk]}state.rev=1;state.t0=state.t0||Date.now();state.f=fill;save();finish()};
 function restart(){if(!confirm(L.creset))return;
- state={f:{},t0:0,t1:0,rev:0};fill=state.f;save();document.getElementById('cwdone').hidden=true;inp.disabled=false;
+ state={f:{},t0:0,t1:0,rev:0,h:0};fill=state.f;save();document.getElementById('cwdone').hidden=true;inp.disabled=false;
  for(var kk in cells)cells[kk].classList.remove('ok','no','rev');cur=0;st=0;reset();clue();hl();draw();inp.focus({preventScroll:true})}
 document.getElementById('cwreset').onclick=restart;document.getElementById('cwagain').onclick=restart;
 window.addEventListener('resize',hl);
