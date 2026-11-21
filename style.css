@@ -222,6 +222,7 @@ body.en .rel-card .rt{font-family:"Jost",sans-serif;font-weight:500}
 .nx-jcol .nx-card img{object-position:top;background:#faf8f2}   /* 1114: 연구 포스터는 위쪽(제호·제목)이 보이게 */
 .nx-col ul{list-style:none;margin:12px 0 0;padding:0}
 .nx-psa-pic{display:flex;flex-direction:column;justify-content:space-between;aspect-ratio:3/2;padding:18px 20px;color:#fff;box-sizing:border-box}   /* 1121 분야 칸 남는 자리 광고 — 옆 칸처럼 */
+.nx-psa-pic{container-type:inline-size}.nx-psa-pic b{white-space:nowrap;overflow-wrap:normal!important;font-size:min(clamp(34px,3.4vw,52px),calc(100cqw / var(--n,4)))!important}.ad.psa .psa-in{container-type:inline-size}.psa .psa-n{white-space:nowrap;overflow-wrap:normal!important;font-size:min(34px,calc(100cqw / var(--n,4)))!important}.psa-camp .psa-n{font-size:min(28px,calc(100cqw / var(--n,4)))!important}   /* 1122 큰 글자 한 줄 */
 .nx-psa-pic .psa-k{font-size:12.5px;font-weight:600;opacity:.85}.nx-psa-pic b.long{font-size:clamp(20px,1.9vw,28px);line-height:1.3;letter-spacing:-.01em}.nx-psa-pic b{font-size:clamp(34px,3.4vw,52px);font-weight:800;letter-spacing:.01em;line-height:1.05;overflow-wrap:anywhere}
 .nx-psa-p{margin:0;padding:10px 0;border-top:1px solid #e3e3e3;font-size:14px;line-height:1.6;color:var(--ink2)}.nx-col li a.nx-psa-go{font-weight:700}.nx-psa-go .nx-sec{display:inline;margin-right:8px}
 .nx-col li a{display:block;padding:10px 0;border-top:1px solid #e3e3e3;font-size:14.5px;font-weight:600;line-height:1.45}
@@ -840,8 +841,10 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wmap .land.isl{stroke:#e9e7e1;stroke-width:1.2px;paint-order:normal}.wmap .land.isl.news{stroke:#e8d3b4}.wmap .land.isl.sel{stroke:#9e9a90}
 .wmap .land.news{fill:#e8d3b4}   /* 1114 사용자: 기사 있는 곳은 회색 단계(기본·지역·선택)와 겹치지 않게 황토빛 */
 .wmap .land.reg{fill:#c2beb4}.wmap .land.reg.news{fill:#d4b48a}.wmap .land.isl.reg{stroke:#c2beb4}.wmap .land.isl.reg.news{stroke:#d4b48a}   /* 1114 사용자: 지역 단추를 누르면 그 지역 나라들 — 아무것도 안 고른 때보다 진하게, 나라를 고른 때보다 연하게 */
-.wmap .land:hover{fill:#b0aca2}
+.wmap .land:hover,.wmap .land.hv{fill:#b0aca2}.wmap .land.isl:hover,.wmap .land.isl.hv{stroke:#b0aca2}
+.wmap .wnight path{pointer-events:none;fill:#0b1a33;stroke:none}.wmap .wnight path.n0{fill-opacity:.1}.wmap .wnight path.n1{fill-opacity:.1}.wmap .wnight path.n2{fill-opacity:.14}   /* 1122 사용자: 낮과 밤 — 해가 진 곳(박명 두 겹으로 부드럽게) */
 .wmap .land.sel{fill:#9e9a90}
+.wmap .land.ata{stroke:none}   /* 1122 사용자: 남극 모양 자료의 180° 이음매(로스해→남극점)가 흰 선으로 보이지 않게 — 남극은 이웃 나라가 없어 테두리가 필요 없음 */
 .wmap .land.sel.ban{fill:#111}
 .wmap .land.tiny{stroke:#e9e7e1;stroke-width:1.6px;paint-order:normal}.wmap .land.tiny.news{stroke:#e8d3b4}.wmap .land.tiny.reg{stroke:#c2beb4}.wmap .land.tiny.reg.news{stroke:#d4b48a}.wmap .land.tiny.sel{stroke:#9e9a90}.wmap .land.tiny:hover{stroke:#b0aca2}   /* 1115 사용자: 작은 섬은 테두리를 같은 색으로 — 색칠이 보이게 */   /* 1114 사용자: 전 지역 여행금지는 누르면 검정 */
 .walert{margin:0}.walert summary{cursor:pointer;list-style:none;font-weight:600;text-decoration:underline;text-decoration-color:#ccc;text-underline-offset:4px}.walert summary::-webkit-details-marker{display:none}.walert ul{margin:6px 0 4px;padding:8px 12px;list-style:none;background:var(--soft);font-size:14.5px}.walert li{margin:3px 0}.walert li b{margin-right:6px}
@@ -883,6 +886,8 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wzoom button+button{border-top:1px solid #ddd}.wzoom button:hover{background:var(--soft)}
 .wcmp{all:unset;cursor:pointer;position:absolute;right:10px;bottom:126px;width:34px;height:34px;border-radius:50%;background:var(--bg);border:1px solid var(--ink);display:grid;place-items:center}   /* 1114 사용자: 지구본 나침반 */
 .wcmp[hidden]{display:none}
+.wsun{all:unset;cursor:pointer;position:absolute;right:10px;bottom:126px;width:34px;height:34px;border-radius:50%;background:var(--bg);color:var(--ink);border:1px solid var(--ink);display:grid;place-items:center}.wcmp:not([hidden])+.wsun{bottom:168px}.wsun[aria-pressed="true"]{background:var(--ink)}   /* 1122 사용자: 나침반 위 해 — 낮과 밤 */
+.wkey .wdn{display:inline-block;width:10px;height:10px;background:#0b1a33;opacity:.35;margin-right:5px;vertical-align:-1px}.wkey #wkdnt{font-style:normal}
 .wtip{position:absolute;pointer-events:none;background:#fff;color:var(--ink);font-size:13.5px;line-height:1.4;padding:7px 11px;max-width:min(300px,calc(100% - 20px));display:none;z-index:4;border:1px solid rgba(0,0,0,.12);border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.12)}   /* 1114 사용자: 안내판 모던하게 */
 .wtip b{display:block;font-weight:700}.wtip span{display:block;margin-top:1px;font-size:12.5px;color:var(--gray)}
 .wkey [hidden]{display:none}
