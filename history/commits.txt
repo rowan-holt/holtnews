@@ -1753,3 +1753,4 @@
 2026-11-22 02:59  chore(holtnews): 게임 스크립트 변경분 site_guard 등록(무역왕·세계 지도 링크)
 2026-11-22 04:44  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — dark_pattern_exit_button
 2026-11-22 05:23  content(holt): HOLT ENGLISH 쪽별 표현·퀴즈 6쪽 + 점검
+2026-11-22 05:36  chore(holt): 만들어진 기록 연표 자동 갱신 — 7개 추가
