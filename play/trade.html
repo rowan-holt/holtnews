@@ -169,15 +169,15 @@ function newGame(){S={s:startIdx(),T:O.turns,t:0,cash:O.start,debt:0,ships:[],hi
  for(var i=0;i<O.ships;i++){var sh=newShip(i);sh.amt=Math.floor(O.start*0.3/1000)*1000;S.ships.push(sh)}
  S.hist.push(net());$('tgsetup').hidden=true;$('tggame').hidden=false;$('tgtop').hidden=false;$('tgprog').hidden=false;$('tgend').hidden=true;$('tgplay').hidden=false;render()}
 function used(ex){var u=0;S.ships.forEach(function(p,k){if(k!==ex)u+=p.amt});return u}
-function clampAll(m){S.ships.forEach(function(p,k){p.amt=Math.max(0,Math.min(p.amt,maxAmt(p.it,m),S.cash-used(k)));p.amt=Math.floor(p.amt/1000)*1000})}
+function clampAll(m){S.ships.forEach(function(p,k){p.amt=Math.max(0,Math.min(p.amt,maxAmt(p.it,m)))});for(var k=S.ships.length-1;k>=0&&used(-1)>S.cash;k--){var p=S.ships[k];p.amt=Math.max(0,p.amt-(used(-1)-S.cash))}S.ships.forEach(function(p){p.amt=Math.floor(p.amt/1000)*1000})}
 function preview(k){var m=S.s+S.t,p=S.ships[k],el=$('tp'+k);if(!el)return;
  if(p.amt<=0){el.innerHTML=L.idle;return}
  var kg=p.amt/I[p.it].p[m],box=Math.max(1,Math.ceil(kg/(K.tpc*1000))),fr=box*X[p.de].f[m],sh=(fr+p.amt*(K.port+(p.ins?K.ins:0)))/p.amt;
  el.innerHTML=kgs(kg)+' · '+L.boxes.replace('{n}',box)+'<br>'+L.freight+' '+usd(fr)+' ('+usd(X[p.de].f[m])+L.perbox+')<br>'+L.costsh+' <span class="'+(sh>K.margin?'warn':'')+'">'+(sh*100).toFixed(1)+'%</span>'+(sh>K.margin?' '+L.toomuch:'')}
 function cap(){var n=net();$('tgcap').innerHTML=usd(n)+'<small class="'+cls(n-O.start)+'">'+pct(n/O.start-1)+'</small>'}
 function fleet(){if(!O.hard){$('tgfleet').hidden=true;return}var F=$('tgfleet');F.hidden=false;var lim=Math.max(0,net()*K.loan_ratio-S.debt);
- F.innerHTML='<div class="g"><b>'+L.fleet.replace('{n}',S.ships.length)+'</b><button type="button" id="tgbuy"'+(S.ships.length>=K.max_ships||S.cash-used(-1)<K.ship_buy?' disabled':'')+'>'+L.buy.replace('{v}',usd(K.ship_buy))+'</button><button type="button" id="tgsell"'+(S.ships.length<=1?' disabled':'')+'>'+L.sell.replace('{v}',usd(K.ship_sell))+'</button></div>'
- +'<div class="g"><b>'+L.loan.replace('{v}',usd(S.debt))+'</b><button type="button" id="tgborrow"'+(lim<K.loan_step?' disabled':'')+'>'+L.borrow.replace('{v}',usd(K.loan_step))+'</button><button type="button" id="tgrepay"'+(S.debt<=0||S.cash-used(-1)<Math.min(K.loan_step,S.debt)?' disabled':'')+'>'+L.repay.replace('{v}',usd(K.loan_step))+'</button></div>'
+ F.innerHTML='<div class="g"><b>'+L.fleet.replace('{n}',S.ships.length)+'</b><button type="button" id="tgbuy"'+(S.ships.length>=K.max_ships||S.cash<K.ship_buy?' disabled':'')+'>'+L.buy.replace('{v}',usd(K.ship_buy))+'</button><button type="button" id="tgsell"'+(S.ships.length<=1?' disabled':'')+'>'+L.sell.replace('{v}',usd(K.ship_sell))+'</button></div>'
+ +'<div class="g"><b>'+L.loan.replace('{v}',usd(S.debt))+'</b><button type="button" id="tgborrow"'+(lim<K.loan_step?' disabled':'')+'>'+L.borrow.replace('{v}',usd(K.loan_step))+'</button><button type="button" id="tgrepay"'+(S.debt<=0||S.cash<Math.min(K.loan_step,S.debt)?' disabled':'')+'>'+L.repay.replace('{v}',usd(K.loan_step))+'</button></div>'
  +'<div class="g" style="color:var(--gray);font-size:13px">'+L.costs.replace('{u}',usd(K.upkeep)).replace('{r}',(K.rate*100).toFixed(1))+'</div>'}
 function render(){var m=S.s+S.t;cap();clampAll(m);fleet();
  $('tgm').textContent=L.monthx.replace('{n}',S.t+1).replace('{t}',S.T).replace('{m}',mn(m));$('tgprog').firstChild.style.width=(S.t/S.T*100)+'%';
