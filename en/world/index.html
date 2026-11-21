@@ -2,15 +2,15 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>World map | HOLT NEWS</title>
-<meta name="description" content="Countries at a glance — politics, economy, languages, trade with Korea — linked to HOLT stories.">
+<meta name="description" content="Countries at a glance, politics, economy, languages, trade with Korea, linked to HOLT stories.">
 <link rel="canonical" href="https://holtnews.com/en/world/index.html">
 <link rel="alternate" hreflang="ko" href="https://holtnews.com/world/index.html">
 <link rel="alternate" hreflang="en" href="https://holtnews.com/en/world/index.html">
 <meta property="og:type" content="website"><meta property="og:site_name" content="HOLT NEWS">
 <meta property="og:locale" content="en_US">
-<meta property="og:title" content="World map | HOLT NEWS"><meta property="og:description" content="Countries at a glance — politics, economy, languages, trade with Korea — linked to HOLT stories.">
+<meta property="og:title" content="World map | HOLT NEWS"><meta property="og:description" content="Countries at a glance, politics, economy, languages, trade with Korea, linked to HOLT stories.">
 <meta property="og:url" content="https://holtnews.com/en/world/index.html"><meta property="og:image" content="https://holtnews.com/img/og-default.jpg"><meta property="og:image:alt" content="World map | HOLT NEWS"><meta name="twitter:image" content="https://holtnews.com/img/og-default.jpg"><meta name="Googlebot-News" content="noindex">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="World map | HOLT NEWS"><meta name="twitter:description" content="Countries at a glance — politics, economy, languages, trade with Korea — linked to HOLT stories.">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="World map | HOLT NEWS"><meta name="twitter:description" content="Countries at a glance, politics, economy, languages, trade with Korea, linked to HOLT stories.">
 <meta name="theme-color" content="#faf8f2">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="../../style.css?v=84e0df08">
@@ -591,7 +591,7 @@ function trPanel(){var P=document.getElementById('wtrp');if(!P)return;if(!TR.on|
     +'<p class="wtrnote">'+(K?'화살표 굵기는 금액이에요. 한국 쪽 끝은 금액의 절반 넘게가 비행기로 나르는 품목이면 인천국제공항, 아니면 그 나라와 짐 찬 컨테이너가 가장 많이 오간 항구예요. 비행기 몫은 달마다 관세청 항구·공항별 실적의 공항 비중만큼, kg당 값이 비싼 품목부터 나눴어요. 네모 점에 마우스를 올리면 이름이 나와요. 관세청 품목별·나라별 수출입 실적과 국가별 출항·입항 물동량, 한국과 교역이 큰 50개국 기준. 줄을 누르면 지도에서 그 나라를 보여 줘요.':'Arrow width shows value. On the Korean end, an arrow lands at Incheon International Airport when more than half its value is air-freight goods, otherwise at the seaport that handled the most full containers to or from that country. The air share follows Korea Customs Service figures by port and airport each month, assigned to the goods with the highest value per kg first. Hover over a square for its name. Korea Customs Service trade and port cargo data, Korea\'s 50 biggest partners. Select a row to see the country on the map.')
     +' <a href="../trade/'+(K?'index.html':(ex?'buy.html':'sell.html'))+'">'+(K?'무역 자료 더 보기 →':(ex?'Buy from Korea →':'Sell to Korea →'))+'</a></p>';
   P.querySelectorAll('[data-i]').forEach(function(b){b.onclick=function(){select(b.dataset.i);document.querySelector('.wmap').scrollIntoView({behavior:'smooth',block:'start'})}})}
-var GAME='<a class="wmore" href="../play/trade.html">'+(K?'무역선 굴리기 게임 →':'Trade Ship Tycoon game →')+'</a>'; /* 1122 사용자: 무역선 게임 링크는 출처 위, '상세 정보 보기'와 같은 줄 */
+var GAME='<a class="wmore" href="../play/trade.html">'+(K?'무역왕 게임 →':'Trade Ship Tycoon game →')+'</a>'; /* 1122 사용자: 무역선 게임 링크는 출처 위, '상세 정보 보기'와 같은 줄 */
 function addGame(h){if(h.indexOf('<p class="wsrc">')<0)return h;var i=h.lastIndexOf('<div class="wmores">');if(i>=0){var j=h.indexOf('</div>',i);return h.slice(0,j)+GAME+h.slice(j)}
   var m=h.match(/<a class="wmore"[^>]*>[^<]*<\/a>(?![\s\S]*<a class="wmore")/);return m?h.replace(m[0],'<div class="wmores">'+m[0]+GAME+'</div>'):h.replace('<p class="wsrc">','<div class="wmores">'+GAME+'</div><p class="wsrc">')}
 var _ch1=countryHtml;countryHtml=function(c,src){var h=_ch1(c,src),r=TR.d&&TR.d.c[c.i];if(!r||!r.u)return src?addGame(h):h; /* 1116 사용자: 칸 안 무역 상자는 없애고 '상세 정보 보기' 옆에 무역 링크만 */
