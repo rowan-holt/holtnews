@@ -3279,4 +3279,21 @@ The pre-publish safety check flagged the two changed game scripts again. I confi
 === 대화 Claude Code 세션 19833205 ===
 [21:02] AI: 회차는 11-21 22:00(남은 시간 약 55분)입니다. 오늘 앞 회차들과 이번 주 C 유형 횟수를 확인하고 있습니다.
 [21:04] AI: 표지 사진은 위키미디어 공용의 테슬라 핸들 사진(CC BY 4.0)으로 정했습니다. 원고를 쓰고 렌더링합니다.
+
+=== 대화 Claude Code 세션 a61ee1d9 ===
+[21:05] AI: I'll rewrite the whole article file with the review fixes.
+
+=== 대화 Claude Code 세션 19833205 ===
 [21:06] AI: 카드 8장 확인 완료(표지 읽힘, 정렬 정상). 이제 릴스 프레임·캡션 검사, 유튜브 제목, 스레드 글을 준비합니다.
+[21:06] AI: 제작은 끝났습니다(카드 8장·릴스 44초·캡션 검사 통과). 22:00 업로드 시각까지 기다립니다. 22시 회차라 페이스북은 하루 3개 한도로 건너뜁니다.
+[21:07] AI: Meanwhile, I'll check the upload command options.
+[21:07] AI: Waiting for 22:00.
+
+=== 대화 Claude Code 세션 a61ee1d9 ===
+[21:07] AI: Now the second review round — sending the revised file back to each reviewer.
+[21:07] AI: 재검토를 기다리는 동안 Korea Trade 품목 쪽 해설(notes.json)을 준비합니다.
+[21:08] AI: 데스크가 남긴 지적(나프타 규정은 5개월 예정, '물량이 준 데는 제도' 인과, 190억 반올림, 제목 주어)을 반영합니다.
+[21:09] AI: 산업부 데스크와 보탬 검토는 통과했고, 영문판 데스크의 마지막 확인을 기다리는 중입니다.
+[21:10] AI: 영문판 데스크 결과를 기다리며, 일본어판 숫자(일본행 물량 −30.3%)를 준비합니다.
+[21:10] AI: fact_check 통과. 편집장 단계 기록 후 빌드·푸시합니다.
+[21:11] AI: 일본어판 원고(6칸, 일본행 물량 −30.3%·톤당 +81.9%)를 썼습니다. 푸시가 끝나길 기다리며 HOLT ISSUE 절차를 읽습니다.
