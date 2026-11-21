@@ -3539,3 +3539,109 @@ AI 티가 나는 대표적 특징
 - 요약 상자는 부제와 겹치는 숫자를 빼요.
 
 6번 소개 문단은 구체적인 문장으로 다시 써서 보여 드릴게요. 4·5·7번은 형식을 바꾸는 일이라 따로 정하시면 돼요. 1~3번과 6번부터 고칠까요?
+[22:19] 사람: 4번 제외. 6번에서 소개페이지 제외. 7번 제외. >> 건들지 말라 
+
+나머지 수정해줘. 사소한것 내용도 수해줘.
+[22:22] AI: 줄표 정리 관문을 세 사이트 빌드에 넣었어요. 이번엔 한 번에 수백 쪽이 바뀌니까 푸시 안전 검사에 걸리지 않는지 확인할게요.
+[22:22] AI: Now changing the summary box so it drops any bullet that only repeats numbers already in the dek (all languages, automatic for future articles).
+[22:23] AI: Korean and English headline rewrites next (zh·ja·vi titles are already plain news style, so I'm leaving them). Checking the remaining small items' exact locations first.
+
+=== 대화 Claude Code 세션 a1934135 ===
+[22:23] 사람: 져기는 시즌마다 좀 바꿔줘야할같은데 어떻게 생각해
+
+=== 대화 Claude Code 세션 48547ca8 ===
+[22:23] AI: Applying the edits now: the Korean/English headlines, the US blurb (both languages), and the two "핵심은 세 가지예요" sentences.
+
+=== 대화 Claude Code 세션 a1934135 ===
+[22:24] AI: 코드를 확인해 봤는데, 숫자는 분기마다 자동으로 바뀌고 있어요. 대표 8곳은 늘 가장 최근 분기 값을 가져오고, 다가오는 발표도 DART에서 매일 새로 받아요. 그래서 회사를 철마다 손으로 바꿀 필요는 없어요.
+
+다만 철에 따라 화면이 달라져야 한다는 말씀은 맞다고 봐요. 지금 화면에서 문제가 세 가지 보여요.
+
+1. **실적 철이 아닐 때 왼쪽이 거의 비어요.** 지금은 11월 말이라 3분기 발표가 거의 끝났어요. 그래서 5일 중 4일이 "—"이고 한국가스공사 하나만 남았어요. 다음 철은 1월 말이라 두 달 가까이 이 상태가 이어져요.
+2. **월마트만 한 분기 늦어요.** 미국 숫자는 SEC 분기 보고서(10-Q)를 기준으로 하는데, 월마트는 실적을 11/19에 발표하고 이 보고서는 12월 초에 내요. 그래서 아직 이전 분기 값이 보여요.
+3. **"26년 2분기" 표시가 헷갈려요.** 월마트는 회계연도가 달라서 이 값이 실제로는 5~7월 실적이에요. 다른 회사들의 "3분기"와 나란히 있으면 옛날 숫자처럼 보여요.
+
+제가 권하는 방향은 철에 맞춰 칸이 저절로 바뀌게 하는 거예요.
+
+- **실적 철(1~2월, 4~5월, 7~8월, 10~11월 중순):** 지금 구성 그대로 둬요.
+- **철이 아닐 때:** 왼쪽을 "다음 실적 철 주요 일정"으로 바꿔요. 예를 들면 1월 중순 JP모건, 1월 말 삼성전자 잠정 실적처럼 대표 8곳의 다음 발표 예정일을 보여줘요. 오른쪽 표는 그대로 두고, 제목 옆에 "3분기 실적 철 결산" 정도로 성격만 바꿔 표시해요.
+- **월마트:** 보고서를 기다리지 않고 실적 발표 자료(SEC 8-K)에서 숫자를 가져와 다른 회사와 같은 시점에 맞춰요. 분기 표시도 "5~7월" 같은 실제 기간으로 바꿔요.
+
+만들까요?
+
+=== 대화 Claude Code 세션 48547ca8 ===
+[22:24] AI: Source edits are done. Now waiting for the other session's build to finish, then I'll rebuild and push all three sites.
+[22:25] AI: holtnews 빌드가 돌아가는 중이에요. 이어서 ISSUE·ENGLISH 사이트도 빌드 잠금 순서대로 다시 만들어 올릴게요.
+
+=== 대화 Claude Code 세션 bbe178fe ===
+[22:25] AI: 무역선 굴리기를 실제 데이터로 정산하는 시뮬레이션으로 바꾸고, 쉬움과 어려움 두 모드로 나눠서 사이트에 올렸어요. 실제 사이트에서 두 모드를 끝까지 해 봤고 오류는 없었어요.
+
+## 계산 방식 (전부 관세청 실제 월별 자료)
+- **사는 값:** 그 달 그 품목의 kg당 실제 수출 단가로 사요. 싣는 금액은 배마다 슬라이더로 따로 정해요. 전에 1/3씩 고정이던 방식은 없어졌어요.
+- **운임:** 그 달 그 항로의 실제 해상 운임(40피트 컨테이너 한 개당)을 내요. 20톤마다 컨테이너 한 개, 배 한 척에 50개까지 실어요.
+- **파는 값:** 한 달 뒤의 실제 단가에 기본 이윤 3%를 붙이고, 그 나라로 간 한국 수출의 증감을 반영해요.
+- **나오는 결과:** 철강을 미국이나 유럽으로 보내면 운임 때문에 큰 손해가 나요. 반도체는 많이 벌지만 많이 출렁여요. 홍해 사태처럼 운임이 튄 달도 실제 그대로 겪어요.
+- **검산:** 손으로 계산한 값과 게임 계산이 같게 나왔어요.
+
+## 모드
+- **쉬움:** 배 세 척으로 12달을 굴려요. 품목, 나라, 금액만 정해요.
+- **어려움:**
+  - 시작할 때 자금(50만, 100만, 300만 달러), 처음 배 수(1~3척), 기간(6, 12, 24달), 시작 시점(무작위, 2024년, 2025년)을 골라요.
+  - 배를 사고(15만 달러) 팔 수 있어요(10만 달러).
+  - 배마다 매달 유지비 1만 달러가 들어요.
+  - 대출은 10만 달러씩, 이자는 월 0.6%예요.
+  - 배마다 보험을 들지 정해요. 안 들면 3% 확률로 사고가 나요.
+  - 돈이 모자라면 자동으로 빌리고, 순자산이 0 아래로 떨어지면 파산이에요.
+- **결과 화면:** 실제 기간, 운임이 크게 출렁인 항로, 같은 기간에 한 품목·한 나라만 보냈을 때와의 비교, 모드별 최고 기록이 나와요.
+
+## 안내
+- 위쪽에 '게임 방법', '용어 풀이', '계산 규칙' 버튼을 뒀어요. 누르면 그 아래에 펼쳐지고, 다시 누르면 닫혀요.
+- 용어 풀이에는 kg당 수출 단가, 운임, 컨테이너, 운임 비중, 항만비, 적하보험, 수요, 기본 이윤, 유지비, 대출 이자, 순자산 11개를 넣었어요.
+- 크로스워드에도 한국어판과 영문판 모두 '게임 방법'을 같은 방식으로 넣었어요.
+
+## 시험하다가 고친 것
+어려움 모드에서 처음 싣는 금액이 현금의 90%라서, 남은 돈이 배 한 척 값보다 적으면 '배 사기' 버튼이 그냥 꺼져 있었어요. 이제 가진 현금 전체로 판단하고, 배를 사면 싣는 금액이 그만큼 자동으로 줄어요. '대출 갚기'도 같은 방식으로 고쳤어요.
+
+**참고:** 운임 자료는 관세청이 단위를 밝히지 않아서 달러로 보고 계산했어요. 기본 이윤 3%, 수요 반영 비율, 사고 확률은 게임용으로 정한 값이에요. 둘 다 '계산 규칙'에 적어 뒀어요.
+
+무역선 영문판은 말씀대로 아직 내지 않았어요. 다만 영어 글자와 코드는 한국어판과 똑같이 맞춰 두고 시험까지 해 놨어요. 코드는 커밋하고 push했어요.
+
+=== 대화 Claude Code 세션 48547ca8 ===
+[22:25] AI: Builds are still running. I'll report once they finish and I've checked the results.
+
+=== 대화 Claude Code 세션 a1934135 ===
+[22:25] 사람: 좋아 우리 사이트에 어울리는 적절한 독자들이 궁금해할만한 것으로 저 공간이 채워져있도록 해줘
+[22:25] AI: 실적 칸이 어떻게 그려지는지부터 읽어볼게요.
+
+=== 대화 Claude Code 세션 48547ca8 ===
+[22:25] AI: The fixes are in, and holtnews, ISSUE and ENGLISH are rebuilding and pushing now. I haven't checked the live sites yet, so I'll report the results after the builds finish.
+
+**Changes (all languages):**
+- **Dashes (—):** I added a cleanup step to the end of all three site builds. It goes through every page in Korean, English, Chinese, Japanese and Vietnamese.
+  - Titles: `논쟁 — 만들어진 기록` → `논쟁 | 만들어진 기록`
+  - Body and source lists: the dash becomes a comma. Japanese uses 、 and Chinese uses ，.
+  - Chinese's own ——, number ranges and the "—" placeholder in empty cells are kept.
+  - Articles written later get the same treatment automatically. The new code is in `holt/textclean.py`.
+- **Dash and middle dot on the same line:** with the dash gone, that overlap disappears too.
+- **Summary box repeating the dek:** any bullet where at least three quarters of its numbers are already in the dek is dropped. This applies to every language and to future articles.
+- **Headlines:**
+  - Korean: rewrote 11 symmetric copy-style headlines.
+    - `사 온 원유 42% 오를 때, 수출 기름값은 82%` → `석유제품 수출값 톤당 82% 올라, 원유 수입값 오름폭의 두 배 가까이`
+    - `3분기 부산항 처리량, 열에 여섯은 갈아탄 짐` → `부산항 3분기 컨테이너 60%는 환적… 1년 새 20% 늘어`
+  - English: rewrote 16 headlines that used the "Keyword: how/why…" pattern or ended with "Here's the math".
+  - Chinese, Japanese and Vietnamese headlines were already plain news style, so I left them.
+- **US one-liner on the world map:** "과학·기술 혁신을 이끌어 온 나라" now reads "GDP 세계 1위, 인구 약 3억 4천만 명". The English version got the same change.
+- **Small items:** the two places that said "핵심은 세 가지예요" now say "바뀌는 건 세 가지예요" and "담긴 내용은 세 가지예요".
+
+I didn't touch the count labels, the about page or the ISSUE three-column term cards. I saved this rule so they won't come up again.
+
+=== 대화 Claude Code 세션 a1934135 ===
+[22:26] AI: Now add the KR next-date logic to dart_feed.
+[22:27] AI: Now the US side: next dates from 8-K earnings filings, plus using the earnings release when it's newer than the 10-Q (checked against last year's 10-Q value).
+[22:27] AI: Now run both feeds to check the real output.
+[22:29] AI: Walmart's 10-Q figure is "net sales," so the release's "Total revenues" doesn't match it. I'll add "Net sales" as a label; the value check still guards it.
+[22:30] AI: 먼저 하던 실적 칸 화면부터 마무리하고, 이어서 2번과 3번을 고칠게요. 1번 광고 이야기는 끝에 정리해서 드릴게요.
+[22:30] AI: 칸 안에 안내 문구를 넣지 않는 규칙에 맞춰, "예상" 설명은 아래 자료 줄로 옮길게요.
+[22:31] AI: Now item 2 (the three links under 무역) and item 3 (the gap below 오늘의 경제).
+[22:31] AI: 링크 셋이 위 일정표 칸과 줄이 안 맞아 흩어져 보여요. 그래서 일정표와 같은 3칸에 맞춘 버튼 줄로 바꿀게요.
+[22:31] AI: 구조를 확인하려면 직접 빌드해서 실제 화면을 재봐야 해요.
