@@ -1752,3 +1752,4 @@
 2026-11-22 02:49  feat(holtnews): 게임 이름 십자말풀이·무역왕(한국어), 쉬움 미리보기·정산 한 줄로, 어려움 기간 3달 추가, 손해 경고 문구 풀어 씀, 십자말풀이 판 사흘 뒤까지 미리 생성(한·영)
 2026-11-22 02:59  chore(holtnews): 게임 스크립트 변경분 site_guard 등록(무역왕·세계 지도 링크)
 2026-11-22 04:44  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — dark_pattern_exit_button
+2026-11-22 05:23  content(holt): HOLT ENGLISH 쪽별 표현·퀴즈 6쪽 + 점검
