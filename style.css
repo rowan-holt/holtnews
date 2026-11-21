@@ -870,7 +870,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wpop a{display:block;padding:8px 12px;line-height:1.4}.wpop a+a{border-top:1px solid #eee}.wpop a:hover{background:var(--soft)}
 .wpop b{display:block;font-size:14px;font-weight:600}.wpop span{display:block;margin-top:2px;font-size:12px;color:var(--gray)}
 .wmap .wriver path{fill:none;stroke:#cbdae2;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}.wmap .wriver .r0,.wmap .wriver .r1,.wmap .wriver .r2,.wmap .wriver .r3{stroke-width:1.5px}.wmap .wriver .r4,.wmap .wriver .r5{stroke-width:1.1px}.wmap .wriver .r6,.wmap .wriver .r7{stroke-width:.8px}
-.wmap .wlake path{fill:#dbe6eb;stroke:none;pointer-events:none}   /* 1114 사용자: 강·호수는 쨍하지 않은 하늘색 */
+.wmap .wlake path{fill:#dbe6eb;stroke:none;pointer-events:none}.wmap .wrivh path{fill:none;stroke:transparent;stroke-width:8px;vector-effect:non-scaling-stroke;pointer-events:stroke}   /* 1114 사용자: 강·호수는 쨍하지 않은 하늘색 */
 .wmap .wdis path{fill:url(#whatch);stroke:none}
 .wmap .land.hatch{fill:url(#whatch);stroke:#fff}
 .wkey .wh{display:inline-block;width:12px;height:12px;margin-right:5px;vertical-align:-1px;background:repeating-linear-gradient(45deg,#6f6b62 0 1.3px,#e9e7e1 1.3px 4px)}
