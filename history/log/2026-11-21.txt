@@ -3927,3 +3927,4 @@ ISSUE 빌드 중에 "부산항 기사 문제는 분리된 검토 통과 기록�
 
 '게임 방법', '용어 풀이', '계산 규칙'에도 새 옵션을 넣었어요. 용어 풀이에 추가한 말은 용선, 무역금융, 레버리지, 정책 금융, 급전, 선도 계약이에요.
 [23:53] AI: The first publish went through. The second one (with the ship names and new blurb) is building now. I'll check the live site when it finishes.
+[23:58] 사람: 그럼 하드모드는 초기자금 0원(혹은 일정금액), 배 0개부터 시작해야겠는데 어때? 돈 빌려서 배를 빌리거나 사는 것부터 하도록 하자. 빌릴때 살때 조건이 다르게 하고 배 마다도 조건이 다르게
