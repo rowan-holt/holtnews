@@ -3341,3 +3341,17 @@ The pre-publish safety check flagged the two changed game scripts again. I confi
 
 === 대화 Claude Code 세션 bbe178fe ===
 [21:24] AI: 아래 버튼 세 개는 잘 나와요. 이제 사이트에 올리고 위쪽 화면도 함께 확인할게요.
+
+=== 대화 Claude Code 세션 a61ee1d9 ===
+[21:27] AI: 실제 사이트에서 한국어·영어·일본어 쪽 모두 200으로 열립니다. 내용 대조를 이어 갑니다.
+[21:27] AI: 발행 후 1차 검증 통과(제목·숫자·그림 4장 200·자료 주소 8개·홈 목록). 기록하고 HOLT ISSUE를 올립니다.
+
+=== 대화 Claude Code 세션 906f4626 ===
+[21:28] 사람: 호르무즈 뉴스
+
+* 표지사진 바꿀것 저거보고 누가 저기가 호르무즈인줄 아나 좀 더 넓게 보여주던가 너무 지엽적인 지도잖아 어디가 어딘지 모르겠따. 
+* 05번 제목 다섯 달러 중 한 달러 이런식으로 쓰지 않는다. 1/5을 말하고 싶은거겠지? 다르게 써주렴
+[21:28] AI: 표지 사진과 05번 소제목을 고치는 중이에요. 글이 이미 발행됐는지 먼저 확인할게요.
+[21:29] AI: Now edit the Korean article, ja file, and source log.
+[21:30] AI: Already published (21:27). Need to rebuild and push. Checking the publish procedure.
+[21:30] AI: Build and publish:
