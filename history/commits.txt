@@ -1691,3 +1691,5 @@
 2026-11-21 14:01  feat(holt): holtnews.log 1편 발행 — log_publish.py(IG_TOKEN_LOG·THREADS_TOKEN_LOG), 대화 캐러셀, 캡션 ㅋㅋ 제거
 2026-11-21 14:05  fix(site): 부산·인천 항만 그림 세로 누적 막대로, 형식 검증 기록 docstring에
 2026-11-21 14:05  docs(holt): holtnews.log 연재 주기 주 2회(화·토 20:11)
+2026-11-21 14:10  feat(holt): holtnews.log 자동 게시 auto(ready 표시·48시간 간격), launchd com.holt.logpost 화·토 20:11
+2026-11-21 14:11  fix(holt): 본문 장 제목 높이 고정 — 모든 장·뉴스·저널·오늘의 표현 같은 줄
