@@ -247,3 +247,124 @@ HOLT NEWS는 13편을 한국어와 영어로 빌드해 푸시했어요. 언어 �
 [09:01] AI: Mobile is reverted. Now measuring the logo's actual position on each desktop menu page, with scrollbars showing the way a real browser does.
 [09:02] AI: Now building and pushing all three sites (HOLT NEWS takes about 5 minutes).
 [09:02] AI: Meanwhile, saving this as a memory so it doesn't happen again.
+[09:08] AI: 제가 잘못했습니다. "웹 메뉴"라고 하셨는데 모바일까지 범위를 넓혀 손댔습니다. 모바일 머리글은 세 사이트 모두 원래대로 되돌렸고, 웹 쪽은 원인을 찾아 고쳤습니다.
+
+- **원인:** 메뉴마다 쪽 길이가 다릅니다. 시장, 부동산, 검색처럼 짧은 쪽에는 스크롤 막대가 없고, 긴 쪽에는 막대가 생깁니다. 막대가 생기면 그만큼 화면 폭이 좁아지면서, 가운데 있던 로고가 메뉴를 옮길 때마다 옆으로 7px쯤 움직였습니다.
+- **수정:** 스크롤 막대가 없는 쪽에서도 그 자리를 비워 두게 해서, 어느 메뉴든 화면 폭이 같아지게 했습니다. HOLT NEWS, ENGLISH, ISSUE 세 사이트에 넣고 올렸습니다.
+- **확인한 것:** 세 사이트 실제 사이트에 이 설정이 들어간 것과 모바일 머리글이 원래대로인 것까지 확인했습니다. 제 쪽 테스트 브라우저는 스크롤 막대가 화면 위에 겹쳐 나와서, 로고가 더 이상 움직이지 않는 모습은 직접 확인하지 못했습니다.
+
+앞으로 웹이라고 하시면 웹만 고치도록 기억해 두었습니다.
+[09:08] 사람: 데스크탑에서 메뉴 산업 3개, 시장, 경제, 연구 쭉쭉쭉 들어가면서 로고 위치 보라니까 로고가 왔다갔다 한다고 옆으로 정렬이 안 맞다고 중앙 정렬이
+[09:10] AI: Reproduced it by forcing a visible scrollbar like a Windows or mouse-connected Mac shows. Now checking whether the fix I just shipped actually holds.
+[09:10] AI: My headless browser doesn't draw a real scrollbar, so I can't reproduce it there. Checking in your Chrome instead, which is what you're actually looking at.
+[09:11] AI: I checked in your Chrome just now, and the logo no longer moves when you go 산업 → 시장 → 경제 → 연구.
+
+- **The fix:** The logo was shifting because pages that scroll show a scrollbar and short pages don't, so the page width changed slightly. That's the fix I pushed last turn (keeping space for the scrollbar on every page).
+- **Checked:** On 7 pages in your Chrome, the logo center is at exactly the same position on all of them (756px on a 1512px-wide screen). I also went through the four pages in order and took screenshots; the logo stays put.
+- **If it still moves for you:** Your browser may be showing an older copy saved before the fix. Press Cmd+Shift+R on that page to force a fresh load.
+- **연구 page menu:** In my screenshot the menu row there looked slightly off, but measuring it shows it's in the same position as on the other pages. That was just how the screenshot rendered, so I didn't change anything.
+[09:11] 사람: 그리고 지금 우리 어플에 홀트라고 써있잖아. 검정 배경에 흰색으로 홀트라고 써있잖아. 그건 유스라고 바꿔줘. 홀트 없애고 그냥 흰색으로 유스. 영어로 유스, NEWS. 폰트 크기 위치는 그대로 홀트 쓰던 거 그냥 그대로 써. 글자만 홀트해서 유스로 바꾸는 거야. 뉴스, 영어 뉴스.
+[09:11] AI: Only the app icon gets changed. I'm keeping the font, font size and position that HOLT used, and swapping the text for NEWS.
+[09:12] AI: Size and position match HOLT exactly. Pushing.
+
+=== 대화 Claude Code 세션 cd0a071f ===
+[09:12] 사람: 메일함, 뉴스레터, 문이메일, 커뮤니티 관련 메일 같은 것들 전부 뭐든 우리 지메일 로아놀트로 오는 모든 메일 다 관리해. 거기서 쓸데없는 거 지워줘. 확인하는 것도 확인했고 내용 더 이상 알 필요 없는 것도 지워.
+
+=== 대화 Claude Code 세션 ca91e0a8 ===
+[09:12] AI: The app icon now says NEWS instead of HOLT, and it's live on the site. The black background, white text, font, size and position are all the same as the HOLT version; only the word changed.
+
+**The icon on your phone won't change by itself.** Your phone keeps the copy it saved when you installed the app.
+- **Android:** the system usually picks up the new icon within a day or two.
+- **iPhone:** it won't update. Delete the HOLT icon from your home screen, then go to english.holtnews.com and install it again with "Add to Home Screen".
+
+The app name under the icon is still HOLT. I only changed the text on the icon.
+
+=== 대화 Claude Code 세션 cd0a071f ===
+[09:13] AI: 뉴스레터 단서 11건을 노트에 적었어요. 이제 정리 직전에 오늘 새로 온 메일이 있는지 확인합니다.
+[09:14] AI: 50개 휴지통 이동 완료. 남은 40개도 목록부터 확인합니다.
+[09:14] AI: 남은 40개도 전부 가입 안내, 로그인 알림, 인증 코드, 오래된 알림이에요. 모두 휴지통으로 보냅니다.
+[09:15] AI: Now updating the newsletter list and memory.
+[09:15] AI: 받은편지함 약 105개 중 90개를 휴지통으로 보냈어요. 남은 건 3개예요. 휴지통은 30일 동안 되돌릴 수 있고, 영구 삭제는 하지 않았어요.
+
+**남겨 둔 3개**
+- Cloudflare 결제 영수증, holtnews.com 도메인 등록 확인: 돈과 도메인 기록이라 남겼어요.
+- 드림보트 운영자 메일: 사람이 직접 쓴 메일이라 남겼어요.
+
+**휴지통으로 보낸 것**
+- 가입·로그인 관련: 커뮤니티 가입 환영과 인증 메일(레딧, 인디해커스, 프로덕트헌트, 디스콰이엇, 뽐뿌, 긱뉴스, 큐이타, 노트, OKKY, Viblo), 구글 '계정 데이터 공유' 알림, 우리 맥 로그인 보안 알림.
+- 서치콘솔 알림 묶음: '새 소유자' 알림도 여기 있었는데, 대표님 개인 계정을 소유자로 추가한 거라 문제없어요.
+- 오래된 알림: 틱톡 앱 심사 거절(10/27, 11/10), 유튜브 API 접수 확인, 9월 Supabase 안내, 애드센스 환영과 결제 연락처 변경 완료.
+- 대표님이 직접 보낸 테스트 메일 2개, 뉴스레터 환영·확인 메일들.
+- 쌓여 있던 뉴스레터 9개: 다 읽고 쓸 만한 주제 11건을 [newsletter_notes.md](holt/newsletter_notes.md)에 적은 뒤 지웠어요. 앤트로픽 상장 다음 날 코스닥 급락, 외국인 10월 주식 26조 원 순매도, 10월 생산자물가 하락 같은 것들이에요.
+
+**구독 정리**
+- 한경 '코알라' 뉴스레터는 우리가 근거로 쓰지 않는 매체라 끊으려 했어요. 그런데 환영 메일의 '수신거부'가 눌리지 않는 글자뿐이라 실패했어요. 실제 소식지가 오면 그 메일로 다시 수신 거부해요.
+- KDI 뉴스레터는 본인인증 메일의 24시간 기한이 지났어요. 받으시려면 KDI 뉴스레터 페이지에서 다시 신청해 주세요.
+
+**앞으로 메일함 확인 (매일 10:13, 20:13)**
+- 받은편지함은 비워 두는 게 기본이 됐어요. 영수증·도메인 기록, 사람이 쓴 메일, 대표님이 아직 처리할 일이 남은 메일만 남기고 나머지는 확인한 뒤 휴지통으로 보내요.
+- 어제 뉴스레터가 지워지지 않고 쌓였던 건 Gmail 연결 도구에 휴지통 기능이 안 보였기 때문이에요. 그럴 때는 크롬 Gmail 화면에서 남길 메일을 빼고 검색한 뒤, 목록을 확인하고 묶어서 지우게 규칙에 넣었어요.
+
+노트와 구독 목록 파일은 커밋하고 푸시했어요.
+[09:16] 사람: 서치 콘솔 내 개인 계정으로 소유자 추가했다는 게 무슨 말이야? 벌써 문제가 있나? 로안 홀트로 하지 않아서? 로안 홀트 지금 계정으로 하지 않아서?
+[09:17] AI: 문제는 없어요. 로안 홀트 계정으로 안 해서 생긴 일도 아니에요.
+
+**메일 내용**
+11월 19일 밤에 구글이 '대표님 개인 지메일 계정이 `https://holtnews.com/` 속성의 소유자로 추가됐다'고 알려 온 거예요. 서치콘솔은 소유자가 새로 생기면 기존 소유자 모두에게 이런 메일을 보내요. 그 메일이 로안 홀트 메일함으로 왔다는 건 로안 홀트가 여전히 소유자라는 뜻이에요. 그대로 소유자이고 바뀐 건 없어요.
+
+**왜 생겼나**
+서치콘솔에는 holtnews.com이 두 가지로 등록돼 있어요.
+- 도메인 전체 속성(`holtnews.com`): 처음에 DNS로 인증한 것이고, 매일 도는 색인 요청 작업도 이걸 써요.
+- 주소 속성(`https://holtnews.com/`): 이번 메일은 이쪽이에요.
+
+19일에 누군가 개인 계정으로 로그인된 상태에서 주소 속성을 인증한 거예요. 그날 무슨 작업을 하다 그렇게 됐는지는 메일만으로는 알 수 없어요.
+
+**두면 되나**
+네, 그대로 두시는 걸 권해요. 소유자가 둘이면 한쪽 계정에 문제가 생겨도 다른 쪽으로 서치콘솔을 관리할 수 있어서 오히려 안전해요. 색인 요청이나 검색 노출에도 영향이 없어요.
+
+전부 로안 홀트 한 계정으로만 두고 싶으시면 서치콘솔 → 설정 → 사용자 및 권한에서 개인 계정을 빼면 돼요. 필요하시면 단계별로 안내해 드릴게요.
+
+=== 대화 Claude Code 세션 ca91e0a8 ===
+[09:26] 사람: 어플로 들어갔을 때, 어플, 모바일 어플 앱에 들어갔을 때, 잉글리시, 홀트 잉글리시, 홀트 뉴스, 홀트 이슈 들어갔을 때 상단에 로고가 지금 각각 자간이 다른 것 같고 위치가 다르고 정렬이 다르거든? 홀트는 어차피 다 똑같은데 지금 글자 크기도 다르고 하니까 왔다 갔다 한다고. 옮겨 다녔을 때 하단에 뉴스 잉글리시 홀트 이슈 클릭했을 때 그거 똑같이 맞춰줘. 밑에 부제로 붙어있는 이코노미, 보캐블리 볼트, 읽고 푸는 시사상식, 걔는 그대로 두고 걔도 크기만 맞춰줘. 위치만 맞춰주고 걔는 간격 못 맞추니까. 이해했지? 이해 못했으면 다시 질문해.
+[09:26] AI: Understood. Scope:
+- **Where:** inside the app only.
+- **Main word:** HOLT NEWS / HOLT ENGLISH / HOLT ISSUE get the same font size, letter spacing, position and alignment on all three tabs.
+- **Subtitles:** ECONOMY / VOCABULARY VAULT / 읽고 푸는 시사상식 keep their own letter spacing; only their size and position get matched.
+
+Measuring the current values first.
+[09:27] AI: Building the three sites and checking them in app conditions (each site loaded inside the app's frame).
+
+=== 대화 Claude Code 세션 ed13abf6 ===
+[09:29] 사람: 이거 문제잇는지 파악하고 해결해줘
+[09:29] AI: Already have a daily inspection cache. Let me analyze it.
+[09:30] AI: 지금까지 확인: 사이트 안 깨진 링크는 0개, noindex는 의도한 쪽(나라·오디오·용어)들이에요. 핵심 원인인 ENGLISH 표현 쪽을 들여다보는 중입니다.
+[09:31] AI: Real issue found: sitemap lists `/zh/index.html` etc. while canonical says `/zh/`. Finding the sitemap code.
+[09:31] AI: 진행 상황: 사이트맵 주소 1건 고쳤고, 지금은 404 원인(예전에 지운 쪽)을 확인하는 중이에요.
+[09:32] AI: 마무리 중: 고친 빌드 코드를 커밋하고 있어요.
+[09:32] AI: 전체적으로 큰 문제는 없어요. 고칠 수 있던 건 2건이고, 둘 다 고쳐서 커밋·푸시했어요. 다음 holtnews 빌드 때 사이트에 반영돼요. 지금 다른 빌드가 돌고 있는 중이라 제가 따로 빌드를 돌리지는 않았어요.
+
+**사유별 판단**
+
+| 사유 | 쪽 수 | 판단 |
+|---|---|---|
+| noindex 태그 | 66 | 정상이에요. 일부러 검색에서 뺀 쪽들이에요(상세 해설 없는 나라 쪽, 오디오 쪽, 짧은 용어 쪽, 없앤 분야 쪽 등). |
+| 리디렉션 | 3 | 정상이에요. `http://`, `www.`, 끝에 `/`가 없는 주소를 원래 주소로 넘기는 것들이에요. |
+| 표준 태그가 있는 대체 페이지 | 1 | **고쳤어요.** 사이트맵에는 `holtnews.com/zh/index.html`로 적고, 쪽의 표준 주소는 `/zh/`로 달아서 두 주소가 어긋났어요. 일본어·베트남어 홈도 같았어요. 사이트맵을 `/zh/`, `/ja/`, `/vi/`로 맞췄어요. |
+| 404 | 8 | **일부 고쳤어요.** 예전에 지운 정정 기록 쪽(한국어·영문판)은 이제 '바로잡은 것' 쪽으로 넘어가요. 나머지는 일부러 지운 ENGLISH 표현 쪽과 ISSUE 분야 쪽이라 404가 맞아요. 사이트 안에서 깨진 링크는 0개였어요. |
+| 크롤링됨 - 색인 안 됨 | 311 | 아래에 설명했어요. |
+| 발견됨 - 색인 안 됨 | 216 | 아래에 설명했어요. |
+
+**색인 안 된 527쪽은 대부분 HOLT ENGLISH 표현 쪽이에요**
+- '크롤링됨' 311쪽 가운데 238쪽, '발견됨' 216쪽 가운데 156쪽이 ENGLISH 표현 쪽이에요.
+- holtnews 쪽은 잘 들어가고 있어요. 11/15 100쪽이던 등록이 11/20 463쪽까지 늘었어요.
+- ENGLISH만 540쪽 가운데 86~88쪽에서 멈춰 있어요. 구글이 이미 읽고 넣지 않기로 한 상태예요.
+
+ENGLISH 쪽에서 더 확인해 본 것:
+- 본문 분량, 다른 쪽과 겹치는 문장 비율, 사이트 안에서 들어오는 링크 수는 색인된 쪽과 안 된 쪽 사이에 차이가 없었어요.
+- 그래서 특정 결함 때문이 아니라 구글의 판단이에요. 사이트가 생긴 지 2주라 신뢰가 쌓이지 않았고, 영어 표현 뜻은 큰 사전 사이트와 겹쳐서 구글이 덜 넣는 것으로 보여요.
+- 예전에 정한 대로 noindex는 하지 않았어요. 검색 노출의 80%가 이 쪽들에서 나오기 때문이에요.
+
+ENGLISH 쪽을 늘리는 건 '읽고 안 넣음' 비율이 내려갈 때까지 미루는 게 맞아요. 매일 아침 보고의 구글 칸에서 이 숫자를 계속 볼 수 있어요.
+
+=== 대화 Claude Code 세션 ca91e0a8 ===
+[09:32] AI: The three logos now look identical. Rebuilding with the 58px header height and pushing to all three sites.
