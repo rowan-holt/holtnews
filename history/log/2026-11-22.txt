@@ -729,3 +729,49 @@
 [06:09] AI: 영상 프레임도 정상입니다. 07:30 업로드 대기 중이며, 그 사이 HOLT ENGLISH 해석 누락을 점검합니다.
 [06:09] AI: Good. Now waiting for 07:30.
 [06:09] AI: Journal 원고·카드·릴스·캡션·유튜브 제목·스레드 글까지 준비를 마쳤고, 07:30까지 기다렸다가 올립니다.
+[07:36] AI: 업로드는 모두 끝났고, 기록과 커밋을 진행합니다.
+[07:37] AI: 07:30 회차를 07:30:03에 올렸습니다. 아침 뉴스는 접힌 상태라 이 자리에 Journal을 냈습니다.
+
+**콘텐츠:** Journal '대상포진 주사 맞은 노인, 치매가 20% 적었다'
+- **고른 이유:** 오늘 다음 유형으로 뉴스 단어가 나왔는데, 이 포맷은 접은 상태라 쓸 수 없었습니다. 특집은 Journal을 낼 수 있었고, 대기열 첫 순서가 이 주제였습니다. 직전 두 회차(수출 1조 달러, 테슬라)가 모두 한국 소식이라 한국 3연속을 피한 것도 있습니다.
+- **내용:** 웨일스에서는 생일 일주일 차이로 접종률이 0.01%와 47.2%로 갈렸습니다. 7년 뒤 주사를 맞은 사람은 치매 진단 확률이 3.5%포인트, 원래 확률과 견주면 20% 낮았습니다(2025년 Nature).
+- **한계도 같은 비중으로 실었습니다:** 잉글랜드 병원 기록 분석에서는 차이가 보이지 않았습니다(동료 심사 전 사전 출판). 연구에 쓰인 건 옛 생백신이고, 79~80세 결과입니다.
+- **사실 확인:** 사이트 연구 제13호와 논문 원문 대조 기록에서 숫자를 그대로 가져왔습니다.
+- **표지 사진:** Pixabay 1719334(주사 맞는 팔 실사)입니다. 오늘의 표현은 get a shot(주사를 맞다)입니다.
+
+**올린 곳**
+- 인스타 릴스: https://www.instagram.com/reel/DgBTppaBofi/
+- 페북 릴스: https://www.facebook.com/reel/[가림:숫자]
+- 인스타 스토리: https://www.instagram.com/stories/rowanholt_official/[가림:숫자]
+- 유튜브 쇼츠: https://youtube.com/shorts/09WLbXibD5g
+- 스레드: https://www.threads.com/@[가림]/post/DgBUXH6E99i
+  - 규칙대로 다른 이야기를 올렸습니다. threads-pick이 고른 코스피 5,000선 붕괴 뉴스입니다.
+
+**아직 확인 못 한 것**
+- 인스타 캐러셀은 08:30에 자동으로 올라갑니다.
+- 유튜브는 비공개로 올렸고, 표지가 확인되면 자동으로 공개됩니다.
+
+**목표 현황:** 2차 목표는 조회수 500회·팔로워 200명(11/30까지)이고, 지금 팔로워는 58명입니다.
+
+**커밋:** 743a63e로 푸시했습니다. 결과물 폴더(out_journal)는 원래 git에서 제외하는 폴더라 커밋에 넣지 않았습니다.
+
+**오류:** 없습니다. 어젯밤 캐러셀도 정상 게시됐습니다.
+
+=== 대화 Claude Code 세션 32c5aa45 ===
+[07:40] 예약 작업: [예약 작업 holt-lang-rollout-v2 실행 — 정해 둔 지시문으로 자동 시작]
+[07:40] AI: Connected: 4단계 연구 번역을 이어서 cold_hand·sleep_cold·shingles_dementia 세 편을 zh·ja·vi로 옮기는 중입니다. 원문을 읽겠습니다.
+[07:40] AI: Now dump the English source texts for the three pieces.
+[07:41] AI: 세 편 원문을 다 읽었고, 이제 cold_hand부터 중국어·일본어·베트남어 원고를 씁니다.
+[07:42] AI: Next: sleep_cold.
+[07:43] AI: Headline "4배 넘게" would contradict the limitations section (4.2 is an odds ratio); aligning with the English head "nearly twice".
+[07:44] AI: Now shingles_dementia (longest, 6 sections, 5 refs).
+[07:45] AI: Nine drafts written. Running the AI-tell checker, then building.
+[07:50] AI: Source pages also count as refs (strings). Adding names for them.
+[07:54] AI: Build clean, guard passed. Now Playwright checks on the 12 pages (9 articles + 3 lists).
+[07:55] AI: Zero problems. Checking ko pages got the new hreflang pairs, number cross-check against Korean source, and screenshots.
+[07:55] AI: Numbers all match the Korean edition. Looking at the screenshots.
+[07:55] AI: Pages look right. One thing spotted: the shingles English cover figure clips "Born" on the left ("orn by Sept 1, 1933"). Checking where it's made.
+[07:55] AI: The clip is in the English cover itself: the left label "Born by Sept 1, 1933:" is wider than the space. Shortening it to "Up to Sept 1, 1933:" (same width as the right label, which fits).
+[07:55] AI: Update FIG_ALT in the three shingles files to match, then rebuild and look at the figure.
+[07:56] AI: My comment cut the line in half. Fixing.
+[08:00] AI: Figure fixed. Re-running checks, then publishing.
