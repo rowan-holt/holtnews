@@ -836,3 +836,31 @@ If the app still shows the old look, pull down from the top of the screen to ref
 [12:41] AI: Now writing the code for the Chinese, Japanese and Vietnamese Research pages (list and article pages).
 [12:41] AI: Now hooking it into the build: loading, writing pages, ko/en flags and hreflang.
 [12:42] AI: Writing the Chinese, Japanese and Vietnamese versions of the trading study (66,465 households).
+[12:53] AI: Checks passed (no overflow, errors, Korean leftovers or broken links). Now checking flag links and screenshots.
+[12:53] AI: Pages look fine. Time is left, so translating one more short study (IKEA effect) before deploying.
+
+=== 대화 Claude Code 세션 e1c12656 ===
+[12:57] 사람: 근데 왜 틱톡 심사 결과가 메일로 안오나 확인해볼래
+[12:57] AI: 연결된 메일함([가림:이메일])에는 틱톡 메일이 한 통도 없어요(휴지통 포함). 개발자 포털에서 심사 상태를 직접 볼게요.
+[12:58] AI: 틱톡 심사는 아직 '심사 중'이에요. 결과 메일이 어느 주소로 가는지 개발자 계정 정보를 확인하고 있어요.
+[12:58] AI: 틱톡 심사는 아직 결과가 나오지 않았어요. 메일이 안 온 건 문제가 생겨서가 아니라 기다리는 중이라서예요.
+
+**개발자 포털에서 본 상태**
+- HOLT NEWS Publisher 앱은 지금 **심사 중(In review)**이에요.
+- 화면 위에 "신청이 많아서 심사가 늦어질 수 있다"는 노란 안내가 떠 있어요. 11/12에 다시 낸 뒤로 9일째 차례를 기다리는 거예요.
+
+**메일이 안 오는 이유**
+- 틱톡은 심사 결과를 개발자 포털 알림 🔔으로 알려줘요. 포털 알림 목록에는 10/27 반려 두 번, 10/27 심사 시작, 11/10 반려가 남아 있어요.
+- 그런데 연결된 Gmail에서는 틱톡 메일이 지금까지 한 통도 안 보여요. 받은편지함, 휴지통, 스팸까지 다 찾아봤어요. 앞서 반려됐을 때도 메일은 안 왔다는 뜻이에요.
+- 포털에 등록된 이메일은 `r***@[가림]`으로 가려져 있어서 정확히 어느 주소인지는 확인하지 못했어요. [가림:이메일] 가능성이 높아요.
+- 결과는 메일 말고 포털 알림으로 확인하는 게 확실해요.
+
+**참고**
+- 포털 알림 목록에 11/12 재제출 뒤의 '심사 시작' 알림은 따로 없었어요. 그래도 앱 화면 상태는 '심사 중'이라 제출은 정상으로 들어간 걸로 보여요.
+- 테스트 때문에 틱톡 계정을 비공개로 바꿔 둔 상태예요. 심사가 통과되면 다시 공개로 돌려야 해요.
+
+원하시면 며칠에 한 번 포털 알림을 확인해서 결과가 나오면 텔레그램으로 알려 드리는 예약 작업을 만들어 둘게요.
+
+=== 대화 Claude Code 세션 7a7e4feb ===
+[12:59] AI: Checking numbers against the Korean version.
+[12:59] AI: Verified. Deploying now.
