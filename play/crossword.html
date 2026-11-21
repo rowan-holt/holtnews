@@ -26,6 +26,7 @@
 <main id="main" tabindex="-1">
 <style>
 .gwrap [hidden]{display:none!important}
+.glink{display:block;margin-top:44px;border:2px solid #111;padding:16px 20px;text-decoration:none!important;color:var(--ink)}.glink:hover{background:var(--soft)}.glink b{display:block;font-size:18px}.glink span{display:block;font-size:14px;color:var(--gray);margin-top:2px}
 .gwrap{max-width:1000px;margin:28px auto 80px;padding:0 20px}
 .gwrap h1{font-size:clamp(28px,4vw,40px);margin:0 0 6px;line-height:1.25}
 .gsub{color:var(--gray);margin:0 0 22px;font-size:15px}
@@ -38,11 +39,10 @@
 .cwc.ok{color:#0a7a3e}.cwc.no{color:#c8102e}.cwc.pre{color:#a0a0a0}.cwc.rev{color:#1f5fbf}
 .cwc i{position:absolute;left:3px;top:1px;font-size:10px;font-style:normal;font-weight:600;color:#555;line-height:1.2}
 .cwbar{margin-top:14px}
-.cwq{font-weight:700;font-size:16px;line-height:1.5;min-height:48px}
+.cwq{font-weight:700;font-size:16px;line-height:1.5;min-height:52px;margin-bottom:10px;padding:8px 12px;background:#fbeeb4}
 .cwq small{display:block;color:var(--gray);font-weight:500;font-size:13px}
-.cwin{display:flex;gap:8px;margin-top:8px}
-.cwin input{flex:1;min-width:0;font:inherit;font-size:18px;padding:10px 12px;border:2px solid #111;border-radius:0;background:#fff}
-.cwin input:focus{outline:none;border-color:#f5c518}
+.cwgw{position:relative}
+#cwi{position:absolute;left:0;top:0;width:40px;height:40px;margin:0;padding:0;border:0;outline:0;background:transparent;color:transparent;caret-color:transparent;font-size:16px;text-align:center;z-index:2;pointer-events:none;-webkit-appearance:none;border-radius:0;opacity:.01}
 .gbtn{font:inherit;font-size:15px;font-weight:700;padding:10px 16px;border:2px solid #111;background:#111;color:#fff;cursor:pointer;border-radius:0}
 .gbtn.l{background:#fff;color:#111}
 .gbtn:disabled{opacity:.4;cursor:default}
@@ -56,61 +56,81 @@
 .gdone b{font-size:18px}
 .gdone p{margin:6px 0 0;font-size:15px}
 @media(max-width:760px){.cw{grid-template-columns:1fr;gap:18px}.cwg{max-width:420px;margin:0 auto}}
-</style><div class="gwrap"><h1>크로스워드</h1><p class="gsub"><span id="cwdate"></span> · 경제 낱말로 매일 새 판</p><div class="cw"><div><div class="cwg" id="cwg"></div><div class="cwbar"><div class="cwq" id="cwq" aria-live="polite"></div><div class="cwin"><input id="cwi" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="next" aria-label="답 입력"><button type="button" class="gbtn" id="cwnext">다음</button></div><div class="cwops"><button type="button" class="gbtn l" id="cwchk">맞는지 보기</button><button type="button" class="gbtn l" id="cwrev">정답 열기</button></div><div class="gdone" id="cwdone" hidden><b></b><p><button type="button" class="gbtn" id="cwshare">결과 공유하기</button></p><p><a href="trade.html" style="text-decoration:underline;text-underline-offset:3px">무역선 굴리기도 해 보기 →</a></p></div></div></div><div class="cwl"><h2>가로</h2><ol id="cwa"></ol><h2>세로</h2><ol id="cwd"></ol></div></div></div><script type="application/json" id="cwdata">{"2026-11-21": {"n": 7, "words": [{"ans": "원가", "r": 1, "c": 5, "d": "a", "no": 2, "clue": "물건을 만드는 데 실제로 든 돈"}, {"ans": "할부", "r": 2, "c": 0, "d": "a", "no": 3, "clue": "물건값을 여러 번에 나눠 내는 것"}, {"ans": "예금", "r": 2, "c": 4, "d": "a", "no": 5, "clue": "은행에 돈을 맡기는 것"}, {"ans": "가상자산", "r": 3, "c": 1, "d": "a", "no": 6, "clue": "비트코인처럼 블록체인으로 거래되는 디지털 재산"}, {"ans": "전세", "r": 4, "c": 0, "d": "a", "no": 8, "clue": "큰 보증금을 맡기고 매달 집세 없이 사는 방식"}, {"ans": "영업이익", "r": 5, "c": 2, "d": "a", "no": 10, "clue": "회사가 본업으로 번 돈에서 비용을 뺀 것"}, {"ans": "유가", "r": 0, "c": 6, "d": "d", "no": 1, "clue": "석유 가격을 줄인 말"}, {"ans": "원금", "r": 1, "c": 5, "d": "d", "no": 2, "clue": "이자를 빼고 처음 빌리거나 맡긴 돈 그 자체"}, {"ans": "부가세", "r": 2, "c": 1, "d": "d", "no": 4, "clue": "물건값에 10%씩 붙는 간접세를 줄인 말"}, {"ans": "예산", "r": 2, "c": 4, "d": "d", "no": 5, "clue": "한 해 동안 거두고 쓸 돈의 계획"}, {"ans": "자영업", "r": 3, "c": 3, "d": "d", "no": 7, "clue": "자기 가게나 사업을 직접 꾸리는 일"}, {"ans": "손익", "r": 4, "c": 5, "d": "d", "no": 9, "clue": "손해와 이익을 함께 이르는 말"}]}, "2026-11-22": {"n": 7, "words": [{"ans": "이윤", "r": 0, "c": 3, "d": "a", "no": 2, "clue": "장사해서 남긴 돈"}, {"ans": "자동차", "r": 1, "c": 1, "d": "a", "no": 3, "clue": "한국 수출 2위권 품목, 바퀴 넷 달린 탈것"}, {"ans": "환불", "r": 1, "c": 5, "d": "a", "no": 4, "clue": "낸 돈을 돌려받는 것"}, {"ans": "전기차", "r": 2, "c": 3, "d": "a", "no": 5, "clue": "휘발유 대신 배터리 힘으로 굴러가는 차"}, {"ans": "경상수지", "r": 3, "c": 0, "d": "a", "no": 6, "clue": "나라가 외국과 상품·서비스를 사고팔아 남긴 돈의 결과"}, {"ans": "체크카드", "r": 6, "c": 0, "d": "a", "no": 9, "clue": "통장 잔액에서 바로 빠져나가는 결제 수단"}, {"ans": "흑자", "r": 0, "c": 1, "d": "d", "no": 1, "clue": "나간 돈보다 들어온 돈이 많은 상태"}, {"ans": "이차전지", "r": 0, "c": 3, "d": "d", "no": 2, "clue": "충전해서 여러 번 다시 쓰는 배터리"}, {"ans": "환차익", "r": 1, "c": 5, "d": "d", "no": 4, "clue": "돈의 교환 비율이 바뀌어 생긴 이익"}, {"ans": "경기침체", "r": 3, "c": 0, "d": "d", "no": 6, "clue": "생산과 소비가 크게 줄어든 상태"}, {"ans": "수요", "r": 3, "c": 2, "d": "d", "no": 7, "clue": "물건을 사려는 욕구와 그 양"}, {"ans": "펀드", "r": 5, "c": 3, "d": "d", "no": 8, "clue": "여러 사람 돈을 모아 전문가가 굴리는 상품"}]}}</script><script>(function(){
+</style><div class="gwrap"><h1>크로스워드</h1><p class="gsub"><span id="cwdate"></span> · 경제 낱말로 매일 새 판</p><div class="cw"><div><div class="cwq" id="cwq" aria-live="polite"></div><div class="cwgw"><div class="cwg" id="cwg"></div><input id="cwi" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="next" aria-label="선택한 칸에 답 입력"></div><div class="cwbar"><div class="cwops"><button type="button" class="gbtn l" id="cwnext">다음 낱말</button><button type="button" class="gbtn l" id="cwchk">맞는지 보기</button><button type="button" class="gbtn l" id="cwrev">정답 열기</button></div><div class="gdone" id="cwdone" hidden><b></b><p><button type="button" class="gbtn" id="cwshare">결과 공유하기</button></p></div></div></div><div class="cwl"><h2>가로</h2><ol id="cwa"></ol><h2>세로</h2><ol id="cwd"></ol></div></div><a class="glink" href="trade.html"><b>무역선 굴리기</b><span>배 세 척으로 12달, 실제 수출 데이터로 돈 불리기 →</span></a></div><script type="application/json" id="cwdata">{"2026-11-21": {"n": 7, "words": [{"ans": "원가", "r": 1, "c": 5, "d": "a", "no": 2, "clue": "물건을 만드는 데 실제로 든 돈"}, {"ans": "할부", "r": 2, "c": 0, "d": "a", "no": 3, "clue": "물건값을 여러 번에 나눠 내는 것"}, {"ans": "예금", "r": 2, "c": 4, "d": "a", "no": 5, "clue": "은행에 돈을 맡기는 것"}, {"ans": "가상자산", "r": 3, "c": 1, "d": "a", "no": 6, "clue": "비트코인처럼 블록체인으로 거래되는 디지털 재산"}, {"ans": "전세", "r": 4, "c": 0, "d": "a", "no": 8, "clue": "큰 보증금을 맡기고 매달 집세 없이 사는 방식"}, {"ans": "영업이익", "r": 5, "c": 2, "d": "a", "no": 10, "clue": "회사가 본업으로 번 돈에서 비용을 뺀 것"}, {"ans": "유가", "r": 0, "c": 6, "d": "d", "no": 1, "clue": "석유 가격을 줄인 말"}, {"ans": "원금", "r": 1, "c": 5, "d": "d", "no": 2, "clue": "이자를 빼고 처음 빌리거나 맡긴 돈 그 자체"}, {"ans": "부가세", "r": 2, "c": 1, "d": "d", "no": 4, "clue": "물건값에 10%씩 붙는 간접세를 줄인 말"}, {"ans": "예산", "r": 2, "c": 4, "d": "d", "no": 5, "clue": "한 해 동안 거두고 쓸 돈의 계획"}, {"ans": "자영업", "r": 3, "c": 3, "d": "d", "no": 7, "clue": "자기 가게나 사업을 직접 꾸리는 일"}, {"ans": "손익", "r": 4, "c": 5, "d": "d", "no": 9, "clue": "손해와 이익을 함께 이르는 말"}]}, "2026-11-22": {"n": 7, "words": [{"ans": "이윤", "r": 0, "c": 3, "d": "a", "no": 2, "clue": "장사해서 남긴 돈"}, {"ans": "자동차", "r": 1, "c": 1, "d": "a", "no": 3, "clue": "한국 수출 2위권 품목, 바퀴 넷 달린 탈것"}, {"ans": "환불", "r": 1, "c": 5, "d": "a", "no": 4, "clue": "낸 돈을 돌려받는 것"}, {"ans": "전기차", "r": 2, "c": 3, "d": "a", "no": 5, "clue": "휘발유 대신 배터리 힘으로 굴러가는 차"}, {"ans": "경상수지", "r": 3, "c": 0, "d": "a", "no": 6, "clue": "나라가 외국과 상품·서비스를 사고팔아 남긴 돈의 결과"}, {"ans": "체크카드", "r": 6, "c": 0, "d": "a", "no": 9, "clue": "통장 잔액에서 바로 빠져나가는 결제 수단"}, {"ans": "흑자", "r": 0, "c": 1, "d": "d", "no": 1, "clue": "나간 돈보다 들어온 돈이 많은 상태"}, {"ans": "이차전지", "r": 0, "c": 3, "d": "d", "no": 2, "clue": "충전해서 여러 번 다시 쓰는 배터리"}, {"ans": "환차익", "r": 1, "c": 5, "d": "d", "no": 4, "clue": "돈의 교환 비율이 바뀌어 생긴 이익"}, {"ans": "경기침체", "r": 3, "c": 0, "d": "d", "no": 6, "clue": "생산과 소비가 크게 줄어든 상태"}, {"ans": "수요", "r": 3, "c": 2, "d": "d", "no": 7, "clue": "물건을 사려는 욕구와 그 양"}, {"ans": "펀드", "r": 5, "c": 3, "d": "d", "no": 8, "clue": "여러 사람 돈을 모아 전문가가 굴리는 상품"}]}}</script><script>(function(){
 var ALL=JSON.parse(document.getElementById('cwdata').textContent);
 function kst(){return new Date(Date.now()+9*36e5).toISOString().slice(0,10)}
 var ks=Object.keys(ALL).sort(),day=kst(),key=ALL[day]?day:ks.filter(function(k){return k<=day}).pop()||ks[0],P=ALL[key],n=P.n,W=P.words;
 var G=document.getElementById('cwg'),inp=document.getElementById('cwi'),Q=document.getElementById('cwq'),SK='holt-cw-'+key;
-var ans={},fill={},owner={},cells={},cur=-1,state={f:{},t0:0,t1:0,rev:0};
+var ans={},fill={},owner={},cells={},cur=-1,st=0,base=0,prev=0,comp=false,state={f:{},t0:0,t1:0,rev:0};
 try{var sv=JSON.parse(localStorage.getItem(SK)||'null');if(sv)state=sv}catch(e){}
 fill=state.f;
 function k(r,c){return r+','+c}
+var JAMO=/^[ㄱ-ㅎㅏ-ㅣ]$/;
 W.forEach(function(w,i){var dr=w.d=='a'?0:1,dc=w.d=='a'?1:0;w.cells=[];
  for(var j=0;j<w.ans.length;j++){var kk=k(w.r+dr*j,w.c+dc*j);w.cells.push(kk);ans[kk]=w.ans[j];(owner[kk]=owner[kk]||[]).push(i)}});
 var dm=document.getElementById('cwdate');if(dm){var p=key.split('-');dm.textContent=(+p[1])+'월 '+(+p[2])+'일'}
 for(var r=0;r<n;r++)for(var c=0;c<n;c++){var kk=k(r,c),b=document.createElement(ans[kk]?'button':'div');b.className='cwc'+(ans[kk]?' on':'');
- if(ans[kk]){b.type='button';b.dataset.k=kk;b.setAttribute('aria-label',(r+1)+'행 '+(c+1)+'열');
+ if(ans[kk]){b.type='button';b.tabIndex=-1;b.dataset.k=kk;b.setAttribute('aria-label',(r+1)+'행 '+(c+1)+'열');
   W.forEach(function(w){if(w.r==r&&w.c==c&&!b.querySelector('i')){var t=document.createElement('i');t.textContent=w.no;b.appendChild(t)}});
   var s=document.createElement('span');b.appendChild(s);cells[kk]=b}
  else b.setAttribute('aria-hidden','true');
  G.appendChild(b)}
 var lists={a:document.getElementById('cwa'),d:document.getElementById('cwd')};
 W.forEach(function(w,i){var li=document.createElement('li');li.innerHTML='<b>'+w.no+'</b><span></span>';li.lastChild.textContent=w.clue+' ('+w.ans.length+'글자)';
- li.onclick=function(){sel(i,true)};w.li=li;lists[w.d].appendChild(li)});
+ li.onclick=function(){selWord(i)};w.li=li;lists[w.d].appendChild(li)});
 function solved(w){return w.cells.every(function(kk){return fill[kk]==ans[kk]})}
+function seg(){return Array.from(inp.value.replace(/[^가-힣ㄱ-ㅎㅏ-ㅣ]/g,'')).slice(base)}
 function draw(){for(var kk in cells){var b=cells[kk],v=fill[kk]||'';b.lastChild.textContent=v;
-  b.classList.toggle('pre',/^[ㄱ-ㅎㅏ-ㅣ]$/.test(v));b.classList.toggle('rev',!!(state.rev&&state.rk&&state.rk[kk]));}
+  b.classList.toggle('pre',JAMO.test(v));b.classList.toggle('rev',!!(state.rev&&state.rk&&state.rk[kk]));}
  W.forEach(function(w,i){w.li.classList.toggle('done',solved(w));w.li.classList.toggle('on',i==cur)})}
+// 지금 쓰는 칸 = 단어 시작점(st) + 이번에 친 글자 수. 입력창(투명)을 그 칸 위에 올려 둠 — 한글 조합이 칸 안에서 일어나는 것처럼
+function pos(){if(cur<0)return null;var w=W[cur],L=w.ans.length,m=seg().length;return st+Math.min(comp?Math.max(m-1,0):m,L-1-st)}
 function hl(){for(var kk in cells)cells[kk].classList.remove('w','cur');if(cur<0)return;var w=W[cur];
- w.cells.forEach(function(kk){cells[kk].classList.add('w')});var f=w.cells.filter(function(kk){return fill[kk]!=ans[kk]})[0]||w.cells[0];cells[f].classList.add('cur')}
-function sel(i,focus){cur=i;var w=W[i];Q.innerHTML='';var t=document.createElement('span');t.textContent=w.no+' '+(w.d=='a'?'가로':'세로')+' · '+w.clue;
- var s=document.createElement('small');s.textContent=w.ans.length+'글자';Q.appendChild(t);Q.appendChild(s);
- var v='';for(var j=0;j<w.cells.length;j++){var x=fill[w.cells[j]];if(!x||/^[ㄱ-ㅎㅏ-ㅣ]$/.test(x))break;v+=x}
- inp.value=v;inp.placeholder=w.ans.length+'글자로 입력';hl();draw();if(focus){inp.focus();try{inp.setSelectionRange(v.length,v.length)}catch(e){}}}
+ w.cells.forEach(function(kk){cells[kk].classList.add('w')});var c=cells[w.cells[pos()]];c.classList.add('cur');
+ inp.style.left=c.offsetLeft+'px';inp.style.top=c.offsetTop+'px';inp.style.width=c.offsetWidth+'px';inp.style.height=c.offsetHeight+'px'}
+function clue(){var w=W[cur];Q.innerHTML='';var t=document.createElement('span');t.textContent=w.no+' '+(w.d=='a'?'가로':'세로')+' · '+w.clue;
+ var s=document.createElement('small');s.textContent=w.ans.length+'글자';Q.appendChild(t);Q.appendChild(s)}
+function reset(){inp.value='';base=0;prev=0}
+function sel(i,j){cur=i;st=j;reset();clue();hl();draw();inp.focus({preventScroll:true})}
+function firstEmpty(w){for(var j=0;j<w.cells.length;j++){var v=fill[w.cells[j]];if(!v||JAMO.test(v))return j}return 0}
+function selWord(i){sel(i,0)}
 var lastK=null;
 G.addEventListener('click',function(ev){var b=ev.target.closest('.cwc.on');if(!b)return;var kk=b.dataset.k,os=owner[kk];
- var i=(lastK==kk&&os.length>1)?os[(os.indexOf(cur)+1)%os.length]:(os.indexOf(cur)>=0?cur:os[0]);lastK=kk;sel(i,true)});
+ var i=(lastK==kk&&os.length>1)?os[(os.indexOf(cur)+1)%os.length]:(os.indexOf(cur)>=0?cur:os[0]);lastK=kk;sel(i,W[i].cells.indexOf(kk))});
 function save(){try{localStorage.setItem(SK,JSON.stringify(state))}catch(e){}}
 function done(){return Object.keys(ans).every(function(kk){return fill[kk]==ans[kk]})}
 function finish(){if(!state.t1){state.t1=Date.now();save();try{gtag('event','game_crossword_done',{rev:state.rev?1:0})}catch(e){}}
  var sec=Math.max(1,Math.round((state.t1-state.t0)/1000)),tm=(sec>=60?Math.floor(sec/60)+'분 ':'')+(sec%60)+'초';
  var D=document.getElementById('cwdone');D.hidden=false;
  D.querySelector('b').textContent=state.rev?'정답을 열어 봤어요':'다 풀었어요 · '+tm;
- inp.disabled=true;Q.textContent='오늘 판은 끝났어요. 내일 새 판이 나와요.';cur=-1;hl();draw();
+ inp.blur();inp.disabled=true;Q.textContent='오늘 판은 끝났어요. 내일 새 판이 나와요.';cur=-1;hl();draw();
  var sh=document.getElementById('cwshare');sh.onclick=function(){var t='HOLT NEWS 크로스워드 '+document.getElementById('cwdate').textContent+(state.rev?'':' · '+tm)+'\nhttps://holtnews.com/play/crossword.html';
   if(navigator.share)navigator.share({text:t}).catch(function(){});else if(navigator.clipboard)navigator.clipboard.writeText(t).then(function(){sh.textContent='복사했어요'})}}
-inp.addEventListener('input',function(){if(cur<0)return;if(!state.t0){state.t0=Date.now();try{gtag('event','game_crossword_start')}catch(e){}}
- var w=W[cur],ch=Array.from(inp.value.replace(/[^가-힣ㄱ-ㅎㅏ-ㅣ]/g,'')).slice(0,w.ans.length);
- w.cells.forEach(function(kk,j){if(ch[j])fill[kk]=ch[j];else if(j>=ch.length&&j<w.ans.length&&inp.value.length<w.ans.length&&fill[kk]&&owner[kk].length==1)delete fill[kk]});
- for(var kk in cells)cells[kk].classList.remove('ok','no');
+function nextIdx(){for(var s=1;s<=W.length;s++){var i=(cur+s)%W.length;if(!solved(W[i]))return i}return -1}
+// 입력값은 타자 도중 절대 고치지 않음(한글 조합이 깨짐). 단어가 다 차서 넘치면 base만 옮겨 다음 단어로 이어 씀
+function apply(){if(cur<0)return;var w=W[cur],room=w.ans.length-st,ch=seg();
+ for(var j=0;j<Math.min(ch.length,room);j++)fill[w.cells[st+j]]=ch[j];
+ for(var j=ch.length;j<Math.min(prev,room);j++)delete fill[w.cells[st+j]];
+ prev=ch.length;
+ if(ch.length>room){var ni=nextIdx();base+=room;prev=0;if(ni<0)return;cur=ni;st=0;clue();return apply()}}
+inp.addEventListener('compositionstart',function(){comp=true});
+inp.addEventListener('compositionend',function(){comp=false;hl()});
+inp.addEventListener('input',function(ev){if(cur<0)return;if(!state.t0){state.t0=Date.now();try{gtag('event','game_crossword_start')}catch(e){}}
+ comp=!!ev.isComposing||comp;apply();for(var kk in cells)cells[kk].classList.remove('ok','no');
  state.f=fill;save();hl();draw();if(done())finish()});
-function next(){if(cur<0)return;for(var s=1;s<=W.length;s++){var i=(cur+s)%W.length;if(!solved(W[i]))return sel(i,true)}}
-inp.addEventListener('keydown',function(ev){if(ev.key=='Enter'&&!ev.isComposing){ev.preventDefault();next()}});
-document.getElementById('cwnext').onclick=next;
-document.getElementById('cwchk').onclick=function(){for(var kk in cells){var v=fill[kk];cells[kk].classList.remove('ok','no');if(v&&!/^[ㄱ-ㅎㅏ-ㅣ]$/.test(v))cells[kk].classList.add(v==ans[kk]?'ok':'no')}};
+function step(dr,dc){var w=W[cur],kk=w.cells[pos()].split(','),r=+kk[0],c=+kk[1];
+ for(var t=1;t<n;t++){var nk=k(r+dr*t,c+dc*t);if(!(r+dr*t>=0&&r+dr*t<n&&c+dc*t>=0&&c+dc*t<n))return;if(cells[nk]){var os=owner[nk],want=dr?'d':'a',i=os.filter(function(x){return W[x].d==want})[0];if(i==null)i=os[0];return sel(i,W[i].cells.indexOf(nk))}}}
+inp.addEventListener('keydown',function(ev){if(cur<0||ev.isComposing||ev.keyCode==229)return;var m=seg().length;
+ if(ev.key=='Enter'||ev.key==' '||ev.key=='Tab'){ev.preventDefault();var ni=nextIdx();if(ni>=0)selWord(ni);return}
+ if(ev.key=='Backspace'&&m==0){ev.preventDefault();var w=W[cur];if(fill[w.cells[st]]&&fill[w.cells[st]]!=ans[w.cells[st]]){delete fill[w.cells[st]]}
+  else if(st>0){st--;delete fill[w.cells[st]]}state.f=fill;save();hl();draw();return}
+ var A={ArrowLeft:[0,-1],ArrowRight:[0,1],ArrowUp:[-1,0],ArrowDown:[1,0]}[ev.key];if(A){ev.preventDefault();step(A[0],A[1])}});
+document.getElementById('cwnext').onclick=function(){var ni=nextIdx();if(ni>=0)selWord(ni)};
+document.getElementById('cwchk').onclick=function(){for(var kk in cells){var v=fill[kk];cells[kk].classList.remove('ok','no');if(v&&!JAMO.test(v))cells[kk].classList.add(v==ans[kk]?'ok':'no')}inp.focus({preventScroll:true})};
 document.getElementById('cwrev').onclick=function(){if(!confirm('정답을 모두 열어 볼까요?'))return;state.rk={};
  for(var kk in ans){if(fill[kk]!=ans[kk])state.rk[kk]=1;fill[kk]=ans[kk]}state.rev=1;state.t0=state.t0||Date.now();state.f=fill;save();finish()};
-draw();if(done())finish();else sel(0,false);
+window.addEventListener('resize',hl);
+draw();if(done())finish();else{cur=0;st=firstEmpty(W[0]);clue();hl();draw()}
 })();</script>
 </main>
 <footer class="foot"><div class="logo-s brand"><span class="cur" aria-current="page">HOLT NEWS</span><i aria-hidden="true">|</i><a class="sib" href="https://english.holtnews.com/" target="_blank" rel="noopener">ENGLISH<span class="vh a11y-nw"> (새 창)</span></a><i aria-hidden="true">|</i><a class="sib" href="https://issue.holtnews.com/" target="_blank" rel="noopener">ISSUE<span class="vh a11y-nw"> (새 창)</span></a></div>

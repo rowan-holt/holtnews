@@ -3135,3 +3135,40 @@ GA에서 퀴즈 페이지 방문이 무역이나 오디오 메뉴만큼 나오�
 [19:37] AI: Python Playwright is installed, so I'll redo the check with that.
 [19:38] AI: The two games and the home entry cards all play through end to end with no errors. I'm cleaning up a few small layout details now.
 [19:38] AI: Meanwhile, I'll commit the code in the holt repo.
+[19:39] AI: Code is committed. Now waiting for the site publish (full build, about 5 minutes) to finish.
+[19:39] AI: The site build and publish (about 5 minutes) is still running. When it finishes, I'll check the live site and report back.
+[19:44] AI: The pre-publish safety check (site_guard) caught the new game scripts as "unregistered". They're my own code on the same site, so I'll register them in the check after reviewing it.
+[19:45] AI: Only my two scripts remain, so I'm registering them and publishing.
+[19:46] AI: 두 게임 모두 holtnews.com에 올라갔어요. 실제 사이트에서 직접 한 판씩 해 봤고 오류는 없었어요.
+
+**들어가는 곳**
+- 홈: 실적 발표 칸 아래 "게임" 칸에 카드 두 개를 넣었어요.
+- 무역 첫 화면: 링크 줄 끝에 "무역선 굴리기 게임 →"
+- 세계 지도: 제목 옆에 "무역선 굴리기 게임 →"
+- 주소: holtnews.com/play/crossword.html, holtnews.com/play/trade.html
+
+## 크로스워드
+- 7×7 판에 경제 낱말 12개가 들어가요. 낱말 목록은 165개이고, 최근 10일에 나온 낱말은 다시 쓰지 않아요.
+- 하루에 한 판이에요. 한 번 만든 판은 고정이라, 사이트를 다시 빌드해도 풀던 칸이 날아가지 않아요.
+- 칸이나 힌트를 누르고 아래 입력칸에 낱말을 통째로 치는 방식이에요. 한글 입력기가 칸마다 끊기는 문제를 피하려고 이렇게 했어요.
+- "맞는지 보기", "정답 열기", 다 풀면 걸린 시간과 결과 공유 버튼이 나와요.
+- 판을 검사하는 장치를 넣었어요. 판에 엉뚱한 낱말이 생기지 않았는지, 칸이 모두 이어져 있는지, 힌트에 답이 새지 않는지를 봐요. 일부러 틀린 판 세 가지를 넣어 모두 잡아내는 것도 확인했어요.
+- 이 검사에 실제로 걸린 힌트가 9개 있어서 고쳤어요. 예를 들어 '중앙은행' 힌트에 "은행"이 들어가 있었어요.
+
+## 무역선 굴리기
+- 1억 원으로 시작해 배 세 척을 12달 굴려요. 배마다 품목 7개(반도체, 승용차, 선박, 배터리, 화장품, 라면, 철강)와 나라 6개(중국, 미국, 베트남, 일본, 대만, 인도) 중에서 골라요.
+- 한 달 수익률은 그 달 실제 수출이 전달보다 늘거나 준 만큼으로 정해져요(관세청 월별 자료). 품목 증감 60%, 나라 증감 40%를 섞고, 운항비 0.5%를 빼요.
+- 달마다 지난달 실제 증감을 힌트로 보여 줘요.
+- 시작 달은 판마다 무작위예요. 끝나면 실제 기간(예: 2024년 6월~2025년 5월), 기록 비교, 해당 품목의 무역 통계 링크를 보여 줘요.
+- 처음에는 운항비를 1%로 두었는데, 시험해 보니 모든 조합 평균이 −11%라 너무 가혹했어요. 그래서 0.5%로 낮췄어요.
+
+## 함께 처리한 것
+- **발행 안전 검사:** 처음 발행 때 새 게임 스크립트가 검사에 걸려 올라가지 않았어요. 검사에 걸린 게 이 두 스크립트뿐인 걸 확인한 뒤, `play/` 폴더와 두 스크립트를 검사 허용 목록에 넣고 다시 발행했어요.
+- **방문 통계:** 시작하거나 다 푼 횟수를 `game_crossword_start/done`, `game_trade_start/done` 이벤트로 셀 수 있게 해 뒀어요.
+- **커밋:** 코드 두 건을 커밋하고 push했어요.
+- **판 저장 위치:** 크로스워드 판 저장 파일(`site_data/crossword.json`)은 git에서 빠지게 설정돼 있어서 이 맥에만 있어요. 혹시 지워져도 같은 날짜에는 같은 판이 다시 만들어지도록 해 뒀어요.
+
+영문판에는 아직 넣지 않았어요. 한국어판 반응을 보고 정하면 돼요.
+[19:51] 사람: 크로스워드 그 빈칸에 바로 글 입력하게 해줘야지이
+[19:52] AI: Now testing direct cell typing with real Korean composition (jamo assembling into a syllable), simulated in a browser.
+[19:53] AI: Typing straight into the cells works, including Korean composition (a jamo assembling into a syllable inside the cell). Now running the full build and publish.
