@@ -777,7 +777,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .ek-row,.ek,.bar nav{position:relative}
 .wpage{max-width:1280px;margin:0 auto;padding:22px 24px 40px}
 .wpage h1{font-size:clamp(26px,3vw,38px);margin:0 0 4px;letter-spacing:-.01em}
-.whead{display:flex;align-items:flex-end;gap:12px 20px;flex-wrap:wrap;margin-bottom:10px}.whead h1{margin:0}.whead .wq{margin-left:auto}   /* 1114 사용자: 검색창은 선 위, 제목 옆 */
+.whead{display:flex;align-items:flex-end;gap:12px 20px;flex-wrap:wrap;margin-bottom:10px}.whead h1{margin:0}.whead .wgame{font-size:15px;font-weight:600;text-decoration:underline;text-underline-offset:3px;padding-bottom:6px}.whead .wq{margin-left:auto}   /* 1114 사용자: 검색창은 선 위, 제목 옆 */
 .wlead{color:var(--ink2);margin:0 0 16px;font-size:16px}
 .wsw{display:inline-flex;margin-left:auto;flex:none;background:#f0f0ee;border-radius:10px;padding:3px;gap:2px}   /* 1116 사용자: 수출·수입 단추 둘(누르면 무역 흐름, 다시 누르면 꺼짐), 모양은 회색 판 위 흰 칸 */
 .wsw button{border:0;background:none;border-radius:8px;padding:6px 14px;font:inherit;font-size:14px;color:#555;display:inline-flex;align-items:center;justify-content:center;gap:6px;cursor:pointer}.wsw button:hover{color:#111}
