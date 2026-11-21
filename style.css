@@ -221,6 +221,8 @@ body.en .rel-card .rt{font-family:"Jost",sans-serif;font-weight:500}
 .nx-col h2{font-size:20px;font-weight:800;margin:0 0 14px;padding-top:12px;border-top:2px solid var(--ink)}
 .nx-jcol .nx-card img{object-position:top;background:#faf8f2}   /* 1114: 연구 포스터는 위쪽(제호·제목)이 보이게 */
 .nx-col ul{list-style:none;margin:12px 0 0;padding:0}
+.nx-adcol{padding-top:62px}.nx-adcol .ad{display:flex;flex-direction:column}.nx-adcol .ad-l{margin-bottom:6px}.nx-adcol .psa-in{min-height:340px}.nx-adcol:empty{display:none}   /* 1121 분야 칸 남는 자리 광고 */
+@media (max-width:1100px){.nx-adcol{padding-top:0}}
 .nx-col li a{display:block;padding:10px 0;border-top:1px solid #e3e3e3;font-size:14.5px;font-weight:600;line-height:1.45}
 body.en .nx-lead h2,body.en .nx-card h3,body.en .nx-col h2{font-family:"Jost",sans-serif;font-weight:600}
 @media (max-width:900px){.nx{grid-template-columns:minmax(0,1fr);padding:16px 16px 4px}.nx-lead,.nx-grid,.nx .ad-side,.nx-side{grid-column:1;grid-row:auto}.nx .ad-side{order:3}.nx-lead{grid-template-columns:minmax(0,1fr)}.nx-lead img,.nx-lead .nx-noimg{order:-1;height:auto}.nx-lt{padding:18px 16px;contain:none;overflow:visible}.nx-lead p{-webkit-line-clamp:unset!important}.nx-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.nx-fields{padding:0 16px;margin-top:32px;gap:24px}}
@@ -679,7 +681,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .ad-top .psa-k{flex-basis:100%;font-size:11px!important}.ad-top b{flex:1;min-width:0;font-size:14.5px!important;line-height:1.35!important}.ad-top b br{display:none}
 .ad-top .ad-p{display:none}.ad-top .psa-n{font-size:18px!important;margin:0!important;white-space:nowrap}
 .topband+.hs{margin-top:30px}.topband+.ad-top+.hs{margin-top:20px}}
-@media (min-width:641px){.ad-top{display:none}}
+@media (min-width:641px){.ad-top{display:none}.topband+.ad-top+.hs,.topband+.hs{margin-top:52px}}   /* 1121 사용자: 오늘의 경제와 뉴스 사이 살짝 좁게(84→52) */
 @media (max-width:640px) and (prefers-reduced-motion:reduce){.ek-dup{display:none}}
 /* 1111 꼬리말: HOLT NEWS | ENGLISH | ISSUE — 사용자: HOLT는 맨 앞에만, 세 사이트 공통 */
 .foot .brand{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.foot .brand i{font-style:normal;font-weight:400;opacity:.5;font-family:var(--sans)}
@@ -993,7 +995,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .tkpi .d{font-size:14px;font-variant-numeric:tabular-nums}.up{color:#0b6b3a}.dn{color:#b42318}
 .tnext{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:15px;background:var(--soft);padding:10px 14px;margin:14px 0 0}
 .tnext b{font-weight:700}
-.thublinks{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 18px;font-size:15px;margin:10px 0 0}.thublinks a{white-space:nowrap}
+.thublinks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0 0}.thublinks a{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 16px;border:1px solid rgba(128,128,128,.35);font-size:15px;font-weight:600;line-height:1.3;text-decoration:none;transition:background .15s,border-color .15s}.thublinks a i{font-style:normal;color:var(--ink2);transition:transform .15s}.thublinks a:hover{border-color:var(--ink);background:rgba(128,128,128,.07)}.thublinks a:hover i{transform:translateX(3px);color:var(--ink)}@media (max-width:640px){.thublinks{grid-template-columns:1fr;gap:8px}}
 .tpage .tlead1{max-width:none}
 .trel{margin:12px 0 0}.trel h3{font-size:13px;font-weight:600;color:var(--ink2);margin:0 0 6px;letter-spacing:.02em}.trel ol{list-style:none;margin:0;padding:0 0 8px;display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--ink);border-bottom:1px solid rgba(128,128,128,.35)}.trel li{padding:2px 10px 0 12px;border-left:1px solid rgba(128,128,128,.25);margin-top:8px}.trel li:first-child{border-left:0;padding-left:0}.trel b{display:block;font-size:17px;font-weight:700;line-height:1.2}.trel span{display:block;font-size:13px;color:var(--ink2);margin-top:3px;line-height:1.35}.trel li:not(:first-child) b{color:var(--ink2)}
 .tchart{margin:6px 0 4px;overflow-x:auto}.tchart svg{display:block;width:100%;min-width:560px;height:auto}
