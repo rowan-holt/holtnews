@@ -521,7 +521,8 @@ body.en .sh h2{font-family:"Jost",sans-serif;font-weight:600;letter-spacing:0}
 /* 1110 오늘의 경제 */
 .ek-row{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0;border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6}
 .ek{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto 1fr auto auto;grid-template-areas:"n" "v" "c" "s" "src";gap:2px;padding:16px 18px;border-left:1px solid #eee}
-.ek:first-child{border-left:0;padding-left:0}
+.ek:first-child,.ek:nth-child(6n+1){border-left:0;padding-left:0}.ek:nth-child(n+7){border-top:1px solid #eee}   /* 1121 두 줄일 때 아랫줄 첫 칸도 윗줄과 같은 선 */
+@media (min-width:641px) and (max-width:1100px){.ek-row{grid-template-columns:repeat(3,minmax(0,1fr))}.ek:nth-child(3n+1){border-left:0;padding-left:0}.ek:nth-child(n+4){border-top:1px solid #eee}}   /* 1121 태블릿·좁은 창은 6칸이면 딱지가 글자에 겹침 → 3칸 */
 .ek-n{grid-area:n;font-size:13px;color:var(--ink2);display:flex;justify-content:space-between;align-items:center;gap:6px;min-height:20px}.ek-v{grid-area:v;font-size:24px;font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
 .ek-c{grid-area:c;font-size:13px;line-height:1.5;color:var(--ink2);margin-top:2px;font-variant-numeric:tabular-nums}
 .ek-c b{font-weight:700}
