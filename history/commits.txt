@@ -1689,3 +1689,5 @@
 2026-11-21 14:01  feat(holt): 민트 강조 기준 — 숫자만·장당 2곳·표지 둘째 줄 말 허용, 어기면 경고
 2026-11-21 14:01  docs(holt): 틱톡 업로드는 심사 승인 뒤부터
 2026-11-21 14:01  feat(holt): holtnews.log 1편 발행 — log_publish.py(IG_TOKEN_LOG·THREADS_TOKEN_LOG), 대화 캐러셀, 캡션 ㅋㅋ 제거
+2026-11-21 14:05  fix(site): 부산·인천 항만 그림 세로 누적 막대로, 형식 검증 기록 docstring에
+2026-11-21 14:05  docs(holt): holtnews.log 연재 주기 주 2회(화·토 20:11)
