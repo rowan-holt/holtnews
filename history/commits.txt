@@ -1798,3 +1798,4 @@
 2026-11-22 23:45  feat(holt): LABOR 101을 중국어·일본어·베트남어권에 발행 — 목차 쪽·장 띠·다음 장·퇴직금 계산기 다섯 언어, 1장·2장 세 언어 원고, 진행표에 새 목표(모든 글을 모든 언어권에, 번역이 아니라 그 언어권 발행)
 2026-11-23 04:44  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — ss_united_states_reef_rules
 2026-11-23 05:25  content(holt): HOLT ENGLISH 쪽별 표현·퀴즈 5쪽 + 점검
+2026-11-23 05:40  chore(holt): 만들어진 기록 연표 자동 갱신 — 6개 추가
