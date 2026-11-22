@@ -1477,3 +1477,12 @@ https://issue.holtnews.com/?from=ig_bio
 빗금을 회색으로 바꾸지 않고 땅에 붙어 같이 움직이게 하는 쪽이 더 좋으면 말해 주세요.
 [15:23] 사람: 분쟁지역 붉은색으로 해줄래 주황색이나 지금 색은 나라 선택했을때 색이랑 비슷하다. 지금 다른 색들을 해치지 않는 선에서 붉은느낌으로 가보자
 [15:28] AI: 빗금을 없애고 분쟁 지역을 붉은 계열 단색으로 칠하도록 바꾸는 중이에요.
+[15:38] AI: 상세 페이지만 예전 빗금으로 되돌리고, 지구본과 평면 지도는 붉은 단색 그대로 두는 중이에요.
+
+=== 대화 Claude Code 세션 3f776722 ===
+[15:39] 사람: 저기도 카슈미르지역이여? 인도 서분데
+[15:39] AI: Only Korean and English. Adding the label, description, and English entry.
+
+=== 대화 Claude Code 세션 372a989d ===
+[15:40] 예약 작업: [예약 작업 holt-lang-rollout-v2 실행 — 정해 둔 지시문으로 자동 시작]
+[15:40] AI: Another session is building. Reading the progress table while waiting.
