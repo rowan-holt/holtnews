@@ -1828,3 +1828,25 @@ I'll confirm on the live page once it's published.
 **What I did:** we'd agreed that only app-launch-2b would review, register and publish, so I didn't register those items myself. I sent that session the list of blocked items and asked it to handle them. Once it publishes, my change (lighter island areas, no outline) goes out with it, since it's already committed.
 
 If you'd rather I review and register those items myself, tell me.
+
+=== 대화 Claude Code 세션 0fc6e7e9 ===
+[17:28] AI: Holt News 푸시까지 끝났어요. 이제 코드 변경을 커밋할게요.
+[17:28] AI: 앱에서 공유 버튼이 안 되던 문제를 고치고 배포까지 했어요. 휴대폰 앱에서 직접 눌러 확인하지는 못했어요.
+
+**원인:** 설치한 HOLT 앱은 NEWS·ISSUE·ENGLISH 사이트를 iframe 안에 띄워요. 이 iframe에 공유 권한(`web-share`)이 없어서 브라우저가 공유창을 조용히 막았어요. 모바일 브라우저는 iframe 없이 사이트가 바로 열려서 됐던 거예요.
+
+**고친 것:**
+- **iframe 권한:** [app_shell.py](holt/tools/app_shell.py)에서 iframe에 `allow`(공유, 클립보드 복사, 전체화면 등)를 넣었어요.
+- **공유 실패 시 대체 동작:** [news_build.py](holt/news_build.py)의 기사 공유와 [games_build.py](holt/games_build.py)의 십자말풀이 공유는, 공유창이 실패하면(사용자가 직접 닫은 경우는 제외) 링크 복사로 넘어가요.
+- **배포:** english 사이트(app.html)와 holtnews 사이트를 푸시했고, 코드는 커밋해서 GitHub에도 올렸어요.
+
+**확인해 보세요:** 앱을 완전히 닫았다가 다시 열어야 새 코드가 적용돼요. 그다음 기사 ⋯ 메뉴에서 공유를 눌러 보세요.
+
+**아직 확인 못 한 것:**
+- 앱 안에서 기사 저장(PDF·이미지)과 인쇄가 되는지는 코드로만 봤어요. 인쇄(`window.print`)는 안드로이드 앱 화면에서 안 될 수 있는데, 공유 쪽을 먼저 고친 뒤 증상이 있으면 이어서 볼게요.
+- ISSUE 사이트의 공유는 별도 코드가 없고 같은 공유 코드를 쓰는지는 확인하지 못했어요.
+
+**참고:** 배포 중 holtnews 사이트의 보안 검사(site_guard)가 몇 번 걸렸어요. 걸린 건 모두 제가 고친 공유 코드였고, 외부로 데이터를 보내는 코드는 없어서 검토 후 등록했어요. 푸시 중간에 예약 작업의 빌드와 겹쳐 출력 폴더가 비어 보이는 순간이 있었는데, 그때는 푸시가 막혀서 사이트에는 영향이 없었어요.
+
+=== 대화 Claude Code 세션 28868876 ===
+[17:33] AI: Both scripts are our own code. They only copy links, open the share sheet, and save locally, and they send no data outside the site. Safe, so I'll register them and publish.
