@@ -1499,3 +1499,20 @@ https://issue.holtnews.com/?from=ig_bio
 [15:49] AI: Two places: **Tuvalu and Gibraltar**. Both are in the detailed (10m) map data, so I'll fill them in from there.
 [15:49] AI: The main world map switches to 10m when zoomed in, so it's fine there. Only the page's location map is missing these. Patching it to fill gaps from 10m.
 [15:49] AI: All in the same format. Rebuilding and publishing.
+
+=== 대화 Claude Code 세션 479e6ac2 ===
+[15:54] AI: 다른 작업의 사이트 발행(`news_build.py --push`)이 돌고 있어서 끝나길 기다리는 중이에요. 제 수정도 그 발행에 같이 실려요.
+
+=== 대화 Claude Code 세션 3f776722 ===
+[15:54] AI: No warnings. Checking the actual pages directly.
+
+=== 대화 Claude Code 세션 372a989d ===
+[15:54] AI: Sweeping all 180 zh/ja/vi pages now. First I'm checking how the flag links are marked up.
+
+=== 대화 Claude Code 세션 3f776722 ===
+[15:54] AI: All 394 pages now have a location map. Taking a screenshot to confirm Tuvalu.
+[15:55] AI: QuickLook can't render the page's styles, so I'll check it in the in-app browser instead.
+[15:55] AI: Probably still deploying/cached. Waiting briefly and reloading without cache.
+[15:55] AI: Pushed. Waiting for GitHub Pages to update.
+[15:55] AI: The map now shows, but it's mostly empty ocean, so it's hard to tell where this is. I'll widen it to include neighbors (Fiji, Samoa, etc.) and check Gibraltar too.
+[15:56] AI: Samoa and Fiji sit just outside the bottom of the frame. Widening Tuvalu's map 1.6×.
