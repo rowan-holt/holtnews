@@ -1164,7 +1164,7 @@ This block is not supported on your current device yet.
 키를 받아서 주시면 바로 만들게요. OpenDART 키 하나만 먼저 와도 실적 일정과 재무제표 섹션부터 시작할 수 있어요.
 [21:55] 사람: KOPIS 서비스는 공연관계자만 할수있대. 다른 방법 찾아봐
 
-다트 키 [가림:긴문자열]
+다트 키 [가림:키]
 [21:56] AI: DART key works (saved to `holt/.env`, which is excluded from git). Checking whether the IR (earnings call) date can be extracted.
 [21:56] AI: The IR date can be extracted from the filing text ("일시 2026-11-11 09:00"). Now checking an alternative source for performances and exhibitions.
 [21:57] AI: The filings parse fine: earnings figures with YoY change, plus scheduled dates from the "결산실적공시 예고" (results announcement preview) filings. Now writing the collector.
