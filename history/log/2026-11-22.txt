@@ -1850,3 +1850,98 @@ If you'd rather I review and register those items myself, tell me.
 
 === 대화 Claude Code 세션 28868876 ===
 [17:33] AI: Both scripts are our own code. They only copy links, open the share sheet, and save locally, and they send no data outside the site. Safe, so I'll register them and publish.
+
+=== 대화 Claude Code 세션 38e496bb ===
+[17:37] 사람: 읽어보고 검토해줘
+
+=== 대화 Claude Code 세션 28868876 ===
+[17:38] AI: Push succeeded. I'll give the deploy a moment, then check the live pages.
+[17:38] AI: Meanwhile, I'll reply to the other session and commit the source files.
+
+=== 대화 Claude Code 세션 3f776722 ===
+[17:38] AI: The change is now live on the site. Another session (app-launch-2b) did one clean build at 17:38 and published it, and my change went out with it.
+
+I checked the live Tuvalu page directly: the island area is the lighter shade, and the outline is gone. Kiribati, Nauru, the Maldives and the other small island countries got the same change.
+
+It turned out the extra items flagged by the safety check were false alarms, caused by several builds running at the same time. The only scripts actually new were two committed today: the share and copy options in the article ⋯ menu, and saving and printing for the crossword. That session reviewed and registered both.
+
+=== 대화 Claude Code 세션 28868876 ===
+[17:38] AI: 실제 사이트에서 모두 확인했습니다. 기사 두 쪽, 그림 두 개, 홈과 뉴스 목록, 자료 링크 3개입니다. 발행 기록을 남기고 커밋하겠습니다.
+
+=== 대화 Claude Code 세션 38e496bb ===
+[17:38] AI: 본문 행간만 마저 확인하고 검토 결과 정리할게요.
+
+=== 대화 Claude Code 세션 28868876 ===
+[17:39] AI: 빅맥지수 엑스트라 기사를 발행했습니다. 데스크 2곳은 지적을 고친 뒤 다시 보고 통과했고, 보탬·그림 검토는 처음에 통과했습니다.
+
+- 한국어판: https://holtnews.com/news/bigmac_pakistan_korea.html
+- 영어판: https://holtnews.com/en/news/bigmac_pakistan_korea.html
+
+**제목**: 파키스탄 빅맥이 한국보다 비싸다고?
+
+**표지**: 말씀하신 장면을 제미나이로 만들었습니다. 한복 입은 한국 손님과 샬와르 카미즈 입은 파키스탄 손님이 같은 빅맥을 사는 실사풍 그림입니다.
+- 제미나이가 가격표 숫자를 흐리게 그려서 $3.84와 $3.89는 제가 다시 써 넣었습니다.
+- 캡션과 크레딧에 AI로 만든 장면이라고 밝혔고, 실제 맥도날드 로고는 넣지 않았습니다.
+
+**기사에서 직접 계산해 넣은 것** (원자료는 이코노미스트 공개 데이터)
+- 빅맥 한 개 값이 1인당 하루 GDP에서 차지하는 비율은 파키스탄 84%, 한국 3.9%입니다. 20배 넘게 차이 나고, 파키스탄은 71개 나라 중 1위입니다. 이 비교는 본문에 막대그래프로 넣었습니다.
+- 2021년 1월에는 한국 빅맥이 67센트 더 비쌌습니다. 그 뒤 파키스탄 빅맥 값은 환율보다 빨리, 한국 빅맥 값은 환율보다 느리게 올라 지금처럼 뒤집혔습니다.
+- 기사 안에 빅맥 가격으로 원화가 얼마나 싸거나 비싼지 계산해 보는 도구도 붙였습니다.
+
+**앞서 제가 한 말 바로잡기**: 처음 답변에서 "소득 보정판으로 보면 파키스탄이 엄청 고평가"라고 했는데, 원자료를 보니 틀렸습니다. 소득을 감안한 보정 지수에서도 루피는 19% 저평가이고, 원화는 그보다 더 싼 32% 저평가입니다. 기사에는 맞는 내용으로 실었습니다.
+
+**발행 중 생긴 문제**
+- 다른 세션 두 곳이 같은 시간에 사이트를 빌드하고 있었습니다. 그중 한 곳이 반쯤 빌드된 상태에서 안전 검사 허용 목록을 다시 등록해 목록이 줄었고, 그 뒤 모든 발행이 막혔습니다.
+- 목록을 커밋된 정상 상태로 되돌리고, 다른 빌드가 다 끝난 뒤 한 번만 빌드해 푸시했습니다. 진짜 새로 걸린 건 오늘 추가된 공유 메뉴와 십자말풀이 저장 스크립트뿐이었습니다. 둘 다 외부로 데이터를 보내지 않는 우리 코드라 검토 후 등록했습니다.
+- 그 세션의 지도 수정도 이번 발행에 같이 나갔습니다.
+
+**하지 않은 것**
+- HOLT ISSUE는 내지 않았습니다. 다음 날 오전 작업이 이 기사 날짜로 올립니다.
+- 중국어·일본어·베트남어판은 세 나라 독자와 관련이 적어 쓰지 않았습니다.
+- 다운로드를 시도하다 저장 창을 띄워 드린 건 죄송합니다. 앞으로는 저장 창이 뜨지 않는 방법으로만 받도록 메모해 두었습니다.
+
+=== 대화 Claude Code 세션 38e496bb ===
+[17:39] AI: 읽고 실제 사이트와 대조해 봤습니다. 측정값은 대체로 맞지만, 가장 급하다고 꼽은 3가지 중 하나는 이미 의도된 설정이고, 틀린 수치가 둘 있습니다.
+
+## 틀렸거나 조치가 필요 없는 항목
+
+| 보고서 주장 | 실제 확인 결과 | 판정 |
+|---|---|---|
+| 구글뉴스 noindex가 뉴스 색인을 막는 설정일 수 있음 (우선순위 높음) | 홈·목록·안내 쪽에만 붙고, 기사 쪽(`news/bigmac_pakistan_korea.html`)에는 없습니다. 11/11에 "구글 뉴스엔 기사만" 넣으려고 일부러 넣은 설정입니다 ([news_build.py:3214](holt/news_build.py:3214)). | 조치 불필요 |
+| 본문 17px에 행간 약 1.4 | 기사 본문(`.sec p`)은 17~18px에 행간 1.9입니다. 1.4는 카드·목록 등 다른 요소 값입니다. | 틀림 |
+| 본문 약 28,000자 장문 | 기사 한 편은 공백 빼고 약 2,500자입니다. 홈 전체 글자도 약 14,600자라 28,000자의 출처를 찾지 못했습니다. | 틀림 |
+| CSS 124KB 미압축 | 원본은 132KB가 맞지만 gzip으로 32KB만 전송됩니다. minify 이득은 몇 KB 수준입니다. | 과장 |
+
+"포맷 불일치(장문 vs 카드뉴스)"는 28,000자를 전제로 한 지적이라 근거가 약해집니다.
+
+## 맞는 항목
+
+- **이미지:** 홈 이미지 52장이 전부 JPG이고 합계 5.6MB, srcset이 없습니다. 다만 전부 `loading="lazy"`와 width/height가 있어 첫 화면에서 5.6MB를 다 받지는 않습니다. 그래도 개발 항목 중 효과가 가장 큽니다.
+- **캐시:** `max-age=600` 고정이 맞습니다. GitHub Pages에서는 바꿀 수 없습니다.
+- **보안 헤더:** 없는 게 맞습니다. 정적 사이트라 실제 위험은 보고서 말대로 작습니다.
+- **다크모드:** `prefers-color-scheme`이 CSS에 없습니다.
+- **계정 2단계 인증:** 사이트 밖 문제라 제가 확인할 수 없습니다. GitHub와 도메인 계정에서 직접 보셔야 합니다.
+
+탭 영역(139개 중 31개가 32px 미만)은 이번에 다시 재지 않았습니다.
+
+## Cloudflare 제안에 대해
+
+"앞단에 붙이면 4개가 한 번에 풀린다"는 말은 절반만 맞습니다. 캐시와 보안 헤더는 풀리지만, 이미지 자동 변환(Polish)은 유료 요금제 기능입니다. 이미지는 빌드할 때 WebP와 작은 크기 버전을 같이 만드는 쪽이 무료이고 호스팅을 안 바꿔도 됩니다.
+
+## 콘텐츠 쪽 지적
+
+"사이트 역할 규정", "재방문 이유", "주제 편중"은 측정이 아니라 일반론입니다. 경제금융을 본체로 정한 것과 NEWS → 영문판 → ENGLISH 연결은 이미 결정하신 방향이라 새로 할 일은 없어 보입니다.
+
+## 검토하다 발견한 것
+
+분야 목록 쪽(`news/field-macro.html` 등)은 `news/`로 시작한다는 이유로 기사로 분류돼 Googlebot-News noindex가 빠져 있습니다. 목록 쪽이니 11/11 의도대로라면 noindex가 붙어야 합니다. 아직 고치지 않았습니다.
+
+## 실제로 할 만한 순서
+
+1. 계정 2단계 인증 확인 (직접)
+2. 이미지 WebP + srcset을 빌드에 추가
+3. 분야 목록 쪽 noindex 누락 수정
+4. 다크모드는 원하실 때
+
+2번과 3번은 말씀 주시면 바로 진행하겠습니다.
+[17:42] 사람: 2,3번 해줘. 4번은 이거 모바일이나 컴퓨터에서 다크모드해도 우리사이트가 안변한단뜻이야? 아님 우리사이트 자체에서 다크모드를 지원해야한단소리야?
