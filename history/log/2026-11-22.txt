@@ -1486,3 +1486,16 @@ https://issue.holtnews.com/?from=ig_bio
 === 대화 Claude Code 세션 372a989d ===
 [15:40] 예약 작업: [예약 작업 holt-lang-rollout-v2 실행 — 정해 둔 지시문으로 자동 시작]
 [15:40] AI: Another session is building. Reading the progress table while waiting.
+
+=== 대화 Claude Code 세션 479e6ac2 ===
+[15:43] AI: 빌드 결과 폴더에 세계 지도 쪽이 안 보여서, 다른 빌드가 같이 돌고 있는지 확인하는 중이에요.
+[15:43] AI: 다른 예약 빌드가 지금 결과 폴더를 다시 만드는 중이라, 끝나길 기다렸다가 확인하고 올릴게요.
+
+=== 대화 Claude Code 세션 3f776722 ===
+[15:48] AI: Junagadh fix is published. Now reviewing all disputed labels and finding why Tuvalu has no map.
+[15:49] AI: Shaksgam has no English entry, so the English version would show Korean. Adding it.
+[15:49] AI: Now Tuvalu. Checking which country pages are missing their location map.
+[15:49] AI: No location map is drawn when a country isn't in the 50m map data. Checking which countries that applies to.
+[15:49] AI: Two places: **Tuvalu and Gibraltar**. Both are in the detailed (10m) map data, so I'll fill them in from there.
+[15:49] AI: The main world map switches to 10m when zoomed in, so it's fine there. Only the page's location map is missing these. Patching it to fill gaps from 10m.
+[15:49] AI: All in the same format. Rebuilding and publishing.
