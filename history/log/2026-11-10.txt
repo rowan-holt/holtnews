@@ -2345,7 +2345,7 @@ https://holtnews.com/news/naver_dunamu_merger_review.html — 영문판도 함�
 [22:28] AI: Existing `.cc` class (culture cards). Rename mine to `.cv` and `.ce` → check too.
 
 === 대화 Claude Code 세션 11096a1e ===
-[22:29] 사람: PQ19736VW7QSRE1PRGQJ
+[22:29] 사람: [가림:키]
 
 한국은행 api
 [22:30] AI: 지난 대화에서 "집에서" 하라고 했던 일을 찾아보는 중이에요.
