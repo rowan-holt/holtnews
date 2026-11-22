@@ -1358,3 +1358,9 @@ https://issue.holtnews.com/?from=ig_bio
 [12:40] 예약 작업: [예약 작업 holt-lang-rollout-v2 실행 — 정해 둔 지시문으로 자동 시작]
 [12:40] AI: 연구 남은 3편(초가공식품·미세플라스틱·혈당 이식 장치) 번역을 시작합니다. 원고 형식 확인 중이에요.
 [12:41] AI: 9개 원고(3편×중·일·베) 쓰는 중입니다. 먼저 초가공식품 글부터.
+[12:43] AI: Now the microplastics article.
+[12:44] AI: Last article: the glucose implant.
+[12:45] AI: Build and checks next.
+[12:52] AI: 검증 통과(12쪽 문제 0). 국기 클릭 시 저장 언어가 'en'으로 들어가는 부분이 보여 확인 중입니다.
+[12:52] AI: Intentional (first-page auto-redirect only knows ko/en). Not a bug. Looking at screenshots.
+[12:52] AI: Pages look right. Publishing.
