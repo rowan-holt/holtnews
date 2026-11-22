@@ -1144,3 +1144,172 @@ https://issue.holtnews.com/?from=ig_bio
 [11:59] AI: 보탬 검토가 짚은 두 가지(문단 앞뒤 충돌, 주석 위치)를 고쳤습니다. 검토자는 이 둘만 고치면 통과라고 했습니다. 남은 두 검토를 기다립니다.
 [12:00] AI: 데스크의 2차 지적(영문판에 남은 단정, 장부 출처, 지시어, 단위)도 반영했습니다. 데스크는 이걸로 통과라고 했습니다. 영문판 데스크 결과만 남았습니다.
 [12:00] AI: 세 검토의 지적을 모두 반영했습니다. 세 검토자 모두 남은 항목만 고치면 통과라고 했으므로 '수정 후 통과'로 기록하고 발행 단계로 갑니다.
+
+=== 대화 Claude Code 세션 18706d4d ===
+[12:07] AI: The 11-22 12:00 slot posted on time, starting at 12:00:20.
+
+**Format and topic: J full-screen news on Mexico arresting a drug lord on the FBI's top 10 most-wanted list. 11 people died in the firefight.**
+- **Why this format:** the scheduler's pick was I (news vocabulary reel), but that format is retired on social and today's one feature slot is already used. So this slot became regular news. J scores 1.0, the best of the active types.
+- **Why this topic:** stories that put lives and safety at stake have done well. The previous two slots were Korea and a research piece, so I went with a different country. No reservation in planned_topics matched this slot, and no follow-up was queued.
+- **Fact check:**
+  - [BBC](https://www.bbc.co.uk/news/articles/ckz749ey0r75o) and [NPR/AP](https://www.npr.org/2026/11/21/nx-s1-6049672/[가림:긴문자열]) agree on the core facts: 11 dead (7 suspected cartel members, 4 soldiers), 8 arrested, a $5 million reward (about 6.7 billion won), and a city of 290,000 caught in the firefight.
+  - Today's expression is "keep a low profile," checked in the Cambridge and Longman dictionaries.
+- **Cover:** a public-domain FBI wanted poster from Wikimedia Commons, composited onto a dark background. Title: "멕시코 마약왕 체포 / 총격전에 11명 숨져" ("Mexican drug lord arrested / 11 dead in firefight").
+
+**Uploads:**
+- Instagram reel: https://www.instagram.com/reel/DgBysj5sNt5/ (the carousel posts automatically around 13:00)
+- Facebook reel: https://www.facebook.com/reel/[가림:숫자]
+- Threads: https://www.threads.com/@[가림]/post/DgBzC5RH_Zi. This is a different story, the UK–EU youth mobility deal from the HOLT ENGLISH side, written as a single post with no follow-up reply.
+- Instagram story: done
+- YouTube: https://youtube.com/shorts/Tjno73ekQiY. It's set to private for now and goes public once the cover is confirmed. Title: "FBI 10대 수배범 잡던 밤, 멕시코 도시에선 무슨 일이?" ("The night the FBI's top-10 fugitive was caught: what happened in that Mexican city?")
+
+**Checks and record:**
+- Before uploading I reviewed all 8 cards, frames from the reel and the caption. Two awkward line breaks are fixed: "29만 / 명" and "그 / 나라에".
+- Caption and AI-tell checks came back clean. No Korean translations are missing on the HOLT ENGLISH site; I added 1.
+- The post is logged as type J and tagged (country: other; surprising angle: yes). The commit is pushed (5716ff6).
+
+**Status:**
+- Stage 2 goal: 500 views and 200 followers by 11-30. We're at 58 followers.
+- Insights unchanged: J stays at the top, D is still on "reduce", and nothing was newly increased or retired.
+- Errors: none. The last line in carousel.log is a success.
+
+=== 대화 Claude Code 세션 8673522f ===
+[12:11] AI: Push succeeded and the publish report went out. Next, the post-publish check on the live page.
+
+=== 대화 Claude Code 세션 dc4eefe9 ===
+[12:12] 사람: HOLT NEWS 개선 과제
+앞서 사이트와 실제 기사 내용을 확인한 결과를 바탕으로 개선이 필요한 부분만 정리했어.
+1. 홈페이지 구성
+
+* 홈페이지에서 뉴스가 가장 먼저 눈에 들어오도록 배치
+* 경제 지표가 차지하는 공간 축소
+* 뉴스, 연구, 교육, 게임 등 콘텐츠 영역의 우선순위 명확화
+* 처음 방문한 사람이 사이트의 핵심 서비스를 쉽게 이해하도록 구성
+* 중복 노출되는 콘텐츠가 있는지 점검
+
+2. 경제 지표
+
+* 지표별 기준일과 최종 갱신 시각을 명확하게 표시
+* 최신 데이터와 과거 데이터 구분
+* 데이터 갱신 상태를 한눈에 확인할 수 있는 기능 추가
+* 발표 주기가 서로 다른 지표의 업데이트 상태 관리
+
+3. 기사 신뢰성 및 검증
+
+* 기사별 주요 원자료와 출처를 더 명확하게 표시
+* 기사별 검증 완료 여부 공개
+* 공식적으로 확인된 사실과 자체 분석·추론 구분
+* 발행 이후 검수 결과 공개
+* 정정 및 수정 이력의 가시성 강화
+* 정기적인 기사 재검증 결과 공개
+
+4. 콘텐츠 경쟁력
+
+* 경제·금융·산업·제도 해설을 대표 콘텐츠로 육성
+* 전문적인 내용을 일반 독자가 쉽게 이해할 수 있도록 설명하는 편집 방향 유지
+* 기사에서 관련 연구·교육·ISSUE 콘텐츠로 자연스럽게 연결
+* 단순 뉴스 전달보다 뉴스의 배경과 영향 분석 강화
+
+5. 서비스 연결 및 재방문
+
+* HOLT NEWS와 HOLT ENGLISH 연계 강화
+* 뉴스와 HOLT ISSUE의 문제 풀이 연결
+* 오답 노트와 학습 기록 활용도 강화
+* 뉴스레터 등 정기적인 방문 유도 수단 검토
+* SNS를 통한 콘텐츠 유통 강화
+
+6. 기술 및 사이트 관리
+
+* `holtnews.com/`과 `holtnews.com/index.html`의 콘텐츠 일관성 점검
+* Canonical URL 설정 확인
+* 검색엔진 색인 및 중복 페이지 관리
+* 모바일과 데스크톱에서 홈페이지 구성 점검
+
+읽고 내용 검토해줘.
+
+=== 대화 Claude Code 세션 8673522f ===
+[12:12] AI: 발행됐고 실제 쪽을 확인하는 중입니다. 제목·숫자·자료 주소는 맞고, 영문 표지 그림 주소 하나만 더 확인합니다.
+[12:12] AI: HOLT ISSUE 원고가 검사에서 '분리된 검토'만 남았습니다. 검토를 맡깁니다.
+[12:12] AI: 이슈 검토가 도는 동안 기사 파일을 커밋합니다. 중국어·일본어·베트남어판은 한국 소득세 개념 글이라 그 나라 독자와 관련이 적어 내지 않습니다.
+[12:13] AI: 기사 커밋·푸시 끝. 이슈 검토 결과를 기다립니다.
+
+=== 대화 Claude Code 세션 dc4eefe9 ===
+[12:13] AI: 읽고 실제 사이트와 대조해 봤어요. 여섯 묶음 중 바로 할 만한 건 1번과 2번이고, 3번과 5번 일부는 전에 정해둔 원칙과 부딪혀서 결정이 필요하고, 6번은 이미 돼 있어요.
+
+## 1. 홈페이지 구성: 맞는 지적
+- **뉴스보다 경제 지표가 먼저 나와요.** 홈 순서가 오늘의 경제 → 광고 → 뉴스 → 연구 → ECON 101 → LABOR 101 → 실적 발표 → 게임 → 뉴스 더 보기예요.
+- **지표 칸이 홈 본문 코드의 약 40%를 차지해요.** 지표 9개 이상에 1년 그래프가 다 붙어 있어요.
+- **뉴스를 맨 위로, 지표는 한 줄 띠로 줄이는 게 맞아요.** '경제금융 본체' 방향과도 안 부딪혀요. 본체는 지표 칸이 아니라 경제 기사니까요.
+- **"처음 온 사람이 이해하도록"은 배치로만 풀어야 해요.** 칸 안내 문구를 안 넣기로 한 규칙이 있어서요.
+- **중복 노출은 '뉴스'와 '뉴스 더 보기' 두 칸만 보면 돼요.** 같은 기사가 겹치는지는 아직 확인 안 했어요.
+
+## 2. 경제 지표: 일부만 맞음
+- **기준일과 출처는 이미 지표마다 있어요.** "10월 기준, 자료 한국은행" 식으로요.
+- **환율 기준일이 "그저께"로 나와요.** 날짜(11.20 금)로 써야 해요.
+- **오래된 값이 최신 값과 구분 없이 섞여 있어요.** WTI는 11.17(화) 값이 닷새째, 주택담보대출 금리는 9월 값이에요.
+- **마지막으로 가져온 시각 표시가 없어요.** 발표 주기보다 늦어진 지표에만 표시를 붙이면 '갱신 상태 한눈에'도 같이 해결돼요.
+
+## 3. 기사 신뢰성: 절반은 기존 원칙과 충돌
+- **출처 표시는 할 만해요.** 확인한 기사 한 편은 본문 속 자료 링크만 있고 따로 모은 출처 칸은 없었어요. 원자료를 쓰는 원칙이 이미 있으니 글 끝에 모아 보여주기만 하면 돼요.
+- **정정·수정 이력도 할 만해요.** 지금은 기사에 표시가 전혀 없어요. 고친 글에만 날짜와 내용을 붙이면 돼요.
+- **검증 완료 표시, 검수 결과 공개, 재검증 결과 공개는 충돌해요.** "검증 과정을 내보이지 않는다"고 정한 것과 정면으로 부딪혀요. 모든 기사에 '검증 완료' 딱지를 붙이면 방어적으로 보이고, 딱지 없는 글이 의심받아요.
+- **사실과 분석의 구분은 문장으로 하는 게 나아요.** 딱지 대신 "~로 발표했어요"와 "~로 보여요"로 가르는 쪽이 지금 문체에 맞아요.
+
+## 4. 콘텐츠 경쟁력: 새로 할 일 거의 없음
+- 경제·금융 해설 중심, 쉬운 설명, 배경과 영향 분석은 이미 편집 원칙이에요.
+- 기사에서 ISSUE로 가는 연결("용어 정리와 문제 풀기")과 '관련 글'도 이미 있어요.
+- 기사에서 ECON·LABOR 101의 해당 장으로 가는 연결이 있는지는 확인 안 했어요. 없으면 그것만 남아요.
+
+## 5. 서비스 연결·재방문: 두 가지는 보류 사항
+- **ENGLISH 연계 강화는 조심해야 해요.** holtnews.com에는 영어 학습 요소를 안 넣기로 했어요. 지금처럼 메뉴와 링크 수준이 선이에요.
+- **뉴스레터는 "킵, 고민해보자"로 보류 중이에요.** 꺼낼지는 직접 정하실 일이에요.
+- **오답 노트·학습 기록은 ISSUE와 ENGLISH 쪽 일이에요.** 사이트를 합치면 저장이 사라지는 제약도 그대로예요.
+- **SNS 유통은 이미 매일 돌아가요.** 과제로서는 내용이 없어요.
+
+## 6. 기술·사이트 관리: 대부분 이미 됨
+- `holtnews.com/`과 `/index.html`은 내용이 완전히 같고, 둘 다 canonical이 `https://holtnews.com/`이에요.
+- 기사 쪽 canonical도 정상이에요.
+- 색인과 중복 관리는 무역 나라 쪽 63개 noindex까지 최근에 정리했어요.
+- 모바일·데스크톱 점검은 1번을 고칠 때 같이 보면 돼요.
+
+## 정리
+전체적으로 바깥에서 본 일반론이 많아요. 실제로 남는 일은 네 가지예요.
+1. 홈에서 뉴스를 맨 위로 올리고 지표를 줄이기
+2. 지표 날짜 표기를 고치고 늦은 값에 표시 붙이기
+3. 기사 끝에 출처 모음 넣기
+4. 고친 글에 정정 표시 붙이기
+
+3번의 검증 공개와 5번의 뉴스레터는 기존 결정을 뒤집는 일이라, 바꾸실 건지 정해주시면 돼요. 검증 공개는 지금 원칙을 유지하는 쪽을 권해요.
+
+=== 대화 Claude Code 세션 8673522f ===
+[12:14] AI: 일요일 12시 회차로 ECON 101 시리즈 2장 '한계적으로 생각하기'를 발행했습니다. 토요일에 ECON 101이 나가지 않아서 이 회차가 목차 순서대로 다음 장을 맡았습니다.
+
+- **기사:** 「세금 구간 넘으면 손해? 100만 원 늘면 소득세 24만 원」
+  - 한국어판: https://holtnews.com/news/econ_marginal_tax.html
+  - 영어판: https://holtnews.com/en/news/econ_marginal_tax.html
+  - 2023년 소득세 과세표준 구간 조정을 사례로 썼고, 숫자는 소득세법·지방세법 원문으로 직접 계산했습니다. 개정으로 세금이 54만 원 줄었지만, '1만 원 더'에 붙는 세율이 내려간 곳은 두 구간뿐이라는 점을 갈라 보였습니다.
+- **검수:** 데스크·영문판 데스크·보탬 검토가 1차에 모두 보류를 냈고, 고친 뒤 통과했습니다. 크게 고친 곳은 세 가지입니다.
+  - 과세표준이 '딱 5,000만 원'이면 24%가 아니라 15% 구간이라, 이를 잘못 쓴 예시를 바로잡았습니다.
+  - 18만·54만 원은 세액공제를 빼기 전 금액이라고 밝혔습니다.
+  - 같은 개정으로 총급여 1억 2,000만 원이 넘는 근로자는 근로소득세액공제 한도가 줄어, 실제 감세가 24만 원이라는 점을 넣었습니다. 이 내용은 제59조 원문으로 확인했습니다.
+- **발행 후 확인:** 실제 쪽에서 제목, 본문 숫자, 그림 4장, 자료 주소 4개를 확인했고, 홈과 ECON 목차에도 새 글이 보입니다.
+- **확인 못 한 것:** 표지 계단 사진(Pixabay)은 사진 쪽이 막혀서 라이선스를 그 쪽에서 직접 확인하지 못했습니다. API 검색 결과 기준으로 Pixabay Content License입니다.
+- **HOLT ISSUE:** ECON 101 2장 쪽(https://issue.holtnews.com/econ/2.html)에 문제 3개와 계산 문제 4개를 함께 냈습니다. 분리된 검토가 보류를 내서 고친 뒤 올렸습니다.
+- **중국어·일본어·베트남어판:** 한국 소득세 개념 글이라 그 나라 독자와 관련이 적어 쓰지 않았습니다.
+
+이월 후보 4개(저축성보험 연금 전환, 나스닥 23시간 거래, 공공요금 미수금, 금융권 IT자산 관리)는 바꾸지 않고 그대로 두었습니다.
+
+=== 대화 Claude Code 세션 dc4eefe9 ===
+[12:22] 사람: 1. 지표 피시에서 저정도면 괜찮은거 같은데 모바일에선 띠 형태로 있고 말야. 냅두자
+[12:23] AI: 네, 지표 칸은 지금 그대로 둘게요. 홈 순서와 크기는 손대지 않아요.
+
+그러면 남는 건 세 가지예요.
+1. 지표 날짜 표기("그저께"를 날짜로)와 늦은 값 표시
+2. 기사 끝 출처 모음
+3. 고친 글에 정정 표시
+
+진행하라고 하시면 이 순서로 할게요.
+[12:24] 사람: 1. 지표에 날짜 표시해봐 깔끔하게 11/10 이런식
+2. 기사끝에 출처 있잖아. 뭘 말하는건지. 출처랑 원자료 링크랑 머가 다른지?
+3. 수정표시 있는데 어떤 정정수정 이력을 하겠단건지?
+4. 뉴스레터 해보자. 어떤식으로 하는게 좋을지 얘기해봐
