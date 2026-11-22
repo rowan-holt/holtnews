@@ -178,7 +178,8 @@ W.forEach(function(w,i){var li=document.createElement('li');li.innerHTML='<b>'+w
  document.addEventListener('keydown',function(ev){if(ev.key=='Escape'&&!SM.hidden){SM.hidden=true;SB.setAttribute('aria-expanded','false');SB.focus()}});
  // 공유: 휴대폰은 공유 창, 없으면 주소 복사 후 잠깐 알림
  document.getElementById('cwshare_b').onclick=function(){var t=L.share+DL+'\n'+L.url+(key!=day?'#'+key:'');try{gtag('event','game_crossword_share')}catch(e){}
-  if(navigator.share)navigator.share({text:t}).catch(function(){});
+  var cp=function(){if(navigator.clipboard)navigator.clipboard.writeText(t).then(function(){var d=document.createElement('div');d.className='cwtip';d.setAttribute('role','status');d.textContent=L.copied;document.body.appendChild(d);setTimeout(function(){d.remove()},1600)})};
+  if(navigator.share)navigator.share({text:t}).catch(function(e){if(!e||e.name!='AbortError')cp()});
   else if(navigator.clipboard)navigator.clipboard.writeText(t).then(function(){var d=document.createElement('div');d.className='cwtip';d.setAttribute('role','status');d.textContent=L.copied;document.body.appendChild(d);setTimeout(function(){d.remove()},1600)})}})();
 function solved(w){return w.cells.every(function(kk){return fill[kk]==ans[kk]})}
 // 줄 긋기·다음 낱말은 '다 채웠는지'로만 — 맞았는지로 하면 정답을 알려 주는 셈(1121 사용자)
@@ -226,7 +227,7 @@ function finish(){if(!state.t1){state.t1=Date.now();save();try{gtag('event','gam
  D.querySelector('b').textContent=state.rev?L.revd:L.solved+tm+(state.h?L.hints.replace('{n}',state.h):'');
  inp.blur();inp.disabled=true;cur=-1;clue();hl();draw();
  var sh=document.getElementById('cwshare');sh.onclick=function(){var t=L.share+DL+(state.rev?'':' · '+tm)+'\n'+L.url+(key!=day?'#'+key:'');
-  if(navigator.share)navigator.share({text:t}).catch(function(){});else if(navigator.clipboard)navigator.clipboard.writeText(t).then(function(){sh.textContent=L.copied})}}
+  var cp=function(){if(navigator.clipboard)navigator.clipboard.writeText(t).then(function(){sh.textContent=L.copied})};if(navigator.share)navigator.share({text:t}).catch(function(e){if(!e||e.name!='AbortError')cp()});else cp()}}
 function nextIdx(){for(var s=1;s<=W.length;s++){var i=(cur+s)%W.length;if(!filled(W[i]))return i}for(var s=1;s<=W.length;s++){var i=(cur+s)%W.length;if(!solved(W[i]))return i}return -1}
 // 입력값은 타자 도중 절대 고치지 않음(한글 조합이 깨짐). 단어가 다 차서 넘치면 base만 옮겨 다음 단어로 이어 씀
 function apply(){if(cur<0)return;var w=W[cur],room=w.ans.length-st,ch=seg();

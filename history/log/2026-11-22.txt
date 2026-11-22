@@ -1646,3 +1646,185 @@ https://issue.holtnews.com/?from=ig_bio
 === 대화 Claude Code 세션 3f776722 ===
 [16:14] AI: Built locally (not pushed yet). Checking which countries get the area outline and how they look.
 [16:15] AI: The shape works, but it's so faint it doesn't stand out. Making it a bit darker, then publishing.
+[16:20] AI: 동그라미를 없애고, 가까이 모인 섬들을 둥근 영역 하나로 감싸는 방식으로 바꿔서 사이트에 올렸어요. 투발루와 키리바시 화면을 위에 보냈어요.
+
+말씀하신 대로 점선은 점처럼 생긴 섬과 섞여 보여서 쓰지 않았어요. 대신 **옅은 회색 면에 얇은 실선** 테두리를 둘렀어요.
+- **섬이 앞에 보여요:** 영역을 섬 밑에 깔아서, 진한 섬 점이 영역 위에 그대로 보여요.
+- **떨어진 섬은 따로 묶어요:** 투발루처럼 줄지어 있는 섬들은 길쭉한 영역 하나가 돼요. 멀리 흩어진 키리바시는 세 제도가 각각 따로 묶이고요.
+- **섬이 하나인 나라:** 나우루처럼 섬이 하나뿐이면 작은 둥근 영역이 돼요. 동그라미 테두리만 있던 전보다는 면이 채워져서 덜 어색해요.
+
+이 방식이 적용되는 곳은 투발루·나우루·키리바시·몰디브·미크로네시아 연방이에요. 모나코·산마리노·바티칸도 너무 작아서 같은 방식이 적용돼요.
+
+**영역은 법적인 영해가 아니에요.** 섬들이 모인 범위를 보여 주는 표시라서 지도 안에 '영해'라는 글자는 넣지 않았어요. 실제 영해는 섬에서 22km(12해리)까지라, 이 축척에서는 1픽셀도 안 돼요. 배타적 경제수역(EEZ) 경계 자료를 쓰는 방법도 있지만, 투발루만 해도 나라 땅의 수만 배라 이웃 나라 수역과 겹치고 지도를 다 덮어 버려요.
+
+지도에 이름 없이 찍힌 회색 점들은 섬나라 표시가 아니에요. 원래 있던 주변 지역 표시인데, 글자 넣을 자리가 없어서 점만 남은 거예요. 이번에는 손대지 않았어요.
+
+소스는 커밋하고 push했어요.
+
+=== 대화 Claude Code 세션 28868876 ===
+[16:21] AI: While Gemini works on the image, I'll read the other docs I need to write the article.
+[16:21] AI: 제미나이가 표지 이미지를 만들었습니다. 지금 결과를 확인하고 있습니다.
+[16:22] AI: 제미나이가 만든 표지 원본을 내려받는 중입니다.
+[16:22] AI: 제미나이 그림을 파일로 옮기는 중입니다. 다운로드 버튼이 내장 브라우저에서 저장되지 않아서 다른 방법을 쓰고 있습니다.
+
+=== 대화 Claude Code 세션 98148651 ===
+[16:23] 예약 작업: [예약 작업 holt-geeknews-show 실행 — 정해 둔 지시문으로 자동 시작]
+
+=== 대화 Claude Code 세션 28868876 ===
+[16:24] AI: While Gemini draws it, I'll make the body chart.
+
+=== 대화 Claude Code 세션 98148651 ===
+[16:24] AI: Now open the browser write page.
+[16:24] AI: Logged in and writable. Reading the guide.
+
+=== 대화 Claude Code 세션 28868876 ===
+[16:24] AI: 가로판 표지가 나왔습니다. 파일로 옮기고 확인하겠습니다.
+
+=== 대화 Claude Code 세션 98148651 ===
+[16:24] AI: 번역판은 11/17에 붙어서 '이번 주'로 고쳐 넣고, 이제 글쓰기 화면에 입력합니다.
+[16:25] AI: There's a Show GN guide note on the page. Reading it in full plus the Show guide.
+[16:25] AI: Selecting Show first so its guide note appears.
+[16:25] AI: Show 안내에 맞춰 제목을 "이름 - 무엇을 하는지" 형식으로 줄입니다(설명 문구는 본문에 이미 있음).
+[16:26] AI: Cloudflare '사람인지 확인' 체크가 떠서 여기서 멈춥니다. 봇 확인은 제가 대신 누를 수 없습니다.
+[16:26] AI: 긱뉴스 Show 글은 아직 등록되지 않았습니다. 등록 버튼 바로 위에 Cloudflare '사람인지 확인하십시오' 체크 칸이 있습니다. 봇 확인은 제가 대신 누를 수 없어서 거기서 멈췄습니다.
+
+**지금 상태**
+- 로그인은 되어 있고 '가입 후 일주일' 제한 안내도 없어서 글을 쓸 수 있는 상태입니다.
+- 앱 안 브라우저의 글쓰기 화면에 내용이 다 들어가 있습니다. 브라우저 창을 열고 확인 칸 체크와 '등록'만 누르시면 됩니다.
+
+**원고에서 바꾼 것**
+- **제목:** 긱뉴스 Show 안내가 "프로젝트명 - 무엇을 하는지 한 줄 설명" 형식을 요구하고, 홍보 문구는 제목에 넣지 말라고 합니다. 그래서 `홀트뉴스 - AI가 쓰고 발행하는 경제·금융 뉴스 사이트`로 줄였습니다. 원래 제목은 AI 티 검사에서 대구형 문구 경고도 나왔고, 빠진 ", 사람은 기준만 관리" 내용은 본문에 이미 있습니다. 'Show GN:'은 붙이지 않았습니다(사이트가 자동으로 붙임).
+- **URL:** `https://holtnews.com/?from=geeknews`. 긱뉴스는 글 제목 옆에 도메인만 보여 주니 출처 꼬리가 화면에 드러나지 않습니다.
+- **11/15 이후 변화 두 줄:**
+  - 소개 문단에 "이번 주에 중국어·일본어·베트남어 번역판도 붙였습니다" (11/17 반영, 세 언어 쪽 모두 응답 확인)
+  - 목록에 "경제 낱말 십자말풀이와, 관세청 실제 월별 수출 자료로 돌아가는 무역선 게임도 최근에 붙임" (11/21 반영)
+  - 숫자는 새로 넣지 않았습니다.
+- 제목과 본문 모두 AI 티 검사에서 경고가 없습니다. 이용법과 Show 안내에 어긋나는 부분도 없습니다(추천 요청 없음, 단축 URL 없음).
+
+**한 가지 주의할 점:** 긱뉴스 이용법에 "짧은 기간에 대량 발행하는 콘텐츠 공장형 출처는 첫 글이어도 삭제하고 도메인을 막을 수 있다"는 조항이 있습니다. AI가 하루 세 편을 쓰는 사이트라 이 기준에 걸릴 가능성이 있습니다. 같은 프로젝트는 일정 기간 다시 올릴 수도 없으니, 등록 전에 감안해 주세요.
+
+직접 등록하시면 posts.json에 글 주소를 기록하겠습니다(댓글 답글 예약 작업이 읽는 파일).
+
+=== 대화 Claude Code 세션 28868876 ===
+[16:26] AI: 표지 완성입니다. 이제 기사 본문을 쓰겠습니다.
+[16:27] AI: 표지와 본문 그림은 다 만들었습니다. 지금은 같은 주제를 다룬 다른 기사가 있는지 찾아보고, 그다음 본문을 쓰겠습니다.
+[16:30] AI: Three reviewers are checking the article now. I'll apply their notes once they report back, then publish.
+[16:31] AI: I've applied the two desks' notes and sent both back to them for a second check. Still waiting on all three results.
+[16:31] AI: Applied the third reviewer's notes (it passed the article). Waiting on the two desks' second checks.
+[16:32] AI: 모든 검토를 통과했습니다. 이제 사이트를 빌드하고 발행합니다.
+
+=== 대화 Claude Code 세션 0fc6e7e9 ===
+[16:33] 사람: 모바일 브라우저에서는 공유버튼 되는데 앱에서는 안됨. 앱에서 각 기능들 정상작동하는지 살펴보고 해결해줘
+[16:37] AI: Now the news site (share fallback in news_build/games_build).
+
+=== 대화 Claude Code 세션 3f776722 ===
+[16:42] 사람: 저거 망태기같은거 연하게좀 해줘. 그리고 획 없애자
+
+=== 대화 Claude Code 세션 0fc6e7e9 ===
+[16:47] AI: Holt News 빌드가 백그라운드에서 돌고 있어요. 끝나면 이어서 처리할게요.
+
+**지금까지 한 것**
+- **원인:** 앱(app.html)이 사이트를 iframe으로 감싸는데, 이 iframe에 `web-share` 권한이 없었어요. 그래서 공유창이 조용히 막혔어요. 모바일 브라우저는 iframe 없이 사이트가 바로 열려서 됐던 거예요.
+- **앱 수정 (배포 완료):** [app_shell.py](holt/tools/app_shell.py)에서 iframe에 `allow="web-share; clipboard-write; …"`를 넣었고, english 사이트로 푸시까지 끝났어요.
+- **공유 실패 시 대체 동작:** [news_build.py](holt/news_build.py)와 [games_build.py](holt/games_build.py)에서 공유창이 실패하면(사용자가 닫은 경우는 제외) 링크 복사로 넘어가게 했어요. news 사이트 배포가 끝나야 적용돼요.
+
+**아직 못 한 것**
+- 앱 안에서 저장(PDF·이미지)·인쇄·복사 같은 다른 기능을 실제로 눌러서 확인하지 못했어요. 코드에서 이 기능들이 iframe 안에서 쓰는 API는 확인했지만, 앱 안에서 정상 작동하는지는 확인 못 했어요.
+- 이 기기에서는 설치된 앱 환경을 재현할 수 없어서, 최종 확인은 휴대폰 앱에서 해야 해요. 앱을 한 번 완전히 닫았다 다시 열어야(서비스 워커 캐시 갱신) 새 코드가 적용돼요.
+
+news 빌드가 끝나면 푸시 결과를 확인하고 알려드릴게요.
+[16:48] AI: Holt News 사이트의 보안 검사를 통과 처리했고, 빌드와 푸시를 다시 돌리고 있어요. 끝나면 결과를 알려드릴게요.
+
+=== 대화 Claude Code 세션 3f776722 ===
+[16:52] AI: Probably waiting behind another build. I'll report once it's done.
+[16:52] AI: Checking progress.
+[16:52] AI: I made the island areas lighter (about half as dark as before) and removed the outline. It's built and publishing now, but another site build is running first, so it's still waiting its turn. When it finishes I'll confirm on screen and commit and push.
+[16:53] AI: The screenshot ran too early and failed. It looks like the build output folder is being rebuilt right now. Checking.
+[16:53] AI: Meanwhile, committing the source.
+[16:53] AI: I made the island areas lighter (fill opacity 0.3 → 0.14) and removed the outline. The code is committed, but it's not on the site yet.
+
+My own build and publish didn't go through. Another build started at 16:48, probably a scheduled task, and it emptied and rebuilt the output folder while I was working. That build reads the code I just changed, so the lighter version should go out with it. When it finishes, I'll check on screen that the change is live and send you a screenshot.
+
+=== 대화 Claude Code 세션 28868876 ===
+[16:54] AI: Waiting on the other session's build to finish. Once it does, I'll check the live article page.
+
+=== 대화 Claude Code 세션 3f776722 ===
+[16:58] AI: The build has the lighter version, but it hasn't been published (the last site commit is still 38 minutes old). Checking why.
+[16:58] AI: The other build didn't publish either. No other build is running now, so I'll publish directly.
+
+=== 대화 Claude Code 세션 0fc6e7e9 ===
+[16:58] AI: 변경된 줄을 확인해 보니 스크립트 쪽 차이는 제 공유 폴백뿐이에요. 방금 빌드한 결과물 기준으로 다시 등록하고 푸시할게요.
+
+=== 대화 Claude Code 세션 3f776722 ===
+[16:58] AI: The lighter, outline-free version looks right. Publishing is running; I'll report when it's done.
+
+=== 대화 Claude Code 세션 0fc6e7e9 ===
+[16:58] AI: Holt News 푸시가 한 번 더 막혔어요. 이전에 등록한 값이 빌드 전 결과물 기준이라 안 맞았어요. 방금 빌드한 결과물 기준으로 다시 등록했고, 지금 빌드와 푸시를 다시 돌리고 있어요. 끝나면 결과를 알려드릴게요.
+
+=== 대화 Claude Code 세션 3f776722 ===
+[16:58] AI: The lighter, outline-free version is built and looks right on screen (screenshot above). Publishing to the site is in progress; I'll tell you once it's confirmed live.
+
+=== 대화 Claude Code 세션 c1e8c81e ===
+[17:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
+[17:02] AI: 18시 회차(일요일) 주제를 고르는 중입니다. 로블록스와 IEA 에너지 전망 후보 두 개를 2곳 이상 출처로 교차 확인합니다.
+[17:03] AI: 주제는 로블록스 AI 게임 제작으로 정했습니다. 지금은 표지에 쓸 CC 라이선스 사진을 받아 확인하는 중입니다.
+
+=== 대화 Claude Code 세션 3f776722 ===
+[17:04] AI: Publishing is blocked by the site safety check (site_guard). Checking what's blocking it.
+[17:04] AI: The registration list in `site_guard.json` lost 37 lines without being committed. That's why publishing is blocked. Checking the change.
+
+=== 대화 Claude Code 세션 c1e8c81e ===
+[17:05] AI: 표지 제목이 길고 강조가 많다는 경고가 떠서 문구를 줄이는 중입니다. 고친 뒤 다시 제작합니다.
+[17:06] AI: 제작은 끝났고, 지금은 스레드 글을 쓰는 중입니다. 쓰고 나면 18:00까지 기다렸다가 업로드합니다.
+[17:06] AI: **11/22 18시 회차**: 제작은 끝났고, 업로드는 18:00에 시작되도록 예약해 뒀습니다. 아직 아무것도 올라가지 않았습니다.
+
+- **주제:** 로블록스가 3분기 실적에서 밝힌 내용입니다. 10월 이용 시간 기준 인기 게임 100개 중 80% 넘게 개발 속도를 높이려 AI 도구를 썼습니다. 문장으로 게임을 만드는 도구 Build는 이용자가 50만 명을 넘었고, 발행된 게임이 7만 개를 넘었습니다.
+- **고른 이유:** 포맷은 J(전체 화면 실사)입니다. 오늘 앞 회차는 Journal(대상포진 연구)과 멕시코 마약왕 체포 뉴스입니다. 특집은 오늘 1개를 이미 채웠고 collect가 다음 유형으로 J를 냈습니다.
+- **출처:** [PocketGamer.biz](https://www.pocketgamer.biz/[가림:긴문자열]/), [PC Gamer](https://www.pcgamer.com/software/ai/[가림:긴문자열]/), [PC Guide](https://www.pcguide.com/news/[가림:긴문자열]/)가 같은 수치를 인용합니다. 로블록스 원문 서한은 보지 못했습니다.
+- **주의:** 보도 내용은 "AI로 만들었다"가 아니라 "개발 속도를 높이려 AI를 썼다"입니다. 표지와 본문 모두 이 구분을 지켰습니다.
+- **사진:** 로블록스 본사 건물 사진(Wikimedia Commons, CC BY 4.0)입니다. AI 티 검사와 캡션 양식 검사를 통과했고, 표지를 눈으로 확인했습니다.
+- **표현:** 오늘의 표현은 "churn out"입니다.
+- **스레드:** 이 회차 주제가 아니라 11/20 케냐 마라톤 챔피언 도핑 건으로 따로 썼습니다.
+- **예약된 업로드:** 인스타 릴스, 페북 릴스, 스레드, 인스타 스토리, 유튜브 쇼츠 순서입니다. 틱톡은 심사 전이라 올리지 않습니다.
+- **보류한 후보:** IEA 에너지 전망은 보류했습니다. 원문이 403으로 막혔고, 누적 손실 수치가 2.75억 배럴과 2.8억 배럴로 엇갈렸습니다.
+- **기타:** 멕시코 회차에서 빠져 있던 site_ko 해석 3건도 채웠습니다.
+
+**남은 일:** 업로드 결과와 링크 확인, `collect_views.py add`와 `tag` 기록, 커밋과 푸시, 최종 보고입니다. 알림이 오면 이어서 합니다. 지난 회차의 `carousel.log`에는 실패나 2207051은 없었습니다.
+
+=== 대화 Claude Code 세션 28868876 ===
+[17:08] AI: I've told the other session about the collision. Once the builds already running finish, I'll do a single build, review the new scripts, and publish.
+
+=== 대화 Claude Code 세션 0fc6e7e9 ===
+[17:12] AI: 이제 두 건만 남았어요. 빌드 결과물에 이미 등록했으니, 다시 빌드하지 않고 푸시만 실행할게요.
+[17:13] AI: 출력 폴더에서 파일 2410개가 삭제된 걸로 잡혔어요. 푸시하면 사이트가 비워질 수 있어서 멈추고 상태부터 볼게요.
+[17:13] AI: 다른 예약 작업이 지금 `news_build.py --push`를 돌리고 있어서 출력 폴더가 빌드 중이었어요. 제 푸시가 막힌 게 맞았어요. 그 빌드가 끝나길 기다릴게요.
+
+=== 대화 Claude Code 세션 28868876 ===
+[17:14] AI: Coordination is settled. I'll wait for that session's queued build to finish.
+
+=== 대화 Claude Code 세션 3f776722 ===
+[17:14] AI: The lighter, outline-free island areas are committed but not on the live site yet. The check on the live Tuvalu page still showed the old version.
+
+Why publishing stalled: several sessions ran site builds at the same time, and one of them refreshed the safety-check (site_guard) list while the build folder was half empty. The approved-script list was wiped, so every publish after that got blocked, including mine.
+
+What's happening now:
+- **Safety-check list restored:** I reset it to the last committed version. Another session (app-launch-2b) found the same problem and restored it too.
+- **Agreed with that session:** to avoid more collisions, neither of us will re-register the list or start new builds.
+- **My publish:** the one I already started is waiting its turn. If it gets through, the change goes out with it. If not, it'll go out with app-launch-2b's next build (they said they'd do just one, including a new article). My only change is in `world_build.py`, and it adds no new scripts, so it shouldn't trip the safety check.
+
+I'll confirm on the live page once it's published.
+
+=== 대화 Claude Code 세션 0fc6e7e9 ===
+[17:15] AI: 예약 작업의 빌드가 끝나길 기다리는 중이에요. 끝나면 푸시가 됐는지 확인하고, 막혔으면 이어서 처리할게요.
+[17:17] AI: 폴더 빌드는 끝났고 제 수정도 들어 있어요. 아직 푸시는 안 됐어요. 완성된 폴더 기준으로 등록하고 푸시할게요.
+[17:18] AI: 출력 폴더가 덜 만들어진 상태예요(world 폴더가 없음). 이대로 푸시하면 안 되니, 아무도 안 돌리는 지금 처음부터 다시 빌드할게요.
+[17:18] AI: Holt News 사이트를 처음부터 다시 빌드하고 푸시하는 중이에요. 끝나면 결과를 알려드릴게요.
+
+=== 대화 Claude Code 세션 3f776722 ===
+[17:18] AI: My build finished, but it **still couldn't publish**. The live Tuvalu page shows the old version, and the site's last commit is from about an hour ago.
+
+**Why it's blocked:** even with the safety-check list restored, it still flags 8 items that changed recently: the homepage, the English world map, a few English country pages, and the language-switch buttons. I didn't change any of them. They come from other sessions' work.
+
+**What I did:** we'd agreed that only app-launch-2b would review, register and publish, so I didn't register those items myself. I sent that session the list of blocked items and asked it to handle them. Once it publishes, my change (lighter island areas, no outline) goes out with it, since it's already committed.
+
+If you'd rather I review and register those items myself, tell me.
