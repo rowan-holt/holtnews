@@ -1760,3 +1760,6 @@
 2026-11-22 09:14  feat(holt): HOLT ISSUE 시사상식 문제 — silson_unclaimed_deadline
 2026-11-22 10:41  chore(gsc): 색인 요청 기록
 2026-11-22 10:44  feat(holt): 링크 출처 이름표(?from=) — 보이는 주소는 깨끗하게, GA 출처로 넘기고 주소창에서 지움
+2026-11-22 11:15  fix(holtnews): 무역 나라 쪽은 색인됐거나 검색 노출 있던 쪽만 검색에 엶(나머지 63쪽 noindex·사이트맵 제외), ENGLISH measure 쪽 되살림(초가공식품 논문 원문 문장), ?from= GA 코드 site_guard 등록
+2026-11-22 11:16  docs(holt): 인사이트 조치 기록 시작(1122)
+2026-11-22 12:07  feat(holt): SNS 12시 회차, 멕시코 마약왕 '엘 차포 이시드로' 체포·총격전 11명 사망 (J)
