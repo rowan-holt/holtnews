@@ -1836,3 +1836,4 @@
 2026-11-24 00:09  feat(holt): YMYL 관문 — 재계산·기준일·조언 검사 기계 관문, 정기 검증 YMYL 우선(하루 뒤·2주마다)
 2026-11-24 00:09  feat(holt): Korea Explained 돈·삶과 일반 개념 번갈아
 2026-11-24 04:42  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — trinidad_jcpc_buggery_ruling
+2026-11-24 05:26  content(holt): HOLT ENGLISH 쪽별 표현·퀴즈 6쪽 + 점검

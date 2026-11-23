@@ -190,3 +190,17 @@
 
 === 대화 Claude Code 세션 91b99626 ===
 [05:16] 예약 작업: [예약 작업 holt-english-site-sync 실행 — 정해 둔 지시문으로 자동 시작]
+
+=== 대화 Claude Code 세션 a065f46c ===
+[05:26] 예약 작업: [예약 작업 holt-history-timeline 실행 — 정해 둔 지시문으로 자동 시작]
+
+=== 대화 Claude Code 세션 91b99626 ===
+[05:27] AI: HOLT ENGLISH와 HOLT NEWS 모두 오늘 빌드·배포했고, 코드는 커밋 후 push까지 했어요.
+
+- **영어 사이트:** 공개된 쪽은 562개예요. 품사나 예문을 고칠 곳은 없었어요. `english_extra` 경고도 0건이에요.
+- **쪽별 표현·퀴즈:** 오늘은 6쪽을 채웠어요(run-short-of, measure, too-good-to-be-true, strapped-for-cash, step-in, call-it-quits). 이제 남은 쪽은 0개라서 다음 새 쪽이 생길 때까지 할 일이 없어요.
+- **HOLT NEWS:** `news_build.py --push`는 오류 없이 끝났어요. 글 수는 이번에 따로 확인하지 못했어요.
+
+=== 대화 Claude Code 세션 a065f46c ===
+[05:29] AI: 연표에 넣을 항목을 정리해서 파일에 쓰는 중이에요.
+[05:29] AI: Those warnings come from older entries, not mine. The build step failed because `timeout` isn't installed on this Mac, so I'm running it without that.
