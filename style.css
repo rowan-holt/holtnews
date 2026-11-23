@@ -267,7 +267,7 @@ img.logo-img{outline:1px solid #d4d4d4;outline-offset:-1px}   /* 1109: 흰 바�
 .home-journal h2{font-family:var(--latin);font-weight:400;font-size:clamp(28px,3.4vw,52px);max-width:1400px;margin:0 auto;padding:0 24px 18px}
 .ad{display:block}
 .ad-l{display:block;font-size:11px;letter-spacing:.08em;color:var(--gray);margin-bottom:8px}
-/* 1123 애드센스: 광고를 안 불렀거나(내 기기·검증 도구·차단) 채울 광고가 없으면 빈 '광고' 칸을 숨김 */html.noads .ad:has(ins.adsbygoogle),html.noads .card.ad-feed:has(ins.adsbygoogle),html.noads .nx-adcol:has(ins.adsbygoogle),.ad:has(ins[data-ad-status=unfilled]),.card.ad-feed:has(ins[data-ad-status=unfilled]),.nx-adcol:has(ins[data-ad-status=unfilled]){display:none!important}
+/* 1123 애드센스: 광고 단독 칸(기사 끝)은 안 불렀거나·안 채워지면 숨김. 공익광고 칸(.gs)은 광고가 채워졌을 때만 광고로 바뀜 */html.noads .ad:not(.gs):has(ins.adsbygoogle),.ad:not(.gs):has(ins[data-ad-status=unfilled]){display:none!important}.gs-l{display:none}html.noads .gs>ins.adsbygoogle,.gs>ins[data-ad-status=unfilled]{display:none!important}.gs:has(>ins[data-ad-status=filled])>:not(ins):not(.gs-l):not(script){display:none!important}.gs:has(>ins[data-ad-status=filled])>.gs-l{display:block;font-size:11px;letter-spacing:.08em;color:var(--gray);margin-bottom:8px}.gs:has(>ins[data-ad-status=filled]){border:0!important;padding:0!important;background:none!important}.ad-feed-w{display:flex;flex-direction:column;min-width:0}.ad-feed-w>.card{flex:1}
 .ad.house a{display:flex;flex-direction:column;align-items:flex-start;gap:6px;background:var(--soft);padding:22px 24px}
 .ad.house b{font-size:19px;line-height:1.4;letter-spacing:-.01em}
 .ad.house .ad-p{font-size:14.5px;color:var(--ink2);line-height:1.6}
