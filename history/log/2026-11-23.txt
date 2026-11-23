@@ -1530,3 +1530,15 @@ Korea Explained만 Sonnet으로 바꿀까요?
 나머지(핀터레스트, 마스토돈, 미디엄 등)는 우리 글과 독자가 잘 안 맞거나 효과가 작아요.
 
 지금도 채널이 많아서 더 늘리기보다, 미국 독자 쪽은 **블루스카이와 X를 2주 돌려 보고 12월 7일 점검 때 링크드인을 추가할지** 정하는 걸 추천해요.
+
+=== 대화 Claude Code 세션 131a92bc ===
+[22:26] AI: 홈페이지에 발행 확인했습니다(영문판 200, 제목·숫자·그림·자료 주소 일치). 이제 검증 기록·커밋 후 중·일·베트남어판을 씁니다.
+
+=== 대화 Claude Code 세션 aea44b9e ===
+[22:26] 사람: 구글 뉴스 플립보드 해바바
+[22:26] AI: 구글 뉴스에는 홀트뉴스가 이미 한국어 간행물로 등록돼 있어요. 영문판을 영어 간행물로 따로 추가해 볼게요.
+[22:27] AI: Filling in the English edition's language. Picking from the list.
+[22:27] AI: Selected English (UK) by mistake. Changing it to plain English.
+
+=== 대화 Claude Code 세션 131a92bc ===
+[22:27] AI: 세 언어판 원고를 다 썼습니다. 다시 빌드·배포하고 세 언어 쪽을 확인합니다.
