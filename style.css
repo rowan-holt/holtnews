@@ -268,6 +268,7 @@ img.logo-img{outline:1px solid #d4d4d4;outline-offset:-1px}   /* 1109: 흰 바�
 .ad{display:block}
 .ad-l{display:block;font-size:11px;letter-spacing:.08em;color:var(--gray);margin-bottom:8px}
 /* 1123 애드센스: 광고 단독 칸(기사 끝)은 안 불렀거나·안 채워지면 숨김. 공익광고 칸(.gs)은 광고가 채워졌을 때만 광고로 바뀜 */html.noads .ad:not(.gs):has(ins.adsbygoogle),.ad:not(.gs):has(ins[data-ad-status=unfilled]){display:none!important}.gs-l{display:none}html.noads .gs>ins.adsbygoogle,.gs>ins[data-ad-status=unfilled]{display:none!important}.gs:has(>ins[data-ad-status=filled])>:not(ins):not(.gs-l):not(script){display:none!important}.gs:has(>ins[data-ad-status=filled])>.gs-l{display:block;font-size:11px;letter-spacing:.08em;color:var(--gray);margin-bottom:8px}.gs:has(>ins[data-ad-status=filled]){border:0!important;padding:0!important;background:none!important}.ad-feed-w{display:flex;flex-direction:column;min-width:0}.ad-feed-w>.card{flex:1}
+/* 1123 사용자 "광고가 우측 끝까지 안 붙어 정렬 이상": 넓은 칸은 구글이 폭에 꽉 차는 광고를 못 골라 왼쪽에 붙음 → 광고 칸을 1200px로 잡고 가운데 정렬(구글이 이 폭에 맞춰 고름), 광고 표시도 같은 폭 왼쪽 */.ad-wide.gs>ins.adsbygoogle,.ad-wide.gs>.gs-l{max-width:1200px;margin-left:auto!important;margin-right:auto!important}.ad-wide.gs:has(>ins[data-ad-status=filled])>.gs-l{width:100%}
 .ad.house a{display:flex;flex-direction:column;align-items:flex-start;gap:6px;background:var(--soft);padding:22px 24px}
 .ad.house b{font-size:19px;line-height:1.4;letter-spacing:-.01em}
 .ad.house .ad-p{font-size:14.5px;color:var(--ink2);line-height:1.6}
