@@ -1837,3 +1837,4 @@
 2026-11-24 00:09  feat(holt): Korea Explained 돈·삶과 일반 개념 번갈아
 2026-11-24 04:42  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — trinidad_jcpc_buggery_ruling
 2026-11-24 05:26  content(holt): HOLT ENGLISH 쪽별 표현·퀴즈 6쪽 + 점검
+2026-11-24 05:34  chore(holt): 만들어진 기록 연표 자동 갱신 — 9개 추가
