@@ -1830,3 +1830,9 @@
 2026-11-23 22:06  feat(holt): 블루스카이 계정 연결(holtnews.bsky.social) — 계정 서버로 직접 올림, 첫 게시
 2026-11-23 22:12  feat(holt): 블루스카이에 올린 기사는 X ENGLISH용 문장을 퀘스트봇으로 — X는 손으로 붙여 넣기
 2026-11-23 22:14  feat(holt): X 붙여 넣기 문장은 holt x bot으로
+2026-11-23 22:34  feat(holt): 사이트 뉴스(미국 회차) — 코스피 6월 최고점 대비 48% 하락, 증안펀드 준비·자사주 1일 매수 한도 완화 규칙 풀이(영문판 본판, 중·일·베 언어판)
+2026-11-23 23:39  feat(holt): 사임 11일 만에 돌아온 젠슨 황, 엔비디아 이사회 복직 결정 (J)
+2026-11-23 23:55  feat(holt): Korea Explained 목록 맨 위에 돈·삶(YMYL) 10편 — 광고 단가 가중
+2026-11-24 00:09  feat(holt): YMYL 관문 — 재계산·기준일·조언 검사 기계 관문, 정기 검증 YMYL 우선(하루 뒤·2주마다)
+2026-11-24 00:09  feat(holt): Korea Explained 돈·삶과 일반 개념 번갈아
+2026-11-24 04:42  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — trinidad_jcpc_buggery_ruling
