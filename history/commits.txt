@@ -1881,3 +1881,5 @@
 2026-11-24 23:59  feat(holt): 뉴스레터 시스템(newsletter.py) — 주간 모아보기 HTML·텍스트 생성, 구독자 관리, SMTP 발송(모의 기본·야간 차단·수신거부), 구독자 목록은 git 제외
 2026-11-25 00:16  feat(holt): 휴대폰 제목 줄 — 지도로 보기·나라별 단추를 제목과 한 줄로(짧은 이름·작은 단추·짧은 기간), 세계 지도 옆 칸 배치(범례 왼쪽 아래, 낮밤·나침반·확대 오른쪽 아래, 여행경보 한 줄)
 2026-11-25 00:37  feat(holt): 뉴스레터 구독 연결 — 구글 Apps Script 구독 처리(newsletter_gas.js), newsletter.py sync·개인별 수신거부 링크·weekly, 사이트 구독 칸·개인정보 문구는 NEWSLETTER_ON 스위치(꺼 둠, site_guard form 허락 필요)
+2026-11-25 00:51  feat(holt): 사이트 뉴스레터 구독 칸 켬 — 꼬리말 위 띠 + 글 3개째 읽을 때 작은 카드(7일 1회·닫기 30일), 개인정보처리방침 뉴스레터 항목, site_guard에 data-holt-nl 구독 칸만 허용하는 좁은 예외
+2026-11-25 04:43  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — binance_north_korea_recovery
