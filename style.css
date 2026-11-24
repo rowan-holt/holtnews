@@ -784,6 +784,8 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .bar nav .cat-sep{margin:13px 0}
 .bar .lsw,.bar .lsw .lang{display:flex;align-items:center;height:100%;padding-top:0;padding-bottom:0}.bar .lsw .lang svg{transform:none}
 @media (max-width:640px){.bar{height:48px}}
+/* 1124 사용자: 메뉴들만 가운데 정렬(로고 아래). ☰·날씨·국기 자리는 그대로. 휴대폰은 가로 스크롤이라 왼쪽 그대로 */
+@media (min-width:900px){.bar{display:grid;grid-template-columns:minmax(48px,1fr) minmax(0,auto) minmax(48px,1fr)}.bar .left{display:contents}.bar .mbtn{grid-column:1;justify-self:start;align-self:center}.bar nav.cats{grid-column:2}.bar .right{grid-column:3;justify-self:end}}
 /* 1114: 가로로 흐르는 경제 칸 안의 숨김 글(.vh, position:absolute)이 칸 밖 기준으로 놓여 휴대폰에서 페이지 전체가 옆으로 밀렸음 → 칸을 기준점으로 */
 .ek-row,.ek,.bar nav{position:relative}
 .wpage{max-width:1280px;margin:0 auto;padding:22px 24px 40px}
@@ -917,6 +919,16 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wkey i{display:inline-block;width:12px;height:12px;background:#e8d3b4;margin-right:5px;vertical-align:-1px}
 .wkey b{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--ink);margin-right:5px;vertical-align:1px}
 .wside{padding:22px 0 26px;max-width:880px;margin:0 auto;font-size:15.5px;line-height:1.65}
+/* 1124 사용자: 단추를 지도 위에 얹지 않음 — 지도 위·아래에 줄을 따로 두고 그 안에 놓음. 줄 안 위치는 글 칸(880px) 가장자리에 맞춤(넓은 화면에서 화면 끝에 붙어 멀었음) */
+.wmap{--wx:max(10px,calc(50% - 440px));padding:52px 0 58px}
+.wview{left:var(--wx);top:10px;grid-template-rows:none;grid-template-columns:1fr 1fr;width:62px;height:28px}
+.wview i{top:2px;bottom:2px;left:2px;right:auto;height:auto;width:calc(50% - 2px)}.wview.g i{transform:translateX(100%)}.wview button{height:24px}
+.walrt{right:var(--wx);top:10px}
+.wzoom{right:var(--wx);bottom:9px;flex-direction:row}.wzoom button+button{border-top:0;border-left:1px solid #ddd}
+.wmap .wcmp,.wmap .wsun,.wmap .wcmp:not([hidden])+.wsun{bottom:9px}.wmap .wcmp,.wmap .wsun{right:calc(var(--wx) + 112px)}.wmap .wcmp:not([hidden])+.wsun{right:calc(var(--wx) + 154px)}
+.wkey{left:var(--wx);bottom:9px}
+@media (min-width:901px){.wkey{flex-direction:row;align-items:center;gap:18px;bottom:17px}}
+@media (max-width:900px){.wmap{padding-bottom:76px}}
 .wgrid:has(.wmap.trade) .wside:not(:has(.winfo)){display:none}   /* 1118 사용자: 무역 흐름을 켜면 아래 '세계' 설명은 숨기고 무역 표만(나라를 고르면 그 나라 칸은 보임) */
 .wside h2{font-size:24px;margin:0 0 4px;line-height:1.3}
 .wside .wone{margin:0 0 14px;color:var(--ink2)}
@@ -995,6 +1007,11 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .ttabs a:hover{background:var(--soft)}
 .tjump{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 6px;font-size:14px}.tjump a{border:1px solid #ddd;border-radius:14px;padding:3px 11px}.tjump a:hover{border-color:#111}
 .tgap{font-size:14px;color:var(--ink2);margin:0 0 8px;max-width:760px}
+.pt{cursor:help;outline-offset:3px}.pt:hover,.pt:focus-visible{text-decoration:underline dotted;text-underline-offset:4px;text-decoration-thickness:1px}
+.pt .pti{display:inline-flex;align-items:center;justify-content:center;width:10px;height:10px;margin:0 0 0 4px;border:1px solid var(--gray);border-radius:50%;color:var(--gray);font:700 7px/1 var(--latin);font-style:normal;vertical-align:super}
+.pt:hover .pti,.pt:focus-visible .pti{border-color:var(--ink);color:var(--ink)}
+#pt-tip{position:fixed;z-index:60;display:none;max-width:min(330px,calc(100vw - 24px));background:#fff;color:var(--ink);border:1px solid var(--ink);border-radius:4px;box-shadow:0 8px 24px rgba(0,0,0,.16);padding:10px 13px;font-size:14px;font-weight:400;line-height:1.55;pointer-events:none}
+#pt-tip small{display:block;margin-top:6px;padding-top:6px;border-top:1px solid #e4e4e0;color:var(--gray);font-size:12px;line-height:1.45}
 
 .tpage{max-width:1180px;margin:0 auto;padding:22px 24px 48px}
 .tpage h1{font-size:clamp(28px,3.4vw,44px);margin:0 0 6px;letter-spacing:-.01em;line-height:1.2}
@@ -1150,6 +1167,7 @@ main:has(.topband) .jf h3{font-size:19px;line-height:1.35;margin:0}
 .eco-part h2{font-size:26px;font-weight:800;letter-spacing:-.03em;padding-bottom:14px;margin-bottom:10px;border-bottom:1px solid var(--ink)}
 .tpage h2{font-size:34px;font-weight:800;letter-spacing:-.035em;border-top:0;padding:0 0 16px;margin:96px 0 22px;border-bottom:1px solid var(--ink)}
 .tpage h2.thd{margin-top:56px}
+.tpage .thome h2{margin-top:0}   /* 1124 사용자: 무역 첫 화면 제목과 한국-그 나라 칸 사이 빈 공간(96px) 없앰 */
 }
 html.in-app header.top .right{visibility:hidden}html.in-app .install{display:none!important}html.in-app .foot .brand,html.in-app footer.site .brand{display:none!important}html.in-app .foot,html.in-app footer.site{margin-top:40px!important;padding:20px 20px 22px!important;gap:6px 24px!important;line-height:1.6!important}html.in-app .foot nav+nav{margin-top:2px!important}@media (max-width:700px){html.in-app header.top{display:flex!important;justify-content:flex-start!important;align-items:flex-start!important;padding:10px 16px 0!important;height:58px!important;box-sizing:border-box!important}html.in-app header.top>span:first-child:empty{display:none!important}html.in-app header.top .right{display:none!important}html.in-app header.top .logo{font-family:Jost,sans-serif!important;font-weight:500!important;font-size:30px!important;letter-spacing:.05em!important;line-height:.92!important;display:flex!important;flex-direction:column!important;align-items:center!important;gap:2px!important;padding:0!important;margin:0!important}html.in-app header.top .logo>span:first-child{font:inherit!important;letter-spacing:inherit!important;line-height:inherit!important}html.in-app header.top .logo .tag,html.in-app header.top .logo .vv{font-size:10.8px!important;line-height:1!important;margin-top:0!important}}
 .foot .install{display:inline-block;margin-top:14px;color:#fff;border:1px solid #fff;padding:6px 16px;font-size:13px;line-height:1.4;text-decoration:none}.foot .install:hover{background:#fff;color:#000}html.in-app .foot .install{display:none}@media (display-mode: standalone){.foot .install{display:none}}
