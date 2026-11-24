@@ -922,11 +922,11 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wside{padding:22px 0 26px;max-width:880px;margin:0 auto;font-size:15.5px;line-height:1.65}
 /* 1124 사용자: 단추를 지도 위에 얹지 않음(지도 위·아래 줄은 세로 공간이 줄어 취소). 넓은 화면은 지도 좌우에 옆 칸을 두고 그 안에, 휴대폰은 지도 위·아래 줄 안에 */
 @media (min-width:901px){
-.wmap{display:grid;grid-template-columns:100px minmax(0,1fr) 100px}.wmap #wsvg{grid-column:2;grid-row:1}
-.wview{left:35px;top:10px}
-.wzoom,.wmap .wcmp,.wmap .wsun{right:auto;left:33px}
-.walrt{right:8px;top:10px}.walb{white-space:normal;text-align:center;width:84px;padding:6px 8px;font-size:13px;border-radius:14px;box-sizing:border-box;line-height:1.25}
-.wkey{left:auto;right:8px;bottom:10px;width:84px}
+.wmap{display:grid;grid-template-columns:56px minmax(0,1fr) 130px}.wmap #wsvg{grid-column:2;grid-row:1}
+.wview{left:13px;top:10px}
+.wzoom,.wmap .wcmp,.wmap .wsun{right:auto;left:11px}
+.walrt{right:8px;top:10px}.walb{white-space:nowrap;text-align:center;padding:6px 14px;font-size:14px;border-radius:18px;box-sizing:border-box}
+.wkey{left:auto;right:8px;bottom:10px;width:114px}
 }
 @media (max-width:900px){
 .wmap{--wx:10px;padding:52px 0 76px}
