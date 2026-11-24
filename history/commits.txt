@@ -1885,3 +1885,4 @@
 2026-11-25 04:43  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — binance_north_korea_recovery
 2026-11-25 05:27  content(holt): HOLT ENGLISH 쪽별 표현·퀴즈 12쪽 + 점검
 2026-11-25 05:34  chore(holt): 만들어진 기록 연표 자동 갱신 — 8개 추가
+2026-11-25 07:32  content(holt): 07:30 회차 서울 지하철 파업 철회 [J] + 스레드 최태원 9440억
