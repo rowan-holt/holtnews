@@ -922,11 +922,11 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wside{padding:22px 0 26px;max-width:880px;margin:0 auto;font-size:15.5px;line-height:1.65}
 /* 1124 사용자: 단추를 지도 위에 얹지 않음(지도 위·아래 줄은 세로 공간이 줄어 취소). 넓은 화면은 지도 좌우에 옆 칸을 두고 그 안에, 휴대폰은 지도 위·아래 줄 안에 */
 @media (min-width:901px){
-.wmap{display:grid;grid-template-columns:56px minmax(0,1fr) 130px}.wmap #wsvg{grid-column:2;grid-row:1}
+.wmap{display:grid;grid-template-columns:104px minmax(0,1fr) 130px}.wmap #wsvg{grid-column:2;grid-row:1}
 .wview{left:13px;top:10px}
 .wzoom,.wmap .wcmp,.wmap .wsun{right:8px}
 .walrt{right:8px;top:10px}.walb{white-space:nowrap;text-align:center;padding:6px 14px;font-size:14px;border-radius:18px;box-sizing:border-box}
-.wkey{left:auto;right:8px;top:54px;bottom:auto;width:114px}
+.wkey{left:8px;right:auto;top:auto;bottom:10px;width:92px}
 }
 @media (max-width:900px){
 .wmap{--wx:10px;padding:52px 0 76px}
