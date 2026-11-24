@@ -1886,3 +1886,4 @@
 2026-11-25 05:27  content(holt): HOLT ENGLISH 쪽별 표현·퀴즈 12쪽 + 점검
 2026-11-25 05:34  chore(holt): 만들어진 기록 연표 자동 갱신 — 8개 추가
 2026-11-25 07:32  content(holt): 07:30 회차 서울 지하철 파업 철회 [J] + 스레드 최태원 9440억
+2026-11-25 07:57  feat(holt): 언어판 — 재벌 설명(korea_explained_chaebol)·랩어카운트 분쟁(wrap_account_disputes) zh·ja·vi 공개
