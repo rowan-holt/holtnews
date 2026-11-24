@@ -817,6 +817,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wst{font-size:14px;color:var(--gray);margin:6px 0 0;line-height:1.6}.wregd{margin:0 0 18px}.wregd h2{margin:0 0 6px}
 .wreg button{all:unset;cursor:pointer;padding:2px 0;border-bottom:2px solid transparent}
 .wreg button:hover{border-bottom-color:#c9c7c0}.wreg button.on{border-bottom-color:var(--ink);font-weight:700}
+@media (min-width:901px){.wtools{flex-wrap:nowrap}.wreg{display:block;flex:1 1 0;min-width:0;line-height:1.95;text-wrap:balance}.wreg button{display:inline-block;white-space:nowrap;margin-right:16px}.wtools .wsw{margin-left:12px}.wmap #wsvg{height:75vh;height:75dvh;max-height:880px}}   /* 1124 사용자: 지역 이름표는 두 줄을 비슷한 길이로, 수출·수입 단추는 그 옆 → 세 줄이 두 줄이 되고 남는 높이는 지도에 */
 .wq{margin-left:auto;position:relative;width:280px}   /* 1114 사용자: 검색창 세련되게 — 둥근 칸 + 돋보기, 결과는 이름과 그 위 지역 두 줄 */
 .wq .wqic{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--gray);pointer-events:none;transition:color .15s}
 .wq input{all:unset;display:block;box-sizing:border-box;width:100%;height:40px;padding:0 36px 0 38px;font:inherit;font-size:15px;color:var(--ink);background:var(--soft);border:1px solid transparent;border-radius:20px;transition:background .15s,border-color .15s,box-shadow .15s}
@@ -919,16 +920,23 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wkey i{display:inline-block;width:12px;height:12px;background:#e8d3b4;margin-right:5px;vertical-align:-1px}
 .wkey b{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--ink);margin-right:5px;vertical-align:1px}
 .wside{padding:22px 0 26px;max-width:880px;margin:0 auto;font-size:15.5px;line-height:1.65}
-/* 1124 사용자: 단추를 지도 위에 얹지 않음 — 지도 위·아래에 줄을 따로 두고 그 안에 놓음. 줄 안 위치는 글 칸(880px) 가장자리에 맞춤(넓은 화면에서 화면 끝에 붙어 멀었음) */
-.wmap{--wx:max(10px,calc(50% - 440px));padding:52px 0 58px}
+/* 1124 사용자: 단추를 지도 위에 얹지 않음(지도 위·아래 줄은 세로 공간이 줄어 취소). 넓은 화면은 지도 좌우에 옆 칸을 두고 그 안에, 휴대폰은 지도 위·아래 줄 안에 */
+@media (min-width:901px){
+.wmap{display:grid;grid-template-columns:100px minmax(0,1fr) 100px}.wmap #wsvg{grid-column:2;grid-row:1}
+.wview{left:35px;top:10px}
+.wzoom,.wmap .wcmp,.wmap .wsun{right:auto;left:33px}
+.walrt{right:8px;top:10px}.walb{white-space:normal;text-align:center;width:84px;padding:6px 8px;font-size:13px;border-radius:14px;box-sizing:border-box;line-height:1.25}
+.wkey{left:auto;right:8px;bottom:10px;width:84px}
+}
+@media (max-width:900px){
+.wmap{--wx:10px;padding:52px 0 76px}
 .wview{left:var(--wx);top:10px;grid-template-rows:none;grid-template-columns:1fr 1fr;width:62px;height:28px}
 .wview i{top:2px;bottom:2px;left:2px;right:auto;height:auto;width:calc(50% - 2px)}.wview.g i{transform:translateX(100%)}.wview button{height:24px}
 .walrt{right:var(--wx);top:10px}
 .wzoom{right:var(--wx);bottom:9px;flex-direction:row}.wzoom button+button{border-top:0;border-left:1px solid #ddd}
 .wmap .wcmp,.wmap .wsun,.wmap .wcmp:not([hidden])+.wsun{bottom:9px}.wmap .wcmp,.wmap .wsun{right:calc(var(--wx) + 112px)}.wmap .wcmp:not([hidden])+.wsun{right:calc(var(--wx) + 154px)}
 .wkey{left:var(--wx);bottom:9px}
-@media (min-width:901px){.wkey{flex-direction:row;align-items:center;gap:18px;bottom:17px}}
-@media (max-width:900px){.wmap{padding-bottom:76px}}
+}
 .wgrid:has(.wmap.trade) .wside:not(:has(.winfo)){display:none}   /* 1118 사용자: 무역 흐름을 켜면 아래 '세계' 설명은 숨기고 무역 표만(나라를 고르면 그 나라 칸은 보임) */
 .wside h2{font-size:24px;margin:0 0 4px;line-height:1.3}
 .wside .wone{margin:0 0 14px;color:var(--ink2)}
@@ -1001,7 +1009,7 @@ body.en .ah h1,body.en .ah h2{font-family:"Jost",sans-serif;font-weight:600;lett
 .wbox .wa{display:inline-block;margin-top:8px;font-size:14.5px;border-bottom:1px solid var(--ink)}
 .wbox:hover{background:var(--soft)}
 .tmk td:first-child{min-width:240px;max-width:380px;white-space:normal}.tmk td b{font-weight:600}.tmk .hs{color:var(--gray);font-size:12px}
-.tmk td.sup{white-space:normal;text-align:left;min-width:180px;font-size:14px;color:var(--ink2)}
+.tmk .sp{white-space:nowrap}.tmk td.sup{white-space:normal;text-align:left;min-width:180px;font-size:14px;color:var(--ink2)}
 .ttabs{display:flex;flex-wrap:wrap;gap:0;border-bottom:1px solid var(--line);margin:4px 0 18px;font-size:15px}
 .ttabs a{padding:9px 14px;border-bottom:3px solid transparent;margin-bottom:-1px}.ttabs a.on{border-bottom-color:var(--ink);font-weight:700}
 .ttabs a:hover{background:var(--soft)}
