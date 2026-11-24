@@ -1855,3 +1855,6 @@
 2026-11-24 10:44  feat(holt): HOLT ISSUE 시사상식 문제 — kospi_rout_stabilization
 2026-11-24 10:57  chore(insights): 1124 인사이트 기록
 2026-11-24 12:03  feat(holt): 12시 회차 코스피 매도→매수 사이드카 (J)
+2026-11-24 12:12  feat(holt): 사이트 뉴스 — 하청 사망 현황, 500인 이상 원청이 공시한다(안전보건 현황 공시)
+2026-11-24 12:12  chore(holt): osh_safety_disclosure 사실 확인·발행 기록
+2026-11-24 12:14  feat(holt): HOLT ISSUE 시사상식 문제 — osh_safety_disclosure
