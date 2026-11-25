@@ -1937,3 +1937,5 @@
 2026-11-25 23:01  feat(holt): 뉴스레터 언어별 발송(ko·en·zh·ja·vi) + Axios식 양식, 다섯 언어판 꼬리말 구독하기·확인 쪽·지난 호
 2026-11-26 04:43  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — california_tax_votes
 2026-11-26 05:23  content(holt): HOLT ENGLISH 쪽별 표현·퀴즈 6쪽 + 점검
+2026-11-26 05:50  chore(holt): 만들어진 기록 연표 자동 갱신 — 8개 추가
+2026-11-26 06:09  content(holt): 11/26 07:30 홈플러스 전 점포 휴업 [유형 C] 제작·예약
