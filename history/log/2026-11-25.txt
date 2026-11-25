@@ -2103,3 +2103,15 @@ Sources: [mangomarket.ai.kr](https://www.mangomarket.ai.kr), 웹 검색은 관�
 [22:11] AI: Build only first, then check the rendering.
 [22:13] AI: Restyle `.tbanner` to match the home card (white, black border, dark ship icon, bold title, gray subtitle, no arrow) and use the same subtitle.
 [22:15] AI: 두 가지 수정은 코드에 반영했어요. 지금 사이트를 다시 빌드하고 있고, 끝나면 실제 화면으로 확인할게요.
+[22:20] AI: CSS가 반영됐어요. 실제 화면을 렌더해서 확인할게요.
+[22:21] AI: Playwright가 없어서 내장 브라우저로 확인할게요.
+[22:21] AI: 두 줄 문제가 사라졌어요. 이제 로컬 서버를 끄고 커밋·푸시할게요.
+[22:21] AI: 두 가지 모두 고치고 올렸어요.
+
+1. **"지도에서 길 보기" 버튼**: 제목 글자 크기와 줄 간격이 버튼 안에 그대로 따라 들어와서 버튼이 두 줄 높이로 늘어났어요. 버튼 안 줄 간격을 따로 정해서 한 줄로 돌아왔고, 높이는 27px이에요. 같은 모양의 "교역국별 무역" 버튼도 같이 고쳐졌어요.
+2. **무역왕 링크**: 어두운 배경 카드를 2번 이미지처럼 흰 바탕에 검은 테두리, 어두운 배 아이콘, 굵은 제목, 회색 설명으로 바꿨어요. 오른쪽 화살표는 뺐고 설명 문구는 홈의 "실제 수출 단가와 운임으로 배를 굴려 돈 불리기"로 맞췄어요(영어판도 홈과 같게).
+
+무역 쪽 화면에서 확인했어요. 사이트를 다시 빌드하면서 holtnews 저장소의 다른 생성 파일 1184개도 같이 커밋됐어요. 앞서 있던 변경분이 섞인 거예요.
+[22:28] 사람: 그대로자나
+[22:29] AI: Class name collision: the history timeline's `.ctl` (padding + vertical line) is hitting the button text. Rename the button's spans to `.ctxl`.
+[22:29] AI: macOS sed failed; use python.
