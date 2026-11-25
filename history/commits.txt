@@ -1934,3 +1934,6 @@
 2026-11-25 22:21  fix(holt): 무역 쪽 지도 링크 두 줄 해결·무역왕 링크 홈 카드 모양
 2026-11-25 22:34  fix(holt): 무역 지도 링크 버튼 클래스 이름 충돌(.ctl) 해결
 2026-11-25 22:53  feat(holt): 무역 나라 쪽 제목 옆 지도 버튼·여백 축소·말풍선 우측 상단
+2026-11-25 23:01  feat(holt): 뉴스레터 언어별 발송(ko·en·zh·ja·vi) + Axios식 양식, 다섯 언어판 꼬리말 구독하기·확인 쪽·지난 호
+2026-11-26 04:43  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — california_tax_votes
+2026-11-26 05:23  content(holt): HOLT ENGLISH 쪽별 표현·퀴즈 6쪽 + 점검
