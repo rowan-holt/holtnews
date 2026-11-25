@@ -1,0 +1,606 @@
+# 홀트뉴스가 만들어진 기록 — 2026-11-20 대화 원문 (KST)
+
+=== 대화 Claude Code 세션 f53d32af ===
+[04:42] 예약 작업: [예약 작업 holt-news-vocab 실행 — 정해 둔 지시문으로 자동 시작]
+[04:43] AI: 대기열 1편(미세플라스틱 논문)의 표현 파일을 만들고 검사 중이에요. 한 표현을 고쳐 다시 검사할게요.
+[04:44] AI: 오늘 새벽 분은 끝났어요. 미세플라스틱 뇌 연구 1편에서 표현 4개를 가져갔고, 사이트 빌드·푸시와 커밋·push까지 했어요. 다만 이 표현들의 새 쪽은 아직 사이트에 안 보여요. 하루 6개까지만 공개되는데, 공개를 기다리는 쪽이 108개라서요.
+
+**처리한 기사:** 미세플라스틱 뇌 연구 (`microplastics_brain`, Nature Medicine 논문 원문에서)
+- highlight: 강조하다, 부각하다
+- poorly understood: 잘 알려지지 않은
+- be dismissed as: ~로 치부되다, ~로 넘겨지다
+- consistent with: ~와 일치하는, ~에 들어맞는
+
+'무슨 연구였나요' 칸에는 영어판 기사에서 4문장을 골라 넣었어요.
+
+**해석 채우기:** 해석이 없던 문장 11개에 해석을 달았어요. 조류독감 카드 3문장과 이번 연구 문장 8개예요. 다시 확인하니 남은 건 0개예요.
+
+**확인한 것:**
+- 검사는 ✓ 통과했어요.
+- 새 쪽이 아직 없어서 그 쪽의 기사 링크는 직접 열어 보지 못했어요. 대신 기존 쪽 하나(a-driver-of)에서 링크가 holtnews.com/en/news/... 주소인 것을 확인했어요.
+
+**남은 대기:** 32편이에요. 다음 새벽부터 하루 1편씩 처리돼요.
+
+=== 대화 Claude Code 세션 2bc8455f ===
+[05:16] 예약 작업: [예약 작업 holt-english-site-sync 실행 — 정해 둔 지시문으로 자동 시작]
+[05:17] AI: 새로 생긴 쪽 점검을 마쳤어요. 'behind'의 품사를 고쳤고, 이제 남은 5쪽에 쪽별 표현과 퀴즈를 채우고 있어요.
+[05:22] AI: HOLT ENGLISH는 푸시됐어요. HOLT NEWS 쪽은 사이트 안전 검사(site_guard)에 걸려 푸시가 멈췄고, 원인을 보고 있어요.
+[05:23] AI: Only the exchange-rate date (11-18→11-19) changed — our own config data, same site. Registering and pushing.
+
+=== 대화 Claude Code 세션 42eab71e ===
+[05:27] 예약 작업: [예약 작업 holt-history-timeline 실행 — 정해 둔 지시문으로 자동 시작]
+
+=== 대화 Claude Code 세션 2bc8455f ===
+[05:28] AI: HOLT NEWS 사이트를 다시 빌드한 뒤, 세계 지도가 실제 화면에서 제대로 열리는지 확인하는 중이에요.
+
+=== 대화 Claude Code 세션 42eab71e ===
+[05:29] AI: 연표 갱신 작업 중이에요. 지난 확인 뒤 새 대화에서 후보 두 개를 골랐고, 이제 기존 연표 양식을 읽어 맞춰 넣을게요.
+
+=== 대화 Claude Code 세션 2bc8455f ===
+[05:33] AI: 세계 지도 수정 뒤 빌드 결과 폴더를 확인하다 이상한 점이 보여서(일부 폴더가 안 보임) 상태를 살펴보고 있어요.
+[05:33] AI: 다른 작업(다른 세션)이 지금 HOLT NEWS를 빌드하며 폴더를 새로 쓰는 중이라 폴더가 잠깐 비어 보인 거예요. 그 작업이 끝날 때까지 기다릴게요.
+[05:33] AI: Meanwhile, I'll commit the ENGLISH-side files.
+[05:33] AI: Waiting for the other session's HOLT NEWS build to finish.
+[05:33] AI: 다른 세션의 HOLT NEWS 빌드가 끝나기를 기다리고 있어요. 끝나는 대로 세계 지도 수정을 확인하고 등록한 뒤 푸시할게요.
+
+=== 대화 Claude Code 세션 42eab71e ===
+[05:37] AI: 사이트 반영이 안전 검사(세계 지도 쪽 스크립트)에 걸려서, 원인을 보는 중이에요.
+[05:37] AI: 세계 지도 설정을 실행 스크립트에서 JSON 데이터 칸으로 옮긴 우리 쪽 변경이에요(더 안전한 방향). 검토 후 등록하고 다시 올릴게요.
+
+=== 대화 Claude Code 세션 2bc8455f ===
+[05:37] AI: Server start was declined, so I'll verify with code instead: the JSON parses and the JS syntax is valid.
+[05:37] AI: The other session started another HOLT NEWS build. Waiting again.
+[05:37] AI: HOLT NEWS 빌드를 다른 세션이 다시 돌리고 있어서, 끝나면 이어서 검증하고 푸시할게요.
+
+=== 대화 Claude Code 세션 42eab71e ===
+[05:42] AI: Pushed. Now commit and send the report.
+
+=== 대화 Claude Code 세션 2bc8455f ===
+[05:42] AI: Map config JSON and JS syntax are valid, the guard passes, and HOLT NEWS is already pushed with the new structure (0b812c7). Committing the fix files.
+
+=== 대화 Claude Code 세션 42eab71e ===
+[05:42] AI: 만들어진 기록 연표에 2개를 넣었어요. 이번에 읽은 대화는 11/19 05:22부터 11/20 05:23까지예요.
+
+1. **[사건] 11/19 07:01 「25달러, 바닥일까 천장일까」**
+   - 미국 최저임금 법안의 하원안과 상원안 원문을 나란히 놓고 보니, 25달러가 하원안에서는 상한이 붙어 지금 기준 16.34달러에서 멈추고 상원안에서는 내려가지 않는 바닥이었어요.
+   - 확인한 다른 보도에는 이 차이가 없었어요.
+   - AI가 연차를 한 해씩 앞당겨 센 실수는 검토 단계에서 바로잡았어요.
+   - 그때 오간 대화도 같이 넣었어요.
+2. **[결정] 11/19 16:34 「사람이 고른 수능 표지」**
+   - 표지 속 재난문자는 상징 이미지로만 쓰고, 뉴스의 초점은 "수능이 끝났다"로 잡으라는 지시예요.
+   - 콘텐츠는 18시 정각에 나갔어요.
+
+- **영어판:** 두 항목 모두 넣었고, 영어판에서 빠진 항목은 없어요.
+- **사이트:** 처음 반영할 때 세계 지도 쪽 스크립트가 사이트 안전 검사에 걸려 멈췄어요. 지도 설정을 실행 스크립트에서 데이터 칸으로 옮긴 우리 쪽 변경이라 검토한 뒤 등록하고 다시 올렸어요.
+- **마무리:** holtnews.com 반영, 커밋 6bb057f와 푸시, 텔레그램 보고까지 했어요.
+
+넣지 않음: 자동 회차들(아침 뉴스, 무역 기사, 22시 콘글리시, 메일함 확인 등)은 정상 진행이라 넣지 않았어요. 큰 오류나 사고는 없었어요.
+
+=== 대화 Claude Code 세션 2bc8455f ===
+[05:42] AI: HOLT ENGLISH와 HOLT NEWS 모두 새로 빌드해서 푸시했어요. 다만 고친 세계 지도는 브라우저 화면으로는 못 봤어요(로컬 서버 실행이 거절됨).
+
+- **HOLT ENGLISH:** 쪽 537개, 빌드된 쪽은 541개예요. 하루 새 쪽 한도 6개라 108개는 다음 날부터 차례로 공개돼요.
+  - **품사:** 'behind'(~을 만든)를 형용사에서 전치사로 고쳤어요. 예문 없는 쪽은 없었어요.
+  - **쪽별 표현·퀴즈:** 남은 5쪽을 채웠어요(start trading, show up, take an exam, get a foot in the door, bird flu). 이제 남은 쪽은 0개예요. 검수 경고(⚠)는 나오지 않았어요.
+- **HOLT NEWS:** 글 56편, 12개 기사 × 2개 언어로 빌드해서 푸시했어요.
+- **커밋:** 두 개 모두 GitHub에 푸시했어요.
+  - 0cda1e5: 쪽별 표현·퀴즈와 품사 수정
+  - afcffd8: 아래 세계 지도 수정
+
+**세계 지도에서 푸시가 멈췄던 문제**
+- **원인:** 지도 설정 안에 있는 환율 날짜가 매일 바뀌어요. 그때마다 사이트 안전 검사가 "등록 안 된 스크립트"로 보고 푸시를 막았어요. 바뀐 건 날짜뿐(11-18 → 11-19)인 걸 확인한 뒤 등록하고 오늘 푸시를 마쳤어요.
+- **근본 수정:** 지도 설정을 실행되지 않는 JSON 데이터 칸으로 옮겼어요. 안전 검사는 이런 칸을 JSON으로 읽히는지만 봐요. 내일부터는 날짜가 바뀌어도 막히지 않아요.
+- **확인한 것:** 한국어판과 영어판 지도 설정이 JSON으로 읽히고, 지도 스크립트 문법도 통과했어요. 안전 검사도 통과했어요.
+- **다른 세션과 겹침:** 작업 중에 다른 세션이 HOLT NEWS를 두 번 빌드하고 있어서, 끝날 때까지 기다렸다가 이어서 진행했어요. 바뀐 지도 구조가 들어간 최종 빌드는 그 세션이 푸시했어요(0b812c7).
+
+참고로 영어판 세계 지도에 빠진 여행경보 글이 1건 있다는 경고가 떴어요. 오늘 작업 범위 밖이라 그대로 뒀어요.
+
+=== 대화 Claude Code 세션 4045a972 ===
+[06:04] 예약 작업: [예약 작업 holt-morning-auto 실행 — 정해 둔 지시문으로 자동 시작]
+[06:05] AI: Dropped 상태라 대체 포맷으로 진행합니다.
+[06:05] AI: 주제 후보를 훑는 중입니다(아침뉴스는 접힌 상태라 07:30 자리를 단일 주제 J로 채웁니다).
+[06:06] AI: 주제는 '미얀마 로힝야 제노사이드 ICJ 첫 유죄 판결'로 정했고, 표지 사진(퍼블릭 도메인 VOA 난민촌 사진)을 고르는 중입니다.
+[06:07] AI: 표지 제목이 길다는 경고가 나와 줄을 줄여 다시 렌더합니다.
+[06:08] AI: 제작 끝났고 검수도 마쳤습니다. 07:30까지 기다리는 동안 스레드 단계 규칙을 확인합니다.
+[06:08] AI: 07:30 업로드 대기 중입니다(제작·검수는 끝났습니다).
+[06:08] AI: 07:30 업로드 대기는 백그라운드에서 돌고 있고, 끝나면 이어서 올리겠습니다.
+[07:36] AI: 오늘 07:30 회차를 올렸습니다. 아침 뉴스는 접힌(dropped) 상태라, 그 자리에 뉴스 하나를 다룬 단일 주제(유형 J)를 냈습니다.
+
+- **판단:** 07:30에 예약된 주제(planned_topics)도 후속 대기도 없었고, 다음 유형은 J였습니다. 지금 단계는 2차 목표(조회수 500회, 팔로워 200명, 11/30까지)이고 팔로워는 56명입니다.
+- **주제:** 미얀마, 로힝야 학살 유죄 판결. 국제 법원이 나라에 제노사이드 책임을 물은 건 처음입니다. 재판관 9 대 6으로 나왔고, 배상과 난민 귀환 명령이 함께 나왔습니다. 사상자가 있는 사건이라 차분하게 썼습니다.
+- **오늘의 표현:** be found guilty (유죄 판결을 받다)
+- **교차확인:** [BBC](https://www.bbc.co.uk/news/articles/c804wzp20ddvo), [DW](https://www.dw.com/en/[가림:긴문자열]/a-79987898)
+- **표지 사진:** VOA가 찍은 쿠투팔롱 난민촌 사진(퍼블릭 도메인, 2017년 자료 사진)을 썼습니다. 캡션에 촬영 시기를 적었습니다.
+
+**올린 링크**
+- 인스타 릴스: https://www.instagram.com/reel/Df8KK3xB3ZH/ (캐러셀은 1시간 뒤 자동 게시)
+- 페이스북 릴스: https://www.facebook.com/reel/[가림:숫자]
+- 스레드: https://www.threads.com/@[가림]/post/Df8Kdf3E_S4 (규칙대로 다른 뉴스인 세르비아 학생 국회 이야기)
+- 인스타 스토리: https://www.instagram.com/stories/rowanholt_official/[가림:숫자]
+- 유튜브 쇼츠: https://youtube.com/shorts/6Zrpxfm63_M (비공개로 올렸고, 표지가 확인되면 yt-release가 공개)
+
+**참고**
+- 캐러셀 첫 장은 4:5로 잘리면서 아래쪽 아이 얼굴이 조금 잘렸습니다. 릴스 표지에는 아이가 온전히 보입니다.
+- 유튜브 제목은 `insights.py channels`를 돌리지 않고 직접 질문형으로 썼습니다.
+- 커밋 887aa07은 푸시까지 마쳤습니다.
+
+=== 대화 Claude Code 세션 d83313c4 ===
+[07:40] 예약 작업: [예약 작업 holt-lang-rollout-v2 실행 — 정해 둔 지시문으로 자동 시작]
+[07:40] AI: 지난 회차들이 원고 2편(zh 한중 FTA, ja 일본 50년 주택대출)만 쓰고 검증·공개를 못 한 상태라, 그것부터 확인·공개합니다.
+[07:40] AI: 숫자 전부 원문·재계산과 일치. 빌드합니다.
+[07:45] AI: 모든 검사 0건. 국기 이동과 일본어 계산기 기본값을 확인합니다.
+[07:45] AI: Calculator 112,914円 matches. Looking at screenshots.
+[07:45] AI: 화면 정상. 공개합니다.
+[07:51] AI: 공개 확인. 이제 2단계를 닫고 3단계(앞으로 새 기사도 zh·ja·vi 같이 쓰기)를 발행 지침에 넣습니다.
+
+=== 대화 Claude Code 세션 0aad2055 ===
+[08:46] 예약 작업: [예약 작업 holt-site-publish 실행 — 정해 둔 지시문으로 자동 시작]
+[08:46] AI: 09시 국내 경제 회차로 판정해 후보를 훑는 중입니다(금융위 새 자료: 실손24 미청구 보험금 일괄 청구).
+[08:47] AI: 실손보험 계약전환 할인(11/23 시행) 자료 PDF를 읽는 중입니다.
+[08:48] AI: 주제는 '1·2세대 실손 5세대 전환 할인(11/23 시행)'으로 정했고, 기자(서진) 항목과 최근 기사 형식을 확인합니다.
+[08:49] AI: 표지 사진 후보(서울대병원 로비, CC BY-SA 3.0)를 확인하고 본문 그림을 만듭니다.
+[08:50] AI: 그림(월 보험료 경로 계단 그래프)을 그립니다.
+[08:51] AI: 기사 원고를 씁니다.
+[08:53] AI: Fact-check passed; now three separate reviewers (desk, English desk, value/figure) check the piece in parallel.
+[08:54] AI: Three reviewers (desk, English desk, value/figure) are checking the article; I'll apply their fixes when they're done.
+[08:57] AI: 세 검토 의견을 모두 반영했고, 같은 검토자들에게 재검토를 맡깁니다.
+[08:58] AI: The second review round is running. I'll wait for all three results.
+[08:58] AI: Every review stage passed. Recording the editor-in-chief step, then building.
+[09:00] AI: The build is still running; I'll continue when it finishes.
+[09:03] AI: While pushing, I'll draft the HOLT ISSUE notes and questions.
+[09:05] AI: Waiting on the push and the issue check.
+[09:09] AI: The page isn't live yet (deploy delay). Meanwhile I'll have a separate reviewer check the issue.
+[09:09] AI: Waiting for the site deploy and the issue review.
+[09:10] AI: Committing the article files while the ISSUE deploys.
+[09:10] AI: 이번 회차는 09시 국내 경제 회차(생활 금융)이고, 기사와 HOLT ISSUE까지 올렸습니다.
+
+- **제목:** 5세대로 갈아타면 3년 반값, 그 뒤엔?
+- **주소:** https://holtnews.com/news/silson_5gen_switch.html (영어판 /en/news/silson_5gen_switch.html)
+- **내용:** 11월 23일부터 2013년 3월 이전 실손 가입자가 5세대로 갈아타면 3년 동안 보험료를 반만 냅니다. 이 할인이 끝난 4년째부터의 보험료와 5년 누적 차이(약 880만 원)를 계산했습니다. 기존 실손을 지키는 데 해마다 더 내는 돈(186만 원, 4년째부터 160만 원)을 판단 기준으로 쓰고, 보험사가 반값을 내주는 근거를 금융위 Q&A로 정리했습니다. 계산 도구도 붙였습니다.
+- **검수:** 사실 확인, 데스크, 영문판 데스크, 보탬·그림 검토 모두 1차는 보류였고, 고친 뒤 통과했습니다. 발행 뒤 실제 쪽에서 제목, 본문 숫자, 대표 그림, 자료 주소, 목록 노출을 확인했습니다.
+- **HOLT ISSUE:** 같은 회차에 3문제로 냈습니다. 분리 검토의 지적은 검토자가 제안한 문구대로 고쳤고, 고친 뒤 다시 검토받지는 않았습니다.
+
+**후보 점수 (기준점 18)**
+
+| 후보 | 점수 | 결과 |
+|---|---|---|
+| 실손 5세대 전환 할인 | 24 | 선정 |
+| 자동차 고의사고 할증 환급 | 20 | 이월 |
+| 나스닥 23시간 거래 | 19 | 이월 |
+| 전기·가스 요금 미수금 | 19 | 이월 |
+| 금융권 IT자산 관리 의무화 | 19 | 이월 |
+| 주식 기본공제 누락 환급 | 19 | 이월 |
+| 회사채 수요예측 계열사 금지 | 18 | 이월 |
+
+관문에서 떨어진 주제는 7개입니다. 이월 후보 정리(prune) 결과, 뉴스 후보 6개는 모두 남았고 버린 것은 없습니다.
+
+**미리 알아 둘 점**
+- **그림 표지:** 보험 계약이라 맞는 실사가 없어 직접 그린 보험료 그래프를 표지로 썼습니다. 직전 K-푸드 기사도 그림 표지라, 목록에서 그림 표지가 두 편 이어집니다.
+- **분량:** 본문이 공백 빼고 약 2,500자로, 기준인 1,500자 안팎보다 깁니다. 데스크는 빠뜨리면 안 되는 조건이 대부분이라 보류 사유는 아니라고 봤습니다.
+- **원자료로 확인 못 해 뺀 것:** 예별손보 시행일이 다르다는 보도, 5세대 자기부담률 50%와 한도. 두 내용 모두 금융위 원자료에서 확인되지 않았습니다.
+
+=== 대화 Claude Code 세션 951c9ba7 ===
+[10:14] 예약 작업: [예약 작업 holt-error-reports 실행 — 정해 둔 지시문으로 자동 시작]
+[10:15] AI: 오류 제보는 새로 없고, 받은편지함 새 메일 3건을 확인했습니다. 지금 크롬으로 스팸함을 보고 있습니다.
+[10:15] AI: 이번 실행에서는 새 오류 제보가 없었습니다. 그래서 고친 기사도 없고, 오류 기록 파일도 그대로입니다.
+
+**메일함: 챙길 것 없음.** 새로 온 메일 3건을 확인했습니다.
+- **서치콘솔, 소유자 추가 알림:** 사용자 본인 개인 계정이 holtnews.com 소유자로 추가됐다는 안내입니다. 우리가 한 일이라 보안 문제는 아닙니다.
+- **서치콘솔, 색인 문제 확인 시작:** '발견됨 - 현재 색인이 생성되지 않음'으로 걸린 8쪽을 구글이 다시 확인하기 시작했다는 안내입니다. 결과 메일이 오면 그때 어느 쪽인지 보겠습니다.
+- **Zenn 소식지:** 일본 개발자 행사 홍보입니다.
+
+**정리: 휴지통 0건, 스팸 0건.** 지금 연결된 Gmail 도구로는 읽기만 되고 휴지통·스팸으로 옮길 수가 없습니다. 그래서 Zenn 소식지는 휴지통 대상이지만 받은편지함에 그대로 두었습니다. 읽은 메일 3건은 다음에 다시 보지 않도록 기록해 두었습니다.
+
+**스팸함: 꺼낸 것 0건.** 크롬으로 열어 보니 6건이었고, 모두 진짜 스팸이거나 홍보 메일이었습니다(사기 메일, 검색 등록 대행 권유, Qiita 행사 안내). 그대로 두었고 연 탭은 닫았습니다.
+
+**텔레그램: 보낼 것 없음.**
+
+=== 대화 Claude Code 세션 8a75be00 ===
+[10:41] 예약 작업: [예약 작업 holt-issue-daily 실행 — 정해 둔 지시문으로 자동 시작]
+[10:41] AI: 새 기사가 없어서 오늘 오전 작업은 할 일이 없었어요. 대기열이 0편이라 이슈와 문제는 만들지 않았고, 배포와 커밋도 하지 않았어요.
+
+=== 대화 Claude Code 세션 cd0a071f ===
+[10:53] 사람: 지메일로 뉴스레터가 여러개 들어올거야. 매일, 매주, 매달 각자 다른 주기로 들어올건데. 앞으로 지메일을 주기적으로 체크해줘. 방금 전에 수동으로 몇개 신청해서 아직 다 들어오진 않음. 필요없는건 구독취소하고 다 본건 휴지통으로 이동시켜줘. 
+
+뉴스레터는 우리 콘텐츠(사이트,SNS)만드는데 참고하면 좋게따. 그리고 아래 페이지에서 우리 필요한 뉴스레터 신청해봐. 또 다른 필요한 좋은 곳 있으면 뉴스레터 신청해줘
+
+https://www.axios.com/newsletters
+[10:54] AI: GS Briefings 확인 완료. JP모건 두 개 이어서 확인합니다.
+[10:54] AI: JP모건 In Context는 확인 페이지에서 이메일 한 번 더 입력이 필요해서 다시 열어 입력합니다.
+[10:55] AI: Now The Month In. I'll navigate this tab to Gmail rather than closing it (closing broke the group last time).
+[10:55] AI: The Month In 확인 양식에 이메일 넣고 확인 누르는 중입니다.
+[10:55] AI: Confirmed ("Subscribed"). Now the Axios page.
+[10:55] AI: Business Suite(Markets·Macro·Closer)는 이미 구독돼 있어요. 우리 분야(경제·금융, AI, 국제 경제)에 맞춰 AI+, Pro Rata(투자·M&A), Future of Energy를 추가합니다.
+[10:56] AI: Axios는 로그인이 필요해서, 앞서 직접 만드신 구글 로그인 계정으로 들어갑니다.
+[10:57] AI: Free plan ("없음 / 무료") 선택합니다.
+[10:57] AI: Apricitas 완료. 다음 Semafor Business.
+[10:57] AI: "2 briefings selected" (Business, China). 이메일 넣고 Sign Up.
+[10:57] AI: Semafor 완료(프로필 칸은 비워 둠). KDI 경제정보센터 확인합니다.
+[10:58] AI: Guessed URL was wrong; going via the homepage.
+[10:58] AI: KDI는 성명·출생연도까지 필수라 개인 정보를 제가 넣을 수 없어서 건너뜁니다. 탭 정리하고 메일 처리 규칙으로 넘어갈게요.
+[10:58] AI: Gmail 휴지통 도구가 이 세션엔 안 보여서, 열려 있는 확인 메일 두 개는 화면에서 바로 휴지통으로 보냅니다.
+[10:59] AI: Now the newsletter notes file and the scheduled-task rules.
+[10:59] AI: Now updating the mail-check task prompt (section 5 newsletter rules).
+[11:01] AI: Now unsubscribing the unrelated ones (Zenn, Indie Hackers digest).
+[11:01] AI: Zenn 수신 거부 완료. 휴지통으로 보내고 Indie Hackers도 같은 방식으로.
+
+=== 대화 Claude Code 세션 0b0dcd61 ===
+[11:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
+
+=== 대화 Claude Code 세션 cd0a071f ===
+[11:01] AI: Welcome 메일들은 오늘 20:13 메일함 확인 때 규칙대로 정리됩니다. 탭 닫고 기록·커밋합니다.
+
+=== 대화 Claude Code 세션 0b0dcd61 ===
+[11:02] AI: No planned item for 11-20 12:00. Reading the loop prompt.
+
+=== 대화 Claude Code 세션 cd0a071f ===
+[11:02] AI: 구독 신청과 메일함 확인 설정을 마쳤어요. 오늘 저녁 8시 13분 메일함 확인부터 새 규칙이 처음 적용돼요.
+
+**구독 확인 (직접 신청하신 것)**
+- 골드만삭스 Briefings, JP모건 In Context, JP모건 The Month In은 확인 메일 단추를 눌러 구독을 끝냈어요. 확인 메일은 휴지통으로 보냈어요.
+
+**Axios에서 새로 신청한 것** (Business Suite는 이미 구독돼 있었어요)
+- AI+: 평일마다 와요. 사이트 수요일 AI 회차에 참고해요.
+- Pro Rata: 평일마다 와요. 인수합병·투자 소식이라 산업 분야에 참고해요.
+- Future of Energy: 평일마다 와요. 유가와 전력 소식이에요.
+
+**다른 곳에서 새로 신청한 것**
+- Semafor Business(평일)와 Semafor China(매주): 세계 기업 소식과 한중 무역 소식이라 Korea Trade에 참고해요.
+- Apricitas Economics(매주): 거시 통계를 그래프로 풀어 주는 무료 뉴스레터예요.
+- KDI 뉴스레터는 이름과 출생연도를 꼭 적어야 해서 신청하지 않았어요. 받으시려면 KDI 소통 → 뉴스레터 페이지에서 직접 신청해 주세요.
+
+**구독 취소**
+- 신청하신 적 없는 일본 개발자 커뮤니티 Zenn과 Indie Hackers 소식 메일은 수신 거부하고 휴지통으로 보냈어요.
+
+**앞으로 메일함 확인 (매일 10:13·20:13)**
+- 받은 뉴스레터를 읽고 사이트나 SNS 주제가 될 만한 것만 [newsletter_notes.md](holt/newsletter_notes.md)에 한 줄씩 적어요. 다 읽은 뉴스레터는 휴지통으로 보내요.
+- 사이트 발행과 SNS 회차에서 주제를 고를 때 이 노트의 최근 3일 치도 함께 봐요. 뉴스레터는 실마리로만 쓰고, 글에 넣는 사실은 정부·기관 같은 원자료로 다시 확인해요.
+- 처음 보는 뉴스레터는 '지켜봄'으로 두고 3호쯤 받아 봐요. 쓸 게 거의 없거나 다른 것과 겹치거나 광고 위주면 수신 거부해요. 구독 목록과 상태는 [newsletters.md](holt/newsletters.md)에 있어요.
+- 뉴스레터는 텔레그램으로 알리지 않아요.
+
+지금 받은편지함에 있는 가입 환영 메일들은 저녁 메일함 확인 때 정리돼요. 목록과 노트 두 파일은 커밋하고 푸시까지 했어요.
+
+=== 대화 Claude Code 세션 0b0dcd61 ===
+[11:02] AI: 데이터 확인 완료: C 유형은 이번 주 2개를 다 써서, 이번엔 J(전체 화면 실사 뉴스)로 주제를 고르는 중입니다.
+[11:04] AI: 표지 사진 후보 3장을 받아 비교하는 중입니다.
+[11:05] AI: 표지가 잘 읽히고 폰 속 하락 그래프도 보입니다. 본문 카드와 영상 프레임을 확인합니다.
+[11:05] AI: 제작·검수 끝났고, 12:00 업로드 시각까지 기다립니다.
+[11:06] AI: 12:00 업로드 시각까지 백그라운드에서 대기 중입니다. 스레드 글(파키스탄 태양광 혼수, 영어 없이 반말)도 준비해 두었습니다.
+[11:06] AI: Waiting for the 12:00 timer to finish.
+
+=== 대화 Claude Code 세션 58f07687 ===
+[11:46] 예약 작업: [예약 작업 holt-site-publish 실행 — 정해 둔 지시문으로 자동 시작]
+[11:46] AI: 이번은 금요일 12시 Journal 회차예요. 지침을 읽고 후보를 고르는 중이에요.
+[11:48] AI: 대상포진 백신과 치매 연구(웨일스 자연 실험)를 Journal 주제로 정하고 원문 숫자를 확인하는 중이에요.
+[11:50] AI: 주제 점수를 기록하기 전에 기존 Journal 파일 형식을 확인하고 있어요.
+[11:52] AI: 본문을 다 썼고, 표지 그림(달력)과 본문 그림(연구별 효과 점·구간)을 만드는 중이에요.
+[11:53] AI: 그림 두 장을 그려서 확인하는 중이에요.
+[11:54] AI: 그림을 다듬었고, 이제 데스크·영문판 데스크·보탬 검토를 서로 분리된 서브에이전트 셋에게 동시에 맡겨요.
+[11:55] AI: 세 검토를 기다리는 동안 기록·후보 정리와 HOLT ISSUE 절차를 읽어 둘게요.
+[11:56] AI: 검토 결과를 기다리는 중이에요. 이슈 문제 초안은 미리 써 두었어요.
+[11:56] AI: 세 검토(데스크·영문판 데스크·보탬 검토)가 아직 돌고 있어요. 결과가 오면 고칠 곳을 반영한 뒤 빌드·푸시하고, HOLT ISSUE 문제도 이어서 낼게요.
+[11:57] AI: 보탬·그림 검토의 지적(잉글랜드 결과 표현, 같은 문단 기준 섞임, 부제)을 한국어판에 반영했어요. 나머지 두 검토를 기다려요.
+[12:00] AI: 고친 원고를 분리된 검토자에게 다시 한 번 확인받을게요.
+[12:00] AI: 재검토 결과를 기다려요.
+[12:01] AI: Apply the last two sentence fixes, record reviews, then build.
+[12:03] AI: 사이트 빌드가 오래 걸려 백그라운드에서 끝나길 기다리는 중이에요.
+
+=== 대화 Claude Code 세션 0b0dcd61 ===
+[12:04] AI: 11/20 12:00 회차를 12:00:02에 올렸습니다. 인스타 릴스, 페이스북, 스레드, 인스타 스토리, 유튜브 쇼츠 모두 오류 없이 올라갔습니다.
+
+**주제:** 앤트로픽이 역대 최대 규모로 상장한 다음 날, 코스피가 5,000선 아래로 내려간 소식입니다(유형 J, 한국).
+- 표지 문구는 "AI 대박 상장 다음 날 / 코스피 5,000 깨졌다"입니다. 사진은 휴대폰 주식 앱에서 그래프가 떨어지는 장면을 가리키는 손입니다(Pixabay 자료 사진).
+- 뉴욕 다우지수는 1,101포인트(2.2%) 빠졌고, S&P500은 6일 연속 내렸습니다. 코스피는 장 초반 4%대 떨어졌고, 삼성전자는 5%대, SK하이닉스는 6%대 내렸습니다. 연결 소식으로 금융감독원 자료를 넣었습니다. 외국인이 10월 한 달에 한국 주식 약 26조 원어치를 팔았고, 두 달째 파는 중입니다.
+- 코스피는 장이 열려 있을 때 만든 거라 오전 장중 기준이라고 캡션 ※ 줄에 적었습니다. 투자 권유가 아니라는 줄도 넣었습니다.
+- 오늘의 표현은 **a sea of red**(온통 하락)입니다. 미국 화면은 빨강이 하락이라 한국과 반대여서 헷갈리기 쉬운 표현입니다.
+
+**이 포맷을 고른 이유:**
+- 집계 스크립트가 고른 다음 유형은 C였지만, 이번 주 C를 이미 2개(11/17, 11/19) 써서 주 2개 상한에 걸렸습니다.
+- 지난 3일 동안 콘텐츠 회차에 거시경제 주제가 없었고, 이번 하락은 '크게 보도될 폭락' 예외에 해당합니다.
+- 직전 두 회차가 프랑스·미얀마라서 한국 소식이어도 같은 나라 3연속이 아닙니다.
+
+**교차확인 출처:**
+- 미국 증시: [AP(NBC Philadelphia)](https://www.nbcphiladelphia.com/news/national-international/[가림:긴문자열]/4500192/), [Motley Fool](https://www.fool.com/coverage/stock-market-today/2026/11/19/[가림:긴문자열]/)
+- 코스피: [아주경제](https://www.ajunews.com/view/[가림:숫자]), [Businesskorea](https://www.businesskorea.co.kr/news/articleView.html?idxno=281778)
+- 종목 하락률: [파이낸셜뉴스](https://www.fnnews.com/news/[가림:숫자])
+- 외국인 순매도: [서울경제](https://m.sedaily.com/article/20116513)
+
+**올린 링크:**
+- 인스타 릴스: https://www.instagram.com/reel/Df8o9a_s-Fy/ (캐러셀은 13:00에 자동 게시)
+- 페이스북: https://www.facebook.com/reel/[가림:숫자]
+- 스레드: https://www.threads.com/@[가림]/post/Df8pLM5ny1w (인스타와 다른 주제인 파키스탄 태양광 혼수 이야기)
+- 인스타 스토리: https://www.instagram.com/stories/rowanholt_official/[가림:숫자]
+- 유튜브: https://youtube.com/shorts/gYVwF8pCZ2k (지금은 비공개, 표지가 확인되면 자동 공개)
+
+**현황과 판단:**
+- 지금은 2차 목표 단계로, 게시물당 500회·팔로워 200명을 11/30까지 채우는 게 목표이고 팔로워는 56명입니다.
+- 이번 회차에 단계 승급, 몰아주기, 쉼, 새 유형 판정은 나오지 않았습니다.
+- 유형 점수는 C 1.19, J 1.15로 둘 다 '늘림'입니다. D(내 일이면?)만 0.72로 '줄임'입니다.
+
+**오류와 기타:**
+- 업로드 오류는 없었고, 직전 캐러셀 기록(carousel.log)도 정상이었습니다.
+- 커밋 `41ac135`을 푸시했습니다. 스레드 본문 파일(threads_en.txt)은 git이 받지 않아 커밋에서 빠졌습니다.
+- 뉴스레터 단서 노트에는 쓸 만한 항목이 없었습니다.
+
+=== 대화 Claude Code 세션 58f07687 ===
+[12:06] AI: Meanwhile, the ISSUE file's separate review:
+[12:06] AI: 사이트 푸시와 이슈 문제 검토가 함께 돌고 있어요.
+[12:07] AI: 이슈 문제 수정을 마쳤고, 사이트 푸시가 끝나길 기다려요.
+[12:13] AI: 이번은 금요일 12시 The HOLT Journal 회차였고, 대상포진 백신과 치매 연구를 다룬 글 한 편을 올렸어요.
+
+- **올린 글:** 「대상포진 주사가 치매도 막아 줄까?」
+  - 한국어판: https://holtnews.com/journal/shingles_dementia.html
+  - 영어판: https://holtnews.com/en/journal/shingles_dementia.html (영어 제목 "Does the shingles vaccine lower dementia risk? The evidence is split")
+- **내용:** 생일 하루 차이로 접종 자격이 갈린 웨일스 자연 실험(Nature 2025)이 중심이에요. 같은 연구진의 호주 결과(JAMA 2025)와 치매 진행 결과(Cell 2025)를 함께 실었어요. 2026년 7월 잉글랜드 병원 기록을 같은 방법으로 분석한 결과에서는 차이가 보이지 않았는데, 이 분석은 아직 심사 전이에요. 국내 기사 중 이 잉글랜드 결과를 다룬 곳은 찾지 못했어요.
+- **주제 선정:** 이월 후보까지 다시 점수를 매겼어요. 이 주제가 24점에 시의성 가점 2점을 더해 26점으로 1위였어요. 하이브리드 재택근무 연구를 새 후보로 넣어 남은 Journal 후보는 4개예요.
+- **검수:** 데스크·영문판 데스크·보탬 검토가 처음엔 모두 보류였어요. 주된 지적은 웨일스 연구가 쓴 기록 범위를 잘못 적은 것, 잉글랜드 분석을 '다른 팀'이라고 쓴 것(실제로는 웨일스 저자 두 명이 함께함), 접종 대상이 된 효과와 실제로 맞은 효과를 섞어 쓴 것이었어요. 고친 뒤 재검토를 통과했어요. 사실 확인과 발행 후 실제 쪽 확인(제목·숫자·그림·홈 노출)도 통과했어요.
+- **HOLT ISSUE:** 같은 회차에 문제 3개를 냈어요. 분리된 검토에서 고칠 곳을 반영한 뒤 통과했어요.
+- **시간:** 회차를 시작하고 50분 안에 발행한다는 기준은 재검토를 한 번 더 거치느라 조금 넘겼어요.
+
+글 파일은 [journals/shingles_dementia.py](holt/journals/shingles_dementia.py)이고, 커밋하고 푸시했어요.
+
+=== 대화 Claude Code 세션 ad4a1530 ===
+[12:40] 예약 작업: [예약 작업 holt-lang-rollout-v2 실행 — 정해 둔 지시문으로 자동 시작]
+[12:40] AI: 두 편(중국어 한중 FTA, 일본어 50년 주담대) 원고가 이미 사이트에 나가 있지만 검증·기록이 안 돼 있어, 지금 그 둘을 원문과 대조하는 중입니다.
+[12:40] AI: 중국어판은 숫자·내용이 원문과 맞습니다. 이제 일본어판 대조.
+[12:41] AI: 일본어판 엔화 계산도 전부 맞습니다. 다음으로 11/19 새로 나온 무역 기사(K-라면·일본행 김)를 세 언어로 낼지 확인합니다.
+[12:42] AI: Mistake: that last URL hack is silly — fix to a plain string.
+[12:47] AI: 다른 작업이 `news_build.py --push`로 사이트를 다시 쓰는 중이라(폴더를 비우고 새로 쓰는 단계), 끝날 때까지 기다립니다.
+[12:51] AI: 다른 빌드가 끝나면서 새 번역 2편도 같이 공개됐습니다. 바로 검증합니다.
+[12:52] AI: Flags work (ko·en·ja links same article). The ja flag stores `holt-lang=en` — let me check that's intended.
+[12:52] AI: 의도된 동작(첫 화면 자동 언어용)입니다. 스크린샷과 본문 영어 문장 남음을 확인합니다.
+[12:52] AI: 화면 정상입니다. 2·3단계를 닫고, holt-site-publish 예약 작업에 '새 기사는 zh·ja·vi도 같이' 단계를 넣습니다.
+
+=== 대화 Claude Code 세션 a712721f ===
+[14:23] 예약 작업: [예약 작업 holt-world-enrich 실행 — 정해 둔 지시문으로 자동 시작]
+[14:24] AI: Uzbekistan and Mozambique facts confirmed; now checking Malaysia, Peru and the Korea links for each.
+[14:27] AI: Fact-checking's done. Writing the Korean and English entries for all four countries now.
+[14:30] AI: 오늘은 우즈베키스탄, 말레이시아, 모잠비크, 페루 4곳의 상세 해설과 경제 칸을 한국어와 영어로 모두 썼고, 커밋·푸시까지 마쳤어요(fef930e). `world_en_check.py`에서 빠진 영어 칸은 없었어요. 사이트 빌드는 정기 발행 작업이 해요.
+
+- **우즈베키스탄:** 2016년 이후 개방 개혁과 2023년 개헌으로 대통령 임기가 7년으로 늘어난 일을 썼어요. 국경을 두 번 넘어야 바다에 닿는 나라라 철도와 물 문제가 중요하다는 점도 넣었어요. 한국과는 고려인 17만 명, 대우 아사카 공장, 수르길 가스화학 단지가 접점이에요.
+- **말레이시아:** 아홉 개 주 통치자가 돌아가며 국왕을 뽑는 체제, 2018년 첫 정권 교체, 2022년 통합 정부를 다뤘어요. 말라카 해협, 세계 반도체 후공정의 약 13%, 팜유도 넣었어요. 한국과는 동방 정책, 현대건설의 페낭 대교, 2025년 10월 자유무역협정 타결 선언이 있어요.
+- **모잠비크:** 1975년부터 이어진 프렐리모 집권, 2024년 부정 선거 논란과 시위, 2016년 숨겨진 빚 사건을 썼어요. 카보델가두 무장 세력 때문에 멈췄던 육상 가스 공사가 2026년 1월 다시 시작된 일도 넣었어요. 한국과는 한국가스공사 지분과 삼성중공업이 지은 바다 위 가스 설비 '코랄 술'·'코랄 노르트'가 접점이에요.
+- **페루:** 의회가 대통령을 쉽게 물러나게 할 수 있어 정치가 불안하다는 점, 2026년 양원제 복귀, 5만 표도 안 되는 차이로 갈린 결선 투표를 썼어요. 구리와 중국이 대주주인 찬카이 항구도 다뤘어요. 한국과는 2011년 자유무역협정, KT-1 훈련기 공동 생산, 2025년 12월 K2 전차 총괄 합의가 있어요.
+
+**같이 고친 것**
+- 모잠비크 지도 칸의 짧은 경제 글이 낡아서 한국어판과 영어판 모두 고쳤어요. 가스 공사가 다시 시작됐고, 알루미늄 제련소가 2026년 3월 가동을 멈춘 내용이에요.
+- 태국 여행경보에 새 지역 문구 '치앙센, 매싸이 국경검문소'가 생겨서 영어 번역을 넣었어요.
+
+상세 해설이 필요한 나라는 154곳에서 **150곳**으로 줄었어요. 아직 남아 있으니 이 예약 작업은 계속 켜 두면 돼요.
+
+=== 대화 Claude Code 세션 0bda887b ===
+[14:46] 예약 작업: [예약 작업 holt-site-publish 실행 — 정해 둔 지시문으로 자동 시작]
+[14:46] AI: 14시 40분 회차는 무역 통계 발표일에만 돌아가는데, 오늘(11월 20일)은 발표일이 아닙니다. 그래서 글을 쓰지 않고 끝냈고, HOLT ISSUE도 내지 않았습니다.
+
+다음 발표일은 11월 23일(월)입니다. 1~20일치 수출입 잠정치가 그날 나옵니다.
+
+=== 대화 Claude Code 세션 48186fd4 ===
+[14:48] 예약 작업: [예약 작업 holt-ph-comments 실행 — 정해 둔 지시문으로 자동 시작]
+[14:48] AI: Now check sites. Start with Product Hunt and Ruliweb in the built-in browser.
+[14:48] AI: PH: 댓글 없음. 루리웹으로.
+[14:48] AI: 루리웹: 새 댓글 없음. 크롬으로 뽐뿌·디스콰이엇·velog 확인.
+[14:49] AI: Ppomppu: 댓글 0(로그아웃 상태). 디스콰이엇·velog 확인.
+[14:49] AI: Disquiet: 이미 답한 것 외 새 댓글 없음. velog.
+[14:49] AI: All new comments: none. Close tab, update log.
+[14:49] AI: 다섯 곳 모두 새 댓글이 없어서 답글은 달지 않았고, 텔레그램 알림도 보내지 않았어요.
+- **Product Hunt**와 **velog**는 아직 댓글이 하나도 없어요.
+- **루리웹**과 **디스콰이엇**에는 전에 답한 댓글만 있어요.
+- **뽐뿌**도 댓글이 없어요. 다만 크롬에서 아직 로그아웃 상태라서, 댓글이 달리면 답글을 달기 전에 다시 로그인하셔야 해요.
+
+오류 제보도 없었어요. `comment_log.json`에는 확인한 시각(11/20 14:49)만 새로 적었어요.
+
+=== 대화 Claude Code 세션 0bef4676 ===
+[15:08] 예약 작업: [예약 작업 holt-site-audit 실행 — 정해 둔 지시문으로 자동 시작]
+[15:09] AI: Now launching 4 verification subagents in parallel.
+[15:09] AI: 네 개의 검증 서브에이전트가 돌아가는 중입니다. 결과가 오면 '고칠 것'을 원자료로 직접 재확인하겠습니다.
+[15:14] AI: FAA 기사 영어 문장에 따옴표 이스케이프가 빠져 문법 오류가 났습니다. 고치고 이어서 진행합니다.
+[15:15] AI: 뉴스 6편은 고치고 기록까지 마쳤습니다. 연구 3편과 ECON·LABOR·세무사 글 검증 결과를 기다리는 중입니다.
+[15:16] AI: 연구 3편은 고쳤습니다. 지금은 세무사 기사에 반영할 후속 사실(처분 절차 시작, 수사 진행)을 원자료로 다시 확인하고 있습니다.
+[15:17] AI: 12편 검증과 수정을 마쳤습니다. 이제 사이트를 빌드해서 배포합니다.
+[15:27] AI: 🔎 정기 검증 11월 20일: 대상 12편을 모두 검증했어요
+
+**이상 없음 (4편)**
+- 한국 여성 100년간 세계에서 가장 많이 컸다
+- 대학 4년의 진짜 비용, 등록금은 약 5분의 1
+- '허용' 한 번에 1조 원대, 왜 이탈리아가?
+- 반대매매선 140%→130%, 몇 % 더 버티나
+
+**바로잡음 (4편)**
+- **마이크로소프트 24시간 먹통, 보상은 얼마?**: 장애 시작 시각을 마이크로소프트 예비 보고서에 맞춰 한국 시각 13일 새벽 1시 20분으로 고쳤어요. 보고서가 밝힌 원인 설명도 덧붙였어요.
+- **로봇 관세는 미뤘다, 자동차 때는 어땠나**: 2019년과 2025년 사이 정권 교체를 '한 번'에서 '두 번'으로 고쳤어요.
+- **빈 방에 혼자 있을 바엔 차라리 전기 충격 받겠다**: 후속 연구 점수 범위를 원문대로 '3점대 중반에서 4점대 중반'으로 고쳤어요. 스마트폰 이야기도 윌슨 교수가 실제로 한 말대로 '꼭 스마트폰 탓으로 보지는 않았다'로 고쳤어요.
+- **내가 조립한 수납함엔 남이 조립한 것보다 돈을 63% 더 낸다**: 연구진 소속에 캘리포니아대학교 샌디에이고를 더했어요.
+
+**보완 (4편)**
+- **미국 공항 이륙 4시간 멈춰, 내 표는?**: 발행 뒤 정부가 밝힌 원인을 덧붙였어요. 협력 업체가 통신선 교체 작업을 한 뒤 라우터에 과부하가 걸렸다는 설명이에요. 교통부 장관이 AI 관제 도구는 원인이 아니라고 한 말도 넣었어요.
+- **AI 커닝 자수한 세무사 수석, 처벌받을까**: 발행 뒤 나온 소식 세 가지를 덧붙였어요.
+  - 재정경제부가 시험 무효와 5년 응시자격 정지 처분 절차를 시작했고, 국세청이 청문을 진행하고 있어요.
+  - 금융감독원이 이 사람은 올해 회계사 1차 시험에 합격하지 않았다고 안내했어요.
+  - 경찰이 이 사람의 자택을 압수수색했어요.
+- **같은 12.5%인데, 한국산과 베트남산 관세가 다른 이유**: 첫 칸 제목이 결정일과 시행일을 섞고 있어서 '관세는 7월 24일부터 붙었어요'로 고쳤어요. 결정은 7월 23일에 나왔어요.
+- **'3.3% 프리랜서'도 퇴직금 받을 수 있을까**: 계산 도구 아래 안내가 엉뚱한 장을 가리키고 있어서 '14장 평균임금'으로 고쳤어요.
+
+사이트 배포 뒤 고친 8편의 실제 쪽에서 바뀐 문장을 확인했고, 바로잡은 글에는 '바로잡습니다'가 보여요. 검증 기록과 바뀐 파일을 커밋·푸시했고, 텔레그램으로도 같은 내용을 보냈어요.
+
+- **미리 있던 변경 함께 커밋:** 사이트 빌드 파일에 이번 작업 전부터 커밋하지 않은 변경이 있었는데, 장 번호 주석을 고치면서 그 변경도 함께 커밋됐어요.
+- **세무사 기사 수법 보도:** 경향신문 한 곳만 '개조한 계산기와 초소형 모니터'라는 다른 수법을 보도했어요. 한 곳뿐이라 반영하지 않았고, 다른 매체도 확인하면 다음에 다시 볼게요.
+
+=== 대화 Claude Code 세션 c357934a ===
+[15:40] 예약 작업: [예약 작업 holt-lang-rollout-v2 실행 — 정해 둔 지시문으로 자동 시작]
+[15:40] AI: 지난 회차들에서 쓰고 기록이 빠진 번역 4편(zh 한중 FTA·K푸드, ja K푸드·일본 50년 주담대)을 원문 숫자와 대조하는 중입니다.
+[15:40] AI: All 일치. 빌드합니다.
+[15:50] AI: Now SKILL.md step 3 addition.
+
+=== 대화 Claude Code 세션 11fe1f49 ===
+[16:23] 예약 작업: [예약 작업 holt-community-devlog 실행 — 정해 둔 지시문으로 자동 시작]
+[16:24] AI: 지난 일지 이후 바뀐 것들을 모으는 중이에요. 이번 회차는 디스콰이엇과 velog에 올리고, 나머지는 기준상 건너뛸 예정입니다.
+[16:25] AI: 원고 재료는 다 모았어요(정기 검증 정정, 표지 되돌림, 안전 검사 막힘). 이제 게시판 최근 글을 읽고 말투를 맞추러 갑니다.
+[16:25] AI: Logged in as Rowan Holt. Reading the feed text.
+
+=== 대화 Claude Code 세션 b5ece729 ===
+[17:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
+[17:02] AI: 금요일 18시 세계 뉴스(아프리카) 회차를 준비 중이에요. 케냐 마라톤 세계 챔피언 도핑 징계 소식을 후보로 사실 확인하고 있습니다.
+[17:03] AI: Sources are confirmed (Al Jazeera·CBC·AIU). Now checking licenses on Wikimedia photos of Jepchirchir for the cover.
+[17:04] AI: Writing the topic file and building the cover and reel.
+[17:05] AI: The reel is built and checked. Next I'll check the YouTube channel fit and pick the Threads topic.
+[17:05] AI: Production is done. A background job will run the uploads in order at 18:00 (Instagram Reel → Facebook → Threads → Instagram Story → YouTube); I'm waiting for it to finish.
+[18:08] AI: Uploads for the 11/20 (Fri) 18:00 slot started right at 18:00 and every platform finished by 18:08.
+
+**Format and topic:** a type J single-topic news post (full-screen photo cover) in the Friday Africa world-news series. Kenyan marathon world champion Peres Jepchirchir admitted to doping with EPO and was banned for three years.
+- **Why this topic:** It's Friday's Africa turn, and there was no planned topic or follow-up waiting. The stakes are easy to see: her Sydney Marathon title is gone and she will miss the 2028 LA Olympics.
+- **Format overlap:** Today's earlier posts were Myanmar at 07:30 and the KOSPI at 12:00. That's three different countries in a row, and no war or disaster topic.
+- **Special formats:** None of the available ones (Why?, Sold in English) was used.
+- **Newsletter notes:** nothing from the last three days, so none used.
+
+**Sources checked:**
+- [Al Jazeera](https://www.aljazeera.com/sports/2026/11/19/[가림:긴문자열])
+- [CBC](https://www.cbc.ca/sports/olympics/summer/athletics/[가림:긴문자열].7428104)
+- [Canadian Running](https://runningmagazine.ca/the-scene/[가림:긴문자열]/), which quotes the Athletics Integrity Unit (AIU) announcement
+
+**Cover photo:** Wikimedia Commons, 2022 Boston Marathon, CC BY-SA 4.0 (credit is in the caption).
+
+**Expression of the day:** come clean ("to own up to something you'd been hiding")
+
+**Links:**
+- Instagram Reel: https://www.instagram.com/reel/Df9SKgGyFAB/ (the carousel posts automatically 60 minutes later)
+- Facebook: https://www.facebook.com/reel/[가림:숫자]
+- Instagram Story: https://www.instagram.com/stories/rowanholt_official/[가림:숫자]
+- YouTube: https://youtube.com/shorts/osews6leVXk. It's uploaded as private for now and goes public automatically once the cover is confirmed.
+- Threads: https://www.threads.com/@[가림]/post/Df9Sn-2nwl9. Following the rule that Threads covers a different story, this post is about the US losing its measles-elimination status. It's the body text only, with no replies.
+
+**Status:** Stage 2 targets 500 views per post and 200 followers by 11-30; we have 56 followers now. There was no promotion, focus or pause call this run. The 12:00 carousel posted normally, and there were no errors. Upload records and the Africa/Kenya rotation entry are saved, and the commit (7727d85) is pushed.
+
+=== 대화 Claude Code 세션 45b58c3f ===
+[18:40] 예약 작업: [예약 작업 holt-lang-rollout-v2 실행 — 정해 둔 지시문으로 자동 시작]
+[18:40] AI: Gilt: 이전 회차들이 남긴 번역 원고 4개(zh FTA·kfood, ja 50년 주담대·kfood)가 미검증·미커밋 상태라, 이걸 검증해 공개하고 2단계를 닫는 중입니다.
+[18:45] AI: Build clean (번역 빠짐 0). Now Playwright verification of the four translated pages plus list/home pages.
+
+=== 대화 Claude Code 세션 cf1f1ff9 ===
+[20:14] 예약 작업: [예약 작업 holt-error-reports 실행 — 정해 둔 지시문으로 자동 시작]
+[20:15] AI: 메일함 확인 중입니다. 새 오류 제보는 없고, 오늘 온 메일(서치콘솔, KIEP·와튼 뉴스레터, KDI 인증)을 정리하고 있어요.
+[20:16] AI: Now the KIEP issue to trash via Chrome, and the Telegram note about KDI.
+[20:16] AI: Account is rowanholt.official. Clicking the delete (trash) icon.
+[20:16] AI: **오류 제보:** 새 제보는 없어요.
+
+**메일함: 챙길 것 2건**
+- **KDI 한국개발연구원:** 뉴스레터 신청 본인인증 메일이 오늘 오전 11시 1분에 왔어요. 인증 기한은 24시간이에요. 저는 오전에 이름과 출생연도를 넣어야 해서 신청을 건너뛰었어요. 그러니 직접 신청하신 거라면 내일 오전 11시 전에 메일에서 인증을 눌러 주세요. 텔레그램으로도 보냈어요.
+- **구글 서치콘솔:** 구글이 holtnews.com 색인 문제 6종(noindex 66쪽, 404 8쪽, 리디렉션 3쪽, 표준 태그 대체 1쪽, 크롤링 뒤 미색인 311쪽, 발견 뒤 미색인 216쪽)이 해결됐는지 확인하기 시작했다는 알림이에요. 문제가 새로 생겼다는 메일이 아니라서 지금 할 일은 없어요. 결과 메일이 오면 그때 다시 볼게요.
+
+**정리: 휴지통 1건, 스팸 0건**
+- KIEP '오늘의 세계경제'(대한국 품목별 관세 불확실성)는 단서로 적은 뒤 크롬 Gmail 화면에서 휴지통으로 옮겼어요.
+- 가입 환영 메일 14건(Axios, Semafor, 미라클레터, 어피티, 데일리바이트, 디그, Apricitas, 와튼 등)과 구글 계정 공유 안내는 받은편지함에 그대로 있어요. Gmail 커넥터에 휴지통·스팸 지정 도구가 없어서 옮기지 못했어요.
+
+**스팸함:** 저녁 실행이라 건너뛰었어요.
+
+**텔레그램:** KDI 인증 건 1통 보냄.
+
+뉴스레터: 읽음 1·단서 1·휴지통 1·구독 확인 0·취소 0
+- KIEP와 와튼 Frontier of Finance는 대화 기록에 제가 신청한 흔적이 없어요. 그런데 사용자분이 KDI를 직접 신청하신 시각과 겹쳐서, 이 둘도 직접 신청하신 걸로 보고 구독 목록 `newsletters.md`에 '지켜봄'으로 더했어요. 신청하신 적이 없다면 말씀해 주세요. 취소할게요.
+
+=== 대화 Claude Code 세션 2b0a4f68 ===
+[20:46] 예약 작업: [예약 작업 holt-site-publish 실행 — 정해 둔 지시문으로 자동 시작]
+[20:46] AI: Korea Trade 21시 회차(11/20 예약 주제: 인천·부산 환적)로 진행 중입니다. 기사 형식과 항만 자료를 읽는 단계입니다.
+[20:47] AI: 항만 원자료(해수부 3분기 물동량 보도자료)를 찾고 있습니다.
+[20:49] AI: 해수부 원문 보도자료 위치를 찾는 중입니다(목록 검색이 막혀 다른 경로로).
+[20:50] AI: Found it: docSeq 69154. Reading the release text.
+[20:51] AI: 원자료(해수부 3분기 물동량 보도자료 원문)를 확보했습니다. 이제 관세청·해수부 API 자료로 직접 계산합니다.
+[20:51] AI: 후보 기록(select)을 남기고 기사를 쓰는 단계로 넘어갑니다.
+[20:53] AI: 그림 두 장 완성. 이제 본문 숫자를 계산·정리합니다.
+[20:53] AI: 관세법 환적 조문을 법령 API로 확인 중입니다.
+[20:54] AI: 근거 확인 끝. 기사 파일을 씁니다.
+[20:56] AI: 사실 확인 통과. 데스크·영문판 데스크·보탬 검토 세 서브에이전트를 동시에 띄웁니다.
+[20:57] AI: 세 검토가 도는 동안 작성자 기록·Korea Trade 메모·이슈 절차를 준비합니다.
+[20:57] AI: 검토 결과를 기다리는 중입니다.
+[20:57] AI: 데스크·영문판 데스크·보탬 검토 세 건이 돌고 있습니다. 결과가 오면 고쳐서 발행합니다.
+[20:58] AI: 보탬 검토 결과가 왔습니다(제목 기간·처리량 기준, 광양 숫자, 그림 출처 글자). 나머지 두 검토를 기다렸다가 한꺼번에 고칩니다.
+[20:58] AI: 영문판 검토도 왔습니다. 산업부 데스크 결과를 기다립니다.
+[21:01] AI: 세 검토 모두 보류 — 지적을 반영해 본문을 다시 씁니다(관세청 항구 집계는 환적 포함이라 이름 바로잡기, 미·독 98.7%, 칩 단정 삭제, 원산지는 '표시 규정·원산지'까지만, 원인 판단 문장 → 해수부 월별 숫자, 제목에 3분기·처리량).
+[21:01] AI: Now rewriting the article body and metadata in one pass.
+
+=== 대화 Claude Code 세션 bb2f77d8 ===
+[21:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
+[21:02] AI: 22시 회차 진행 중입니다 — 규칙·데이터 확인 후 주제를 고르겠습니다.
+
+=== 대화 Claude Code 세션 2b0a4f68 ===
+[21:02] AI: 첫 수정 스크립트가 인코딩 문제로 안 돌았습니다. 파일로 저장해 다시 실행합니다.
+
+=== 대화 Claude Code 세션 bb2f77d8 ===
+[21:03] AI: EU·영국 '리셋' 합의, 미·중·러 선전 정상회담 등 후보를 추리는 중입니다.
+[21:03] AI: 주제는 'EU·영국 리셋 합의(청년 이동 제도)'로 정하고 사실 확인·사진을 찾습니다.
+
+=== 대화 Claude Code 세션 2b0a4f68 ===
+[21:03] AI: 수정본으로 세 검토자에게 재검토를 요청합니다.
+
+=== 대화 Claude Code 세션 bb2f77d8 ===
+[21:04] AI: Eurostar(런던–브뤼셀 열차) 실사 후보를 내려받아 표지로 쓸지 보는 중입니다.
+
+=== 대화 Claude Code 세션 2b0a4f68 ===
+[21:04] AI: 재검토 세 건이 돌고 있습니다. 결과가 오면 기록하고 발행합니다.
+
+=== 대화 Claude Code 세션 bb2f77d8 ===
+[21:04] AI: Topic file 작성 → 카드·릴스 제작 단계로 넘어갑니다.
+
+=== 대화 Claude Code 세션 2b0a4f68 ===
+[21:05] AI: 검수 모두 통과. 빌드합니다.
+
+=== 대화 Claude Code 세션 bb2f77d8 ===
+[21:05] AI: 카드 검수 중입니다(표지 OK, 본문 문구 한 줄 다듬는 중).
+[21:06] AI: Cards look good. Checking reel frames.
+[21:06] AI: 제작·검수 끝났습니다. 22:00 업로드 시각까지 대기합니다.
+[21:06] AI: Waiting for 22:00 (background timer running).
+[21:06] AI: 22:00 업로드 시각까지 백그라운드 타이머로 기다리는 중입니다. 시각이 되면 이어서 올립니다.
+[21:07] AI: The 22:00 card post and reel are ready, and nothing is uploaded yet. A background timer will wake me at 22:00 to post them.
+
+- **Slot:** 11-20 22:00. Nothing was booked for this slot in `planned_topics.md`, and no follow-up posts are queued.
+- **Format and why:** a regular news post with a full-screen photo cover. The scheduler suggested a "this is wrong in English" post next, but that format already ran twice this week (11/17 and 11/19), which is the weekly limit. Special formats like "Why?" were allowed, but news posts average 420 views against 69–109 for those.
+- **Topic:** "브렉시트 10년 만에… 영국·EU 청년 10만 명씩 다시 오간다". The UK and EU agreed a reset deal: up to 100,000 young people each way can live and work in the other for up to 3 years. The catch is that the deal only takes effect once the UK charges EU students the same university fees as UK students, to be settled within 6 months. I also link it to the UK youth mobility (working holiday) visa that Korean young people already use.
+- **Sources:** BBC, NPR (AP), DW, Al Jazeera, and GOV.UK for the youth mobility visa rules (Korea is eligible, ages 18–35).
+- **Phrase of the day:** "make up" (to make up after a fight), not the cosmetics word.
+- **Cover photo:** Eurostar platform at St Pancras station in London, Wikimedia Commons, CC BY-SA 4.0.
+- **Checks:** the cover, card text, three reel frames and the caption format all look fine. The cover headline background was busy, so a dark gradient was added under it automatically. The UK isn't the third post in a row from the same country.
+
+**Upload plan for 22:00:** Instagram reel (the carousel follows automatically an hour later), then Threads, Instagram story and YouTube Shorts. Facebook is left out because it's capped at 3 reels a day, all used at 07:30, 12:00 and 18:00.
+- The Threads post is about a different story, as the Threads rules require: Jensen Huang saying he would return to Nvidia, picked by `threads-pick`.
+
+Also filled in 7 missing Korean translations in `site_ko.json` for the HOLT ENGLISH site, including the 3 from the 18:00 Kenya post. The upload, logging, commit, push and the final report with links all come after 22:00.
+
+=== 대화 Claude Code 세션 2b0a4f68 ===
+[21:07] AI: Meanwhile, adding Korea Trade notes for the China and US pages.
+[21:07] AI: 빌드가 아직 돌고 있습니다(출력은 끝나야 나옴). 완료 알림을 기다립니다.
+[21:09] AI: Build looks right. Pushing to the site.
+[21:10] AI: 푸시 중입니다. 끝나면 발행 후 검증과 이슈를 진행합니다.
+[21:15] AI: Pushed. Now the post-publish check and the ISSUE quiz check.
+[21:15] AI: Site deploy is still propagating. Meanwhile I'm sending the quiz to a separate review agent.
+
+=== 대화 Claude Code 세션 bb2f77d8 ===
+[22:08] AI: 22시 회차는 22:00:02에 올렸고, 기록 후 커밋·푸시까지 끝냈습니다(`7b8b457`).
+
+- **회차:** 11-20 22:00. 예약 주제와 대기 중인 후속 주제는 없었습니다.
+- **포맷: 뉴스(전체 화면 실사 표지)**
+  - 다음 차례로 나온 '영어로 하면 틀려요' 포맷은 이번 주에 이미 2개(11/17, 11/19)라 주 2개 한도에 걸렸습니다.
+  - Why? 같은 특집은 올릴 수 있었지만 평균 조회수가 69~109회라, 420회인 뉴스로 갔습니다.
+- **주제:** "브렉시트 10년 만에… 영국·EU 청년 10만 명씩 다시 오간다". 영국과 EU 청년이 최대 10만 명씩 상대 쪽에서 최대 3년 살며 일하는 합의입니다. 다만 영국 대학이 EU 학생 등록금을 영국 학생만큼 낮춰야 효력이 나고, 6개월 안에 정하기로 했습니다.
+- **오늘의 표현:** make up (다투고 나서 화해하다)
+- **사진:** 런던 세인트판크라스역 유로스타 승강장, Wikimedia Commons, CC BY-SA 4.0
+- **교차확인 출처:**
+  - [BBC](https://www.bbc.co.uk/news/articles/c623j4kpg94go)
+  - [NPR](https://www.npr.org/2026/11/20/g-s1-154576/uk-eu-summit)
+  - [DW](https://www.dw.com/en/[가림:긴문자열]/a-80001076)
+  - [Al Jazeera](https://www.aljazeera.com/news/2026/11/20/eu-and-uk-seal-reset-deal)
+  - GOV.UK 청년 이동 비자 안내(한국은 18~35세 신청 가능)
+
+**올린 링크** (22:00~22:04)
+- 인스타 릴스: https://www.instagram.com/reel/Df9toMaPLhX/ (캐러셀은 23:00에 자동 게시)
+- 스레드: https://www.threads.com/@[가림]/post/Df9t7zOH6MZ
+  - 규칙대로 다른 이야기를 올렸습니다. `threads-pick`이 고른 젠슨 황 복귀 발언이고, 영어·출처 없이 본문만 썼습니다.
+- 인스타 스토리: https://www.instagram.com/stories/rowanholt_official/[가림:숫자]
+- 유튜브 쇼츠: https://youtube.com/shorts/oOo3xmdtswA
+  - 비공개로 올렸고, 그리드에서 표지가 확인되면 `yt-release`가 공개로 바꿉니다.
+- 페이스북은 하루 3개 한도(07:30·12·18시)를 이미 채워서 올리지 않았습니다.
+
+**현재 단계:** 2차 목표(게시물당 조회 500회·팔로워 200명, 11/30까지)이고 팔로워는 57명입니다. 승급·몰아주기·쉼 판단은 없었습니다.
+
+**오류**
+- 18시 회차 캐러셀은 정상 게시됐습니다.
+- 나라·의외 상황 태그를 처음 달 때 따옴표를 빠뜨려 실패했고, 다시 달아서 반영했습니다.
+- HOLT ENGLISH 사이트에 해석이 빠진 문장 3개(18시 케냐 회차)가 있어서, 이번 회차 문장과 함께 해석을 채웠습니다(`site_ko.json`).
