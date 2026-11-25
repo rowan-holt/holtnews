@@ -255,6 +255,7 @@ body.en .hero h2{font-family:"Jost",sans-serif;font-weight:600}
 .ytv-btn::after{content:"";position:absolute;left:27px;top:14px;border-style:solid;border-width:10px 0 10px 17px;border-color:transparent transparent transparent #fff}
 .ytv-play:hover .ytv-btn,.ytv-play:focus-visible .ytv-btn{background:#c4302b}.ytv iframe{display:block;width:100%;aspect-ratio:9/16;border:0;border-radius:6px}
 .ytv figcaption{text-align:center}
+.ytv-wide{max-width:none;margin:8px 0 36px}.ytv-wide .ytv-play{aspect-ratio:16/9}.ytv-wide iframe{aspect-ratio:16/9}
 .photo img{width:100%}
 .photo figcaption{font-size:13px;color:var(--gray);margin-top:8px}
 .more .bbc{padding-top:24px}
