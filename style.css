@@ -1166,6 +1166,7 @@ a:has(> .a11y-nw),.a11y-memo{position:relative}
 .ecal:has(#ecf-k:checked) .cd:not(.hkr),.ecal:has(#ecf-u:checked) .cd:not(.hus){display:none}.ecg .cd.nohit{display:none}}
 
 body.x-zh main,body.x-ja main{word-break:normal;line-break:strict}
+body.x-ja main h1,body.x-ja main h2,body.x-ja main h3{word-break:auto-phrase}
 picture{display:contents}picture>source{display:none}
 
 /* 1124 홈 새 디자인(사용자 승인, 섹션 앞 번호는 뺌): 큰 섹션 제목·넉넉한 간격, 연구 칸은 검은 띠. 홈(.topband) 데스크톱만 */
