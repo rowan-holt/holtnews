@@ -250,6 +250,11 @@ body.en .hero h2{font-family:"Jost",sans-serif;font-weight:600}
 .dek{font-size:19px;color:var(--ink2);line-height:1.7;margin:-8px 0 26px}
 .keys{background:var(--soft);border-left:3px solid var(--ink);padding:14px 18px 12px;margin:0 0 26px}.keys h2{font-size:14px;letter-spacing:.04em;margin:0 0 6px;color:var(--ink2)}.keys ul{margin:0;padding-left:1.1em}.keys li{font-size:16px;line-height:1.65;margin:2px 0}
 .photo{margin:0 0 40px}
+.ytv{margin:28px auto 36px;max-width:340px}.ytv-play{display:block;position:relative;width:100%;aspect-ratio:9/16;padding:0;border:0;background:#111;cursor:pointer;border-radius:6px;overflow:hidden}
+.ytv-play img{display:block;width:100%;height:100%;object-fit:cover}.ytv-btn{position:absolute;left:50%;top:50%;width:68px;height:48px;margin:-24px 0 0 -34px;background:rgba(0,0,0,.72);border-radius:12px}
+.ytv-btn::after{content:"";position:absolute;left:27px;top:14px;border-style:solid;border-width:10px 0 10px 17px;border-color:transparent transparent transparent #fff}
+.ytv-play:hover .ytv-btn,.ytv-play:focus-visible .ytv-btn{background:#c4302b}.ytv iframe{display:block;width:100%;aspect-ratio:9/16;border:0;border-radius:6px}
+.ytv figcaption{text-align:center}
 .photo img{width:100%}
 .photo figcaption{font-size:13px;color:var(--gray);margin-top:8px}
 .more .bbc{padding-top:24px}
