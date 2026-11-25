@@ -2042,3 +2042,64 @@ Sources: [mangomarket.ai.kr](https://www.mangomarket.ai.kr), 웹 검색은 관�
 === 대화 Claude Code 세션 8784a73b ===
 [21:46] 사람: 구독하기 버튼은 꼬리말 구역에 넣자. 앱으로 설치 옆에. 왼쪽에. 두고 그거 누르면 구독신청하는 란 뜨게. 그리고 이전에 나간거 보여주는거지 어땡
 [21:53] AI: Now a visual check in the browser, plus a test archive page using the 11/25 draft (not saved to the site).
+[21:59] AI: 구독 버튼 작업은 끝나서 올렸고, 지금은 언어별 발송과 Axios식 양식을 붙이려고 글 구조를 보는 중이에요.
+
+=== 대화 Claude Code 세션 3f1daa20 ===
+[22:00] AI: 22:00이 됐습니다. 업로드를 시작합니다(인스타 릴스 → 스레드 → 인스타 스토리 → 유튜브 순서, 페북은 하루 3개 상한을 이미 채워 건너뜁니다).
+
+=== 대화 Claude Code 세션 8784a73b ===
+[22:00] AI: Now I'll do the language-specific sending and the Axios-style format. First, the site side: subscribe button, form, and messages for all five language editions.
+
+=== 대화 Claude Code 세션 3f1daa20 ===
+[22:02] AI: 22시 회차를 정각에 올렸고, 커밋(8458bba)과 푸시까지 마쳤습니다.
+
+- **회차:** 11-25 22:00. planned_topics에 이 시각 항목은 없었고, 기다리는 후속도 없었습니다.
+- **포맷:** 단일 뉴스 J(전체 화면 사진)로 했습니다.
+  - `collect_views.py next`는 유형 C를 골랐습니다. 이번 주 C는 아직 한도가 남았지만, 이 뉴스에는 자연스러운 콩글리시가 없어서 J로 바꿨습니다.
+  - 특집(Why?, Sold in English, 만화)도 가능했지만 평균 조회수가 뉴스(415)보다 낮아 고르지 않았습니다.
+- **주제:** 빗썸 해킹 피해 확대입니다. 처음엔 1시간 침입이라고 알려졌는데, 실제로는 10월 12일부터 27일까지 15일 넘게 들어와 있었습니다. 유출 항목은 7개에서 19개로 늘었고 여권번호와 지갑주소도 들어갑니다.
+  - **trends 근거:** 시그널 '빗썸 해킹 추가 피해', 네이트 '빗썸 해킹 보름 피해 확대'로 검색어 두 곳에 떴습니다.
+  - **직접 계산:** 머문 시간이 약 361시간입니다.
+  - **오늘의 표현:** "in the dark"(까맣게 모르고)입니다.
+  - **나라 규칙 예외:** 오늘 앞 회차 세 개가 모두 한국이었지만, 지침에 "나라 규칙은 trends 상위 사건을 밀어내지 못한다"는 단서가 있어 그대로 진행했습니다.
+- **교차확인:** [서울경제](https://m.sedaily.com/article/20119031), [마이데일리](https://www.mydaily.co.kr/page/view/[가림:숫자]), [데일리안](https://www.dailian.co.kr/news/view/1719796)
+- **업로드:** 22:00~22:02에 올렸습니다.
+  - 인스타 릴스: https://www.instagram.com/reel/DgKlmyJg-tD/ (같은 내용 캐러셀은 1시간 뒤 자동 게시)
+  - 인스타 스토리: https://www.instagram.com/stories/rowanholt_official/[가림:숫자]
+  - 스레드: https://www.threads.com/@[가림]/post/DgKlsb7H0PZ (규칙대로 다른 뉴스인 머스크 "AI 현금난" 이야기, 주제 태그 AI)
+  - 유튜브 쇼츠(15초 판): https://youtube.com/shorts/2PuMCS-bICU. 지금은 비공개이고, 표지가 확인되면 yt-release가 공개합니다.
+  - 페북: 하루 3개 상한을 이미 채워서 건너뛰었습니다.
+- **단계:** 2차 목표는 11/30까지 조회수 500·팔로워 200인데, 지금 팔로워는 58명입니다.
+- **오류:** 없습니다. carousel.log에도 실패나 2207051 오류가 없었습니다.
+
+=== 대화 Claude Code 세션 9378d332 ===
+[22:05] 사람: https://www.gokorea.kr/news/articleView.html?idxno=886916
+
+얘 여기봐바 광고가 대체 몇개야 이정도는 되야 돈버나
+[22:06] AI: gokorea.kr 이 기사 한 쪽에 광고 칸이 **최소 12개** 있어요. 원본 HTML을 받아서 세어 봤어요.
+
+- **구글 게시자 태그(GPT)에 묶인 광고 칸 12개**: `adsbyaiinad` 태그가 12개고, 칸마다 광고 번호(`data-aiinad-inv`)가 달라요. 번호가 같은 칸이 하나 있어서 서로 다른 번호는 11개예요.
+- **자체 배너 팝업·좌우 배너**: 자체 배너 스크립트 4개(`bannerpop/…/615·660·699·737.js`)와 좌·우 배너 칸이 따로 있어요.
+- **Dable**: 추천 기사 위젯 태그가 들어 있어요.
+
+한계도 있어요. 광고 스크립트가 페이지를 연 뒤에 칸을 더 만들 수 있어서, 실제로 보이는 개수는 이보다 많을 수 있어요. 그리고 칸이 있다고 다 채워지는 건 아니라서, 몇 개가 실제로 뜨는지는 이 방법으로는 몰라요.
+
+오늘 HOLT 사이트 애드센스 승인 받은 거랑 비교하면 이렇게 돼요.
+
+- **광고 단위**: 우리는 7개고 공익광고 칸 안에서 채워질 때만 교체해요. 저쪽은 한 기사에 12개 이상이에요.
+- **수익 구조**: 저쪽은 광고를 많이 깔아 방문자 한 명당 노출 수를 늘려서 벌어요. 우리 방식으로는 이만큼 못 늘려요. 광고가 읽는 흐름을 가리기 때문이에요.
+
+그래서 "이 정도는 돼야 번다"는 말은 반쯤만 맞아요. 저 사이트는 광고 수로 버티는 모델이고, 우리 사이트는 월 방문자(특히 미국 방문자)를 늘려서 광고 단가를 올리는 게 맞는 방향이에요. 12/07쯤 본문 중간 칸 추가를 제안하기로 해 둔 게 있으니, 그때 성과 보고와 같이 광고 칸 수도 다시 볼게요.
+
+=== 대화 Claude Code 세션 8784a73b ===
+[22:06] AI: Site side is done. Next, the Google Apps Script that handles sign-ups needs to store the language and send the confirmation email in that language.
+[22:06] AI: Now newsletter.py: per-language issues and the Axios-style layout.
+[22:09] AI: Rendering works. I'm tightening it: the Korean lede was repeating the key points, and the English lede got cut mid-sentence.
+[22:10] AI: Now updating the live Apps Script.
+
+=== 대화 Claude Code 세션 9378d332 ===
+[22:10] 사람: 지도에서 길보기 왜 저래 두줄이 됐잖아. 고쳐죠
+[22:10] AI: 지도 링크 버튼이 두 줄이 되는 원인을 실제 화면으로 확인하는 중이에요.
+[22:11] AI: Build only first, then check the rendering.
+[22:13] AI: Restyle `.tbanner` to match the home card (white, black border, dark ship icon, bold title, gray subtitle, no arrow) and use the same subtitle.
+[22:15] AI: 두 가지 수정은 코드에 반영했어요. 지금 사이트를 다시 빌드하고 있고, 끝나면 실제 화면으로 확인할게요.
