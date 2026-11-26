@@ -1966,3 +1966,4 @@
 2026-11-26 23:26  chore(holt): 틱톡 크롬 업로드 시작 — 영어 쇼츠 기록 tiktok_posted.json, X 대기열 비움
 2026-11-26 23:37  feat(holt): us_slot.py kst — 틱톡 예약 칸용 미국 슬롯 한국 시각 변환
 2026-11-27 04:44  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — income_wellbeing
+2026-11-27 05:24  content(holt): HOLT ENGLISH 쪽별 표현·퀴즈 6쪽 + 점검
