@@ -185,3 +185,156 @@ HOLT NEWS에서 온 게 10개, 인스타에서 온 게 2개예요.
 [09:08] AI: Build is running in the background. Meanwhile I'm writing the Chinese, Japanese, and Vietnamese editions.
 [09:10] AI: 빌드가 아직 도는 중이라(페이지는 이미 생성됨) 끝나면 바로 --push로 올립니다.
 [09:17] AI: Pushed. Three language editions need the calculator translated; adding it.
+[09:22] AI: Live-page verification next.
+[09:23] AI: Live pages, images, and all five language versions check out. Recording, then the ISSUE.
+[09:23] AI: Meanwhile: lang_rollout note and the article commit.
+[09:23] AI: 기사 커밋·푸시까지 마쳤어요. ISSUE 문제 검토 결과를 기다립니다.
+[09:24] AI: **[09시 회차 · 국내 경제·금융]** 기사 한 편을 발행했어요. 제목은 "연봉에 묻힌 식대, 세금 돌려받을 수 있나"이고 분야는 생활 금융(YMYL)이에요.
+
+- 한국어: https://holtnews.com/news/korea_meal_allowance_tax_refund.html
+- 영어: https://holtnews.com/en/news/korea_meal_allowance_tax_refund.html
+- 중국어·일본어·베트남어판도 같은 날 냈고, 다섯 쪽 모두 열리는 것을 확인했어요.
+
+**내용과 근거**
+- 조세심판원이 2026년 7월 1일 낸 결정(조심 2025서2281)이 계기예요. 식대를 기본급에 넣어 준 국책은행의 경정청구를 세무서가 거부했는데, 심판원이 그 처분을 취소했어요.
+- 결정문 원문과 소득세법·국세기본법 조항은 국가법령정보 API로 직접 받아 대조했어요.
+- 매일경제 단독 기사는 대상 연도를 2018~2019년으로 보도했지만, 결정문 원문은 2019~2020년이에요. 기사에는 원문 연도로 썼어요.
+- 기사에 담은 것: 내가 대상인지 가늠하는 순서, 직장인 본인도 청구할 수 있다는 근거, 지금 청구할 수 있는 해(2021~2025년 치)와 해마다의 마감일, 연봉별 계산이에요. 예를 들어 연봉 5,000만 원이면 한 해 세금이 37만 6,200원 줄어요.
+
+**검수**
+- 사실 확인, 경제부 데스크, 영문판 데스크, YMYL 재계산, 보탬·그림 검토를 다 거쳤어요. 네 검토 모두 1차는 보류였고, 고친 뒤 2차에서 통과했어요.
+- 크게 고친 것:
+  - 은행 측 주장을 "법이 정한 조건은 하나"처럼 사실로 쓴 문장
+  - 심판원의 판단 근거와 세무서가 낸 증거를 섞어 쓴 부분
+  - 마감일 두 개를 주말 보정해 2029년 3월 12일, 2030년 3월 11일로 바꿈
+- 발행 뒤 실제 쪽에서 제목, 숫자, 그림, 자료 주소, 홈 노출을 확인했어요.
+
+**함께 한 일**
+- **HOLT ISSUE:** 같은 기사로 문제 3개를 냈어요(분리 검토 통과).
+- **어제 YMYL 글 다음 날 재검증:** 미국 대출 한도 글과 디지털자산법 글을 원자료와 다시 대조했고, 둘 다 이상 없어요.
+- **후보 점수표:** 9개를 매겼어요. 1위가 식대 비과세(29점)였고, 미 USTR 과잉생산 관세(25점)와 저축은행 해킹(23점) 등은 다음 회차로 넘겼어요.
+- **금통위 기사:** 오늘 금통위 결정은 발행 시각 뒤에 나와서 12시 생활 금융 회차 몫으로 남겼어요. 다만 이 후보는 이월 목록 정리 때 차별성 점수 미달로 빠져서, 12시 회차가 새로 찾아야 해요.
+
+**참고**
+ISSUE를 올리는 중에 예전 기사 korea_busan_incheon_hub의 이슈가 분리 검토 기록이 없어 발행이 막혀 있는 게 보였어요. 오늘 오전 HOLT ISSUE 작업이 처리할 몫이라 이번에는 손대지 않았어요.
+
+=== 대화 Claude Code 세션 f140fe48 ===
+[10:14] 예약 작업: [예약 작업 holt-error-reports 실행 — 정해 둔 지시문으로 자동 시작]
+[10:14] AI: 메일함 읽기는 끝났습니다. 새 오류 제보는 없고, 뉴스레터 6개를 읽었습니다. 이제 단서를 적은 뒤 크롬으로 휴지통 정리와 스팸함 확인을 합니다.
+[10:15] AI: Now Chrome for trashing, unsubscribe and spam check.
+[10:15] AI: Morgan Stanley 뉴스레터 수신 거부를 마쳤습니다. 이제 다 읽은 메일 8통을 묶어 휴지통으로 옮깁니다.
+[10:15] AI: Exactly the 8 intended. Select all → delete.
+[10:15] AI: Trash worked (search empty). Spam page hadn't loaded yet; recheck.
+[10:15] AI: Spam folder is all genuine spam. Closing tab and recording.
+[10:16] AI: 메일함 확인 결과입니다. 새 오류 제보는 없어서 고친 기사도 없습니다.
+
+**뉴스레터:** 6통을 읽었습니다(순살브리핑, 머니네버슬립, 어피티, 데일리바이트, Semafor Business, Morgan Stanley). 쓸 만한 단서 7건을 `holt/newsletter_notes.md`에 적었습니다. 주제는 다음과 같습니다.
+- EU 직구 소포 품목당 관세와 쉬인 유럽 매출 감소
+- 살 빼는 주사(GLP-1)에 붙는 FDA 눈 경고문
+- 앤스로픽 증권신고서 속 판매 비용
+- 한중 FTA 후속협상과 화장품 수출
+- EU 하이브리드차 수입 쿼터
+- 출생아 수와 기업심리지수
+- 제약사 특허 만료로 늘어나는 인수합병
+
+Morgan Stanley Five Ideas는 이번에 처음 왔습니다. 우리가 신청했다는 기록이 없고 본문이 링크 목록뿐이라 Gmail '수신 거부'를 눌렀습니다. `newsletters.md`에는 '취소'로 적었습니다.
+
+뉴스레터: 읽음 6·단서 7·휴지통 6·구독 확인 0·취소 1(Morgan Stanley Five Ideas)
+
+메일함: 챙길 것 없음. 받은편지함에 남은 아래 메일은 지난 실행에서 이미 알렸거나 일부러 남겨 둔 것이라 다시 알리지 않았습니다.
+- 검은망고·드림보트(사람이 쓴 메일)
+- 틱톡 앱 심사 결과
+- 애드센스 지급 보류 안내
+- 페이스북·인스타 로그인과 비밀번호 변경 알림
+- Cloudflare 영수증과 도메인 등록 기록
+- AWS 무료 플랜 종료 안내
+
+정리: 휴지통 8건(뉴스레터 6, note.com 추천 글, 애드센스 사용 팁), 스팸 처리 0건
+스팸함: 꺼낸 것 0건. 남은 6건은 모두 진짜 스팸이라 그대로 두었습니다.
+텔레그램: 보낼 것 없음
+
+기록 파일(`inbox_seen.json`, `newsletter_notes.md`, `newsletters.md`)을 커밋하고 푸시했습니다.
+
+=== 대화 Claude Code 세션 948ba3c1 ===
+[10:40] 예약 작업: [예약 작업 holt-issue-daily 실행 — 정해 둔 지시문으로 자동 시작]
+[10:41] AI: Check는 리뷰만 남았어요. 분리된 검토를 맡깁니다.
+[10:42] AI: 분리된 검토 서브에이전트가 돌고 있어요. 결과가 오면 반영하고 배포합니다.
+[10:43] AI: 11/20부터 검토 기록이 없어 발행이 막혀 있던 korea_busan_incheon_hub 이슈도 같은 방식으로 검토를 맡깁니다.
+[10:43] AI: 미국 대출 한도 이슈는 배포·푸시까지 끝났어요. 막혀 있던 부산·인천 이슈의 검토 결과를 기다리는 중입니다.
+[10:44] AI: Writing the same phrase twice made it repeat. Fixing that now.
+[10:44] AI: 오늘 오전 HOLT ISSUE 작업을 마쳤어요. 사이트 배포와 git 푸시까지 끝났고, 남은 대기는 0편이에요.
+
+- **us_conforming_loan_limit_2027 (11/25 기사, 문제 3개):** 주제는 '미국 주택담보대출 한도와 점보 대출'이에요. 용어 문제 1개와 이해 문제 2개를 냈고, 이해 문제 중 하나는 덴버 대도시권이 기본 한도보다 더 받는 몫을 계산하는 문제예요. 따로 맡긴 검토에서 고칠 점이 세 가지 나와 반영했어요.
+  - 점보 대출 정의에 기사대로 '대개'를 넣었어요.
+  - 기본 한도가 1주택 기준이라는 걸 문제에 밝혔어요.
+  - '고비용 지역이라는 이점이 거의 사라진다'는 단정을 '기본 한도보다 더 받는 몫이 줄어든다'로 낮췄어요.
+  
+  다시 검사해 통과한 뒤 올렸어요.
+- **korea_busan_incheon_hub (11/20 기사, 문제 3개):** 검토 기록이 없어서 11/20부터 발행이 막혀 있었어요. 이번에 검토를 맡겨 통과했고, 면접 답의 '일시적 요인'이라는 단정만 '해수부가 원인으로 든 요인'으로 바꿔 올렸어요. 고치다가 그 문구가 두 번 들어갔는데, 곧바로 바로잡았고 실제 사이트에 중복이 없는 것도 확인했어요.
+
+=== 대화 Claude Code 세션 f48ebe8e ===
+[10:54] 예약 작업: [예약 작업 holt-insights-action 실행 — 정해 둔 지시문으로 자동 시작]
+[10:54] AI: Now collect numbers.
+[10:56] AI: 예약 작업에 멈춘 회차는 없습니다. 이제 기록하고 알림을 보냅니다.
+[10:57] AI: 오늘 인사이트에서는 고칠 것을 찾지 못해 사이트는 손대지 않았습니다.
+
+- **오류 점검**: 노출이 있었던 225쪽을 다시 열어 보니, 예전부터 알던 ENGLISH 10쪽 말고는 404가 없습니다. 사이트맵 1,056개 주소에도 404, 넘김 쪽, noindex 쪽, canonical 어긋남이 하나도 없습니다.
+- **시사상식 문제 쪽**: 구글이 크롤링했지만 아직 색인하지 않은 쪽이 9쪽에서 13쪽으로 늘어, 어제 정한 기준(10쪽)을 넘었습니다. NEWS 기사와 겹치는 문장은 0~5%이고, 글 길이도 이미 색인된 41쪽과 비슷합니다. 얇거나 베낀 쪽 문제가 아니라 새 쪽이라 구글이 아직 미루는 것으로 보고, 12/10까지 지켜봅니다.
+- **11/25 대량 "새 쪽"**: holtnews에 하루 수백 쪽이 새로 생긴 것처럼 보였는데, 그날 밤 사고로 지워졌다가 5분 만에 복구된 것입니다. 실제 새 쪽은 아닙니다.
+- **예약 작업**: 멈춘 회차도, 입력을 기다리는 회차도 없습니다.
+
+기록은 `holt/insight_actions.md`에 오늘 칸과 색인 상태 표 18줄로 남기고 커밋·푸시했습니다. 퀘스트봇 알림은 제 명령 실수로 같은 내용이 두 번 나갔습니다.
+
+=== 대화 Claude Code 세션 f7291169 ===
+[11:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
+[11:04] AI: 표지는 이전(11/07)에 쓴 5만원권 세로 사진(won_50000_fan.jpg)을 다시 씁니다. 대출 이자 부담이 핵심이라 돈 사진이 맞아요. 이제 주제 파일을 쓰겠습니다.
+[11:04] AI: 표현은 아직 쓰지 않은 'feel the pinch'로 정했고, 1억 원 대출 기준 이자 계산(0.25%p면 한 해 25만 원)을 직접 넣겠습니다. 주제 파일을 작성합니다.
+[11:05] AI: 표지 제목이 잘 읽힙니다. 나머지 카드는 한 장으로 모아서 잘림이나 넘침이 없는지 확인할게요.
+[11:05] AI: 카드에 잘리거나 넘치는 곳은 없습니다. 이어서 캡션 양식 검사, ENGLISH 사이트용 해석, 유튜브 제목을 준비할게요.
+[11:06] AI: 영상 프레임도 괜찮습니다. 업로드 명령 형식을 확인하고 12:00까지 기다렸다가 올리겠습니다.
+[11:06] AI: 스레드 글(ENGLISH 쪽 노무사 시험 0점 이야기)까지 준비했습니다. 12:00까지 기다렸다가 인스타 릴스부터 차례로 올릴게요.
+[11:06] AI: 12:00 업로드를 기다리는 중입니다(백그라운드 대기, 끝나면 바로 이어서 올립니다).
+
+=== 대화 Claude Code 세션 9294f8bc ===
+[11:20] 사람: 유튜브 영어판 왜 숏츠 안올려 미국시간대에 맞게 올려야지
+[11:20] AI: 영어 쇼츠는 빠진 게 아니고 아직 첫 회차 전이에요. 다만 지금 바로 한 편 돌리려던 건 권한에 막혔어요.
+
+- 어제(11/25) 정한 대로 예약 작업 `holt-us-shorts`가 있어요. 매일 14:00 KST에 영어 쇼츠 1편을 만들어 비공개로 올리고, 미 동부 12:00나 19:00에 공개되게 예약해요.
+- 이 작업은 어제 14시가 지난 뒤에 만들어져서 아직 한 번도 안 돌았어요. HOLT NEWS Korea 채널에 지금 있는 건 롱폼 1편(SGK7EPPuEz4)뿐이에요.
+- 첫 실행은 **오늘 14:00쯤**이에요. 그 영상은 **미 동부 11/26 12:00(한국 11/27 02:00)**에 공개돼요. 다음 빈 시각은 확인해 뒀어요.
+
+한 편이라도 빨리 나가게 지금 바로 돌리려 했는데, 자동 모드 안전 검사가 '예약 작업 지금 실행'을 막았어요. 그래서 실행되지 않았고, 지금 할 수 있는 길은 둘이에요.
+1. 그냥 둬요. 14시에 자동으로 만들어져서 미국 점심때 공개돼요.
+2. 앱의 예약 작업 목록에서 `holt-us-shorts`의 "지금 실행"을 직접 눌러요. 그러면 오늘 두 편(미 동부 12:00·19:00)이 나가요.
+
+14시 첫 실행이 끝나면 제목과 공개 시각을 확인해서 알려 드릴게요.
+[11:21] 사람: 구랭 알아서 잘 해
+[11:21] AI: 네, 그대로 둘게요.
+
+오늘 14시에 영어 쇼츠 예약 작업이 처음 돌고, 영상은 미국 동부 시간으로 오늘 12:00(한국 시간 11/27 02:00)에 공개돼요. 그 뒤로도 매일 14시에 한 편씩 만들어져서 미국 점심이나 저녁 시간에 공개되게 예약돼요.
+
+만들 재료도 있어요. 최근 영어 기사 중에 미국 콘포밍 대출 한도(us_conforming_loan_limit_2027), 한국 재벌 설명(korea_explained_chaebol) 같은 글이 있어서, 오늘 '재료가 없어 건너뜀'이 될 일은 없어요.
+
+조회수가 붙으면 하루 두 편으로 늘릴게요.
+
+=== 대화 Claude Code 세션 6a590265 ===
+[11:45] 예약 작업: [예약 작업 holt-site-publish 실행 — 정해 둔 지시문으로 자동 시작]
+[11:46] AI: 한국은행 원자료(오늘 기준금리 결정문)를 받는 중입니다.
+[11:47] AI: Now the style guide and latest article format.
+[11:48] AI: 대출금리 자료를 거의 다 모았고, 곧 후보 기록과 기사 쓰기로 넘어갑니다.
+[11:50] AI: 후보 기록 형식을 고쳐 다시 등록하는 중입니다.
+[11:51] AI: 기사 원고를 쓰고 있습니다(한결 기자, 경제부 생활 금융).
+[11:53] AI: Sources and calculations are in place. Running four independent reviews (desk, English desk, YMYL recalculation, value/figure) in parallel now.
+[11:54] AI: Reviews are running. Meanwhile I'm recording the author, updating the carry-over candidates, and preparing the build.
+[11:54] AI: Reviews are still running. I'm drafting the HOLT ISSUE problems in the meantime.
+[11:55] AI: The four independent reviews are still running. I'll apply their findings when they finish, then build and publish.
+[11:55] AI: Waiting on the desk and YMYL reviews before editing the Korean text.
+[11:56] AI: Desk, English-desk and value-review fixes are applied to both editions. Waiting on the YMYL recalculation review.
+[11:57] AI: Second-pass checks: sending the revised file back to the desk and YMYL reviewers.
+[11:57] AI: I've sent the revised article back to the desk and YMYL reviewers for a second pass. Once they're done, I'll record the review results, then build and publish.
+[11:57] AI: The desk review passed. Waiting for the YMYL re-check.
+[11:57] AI: Fact check passed. Building and checking before the push.
+[11:59] AI: The build is running in the background. Once it finishes, I'll check the page and push.
+
+=== 대화 Claude Code 세션 f7291169 ===
+[12:03] AI: 모든 채널 업로드가 끝났습니다. 커밋하고 푸시할게요.

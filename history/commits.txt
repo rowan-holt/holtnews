@@ -1941,3 +1941,12 @@
 2026-11-26 06:09  content(holt): 11/26 07:30 홈플러스 전 점포 휴업 [유형 C] 제작·예약
 2026-11-26 07:47  content(holt): 11/26 07:30 홈플러스 휴업 업로드 기록
 2026-11-26 07:57  feat(holt): 언어 확대 ② — 세무사 AI 부정·반대매매선 130% 기사 zh·ja·vi판, vi 홈 자료처 '미 재무부' 번역
+2026-11-26 09:23  feat(holt): 사이트 뉴스 — 연봉에 묻힌 식대, 세금 돌려받을 수 있나 (조세심판원 조심 2025서2281, 생활 금융)
+2026-11-26 09:24  feat(holt): HOLT ISSUE 시사상식 문제 — korea_meal_allowance_tax_refund
+2026-11-26 10:16  chore(holt): 메일함 정리 1126 오전 — 뉴스레터 단서 7건, Morgan Stanley 수신 거부
+2026-11-26 10:24  chore(gsc): 색인 요청 기록
+2026-11-26 10:42  feat(holt): HOLT ISSUE 시사상식 문제 — us_conforming_loan_limit_2027
+2026-11-26 10:43  feat(holt): HOLT ISSUE 시사상식 문제 — korea_busan_incheon_hub 검토 통과
+2026-11-26 10:44  fix(holt): HOLT ISSUE korea_busan_incheon_hub 면접 답 중복 문구 정리
+2026-11-26 10:57  chore(insights): 1126 인사이트 확인 기록 (조치 없음)
+2026-11-26 12:03  feat(holt): 12시 회차 한은 기준금리 3.25% 인상 (J)
