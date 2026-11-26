@@ -1960,3 +1960,9 @@
 2026-11-26 18:53  docs(holt): 언어 확대 회차 시각 바로잡음
 2026-11-26 19:44  feat(holt): 사이트 뉴스 — 미국 회차, 한국산 최대 15% 과잉생산 301 관세 제안 품목별 계산 (zh·ja·vi)
 2026-11-26 20:15  chore(holt): 메일함 정리 — KDI 왓츠업 지켜봄 추가·단서 1건
+2026-11-26 21:13  feat(holt): 사이트 뉴스 — 유로존 가게 결제 건수로도 카드가 현금 넘어, EU 현금 수납 의무안과 한국 카드 거절 처벌 비교 (zh·ja·vi)
+2026-11-26 21:14  feat(holt): HOLT ISSUE 시사상식 문제 — euro_cards_overtake_cash
+2026-11-26 22:03  content(holt): 22시 회차 — 콜롬비아 마트 인질극 17시간, 범인은 경찰 옷
+2026-11-26 23:26  chore(holt): 틱톡 크롬 업로드 시작 — 영어 쇼츠 기록 tiktok_posted.json, X 대기열 비움
+2026-11-26 23:37  feat(holt): us_slot.py kst — 틱톡 예약 칸용 미국 슬롯 한국 시각 변환
+2026-11-27 04:44  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — income_wellbeing
