@@ -87,3 +87,100 @@
 === 대화 Claude Code 세션 ce5ea73f ===
 [07:50] AI: 빌드는 통과했고, 베트남어 홈 '오늘의 경제' 칸의 출처 이름 '미 재무부' 번역이 빠져 있어 채우는 중입니다.
 [07:50] AI: Meanwhile, run verification on the built pages (rebuild after).
+[07:57] AI: Public pages live. Now update the progress table and commit.
+[07:58] AI: 이번 회차 결과(11/26 07:40~08:35)입니다.
+
+**무엇을 했나 (목표 ② 뉴스 기사)**
+- LABOR 101은 지금까지 나온 1·2장이 이미 중·일·베트남어로 나가 있어서 건너뛰었어요.
+- 아래 두 기사를 중·일·베트남어판으로 공개했어요(원고 6개). 한국어판을 옮기지 않고 각 나라 독자 입장에서 새로 썼어요.
+  - **tax_exam_ai_cheating** (세무사 시험 수석의 AI 부정행위 자수)
+    - 중국어판: 중국 형법 제284조의1 '조직 시험 부정죄'와 비교하는 문단을 넣었어요. 중국은 이 죄로 국가 시험 부정을 따로 처벌하지만, 한국은 이런 죄가 없어 업무방해죄와 공무집행방해죄 중에서 골라야 한다는 내용이에요.
+    - 일본어판: 한국 세무사를 '일본의 세리사(税理士)에 해당하는 자격'으로 풀어 썼어요.
+    - 베트남어판: 베트남의 세무 대리인(đại lý thuế)과 비슷한 일이라고 설명했어요.
+  - **credit_collateral_130** (반대매매선 140%→130%)
+    - 각 나라 투자 용어로 풀어 썼어요(중국 융자융권, 일본 신용거래·추가 증거금, 베트남 마진 거래).
+    - 계산기도 세 언어로 바꿨어요.
+- 빌드 중 '⚠️ 번역 빠짐'이 하나 나왔어요. 베트남어 홈 '오늘의 경제' 미 10년 국채 칸의 출처 이름 '미 재무부'였어요. `news_build.py`에 세 언어 이름을 넣어 채웠어요.
+
+**검증**
+- 대상: 10쪽(기사 6, 뉴스 목록 3, 베트남어 홈).
+- 휴대폰 390px 가로 넘침, 페이지 오류, 남은 한국어, 깨진 링크 모두 0건이에요.
+  - 베트남어 목록·홈의 '주민등록증'은 다른 기사 원고에 일부러 함께 적은 낱말이라 그대로 뒀어요.
+- 중국어·일본어 본문에 영어 문장이 남지 않았어요. 국기를 누르면 같은 기사의 다른 언어판으로 가요.
+- 소제목 칸 수가 영문판과 같아요(7칸, 6칸).
+- 계산기 기본값(1,000만 원, 1,000만 원, 130%)은 35%로, 한국어판과 같아요.
+- 숫자를 한국어판과 대조했더니 같았어요(160문제·699명·379억 원·3.3%포인트 등).
+- AI 티 검사(`ai_tell_check.py`) 경고 0건, 사이트 안전 검사 통과예요.
+- 스크린샷 2장을 직접 봤어요. 이때 일본어판 제목은 '세리사(税理士)'인데 본문은 '세무사(税務士)'로 엇갈린 걸 찾아 제목을 '韓国版「税理士」'로 맞췄어요.
+
+**공개·기록**
+- 공개 주소 6쪽 모두 200으로 열리고 내용도 맞아요.
+- 커밋 `58608b0`을 push했어요.
+- 진행표(`holt/lang_rollout.md`)에 번역한 기사와 이번 회차 기록을 적었어요.
+
+**다음 회차 시작점:** 11/14 기사들(us_faa_ground_stop → us_232_robotics_negotiation → ms365_outage_credits), 그다음 california_tax_votes(11/13)이에요.
+
+=== 대화 Claude Code 세션 fb52a563 ===
+[08:09] 사람: 홀트 잉글리시 어제 올라간 영어들 알려주고 인스타인지 사이트인지 알려줘바
+[08:10] AI: 먼저 사이트 쪽 12개는 찾았어요. 이제 어제 인스타 등 SNS에 붙은 '오늘의 표현'도 확인하는 중이에요.
+[08:10] AI: 어제(11/25) 올라간 영어 표현을 올라간 곳에 따라 나눠 보면 이래요.
+
+## 1. 인스타 등 SNS: 오늘의 표현 4개 (글마다 하나)
+| 회차 | 표현 | 뜻 | 올라간 곳 |
+|---|---|---|---|
+| 서울 지하철 파업 철회 | **at the eleventh hour** | 마지막 순간에, 막판에 | 인스타 릴스·스토리, 페북 릴스, 스레드, 유튜브 |
+| 젠슨 황 효과 하루 만에 끝 | **short-lived** | 오래 못 가는, 반짝하고 끝나는 | 인스타 릴스·캐러셀·스토리, 페북 릴스, 스레드, 유튜브 |
+| 부산항 환적 지도 영상 | **pass through** | 거쳐 가다 | 인스타 릴스·스토리, 페북 릴스, 유튜브 |
+| 빗썸 해킹, 보름 동안 몰랐다 (22시) | **in the dark** | 모르는 채로, 까맣게 모르고 | 인스타 릴스·캐러셀·스토리, 스레드, 유튜브 |
+
+이 밖에 스레드 ENGLISH 글로 **run short of** (~이 모자라다)가 하나 더 올라갔어요. 머스크 AI 회사 자금난 이야기에 붙인 글이에요.
+
+## 2. HOLT ENGLISH 사이트 (english.holtnews.com)
+- **05:27, 표현마다 따로 만든 쪽 12개 (관련 표현과 퀴즈 포함):** in full, count for something, go after, by then, be unlikely to, snap back, whipsaw, by the book, hand back, tuck, strike a fair balance, settle the argument
+- **04:43, HOLT NEWS 영어판 기사에서 뽑은 표현 4개:** 북한 해커의 바이낸스 탈취금 회수 기사에서 go after, hand back, by then, be unlikely to를 뽑았어요. 이 4개는 위 12쪽에도 들어 있어요.
+
+인스타·스레드에 올라간 건 SNS 쪽 5개(오늘의 표현 4개 + 스레드 ENGLISH 1개)예요. 사이트에는 12쪽이 새로 생겼어요.
+[08:12] 사람: 설명길게하지말고 홀트잉글리시에 올라간 영어, 출처(인스타인지 홀트뉴스인지)만 써서 줘바
+[08:12] AI: 어제(11/25) HOLT ENGLISH에 올라간 표현은 12개예요.
+
+| 표현 | 출처 |
+|---|---|
+| in full | HOLT NEWS |
+| count for something | HOLT NEWS |
+| go after | HOLT NEWS |
+| by then | HOLT NEWS |
+| be unlikely to | HOLT NEWS |
+| snap back | HOLT NEWS |
+| whipsaw | 인스타 |
+| by the book | 인스타 |
+| hand back | HOLT NEWS |
+| tuck | HOLT NEWS |
+| strike a fair balance | HOLT NEWS |
+| settle the argument | HOLT NEWS |
+
+HOLT NEWS에서 온 게 10개, 인스타에서 온 게 2개예요.
+
+=== 대화 Claude Code 세션 3ba9c43a ===
+[08:45] 예약 작업: [예약 작업 holt-site-publish 실행 — 정해 둔 지시문으로 자동 시작]
+[08:46] AI: 지금 09시 회차(국내 경제·금융) 후보를 찾는 중입니다. 오늘이 금통위 날이라 기사 원문 몇 개를 확인하고 있어요.
+[08:47] AI: Found the tribunal decision itself (조심 2025서2281, 2026-07-01). Reading it.
+[08:48] AI: 기사 주제를 정했어요: 연봉에 포함된 식대 비과세와 경정청구(조세심판원 결정 원문 확보). 점수 기록 후 바로 씁니다.
+[08:50] AI: 기록 완료, 이제 기사 본문을 씁니다.
+[08:51] AI: 본문 그림을 만들었고, 확인한 뒤 기사 파일을 씁니다.
+[08:53] AI: 자료 주소를 정리하는 중이에요(결정문 공개 주소 찾기).
+[08:56] AI: Now fixing sources and the two article-number checks, then sending to reviewers.
+[08:57] AI: 검토 네 건을 맡겨 두고, 그 사이 어제 나간 YMYL 글 두 편을 실제 쪽에서 다시 대조합니다.
+[08:58] AI: 어제 YMYL 글 두 편은 원자료와 일치해요. 기록하고 이월 후보를 정리합니다.
+[08:58] AI: 검토 네 건 결과를 기다리는 중이에요. 그 사이 ISSUE 문제 초안을 준비합니다.
+[08:59] AI: 검토 결과가 오면 반영해서 발행까지 이어 갑니다.
+[08:59] AI: Applying the EN desk corrections to both language versions.
+[09:00] AI: 영문판 데스크 지적(은행 측 주장을 법 조건처럼 쓴 부분, 심판원 근거 섞임, 은행 실명 등)을 한·영 양쪽에 반영했어요. 나머지 검토를 기다립니다.
+[09:00] AI: 보탬 검토 지적(창구·서류, 요약 단정, 연도 어긋남, 보험료 문장)도 반영했어요. 경제부 데스크와 YMYL 검토를 기다립니다.
+[09:03] AI: Title truncated in EN; shortening.
+[09:04] AI: All four reviews' points are in. Sending the revised file back to the same reviewers for a second pass.
+[09:04] AI: 2차 검토를 네 검토자에게 다시 맡겼어요. 결과가 오면 기록하고 빌드·발행으로 넘어갑니다.
+[09:04] AI: 영문판 데스크는 2차 통과로 기록했어요. 나머지 세 검토를 기다립니다.
+[09:05] AI: 보탬·그림 검토도 통과 처리했어요(2차 지적 두 곳 고침). 데스크와 YMYL 2차를 기다립니다.
+[09:06] AI: All four reviews passed. Recording, then building.
+[09:08] AI: Build is running in the background. Meanwhile I'm writing the Chinese, Japanese, and Vietnamese editions.
+[09:10] AI: 빌드가 아직 도는 중이라(페이지는 이미 생성됨) 끝나면 바로 --push로 올립니다.
