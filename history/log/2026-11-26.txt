@@ -368,3 +368,21 @@ Morgan Stanley Five Ideas는 이번에 처음 왔습니다. 우리가 신청했�
 [12:08] AI: Push done. Running post-publish check 1.
 [12:10] AI: The article is published. Sending the ISSUE problems for a separate review. Meanwhile, I'll write the three language editions (zh, ja, vi).
 [12:12] AI: Pushing the HOLT ISSUE and the three language editions.
+[12:18] AI: Everything is live. Logging the translations and committing.
+[12:18] AI: The 12시 생활 금융 slot is published: a new article on the Bank of Korea's rate hike, in five languages, plus four HOLT ISSUE questions.
+
+- **Why this topic:** the Bank of Korea raised its base rate from 3.00% to 3.25% at 10시 today. That beat the savings-bank hacking story carried over from the 09시 slot (23 points). The new topic scored 31 points against a cutoff of 21.
+- **Title:** "금리 또 올랐다, 변동금리 대출 이자는 언제부터?" (English: "Bank of Korea raises its policy rate to 3.25%, the third hike since July")
+  - https://holtnews.com/news/korea_rate_hike_variable_loans.html
+  - https://holtnews.com/en/news/korea_rate_hike_variable_loans.html
+- **What the article says:** from June to October, rates on new variable mortgages rose 0.63%p while the average on existing ones rose only 0.23%p. Existing loans only change on the reset date in the contract. On a 30-year 3억 원 loan, a 0.25%p rise adds about 45,899원 a month. It also explains when the hike reaches a borrower and the early-repayment fee rules for switching to fixed. It includes a calculator.
+- **Reviews:** the desk, English desk, YMYL recalculation and value/figure reviews all held the first draft. The main faults were an error in the time span ("석 달 반" should be about 4 months), a causal claim the data doesn't show, and over-reading of the November COFIX figure. After fixes, all passed. Fact check also passed, and I confirmed the live pages, images, sources and home listing after publishing.
+- **Language editions:** zh, ja and vi are live (all return 200).
+- **HOLT ISSUE:** 4 questions are up (https://issue.holtnews.com/i/korea_rate_hike_variable_loans.html). The separate review held them once; they passed after fixes.
+
+The commit is pushed. The candidates I didn't use carry over to later slots, and one new one was added: the retirement-pension account transfer for accounts holding frozen funds.
+
+=== 대화 Claude Code 세션 3c2f7811 ===
+[12:39] 예약 작업: [예약 작업 holt-lang-rollout-v2 실행 — 정해 둔 지시문으로 자동 시작]
+[12:40] AI: Now list articles lacking translations, sorted by date, and check LABOR chapters.
+[12:41] AI: FAA 이륙 중단 기사의 중국어판을 썼고, 이어서 일본어·베트남어판을 씁니다.
