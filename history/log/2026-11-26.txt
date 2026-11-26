@@ -338,3 +338,33 @@ Morgan Stanley Five Ideas는 이번에 처음 왔습니다. 우리가 신청했�
 
 === 대화 Claude Code 세션 f7291169 ===
 [12:03] AI: 모든 채널 업로드가 끝났습니다. 커밋하고 푸시할게요.
+[12:04] AI: **11/26 12:00 회차 보고**
+
+- **단계와 목표:** 2차 목표는 11/30까지 조회수 500회, 팔로워 200명입니다. 지금 팔로워는 59명이고, 이번 판단에서 승급·몰아주기·쉼은 없었습니다.
+- **고른 포맷과 이유:** 유형 J(전체 화면 실사 뉴스)입니다. collect_views next가 J를 냈습니다. 특집 중 Journal·Why?·Sold in English·만화가 '가능'이었지만, trends.py 1위가 경제 사건이라 뉴스로 갔습니다.
+- **주제:** 주가 급락에도 한은이 기준금리를 3.25%로 올렸습니다(올해 세 번째 인상).
+  - trends.py 근거: 많이 본 뉴스 '인상' 언론사 11곳, 검색어 시그널·네이트에 같이 뜸, 구글 '금리' 500+.
+  - 오늘 오전 발표라 07:30 아침 뉴스(홈플러스)와 겹치지 않습니다.
+  - 한국 주제가 세 번 연속이지만, 나라 상한 규칙은 trends 상위 사건을 밀어내지 못해서 그대로 골랐습니다.
+- **교차확인:** 연합뉴스, 매일경제, 이데일리 세 곳입니다. 한국경제 기사는 출처에서 뺐습니다.
+- **직접 계산한 값:** 1억 원을 변동금리로 빌렸다면 이번 인상으로 이자가 한 해 25만 원 늘고, 7월부터 오른 0.75%p를 합치면 한 해 75만 원입니다.
+- **표현과 표지:**
+  - 오늘의 표현은 feel the pinch(쪼들리다)입니다. 금리 관련 표현 raise rates와 tighten your belt는 이미 쓴 적이 있어서 피했습니다.
+  - 표지 사진은 11/07에 한 번 쓴 5만원권 사진을 다시 썼습니다. 제목이 잘 안 읽혀서 코드가 제목 쪽 그라데이션을 자동으로 깔았습니다.
+- **실제 업로드 시각:** 12:00
+  - 인스타 릴스: https://www.instagram.com/reel/DgMF18nhKuL/ (캐러셀은 13:00 자동 게시)
+  - 페이스북 릴스: https://www.facebook.com/reel/[가림:숫자]
+  - 인스타 스토리: https://www.instagram.com/stories/rowanholt_official/[가림:숫자]
+  - 유튜브 쇼츠: https://youtube.com/shorts/Plmn8NTEZpc (비공개로 올라감, 표지가 확인되면 yt-release가 공개로 바꿈)
+  - 스레드: https://www.threads.com/@[가림]/post/DgMGA-PH-au (ENGLISH 쪽 노무사 시험 0점 이야기, 주제 태그 '자격증')
+- **insights.py(12시 보고):**
+  - 상위: 최태원·노소영 9440억 지급 뜻(시청 7.6초)
+  - 하위: 코스피 사이드카(시청 2.5초)
+- **그 밖:**
+  - 오늘 아침 홈플러스 영어 문장 3개의 해석이 빠져 있어서 이번 문장들과 함께 HOLT ENGLISH 사이트용 해석 파일(site_ko.json)에 채웠습니다.
+  - 업로드 오류는 없었고, 인스타 업로드 중 cloudflared 터널 연결을 한 번 다시 시도한 뒤 정상으로 올라갔습니다. 커밋과 푸시도 마쳤습니다(5342aac).
+
+=== 대화 Claude Code 세션 6a590265 ===
+[12:08] AI: Push done. Running post-publish check 1.
+[12:10] AI: The article is published. Sending the ISSUE problems for a separate review. Meanwhile, I'll write the three language editions (zh, ja, vi).
+[12:12] AI: Pushing the HOLT ISSUE and the three language editions.
