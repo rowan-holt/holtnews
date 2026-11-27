@@ -1985,3 +1985,5 @@
 2026-11-27 15:36  fix(holt): 정기 검증 2026-11-27 — 10편, 정정 0·보완 9
 2026-11-27 15:58  content(holt): 언어판 기사 — australia_ai_failure_to_prevent·us_cpi_october_no_annual zh·ja·vi
 2026-11-27 16:56  feat(holt): 사이트 Korea Explained — Korea health insurance cost vs. the US
+2026-11-27 19:50  feat(holt): 사이트 뉴스 — 미국 2026 기부금 공제(표준공제자 $1,000·항목공제 0.5% 문턱) 미국 회차
+2026-11-27 20:16  chore(holt): 뉴스레터 단서 — KIEP 영문 뉴스레터
