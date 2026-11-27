@@ -1990,3 +1990,4 @@
 2026-11-27 21:15  feat(holt): 사이트 뉴스 — 영국 주택담보대출 650만 건 상환액 오를 전망(영란은행 FSR), 한국 변동형 비교
 2026-11-27 22:03  content(holt): 22시 회차 — 대구 주유소 휘발유 넣은 차 18대 고장 [J]
 2026-11-28 04:43  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — ms365_outage_credits
+2026-11-28 05:23  content(holt): HOLT ENGLISH 쪽별 표현·퀴즈 6쪽 + 점검
