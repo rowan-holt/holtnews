@@ -1944,3 +1944,11 @@ AI 티 검사와 영어 칸 누락 검사는 둘 다 경고가 없었어요. 190
 [15:15] AI: Both research articles pass their checks. Next I'm checking the corrections to the two money articles (card points and illegal loans) myself.
 [15:16] AI: Apply the verified 보완 edits.
 [15:17] AI: Seven of twelve articles are recorded. I'm now editing the last three I verified (U.S. minimum wage, the tax-bracket explainer, the wrap-account disputes).
+[15:28] AI: The build is running in the background. I'll wait for it to finish.
+
+=== 대화 Claude Code 세션 64cff1b5 ===
+[15:28] AI: 새 그림 모델이 훨씬 빠르게 나왔어요(768px 한 장 100초 → 약 30초). 이제 그림 품질을 눈으로 확인합니다.
+[15:29] AI: 그림 설정 한 곳(모델 목록)에 옛 모델 이름이 남아 있어서 첫 시험이 실패했어요. 그 부분을 고치고 다시 그려 봅니다.
+
+=== 대화 Claude Code 세션 2a64f480 ===
+[15:30] AI: The site build and push are done. The Chinese, Japanese and Vietnamese editions of the microplastics article now have one source name too few, so I'm adding it.
