@@ -3491,8 +3491,8 @@
  },
  "stats": {
   "days": 42,
-  "messages": 14577,
-  "operator_messages": 3125,
+  "messages": 14653,
+  "operator_messages": 3149,
   "commits": 1994,
   "first": "2026-06-17",
   "last": "2026-11-27"
@@ -3788,9 +3788,9 @@
   {
    "date": "2026-11-27",
    "file": "log/2026-11-27.txt",
-   "messages": 471,
-   "operator": 119,
-   "bytes": 231279
+   "messages": 547,
+   "operator": 143,
+   "bytes": 261984
   }
  ]
 }
