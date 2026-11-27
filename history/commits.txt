@@ -1984,3 +1984,4 @@
 2026-11-27 14:26  content(holt): 세계 지도 나라 상세 해설 — 덴마크
 2026-11-27 15:36  fix(holt): 정기 검증 2026-11-27 — 10편, 정정 0·보완 9
 2026-11-27 15:58  content(holt): 언어판 기사 — australia_ai_failure_to_prevent·us_cpi_october_no_annual zh·ja·vi
+2026-11-27 16:56  feat(holt): 사이트 Korea Explained — Korea health insurance cost vs. the US
