@@ -1983,3 +1983,4 @@
 2026-11-27 10:58  chore(holt): 인사이트 기록 1127 — 조치 없음, ISSUE 새 쪽 색인 보류 판단
 2026-11-27 14:26  content(holt): 세계 지도 나라 상세 해설 — 덴마크
 2026-11-27 15:36  fix(holt): 정기 검증 2026-11-27 — 10편, 정정 0·보완 9
+2026-11-27 15:58  content(holt): 언어판 기사 — australia_ai_failure_to_prevent·us_cpi_october_no_annual zh·ja·vi
