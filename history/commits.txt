@@ -1987,3 +1987,6 @@
 2026-11-27 16:56  feat(holt): 사이트 Korea Explained — Korea health insurance cost vs. the US
 2026-11-27 19:50  feat(holt): 사이트 뉴스 — 미국 2026 기부금 공제(표준공제자 $1,000·항목공제 0.5% 문턱) 미국 회차
 2026-11-27 20:16  chore(holt): 뉴스레터 단서 — KIEP 영문 뉴스레터
+2026-11-27 21:15  feat(holt): 사이트 뉴스 — 영국 주택담보대출 650만 건 상환액 오를 전망(영란은행 FSR), 한국 변동형 비교
+2026-11-27 22:03  content(holt): 22시 회차 — 대구 주유소 휘발유 넣은 차 18대 고장 [J]
+2026-11-28 04:43  feat(holt): HOLT NEWS 영어판 표현 → HOLT ENGLISH — ms365_outage_credits

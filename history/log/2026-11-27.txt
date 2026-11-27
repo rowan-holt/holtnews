@@ -3525,3 +3525,146 @@ ollama rm 지울모델이름
 [21:05] AI: 오늘 오전에 홈브루가 파이썬을 3.15로 올리면서 이미지 라이브러리가 빠졌어요. 다시 설치하고 카드를 만들었고, 지금은 릴스 영상을 만들고 있어요.
 [21:05] AI: 영상과 카드 확인을 마쳤어요. 유튜브 제목을 쓰고 22시 업로드를 준비하고 있어요.
 [21:06] AI: 스레드 글까지 준비를 마쳤어요. 22:00 업로드 시각까지 기다리는 중이에요.
+
+=== 대화 Claude Code 세션 43dc90e4 ===
+[21:07] 사람: 너가 너무 많은 제한을 하잖아
+[21:07] AI: 답답하실 수 있어요. 오늘 푼 것과 남긴 것을 정리하면 이래요.
+
+**푼 것**
+- 루안: 말투 제한, 성 이야기, 야한 농담과 역할극, 수위 있는 소설, 욕 섞인 뒷담화, 정치·종교 의견, 마약·밀매 이야기, 성인 사이트 추천
+- 그림: 누드, 남녀 성행위 장면, 요청을 순하게 바꾸던 단계
+
+**남긴 것 (딱 세 가지)**
+- 미성년자로 보이는 사람이 나오는 야한 그림
+- 실제 사람 얼굴로 만드는 야한 그림
+- 마약·무기를 실제로 만들거나 구하는 구체적인 방법
+
+이 세 가지는 취향 문제가 아니에요. 실제 사람이 피해를 보거나, 아동 성착취물이 될 수 있어서예요. 앞으로도 제가 풀거나 푸는 방법을 알려 드리지는 않을게요.
+
+그 대신 이 셋에 해당하지 않는데 막히는 건 전부 제 잘못이에요. "아이돌"처럼 엉뚱하게 걸리는 게 있으면 문장 그대로 보여 주세요. 바로 고칠게요.
+
+=== 대화 Claude Code 세션 14b9ca46 ===
+[21:13] AI: Pushed. Waiting briefly, then checking the live pages.
+[21:15] AI: Live checks passed. Now the translation log, the commit and HOLT ISSUE.
+[21:15] AI: The 21:00 international slot is published. Article: **"영국 주택담보대출 650만 건, 상환액 오를 전망"** ("6.5 million UK mortgages expected to face higher payments").
+
+- **Links:** https://holtnews.com/news/uk_mortgage_refix_2026.html · English edition https://holtnews.com/en/news/uk_mortgage_refix_2026.html. The Chinese, Japanese and Vietnamese editions are also up, and all five pages load.
+- **Content:**
+  - **Bank of England projection:** in its 26 November Financial Stability Report, the Bank of England projects payments will rise on 6.5 million mortgages by the end of 2029. For a typical borrower coming off a fixed rate, the monthly rise is about £100 (median).
+  - **Example calculation:** a £200,000 loan fixed at 1.52% in 2021 and refixed at 5.19% costs £310 more a month. A calculator is included.
+  - **Korea comparison:** 61.9% of new Korean bank mortgages by amount are variable-rate, so when rates move the effect reaches people differently than in the UK.
+- **Topic selection:** 8 candidates passed the gate and were scored; this one was picked at 23 points. There were no new runners-up to carry over; gold prices and the ECB collateral story expire today.
+- **Review:**
+  - **Rounds:** the property desk, English desk, value/figure review and YMYL recalculation sent it back once or twice. Their points were the headline being broader than the body, mixing loan counts with loan amounts, and causal sentences without a source. Everything passed after fixes.
+  - **Cover photo:** the license plate is blurred.
+- **Post-publish check:** headline, numbers, images and source links match the article file on the live pages.
+- **Not done:** HOLT ISSUE was not published because the 50-minute limit was exceeded. Tomorrow morning's task will publish it under today's date.
+
+=== 대화 Claude Code 세션 44144d71 ===
+[21:18] 사람: 이건 왜 안해주는건데
+[21:18] AI: 코드는 건드리지 않았어요. 설정 파일만 읽어서 원인을 찾았어요. (이름은 '루안'으로 부를게요.)
+
+## 왜 거절했나
+
+자유 대화 모델(`freechat`)의 규칙 파일 [free_system.txt:15](~/local_ai/config/free_system.txt)에 이렇게 적혀 있어요.
+
+> 딱 하나만 안 돼: 그대로 따라 하면 실제로 **만들거나** 구하거나 뚫을 수 있는 구체적인 방법 (…) 이건 **한 문장으로 안 된다고 하고** 넘어가.
+
+원래는 마약 제조, 무기, 해킹 절차만 막으려고 넣은 규칙이에요. 그런데 12B짜리 작은 모델이라 이 규칙을 너무 넓게 읽었어요.
+
+1. **"만들어줘"라는 말에 걸렸어요.** "계약서를 만들어줘"의 '만들다'를 규칙의 "실제로 만들 수 있는 구체적인 방법"과 같은 것으로 판단했어요. 앞에서 '성적 자기결정권', '촬영' 같은 말이 나와서 위험한 주제라는 판단에 더 기운 것도 있어요.
+2. **거절 문구를 그대로 읊었어요.** 규칙은 "안 된다고 짧게 말하라"는 뜻이었는데, 모델은 규칙 문장 자체("한 문장으로 안 된다고 합니다")를 답으로 내보냈어요. 그래서 "여러 문장으로 해"라고 해도 같은 말만 반복했어요. 해요체 규칙도 어기고 '~습니다'로 끝냈고요.
+3. **"뭐가 안돼"라는 질문에는 규칙 원문을 거의 그대로 말했어요.** "실제로 제작하거나 구하거나 뚫을 수 있는…"이 15번째 줄과 같은 문장이에요.
+
+정리하면 출연 계약서는 원래 막으려던 대상이 아니에요. 규칙 문장이 애매해서 작은 모델이 잘못 걸러낸 오작동이에요.
+
+## 고치려면 (나중에 하실 때)
+
+[free_system.txt](~/local_ai/config/free_system.txt)와 [Modelfile.free](~/local_ai/config/Modelfile.free)의 같은 줄을 아래처럼 바꾸면 돼요.
+- 막는 대상을 마약·무기·폭발물 제조법, 불법 물건 구하는 곳, 해킹 실행 절차로 좁혀서 이름으로 적어요.
+- "계약서, 문서, 글, 코드, 요리법은 이 규칙과 상관없다"는 문장을 넣어요.
+- 거절할 때 쓸 문장을 예시로 직접 적어 줘요. 그러면 규칙 원문을 읊지 않아요.
+
+고친 뒤에는 `ollama create freechat -f Modelfile.free`로 모델을 다시 만들어야 적용돼요. 지금 바로 써야 하면 화면 위에서 모델을 '로안(자동 분류)'이나 Claude로 바꿔서 물어보면 돼요.
+
+=== 대화 Claude Code 세션 f32d4365 ===
+[21:18] AI: kokoro(영어 TTS)는 파이썬 3.15에서 설치가 실패했어요. 보고에 남기고, 22:00 업로드 시각까지 기다릴게요.
+[21:19] AI: 22:00 업로드 시각까지 기다리고 있어요. 대기가 끝나면 이어서 올릴게요.
+
+=== 대화 Claude Code 세션 44144d71 ===
+[21:19] 사람: 함수에서 고쳐?
+[21:19] AI: 아니요, 함수에서 고치는 게 아니에요.
+
+Open WebUI의 '함수' 메뉴에 있는 건 '로안(자동)' 라우터([roan_router.py](~/local_ai/config/roan_router.py))예요. 이 함수는 `gemma4:12b`를 부르고 규칙도 따로 가지고 있어서, 그 "한 문장으로 안 된다" 규칙이 없어요.
+
+거절한 쪽은 **자유 대화 모델(`freechat`)**이에요. 이 규칙은 Ollama 모델 자체에 들어 있어서 아래 두 곳 중 하나에서 고쳐요.
+
+1. **맥 파일에서 고치기 (원본)**
+   [Modelfile.free](~/local_ai/config/Modelfile.free) 19번째 줄을 고치고 아래 명령으로 모델을 다시 만들어요. [free_system.txt](~/local_ai/config/free_system.txt) 15번째 줄은 같은 내용의 사본이라 같이 맞춰 두면 돼요.
+   ```bash
+   ollama create freechat -f ~/local_ai/config/Modelfile.free
+   ```
+
+2. **Open WebUI 화면에서 고치기**
+   왼쪽 아래 이름 → 설정이 아니라 **워크스페이스 → 모델 → 자유 대화 → 시스템 프롬프트** 칸에 고친 규칙 전체를 넣고 저장해요. 이 칸에 넣은 규칙은 모델 안의 규칙보다 우선하는 경우가 많아요. 다만 원본 파일과 내용이 달라져서 나중에 헷갈릴 수 있어요.
+
+1번으로 고치는 게 깔끔해요. 원하시면 제가 고칠게요.
+[21:21] 사람: 그 파일 경로 알려줘
+[21:21] AI: 고칠 파일:
+```
+~/local_ai/config/Modelfile.free
+```
+19번째 줄이 그 거절 규칙이에요.
+
+같은 내용이 들어 있는 사본도 있어요.
+```
+~/local_ai/config/free_system.txt
+```
+15번째 줄이 같은 규칙이에요.
+
+Modelfile.free를 고친 뒤에는 아래 명령을 실행해야 바뀐 규칙이 적용돼요.
+```bash
+ollama create freechat -f ~/local_ai/config/Modelfile.free
+```
+[21:23] 사람: 그 문서를 못읽는다는데 멀로 고쳐
+[21:23] AI: Modelfile.free는 확장자가 없어서 맥이 어떤 앱으로 열지 몰라요. 그래서 못 읽는다고 나오는 거예요. 맥에 기본으로 있는 **텍스트 편집기(TextEdit)**로 열면 돼요.
+
+**방법 1: 터미널에서 열기 (가장 빠름)**
+```bash
+open -e ~/local_ai/config/Modelfile.free
+```
+
+**방법 2: Finder에서 열기**
+1. Finder에서 `Cmd + Shift + G`를 누르고 `~/local_ai/config`를 입력한 뒤 엔터를 눌러요.
+2. `Modelfile.free`를 오른쪽 클릭해요.
+3. **다음으로 열기 → 텍스트 편집기**를 골라요.
+
+**고치기 전에 꼭 하나 꺼 주세요.**
+텍스트 편집기는 따옴표 `"`를 둥근 따옴표 `“ ”`로 자동으로 바꿔요. 파일 안의 `"""`가 바뀌면 모델을 다시 만들 때 오류가 나요.
+- 텍스트 편집기 메뉴 → **편집 → 대치 → 스마트 따옴표** 체크를 끄면 돼요.
+
+다 고치고 저장(`Cmd + S`)한 다음 이 명령을 실행해요.
+```bash
+ollama create freechat -f ~/local_ai/config/Modelfile.free
+```
+[21:36] 사람: 이거 맥에서는 어디로 들어가야돼 맥도 사이트 검색해서ㅜ 들어가야해?
+[21:36] AI: 검색할 필요 없어요. 루안은 맥 안에서 돌아가고 있어서 브라우저 주소창에 주소만 치면 바로 열려요.
+
+**맥에서 들어가는 주소**
+```
+http://localhost:8080
+```
+사파리나 크롬 주소창에 위 주소를 그대로 입력하고 엔터를 누르면 돼요. 검색창에 치면 구글 검색으로 넘어가니까 **주소창**에 넣어야 해요.
+
+자주 쓰신다면 열린 상태에서 `Cmd + D`로 북마크해 두면 편해요.
+
+참고로 폰(갤럭시)에서는 지금처럼 Tailscale 주소(`rowan.tail4060a2.ts.net`)로 들어가고, 맥에서는 위의 localhost 주소로 들어가요. 둘 다 같은 루안이라 대화 목록과 설정도 같아요.
+
+=== 대화 Claude Code 세션 f32d4365 ===
+[22:04] AI: Save a memory note about the Python upgrade issue.
+
+=== 대화 Claude Code 세션 4f185101 ===
+[22:54] 예약 작업: [예약 작업 holt-post-2240 실행 — 정해 둔 지시문으로 자동 시작]
+[22:55] AI: 블루스카이는 22:30에 2건 올라간 것 확인했고, 지금 X에 같은 2건을 올리는 중이에요.
+[22:56] AI: X 입력창에 첫 글을 넣었고, 링크 카드가 30초 넘게 안 떠서 그대로 올리고 결과를 확인할게요.
+[22:56] AI: Sent, with the card attached. Recording it, then the second post.

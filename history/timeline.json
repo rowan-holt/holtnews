@@ -3490,12 +3490,12 @@
   ]
  },
  "stats": {
-  "days": 42,
-  "messages": 14749,
-  "operator_messages": 3169,
-  "commits": 1996,
+  "days": 43,
+  "messages": 14779,
+  "operator_messages": 3175,
+  "commits": 1999,
   "first": "2026-06-17",
-  "last": "2026-11-27"
+  "last": "2026-11-28"
  },
  "logs": [
   {
@@ -3788,9 +3788,16 @@
   {
    "date": "2026-11-27",
    "file": "log/2026-11-27.txt",
-   "messages": 643,
-   "operator": 163,
-   "bytes": 309892
+   "messages": 665,
+   "operator": 169,
+   "bytes": 320307
+  },
+  {
+   "date": "2026-11-28",
+   "file": "log/2026-11-28.txt",
+   "messages": 8,
+   "operator": 0,
+   "bytes": 2333
   }
  ]
 }
