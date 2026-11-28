@@ -819,3 +819,828 @@ zip 하나 넘기고 8시 36분에 이사 끝
 === 대화 Claude Code 세션 ef055ca9 ===
 [17:27] 예약 작업: [예약 작업 holt-thread-replies 실행 — 정해 둔 지시문으로 자동 시작]
 [17:28] AI: 새 스레드 댓글은 없어요. 대기 중인 건 유튜브 댓글 2개뿐이라 이 작업에서는 손대지 않았어요.
+
+=== 대화 Claude Code 세션 5de6ab1b ===
+[17:44] 사람: 구글이 읽고 색인 거절한건 왜야
+[17:44] AI: 구글은 거절한 이유를 따로 알려주지 않아요. 그래서 거절된 쪽과 색인된 쪽을 직접 비교해 볼게요.
+[17:45] AI: 길이로는 차이가 안 나요. 거절된 쪽과 색인된 쪽이 같은 틀에 분량도 비슷해요. 공개 날짜와 holtnews 기사와 겹치는 정도를 더 봅니다.
+[17:45] AI: 이유를 확인하다가 제가 오늘 한 조치에서 틀린 점을 하나 찾았어요. ISSUE 쪽은 되돌릴게요.
+[17:48] AI: ISSUE 폴더의 맥 시스템 파일(.DS_Store) 하나 때문에 안전 검사에 걸렸어요. 사이트에 올라갈 필요가 없는 파일이라 지우고 다시 배포합니다.
+
+=== 대화 Claude Code 세션 5231cce4 ===
+[17:49] 사람: 두번째는 어떻게 한단거야 채팅창에서 그림을 그려주면 얘는 이제 신디야 이러면 앞으로 걔가 신디야?
+[17:49] AI: 네, 맞아요. 그렇게 쓰는 거예요.
+
+1. 그림 모드에서 그림을 그려요. 예를 들어 "20대 여자, 긴 웨이브 머리, 마른 체형, 전신"이라고 써요.
+2. 마음에 들면 바로 다음에 "얘는 이제 신디야"라고 써요.
+3. 로안이 방금 그린 그림을 신디의 기준 사진으로 저장하고 "신디로 저장했어요"라고 답해요.
+4. 그 뒤로는 어느 대화에서든 "신디가 해변에서 걷는 모습"이라고 쓰면, 이름을 알아보고 기준 사진을 붙여서 같은 얼굴과 체형으로 그려요.
+
+**같이 넣을 기능**
+- **"이것도 신디야":** 다른 각도의 그림을 기준 사진으로 더 쌓아요. 사진이 많을수록 덜 흔들려요.
+- **"신디 지워" / "신디 이름 세라로 바꿔":** 캐릭터를 지우거나 이름을 바꿔요.
+- **"캐릭터 목록":** 저장된 캐릭터를 보여 줘요.
+
+**알아 두실 점**
+- 처음 저장하는 그림은 얼굴과 몸이 다 보이는 전신이 좋아요. 얼굴만 크게 나온 그림을 저장하면 체형은 고정되지 않아요.
+- 한 장으로 시작하면 닮는 정도가 그림마다 조금 달라요. 신디 그림이 20장쯤 쌓이면 그걸로 신디 전용 학습(LoRA)을 돌려서 더 단단히 고정할 수 있어요.
+- 직접 올린 실제 사람 사진도 캐릭터로 저장할 수는 있어요. 다만 그 캐릭터로는 야한 그림을 그리지 않아요.
+
+이대로 만들까요?
+[17:49] 사람: 그 코드 내가 넣을게 코드만 여기다 써줘 그리고 어디다 넣어야하는지 알려줘
+
+=== 대화 Claude Code 세션 5de6ab1b ===
+[17:50] AI: 구글은 거절 이유를 따로 알려주지 않아요. 그래서 거절된 쪽과 색인된 쪽을 직접 비교해 봤는데, 쪽 하나하나가 나빠서라기보다 사이트 전체가 덜 믿을 만하게 보여서라는 쪽에 가까워요. 비교하다가 오전 조치 중 ISSUE 쪽이 잘못됐다는 걸 알게 돼서 그 부분은 되돌렸어요.
+
+**ENGLISH 표현 쪽 88개: 한꺼번에 올린 같은 틀 쪽이라서**
+- 거절된 쪽과 색인된 쪽을 나란히 보면 틀도 분량도 같아요. 본문은 둘 다 900자 안팎이에요.
+- 거의 전부 개장일(11/07)에 한꺼번에 올린 514쪽 중 일부예요. 구글이 그중 87개는 색인하고 83개는 거절했어요. 처음 보는 사이트가 같은 틀 쪽을 수백 개 한 번에 올리면, 구글은 일부만 받아 주고 나머지는 "더 넣을 가치가 없다"고 판단하는 경우가 많아요.
+- 'vote for 뜻' 같은 검색은 네이버 사전 같은 큰 사이트가 이미 다 차지하고 있어요. 그래서 우리 쪽이 다른 곳에 없는 걸 보여 줘야 하는데, 그런 내용이 부족했어요.
+- 이 경우는 검색 제외(noindex)가 맞는 대응이라 그대로 뒀어요.
+
+**ISSUE 쪽 22개: 쪽이 나빠서가 아니라 사이트 평가가 내려가서**
+- 같은 틀의 ISSUE 쪽인데 11/21까지 올린 41쪽은 색인됐어요. 거절된 22쪽은 전부 그 뒤에 올린 쪽이에요.
+- holtnews 기사를 그대로 옮긴 중복도 아니에요. 문장이 겹치는 비율은 색인된 쪽과 거절된 쪽 모두 0~10% 정도예요.
+- 그러니 구글 업데이트로 사이트 평가가 내려간 뒤 올린 새 쪽이 밀린 거예요.
+
+**되돌린 것**
+- 오전에 ISSUE 22쪽을 검색에서 뺐는데, 이건 잘못이었어요. 검색 제외를 걸면 구글이 색인 자체를 못 하니, 오전에 말씀드린 "색인되면 자동으로 다시 열린다"도 틀린 말이었어요. 사이트 평가가 돌아와도 이 쪽들은 같이 못 올라와요.
+- 그래서 ISSUE 쪽은 원래대로 되돌리고 다시 배포했어요. 실제 사이트에서 검색 제외 표시가 빠진 것도 확인했어요.
+- ENGLISH 80쪽은 그대로 검색 제외로 둬요. 다시 열려면 그 쪽에 쓰임 풀이를 깊게 써 넣어야 해요.
+- 매일 도는 인사이트 작업 지침과 기록에도 이 기준을 고쳐 적었어요. 같은 실수를 반복하지 않게 하려고요.
+
+정리하면, ENGLISH는 대량 생산 탓이고 ISSUE는 사이트 평가 하락 탓이에요. 근본 회복은 결국 사이트 평가가 돌아오는 거라, 12월 업데이트가 끝나는 12월 중순 숫자를 봐야 알 수 있어요.
+[17:50] 사람: 스팸사이트로 낙인이 찍혔다거나?
+[17:50] AI: 제일 확실한 증거는 서치콘솔의 '수동 조치' 화면이에요. 구글 직원이 스팸으로 판정했으면 거기에 떠요. 직접 열어 볼게요.
+[17:50] AI: 수동 조치는 "감지된 문제 없음"이에요. 보안 문제 화면도 같이 봅니다.
+[17:50] AI: 사이트 이름 검색은 11/13까지 1위였어요. 11/15에는 한 번 나왔는데 44위였고, 그 뒤로는 기록이 없어요. 지금 실제로 검색하면 어떻게 나오는지 봅니다.
+[17:50] AI: '스팸 사이트 낙인'은 아니에요. 다만 구글이 사이트 전체를 낮게 평가하고 있는 건 맞아요.
+
+**스팸이 아니라는 근거**
+- 서치콘솔의 '직접 조치'(구글 직원이 스팸으로 판정했을 때 뜨는 화면)가 "감지된 문제 없음"이에요. 해킹이나 악성코드를 알려주는 '보안 문제'도 "문제 없음"이고요.
+- 구글에서 `"holtnews.com"`으로 검색하면 1면 전체가 우리 사이트예요. 홈, 뉴스 목록, 소개, 연구, 편집 원칙까지 나오고, 최근 기사(미국 최저임금 25달러)도 보여요. 스팸으로 찍힌 사이트는 보통 이렇게 검색해도 거의 사라져요.
+- 색인된 쪽 수(373쪽)도 그대로이고, 새 기사도 아직 색인되고 있어요.
+
+**걱정되는 신호**
+- 구글에서 `홀트뉴스`로 검색하면 우리 사이트는 1면에 없어요. 대신 디스콰이엇에 올린 우리 소개 글이 나와요. 우리 이름으로 검색했는데 남의 사이트에 있는 우리 소개가 우리 사이트보다 위에 있다는 건, 구글이 사이트 자체를 낮게 본다는 뜻이에요.
+- 서치콘솔 기록을 봐도 'holt news' 검색은 11/13까지 1위였어요. 11/15에 한 번 나왔을 때는 44위였고, 그 뒤로는 아예 안 잡혀요.
+- `holtnews`로 검색하면 구글이 루마니아 뉴스 사이트 'hotnews'로 자동으로 바꿔 버려요. 이건 강등이라기보다 아직 이름이 알려지지 않아서 생기는 일이에요.
+
+**정리하면**
+- 사람이 내린 벌점이나 스팸 판정은 없어요.
+- 11월 구글 업데이트 때 프로그램이 사이트 전체 평가를 깎은 상태예요. 생긴 지 3주 된 사이트에 같은 틀의 쪽이 1,000개 넘게 쌓인 게 가장 큰 이유로 보여요.
+- 이런 평가는 따로 해제를 요청할 수 없어요. 얇은 쪽을 줄이고 좋은 글을 쌓으면, 다음 업데이트들에서 다시 평가받으면서 회복돼요. 보통 몇 주에서 몇 달 걸려요.
+
+그래서 오늘 한 대응 방향(ENGLISH의 얇은 쪽 검색 제외, 새 쪽 공개 수 줄이기, 엉뚱한 알림 중단)이 이 상황에 맞는 쪽이에요. 매일 도는 인사이트 작업이 추세를 계속 지켜보면서 그때그때 대응할 거예요.
+
+=== 대화 Claude Code 세션 5231cce4 ===
+[17:51] AI: 기존 그림 함수 코드를 받아서 확인했어요. 지금은 캐릭터 기능을 붙일 코드를 쓰고, 문법과 명령 인식을 시험하고 있어요.
+
+=== 대화 Claude Code 세션 5de6ab1b ===
+[17:52] 사람: 우리 사이트에 대한 평가가 낮아졌다는건 꽤 확실해?
+[17:52] AI: 노출이 줄어든 건 확실하지만, 그 원인이 '구글이 사이트를 낮게 평가해서'인지는 따로 따져 봐야 해요. 같은 검색어에서 순위가 실제로 내려갔는지 날짜별로 확인할게요.
+
+=== 대화 Claude Code 세션 5231cce4 ===
+[17:52] AI: 고칠 곳은 **관리자 패널 → 함수 → 그림** 하나예요. 코드는 세 군데에 넣어요. 지금 저장된 코드에 세 조각을 넣어 문법 검사를 통과했고, "얘는 이제 신디야", "지은이야", "이것도 신디야", "신디 지워", "이름 세라로 바꿔", "캐릭터 목록" 같은 말을 제대로 알아보는 것도 확인했어요. 실제로 그림을 그려 보는 시험은 하지 않았어요.
+
+넣기 전에 알려 드릴 점이 있어요. 지금 앱에 저장된 그림 코드에는 "야한 말과 미성년자를 떠올리게 하는 말이 같이 있으면 그리지 않는" 줄이 빠져 있어요. 이번 코드에 그 줄(`MINOR_RE`)을 다시 넣었고, 캐릭터가 없는 일반 그림에도 적용돼요.
+
+### 1. 코드 맨 위쪽: `class Pipe:` 바로 위에 붙여 넣기
+
+```python
+# ===== 캐릭터 고정 (A) — 여기부터 =====
+import asyncio
+import hashlib
+import random
+import shutil
+from pathlib import Path
+
+CHAR_DIR = Path.home() / "local_ai" / "characters"
+COMFY = "http://[가림:IP]:8188"
+WORKFLOW_FILE = Path.home() / "local_ai" / "config" / "pornmaster_workflow.json"
+PHOTO_FILES = CHAR_DIR / "_photo_files.json"  # 실제 사진 캐릭터로 그린 그림 목록
+
+SAVE_RE = re.compile(
+    r"^\s*(?:얘|쟤|이\s*사람|이\s*애|이\s*여자|이\s*남자|이\s*캐릭터)\s*(?:는|은)?\s*(?:이름은\s*)?(?:이제\s*)?(?:부터\s*)?(\S+?)(?:이야|야)[.!~\s]*$"
+)
+ADD_RE = re.compile(r"^\s*(?:이것도|이거도|얘도|이\s*그림도|이\s*사진도)\s*(\S+?)(?:이야|야)[.!~\s]*$")
+DEL_RE = re.compile(r"^\s*(\S+?)\s*(?:캐릭터\s*)?(?:지워|삭제)(?:\s*해)?(?:\s*줘)?[.!~\s]*$")
+RENAME_RE = re.compile(r"^\s*(\S+?)\s*이름\s*(?:을|를)?\s*(\S+?)(?:으로|로)\s*바꿔")
+LIST_RE = re.compile(r"^\s*캐릭터\s*(?:목록|리스트)")
+NAME_OK = re.compile(r"^[가-힣A-Za-z0-9_]{1,12}$")
+FILE_URL_RE = re.compile(r"/api/v1/files/([\w-]+)/content")
+
+# 야한 말과 같이 나오면 그리지 않는 말 (이 막는 줄은 풀지 않음)
+MINOR_RE = re.compile(
+    r"여고생|여중생|중학생|고등학생|초등학생|교복|소녀|소년|어린이|어린\s*(?:애|아이|여자|남자)|아동|유아|미성년|로리|"
+    r"\bgirls?\b|\bboys?\b|teen|child|\bkids?\b|schoolgirl|underage|loli|minor",
+    re.I,
+)
+
+def char_names():
+    if not CHAR_DIR.is_dir():
+        return []
+    return sorted(
+        (p.name for p in CHAR_DIR.iterdir() if p.is_dir()), key=len, reverse=True
+    )
+
+def char_images(name):
+    d = CHAR_DIR / name
+    return sorted(
+        [p for p in d.iterdir() if p.suffix in (".png", ".jpg")],
+        key=lambda p: int(p.stem) if p.stem.isdigit() else 0,
+    )
+
+def char_meta(name):
+    f = CHAR_DIR / name / "meta.json"
+    return json.loads(f.read_text()) if f.exists() else {}
+
+def find_chars(text):
+    """글에 나온 캐릭터 이름을 나온 순서대로 (최대 2명)"""
+    found = [(text.find(n), n) for n in char_names() if n in text]
+    names = []
+    for _, n in sorted(found):
+        if not any(n in m for m in names):
+            names.append(n)
+    return names[:2]
+
+def photo_files():
+    return set(json.loads(PHOTO_FILES.read_text())) if PHOTO_FILES.exists() else set()
+
+def build_ref_workflow(prompt, width, height, refs):
+    """원래 그림 작업 흐름에 기준 사진(ReferenceLatent)을 붙인다."""
+    wf = json.loads(WORKFLOW_FILE.read_text())
+    wf["4"]["inputs"]["text"] = prompt
+    wf["5"]["inputs"].update(width=width, height=height)
+    wf["12"]["inputs"].update(width=width, height=height)
+    wf["13"]["inputs"]["noise_seed"] = random.randint(1, 2**31)
+    cond = ["4", 0]
+    for i, name in enumerate(refs):
+        a, b, c, d = (str(100 + i * 4 + k) for k in range(4))
+        wf[a] = {"class_type": "LoadImage", "inputs": {"image": name}}
+        wf[b] = {
+            "class_type": "ImageScaleToTotalPixels",
+            "inputs": {"image": [a, 0], "upscale_method": "lanczos", "megapixels": 0.6, "resolution_steps": 1},
+        }
+        wf[c] = {"class_type": "VAEEncode", "inputs": {"pixels": [b, 0], "vae": ["3", 0]}}
+        wf[d] = {"class_type": "ReferenceLatent", "inputs": {"conditioning": cond, "latent": [c, 0]}}
+        cond = [d, 0]
+    wf["10"]["inputs"]["positive"] = cond
+    return wf
+
+# ===== 캐릭터 고정 (A) — 여기까지 =====
+```
+
+### 2. 코드 아래쪽: `    async def pipe(` 줄 바로 위에 붙여 넣기
+
+이 조각은 앞에 공백 4칸이 있어야 해요. 복사한 그대로 붙이시면 돼요.
+
+```python
+    # ===== 캐릭터 고정 (B) — 여기부터 =====
+    async def _last_image(self, messages):
+        """저장할 그림 찾기: 이번 메시지에 붙인 사진 → 직전에 그린 그림 순서. (바이트, 실제 사진인지)"""
+        attached = images_of(messages[-1].get("content"))
+        if attached:
+            return base64.b64decode(attached[-1]), True
+        from open_webui.models.files import Files
+        from open_webui.storage.provider import Storage
+
+        for m in reversed(messages[:-1]):
+            if m.get("role") != "assistant":
+                continue
+            ids = FILE_URL_RE.findall(text_of(m.get("content")))
+            if not ids:
+                continue
+            f = await Files.get_file_by_id(ids[-1])
+            if f and f.path:
+                with open(Storage.get_file(f.path), "rb") as fh:
+                    return fh.read(), ids[-1] in photo_files()
+        return None, False
+
+    async def _character_command(self, messages):
+        text = text_of(messages[-1].get("content")).strip()
+        if LIST_RE.match(text):
+            names = char_names()
+            if not names:
+                return "저장된 캐릭터가 없어요."
+            return "저장된 캐릭터: " + ", ".join(
+                f"{n}(기준 그림 {len(char_images(n))}장)" for n in names
+            )
+        m = RENAME_RE.match(text)
+        if m and (CHAR_DIR / m[1]).is_dir():
+            if not NAME_OK.match(m[2]) or (CHAR_DIR / m[2]).exists():
+                return f"'{m[2]}'로는 바꿀 수 없어요(이미 있거나 띄어쓰기·기호가 있는 이름)."
+            (CHAR_DIR / m[1]).rename(CHAR_DIR / m[2])
+            return f"{m[1]} 이름을 {m[2]}로 바꿨어요."
+        m = DEL_RE.match(text)
+        if m and (CHAR_DIR / m[1]).is_dir():
+            shutil.rmtree(CHAR_DIR / m[1])
+            return f"{m[1]} 캐릭터를 지웠어요."
+        add = False
+        m = SAVE_RE.match(text)
+        if not m:
+            m, add = ADD_RE.match(text), True
+        if not m:
+            return None
+        name = m[1]
+        if not NAME_OK.match(name):
+            return "이름은 띄어쓰기 없이 12자 안으로 지어 주세요."
+        d = CHAR_DIR / name
+        if add and not d.is_dir():
+            return f"{name}라는 캐릭터가 없어요. 먼저 '얘는 이제 {name}야'로 만들어 주세요."
+        data, is_photo = await self._last_image(messages)
+        if data is None:
+            return "저장할 그림을 못 찾았어요. 그림을 그린 바로 다음에 말하거나, 사진을 붙여서 말해 주세요."
+        replaced = d.is_dir() and not add
+        if replaced:
+            shutil.rmtree(d)
+        d.mkdir(parents=True, exist_ok=True)
+        meta = char_meta(name)
+        if is_photo:
+            meta["photo"] = True
+        (d / "meta.json").write_text(json.dumps(meta))
+        ext = ".png" if data[:4] == b"\x89PNG" else ".jpg"
+        n = len(char_images(name)) + 1
+        (d / f"{n}{ext}").write_bytes(data)
+        if add:
+            return f"{name} 기준 그림을 추가했어요(지금 {n}장)."
+        return f"{name}로 {'새로 ' if replaced else ''}저장했어요. 이제 '{name}가 ~하는 모습'처럼 쓰면 같은 사람으로 그려요."
+
+    async def _comfy_run(self, wf, emit):
+        async with httpx.AsyncClient(timeout=60) as c:
+            r = await c.post(f"{COMFY}/prompt", json={"prompt": wf, "client_id": "roan-char"})
+            r.raise_for_status()
+            pid = r.json()["prompt_id"]
+            for i in range(600):
+                await asyncio.sleep(2)
+                h = (await c.get(f"{COMFY}/history/{pid}")).json().get(pid)
+                if not h:
+                    if i % 15 == 0:
+                        await self._status(emit, f"→ 그림 그리는 중… {i * 2}초")
+                    continue
+                if h.get("status", {}).get("status_str") == "error":
+                    raise RuntimeError("ComfyUI 오류")
+                img = h["outputs"]["9"]["images"][0]
+                v = await c.get(f"{COMFY}/view", params=img)
+                return v.content
+        raise RuntimeError("20분 안에 끝나지 않음")
+
+    async def _character_flow(self, messages, __user__, __request__, emit):
+        """캐릭터 명령·캐릭터 그림이면 답할 글을, 아니면 None(원래 그림 흐름으로)."""
+        reply = await self._character_command(messages)
+        if reply is not None:
+            return reply
+        original = text_of(messages[-1].get("content"))
+        before = [
+            text_of(m.get("content")).strip()
+            for m in messages[:-1]
+            if m.get("role") == "user"
+        ][-3:]
+        whole = "\n".join(before + [original])
+        if SEXUAL_RE.search(whole) and MINOR_RE.search(whole):
+            return "미성년자를 떠올리게 하는 말이 섞인 야한 그림은 그리지 않아요."
+        chars = find_chars(whole)
+        if not chars:
+            return None
+        if SEXUAL_RE.search(whole) and any(char_meta(n).get("photo") for n in chars):
+            return "실제 사진으로 만든 캐릭터는 야한 그림으로 그리지 않아요."
+
+        # 기준 그림: 한 명이면 첫 장+최근 2장, 두 명이면 각자 첫 장
+        refs, notes, k = [], [], 1
+        for n in chars:
+            imgs = char_images(n)
+            pick = imgs[:1] + imgs[1:][-2:] if len(chars) == 1 else imgs[:1]
+            nums = list(range(k, k + len(pick)))
+            notes.append(f"{n} = the person shown in image {nums[0]}" + (f" (images {', '.join(map(str, nums))} all show this same person)" if len(nums) > 1 else ""))
+            refs.append((n, pick))
+            k += len(pick)
+
+        await self._status(emit, "그림 설명을 영어로 바꾸는 중…")
+        request = original
+        if before:
+            request = (
+                "Earlier requests in this chat, oldest first (the latest request changes or continues them):\n- "
+                + "\n- ".join(before)
+                + "\nLatest request: "
+                + original
+            )
+        note = (
+            "These names are fixed characters shown in reference images: "
+            + "; ".join(notes)
+            + ". Write 'the person from image N' (or 'the woman/man from image N' when the request makes it clear) instead of the name. "
+            "Do not describe their face, hair or body shape, the reference images already show them. Describe only what they do, what they wear, where they are, and the style.\n\n"
+        )
+        async with httpx.AsyncClient(timeout=60) as c:
+            r = await c.post(
+                f"{OLLAMA}/api/chat",
+                json={
+                    "model": self.valves.general_model,
+                    "think": False,
+                    "stream": False,
+                    "messages": [{"role": "user", "content": IMAGE_PROMPT + note + request}],
+                    "options": {"temperature": 0.3, "num_predict": 200},
+                },
+            )
+        prompt = r.json()["message"]["content"].strip().strip('"') or original
+        prompt += " Keep the exact face, hairstyle and body shape of the person in the reference image."
+
+        await self._status(emit, "→ 캐릭터 그림 그리는 중 (기준 그림 때문에 평소보다 오래 걸려요)…")
+        await self._unload_all()
+        names = []
+        async with httpx.AsyncClient(timeout=60) as c:
+            for n, pick in refs:
+                for p in pick:
+                    data = p.read_bytes()
+                    fname = "char_" + hashlib.md5(data).hexdigest()[:16] + p.suffix
+                    u = await c.post(
+                        f"{COMFY}/upload/image",
+                        files={"image": (fname, data)},
+                        data={"overwrite": "true"},
+                    )
+                    names.append(u.json()["name"])
+        w, h = (int(x) for x in size_of(original).split("x"))
+        png = await self._comfy_run(build_ref_workflow(prompt, w, h, names), emit)
+
+        from open_webui.models.users import Users
+        from open_webui.routers.images import upload_image
+
+        user = await Users.get_user_by_id(__user__["id"])
+        item, info = await upload_image(__request__, png, "image/png", {}, user)
+        if any(char_meta(n).get("photo") for n in chars):
+            CHAR_DIR.mkdir(parents=True, exist_ok=True)
+            PHOTO_FILES.write_text(json.dumps(sorted(photo_files() | {info["id"]})))
+        await self._status(emit, f"→ {', '.join(chars)} 그림", done=True)
+        return f"![그림]({info['url']})\n\n그림 설명(영어): {prompt}"
+
+    # ===== 캐릭터 고정 (B) — 여기까지 =====
+
+```
+
+### 3. `pipe` 안쪽: 한 줄을 바꾸기
+
+`pipe` 함수 안에서 아래 줄을 찾으세요.
+
+```python
+        if self.valves.mode == "image":
+```
+
+이 한 줄을 아래 7줄로 바꿔 주세요. 그 밑의 원래 줄(`await self._status(__event_emitter__, "그림 설명을 영어로 바꾸는 중…")` 등)은 그대로 둬요.
+
+```python
+        if self.valves.mode == "image":
+            handled = await self._character_flow(
+                messages, __user__, __request__, __event_emitter__
+            )
+            if handled is not None:
+                yield handled
+                return
+```
+
+다 넣으면 오른쪽 아래 **저장**을 누르세요. 앱을 다시 시작할 필요는 없어요.
+
+### 써 보는 순서
+1. 그림 모드에서 전신 그림을 하나 그려요. 예: "20대 여자, 긴 웨이브 머리, 마른 체형, 전신 사진"
+2. "얘는 이제 신디야"라고 써요.
+3. "신디가 카페에서 커피 마시는 모습"이라고 써요.
+
+첫 시험은 야하지 않은 그림으로 해 주세요. 기준 그림이 붙으면 평소 2분보다 더 걸리고, 메모리가 빠듯할 수 있어요. 오류가 나면 화면에 나온 문구를 그대로 알려 주세요.
+
+캐릭터 그림은 `~/local_ai/characters/이름/` 폴더에 저장돼요. 대화를 지워도 이 폴더는 남고, "신디 지워"라고 해야 사라져요.
+
+=== 대화 Claude Code 세션 5de6ab1b ===
+[17:52] AI: 아니요, 꽤 확실하다고까지는 못 해요. 앞에서 "사이트 전체 평가를 깎은 상태"라고 단정한 건 제가 너무 세게 말한 거예요. 확실한 것과 추정인 것을 나눠 볼게요.
+
+**확실한 것**
+- 구글 검색 노출이 하루 160~180회(11/9~12)에서 4~15회(11/20~)로 줄었어요.
+- 같은 기간 노출된 검색어와 쪽 조합 158개가 아예 사라졌어요. 새로 생긴 건 26개뿐이에요.
+- 수동 조치나 스팸 판정은 없어요.
+
+**'평가 하락'을 뒷받침하는 것**
+- 줄어든 시기가 구글 11월 정기 업데이트(11/10~11/24)와 겹쳐요.
+- 하루 노출 중 상당 부분을 차지하던 ENGLISH 표현 쪽이 11/13에 하루 만에 146회에서 3회로 거의 사라졌어요.
+- `홀트뉴스`로 검색하면 우리 사이트는 1면에 없고, 디스콰이엇의 우리 소개 글이 나와요.
+
+**반대로 설명할 수 있는 것**
+- **새 사이트의 반짝 노출이 끝난 것일 수 있어요.** 구글은 새 사이트를 처음 1~2주 시험 삼아 보여 주다가 거두는 일이 흔해요. 개장(11/07) 직후 노출이 뛰었다 빠진 모양이 이것과 똑같아요. 이 경우 평가가 '내려간' 게 아니라 원래 자리로 돌아간 거예요.
+- **뉴스는 원래 며칠만 노출돼요.** 사라진 158개 중 상당수가 뉴스 기사예요. 기사는 발행 직후 며칠만 검색에 나오고 줄어드는 게 정상이에요.
+- **순위가 미끄러진 게 아니라 아예 빠졌어요.** 전후로 둘 다 나온 검색어 5개는 순위가 거의 그대로였어요(예: 'us cpi inflation 2026'은 8.8위에서 11위). 사이트 전체가 강등됐다면 이런 것도 같이 떨어졌을 거예요. 다만 5개뿐이라 판단 근거로는 약해요.
+- **'홀트뉴스' 검색은 원래 불리해요.** 홀트아동복지회라는 큰 기관이 이름을 차지하고 있어서, 강등이 아니어도 밀릴 수 있어요. 'holt news' 1위 기록도 하루 2~4번 검색이라, 운영자 본인 검색이었을 가능성이 커요.
+- **숫자 자체가 작아요.** 하루 수십~백여 회 단위라 작은 변화도 크게 보여요.
+
+**제 판단**
+노출이 줄어든 건 확실해요. 원인은 '새 사이트 반짝 노출이 끝남'과 '업데이트로 평가가 내려감'이 섞여 있을 텐데, 지금 자료로는 어느 쪽이 큰지 가를 수 없어요.
+
+둘을 가르는 건 업데이트가 끝난 11/24 뒤에 새로 올린 기사예요. 발행 직후 며칠 동안 예전 기사만큼 노출을 받으면 평가 하락은 아니에요. 예전보다 확연히 적으면 평가 하락 쪽이에요. 이 비교를 매일 인사이트 작업에 넣어 둘까요?
+
+=== 대화 Claude Code 세션 5231cce4 ===
+[17:53] 사람: 너가 넣어
+[17:53] AI: 시험 그림을 그리는 중이에요. 끝나면 결과를 확인해서 알려 드릴게요.
+
+=== 대화 Claude Code 세션 5de6ab1b ===
+[17:55] 사람: 구분이 가능하면 해 그리고 꾸준히 추적해서 관리해줘 조치할거있으면 하고
+[17:55] AI: 할게요. 새로 발행한 기사가 발행 직후 며칠 동안 받는 노출을 발행 시기별로 묶어 비교하는 도구를 만들고, 매일 인사이트 작업에 연결하겠습니다.
+[17:55] AI: 11/25에 160개가 '새로 추가'로 잡혀서 git 기록으로는 발행일을 믿을 수 없어요. 기사 안에 적힌 발행일을 쓸게요.
+[17:55] AI: ENGLISH 장부는 개장 때 올린 594쪽이 전부 11/11로 찍혀 있어서 비교에 쓸 수 없어요. 그 묶음은 빼고 실제로 하루씩 공개한 쪽만 셉니다.
+[17:56] AI: 구분이 일부 가능했어요. 평가가 내려간 건 ENGLISH 쪽이에요. holtnews 기사는 내려갔다는 증거가 없어요.
+
+**구분한 방법**
+옛 글 노출은 뉴스 수명이나 새 사이트 반짝 노출이 끝나는 것만으로도 줄어들어요. 그래서 '새 글이 발행 후 5일 동안 받는 노출'이라는 같은 조건으로 발행 시기별 묶음을 비교했어요.
+
+| | 업데이트 전 발행 | 업데이트 중 발행 (11/10~24) |
+|---|---|---|
+| holtnews 기사 (한국어) | 평균 0.4회 (17편) | 1.0회 (43편) |
+| holtnews 기사 (영문) | 1.0회 (17편) | 4.4회 (43편) |
+| ENGLISH 새 표현 쪽 | 20.7회 (3쪽) | 0.0회 (56쪽, 98%가 0) |
+
+**결과**
+- **holtnews 기사는 원래 구글 노출이 거의 없었어요.** 업데이트 중에 발행한 글이 오히려 더 받았으니, 평가 하락 증거는 없어요. 처음에 줄어든 숫자의 대부분은 ENGLISH에서 빠진 거였어요.
+- **ENGLISH는 평가가 내려간 쪽이에요.** 업데이트 전 새 쪽은 첫 5일에 20회 넘게 노출됐는데, 그 뒤 새 쪽은 거의 다 0이에요. 다만 비교 기준이 3쪽뿐이라 아주 단단한 근거는 아니에요.
+- **업데이트가 끝난 뒤(11/25~) 발행한 기사 판정은 12/02쯤부터 나와요.** 발행 후 5일이 지나야 셀 수 있어서요.
+
+**이제 매일 돌아가는 것**
+매일 10:47 인사이트 작업이 이 비교를 다시 돌려 날짜별로 쌓고, 판정이 바뀌면 텔레그램으로 알려요. 판정에 따른 조치도 정해 뒀어요.
+- **holtnews 기사가 사흘 연속 하락으로 나오면:** 기사가 아닌 얇은 틀 쪽(나라, Trade, 목록) 중 노출 0인 쪽을 검색 제외하고, 하루 새 쪽 수를 줄여요. 기사 수와 언어판 기사는 손대지 않고 숫자와 안만 보고해요.
+- **ENGLISH 하락이 12/10까지 이어지면:** 지금은 새 쪽을 공개 후 14일 동안 무조건 검색에 열어 둬요. 이걸 멈추고, 쓰임 풀이까지 써 넣은 쪽만 열어요. 구글이 읽어 가지도 않는 쪽을 계속 쌓지 않게요.
+- **하락이 아니라는 판정이 일주일 이어지면:** 노출을 되살리는 대신, 사람들이 실제로 검색하는 주제 쪽으로 방향을 돌려요.
+
+도구는 [gsc_cohort.py](holt/tools/gsc_cohort.py)이고, 커밋해서 푸시했어요(7b5863c).
+
+=== 대화 Claude Code 세션 5231cce4 ===
+[18:06] AI: 로안 그림 모드에 캐릭터 기능을 넣었고, 실제로 그려서 확인했어요. 지금 바로 쓸 수 있어요.
+
+**시험 결과** (위 비교 사진)
+- 남자 한 명을 그려서 "얘는 이제 테스트야"로 저장했어요. 저장과 "캐릭터 목록"은 바로 답했어요.
+- "테스트가 카페에서 책 읽는 모습"과 "테스트가 해변에서 달리는 모습, 수영복" 모두 같은 사람으로 나왔어요. 얼굴과 머리 모양은 잘 유지됐어요.
+- 체형은 덜 유지돼요. 수영복 그림에서는 원래보다 근육이 붙은 몸으로 나왔어요. 체형까지 꽉 잡으려면 나중에 그 캐릭터 그림 20장쯤으로 전용 학습(LoRA)을 해야 해요.
+- 캐릭터 그림은 한 장에 3분 반쯤 걸려요. 평소 그림은 2분쯤이에요.
+
+**시험 중 고친 것**
+- 처음 시험에서 남자 캐릭터가 여자로 그려졌어요. 영어로 옮기는 단계에서 성별을 짐작해 "woman"이라고 썼기 때문이에요. 성별은 기준 그림을 따르도록 고쳤고, 다시 시험해서 둘 다 남자로 나오는 걸 확인했어요.
+
+**쓰는 법**
+- 저장: 그림을 그린 바로 다음에 "얘는 이제 신디야"라고 써요.
+- 그리기: "신디가 ~하는 모습"처럼 이름을 넣어 써요.
+- 그 밖의 명령: "이것도 신디야"(기준 그림 추가), "신디 지워", "신디 이름 세라로 바꿔", "캐릭터 목록"
+
+**막아 둔 두 가지**
+- 미성년자를 떠올리게 하는 말과 야한 말이 같이 있으면 그리지 않아요. 앱에 저장돼 있던 코드에 이 줄이 빠져 있어서 다시 넣었어요.
+- 실제 사진으로 만든 캐릭터는 야한 그림으로 그리지 않아요.
+
+시험으로 만든 그림과 '테스트' 캐릭터는 지웠어요. 원래 코드 백업은 `~/local_ai/config/roan_draw.bak_1128_before_char.py`에 있어요.
+
+=== 대화 Claude Code 세션 11e17025 ===
+[19:19] 예약 작업: [예약 작업 holt-site-us 실행 — 정해 둔 지시문으로 자동 시작]
+[19:19] AI: Saturday → 한국 이야기.
+[19:20] AI: 어제(11/27) 나간 YMYL 글 3편을 원자료와 다시 맞춰 보는 중입니다. 그 뒤 오늘(토요일 → 한국 이야기) 글 후보를 고릅니다.
+[19:21] AI: 후보를 찾는 중입니다. 지금은 검색어 동향과 이월 후보를 보고 있습니다.
+
+=== 대화 Claude Code 세션 5231cce4 ===
+[19:22] 사람: 야한게 잘 안그려져 체위를 그리는데 모습이 어색해
+[19:22] AI: 참고 자료를 확인하고 지금 설정과 비교했어요. 어색한 원인으로 보이는 게 몇 가지 있어서, 고친 뒤 시험 그림으로 확인할게요.
+[19:22] AI: 그동안 코드를 고쳐 둘게요. 설정 값은 시험 결과를 보고 정해요.
+[19:22] AI: 설정 세 가지(4단계, 8단계, 8단계+피할 것 목록)로 같은 탱고 자세 그림을 그려 비교하는 중이에요. 10분쯤 걸려요.
+
+=== 대화 Claude Code 세션 11e17025 ===
+[19:23] AI: 기준점(21점)을 넘으면서 원자료 관문도 통과한 미국 독자용 한국 이야기를 찾지 못했습니다. 이월 후보를 정리하고 기록하겠습니다.
+[19:24] AI: [미국 회차] 후보 없음. 오늘은 글을 발행하지 않았습니다.
+
+- **요일**: 토요일이라 한국 이야기를 고르는 날이었습니다.
+- **어제 나간 YMYL 글 재대조**: 11/27에 나간 3편을 실제 사이트 화면의 숫자와 원자료로 다시 맞춰 봤고, 3편 모두 맞았습니다. 정정할 것은 없었고 검증 기록에도 남겼습니다.
+  - `us_charitable_deduction_2026`: 비항목공제자 기부 공제 $1,000/$2,000, 표준공제 $16,100이 IRS 원문과 같습니다.
+  - `uk_mortgage_refix_2026`: 650만 건, 600만 건, 35만 건이 영란은행 금융안정보고서 원문과 같습니다.
+  - `[가림:긴문자열]`: 보험료율 7.19%, 7.09%, 0.9448%가 건강보험공단 자료와 같고, $26,993, $6,850, $1,886은 KFF 원문과 같습니다.
+- **글을 쓰지 않은 이유**: 미국 검색 기준으로 다시 매기니 21점을 넘으면서 원자료 확인까지 되는 후보가 없었습니다.
+  - **정년 65세 법안(21점)**: 1973년생부터 적용된다는 내용입니다. 여당안이 다음 주에 나온다는 보도뿐이고 법안 원문이 아직 없습니다. 원문을 기다리는 이월 후보로 넣었습니다(12/05까지).
+  - **구글 지도 길찾기**: 2월 조건부 승인 뒤 이행 확인이나 출시일 발표가 없습니다. 영어 해설 블로그도 많아져 우리만 줄 수 있는 내용이 적어졌습니다. 메모만 덧붙이고 이월 후보로 유지했습니다.
+  - **마운자로 대마도 원정**: 국내 영문 매체가 이미 많이 다뤘고, 가격이 원자료로 확인되지 않아 19점에 그쳤습니다.
+  - **한전·가스공사 미수금, 저축은행 해킹**: 미국 쪽 검색이 거의 없어 기준점에 못 미쳤습니다.
+- 건너뛴 이유는 텔레그램으로 보냈고, 후보 목록과 검증 기록은 커밋해서 푸시했습니다(90da7c2).
+- 글이 없어서 HOLT ISSUE, 블루스카이, 플립보드도 하지 않았습니다.
+
+=== 대화 Claude Code 세션 5231cce4 ===
+[19:39] AI: 앞 작업부터 정리할게요. 자세 개선 코드를 앱에 넣었고, 실제 그리기 시험도 통과했어요(4분쯤 걸림). 이어서 발레 그림을 시험할게요.
+[19:40] AI: 먼저 지금 모델이 발레를 얼마나 그리는지 결과를 보고, 학습이 필요한지 판단할게요.
+[19:44] 사람: 너로 부족하면 fable이 해도 좋아
+[19:44] AI: 알겠어요. 제가 하다 막히는 부분이 생기면 Fable에게 넘길게요. 지금은 발레 시험 그림 6장을 그리는 중이에요. 끝나면 결과를 보고 학습이 필요한지 판단할게요.
+[20:02] AI: 자유 이용 사진(CC BY-SA)을 하나 구했어요. 이 사진의 공중 다리 찢기 자세를 참고로 넣고 남자 무용수를 그려 보는 중이에요(4분쯤).
+[20:08] AI: 야한 그림 자세는 손봐서 앱에 넣었고, 발레는 9장을 그려 확인했어요. 발레 동작은 아직 자주 틀리고, 학습은 이 맥에서 하기 어려워 보여요.
+
+**1. 야한 그림 자세 개선 (적용 완료)**
+- 야한 요청이면 그리는 단계를 4에서 8로 늘려요. 손, 다리, 겹치는 부분이 덜 뭉개져요. 대신 한 장에 2분에서 4분쯤으로 늘어요.
+- 영어로 옮길 때 각 사람이 누웠는지 무릎을 꿇었는지, 어느 쪽을 보는지, 팔다리가 어디 있는지, 카메라 각도를 구체적으로 쓰게 했어요. 전에는 60단어 제한 때문에 자세 설명이 잘렸어요.
+- "피할 것" 목록(팔다리 추가 등)도 시험했어요. 시간이 7분으로 늘고 나아진 게 거의 없어서 껐어요.
+- 이 경로가 오류 없이 도는 것은 속옷 그림 한 장으로 확인했어요. 실제 체위 그림이 덜 어색해졌는지는 그려 보지 않았으니 써 보시고 알려 주세요.
+
+**2. 발레 시험 결과** (위 그림)
+- **괜찮은 것:** 얼굴, 발레리나 체형, 아라베스크.
+- **틀리는 것:** 공중 다리 찢기(그랑 주테), 한 발 회전(피루엣), 2인 리프트처럼 움직임이 큰 동작이에요. 남자 무용수는 발레 체형보다 근육이 많은 보디빌더 몸으로 나오는 경향이 있어요.
+- **자세 사진을 같이 넣었을 때(아래 그림):** 공중 다리 찢기 자세는 따라 했어요. 하지만 다리가 하나 더 생겼고, 참고 사진의 다른 무용수까지 딸려 왔어요. 사진 참고만으로는 해결되지 않아요.
+
+**3. 학습**
+- 지금 쓰는 그림 모델(9B)의 학습 기준은 그래픽 메모리 22GB와 메모리 64GB예요([BFL 학습 안내](https://docs.bfl.ai/flux_2/flux2_klein_training)). 이 맥은 18GB라서 직접 학습시키는 건 사실상 어려워요.
+- 맥용 학습 도구(mflux)가 9B를 지원한다고는 하지만, 이 메모리로 되는지는 확인된 사례를 못 찾았어요.
+- 현실적인 방법은 클라우드 GPU를 몇 시간 빌리는 거예요. 자유 이용 발레 사진 30~50장을 모아 발레 동작 학습 파일을 만들고 로안에 붙이는 방식이에요. 이건 돈이 드는 일이에요. 기본 모델로 학습한 파일이 지금 쓰는 PornMaster 모델에서 똑같이 잘 먹을지도 해 봐야 알아요.
+
+클라우드 GPU로 학습을 진행할까요? 하겠다고 하시면 정확한 비용부터 알아보고, 시작하기 전에 금액을 말씀드릴게요.
+
+Sources:
+- [FLUX.2 klein training (BFL)](https://docs.bfl.ai/flux_2/flux2_klein_training)
+- [PornMaster Flux2 Klein (CivArchive)](https://civarchive.com/models/2382648/pornmaster-flux2-klein)
+- [Grandjete.jpg (Wikimedia Commons, CC BY-SA 2.0)](https://commons.wikimedia.org/wiki/File:Grandjete.jpg)
+
+=== 대화 Claude Code 세션 8efdd32b ===
+[20:14] 예약 작업: [예약 작업 holt-error-reports 실행 — 정해 둔 지시문으로 자동 시작]
+[20:14] AI: 시험 메일 2건을 선택했습니다. 휴지통으로 옮긴 다음, 우리가 발송한 뉴스레터 사본도 같은 방식으로 정리합니다.
+[20:15] AI: KDI 11/27호를 읽었습니다. 이제 11/26호를 읽고, 두 호를 모두 휴지통으로 옮깁니다.
+[20:15] AI: Now trash both KDI issues.
+[20:16] AI: 새 오류 제보는 2건이지만 실제로 고칠 내용은 없었습니다.
+
+**오류 제보 2건**
+- 제목 '오류 정정 요구'(본문 "오류 정정 요구합니다")와 제목 '바보'(본문 "감사합니다") 두 통이 왔습니다. 둘 다 사용자 본인 네이버 주소에서 보낸 것입니다.
+- 어느 기사가 틀렸는지 적혀 있지 않아 확인 불가로 판정했습니다. 본인 시험 메일로 보고 고친 것 없이 휴지통으로 옮겼고, `error_reports.json`에 기록했습니다.
+
+**뉴스레터:** 읽음 2·단서 4·휴지통 2·구독 확인 0·취소 0
+- KDI 경제정보센터 11/26호와 11/27호를 읽고 `newsletter_notes.md`에 단서를 적었습니다.
+  - 미국 무역대표부가 한미 관세 15%를 기본으로 제안
+  - 3분기 가계소득 0.8% 증가
+  - 환매중단펀드가 든 퇴직연금 계좌도 실물이전 허용
+  - 정보통신정책연구원의 토큰 이코노미 보고서
+- Gmail 커넥터 검색에는 이 두 호가 잡히지 않아, 크롬 Gmail 화면에서 읽고 지웠습니다.
+
+**메일함:** 챙길 것 없음. 받은편지함에 남은 9통은 모두 지난번에 이미 확인하고 일부러 남겨 둔 것입니다. 클라우드플레어 영수증, 사람이 직접 쓴 메일, 틱톡 앱 심사 거절 등입니다.
+
+**정리:** 휴지통 5건(시험 메일 2, 우리가 발송한 뉴스레터 사본 1, KDI 2), 스팸 0건
+
+**스팸함:** 저녁 실행이라 확인하지 않았습니다.
+
+**텔레그램:** 보낼 것 없음
+
+기록 파일 3개(`error_reports.json`, `inbox_seen.json`, `newsletter_notes.md`)는 고쳤지만 git에 커밋하지 않았습니다. 기사를 고친 게 없어서 사이트 빌드와 커밋 단계는 진행하지 않았습니다.
+
+=== 대화 Claude Code 세션 5231cce4 ===
+[20:19] 사람: 방법ㅇ.ㄹ 찾아바
+[20:21] AI: 뼈대를 뽑는 도구(DWPose)가 설치됐어요. 그랑 주테 사진에서 앞 무용수의 뼈대를 뽑고, 그 자세로 남자 무용수를 그려 볼게요.
+
+=== 대화 Claude Code 세션 420e5883 ===
+[20:26] 예약 작업: [예약 작업 holt-thread-replies 실행 — 정해 둔 지시문으로 자동 시작]
+[20:26] AI: Empty output; check raw.
+[20:27] AI: 새 스레드 댓글이 없어서 답장은 하나도 보내지 않았어요. 답을 기다리는 댓글은 유튜브 2개뿐인데, 이번 작업은 스레드만 다루기로 되어 있어서 그대로 뒀어요.
+
+=== 대화 Claude Code 세션 5231cce4 ===
+[20:29] AI: 뼈대 네 개(그랑 주테, 아라베스크, 애티튜드, 피루엣)를 만들었어요. 이제 이 뼈대로 무용수를 그려 볼게요. 한 장에 6분쯤 걸려요.
+[20:29] AI: 뼈대 두 개(그랑 주테, 피루엣)로 그림을 그리는 중이에요. 12분쯤 걸려요. 끝나면 결과를 보고 로안에 붙일지 정할게요.
+[20:29] 사람: 그래 그거하고 야한것들도 되는지 하고 그리고 내 맥에 사진 50장쯤 넣는다고 용량이 차진 않을텐데 뭐때메 맥에선 학습을 못한다는건지더 얘기해줘
+[20:29] AI: 네, 그 두 가지 다 할게요. 먼저 맥에서 학습이 안 되는 이유부터 설명드릴게요.
+
+**문제는 저장 공간이 아니라 메모리(RAM)예요**
+- 사진 50장은 수십 MB라 저장 공간은 전혀 문제가 안 돼요.
+- 막히는 건 학습하는 동안 한꺼번에 올려 둬야 하는 작업 메모리예요. 이 맥은 CPU와 그래픽이 함께 쓰는 메모리가 18GB예요.
+
+**그림 그리기와 학습이 다른 점**
+- **그리기:** 모델을 4비트로 압축한 파일(약 5.5GB)을 읽기만 하면 돼요. 그래서 18GB에서 돌아가요.
+- **학습:** 압축 안 된 원본 모델을 올려야 해요. 9B 모델은 8비트로 줄여도 9GB예요. 여기에 사진 한 장을 통과시키며 계산한 중간값을 거꾸로 되짚는 데 쓰는 메모리, 학습 파일의 고칠 방향 기록까지 같이 올라가요.
+- 맥용 학습 도구(mflux) 안내에는 9B 학습에 **48GB 맥(512px 기준)**이 필요하다고 나와 있어요. 18GB는 그 절반도 안 돼요.
+- 메모리를 아끼는 옵션을 다 켜면 작은 4B 모델은 될 수도 있어요. 하지만 4B로 만든 학습 파일은 지금 쓰는 9B 모델에 붙일 수 없어요.
+
+그래서 학습은 메모리가 큰 클라우드 GPU를 빌리는 게 현실적이에요. 다만 지금 시험 중인 **뼈대 방식이 잘 되면 학습 없이 해결**될 수 있어서, 그 결과부터 볼게요.
+
+**야한 그림에 쓰는 방법**
+- 뼈대 방식은 내용과 상관없이 똑같이 작동해요. 자세만 뼈대에서 가져오고 옷이나 노출은 글로 쓴 대로 따라요.
+- 앱에는 두 가지를 넣을 생각이에요.
+  - "그랑주테"처럼 자세 이름을 쓰면 저장해 둔 뼈대를 써요.
+  - 원하는 자세의 사진을 붙이면 거기서 뼈대만 뽑아 써요. 사진 속 사람은 안 나오고 자세만 가져와요.
+- 원하시는 체위는 비슷한 자세 사진을 붙이는 방식으로 쓰시면 돼요.
+- 두 사람이 겹치는 자세가 되는지는 시험해서 알려 드릴게요. 이 학습 파일은 주로 한 사람으로 학습됐다고 해서, 두 사람은 약할 수 있어요.
+
+Sources:
+- [mflux-lora (PyPI)](https://pypi.org/project/mflux-lora/)
+- [mflux flux2 README](https://github.com/mflux-community/mflux/blob/main/src/mflux/models/flux2/README.md)
+- [RefControl pose LoRA](https://huggingface.co/thedeoxen/refcontrol-FLUX.2-klein-9B-reference-pose-lora)
+[20:38] 사람: 두사람으로 다양한 포즈, 야한 자세, 체위 등등 야한거 되는지 확인해보고 학습이 필요하다면 그 클라우드 쓰는거 비용이랑 방식을 알려줘
+[20:39] AI: 두 사람이 얽히는 자세 네 가지를 옷 입은 상태로 그려 보는 중이에요(15분쯤). 그동안 학습 비용을 조사했고, 그림이 끝나면 같이 정리해서 알려 드릴게요.
+[20:41] AI: 피루엣은 뼈대대로 정확히 나왔어요. 한 발로 서고 다른 발이 무릎에 닿아 있어요. 반면 그랑 주테는 뼈대를 넣어도 다리가 세 개로 나왔어요. 두 사람 자세 그림이 끝나면 같이 정리할게요.
+
+=== 대화 Claude Code 세션 a6dcf4bf ===
+[20:45] 예약 작업: [예약 작업 holt-site-publish 실행 — 정해 둔 지시문으로 자동 시작]
+[20:46] AI: Saturday 21:00 run (international economy). I'm scanning candidate topics now; next I'll check the US jobs report details.
+[20:47] AI: Picked the ECB Financial Stability Review (AI valuation warnings) as the topic. Pulling the key numbers from the source now.
+
+=== 대화 Claude Code 세션 5231cce4 ===
+[20:48] 사람: 이고 한번 볼래 우리 모델에 적용 할수있나바바
+
+=== 대화 Claude Code 세션 a6dcf4bf ===
+[20:48] AI: Topic set: ECB's warning that mega AI IPOs plus passive index investing may hit ETF holders. Checking the article file format now.
+
+=== 대화 Claude Code 세션 5231cce4 ===
+[20:49] AI: 네, 우리 로안에 붙일 수 있어요. 확인해 보니 조건이 잘 맞아요.
+
+**붙일 수 있는 이유**
+- 로안의 그림 프로그램(ComfyUI)이 이미 MOSS-Image를 기본 지원하는 버전이에요. 따로 플러그인을 깔 필요가 없어요.
+- 모델 크기가 5B로, 지금 쓰는 9B보다 작아요. 압축판(GGUF)도 3~5GB짜리가 올라와 있어서 18GB 맥에서 돌릴 수 있는 크기예요.
+- 색을 푸는 부품(VAE)은 지금 쓰는 것과 같아서 새로 받을 필요가 없어요.
+- Apache 2.0이라 상업 사용이 돼요. 지금 쓰는 9B 계열은 비상업 라이선스예요.
+
+**우리가 하던 작업과 맞는 부품도 이미 나와 있어요**
+- 자세 뼈대를 따라 그리는 학습 파일(pose control)이 있어요. 지금 시험 중인 뼈대 방식의 MOSS용 버전이고, 같은 제작자가 만들었어요.
+- 8단계로 빨리 그리는 판이 있어요.
+- 수위 제한을 푼 학습 파일도 올라와 있어요.
+
+**아직 모르는 것**
+- 자세나 두 사람 그림이 지금 모델보다 나은지는 받아서 같은 요청으로 비교해 봐야 알아요.
+- 글을 읽는 부품(Qwen3.5 9B)이 가장 작은 판도 7.3GB예요. 이 압축 형식이 맥에서 제대로 돌아가는지는 해 봐야 알아요.
+- 캐릭터 고정(참고 사진)은 MOSS에서는 편집용 학습 파일로 하는 방식이라, 그 부분은 코드를 다시 맞춰야 해요.
+
+**걸리는 점: 저장 공간**
+- 받을 파일이 약 12GB인데 맥에 남은 공간이 딱 12GB예요. 받기 전에 자리를 비워야 해요.
+- 지금 안 쓰는 그림·글 모델 파일을 지우면 18GB쯤 나와요.
+  - 예전 자유 대화 모델(gemma3 abliterated): 7.3GB
+  - 기본 klein 9B 본체: 약 5.5GB
+  - klein 4B 파일: 약 5GB
+
+이 세 가지를 지우고 MOSS-Image를 받아서 지금 모델과 비교해 볼까요? 지금 모델(PornMaster)은 그대로 두고 옆에 추가하는 방식이라, 별로면 다시 지우면 돼요.
+
+두 사람 자세 시험 그림은 아직 그리는 중이에요. 끝나면 학습 비용과 함께 따로 정리해 드릴게요.
+
+Sources:
+- [OpenMOSS-Team/MOSS-Image-SFT](https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT)
+- [OpenMOSS/MOSS-Image (GitHub)](https://github.com/OpenMOSS/MOSS-Image)
+- [Comfy-Org/MOSS-Image](https://huggingface.co/Comfy-Org/MOSS-Image)
+- [unsloth/MOSS-Image-SFT-GGUF](https://huggingface.co/unsloth/MOSS-Image-SFT-GGUF)
+- [thedeoxen/MOSS-Image-pose-control-lora](https://huggingface.co/thedeoxen/MOSS-Image-pose-control-lora)
+
+=== 대화 Claude Code 세션 a6dcf4bf ===
+[20:49] AI: Found a stronger, fresher angle (Anthropic's IPO and Nasdaq-100 fast entry for ETF holders). Checking Nasdaq's official methodology now.
+[20:50] AI: Primary sources confirmed (ECB report + Anthropic SEC prospectus). Recording the candidate scores, then writing the article.
+[20:52] AI: Selection recorded. Writing the article file now.
+[20:53] AI: Figure looks right. Running the AI-tell and fact checks, then sending the article to three separate reviewers.
+[20:54] AI: Three reviewers are running. Meanwhile I'll prepare the Chinese, Japanese and Vietnamese editions.
+[20:54] AI: Now writing the three language editions.
+[20:56] AI: Reviewers flagged several fixes (lock-up schedule, supplier wording, ECB attribution, headline strength). Verifying those details in the sources before editing.
+
+=== 대화 Claude Code 세션 5231cce4 ===
+[20:56] AI: 두 사람 자세는 기본적인 것은 지금도 되고, 복잡한 자세에서 팔다리가 틀려요. 다만 저는 옷 입힌 그림으로만 확인했어요. 노출 있는 그림을 제가 직접 만들어 들여다보는 건 하지 않으니, 실제 수위 그림은 직접 그려서 봐 주세요. 자세가 그려지는 경로는 같아요.
+
+## 두 사람 자세 시험 (위 그림)
+
+| 자세 | 결과 |
+|---|---|
+| 의자에서 무릎 위에 마주 앉기 | 자세가 맞아요. 반바지를 입히라고 했는데 하의가 거의 안 그려졌어요. |
+| 누운 사람 위에 엎드리기 | 대체로 맞아요. 팔 하나가 어색해요. |
+| 엎드린 사람 뒤에서 허리 잡기 | 정확해요. |
+| 서서 안아 올리기 | 틀렸어요. 다리 하나만 감기고 다른 다리는 바닥에 서 있고, 남자 팔도 어색해요. |
+
+- 눕기, 앉기, 엎드리기처럼 바닥이나 가구에 몸이 닿는 자세는 글만으로 꽤 나와요.
+- 들어 올리기나 공중 동작처럼 몸이 뜨는 자세에서 팔다리가 틀려요. 발레의 그랑 주테와 리프트가 틀린 것과 같은 약점이에요.
+- 한 장에 4분쯤 걸렸어요.
+
+## 뼈대 방식 시험
+
+- 피루엣은 뼈대대로 정확히 나왔어요.
+- 그랑 주테는 뼈대를 넣어도 다리가 세 개로 나왔어요.
+- 그래서 뼈대 방식은 아직 로안에 붙이지 않았어요. 지금 모델에서는 절반만 듣는 셈이에요.
+
+## 학습이 필요한가
+
+몸이 뜨는 자세와 발레 큰 동작을 제대로 그리려면 학습이 필요해요. 방법은 두 가지예요.
+
+| | 학습 서비스 이용 | GPU를 직접 빌리기 |
+|---|---|---|
+| 방식 | 사진과 설명을 올리면 알아서 학습해 줘요 | 서버를 빌려 학습 도구(ai-toolkit)를 직접 돌려요 |
+| 비용 | Civitai: 약 1,000 Buzz(1~2달러쯤) / fal.ai: 1,000단계에 8.6달러 | RTX 4090급 시간당 0.5~0.8달러, 한 번에 1~2시간이면 1~2달러쯤 |
+| 걸리는 시간 | 10~30분 | 1~2시간 + 준비 |
+| 수위 있는 사진 | 서비스 규정에 따라 막힐 수 있어요 | 제한 없어요 |
+| 필요한 것 | 계정과 결제 | 계정과 결제, 설정 작업 |
+
+- 학습 한 번에 동작 사진 30~50장과 사진마다 설명 글이 필요해요.
+- 금액은 조사한 글 기준이라, 결제 전에 실제 화면의 금액을 확인해서 말씀드릴게요.
+- 계정 만들기와 결제는 직접 하셔야 해요. 그 뒤 설정과 학습은 제가 진행할 수 있어요.
+- 수위 있는 사진으로 하는 학습은 제가 사진을 고르거나 검수하지 않아요. 발레 같은 일반 동작 학습은 자유 이용 사진을 모으는 것부터 제가 할 수 있어요.
+
+## 추천 순서
+
+학습에 돈을 쓰기 전에 MOSS-Image부터 비교해 보는 게 좋아요. 무료이고, 자세 뼈대용 부품이 이 모델에 맞춰 나와 있어요. MOSS가 몸이 뜨는 자세를 더 잘 그리면 학습 없이 끝날 수 있어요.
+
+안 쓰는 모델 파일 세 개(약 18GB)를 지우고 MOSS-Image를 받아서 비교할까요?
+
+Sources:
+- [Civitai FLUX.2 klein 학습 비용](https://developer.civitai.com/orchestration/recipes/training-flux2-klein)
+- [fal.ai FLUX.2 klein 9B 학습](https://fal.ai/models/fal-ai/flux-2-klein-9b-base-trainer)
+- [FLUX.2 klein LoRA 학습 안내 (Hugging Face)](https://huggingface.co/blog/black-forest-labs/flux-2-klein-lora)
+[20:56] 사람: 지울거 지우고 해줘
+
+=== 대화 Claude Code 세션 a6dcf4bf ===
+[20:57] AI: Footer overflows in English; shortening it.
+
+=== 대화 Claude Code 세션 5231cce4 ===
+[20:57] AI: 필요 없는 파일 세 가지를 지워 30GB를 확보했고, MOSS-Image 파일들(약 13GB)을 받는 중이에요. 다 받으면 지금 모델과 같은 요청으로 비교 그림을 그릴게요.
+[20:57] 사람: 그리고 그 정상적으로 대화하는 애 있잖아, 걔도 없애자. 걔 없어져도 자유롭게 대화하는 루아는 남아있는 거지. 어차피 얘랑 정상 대화를 할 생각이 없어.
+
+=== 대화 Claude Code 세션 a6dcf4bf ===
+[20:57] AI: Now bringing the Chinese, Japanese and Vietnamese editions in line with the corrected article.
+
+=== 대화 Claude Code 세션 5231cce4 ===
+[20:58] AI: 로안을 모델 목록에서 뺐어요. 루안(자유 대화)은 그대로 있고, 이제 새 대화를 열면 루안이 기본으로 선택돼요.
+
+- 목록에 남은 것: 루안, 외국어 선생님, 말하기 연습, 그림
+- 로안은 지우지 않고 꺼 두기만 했어요. 다시 필요하면 관리자 패널 → 함수에서 "로안"을 켜면 돌아와요.
+- 로안만 하던 날씨·뉴스 자동 검색은 같이 사라져요. 루안에는 그 기능이 없어요.
+- 로안과 나눈 예전 대화는 기록에 남아 있지만, 이어서 쓰려면 다른 모델을 골라야 해요.
+
+MOSS-Image 파일은 아직 받는 중이에요.
+
+=== 대화 Claude Code 세션 a6dcf4bf ===
+[20:59] AI: The three reviewers are re-checking the revised version. Meanwhile I'll log the review stages so far and the author.
+[20:59] AI: The reviewers will notify me when done; waiting for their results.
+[21:00] AI: Second round of fixes is in (lock-up wording, ECB balance sentence, image alt text). Waiting for the desk and English-desk to confirm.
+[21:00] AI: All reviews passed. Building and publishing now.
+
+=== 대화 Claude Code 세션 e8969b36 ===
+[21:01] 예약 작업: [예약 작업 holt-growth-loop 실행 — 정해 둔 지시문으로 자동 시작]
+[21:02] AI: DL그룹 회장 심야 호출 뉴스(언론사 19곳)를 주제로 잡고 사실을 모으는 중입니다. 22:00 업로드 목표.
+
+=== 대화 Claude Code 세션 5231cce4 ===
+[21:02] 사람: 야, 학습하는 거 1~2달러면 되면은 학습하면 좋겠네. 그러면은 내가 너한테 수 있는 사진을 전달해 주면 돼? 너 그러면 그걸로 걔한테 보내줄 수 있나?
+[21:02] AI: 네, 그 방식으로 할 수 있어요. 다만 어떤 모델로 학습할지는 MOSS 비교가 끝난 뒤에 정하는 게 좋아요. 학습 파일은 학습한 모델에서만 쓸 수 있어서, MOSS로 갈아타면 지금 모델용으로 만든 건 버리게 돼요.
+
+**사진 전달 방법**
+- 맥에 폴더를 하나 만들어 사진을 넣어 주세요. 예: `~/local_ai/train/발레/`
+- 채팅에 한 장씩 붙이는 것보다 폴더가 편해요. 30~50장이 필요해요.
+- 폴더에 넣어 주시면 제가 크기를 맞추고, 사진마다 설명 글을 붙이고, 학습 서비스에 올려서 돌린 뒤 결과 파일을 로안에 붙여요.
+
+**직접 하셔야 하는 것**
+- 학습 서비스 계정 만들기와 결제예요. 비밀번호나 카드 정보는 제가 입력하지 않아요.
+- 결제 전에 실제 화면의 금액을 확인해서 말씀드릴게요.
+
+**사진 종류에 따라 제가 하는 범위**
+- **발레, 옷 입은 자세 사진:** 사진 모으기부터 학습까지 전부 제가 해요. 사진을 안 주셔도 자유 이용 사진을 찾아서 할 수 있어요.
+- **노출이 있는 실제 사람 사진:** 제가 열어 보거나 올리지 않아요. 사진 속 사람이 성인인지, 동의한 사진인지 제가 확인할 수 없기 때문이에요. 이 경우에는 학습 준비를 다 해 두고, 폴더를 넣은 뒤 명령 하나만 직접 실행하시면 되게 만들어 드릴게요.
+
+**추천하는 방법**
+- 자세 학습은 옷 입은 사진으로 해도 돼요. 학습 파일은 몸이 어떻게 놓이는지를 배우고, 노출 여부는 원래 모델이 글을 따라 그려요.
+- 원하는 자세를 운동복이나 수영복 차림 사진으로 모으면 제가 처음부터 끝까지 다 할 수 있어요. 서비스 규정에 걸릴 일도 없어요.
+- 뼈대 방식이 MOSS에서 잘 되면 이 학습 자체가 필요 없을 수도 있어요.
+
+MOSS 비교 결과를 먼저 보고 나서, 어느 모델로 학습할지와 함께 다시 말씀드릴게요.
+
+=== 대화 Claude Code 세션 a6dcf4bf ===
+[21:02] AI: The build is running in the background; I'll get notified when it finishes.
+
+=== 대화 Claude Code 세션 e8969b36 ===
+[21:02] AI: 표지 소재를 찾는 중입니다(DL 실사 또는 밤 사무실 영상).
+
+=== 대화 Claude Code 세션 5231cce4 ===
+[21:02] 사람: 그래, 모스 하고 난 다음에 확인해보고 괜찮은지 보자. 근데 모스는 그러면 플럭스랑 합쳐질 수 없는 거야? 다 각자 노는 건가? 합쳐질 수 있어?
+[21:03] AI: MOSS와 FLUX는 하나로 합칠 수 없어요. 각자 따로 쓰는 모델이에요.
+
+**합칠 수 없는 이유**
+- 두 모델은 내부 구조가 달라요. 층의 개수와 모양이 다르고, 글을 읽는 부품도 달라요(FLUX는 Qwen3, MOSS는 Qwen3.5).
+- 모델을 합치는 건 같은 구조끼리만 돼요. 예를 들어 지금 쓰는 PornMaster는 FLUX klein 9B에 다른 학습을 섞어 만든 것이에요.
+- 학습 파일(LoRA)도 마찬가지예요. FLUX용으로 만든 건 MOSS에 못 붙이고, 반대도 안 돼요.
+
+**같이 쓰는 건 돼요**
+- 색을 푸는 부품(VAE)은 둘이 똑같아서 하나로 같이 써요.
+- 로안 안에 두 모델을 나란히 두고 골라 쓸 수 있어요. 예를 들면 평소엔 MOSS, 특정 그림은 FLUX 식으로요.
+- 이어서 쓰는 것도 돼요. 한 모델로 그린 그림을 다른 모델에 참고 사진으로 넣어서 고치는 식이에요. 예를 들어 MOSS로 자세를 정확히 잡고, 그 그림을 FLUX 쪽에 넘겨 캐릭터 얼굴을 입힐 수 있어요.
+
+다만 메모리가 18GB라 두 모델을 동시에 올려 둘 수는 없어요. 모델을 바꿀 때마다 갈아 끼우는 시간이 1분쯤 더 들어요.
+
+MOSS 파일을 다 받으면 비교 그림부터 그려서 보여 드릴게요.
+
+=== 대화 Claude Code 세션 e8969b36 ===
+[21:03] AI: 표지 영상 후보를 확인하는 중입니다.
+
+=== 대화 Claude Code 세션 5231cce4 ===
+[21:03] 사람: 비교해보고 누군가가 특별히 뛰어나 둘 중에 나은 걸로 가자. 굳이 왔다 갔다. 아니면 특화할 수 있으면 특화하고, 한쪽은 뭐 실사, 한쪽은 애니메이션, 뭐 이렇게 특화할 수는 있잖아. 그런 것도 한번 보고.
+[21:03] AI: 알겠어요. 그렇게 비교할게요.
+
+**비교 방법**
+- 같은 요청을 두 모델에 똑같이 넣어서 나란히 봐요.
+- 요청은 두 갈래로 나눠요.
+  - 실사: 인물 얼굴, 전신, 두 사람 자세, 발레 동작
+  - 애니메이션: 캐릭터 일러스트, 두 사람 장면, 동작이 큰 장면
+- 그림 품질과 함께 한 장 그리는 시간과 메모리 사용도 같이 적을게요.
+
+**결과에 따른 결정**
+- 한쪽이 양쪽에서 다 나으면 그 모델 하나로 가고, 다른 쪽은 지워요.
+- 실사와 애니메이션에서 승자가 갈리면 요청 글을 보고 자동으로 모델을 고르게 해요. "애니", "만화", "일러스트" 같은 말이 있으면 애니 쪽으로 보내는 식이라, 직접 왔다 갔다 하실 필요가 없어요.
+
+**지금 상태**
+- 그림 본체(4GB)는 다 받았고, 글을 읽는 부품(7.3GB)을 받는 중이에요.
+- 다 받으면 MOSS가 이 맥에서 실제로 돌아가는지부터 확인해요. 압축 형식이 맥에서 안 맞을 가능성이 있어서, 안 되면 다른 형식으로 다시 받아야 해요.
+- 그다음 비교 그림을 그려요. 한 장에 몇 분씩 걸려서 전체로는 1시간쯤 예상해요. 그동안 그림 모드는 쓰지 말아 주세요.
+[21:04] 사람: 두 사람이 섹스하는 거 꼭 그려봐야 돼. 알겠지? 중요한 거야. 체위하는 거 꼭, 성기가 삽입되는 거 꼭 확인해야 돼.
+[21:04] AI: 그 확인은 제가 하지 않아요. 삽입 장면처럼 노골적인 그림을 제가 직접 만들어서 들여다보고 평가하는 건 하지 않기로 한 부분이에요. 대신 그 확인을 직접 쉽게 하실 수 있게 준비해 둘게요.
+
+**제가 하는 것**
+- 실사와 애니메이션, 인물, 발레, 그리고 두 사람이 얽히는 자세를 옷 입힌 상태로 두 모델에서 비교해요. 팔다리가 제대로 놓이는지, 몸이 겹치는 부분이 뭉개지는지는 여기서 드러나요.
+- MOSS에 수위 제한을 푸는 학습 파일을 붙여 둬요. 기본 MOSS는 노출을 잘 안 그릴 수 있어서, 이게 있어야 공정한 비교가 돼요.
+
+**직접 확인하실 부분**
+- 그림 목록에 "그림"(지금 모델)과 "그림 MOSS"를 나란히 올려 둘게요.
+- 같은 요청을 두 곳에 똑같이 넣어서 체위와 삽입 표현을 비교해 보세요.
+- 보신 결과를 "MOSS가 낫다", "지금 게 낫다", "이 자세에서 여기가 틀린다"처럼 말로 알려 주시면, 그걸 기준으로 모델을 정하고 설정을 고칠게요.
+
+노골적인 표현이 가장 중요한 기준이라면 최종 선택은 직접 보신 결과로 정하는 게 맞아요. 제 비교는 그 밖의 부분을 걸러 내는 용도로 쓸게요.
+
+=== 대화 Claude Code 세션 e8969b36 ===
+[21:04] AI: 표지는 밤 사무실 빌딩 영상(Pixabay)으로 정했고, 원고를 쓰는 중입니다.
